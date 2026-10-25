@@ -1,0 +1,24 @@
+{
+  "citation": "\"MgO-doped PPLN chips for green conversion (Crystal Technology product news)\", electronicsonline.net.au (2009)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "electronicsonline.net.au",
+    "id": "electronicsonline-2009",
+    "issued": "2009-09-17",
+    "read": "Per; URL not recorded",
+    "title": "MgO-doped PPLN chips for green conversion (Crystal Technology product news)",
+    "type": "webpage"
+  }
+}

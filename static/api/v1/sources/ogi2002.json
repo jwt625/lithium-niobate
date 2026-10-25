@@ -1,0 +1,49 @@
+{
+  "citation": "Hirotsugu Ogi, Yasunori Kawasaki, Masahiko Hirao, et al., \"Acoustic spectroscopy of lithium niobate: Elastic and piezoelectric coefficients\", Journal of Applied Physics 92, 2451, (2002) doi:10.1063/1.1497702",
+  "link": "https://doi.org/10.1063/1.1497702",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Osaka University repository copy, personal use only.",
+      "oa_status": "green"
+    },
+    "author": [
+      {
+        "family": "Ogi",
+        "given": "Hirotsugu"
+      },
+      {
+        "family": "Kawasaki",
+        "given": "Yasunori"
+      },
+      {
+        "family": "Hirao",
+        "given": "Masahiko"
+      },
+      {
+        "family": "Ledbetter",
+        "given": "Hassel"
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1497702",
+    "id": "ogi2002",
+    "issued": "2002",
+    "notes": "53 and 55: its Table III attributions of eps^S to Warner and to Smith & Welsh disagree with weis1985.",
+    "page": "2451",
+    "read": "full text, re-checked",
+    "title": "Acoustic spectroscopy of lithium niobate: Elastic and piezoelectric coefficients",
+    "type": "article-journal",
+    "volume": "92"
+  }
+}

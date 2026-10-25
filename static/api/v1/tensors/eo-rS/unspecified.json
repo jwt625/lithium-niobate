@@ -1,0 +1,42 @@
+{
+  "alternatives": [
+    "eo-rS/unspecified/kaminow1980"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "eo-rS",
+    "variant": "unspecified"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "r13": {
+      "max": 7.7,
+      "min": 7.7,
+      "n_records": 1
+    },
+    "r22": {
+      "max": 3.4,
+      "min": 3.4,
+      "n_records": 1
+    },
+    "r33": {
+      "max": 28.8,
+      "min": 28.8,
+      "n_records": 1
+    },
+    "r51": {
+      "max": 18.2,
+      "min": 18.2,
+      "n_records": 1
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "alternatives": [
+    "photoelastic-p/unspecified/andrushchak2009",
+    "photoelastic-p/unspecified/mys2015-krupych2014",
+    "photoelastic-p/unspecified/rodrigues2023",
+    "photoelastic-p/unspecified/weis1985-avakyants1976",
+    "photoelastic-p/unspecified/weis1985-coquin"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "photoelastic-p",
+    "variant": "unspecified"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "p11": {
+      "max": -0.02,
+      "min": -0.026,
+      "n_records": 5
+    },
+    "p12": {
+      "max": 0.09,
+      "min": 0.06,
+      "n_records": 5
+    },
+    "p13": {
+      "max": 0.172,
+      "min": 0.13,
+      "n_records": 5
+    },
+    "p14": {
+      "max": 0.057,
+      "min": -0.083,
+      "n_records": 5
+    },
+    "p31": {
+      "max": 0.179,
+      "min": 0.141,
+      "n_records": 5
+    },
+    "p33": {
+      "max": 0.141,
+      "min": 0.07,
+      "n_records": 5
+    },
+    "p41": {
+      "max": 0.051,
+      "min": -0.151,
+      "n_records": 5
+    },
+    "p44": {
+      "max": 0.146,
+      "min": 0.12,
+      "n_records": 5
+    }
+  }
+}

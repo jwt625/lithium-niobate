@@ -1,0 +1,76 @@
+{
+  "alternatives": [
+    {
+      "category": "ferroelectric",
+      "id": "curie-temperature/cln/cti1999",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "Agrees within 1 C with the Bordui composition fit at 48.38 mol% (1143.2 C, computed ).",
+      "property": "curie-temperature",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.7
+      },
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1142.3,
+      "variant": "cln",
+      "variant_note": "48.38 mol% Li2O"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "curie-temperature",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "curie-temperature/cln/volk2008",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "property": "curie-temperature",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1140,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 1142.3,
+    "min": 1140,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "Cel"
+  }
+}

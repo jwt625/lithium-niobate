@@ -1,0 +1,78 @@
+{
+  "citation": "Viacheslav Snigirev, Annina Riedhauser, Grigory Lihachev, et al., \"Ultrafast tunable lasers using lithium niobate integrated photonics\", Nature 615, 411-417, (2023) doi:10.1038/s41586-023-05724-2",
+  "link": "https://doi.org/10.1038/s41586-023-05724-2",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Viacheslav Snigirev"
+      },
+      {
+        "literal": "Annina Riedhauser"
+      },
+      {
+        "literal": "Grigory Lihachev"
+      },
+      {
+        "literal": "Mikhail Churaev"
+      },
+      {
+        "literal": "Johann Riemensberger"
+      },
+      {
+        "literal": "Rui Ning Wang"
+      },
+      {
+        "literal": "Anat Siddharth"
+      },
+      {
+        "literal": "Guanhao Huang"
+      },
+      {
+        "literal": "Charles Möhl"
+      },
+      {
+        "literal": "Youri Popoff"
+      },
+      {
+        "literal": "Ute Drechsler"
+      },
+      {
+        "literal": "Daniele Caimi"
+      },
+      {
+        "literal": "Simon Hönl"
+      },
+      {
+        "literal": "Junqiu Liu"
+      },
+      {
+        "literal": "Paul Seidler"
+      },
+      {
+        "literal": "Tobias J. Kippenberg"
+      }
+    ],
+    "container_title": "Nature",
+    "doi": "10.1038/s41586-023-05724-2",
+    "id": "snigirev2023",
+    "issue": "7952",
+    "issued": "2023-03-16",
+    "page": "411-417",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Ultrafast tunable lasers using lithium niobate integrated photonics",
+    "type": "article-journal",
+    "volume": "615"
+  }
+}

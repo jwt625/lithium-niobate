@@ -1,0 +1,42 @@
+{
+  "citation": "J. R. Carruthers, I. P. Kaminow, L. W. Stulz, \"Diffusion Kinetics and Optical Waveguiding Properties of Outdiffused Layers in Lithium Niobate and Lithium Tantalate\", Applied Optics 13, 2333, (1974) doi:10.1364/ao.13.002333",
+  "link": "https://doi.org/10.1364/ao.13.002333",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Carruthers",
+        "given": "J. R."
+      },
+      {
+        "family": "Kaminow",
+        "given": "I. P."
+      },
+      {
+        "family": "Stulz",
+        "given": "L. W."
+      }
+    ],
+    "container_title": "Applied Optics",
+    "doi": "10.1364/ao.13.002333",
+    "id": "carruthers1974",
+    "issue": "10",
+    "issued": "1974-10-01",
+    "page": "2333",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Diffusion Kinetics and Optical Waveguiding Properties of Outdiffused Layers in Lithium Niobate and Lithium Tantalate",
+    "type": "article-journal",
+    "volume": "13"
+  }
+}

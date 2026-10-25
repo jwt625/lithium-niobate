@@ -1,0 +1,2927 @@
+{
+  "absorption-coefficient": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1364/OE.23.021690"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Absorption coefficient in the transparent range of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/absorption-coefficient.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/absorption-coefficient.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Absorption coefficient in the transparent range"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Absorption coefficient in the transparent range",
+    "url": "https://lithium-niobate.com/api/v1/properties/absorption-coefficient.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "maxValue": 2,
+        "measurementTechnique": "o and e polarization, 390-3800 nm",
+        "minValue": 0.0001,
+        "name": "alpha (cln)",
+        "unitText": "/cm"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "birefringence": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1364/JOSAB.14.003319"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Birefringence n_e - n_o of lithium niobate (LiNbO3): 6 provenance-tagged value(s) from 1 source(s) for variant(s) cln, mgo5-cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/birefringence.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/birefringence.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Birefringence n_e - n_o"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Birefringence n_e - n_o",
+    "url": "https://lithium-niobate.com/api/v1/properties/birefringence.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0766
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0736
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0842
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0815
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0782
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0897
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "bulk-velocity-longitudinal-x": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk longitudinal velocity along X of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-x.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-x.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk longitudinal velocity along X"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk longitudinal velocity along X",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-x.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "plane-wave ultrasonic, (110) plate",
+        "name": "v_L,X (cln)",
+        "unitText": "m/s",
+        "value": 6544.53
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "bulk-velocity-longitudinal-y": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk longitudinal velocity along Y of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-y.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-y.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk longitudinal velocity along Y"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk longitudinal velocity along Y",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-y.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "plane-wave ultrasonic, (300) plate",
+        "name": "v_L,Y (cln)",
+        "unitText": "m/s",
+        "value": 6806.55
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "bulk-velocity-longitudinal-z": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk longitudinal velocity along Z of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-z.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-z.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk longitudinal velocity along Z"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk longitudinal velocity along Z",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-z.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "plane-wave ultrasonic, (006) plate",
+        "name": "v_L,Z (cln)",
+        "unitText": "m/s",
+        "value": 7328.2
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "bulk-velocity-shear-x": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk shear velocity along X (resonance) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-x.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-x.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk shear velocity along X (resonance)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk shear velocity along X (resonance)",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-x.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "resonance, (110) plate",
+        "name": "v_S,X (cln)",
+        "unitText": "m/s",
+        "value": 4750.67
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "bulk-velocity-shear-y": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk shear velocity along Y of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-y.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-y.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk shear velocity along Y"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk shear velocity along Y",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-y.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "plane-wave ultrasonic, (300) plate",
+        "name": "v_S,Y (cln)",
+        "unitText": "m/s",
+        "value": 3940.49
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "bulk-velocity-shear-z": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk shear velocity along Z of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-z.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-z.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk shear velocity along Z"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk shear velocity along Z",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-z.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "plane-wave ultrasonic, (006) plate",
+        "name": "v_S,Z (cln)",
+        "unitText": "m/s",
+        "value": 3590.41
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "coercive-field": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Coercive field of lithium niobate (LiNbO3): 4 provenance-tagged value(s) from 1 source(s) for variant(s) cln, mgo1-sln, mgo5-cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/coercive-field.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/coercive-field.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Coercive field"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Coercive field",
+    "url": "https://lithium-niobate.com/api/v1/properties/coercive-field.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_c (cln)",
+        "unitText": "kV/mm",
+        "value": 21
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_c (mgo1-sln)",
+        "unitText": "kV/mm",
+        "value": 2.5
+      },
+      {
+        "@type": "PropertyValue",
+        "maxValue": 6.8,
+        "measurementTechnique": "see source",
+        "minValue": 6.0,
+        "name": "E_c (mgo5-cln)",
+        "unitText": "kV/mm"
+      },
+      {
+        "@type": "PropertyValue",
+        "maxValue": 6.5,
+        "measurementTechnique": "see source",
+        "minValue": 6.0,
+        "name": "E_c (sln)",
+        "unitText": "kV/mm"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "coercive-field-ratio-cln-sln": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.121491",
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Coercive field ratio E_c(CLN)/E_c(SLN) of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 2 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/coercive-field-ratio-cln-sln.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/coercive-field-ratio-cln-sln.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Coercive field ratio E_c(CLN)/E_c(SLN)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Coercive field ratio E_c(CLN)/E_c(SLN)",
+    "url": "https://lithium-niobate.com/api/v1/properties/coercive-field-ratio-cln-sln.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Coercive field ratio E_c(CLN)/E_c(SLN)",
+        "unitText": "1"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "congruent-composition": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Congruent composition of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 2 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/congruent-composition.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/congruent-composition.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Congruent composition"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Congruent composition",
+    "url": "https://lithium-niobate.com/api/v1/properties/congruent-composition.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "Congruent composition (cln)",
+        "unitText": "%",
+        "value": 48.45
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "curie-temperature": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1107/S0108768193012820",
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Curie temperature of lithium niobate (LiNbO3): 6 provenance-tagged value(s) from 5 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/curie-temperature.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/curie-temperature.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Curie temperature"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Curie temperature",
+    "url": "https://lithium-niobate.com/api/v1/properties/curie-temperature.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_C (cln)",
+        "unitText": "Cel",
+        "value": 1140
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_C (sln)",
+        "unitText": "Cel",
+        "value": 1206
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "curie-temperature-vs-composition": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Curie temperature vs crystal composition (linear fit) of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/curie-temperature-vs-composition.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/curie-temperature-vs-composition.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Curie temperature vs crystal composition (linear fit)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Curie temperature vs crystal composition (linear fit)",
+    "url": "https://lithium-niobate.com/api/v1/properties/curie-temperature-vs-composition.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "DTA / dielectric",
+        "name": "Curie temperature vs crystal composition (linear fit) (unspecified)",
+        "unitText": "Cel",
+        "value": "T_C = 39.26 c - 760.67 (T_C in C, c in mol% Li2O)"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "dark-conductivity": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Dark conductivity of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/dark-conductivity.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/dark-conductivity.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Dark conductivity"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Dark conductivity",
+    "url": "https://lithium-niobate.com/api/v1/properties/dark-conductivity.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "maxValue": 1e-14,
+        "measurementTechnique": "see source",
+        "minValue": 1e-16,
+        "name": "sigma_d (cln)",
+        "unitText": "S/m"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "dark-conductivity-activation-energy": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Activation energy of dark (protonic) conductivity of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/dark-conductivity-activation-energy.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/dark-conductivity-activation-energy.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Activation energy of dark (protonic) conductivity"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Activation energy of dark (protonic) conductivity",
+    "url": "https://lithium-niobate.com/api/v1/properties/dark-conductivity-activation-energy.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "Activation energy of dark (protonic) conductivity (cln)",
+        "unitText": "eV",
+        "value": 1.1
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "density": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136",
+      "https://doi.org/10.1063/1.1497702",
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Density of lithium niobate (LiNbO3): 6 provenance-tagged value(s) from 5 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/density.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/density.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Density"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Density",
+    "url": "https://lithium-niobate.com/api/v1/properties/density.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "Archimedes",
+        "name": "rho (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "unitText": "kg/m3",
+        "value": 4642.8
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "rho (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "unitText": "kg/m3",
+        "value": 4635
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "dne-dt": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1364/OL.22.001553",
+      "https://doi.org/10.1063/1.1988987"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermo-optic coefficient, extraordinary of lithium niobate (LiNbO3): 5 provenance-tagged value(s) from 2 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/dne-dt.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/dne-dt.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermo-optic coefficient, extraordinary"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermo-optic coefficient, extraordinary",
+    "url": "https://lithium-niobate.com/api/v1/properties/dne-dt.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "dn_e/dT (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 3.75e-05
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "dno-dt": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.1988987"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermo-optic coefficient, ordinary of lithium niobate (LiNbO3): 4 provenance-tagged value(s) from 2 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/dno-dt.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/dno-dt.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermo-optic coefficient, ordinary"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermo-optic coefficient, ordinary",
+    "url": "https://lithium-niobate.com/api/v1/properties/dno-dt.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Thermo-optic coefficient, ordinary",
+        "unitText": "/K"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "elastic-c14": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiTaO3",
+      "name": "lithium tantalate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Elastic stiffness component c14 (constant E) of lithium tantalate (LiTaO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) lt-saw. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/elastic-c14.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/elastic-c14.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium tantalate",
+      "LiTaO3",
+      "Elastic stiffness component c14 (constant E)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiTaO3 Elastic stiffness component c14 (constant E)",
+    "url": "https://lithium-niobate.com/api/v1/properties/elastic-c14.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "c14^E (lt-saw)",
+        "unitCode": "http://qudt.org/vocab/unit/GigaPA",
+        "unitText": "GPa",
+        "value": -10.75
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "eo-r13-T": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Electro-optic coefficient r13, unclamped of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/eo-r13-T.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/eo-r13-T.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Electro-optic coefficient r13, unclamped"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Electro-optic coefficient r13, unclamped",
+    "url": "https://lithium-niobate.com/api/v1/properties/eo-r13-T.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "r13^T (sln)",
+        "unitText": "pm/V",
+        "value": 10.4
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "eo-r22-T": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Electro-optic coefficient r22, unclamped of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/eo-r22-T.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/eo-r22-T.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Electro-optic coefficient r22, unclamped"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Electro-optic coefficient r22, unclamped",
+    "url": "https://lithium-niobate.com/api/v1/properties/eo-r22-T.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Electro-optic coefficient r22, unclamped",
+        "unitText": "pm/V"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "eo-r33": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiTaO3",
+      "name": "lithium tantalate"
+    },
+    "citation": [
+      "https://doi.org/10.1021/acsphotonics.5c00159"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Electro-optic coefficient r33 of lithium tantalate (LiTaO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) lt-unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/eo-r33.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/eo-r33.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium tantalate",
+      "LiTaO3",
+      "Electro-optic coefficient r33"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiTaO3 Electro-optic coefficient r33",
+    "url": "https://lithium-niobate.com/api/v1/properties/eo-r33.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "r33 (lt-unspecified)",
+        "unitText": "pm/V",
+        "value": 30.5
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "eo-r33-T": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Electro-optic coefficient r33, unclamped of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/eo-r33-T.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/eo-r33-T.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Electro-optic coefficient r33, unclamped"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Electro-optic coefficient r33, unclamped",
+    "url": "https://lithium-niobate.com/api/v1/properties/eo-r33-T.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "r33^T (sln)",
+        "unitText": "pm/V",
+        "value": 38
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "hydrostatic-piezo-dh": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33 of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/hydrostatic-piezo-dh.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/hydrostatic-piezo-dh.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33",
+    "url": "https://lithium-niobate.com/api/v1/properties/hydrostatic-piezo-dh.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "d_h (unspecified)",
+        "unitText": "pC/N",
+        "value": 6.31
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "internal-field": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.121491",
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Internal field of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, mgo5-cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/internal-field.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/internal-field.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Internal field"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Internal field",
+    "url": "https://lithium-niobate.com/api/v1/properties/internal-field.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_int (cln)",
+        "unitText": "kV/mm",
+        "value": 2.5
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_int (mgo5-cln)",
+        "unitText": "kV/mm",
+        "value": 0.5
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "ir-cutoff": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "IR transmission cutoff of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/ir-cutoff.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/ir-cutoff.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "IR transmission cutoff"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 IR transmission cutoff",
+    "url": "https://lithium-niobate.com/api/v1/properties/ir-cutoff.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "IR transmission cutoff",
+        "unitText": "nm"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "lattice-a": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://www.crystallography.net/cod/",
+      "https://doi.org/10.1107/S010876819600777X",
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Lattice constant a (hexagonal setting) of lithium niobate (LiNbO3): 7 provenance-tagged value(s) from 6 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/lattice-a.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/lattice-a.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Lattice constant a (hexagonal setting)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Lattice constant a (hexagonal setting)",
+    "url": "https://lithium-niobate.com/api/v1/properties/lattice-a.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "a (cln)",
+        "unitText": "Ao",
+        "value": 5.15
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "a (sln)",
+        "unitText": "Ao",
+        "value": 5.147
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "synchrotron X-ray diffraction",
+        "name": "a (unspecified)",
+        "unitText": "Ao",
+        "value": 5.148
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "lattice-c": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://www.crystallography.net/cod/",
+      "https://doi.org/10.1107/S010876819600777X",
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Lattice constant c (hexagonal setting) of lithium niobate (LiNbO3): 6 provenance-tagged value(s) from 5 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/lattice-c.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/lattice-c.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Lattice constant c (hexagonal setting)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Lattice constant c (hexagonal setting)",
+    "url": "https://lithium-niobate.com/api/v1/properties/lattice-c.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "c (cln)",
+        "unitText": "Ao",
+        "value": 13.864
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "c (sln)",
+        "unitText": "Ao",
+        "value": 13.856
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "synchrotron X-ray diffraction",
+        "name": "c (unspecified)",
+        "unitText": "Ao",
+        "value": 13.863
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "maxwell-relaxation-time": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Maxwell relaxation time (dark) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/maxwell-relaxation-time.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/maxwell-relaxation-time.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Maxwell relaxation time (dark)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Maxwell relaxation time (dark)",
+    "url": "https://lithium-niobate.com/api/v1/properties/maxwell-relaxation-time.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "maxValue": 500,
+        "measurementTechnique": "see source",
+        "minValue": 5,
+        "name": "tau_M (cln)",
+        "unitText": "d"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "melting-point": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Melting point of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/melting-point.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/melting-point.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Melting point"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Melting point",
+    "url": "https://lithium-niobate.com/api/v1/properties/melting-point.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_m (cln)",
+        "unitText": "Cel",
+        "value": 1255
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_m (sln)",
+        "unitText": "Cel",
+        "value": "< 1200"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "mgo-photorefractive-threshold": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.94946"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "MgO concentration threshold for optical-damage resistance of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) mgo5-cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/mgo-photorefractive-threshold.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/mgo-photorefractive-threshold.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "MgO concentration threshold for optical-damage resistance"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 MgO concentration threshold for optical-damage resistance",
+    "url": "https://lithium-niobate.com/api/v1/properties/mgo-photorefractive-threshold.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "MgO concentration threshold for optical-damage resistance (mgo5-cln)",
+        "unitText": "%",
+        "value": ">= 4.5 at.% MgO"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "mohs-hardness": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Mohs hardness of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/mohs-hardness.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/mohs-hardness.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Mohs hardness"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Mohs hardness",
+    "url": "https://lithium-niobate.com/api/v1/properties/mohs-hardness.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Mohs hardness",
+        "unitText": "1"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "nlo-d31": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/s10043-995-0280-y"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Second-order nonlinear coefficient d31 of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/nlo-d31.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/nlo-d31.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Second-order nonlinear coefficient d31"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Second-order nonlinear coefficient d31",
+    "url": "https://lithium-niobate.com/api/v1/properties/nlo-d31.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Second-order nonlinear coefficient d31",
+        "unitText": "pm/V"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "nonlinear-index-n2": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/3.511545",
+      "https://doi.org/10.1364/AOP.411024"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Nonlinear (Kerr) refractive index of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/nonlinear-index-n2.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/nonlinear-index-n2.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Nonlinear (Kerr) refractive index"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Nonlinear (Kerr) refractive index",
+    "url": "https://lithium-niobate.com/api/v1/properties/nonlinear-index-n2.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "Z-scan, 30 ps, e-polarization",
+        "name": "n_2 (unspecified)",
+        "unitText": "m2/W",
+        "value": 9.33e-20
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "oh-stretch-band": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.94946"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "OH stretch absorption band of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 1 source(s) for variant(s) cln, mgo5-cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/oh-stretch-band.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/oh-stretch-band.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "OH stretch absorption band"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 OH stretch absorption band",
+    "url": "https://lithium-niobate.com/api/v1/properties/oh-stretch-band.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "OH stretch absorption band (cln)",
+        "unitText": "um",
+        "value": 2.87
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "OH stretch absorption band (mgo5-cln)",
+        "unitText": "um",
+        "value": 2.83
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "optical-band-gap": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1002/pssc.200982473"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Optical band gap (frequently cited) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/optical-band-gap.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/optical-band-gap.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Optical band gap (frequently cited)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Optical band gap (frequently cited)",
+    "url": "https://lithium-niobate.com/api/v1/properties/optical-band-gap.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "optical absorption (direct)",
+        "name": "E_g (unspecified)",
+        "unitText": "eV",
+        "value": 3.7
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "point-group": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Point group (ferroelectric phase) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/point-group.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/point-group.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Point group (ferroelectric phase)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Point group (ferroelectric phase)",
+    "url": "https://lithium-niobate.com/api/v1/properties/point-group.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "Point group (ferroelectric phase) (unspecified)",
+        "unitText": "1",
+        "value": "3m (C3v)"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "pyroelectric-p3": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Pyroelectric coefficient of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 3 source(s) for variant(s) cln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/pyroelectric-p3.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/pyroelectric-p3.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Pyroelectric coefficient"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Pyroelectric coefficient",
+    "url": "https://lithium-niobate.com/api/v1/properties/pyroelectric-p3.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Pyroelectric coefficient",
+        "unitText": "C/(m2.K)"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "refractive-index-e": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817",
+      "https://doi.org/10.1364/JOSAB.14.003319"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Extraordinary refractive index of lithium niobate (LiNbO3): 11 provenance-tagged value(s) from 4 source(s) for variant(s) cln, mgo5-cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/refractive-index-e.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/refractive-index-e.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Extraordinary refractive index"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Extraordinary refractive index",
+    "url": "https://lithium-niobate.com/api/v1/properties/refractive-index-e.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1555
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1376
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2022
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1474
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1299
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1928
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.19
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "refractive-index-o": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817",
+      "https://doi.org/10.1364/JOSAB.14.003319"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Ordinary refractive index of lithium niobate (LiNbO3): 11 provenance-tagged value(s) from 4 source(s) for variant(s) cln, mgo5-cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/refractive-index-o.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/refractive-index-o.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Ordinary refractive index"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Ordinary refractive index",
+    "url": "https://lithium-niobate.com/api/v1/properties/refractive-index-o.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2321
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2111
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2865
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2288
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2082
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2825
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_o (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.288
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "residual-absorption": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Residual absorption, as-grown crystals of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/residual-absorption.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/residual-absorption.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Residual absorption, as-grown crystals"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Residual absorption, as-grown crystals",
+    "url": "https://lithium-niobate.com/api/v1/properties/residual-absorption.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "Residual absorption, as-grown crystals (cln)",
+        "unitText": "/cm",
+        "value": "up to 0.04 cm^-1 (transition-metal impurities, 400-2000 nm); about 0.001 cm^-1 H-related bands at 2300-2800 nm; annealing lowers absorption by up to 10x"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "rhombohedral-a": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1107/S010876819600777X",
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Rhombohedral cell edge a_R of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 2 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/rhombohedral-a.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/rhombohedral-a.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Rhombohedral cell edge a_R"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Rhombohedral cell edge a_R",
+    "url": "https://lithium-niobate.com/api/v1/properties/rhombohedral-a.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "a_R (unspecified)",
+        "unitText": "Ao",
+        "value": 5.494
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "rhombohedral-alpha": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1107/S010876819600777X",
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Rhombohedral cell angle alpha of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 2 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/rhombohedral-alpha.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/rhombohedral-alpha.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Rhombohedral cell angle alpha"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Rhombohedral cell angle alpha",
+    "url": "https://lithium-niobate.com/api/v1/properties/rhombohedral-alpha.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "alpha_R (unspecified)",
+        "unitText": "deg",
+        "value": 55.867
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "space-group": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Space group (ferroelectric phase, below Tc) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/space-group.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/space-group.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Space group (ferroelectric phase, below Tc)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Space group (ferroelectric phase, below Tc)",
+    "url": "https://lithium-niobate.com/api/v1/properties/space-group.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "Space group (ferroelectric phase, below Tc) (unspecified)",
+        "unitText": "1",
+        "value": "R3c (No. 161)"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "space-group-paraelectric": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1107/S0108768193012820"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Space group (paraelectric phase, above Tc) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/space-group-paraelectric.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/space-group-paraelectric.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Space group (paraelectric phase, above Tc)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Space group (paraelectric phase, above Tc)",
+    "url": "https://lithium-niobate.com/api/v1/properties/space-group-paraelectric.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "Space group (paraelectric phase, above Tc) (unspecified)",
+        "unitText": "1",
+        "value": "R-3c (No. 167)"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "specific-heat": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Specific heat capacity of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/specific-heat.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/specific-heat.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Specific heat capacity"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Specific heat capacity",
+    "url": "https://lithium-niobate.com/api/v1/properties/specific-heat.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "c_p (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/J-PER-KiloGM-K",
+        "unitText": "J/(kg.K)",
+        "value": 628
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "c_p (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/J-PER-KiloGM-K",
+        "unitText": "J/(kg.K)",
+        "value": 651
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "spontaneous-polarization": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.121491",
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Spontaneous polarization of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 2 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/spontaneous-polarization.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/spontaneous-polarization.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Spontaneous polarization"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Spontaneous polarization",
+    "url": "https://lithium-niobate.com/api/v1/properties/spontaneous-polarization.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Spontaneous polarization",
+        "unitText": "uC/cm2"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "thermal-conductivity": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermal conductivity of lithium niobate (LiNbO3): 4 provenance-tagged value(s) from 3 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/thermal-conductivity.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/thermal-conductivity.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermal conductivity"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermal conductivity",
+    "url": "https://lithium-niobate.com/api/v1/properties/thermal-conductivity.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "kappa (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "unitText": "W/(m.K)",
+        "value": 3.92
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "kappa (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "unitText": "W/(m.K)",
+        "value": 5.97
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "thermal-expansion-a": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermal expansion coefficient perpendicular to c of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-a.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-a.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermal expansion coefficient perpendicular to c"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermal expansion coefficient perpendicular to c",
+    "url": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-a.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "alpha_11 (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 1.41e-05
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "alpha_11 (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 1.41e-05
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "thermal-expansion-c": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermal expansion coefficient parallel to c of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-c.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-c.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermal expansion coefficient parallel to c"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermal expansion coefficient parallel to c",
+    "url": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-c.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "alpha_33 (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 4.1e-06
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "alpha_33 (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 6e-06
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "transparency-range": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Transparency range of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 1 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/transparency-range.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/transparency-range.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Transparency range"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Transparency range",
+    "url": "https://lithium-niobate.com/api/v1/properties/transparency-range.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "maxValue": 5,
+        "measurementTechnique": "see source",
+        "minValue": 0.32,
+        "name": "Transparency range (cln)",
+        "unitText": "um"
+      },
+      {
+        "@type": "PropertyValue",
+        "maxValue": 5,
+        "measurementTechnique": "see source",
+        "minValue": 0.3,
+        "name": "Transparency range (sln)",
+        "unitText": "um"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "uv-cutoff": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "UV transmission cutoff of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/uv-cutoff.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/uv-cutoff.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "UV transmission cutoff"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 UV transmission cutoff",
+    "url": "https://lithium-niobate.com/api/v1/properties/uv-cutoff.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "UV transmission cutoff",
+        "unitText": "nm"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "uv-edge-formula": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "UV absorption edge vs composition of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/uv-edge-formula.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/uv-edge-formula.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "UV absorption edge vs composition"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 UV absorption edge vs composition",
+    "url": "https://lithium-niobate.com/api/v1/properties/uv-edge-formula.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "absorption coefficient 20 (or 15) cm^-1; E parallel to c, k perpendicular to c",
+        "name": "UV absorption edge vs composition (unspecified)",
+        "unitText": "nm",
+        "value": "lambda_20 = 320.4 - 1.829 x - 5.485 x^2 nm; lambda_15 = 321.9 - 1.597 x - 5.745 x^2 nm; x = (mol% Li2O) - 48.38"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "uv-edge-lambda20": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "UV absorption edge at alpha = 20 cm^-1 of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 1 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/uv-edge-lambda20.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/uv-edge-lambda20.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "UV absorption edge at alpha = 20 cm^-1"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 UV absorption edge at alpha = 20 cm^-1",
+    "url": "https://lithium-niobate.com/api/v1/properties/uv-edge-lambda20.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "lambda_20 (cln)",
+        "unitText": "nm",
+        "value": 320.4
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "lambda_20 (sln)",
+        "unitText": "nm",
+        "value": 303.0
+      }
+    ],
+    "version": "0.1.0"
+  }
+}

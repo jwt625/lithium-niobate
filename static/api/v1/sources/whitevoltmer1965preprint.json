@@ -1,0 +1,33 @@
+{
+  "citation": "R. M. White, F. W. Voltmer, \"Direct piezoelectric coupling to surface elastic waves (ERL Technical Memorandum M-132)\", Electronics Research Laboratory, University of California, Berkeley, (1965) https://www2.eecs.berkeley.edu/Pubs/TechRpts/1965/ERL-m-132.pdf",
+  "link": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1965/ERL-m-132.pdf",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "R. M. White"
+      },
+      {
+        "literal": "F. W. Voltmer"
+      }
+    ],
+    "container_title": "Electronics Research Laboratory, University of California, Berkeley",
+    "id": "whitevoltmer1965preprint",
+    "issued": "1965-10-12",
+    "read": "Full text read, 2026-10-25",
+    "title": "Direct piezoelectric coupling to surface elastic waves (ERL Technical Memorandum M-132)",
+    "type": "report",
+    "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1965/ERL-m-132.pdf"
+  }
+}

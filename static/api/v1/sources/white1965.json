@@ -1,0 +1,38 @@
+{
+  "citation": "R. M. White, F. W. Voltmer, \"DIRECT PIEZOELECTRIC COUPLING TO SURFACE ELASTIC WAVES\", Applied Physics Letters 7, 314-316, (1965) doi:10.1063/1.1754276",
+  "link": "https://doi.org/10.1063/1.1754276",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "White",
+        "given": "R. M."
+      },
+      {
+        "family": "Voltmer",
+        "given": "F. W."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754276",
+    "id": "white1965",
+    "issue": "12",
+    "issued": "1965-12-15",
+    "page": "314-316",
+    "read": "bibliographic record only (Crossref)",
+    "title": "DIRECT PIEZOELECTRIC COUPLING TO SURFACE ELASTIC WAVES",
+    "type": "article-journal",
+    "volume": "7"
+  }
+}

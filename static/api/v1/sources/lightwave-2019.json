@@ -1,0 +1,25 @@
+{
+  "citation": "\"Lumentum to sell certain lithium niobate-based product lines to AFR\", Lightwave, (2019) https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr",
+  "link": "https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Lightwave",
+    "id": "lightwave-2019",
+    "issued": "2019-12-02",
+    "read": "Read",
+    "title": "Lumentum to sell certain lithium niobate-based product lines to AFR",
+    "type": "webpage",
+    "url": "https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr"
+  }
+}

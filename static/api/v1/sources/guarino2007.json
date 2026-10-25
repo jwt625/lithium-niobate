@@ -1,0 +1,45 @@
+{
+  "citation": "Andrea Guarino, Gorazd Poberaj, Daniele Rezzonico, et al., \"Electro–optically tunable microring resonators in lithium niobate\", Nature Photonics 1, 407-410, (2007) doi:10.1038/nphoton.2007.93",
+  "link": "https://doi.org/10.1038/nphoton.2007.93",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Andrea Guarino"
+      },
+      {
+        "literal": "Gorazd Poberaj"
+      },
+      {
+        "literal": "Daniele Rezzonico"
+      },
+      {
+        "literal": "Riccardo Degl'Innocenti"
+      },
+      {
+        "literal": "Peter Günter"
+      }
+    ],
+    "container_title": "Nature Photonics",
+    "doi": "10.1038/nphoton.2007.93",
+    "id": "guarino2007",
+    "issue": "7",
+    "issued": "2007-07",
+    "page": "407-410",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Electro–optically tunable microring resonators in lithium niobate",
+    "type": "article-journal",
+    "volume": "1"
+  }
+}

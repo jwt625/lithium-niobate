@@ -1,0 +1,32 @@
+{
+  "citation": "Crystal Technology, Inc., \"LiNbO3 material properties (data sheet DC-12 8/99)\" (1999)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Vendor PDF.",
+      "oa_status": "free"
+    },
+    "author": [
+      {
+        "literal": "Crystal Technology, Inc."
+      }
+    ],
+    "id": "cti1999",
+    "issued": "1999-08",
+    "notes": "CLN, 48.38 mol% Li2O. Cites reviews, no per-value citations. Status V for all values.",
+    "read": "full",
+    "title": "LiNbO3 material properties (data sheet DC-12 8/99)",
+    "type": "datasheet"
+  }
+}

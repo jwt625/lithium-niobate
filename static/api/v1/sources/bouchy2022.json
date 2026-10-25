@@ -1,0 +1,37 @@
+{
+  "citation": "S. Bouchy, et al., \"Comparison tables of LiNbO3 elastic, piezoelectric and dielectric constants (Bouchy et al. 2022)\", Materials, (2022) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9267966/",
+  "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9267966/",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "gold"
+    },
+    "author": [
+      {
+        "family": "Bouchy",
+        "given": "S."
+      },
+      {
+        "literal": "et al."
+      }
+    ],
+    "container_title": "Materials",
+    "id": "bouchy2022",
+    "issued": "2022",
+    "notes": "Title field is a placeholder description (PMC9267966).",
+    "read": "full text; unit labels inconsistent",
+    "title": "Comparison tables of LiNbO3 elastic, piezoelectric and dielectric constants (Bouchy et al. 2022)",
+    "type": "article-journal",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9267966/"
+  }
+}

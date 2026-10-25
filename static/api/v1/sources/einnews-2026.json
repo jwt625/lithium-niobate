@@ -1,0 +1,24 @@
+{
+  "citation": "\"Genuine Optics unveils 3.2T OSFP module with 450 Gb/s lanes at ECOC 2026\", (2026) https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026",
+  "link": "https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "einnews-2026",
+    "issued": "2026-09",
+    "read": "Search snippet only (403)",
+    "title": "Genuine Optics unveils 3.2T OSFP module with 450 Gb/s lanes at ECOC 2026",
+    "type": "webpage",
+    "url": "https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026"
+  }
+}

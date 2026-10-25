@@ -1,0 +1,42 @@
+{
+  "citation": "K. Nassau, H. J. Levinstein, G. M. Loiacono, \"THE DOMAIN STRUCTURE AND ETCHING OF FERROELECTRIC LITHIUM NIOBATE\", Applied Physics Letters 6, 228-229, (1965) doi:10.1063/1.1754147",
+  "link": "https://doi.org/10.1063/1.1754147",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Nassau",
+        "given": "K."
+      },
+      {
+        "family": "Levinstein",
+        "given": "H. J."
+      },
+      {
+        "family": "Loiacono",
+        "given": "G. M."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754147",
+    "id": "nassau1965",
+    "issue": "11",
+    "issued": "1965-06-01",
+    "page": "228-229",
+    "read": "bibliographic record only (Crossref)",
+    "title": "THE DOMAIN STRUCTURE AND ETCHING OF FERROELECTRIC LITHIUM NIOBATE",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

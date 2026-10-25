@@ -1,0 +1,25 @@
+{
+  "citation": "\"Lithium niobate modulators (Lucent X2600)\", Lightwave, (1998) https://www.lightwaveonline.com/optical-tech/electronics/article/16656084/lithium-niobate-modulators",
+  "link": "https://www.lightwaveonline.com/optical-tech/electronics/article/16656084/lithium-niobate-modulators",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Lightwave",
+    "id": "lightwave-1998",
+    "issued": "1998-05-01",
+    "read": "Read",
+    "title": "Lithium niobate modulators (Lucent X2600)",
+    "type": "webpage",
+    "url": "https://www.lightwaveonline.com/optical-tech/electronics/article/16656084/lithium-niobate-modulators"
+  }
+}

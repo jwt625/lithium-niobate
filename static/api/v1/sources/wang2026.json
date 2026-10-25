@@ -1,0 +1,54 @@
+{
+  "citation": "Zhenyu Wang, Changjiang Wan, Jianfeng Xiong, et al., \"On-chip nonlinear photonics: Advances and challenges in integrated PPLN optical parametric oscillators\", Applied Physics Reviews 13, 031312, (2026) doi:10.1063/5.0315274",
+  "link": "https://doi.org/10.1063/5.0315274",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Zhenyu Wang"
+      },
+      {
+        "literal": "Changjiang Wan"
+      },
+      {
+        "literal": "Jianfeng Xiong"
+      },
+      {
+        "literal": "Sizhe Wang"
+      },
+      {
+        "literal": "Xu Li"
+      },
+      {
+        "literal": "Guo Tang"
+      },
+      {
+        "literal": "Ji Liu"
+      },
+      {
+        "literal": "Wenzhao Sun"
+      }
+    ],
+    "container_title": "Applied Physics Reviews",
+    "doi": "10.1063/5.0315274",
+    "id": "wang2026",
+    "issue": "3",
+    "issued": "2026-09-01",
+    "page": "031312",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "On-chip nonlinear photonics: Advances and challenges in integrated PPLN optical parametric oscillators",
+    "type": "article-journal",
+    "volume": "13"
+  }
+}

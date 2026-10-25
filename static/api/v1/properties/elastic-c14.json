@@ -1,0 +1,94 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiTaO3",
+      "name": "lithium tantalate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Elastic stiffness component c14 (constant E) of lithium tantalate (LiTaO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) lt-saw. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/elastic-c14.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/elastic-c14.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium tantalate",
+      "LiTaO3",
+      "Elastic stiffness component c14 (constant E)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiTaO3 Elastic stiffness component c14 (constant E)",
+    "url": "https://lithium-niobate.com/api/v1/properties/elastic-c14.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "c14^E (lt-saw)",
+        "unitCode": "http://qudt.org/vocab/unit/GigaPA",
+        "unitText": "GPa",
+        "value": -10.75
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "elastic-c14"
+  },
+  "records": [
+    {
+      "category": "acoustic",
+      "conditions": {
+        "electrical_boundary": "E"
+      },
+      "default": true,
+      "id": "elastic-c14/lt-saw/kushibiki1999",
+      "kind": "scalar",
+      "name": "Elastic stiffness component c14 (constant E)",
+      "notes": "In the same table and convention LiNbO3 has c14 = +7.83 GPa: the c14 sign differs between LN and LT.",
+      "property": "elastic-c14",
+      "provenance": {
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c14^E",
+      "tensor_component": "c14",
+      "unit": {
+        "display": "GPa",
+        "qudt": "http://qudt.org/vocab/unit/GigaPA",
+        "ucum": "GPa"
+      },
+      "value": -10.75,
+      "variant": "lt-saw"
+    }
+  ]
+}

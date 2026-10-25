@@ -1,0 +1,970 @@
+# Chapter 04 Quirks: references
+# Bibliographic fields (authors, title, container, volume, issue, pages/article, issued) were taken from
+# api.crossref.org/works/{doi} or api.crossref.org/works?query.bibliographic=... on 2026-10-25, with a generic
+# User-Agent and no mailto or personal parameter. arXiv metadata from export.arxiv.org/api on 2026-10-25.
+# content_read limits the status a value from that source may carry (same convention as chapter 02):
+#   full / selected chapters -> P (value originates there) or P-comp (compilation of other measurements)
+#   abstract                 -> reported (number in the abstract)
+#   title                    -> reported (title) ; no numbers taken from it
+#   not read                 -> any number from it is S (via a named secondary) or U
+# Local copies held by the author (volk2008, weis1985, schwesyg2011) were read for verification only; nothing copied.
+# Practitioner notes (type: practitioner-note) are the author's public blog posts; cited by title and date only,
+# without links, per the C04 brief.
+
+# ---------- compilations and books ----------
+- id: volk2008
+  type: book
+  authors: ["Tatyana Volk", "Manfred Wöhlecke"]
+  title: "Lithium Niobate: Defects, Photorefraction and Ferroelectric Switching"
+  container: "Springer Series in Materials Science 115"
+  issued: 2009
+  doi: 10.1007/978-3-540-70766-0
+  chapters:
+    - {doi: 10.1007/978-3-540-70766-0_3, title: "General Introduction to Photorefraction in LiNbO3", pages: "51-74"}
+    - {doi: 10.1007/978-3-540-70766-0_4, title: "Photorefraction in LiNbO3 Crystals with Different Stoichiometry and/or Doped with Optical-Damage-Resistant Impurities", pages: "75-102"}
+  biblio_check: crossref 2026-10-25
+  content_read: "selected chapters: Ch. 2.2 (pp. 14-19), Ch. 3 (pp. 51-61), Ch. 4 (pp. 75-77, 82-85, 94-97), Sec. 7.1.3 (p. 168)"
+  used_for: "photorefraction equations (3.2-3.19), Glass constants, conductivities, dark conductivity mechanism, ODRI thresholds, Table 4.3 damage thresholds, GRIIRA and dark trace, polaron bands, laser damage regimes, -c etch rule"
+  notes: "Compilation; originals not read (status P-comp). Printed page = PDF page - 12 before p. 51 and PDF page - 13 from p. 51 on in the held copy. p. 83 prints a 10 ns damage limit for LiNbO3:Zn as '100 mW cm^-2' (likely a unit misprint; not used). p. 159 Maxwell time 5-500 days conflicts with its own p. 60 conductivities (R14 row 42a)."
+- id: weis1985
+  type: journal-article
+  authors: ["R. S. Weis", "T. K. Gaylord"]
+  title: "Lithium niobate: Summary of physical properties and crystal structure"
+  container: "Applied Physics A Solids and Surfaces"
+  volume: "37"
+  pages: "191-203"
+  issued: 1985-08
+  doi: 10.1007/BF00614817
+  biblio_check: crossref 2026-10-25
+  content_read: "full"
+  used_for: "pyroelectric p3 and sign (Eq. 2, p. 196), eps33^T (Table 1), n_e at 632.8 nm (Table 2), r33^T and r33^S (Table 4), +c convention (pp. 192-193)"
+  notes: "Compilation; originals not read (P-comp) except its own rules (P)."
+- id: schwesyg2011
+  type: thesis
+  authors: ["Judith R. M.-L. Schwesyg"]
+  title: "Interaction of light with impurities in lithium niobate crystals"
+  container: "Dr. rer. nat. dissertation, Universität Bonn"
+  issued: 2011
+  doi: null
+  biblio_check: "title page of the held copy (promotion date 2011-06-06)"
+  content_read: "selected: Sec. 2.2.2-2.3.2 (pp. 10-21), Ch. 5 Sec. 5.1 (pp. 69-72), Sec. 5.4-5.5 (pp. 99-101)"
+  used_for: "polaron band table (Table 2.1), transport equations (2.22-2.25), MgO thresholds and transport changes (pp. 19-20), Moretti dn/dT formula (2.26-2.27, S), thermal lens (2.28, S), pyroelectric field per kelvin (5.2), pyro-induced damage in MgO:LN results"
+  notes: "Own measurements in Ch. 5 are P; values quoting others are P-comp or S as marked. Journal version: schwesyg2011josab. Printed page = PDF page - 10 in the held copy."
+- id: ieee176
+  type: standard
+  authors: ["IEEE"]
+  title: "IEEE Standard on Piezoelectricity, IEEE Std 176-1987"
+  issued: 1988
+  doi: 10.1109/IEEESTD.1988.79638
+  biblio_check: R14
+  content_read: "selected: Table 5, Sec. 3.2.5, p. 22"
+  used_for: "+Z axis sense for 3m"
+
+# ---------- photorefraction: history and mechanism ----------
+- id: ashkin1966
+  type: journal-article
+  authors: ["A. Ashkin", "G. D. Boyd", "J. M. Dziedzic", "R. G. Smith", "A. A. Ballman", "J. J. Levinstein", "K. Nassau"]
+  title: "Optically-induced refractive index inhomogeneities in LiNbO3 and LiTaO3"
+  container: "Applied Physics Letters"
+  volume: "9"
+  pages: "72-74"
+  issued: 1966-07-01
+  doi: 10.1063/1.1754607
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "discovery of optical damage (history)"
+- id: levinstein1967
+  type: journal-article
+  authors: ["H. J. Levinstein", "A. A. Ballman", "R. T. Denton", "A. Ashkin", "J. M. Dziedzic"]
+  title: "Reduction of the Susceptibility to Optically Induced Index Inhomogeneities in LiTaO3 and LiNbO3"
+  container: "Journal of Applied Physics"
+  volume: "38"
+  pages: "3101-3102"
+  issued: 1967-07-01
+  doi: 10.1063/1.1710070
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "first damage-reduction treatment: field annealing (LiTaO3 to 500 W/cm^2; LN reduced less)"
+- id: chen1968
+  type: journal-article
+  authors: ["F. S. Chen", "J. T. LaMacchia", "D. B. Fraser"]
+  title: "Holographic storage in lithium niobate"
+  container: "Applied Physics Letters"
+  volume: "13"
+  pages: "223-225"
+  issued: 1968-10-01
+  doi: 10.1063/1.1652580
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "holograms in LN are thermally erasable; damage becomes a recording medium"
+- id: chen1969
+  type: journal-article
+  authors: ["F. S. Chen"]
+  title: "Optically Induced Change of Refractive Indices in LiNbO3 and LiTaO3"
+  container: "Journal of Applied Physics"
+  volume: "40"
+  pages: "3389-3396"
+  issued: 1969-07-01
+  doi: 10.1063/1.1658195
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "Delta n_e up to 1e-3 (488 nm, 20 mW focused); charge-drift and retrapping mechanism"
+- id: glass1974
+  type: journal-article
+  authors: ["A. M. Glass", "D. von der Linde", "T. J. Negran"]
+  title: "High-voltage bulk photovoltaic effect and the photorefractive process in LiNbO3"
+  container: "Applied Physics Letters"
+  volume: "25"
+  pages: "233-235"
+  issued: 1974-08-15
+  doi: 10.1063/1.1655453
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "saturation voltages > 1000 V (about 1e5 V/cm)"
+- id: kukhtarev1978
+  type: journal-article
+  authors: ["N. V. Kukhtarev", "V. B. Markov", "S. G. Odulov", "M. S. Soskin", "V. L. Vinetskii"]
+  title: "Holographic storage in electrooptic crystals. I. Steady state"
+  container: "Ferroelectrics"
+  volume: "22"
+  pages: "949-960"
+  issued: 1978-01
+  doi: 10.1080/00150197908239450
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "band-transport model reference"
+  notes: "Crossref issue date 1978-01; widely cited as 1979 (DOI contains 1979)."
+- id: zhong1980
+  type: conference-abstract
+  authors: ["G. G. Zhong", "J. Jin", "Z. K. Wu"]
+  title: "Measurements of optically induced refractive-index damage of lithium niobate doped with different concentrations of MgO"
+  container: "11th International Quantum Electronics Conference (IQEC), 1980; J. Opt. Soc. Am. 70, 631 (1980) abstract"
+  issued: 1980-06
+  doi: null
+  biblio_check: "R07 (status P); volk2008 ref. [171] lists 'J. Opt. Soc. Am. p. 631 (1980)'"
+  content_read: "not read"
+  used_for: "priority of MgO:LN damage resistance (history only, no numbers)"
+  notes: "Title as commonly cited; not checked against the original. Use only for the priority note."
+- id: bryan1984
+  type: journal-article
+  authors: ["D. A. Bryan", "R. Gerson", "H. E. Tomaschke"]
+  title: "Increased optical damage resistance in lithium niobate"
+  container: "Applied Physics Letters"
+  volume: "44"
+  pages: "847-849"
+  issued: 1984-05-01
+  doi: 10.1063/1.94946
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: ">= 4.5 at.% MgO; 100x photoconductivity; Glass current not reduced; 0.1 vs 0.5 eV; 2.83 vs 2.87 um OH line"
+- id: furukawa1991
+  type: journal-article
+  authors: ["Y. Furukawa", "A. Yokotani", "T. Sasaki", "H. Yoshida", "K. Yoshida", "F. Nitanda", "M. Sato"]
+  title: "Investigation of bulk laser damage threshold of lithium niobate single crystals by Q-switched pulse laser"
+  container: "Journal of Applied Physics"
+  volume: "69"
+  pages: "3372-3374"
+  issued: 1991-03-01
+  doi: 10.1063/1.348537
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "14 J/cm^2 at 1.053 um, 1 ns, 1 mol% MgO; lower above 3 mol% MgO"
+  notes: "volk2008 p. 51 quotes the same result as 14.6 J/cm^2."
+- id: furukawa2000
+  type: journal-article
+  authors: ["Y. Furukawa", "K. Kitamura", "S. Takekawa", "A. Miyamoto", "M. Terao", "N. Suda"]
+  title: "Photorefraction in LiNbO3 as a function of [Li]/[Nb] and MgO concentrations"
+  container: "Applied Physics Letters"
+  volume: "77"
+  pages: "2494-2496"
+  issued: 2000-10-16
+  doi: 10.1063/1.1318721
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "NSLN ([Li]/[Nb] 0.993) less damage resistant than CLN; > 0.78 mol% MgO: no damage at 532 nm to 2 MW/cm^2"
+- id: furukawa2001
+  type: journal-article
+  authors: ["Y. Furukawa", "K. Kitamura", "A. Alexandrovski", "R. K. Route", "M. M. Fejer", "G. Foulon"]
+  title: "Green-induced infrared absorption in MgO doped LiNbO3"
+  container: "Applied Physics Letters"
+  volume: "78"
+  pages: "1970-1972"
+  issued: 2001-04-02
+  doi: 10.1063/1.1359137
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract; data via Volk & Wöhlecke Table 4.3 and Fig. 4.14 (P-comp)"
+  used_for: "GRIIRA threshold equals photorefraction threshold; Nb_Li polaron assignment; damage threshold table"
+
+# ---------- photorefraction in thin films ----------
+- id: jiang2017
+  type: journal-article
+  authors: ["H. Jiang", "R. Luo", "H. Liang", "X. Chen", "Y. Chen", "Q. Lin"]
+  title: "Fast response of photorefraction in lithium niobate microresonators"
+  container: "Optics Letters"
+  volume: "42"
+  pages: "3267"
+  issued: 2017-08-17
+  doi: 10.1364/OL.42.003267
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "photorefraction is fast in LN microresonators (title only)"
+- id: liang2017
+  type: journal-article
+  authors: ["H. Liang", "R. Luo", "Y. He", "H. Jiang", "Q. Lin"]
+  title: "High-quality lithium niobate photonic crystal nanocavities"
+  container: "Optica"
+  volume: "4"
+  pages: "1251"
+  issued: 2017-10-10
+  doi: 10.1364/OPTICA.4.001251
+  arxiv: "1706.08904"
+  biblio_check: crossref + arXiv 2026-10-25
+  content_read: "arXiv abstract"
+  used_for: "Q up to 1e5; 0.64 GHz/aJ (84 MHz/photon) photorefractive tuning; quenching"
+- id: sun2017
+  type: journal-article
+  authors: ["X. Sun", "H. Liang", "R. Luo", "W. C. Jiang", "X.-C. Zhang", "Q. Lin"]
+  title: "Nonlinear optical oscillation dynamics in high-Q lithium niobate microresonators"
+  container: "Optics Express"
+  volume: "25"
+  pages: "13504"
+  issued: 2017-06-06
+  doi: 10.1364/OE.25.013504
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "oscillation dynamics in LN microresonators (title only)"
+- id: xu2021oe
+  type: journal-article
+  authors: ["Yuntao Xu", "Mohan Shen", "Juanjuan Lu", "Joshua B. Surya", "Ayed Al Sayem", "Hong X. Tang"]
+  title: "Mitigating photorefractive effect in thin-film lithium niobate microring resonators"
+  container: "Optics Express"
+  volume: "29"
+  pages: "5497"
+  issued: 2021-02-04
+  doi: 10.1364/OE.418877
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "cladding strongly influences photorefraction; removing it mitigates"
+- id: xu2021ol
+  type: journal-article
+  authors: ["Yuntao Xu", "Ayed Al Sayem", "Chang-Ling Zou", "Linran Fan", "Risheng Cheng", "Hong X. Tang"]
+  title: "Photorefraction-induced Bragg scattering in cryogenic lithium niobate ring resonators"
+  container: "Optics Letters"
+  volume: "46"
+  pages: "432"
+  issued: 2021-01-15
+  doi: 10.1364/OL.414702
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "long-lived periodic space-charge field; reconfigurable mode splitting at cryogenic temperature"
+- id: ren2025
+  type: journal-article
+  authors: ["Xinyi Ren", "Chun-Ho Lee", "Kaiwen Xue", "Shaoyuan Ou", "Yue Yu", "Zaijun Chen", "Mengjie Yu"]
+  title: "Photorefractive and pyroelectric photonic memory and long-term stability in thin-film lithium niobate microresonators"
+  container: "npj Nanophotonics"
+  volume: "2"
+  pages: "1"
+  issued: 2025-01-07
+  doi: 10.1038/s44310-024-00052-3
+  arxiv: "2409.12354"
+  biblio_check: crossref + arXiv 2026-10-25
+  content_read: "arXiv abstract"
+  used_for: "z-cut TFLN; recovery > 10 h; orientation dependence; optical trimming"
+- id: hou2024
+  type: journal-article
+  authors: ["Jiankun Hou", "Jiefu Zhu", "Ruixin Ma", "Boyi Xue", "Yicheng Zhu", "Jintian Lin", "Xiaoshun Jiang", "Xianfeng Chen", "Ya Cheng", "Li Ge", "Yuanlin Zheng", "Wenjie Wan"]
+  title: "Subwavelength Photorefractive Grating in a Thin-Film Lithium Niobate Microcavity"
+  container: "Laser & Photonics Reviews"
+  volume: "18"
+  pages: "2301351"
+  issued: 2024-04-09
+  doi: 10.1002/lpor.202301351
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "standing-wave-written photorefractive grating; mode splitting; backward SHG QPM"
+- id: suntsov2026
+  type: journal-article
+  authors: ["S. Suntsov", "S. Schnippering", "K. Hasse", "D. Kip"]
+  title: "Photorefractive damage thresholds in Zn- and Zr-doped thin-film lithium niobate"
+  container: "APL Photonics"
+  volume: "11"
+  pages: "086117"
+  issued: 2026-08-01
+  doi: 10.1063/5.0336844
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "Zn 4.0 mol% and Zr 1.1 mol% surface concentration by in-diffusion; damage resistance up to 100x vs undoped TFLN; 600 nm z-cut planar guides"
+- id: lange2026
+  type: journal-article
+  authors: ["Nina A. Lange", "René Pollmann", "Michael Rüsing", "Michael Stefszky", "Maximilian Protte", "Raimund Ricken", "Laura Padberg", "Christof Eigner", "Tim J. Bartley", "Christine Silberhorn"]
+  title: "Photorefraction management in lithium niobate waveguides: High-temperature vs cryogenic solutions"
+  container: "Journal of Applied Physics"
+  volume: "139"
+  pages: "133105"
+  issued: 2026-04-01
+  doi: 10.1063/5.0324002
+  arxiv: "2601.15817"
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "high-temperature operation raises damage threshold; auxiliary light restores phase matching and reduces pyroelectric effects at cryogenic temperature"
+- id: kuznetsov2025
+  type: preprint
+  authors: ["Nikolai Kuznetsov", "Zihan Li", "Tobias J. Kippenberg"]
+  title: "Watt-level second harmonic generation in periodically poled thin-film lithium tantalate"
+  container: "arXiv"
+  issued: 2025-12-08
+  doi: null
+  arxiv: "2512.07968"
+  biblio_check: arXiv API 2026-10-25
+  content_read: "arXiv abstract"
+  used_for: "LN damage threshold limits TFLN SH output well below 1 W; PPLT > 1 W SH at 775 nm, 4.5 W pump, 7 mm"
+  notes: "Preprint; authors from arXiv metadata 2026-10-25."
+- id: he2019
+  type: journal-article
+  authors: ["Yang He", "Qi-Fan Yang", "Jingwei Ling", "Rui Luo", "Hanxiao Liang", "Mingxiao Li", "Boqiang Shen", "Heming Wang", "Kerry Vahala", "Qiang Lin"]
+  title: "Self-starting bi-chromatic LiNbO3 soliton microcomb"
+  container: "Optica"
+  volume: "6"
+  pages: "1138"
+  issued: 2019-08-30
+  doi: 10.1364/OPTICA.6.001138
+  arxiv: "1812.09610"
+  biblio_check: crossref + arXiv 2026-10-25
+  content_read: "arXiv abstract"
+  used_for: "photorefraction enables self-starting soliton mode locking and bi-directional switching"
+- id: lin2021
+  type: journal-article
+  authors: ["Z. Lin", "Z. Kang", "P. Xu", "Y. Tian", "S. He"]
+  title: "Turnkey generation of Kerr soliton microcombs on thin-film lithium niobate on insulator microresonators powered by the photorefractive effect"
+  container: "Optics Express"
+  volume: "29"
+  pages: "42932"
+  issued: 2021-12-08
+  doi: 10.1364/OE.446527
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "photorefractive index change opposite in sign to Kerr and thermal (ordinary polarization, numerical)"
+
+# ---------- GRIIRA, BLIIRA, polarons ----------
+- id: hirohashi2007
+  type: journal-article
+  authors: ["J. Hirohashi", "V. Pasiskevicius", "S. Wang", "F. Laurell"]
+  title: "Picosecond blue-light-induced infrared absorption in single-domain and periodically poled ferroelectrics"
+  container: "Journal of Applied Physics"
+  volume: "101"
+  pages: "033105"
+  issued: 2007-02-01
+  doi: 10.1063/1.2434007
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "ps BLIIRA lowest in KNbO3 and MgO:LN; periodic poling slightly increases it"
+- id: schirmer2009
+  type: journal-article
+  authors: ["O. F. Schirmer", "M. Imlau", "C. Merschjann", "B. Schoke"]
+  title: "Electron small polarons and bipolarons in LiNbO3"
+  container: "Journal of Physics: Condensed Matter"
+  volume: "21"
+  pages: "123201"
+  issued: 2009-03-03
+  doi: 10.1088/0953-8984/21/12/123201
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "polaron model review (pointer only; band values from volk2008 and schwesyg2011)"
+- id: imlau2015
+  type: journal-article
+  authors: ["M. Imlau", "H. Badorreck", "C. Merschjann"]
+  title: "Optical nonlinearities of small polarons in lithium niobate"
+  container: "Applied Physics Reviews"
+  volume: "2"
+  pages: "040606"
+  issued: 2015-12
+  doi: 10.1063/1.4931396
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "polaron review (pointer only)"
+
+# ---------- pyroelectricity ----------
+- id: savage1966
+  type: journal-article
+  authors: ["A. Savage"]
+  title: "Pyroelectricity and Spontaneous Polarization in LiNbO3"
+  container: "Journal of Applied Physics"
+  volume: "37"
+  pages: "3071-3072"
+  issued: 1966-07-01
+  doi: 10.1063/1.1703164
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "p = -4e-9 C/(cm^2 C) at 25 C; Ps decreases 3.7 uC/cm^2 over 25-450 C"
+- id: popescu2013
+  type: journal-article
+  authors: ["S. T. Popescu", "A. Petris", "V. I. Vlad"]
+  title: "Interferometric measurement of the pyroelectric coefficient in lithium niobate"
+  container: "Journal of Applied Physics"
+  volume: "113"
+  pages: "043101"
+  issued: 2013-01-22
+  doi: 10.1063/1.4788696
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "|p| about 95 uC/(m^2 K), congruent, interferometric"
+- id: bartholomaus1994
+  type: journal-article
+  authors: ["T. Bartholomäus", "K. Buse", "C. Deuper", "E. Krätzig"]
+  title: "Pyroelectric coefficients of LiNbO3 crystals of different compositions"
+  container: "physica status solidi (a)"
+  volume: "142"
+  pages: "55"
+  issued: 1994
+  doi: null
+  biblio_check: "schwesyg2011 ref. [30]; not checked against Crossref"
+  content_read: "not read"
+  used_for: "p3 = -6.4e-5 C/(m^2 K) (S via schwesyg2011 Eq. 2.17)"
+- id: cti1999
+  type: datasheet
+  authors: ["Crystal Technology Inc."]
+  title: "LiNbO3 material properties, data sheet DC-12 8/99"
+  issued: 1999-08
+  doi: null
+  biblio_check: "R06 register"
+  content_read: "data sheet values via a secondary compilation"
+  used_for: "p3 = -8.3e-5 C/(m^2 K) (V); dn_o/dT recomputed from its Sellmeier (derived from V)"
+- id: gopalan1998
+  type: journal-article
+  authors: ["V. Gopalan", "T. E. Mitchell", "Y. Furukawa", "K. Kitamura"]
+  title: "The role of nonstoichiometry in 180 deg domain switching of LiNbO3 crystals"
+  container: "Applied Physics Letters"
+  volume: "72"
+  pages: "1981-1983"
+  issued: 1998-04-20
+  doi: 10.1063/1.121491
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "Ps = 80 +/- 5 uC/cm^2"
+- id: jachalke2017
+  type: journal-article
+  authors: ["S. Jachalke", "E. Mehner", "H. Stöcker", "J. Hanzig", "M. Sonntag", "T. Weigel", "T. Leisegang", "D. C. Meyer"]
+  title: "How to measure the pyroelectric coefficient?"
+  container: "Applied Physics Reviews"
+  volume: "4"
+  pages: "021303"
+  issued: 2017-05-16
+  doi: 10.1063/1.4983118
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "measurement methods (pointer)"
+- id: lang2005
+  type: journal-article
+  authors: ["S. B. Lang"]
+  title: "Pyroelectricity: From Ancient Curiosity to Modern Imaging Tool"
+  container: "Physics Today"
+  volume: "58"
+  pages: "31-36"
+  issued: 2005-08-01
+  doi: 10.1063/1.2062916
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "background reading (no numbers)"
+- id: bulmer1986
+  type: journal-article
+  authors: ["C. H. Bulmer", "W. K. Burns", "S. C. Hiser"]
+  title: "Pyroelectric effects in LiNbO3 channel-waveguide devices"
+  container: "Applied Physics Letters"
+  volume: "48"
+  pages: "1036-1038"
+  issued: 1986-04-21
+  doi: 10.1063/1.96640
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "z-cut interferometers unstable; z-cut couplers and x-cut interferometers stable; field-dependent resistivity"
+- id: schwesyg2011josab
+  type: journal-article
+  authors: ["J. R. Schwesyg", "M. Falk", "C. R. Phillips", "D. H. Jundt", "K. Buse", "M. M. Fejer"]
+  title: "Pyroelectrically induced photorefractive damage in magnesium-doped lithium niobate crystals"
+  container: "Journal of the Optical Society of America B"
+  volume: "28"
+  pages: "1973"
+  issued: 2011-07-21
+  doi: 10.1364/JOSAB.28.001973
+  biblio_check: crossref 2026-10-25
+  content_read: "not read (thesis Ch. 5 read instead)"
+  used_for: "journal citation for pyro-induced damage in MgO:LN"
+- id: naranjo2005
+  type: journal-article
+  authors: ["B. Naranjo", "J. K. Gimzewski", "S. Putterman"]
+  title: "Observation of nuclear fusion driven by a pyroelectric crystal"
+  container: "Nature"
+  volume: "434"
+  pages: "1115-1117"
+  issued: 2005-04
+  doi: 10.1038/nature03575
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "scale demonstration (title only; crystal identity LiTaO3 per R02 OFS-12 note, not re-read)"
+- id: bourim2006
+  type: journal-article
+  authors: ["El Mostafa Bourim", "Chang-Wook Moon", "Seung-Woon Lee", "In Kyeong Yoo"]
+  title: "Investigation of pyroelectric electron emission from monodomain lithium niobate single crystals"
+  container: "Physica B: Condensed Matter"
+  volume: "383"
+  pages: "171-182"
+  issued: 2006-09
+  doi: 10.1016/j.physb.2006.02.034
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "heated monodomain LN emits electrons (title only)"
+  notes: "First author's given name is El Mostafa; the practitioner note's 'Mostafa et al. 2006' (heated z-cut LN exposing ZEP) very likely refers to this paper. Whether the paper mentions resist exposure was not checked (U)."
+
+# ---------- DC drift ----------
+- id: yamada1981
+  type: journal-article
+  authors: ["S. Yamada", "M. Minakata"]
+  title: "DC Drift Phenomena in LiNbO3 Optical Waveguide Devices"
+  container: "Japanese Journal of Applied Physics"
+  volume: "20"
+  pages: "733"
+  issued: 1981-04-01
+  doi: 10.1143/JJAP.20.733
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "short drift (seconds, buffer leakage) and long drift (hours, photorefraction)"
+- id: gee1985
+  type: journal-article
+  authors: ["C. M. Gee", "G. D. Thurmond", "H. Blauvelt", "H. W. Yen"]
+  title: "Minimizing dc drift in LiNbO3 waveguide devices"
+  container: "Applied Physics Letters"
+  volume: "47"
+  pages: "211-213"
+  issued: 1985-08-01
+  doi: 10.1063/1.96220
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "ITO buffer, about 20 Ohm/sq; drift < 0.3 % in 8 h; equivalent circuit"
+- id: nagata1996
+  type: journal-article
+  authors: ["Hirotoshi Nagata", "Junichiro Ichikawa", "Naoki Mitsugi", "Toshihiro Sakamoto", "Takashi Shinriki", "Hideki Honda", "Masanobu Kobayashi"]
+  title: "Improved Long-Term DC Drift in OH-Reduced Lithium Niobate Optical Intensity Modulators"
+  container: "Applied Optics"
+  volume: "35"
+  pages: "6828"
+  issued: 1996-12-01
+  doi: 10.1364/AO.35.006828
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "OH reduction improves long-term drift (title only)"
+- id: nagata2004
+  type: journal-article
+  authors: ["H. Nagata", "N. F. O'Brien", "W. R. Bosenberg", "G. L. Reiff", "K. R. Voisine"]
+  title: "DC-Voltage-Induced Thermal Shift of Bias Point in LiNbO3 Optical Modulators"
+  container: "IEEE Photonics Technology Letters"
+  volume: "16"
+  pages: "2460-2462"
+  issued: 2004-11
+  doi: 10.1109/LPT.2004.834928
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "DC-induced thermal bias shift (title only)"
+  notes: "Crossref title contains TeX markup for LiNbO3; markup removed here."
+- id: salvestrini2011
+  type: journal-article
+  authors: ["J. P. Salvestrini", "L. Guilbert", "M. Fontana", "M. Abarkan", "S. Gille"]
+  title: "Analysis and Control of the DC Drift in LiNbO3-Based Mach-Zehnder Modulators"
+  container: "Journal of Lightwave Technology"
+  volume: "29"
+  pages: "1522-1534"
+  issued: 2011-05
+  doi: 10.1109/JLT.2011.2136322
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "bulk MZM drift analysis (title only)"
+- id: holzgrafe2024
+  type: journal-article
+  authors: ["Jeffrey Holzgrafe", "Eric Puma", "Rebecca Cheng", "Hana Warner", "Amirhassan Shams-Ansari", "Raji Shankar", "Marko Lončar"]
+  title: "Relaxation of the electro-optic response in thin-film lithium niobate modulators"
+  container: "Optics Express"
+  volume: "32"
+  pages: "3619"
+  issued: 2024-01-19
+  doi: 10.1364/OE.507536
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "1 mHz-1 MHz EO response; enhancement 1-20 kHz; > 1e4 slowing by LN-metal interface control and anneal; heaters' drawbacks"
+- id: puma2022
+  type: conference-paper
+  authors: ["E. Puma", "R. Cheng", "J. Holzgrafe", "A. Shams-Ansari", "R. Shankar", "M. Lončar"]
+  title: "Mitigating Anomalous Sub-Megahertz Frequency Response of Electro-Optic Phase Modulators in X-Cut Lithium Niobate on Insulator"
+  container: "Conference on Lasers and Electro-Optics (CLEO) 2022, SF2O.1"
+  issued: 2022
+  doi: 10.1364/CLEO_SI.2022.SF2O.1
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "LN/metal interface preparation and forming-gas anneal improve sub-MHz response"
+- id: li2026photonics
+  type: journal-article
+  authors: ["Run Li", "Jinye Li", "Zongyu Lu", "Jiayu Huang", "Qianqian Jia", "Zichuan Xiang", "Jinlong Xiao", "Jianguo Liu"]
+  title: "Low-Frequency Time-Domain Response of Thin-Film Lithium Niobate Electro-Optic Modulator"
+  container: "Photonics"
+  volume: "13"
+  pages: "339"
+  issued: 2026-03-31
+  doi: 10.3390/photonics13040339
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "RC fit 11.9 ms cladded (positive drift) vs 88.6 us uncladded (negative); > 100x faster than bulk; intensity-dependent"
+  notes: "R08 recorded this paper without a DOI; DOI found here."
+- id: yeh2026
+  type: journal-article
+  authors: ["Matthew Yeh", "C. J. Xin", "Donald Witt", "David R. Barton", "Evelyn L. Hu", "Marko Lončar"]
+  title: "Hysteresis and Trap Emission in dc-Biased Integrated Lithium Niobate Electro-optic Modulators"
+  container: "Nano Letters"
+  volume: "26"
+  pages: "13450-13456"
+  issued: 2026-09-22
+  doi: 10.1021/acs.nanolett.6c03406
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "hysteresis reversible; charge trapping near the contact junction; active reset"
+- id: shi2025
+  type: journal-article
+  authors: ["Jiakang Shi", "Zhilin Ye", "Zhen Liu", "Zhong Yan", "Kunpeng Jia", "Liqiang Zhang", "Daohan Ge", "Shining Zhu"]
+  title: "Alleviation of DC drift in a thin-film lithium niobate modulator utilizing Ar+ ion milling"
+  container: "Optics Letters"
+  volume: "50"
+  pages: "1703"
+  issued: 2025-02-27
+  doi: 10.1364/OL.549975
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "no drift 1 h DC; > 40 GHz; stable 30 min at 4.5 V"
+- id: powell2024
+  type: journal-article
+  authors: ["K. Powell", "X. Li", "D. Assumpcao", "L. Magalhães", "N. Sinclair", "M. Lončar"]
+  title: "DC-stable electro-optic modulators using thin-film lithium tantalate"
+  container: "Optics Express"
+  volume: "32"
+  pages: "44115"
+  issued: 2024-11-19
+  doi: 10.1364/OE.538870
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "TFLT < 1 dB vs TFLN 5 dB over 46 h at 12.1 dBm"
+- id: alsayem2026
+  type: preprint
+  authors: ["Ayed Al Sayem", "Shiekh Zia Uddin", "Ting-Chen Hu", "Alaric Tate", "Mark Cappuzzo", "Rose Kopf", "Mark Earnshaw"]
+  title: "Stable thin-film lithium tantalate modulators operating at high temperature for uncooled operation"
+  container: "arXiv"
+  issued: 2026-04-30
+  doi: null
+  arxiv: "2604.27285"
+  biblio_check: arXiv API 2026-10-25
+  content_read: "arXiv abstract"
+  used_for: "TFLT DC-bias stable at 120 C (lithium tantalate, not niobate)"
+- id: lomonte2021
+  type: journal-article
+  authors: ["E. Lomonte", "M. A. Wolff", "F. Beutel", "S. Ferrari", "C. Schuck", "W. H. P. Pernice", "F. Lenzini"]
+  title: "Single-photon detection and cryogenic reconfigurability in lithium niobate nanophotonic circuits"
+  container: "Nature Communications"
+  volume: "12"
+  pages: "6847"
+  issued: 2021-11-25
+  doi: 10.1038/s41467-021-27205-8
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "bias-drift-free 12 h at cryogenic temperature"
+- id: warner2025
+  type: journal-article
+  authors: ["H. K. Warner", "Y. Zhao", "Y. Zhang", "M. Zhang", "M. Lončar"]
+  title: "DC-stable thin-film lithium niobate modulator at liquid nitrogen temperatures"
+  container: "Optics Letters"
+  volume: "50"
+  pages: "5398"
+  issued: 2025-08-25
+  doi: 10.1364/OL.571632
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "stable DC operation at liquid-nitrogen temperature"
+- id: lizy2024
+  type: conference-paper
+  authors: ["Zhuoyun Li", "Yang Chen", "Shuxiao Wang", "Mingbin Yu", "Xin Ou", "Yan Cai"]
+  title: "A Weak DC-Drift Silicon/Lithium Niobate Heterogeneous Integrated Electro-Optical Modulator"
+  container: "CLEO 2024, AM4J.2"
+  issued: 2024
+  doi: 10.1364/CLEO_AT.2024.AM4J.2
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "weak bias drift; V_pi L about 2.9 V cm; 176 Gb/s PAM4"
+- id: liu2026acs
+  type: journal-article
+  authors: ["Tianyi Liu", "Engjell Bebeti", "John N. Straguzzi", "Joyce K. S. Poon", "Wesley D. Sacher"]
+  title: "Visible and Near-Infrared Thin-Film Lithium Niobate Modulators with Thermo-Optic Bias"
+  container: "ACS Photonics"
+  volume: "13"
+  pages: "3951-3962"
+  issued: 2026-06-26
+  doi: 10.1021/acsphotonics.6c00668
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "thermo-optic biasing in practice (title only; optional cross-link)"
+- id: zhu2021
+  type: journal-article
+  authors: ["Di Zhu", "Linbo Shao", "Mengjie Yu", "Rebecca Cheng", "Boris Desiatov", "C. J. Xin", "Yaowen Hu", "Jeffrey Holzgrafe", "Soumya Ghosh", "Amirhassan Shams-Ansari", "Eric Puma", "Neil Sinclair", "Christian Reimer", "Mian Zhang", "Marko Lončar"]
+  title: "Integrated photonics on thin-film lithium niobate"
+  container: "Advances in Optics and Photonics"
+  volume: "13"
+  pages: "242"
+  issued: 2021-05-03
+  doi: 10.1364/AOP.411024
+  biblio_check: crossref 2026-10-25
+  content_read: "secondary use only"
+  used_for: "dn_e/dT 3.34e-5 quoting moretti2005 (S); out-diffusion hypothesis for thin-film coercive field (S)"
+
+# ---------- thermal ----------
+- id: moretti2005
+  type: journal-article
+  authors: ["L. Moretti", "M. Iodice", "F. G. Della Corte", "I. Rendina"]
+  title: "Temperature dependence of the thermo-optic coefficient of lithium niobate, from 300 to 515 K in the visible and infrared regions"
+  container: "Journal of Applied Physics"
+  volume: "98"
+  pages: "036101"
+  issued: 2005-08-01
+  doi: 10.1063/1.1988987
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (numbers via Zhu et al. 2021 and Schwesyg 2011, S)"
+  used_for: "dn/dT 632 and 1523 nm, 320-515 K"
+- id: jundt1997
+  type: journal-article
+  authors: ["D. H. Jundt"]
+  title: "Temperature-dependent Sellmeier equation for the index of refraction, n_e, in congruent lithium niobate"
+  container: "Optics Letters"
+  volume: "22"
+  pages: "1553"
+  issued: 1997-10-15
+  doi: 10.1364/OL.22.001553
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; coefficients via a secondary source (S)"
+  used_for: "dn_e/dT recomputed in R06 (C)"
+- id: carmon2004
+  type: journal-article
+  authors: ["T. Carmon", "L. Yang", "K. J. Vahala"]
+  title: "Dynamical thermal behavior and thermal self-stability of microcavities"
+  container: "Optics Express"
+  volume: "12"
+  pages: "4742"
+  issued: 2004-10-04
+  doi: 10.1364/OPEX.12.004742
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "thermal triangle and self-stability (title only)"
+- id: ling2020
+  type: journal-article
+  authors: ["J. Ling", "Y. He", "R. Luo", "M. Li", "H. Liang", "Q. Lin"]
+  title: "Athermal lithium niobate microresonator"
+  container: "Optics Express"
+  volume: "28"
+  pages: "21682"
+  issued: 2020-07-07
+  doi: 10.1364/OE.398363
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "TiO2 cladding cancels first-order TOC at 20 C; 0.37 pm/K^2; 0.33 nm over -10 to 50 C"
+- id: shim2026
+  type: journal-article
+  authors: ["Joonsup Shim", "Seonghun Kim", "Shengyuan Lu", "Jiayu Yang", "Seongjin Jeon", "SangHyeon Kim", "Marko Lončar", "Young-Ik Sohn"]
+  title: "Generalized Model of Anisotropic Thermo-Optic Response on Thin-Film Lithium Niobate Platform"
+  container: "ACS Photonics"
+  volume: "13"
+  pages: "2586-2596"
+  issued: 2026-04-20
+  doi: 10.1021/acsphotonics.6c00117
+  arxiv: "2601.00174"
+  biblio_check: crossref + arXiv 2026-10-25
+  content_read: "arXiv abstract"
+  used_for: "x-cut TFLN thermo-optic response depends on propagation angle and polarization"
+
+# ---------- Li out-diffusion and fabrication ----------
+- id: kaminow1973
+  type: journal-article
+  authors: ["I. P. Kaminow", "J. R. Carruthers", "E. H. Turner", "L. W. Stulz"]
+  title: "Thin-film LiNbO3 electro-optic light modulator"
+  container: "Applied Physics Letters"
+  volume: "22"
+  pages: "540-542"
+  issued: 1973-05-15
+  doi: 10.1063/1.1654500
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "out-diffused planar guide; 0.13 V^-1; 3.2 GHz; 0.2 mW/MHz"
+- id: carruthers1974
+  type: journal-article
+  authors: ["J. R. Carruthers", "I. P. Kaminow", "L. W. Stulz"]
+  title: "Diffusion Kinetics and Optical Waveguiding Properties of Outdiffused Layers in Lithium Niobate and Lithium Tantalate"
+  container: "Applied Optics"
+  volume: "13"
+  pages: "2333"
+  issued: 1974-10-01
+  doi: 10.1364/AO.13.002333
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "out-diffused layers studied as waveguides (title only)"
+- id: schmidt1974
+  type: journal-article
+  authors: ["R. V. Schmidt", "I. P. Kaminow"]
+  title: "Metal-diffused optical waveguides in LiNbO3"
+  container: "Applied Physics Letters"
+  volume: "25"
+  pages: "458-460"
+  issued: 1974-10-15
+  doi: 10.1063/1.1655547
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "Ti, V, Ni indiffusion; single-mode guides within about 1 um of the surface"
+- id: ranganath1977
+  type: journal-article
+  authors: ["T. R. Ranganath", "S. Wang"]
+  title: "Suppression of Li2O out-diffusion from Ti-diffused LiNbO3 optical waveguides"
+  container: "Applied Physics Letters"
+  volume: "30"
+  pages: "376-379"
+  issued: 1977-04-15
+  doi: 10.1063/1.89438
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "Li2O out-diffusion gives unwanted modes in y-cut Ti:LN; suppressed with Li2O"
+- id: miyazawa1977
+  type: journal-article
+  authors: ["S. Miyazawa", "R. Guglielmi", "A. Carenco"]
+  title: "A simple technique for suppressing Li2O out-diffusion in Ti:LiNbO3 optical waveguide"
+  container: "Applied Physics Letters"
+  volume: "31"
+  pages: "742-744"
+  issued: 1977-12-01
+  doi: 10.1063/1.89523
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "pre-anneal in Li2CO3 powder at 600 C for 72 h; single TE and TM modes at 632.8 nm"
+- id: burns1978
+  type: journal-article
+  authors: ["W. K. Burns", "C. H. Bulmer", "E. J. West"]
+  title: "Application of Li2O compensation techniques to Ti-diffused LiNbO3 planar and channel waveguides"
+  container: "Applied Physics Letters"
+  volume: "33"
+  pages: "70-72"
+  issued: 1978-07-01
+  doi: 10.1063/1.90149
+  biblio_check: "crossref bibliographic query 2026-10-25"
+  content_read: title
+  used_for: "Li2O compensation (title only)"
+- id: miyazawa1979
+  type: journal-article
+  authors: ["S. Miyazawa"]
+  title: "Ferroelectric domain inversion in Ti-diffused LiNbO3 optical waveguide"
+  container: "Journal of Applied Physics"
+  volume: "50"
+  pages: "4599-4603"
+  issued: 1979-07-01
+  doi: 10.1063/1.326568
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "domain-inversion layer on the Ti-diffused +c face; none on -c"
+- id: hua2015
+  type: journal-article
+  authors: ["Ping-Rang Hua", "Jia-Ji Dong", "Kun Ren", "Zhao-Xi Chen"]
+  title: "Erasure of ferroelectric domain inversion in Ti-diffused LiNbO3 optical waveguide by Li-rich vapor-transport equilibration"
+  container: "Journal of Alloys and Compounds"
+  volume: "626"
+  pages: "203-207"
+  issued: 2015-03
+  doi: 10.1016/j.jallcom.2014.12.001
+  biblio_check: "crossref bibliographic query 2026-10-25"
+  content_read: title
+  used_for: "Li-rich vapor undoes Ti-indiffusion domain inversion (title only)"
+- id: shams2022
+  type: journal-article
+  authors: ["Amirhassan Shams-Ansari", "Guanhao Huang", "Lingyan He", "Zihan Li", "Jeffrey Holzgrafe", "Marc Jankowski", "Mikhail Churaev", "Prashanta Kharel", "Rebecca Cheng", "Di Zhu", "Neil Sinclair", "Boris Desiatov", "Mian Zhang", "Tobias J. Kippenberg", "Marko Lončar"]
+  title: "Reduced material loss in thin-film lithium niobate waveguides"
+  container: "APL Photonics"
+  volume: "7"
+  pages: "081301"
+  issued: 2022-08-01
+  doi: 10.1063/5.0095146
+  biblio_check: crossref 2026-10-25
+  content_read: abstract
+  used_for: "post-fabrication anneal raises material-limited Q to about 1.6e8 (0.2 dB/m)"
+- id: nassau1966
+  type: journal-article
+  authors: ["K. Nassau", "H. J. Levinstein", "G. M. Loiacono"]
+  title: "Ferroelectric lithium niobate. 1. Growth, domain structure, dislocations and etching"
+  container: "Journal of Physics and Chemistry of Solids"
+  volume: "27"
+  pages: "983-988"
+  issued: 1966-06
+  doi: 10.1016/0022-3697(66)90070-9
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "domain etching (title only)"
+- id: barry1998
+  type: journal-article
+  authors: ["I. E. Barry", "G. W. Ross", "P. G. R. Smith", "R. W. Eason", "G. Cook"]
+  title: "Microstructuring of lithium niobate using differential etch-rate between inverted and non-inverted ferroelectric domains"
+  container: "Materials Letters"
+  volume: "37"
+  pages: "246-254"
+  issued: 1998-11
+  doi: 10.1016/S0167-577X(98)00100-1
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "domain-selective etching (title only)"
+- id: sones2002
+  type: journal-article
+  authors: ["C. L. Sones", "S. Mailis", "W. S. Brocklesby", "R. W. Eason", "J. R. Owen"]
+  title: "Differential etch rates in z-cut LiNbO3 for variable HF/HNO3 concentrations"
+  container: "Journal of Materials Chemistry"
+  volume: "12"
+  pages: "295-298"
+  issued: 2001-11-29
+  doi: 10.1039/b106279b
+  biblio_check: crossref 2026-10-25
+  content_read: title
+  used_for: "face-dependent etch rate in HF/HNO3 (title only)"
+  notes: "Issue year 2002; Crossref issued date 2001-11-29 (online)."
+
+# ---------- practitioner notes (author's public blog; cited without links) ----------
+- id: blog-ln-properties
+  type: practitioner-note
+  authors: ["Wentao Jiang"]
+  title: "LN properties (tutorial notes)"
+  issued: 2018-04-28
+  doi: null
+  biblio_check: "R02 item A1; public post text read 2026-10-25"
+  content_read: "full text"
+  used_for: "photorefraction notes, ZEP-on-heated-z-cut note (U), patterning notes, HF -c/+c section and post-HF SEMs"
+  notes: "Entries dated to 2020-01-27; imported 2025. Contains third-party screenshots that must not be reused."
+- id: blog-hardmask-2018
+  type: practitioner-note
+  authors: ["Wentao Jiang"]
+  title: "Si hardmask pattern test"
+  issued: 2018-08-20
+  doi: null
+  biblio_check: "R02 item A11; public post text read 2026-10-25"
+  content_read: full text
+  used_for: "a-Si hard mask cracking under Ar+ milling, mask run-out"
+  notes: "Sample ids, tool names, recipe names and people in the note are not reproduced."
+- id: blog-ebl-2024
+  type: practitioner-note
+  authors: ["Wentao Jiang"]
+  title: "Yapping on e-beam lithography"
+  issued: 2024-10-13
+  doi: null
+  biblio_check: "R02 item B1; public post text read 2026-10-25"
+  content_read: "selected (discharge layer and mounting sections)"
+  used_for: "5-10 nm Al discharge layer; Ti discharge layer cross-linking resist; clamp contact"
+- id: blog-ofs79
+  type: practitioner-note
+  authors: ["Wentao Jiang"]
+  title: "Weekly OFS 79: Pyroelectric effect challenges in lithium niobate devices"
+  issued: 2025-12-29
+  doi: null
+  biblio_check: "R02 OFS-79; public post text read 2026-10-25"
+  content_read: "full section"
+  used_for: "hotplate bake failures, discharge paths, z-cut worse, 4 K ESD between chips, released x-cut collapse and Al shorting fix"
+  notes: "The 4 K ESD and 100 kV heating examples in the post cite social-media posts, not papers; treated as practitioner reports."

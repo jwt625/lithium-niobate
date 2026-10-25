@@ -1,0 +1,45 @@
+{
+  "citation": "H. J. Levinstein, A. A. Ballman, R. T. Denton, et al., \"Reduction of the Susceptibility to Optically Induced Index Inhomogeneities in LiTaO3 and LiNbO3\", Journal of Applied Physics 38, 3101-3102, (1967) doi:10.1063/1.1710070",
+  "link": "https://doi.org/10.1063/1.1710070",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "H. J. Levinstein"
+      },
+      {
+        "literal": "A. A. Ballman"
+      },
+      {
+        "literal": "R. T. Denton"
+      },
+      {
+        "literal": "A. Ashkin"
+      },
+      {
+        "literal": "J. M. Dziedzic"
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1710070",
+    "id": "levinstein1967",
+    "issue": "8",
+    "issued": "1967-07-01",
+    "page": "3101-3102",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Reduction of the Susceptibility to Optically Induced Index Inhomogeneities in LiTaO3 and LiNbO3",
+    "type": "article-journal",
+    "volume": "38"
+  }
+}

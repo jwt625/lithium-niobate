@@ -1,0 +1,42 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "space-group-paraelectric",
+    "variant": "unspecified"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "default": true,
+      "id": "space-group-paraelectric/unspecified/boysen1994",
+      "kind": "scalar",
+      "name": "Space group (paraelectric phase, above Tc)",
+      "notes": "volk2008 p. 2 prints R3m without a reference (conflict); the CIF value is kept.",
+      "property": "space-group-paraelectric",
+      "provenance": {
+        "locator": "COD 2101175-2101185 high-temperature entries",
+        "source_id": "boysen1994",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "-",
+        "ucum": "1"
+      },
+      "value_text": "R-3c (No. 167)",
+      "variant": "unspecified"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

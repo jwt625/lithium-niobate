@@ -1,0 +1,31 @@
+{
+  "citation": "Heinrich Rose, \"Ueber die Zusammensetzung der Tantalite (session of 1844-10-31)\", Bericht uber die zur Bekanntmachung geeigneten Verhandlungen der Koniglich Preussischen Akademie der Wissenschaften zu Berlin, 1844, 361-364, (1844) https://archive.org/details/BerichtUberDieZurBekanntmachung1844",
+  "link": "https://archive.org/details/BerichtUberDieZurBekanntmachung1844",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Heinrich Rose"
+      }
+    ],
+    "container_title": "Bericht uber die zur Bekanntmachung geeigneten Verhandlungen der Koniglich Preussischen Akademie der Wissenschaften zu Berlin, 1844",
+    "id": "rose1844bericht",
+    "issued": "1844",
+    "page": "361-364",
+    "read": "Scan read, 2026-10-25",
+    "title": "Ueber die Zusammensetzung der Tantalite (session of 1844-10-31)",
+    "type": "webpage",
+    "url": "https://archive.org/details/BerichtUberDieZurBekanntmachung1844"
+  }
+}

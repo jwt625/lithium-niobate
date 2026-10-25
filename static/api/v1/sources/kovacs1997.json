@@ -1,0 +1,51 @@
+{
+  "citation": "L. Kovács, G. Ruschhaupt, K. Polgár, et al., \"Composition dependence of the ultraviolet absorption edge in lithium niobate\", Applied Physics Letters 70, 2801, (1997) doi:10.1063/1.119056",
+  "link": "https://doi.org/10.1063/1.119056",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Kovács",
+        "given": "L."
+      },
+      {
+        "family": "Ruschhaupt",
+        "given": "G."
+      },
+      {
+        "family": "Polgár",
+        "given": "K."
+      },
+      {
+        "family": "Corradi",
+        "given": "G."
+      },
+      {
+        "family": "Wöhlecke",
+        "given": "M."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.119056",
+    "id": "kovacs1997",
+    "issued": "1997",
+    "page": "2801",
+    "read": "abstract only; UV-edge formula read in volk2008 Eqs. (6.5)-(6.6), Fig. 6.4 credits kovacs1997",
+    "title": "Composition dependence of the ultraviolet absorption edge in lithium niobate",
+    "type": "article-journal",
+    "volume": "70"
+  }
+}

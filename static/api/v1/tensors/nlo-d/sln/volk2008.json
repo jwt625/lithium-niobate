@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "nlo-d",
+    "variant": "sln"
+  },
+  "record": {
+    "conditions": {
+      "note": "fundamental 1.06 um",
+      "wavelength_nm": 1060
+    },
+    "dk_scale": "legacy",
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -2.5,
+          5.0
+        ],
+        [
+          -2.5,
+          0.0,
+          0.0
+        ],
+        [
+          5.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -2.5,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.5,
+          5.0
+        ],
+        [
+          0.0,
+          5.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          5.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          42.0
+        ]
+      ]
+    ],
+    "id": "nlo-d/sln/volk2008",
+    "independent": {
+      "d22": {
+        "value": 2.5
+      },
+      "d31": {
+        "value": 5
+      },
+      "d33": {
+        "value": 42
+      }
+    },
+    "kind": "tensor",
+    "name": "Second-order nonlinear optical coefficients",
+    "notes": "Legacy scale.",
+    "provenance": {
+      "locator": "Table 1.2, p. 4",
+      "original_reference": "Nikogosyan 2005",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "d (SHG)",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "d31",
+          "-d22"
+        ],
+        [
+          "-d22",
+          "d22",
+          "0",
+          "d31",
+          "0",
+          "0"
+        ],
+        [
+          "d31",
+          "d31",
+          "d33",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "Kleinman symmetry: d15 = d24 = d31",
+        "d16 = d21 = -d22",
+        "d32 = d31"
+      ]
+    },
+    "tensor": "nlo-d",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "variant": "sln",
+    "variant_note": "near-stoichiometric",
+    "voigt": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        5.0,
+        -2.5
+      ],
+      [
+        -2.5,
+        2.5,
+        0.0,
+        5.0,
+        0.0,
+        0.0
+      ],
+      [
+        5.0,
+        5.0,
+        42.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "d_ijk = d_iJ, J = V(jk) (contracted SHG convention)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

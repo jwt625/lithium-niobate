@@ -1,0 +1,42 @@
+# Crystal in hand (scene src/lib/scenes/crystal-in-hand.ts): Czochralski boule and wafer.
+# Every value: {value, unit, status, source, locator, analog, note}.
+#   status reported | derived | template (process-flow.yaml vocabulary, R13); template values carry the rationale in `note`.
+#   analog = true when the value comes from a growth or wafer spec other than an LNOI anchor paper (process-flow.yaml rule).
+# Source keys: content/chapters/05-making/refs.yaml; research-note rows R0n:row. Lengths in mm unless stated.
+# Built into src/lib/scenes/generated/scene-data.ts by assets3d/build_scene_data.py (do not edit the generated file).
+
+[meta]
+id = "crystal"
+date = "2026-10-25"
+scene_unit = "mm"
+
+[boule]
+body_diameter = { value = 153, unit = "mm", status = "reported", source = "wang2020cryst", locator = "via chen2021molecules Table 1 (process-flow.yaml s03 crystal_diameter)", analog = true }
+body_length = { value = 110, unit = "mm", status = "reported", source = "wang2020cryst", locator = "via chen2021molecules Table 1 (process-flow.yaml s03 body_length)", analog = true }
+shoulder_angle = { value = 45, unit = "deg", status = "template", note = "process-flow.yaml s03 shoulder_and_tail_angles: drawn 45 deg, no source (R05 A02 N/A); angle measured from the growth axis" }
+tail_angle = { value = 45, unit = "deg", status = "template", note = "same template as the shoulder (process-flow.yaml s03)" }
+tail_end_diameter = { value = 24, unit = "mm", status = "template", note = "no source; the tail cone is truncated with a rounded end so it reads as a grown tail, not a point" }
+seed_diameter = { value = 10, unit = "mm", status = "template", note = "no source; thin enough to read as a seed next to a 153 mm body" }
+seed_length = { value = 34, unit = "mm", status = "template", note = "no source; display stub of the seed above the shoulder" }
+growth_axis = { value = "wafer normal of the selected cut", unit = "", status = "template", note = "drawn so that full-diameter wafers can be sliced perpendicular to the boule axis; production seed orientations are not sourced (process-flow.yaml s03 seed_orientation, open-questions Q2)" }
+lathe_segments = { value = 96, unit = "", status = "template", note = "display tessellation, not a dimension" }
+
+[wafer]
+diameter = { value = 150, unit = "mm", status = "reported", source = "R09:S3", locator = "Sumitomo Metal Mining 6-inch LN 128 deg Y spec (F05-03)", analog = true }
+thickness = { value = 0.5, unit = "mm", status = "reported", source = "R09:S3", locator = "500 um at 6 inch (F05-03)", analog = true }
+primary_flat_length = { value = 48, unit = "mm", status = "template", note = "LN vendor flat specs not sourced (open-questions Q4); scaled from the process-flow.yaml s05 template (32 mm on 100 mm) to 150 mm" }
+secondary_flat_length = { value = 24, unit = "mm", status = "template", note = "not sourced; half the primary so the orientation key reads; presence and length are vendor-specific" }
+secondary_flat_angle = { value = 90, unit = "deg", status = "template", note = "not sourced; counter-clockwise from the primary flat seen from the polished (+normal) face" }
+primary_flat_normal = { value = "x-cut: +Z; z-cut: +Y", unit = "", status = "template", note = "not sourced; the flat marks one in-plane crystal axis, which axis and sign is vendor-specific" }
+edge_segments = { value = 128, unit = "", status = "template", note = "display tessellation, not a dimension" }
+
+[lattice]
+cell_source = { value = "linbo3-cell.json", unit = "", status = "reported", source = "hsu1997", locator = "COD 2101845 via scripts/gen_cell.py (static/data/linbo3-cell.json)", analog = false }
+block = { value = [2, 2, 1], unit = "cells", status = "template", note = "display block of conventional hexagonal cells shown at the lattice zoom level" }
+radius_Nb = { value = 0.42, unit = "Angstrom", status = "template", note = "display radius shared with the VISUAL cell (src/lib/figures/lattice.ts RV), not an ionic radius" }
+radius_Li = { value = 0.36, unit = "Angstrom", status = "template", note = "display radius shared with the VISUAL cell, not an ionic radius" }
+radius_O = { value = 0.30, unit = "Angstrom", status = "template", note = "display radius shared with the VISUAL cell, not an ionic radius" }
+
+[look]
+tint = { value = "#f2e6bf", unit = "sRGB", status = "template", note = "pale straw; congruent LN tint not sourced (R12 'verify', DevLog-003b --v-ln)" }
+attenuation_distance = { value = 220, unit = "mm", status = "template", note = "sets how strongly the tint deepens with path length; no absorption spectrum sourced for the visible" }

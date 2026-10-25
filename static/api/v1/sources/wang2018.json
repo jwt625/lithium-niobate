@@ -1,0 +1,62 @@
+{
+  "citation": "Cheng Wang, Mian Zhang, Xi Chen, et al., \"Integrated lithium niobate electro-optic modulators operating at CMOS-compatible voltages\", Nature 562, 101-104, (2018) doi:10.1038/s41586-018-0551-y",
+  "link": "https://doi.org/10.1038/s41586-018-0551-y",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Cheng"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Chen",
+        "given": "Xi"
+      },
+      {
+        "family": "Bertrand",
+        "given": "Maxime"
+      },
+      {
+        "family": "Shams-Ansari",
+        "given": "Amirhassan"
+      },
+      {
+        "family": "Chandrasekhar",
+        "given": "Sethumadhavan"
+      },
+      {
+        "family": "Winzer",
+        "given": "Peter"
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Nature",
+    "doi": "10.1038/s41586-018-0551-y",
+    "id": "wang2018",
+    "issue": "7725",
+    "issued": "2018-09-24",
+    "page": "101-104",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Integrated lithium niobate electro-optic modulators operating at CMOS-compatible voltages",
+    "type": "article-journal",
+    "volume": "562"
+  }
+}

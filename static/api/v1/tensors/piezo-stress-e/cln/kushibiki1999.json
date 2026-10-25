@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "piezo-stress-e",
+    "variant": "cln"
+  },
+  "record": {
+    "default": true,
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -2.407,
+          3.655
+        ],
+        [
+          -2.407,
+          0.0,
+          0.0
+        ],
+        [
+          3.655,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -2.407,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.407,
+          3.655
+        ],
+        [
+          0.0,
+          3.655,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.328,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.328,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.894
+        ]
+      ]
+    ],
+    "id": "piezo-stress-e/cln/kushibiki1999",
+    "independent": {
+      "e15": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.022
+        },
+        "value": 3.655
+      },
+      "e22": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.015
+        },
+        "value": 2.407
+      },
+      "e31": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.032
+        },
+        "value": 0.328
+      },
+      "e33": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.054
+        },
+        "value": 1.894
+      }
+    },
+    "kind": "tensor",
+    "name": "Piezoelectric stress constants",
+    "provenance": {
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "e",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "e15",
+          "-e22"
+        ],
+        [
+          "-e22",
+          "e22",
+          "0",
+          "e15",
+          "0",
+          "0"
+        ],
+        [
+          "e31",
+          "e31",
+          "e33",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "e16 = -e22",
+        "e21 = -e22",
+        "e24 = e15",
+        "e32 = e31"
+      ]
+    },
+    "tensor": "piezo-stress-e",
+    "unit": {
+      "display": "C/m^2",
+      "qudt": "http://qudt.org/vocab/unit/C-PER-M2",
+      "ucum": "C/m2"
+    },
+    "variant": "cln",
+    "variant_note": "SAW-grade congruent",
+    "voigt": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.655,
+        -2.407
+      ],
+      [
+        -2.407,
+        2.407,
+        0.0,
+        3.655,
+        0.0,
+        0.0
+      ],
+      [
+        0.328,
+        0.328,
+        1.894,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "e_ijk = e_iJ, J = V(jk)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

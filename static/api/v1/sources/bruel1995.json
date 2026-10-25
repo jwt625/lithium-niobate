@@ -1,0 +1,34 @@
+{
+  "citation": "M. Bruel, \"Silicon on insulator material technology\", Electronics Letters 31, 1201-1202, (1995) doi:10.1049/el:19950805",
+  "link": "https://doi.org/10.1049/el:19950805",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Bruel",
+        "given": "M."
+      }
+    ],
+    "container_title": "Electronics Letters",
+    "doi": "10.1049/el:19950805",
+    "id": "bruel1995",
+    "issue": "14",
+    "issued": "1995-07-06",
+    "page": "1201-1202",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Silicon on insulator material technology",
+    "type": "article-journal",
+    "volume": "31"
+  }
+}

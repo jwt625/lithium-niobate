@@ -1,0 +1,39 @@
+{
+  "citation": "T. Fujiwara, S. Sato, H. Mori, \"Wavelength dependence of photorefractive effect in Ti-indiffused LiNbO3 waveguides\", Applied Physics Letters 54, 975-977, (1989) doi:10.1063/1.101421",
+  "link": "https://doi.org/10.1063/1.101421",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "T. Fujiwara"
+      },
+      {
+        "literal": "S. Sato"
+      },
+      {
+        "literal": "H. Mori"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.101421",
+    "id": "fujiwara1989a",
+    "issue": "11",
+    "issued": "1989-03-13",
+    "page": "975-977",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Wavelength dependence of photorefractive effect in Ti-indiffused LiNbO3 waveguides",
+    "type": "article-journal",
+    "volume": "54"
+  }
+}

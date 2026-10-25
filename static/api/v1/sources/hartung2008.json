@@ -1,0 +1,48 @@
+{
+  "citation": "Holger Hartung, Ernst-Berhard Kley, Andreas Tünnermann, et al., \"Fabrication of ridge waveguides in zinc-substituted lithium niobate by means of ion-beam enhanced etching\", Optics Letters 33, 2320, (2008) doi:10.1364/ol.33.002320",
+  "link": "https://doi.org/10.1364/ol.33.002320",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Holger Hartung"
+      },
+      {
+        "literal": "Ernst-Berhard Kley"
+      },
+      {
+        "literal": "Andreas Tünnermann"
+      },
+      {
+        "literal": "Thomas Gischkat"
+      },
+      {
+        "literal": "Frank Schrempel"
+      },
+      {
+        "literal": "Werner Wesch"
+      }
+    ],
+    "container_title": "Optics Letters",
+    "doi": "10.1364/ol.33.002320",
+    "id": "hartung2008",
+    "issue": "20",
+    "issued": "2008-10-15",
+    "page": "2320",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Fabrication of ridge waveguides in zinc-substituted lithium niobate by means of ion-beam enhanced etching",
+    "type": "article-journal",
+    "volume": "33"
+  }
+}

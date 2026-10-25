@@ -1,0 +1,39 @@
+{
+  "citation": "E. G. Spencer, P. V. Lenzo, K. Nassau, \"ELASTIC WAVE PROPAGATION IN LITHIUM NIOBATE\", Applied Physics Letters 7, 67-69, (1965) doi:10.1063/1.1754303",
+  "link": "https://doi.org/10.1063/1.1754303",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "E. G. Spencer"
+      },
+      {
+        "literal": "P. V. Lenzo"
+      },
+      {
+        "literal": "K. Nassau"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754303",
+    "id": "spencer1965",
+    "issue": "3",
+    "issued": "1965-08-01",
+    "page": "67-69",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "ELASTIC WAVE PROPAGATION IN LITHIUM NIOBATE",
+    "type": "article-journal",
+    "volume": "7"
+  }
+}

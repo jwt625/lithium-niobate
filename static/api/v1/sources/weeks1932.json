@@ -1,0 +1,33 @@
+{
+  "citation": "Mary Elvira Weeks, \"The discovery of the elements. IX. Three alkali metals: Potassium, sodium, and lithium\", Journal of Chemical Education 9, 1035, (1932) doi:10.1021/ed009p1035",
+  "link": "https://doi.org/10.1021/ed009p1035",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Mary Elvira Weeks"
+      }
+    ],
+    "container_title": "Journal of Chemical Education",
+    "doi": "10.1021/ed009p1035",
+    "id": "weeks1932",
+    "issue": "6",
+    "issued": "1932-06",
+    "page": "1035",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "The discovery of the elements. IX. Three alkali metals: Potassium, sodium, and lithium",
+    "type": "article-journal",
+    "volume": "9"
+  }
+}

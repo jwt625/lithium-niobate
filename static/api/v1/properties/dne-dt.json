@@ -1,0 +1,204 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1364/OL.22.001553",
+      "https://doi.org/10.1063/1.1988987"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermo-optic coefficient, extraordinary of lithium niobate (LiNbO3): 5 provenance-tagged value(s) from 2 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/dne-dt.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/dne-dt.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermo-optic coefficient, extraordinary"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermo-optic coefficient, extraordinary",
+    "url": "https://lithium-niobate.com/api/v1/properties/dne-dt.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "dn_e/dT (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 3.75e-05
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 5,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "dne-dt"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 1064
+      },
+      "id": "dne-dt/cln/jundt1997-1064nm",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, extraordinary",
+      "property": "dne-dt",
+      "provenance": {
+        "derivation": "derivative of the Jundt 1997 n_e(T) Sellmeier at 25 C; coefficients status S (via a secondary source)",
+        "source_id": "jundt1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "dn_e/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 4.01e-05,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 1550
+      },
+      "default": true,
+      "id": "dne-dt/cln/jundt1997-1550nm",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, extraordinary",
+      "property": "dne-dt",
+      "provenance": {
+        "derivation": "derivative of the Jundt 1997 n_e(T) Sellmeier at 25 C; coefficients status S (via a secondary source)",
+        "source_id": "jundt1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "dn_e/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 3.75e-05,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 633
+      },
+      "id": "dne-dt/cln/jundt1997-633nm",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, extraordinary",
+      "property": "dne-dt",
+      "provenance": {
+        "derivation": "derivative of the Jundt 1997 n_e(T) Sellmeier at 25 C; coefficients status S (via a secondary source)",
+        "source_id": "jundt1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "dn_e/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 4.89e-05,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": null,
+        "temperature_text": "300 K",
+        "wavelength_nm": 1523
+      },
+      "id": "dne-dt/cln/moretti2005-1523nm",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, extraordinary",
+      "notes": "Quoted by zhu2021; moretti2005's own table not read.",
+      "property": "dne-dt",
+      "provenance": {
+        "source_id": "moretti2005",
+        "status": "S",
+        "transcribed": "2026-10-25",
+        "via": "zhu2021"
+      },
+      "public": true,
+      "symbol": "dn_e/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 3.34e-05,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "300 K",
+        "wavelength_nm": 632
+      },
+      "id": "dne-dt/cln/moretti2005-632nm-300k",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, extraordinary",
+      "notes": "16% below the Jundt-derived value at 633 nm.",
+      "property": "dne-dt",
+      "provenance": {
+        "derivation": "dn_e/dT = (-2.6 + 22.4e-3 T) x 1.0e-5 per K evaluated at T = 300 K (T in K inferred); formula status S",
+        "locator": "schwesyg2011 Eqs. (2.26)-(2.27)",
+        "source_id": "moretti2005",
+        "status": "C",
+        "transcribed": "2026-10-25",
+        "via": "schwesyg2011"
+      },
+      "public": true,
+      "symbol": "dn_e/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 4.12e-05,
+      "variant": "cln"
+    }
+  ]
+}

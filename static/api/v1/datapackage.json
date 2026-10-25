@@ -1,0 +1,421 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+  "contributors": [
+    {
+      "roles": [
+        "creator"
+      ],
+      "title": "Wentao Jiang"
+    }
+  ],
+  "description": "Provenance-tagged LiNbO3 property values (one source per record), dispersion grids and provisional device records. Custom field property unit_ucum gives the UCUM unit of each field; 'row:unit_ucum' means the unit is given per row in the unit_ucum column.",
+  "homepage": "https://lithium-niobate.com",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "name": "lithium-niobate-properties",
+  "resources": [
+    {
+      "description": "Scalar property records, one row per value (long format; unit per row).",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "properties",
+      "path": "properties.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "property",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "symbol",
+            "type": "string"
+          },
+          {
+            "name": "variant",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "unit_ucum": "row:unit_ucum"
+          },
+          {
+            "name": "min",
+            "type": "number",
+            "unit_ucum": "row:unit_ucum"
+          },
+          {
+            "name": "max",
+            "type": "number",
+            "unit_ucum": "row:unit_ucum"
+          },
+          {
+            "name": "value_text",
+            "type": "string"
+          },
+          {
+            "name": "uncertainty",
+            "type": "string",
+            "unit_ucum": "row:unit_ucum"
+          },
+          {
+            "name": "unit_ucum",
+            "type": "string"
+          },
+          {
+            "name": "unit_display",
+            "type": "string"
+          },
+          {
+            "name": "temperature_C",
+            "type": "number",
+            "unit_ucum": "Cel"
+          },
+          {
+            "name": "temperature_text",
+            "type": "string"
+          },
+          {
+            "name": "wavelength_nm",
+            "type": "number",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "mechanical_boundary",
+            "type": "string"
+          },
+          {
+            "name": "electrical_boundary",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "doi",
+            "type": "string"
+          },
+          {
+            "name": "locator",
+            "type": "string"
+          },
+          {
+            "name": "default",
+            "type": "boolean"
+          },
+          {
+            "name": "notes",
+            "type": "string"
+          }
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "description": "Independent tensor components (point group 3m), one row per component.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "tensor-components",
+      "path": "tensors.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "record_id",
+            "type": "string"
+          },
+          {
+            "name": "tensor",
+            "type": "string"
+          },
+          {
+            "name": "variant",
+            "type": "string"
+          },
+          {
+            "name": "component",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "unit_ucum": "row:unit_ucum"
+          },
+          {
+            "name": "uncertainty",
+            "type": "number",
+            "unit_ucum": "row:unit_ucum"
+          },
+          {
+            "name": "unit_ucum",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          },
+          {
+            "name": "source_id",
+            "type": "string"
+          },
+          {
+            "name": "via",
+            "type": "string"
+          },
+          {
+            "name": "frame_convention",
+            "type": "string"
+          },
+          {
+            "name": "default",
+            "type": "boolean"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Provisional device-performance records, one row per numeric value.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "records",
+      "path": "records.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "name": "metric",
+            "type": "string"
+          },
+          {
+            "name": "platform",
+            "type": "string"
+          },
+          {
+            "name": "quantity",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "unit_ucum": "row:unit_ucum"
+          },
+          {
+            "name": "unit_ucum",
+            "type": "string"
+          },
+          {
+            "name": "qualifier",
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "type": "string"
+          },
+          {
+            "name": "first_author",
+            "type": "string"
+          },
+          {
+            "name": "venue",
+            "type": "string"
+          },
+          {
+            "name": "doi",
+            "type": "string"
+          },
+          {
+            "name": "arxiv",
+            "type": "string"
+          },
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "verification",
+            "type": "string"
+          },
+          {
+            "name": "highest_found",
+            "type": "boolean"
+          }
+        ]
+      }
+    },
+    {
+      "description": "n(lambda) at 24.5 C, 1 nm steps, from gayer2008-mgo1-sln-e.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "index-gayer2008-mgo1-sln-e",
+      "path": "grids/index/gayer2008-mgo1-sln-e/T24.5C.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lambda_nm",
+            "type": "integer",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "unit_ucum": "1"
+          }
+        ]
+      }
+    },
+    {
+      "description": "n(lambda) at 24.5 C, 1 nm steps, from gayer2008-mgo5-e.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "index-gayer2008-mgo5-e",
+      "path": "grids/index/gayer2008-mgo5-e/T24.5C.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lambda_nm",
+            "type": "integer",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "unit_ucum": "1"
+          }
+        ]
+      }
+    },
+    {
+      "description": "n(lambda) at 24.5 C, 1 nm steps, from gayer2008-mgo5-o.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "index-gayer2008-mgo5-o",
+      "path": "grids/index/gayer2008-mgo5-o/T24.5C.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lambda_nm",
+            "type": "integer",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "unit_ucum": "1"
+          }
+        ]
+      }
+    },
+    {
+      "description": "n(lambda) at 21 C, 1 nm steps, from zelmon1997-cln-e.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "index-zelmon1997-cln-e",
+      "path": "grids/index/zelmon1997-cln-e/T21C.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lambda_nm",
+            "type": "integer",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "unit_ucum": "1"
+          }
+        ]
+      }
+    },
+    {
+      "description": "n(lambda) at 21 C, 1 nm steps, from zelmon1997-cln-o.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "index-zelmon1997-cln-o",
+      "path": "grids/index/zelmon1997-cln-o/T21C.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lambda_nm",
+            "type": "integer",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "unit_ucum": "1"
+          }
+        ]
+      }
+    },
+    {
+      "description": "n(lambda) at 21 C, 1 nm steps, from zelmon1997-mgo5-e.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "index-zelmon1997-mgo5-e",
+      "path": "grids/index/zelmon1997-mgo5-e/T21C.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lambda_nm",
+            "type": "integer",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "unit_ucum": "1"
+          }
+        ]
+      }
+    },
+    {
+      "description": "n(lambda) at 21 C, 1 nm steps, from zelmon1997-mgo5-o.",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "index-zelmon1997-mgo5-o",
+      "path": "grids/index/zelmon1997-mgo5-o/T21C.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "lambda_nm",
+            "type": "integer",
+            "unit_ucum": "nm"
+          },
+          {
+            "name": "n",
+            "type": "number",
+            "unit_ucum": "1"
+          }
+        ]
+      }
+    }
+  ],
+  "title": "LiNbO3 material properties, dispersion grids and device records (lithium-niobate.com)",
+  "version": "0.1.0"
+}

@@ -1,0 +1,33 @@
+{
+  "citation": "Heinrich Rose, \"Ueber die Zusammensetzung der Tantalite und ein im Tantalite von Baiern enthaltenes neues Metall\", Annalen der Physik 139, 317-341, (1844) doi:10.1002/andp.18441391006",
+  "link": "https://doi.org/10.1002/andp.18441391006",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Heinrich Rose"
+      }
+    ],
+    "container_title": "Annalen der Physik",
+    "doi": "10.1002/andp.18441391006",
+    "id": "rose1844",
+    "issue": "10",
+    "issued": "1844-01",
+    "page": "317-341",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Ueber die Zusammensetzung der Tantalite und ein im Tantalite von Baiern enthaltenes neues Metall",
+    "type": "article-journal",
+    "volume": "139"
+  }
+}

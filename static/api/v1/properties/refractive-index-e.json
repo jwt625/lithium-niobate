@@ -1,0 +1,505 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817",
+      "https://doi.org/10.1364/JOSAB.14.003319"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Extraordinary refractive index of lithium niobate (LiNbO3): 11 provenance-tagged value(s) from 4 source(s) for variant(s) cln, mgo5-cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/refractive-index-e.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/refractive-index-e.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Extraordinary refractive index"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Extraordinary refractive index",
+    "url": "https://lithium-niobate.com/api/v1/properties/refractive-index-e.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1555
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1376
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.2022
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1474
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1299
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.1928
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": 2.19
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 14,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "refractive-index-e"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "wavelength_nm": 632.8
+      },
+      "id": "refractive-index-e/cln/cti1999-632.8nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.2028,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 24.5,
+        "wavelength_nm": 1060
+      },
+      "id": "refractive-index-e/cln/weis1985-1060nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "Table 2, p. 197",
+        "original_reference": "Nelson & Mikulyak, J. Appl. Phys. 45, 3688 (1974)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1561,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 24.5,
+        "wavelength_nm": 632.8
+      },
+      "id": "refractive-index-e/cln/weis1985-632.8nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "6e-4 above the Zelmon value at 21 C.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "Table 2, p. 197",
+        "original_reference": "Nelson & Mikulyak, J. Appl. Phys. 45, 3688 (1974)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.2028,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1064.0
+      },
+      "default": true,
+      "id": "refractive-index-e/cln/zelmon1997-1064nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-cln-e at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1555,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1550.0
+      },
+      "default": true,
+      "id": "refractive-index-e/cln/zelmon1997-1550nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-cln-e at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1376,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 632.8
+      },
+      "default": true,
+      "id": "refractive-index-e/cln/zelmon1997-632.8nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-cln-e at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.2022,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "room temperature",
+        "wavelength_nm": 1000
+      },
+      "default": true,
+      "id": "refractive-index-e/lt-unspecified/bond1965-1000nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "refractiveindex.info LiTaO3/Bond-e tabulated data",
+        "source_id": "bond1965",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1432,
+      "variant": "lt-unspecified",
+      "variant_note": "1965 bulk crystal"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "room temperature",
+        "wavelength_nm": 1600
+      },
+      "default": true,
+      "id": "refractive-index-e/lt-unspecified/bond1965-1600nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "refractiveindex.info LiTaO3/Bond-e tabulated data",
+        "source_id": "bond1965",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1213,
+      "variant": "lt-unspecified",
+      "variant_note": "1965 bulk crystal"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "room temperature",
+        "wavelength_nm": 600
+      },
+      "default": true,
+      "id": "refractive-index-e/lt-unspecified/bond1965-600nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "refractiveindex.info LiTaO3/Bond-e tabulated data",
+        "source_id": "bond1965",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1878,
+      "variant": "lt-unspecified",
+      "variant_note": "1965 bulk crystal"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1064.0
+      },
+      "default": true,
+      "id": "refractive-index-e/mgo5-cln/zelmon1997-1064nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-mgo5-e at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1474,
+      "variant": "mgo5-cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1550.0
+      },
+      "default": true,
+      "id": "refractive-index-e/mgo5-cln/zelmon1997-1550nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-mgo5-e at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1299,
+      "variant": "mgo5-cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 632.8
+      },
+      "default": true,
+      "id": "refractive-index-e/mgo5-cln/zelmon1997-632.8nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-mgo5-e at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1928,
+      "variant": "mgo5-cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "wavelength_nm": 633
+      },
+      "default": true,
+      "id": "refractive-index-e/sln/volk2008-633nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "The generalized (Schlarb) Sellmeier gives 2.1867 at 50.0 mol% (computed), supporting this value.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "Table 1.2, p. 4 (refs. [26-28])",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.19,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 632.8
+      },
+      "id": "refractive-index-e/sln/weis1985-boyd1967",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "Conflicts with volk2008 near-SLN values.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "Table 2, p. 197",
+        "original_reference": "Boyd, Bond, Carter, J. Appl. Phys. 38, 1941 (1967)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.2005,
+      "variant": "sln",
+      "variant_note": "labelled 'stoichiometric' (1967 crystal)"
+    }
+  ]
+}

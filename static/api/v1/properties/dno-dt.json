@@ -1,0 +1,171 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.1988987"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermo-optic coefficient, ordinary of lithium niobate (LiNbO3): 4 provenance-tagged value(s) from 2 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/dno-dt.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/dno-dt.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermo-optic coefficient, ordinary"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermo-optic coefficient, ordinary",
+    "url": "https://lithium-niobate.com/api/v1/properties/dno-dt.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Thermo-optic coefficient, ordinary",
+        "unitText": "/K"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 4,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "dno-dt"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 1064
+      },
+      "id": "dno-dt/cln/cti1999-1064nm",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, ordinary",
+      "property": "dno-dt",
+      "provenance": {
+        "derivation": "derivative of the cti1999 vendor Sellmeier (status V) at 25 C",
+        "source_id": "cti1999",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "dn_o/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 5.4e-06,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 1550
+      },
+      "id": "dno-dt/cln/cti1999-1550nm",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, ordinary",
+      "property": "dno-dt",
+      "provenance": {
+        "derivation": "derivative of the cti1999 vendor Sellmeier (status V) at 25 C",
+        "source_id": "cti1999",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "dn_o/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 4.1e-06,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 633
+      },
+      "id": "dno-dt/cln/cti1999-633nm",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, ordinary",
+      "property": "dno-dt",
+      "provenance": {
+        "derivation": "derivative of the cti1999 vendor Sellmeier (status V) at 25 C",
+        "source_id": "cti1999",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "dn_o/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 9.4e-06,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "300 K",
+        "wavelength_nm": 632
+      },
+      "id": "dno-dt/cln/moretti2005-632nm-300k",
+      "kind": "scalar",
+      "name": "Thermo-optic coefficient, ordinary",
+      "notes": "2.5x below the value derived from the cti1999 Sellmeier.",
+      "property": "dno-dt",
+      "provenance": {
+        "derivation": "dn_o/dT = (-1.7 + 6.9e-3 T) x 1.0e-5 per K evaluated at T = 300 K (T in K inferred); formula status S",
+        "locator": "schwesyg2011 Eqs. (2.26)-(2.27)",
+        "source_id": "moretti2005",
+        "status": "C",
+        "transcribed": "2026-10-25",
+        "via": "schwesyg2011"
+      },
+      "public": true,
+      "symbol": "dn_o/dT",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 3.7e-06,
+      "variant": "cln"
+    }
+  ]
+}

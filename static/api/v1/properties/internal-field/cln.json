@@ -1,0 +1,68 @@
+{
+  "alternatives": [
+    {
+      "category": "ferroelectric",
+      "id": "internal-field/cln/volk2008",
+      "kind": "scalar",
+      "name": "Internal field",
+      "property": "internal-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_int",
+      "unit": {
+        "display": "kV/cm",
+        "ucum": "kV/cm"
+      },
+      "value_text": "printed '2-33' kV/cm (likely a misprinted range)",
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "internal-field",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "internal-field/cln/gopalan1998",
+      "kind": "scalar",
+      "name": "Internal field",
+      "notes": "Abstract: the internal field vanishes in SLN.",
+      "property": "internal-field",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "gopalan1998",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_int",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "value": 2.5,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

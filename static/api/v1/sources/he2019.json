@@ -1,0 +1,70 @@
+{
+  "citation": "Yang He, Qi-Fan Yang, Jingwei Ling, et al., \"Self-starting bi-chromatic LiNbO 3 soliton microcomb\", Optica 6, 1138, (2019) doi:10.1364/optica.6.001138",
+  "link": "https://doi.org/10.1364/optica.6.001138",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "He",
+        "given": "Yang"
+      },
+      {
+        "family": "Yang",
+        "given": "Qi-Fan"
+      },
+      {
+        "family": "Ling",
+        "given": "Jingwei"
+      },
+      {
+        "family": "Luo",
+        "given": "Rui"
+      },
+      {
+        "family": "Liang",
+        "given": "Hanxiao"
+      },
+      {
+        "family": "Li",
+        "given": "Mingxiao"
+      },
+      {
+        "family": "Shen",
+        "given": "Boqiang"
+      },
+      {
+        "family": "Wang",
+        "given": "Heming"
+      },
+      {
+        "family": "Vahala",
+        "given": "Kerry"
+      },
+      {
+        "family": "Lin",
+        "given": "Qiang"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.6.001138",
+    "id": "he2019",
+    "issue": "9",
+    "issued": "2019-08-30",
+    "page": "1138",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Self-starting bi-chromatic LiNbO 3 soliton microcomb",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

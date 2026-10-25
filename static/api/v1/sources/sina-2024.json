@@ -1,0 +1,24 @@
+{
+  "citation": "\"Yicai report on Anpai Optoelectronics and Jiufengshan Laboratory (via Sina)\", (2024) https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html",
+  "link": "https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "sina-2024",
+    "issued": "2024-08-27",
+    "read": "Read",
+    "title": "Yicai report on Anpai Optoelectronics and Jiufengshan Laboratory (via Sina)",
+    "type": "webpage",
+    "url": "https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html"
+  }
+}

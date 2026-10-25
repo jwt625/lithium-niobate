@@ -1,0 +1,35 @@
+{
+  "citation": "C. C. Rodrigues, et al., \"Stimulated Brillouin scattering by surface acoustic waves in lithium niobate waveguides\", (2023) arXiv:2302.03890",
+  "link": "https://arxiv.org/abs/2302.03890",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "preprint"
+    },
+    "arxiv": "2302.03890",
+    "author": [
+      {
+        "family": "Rodrigues",
+        "given": "C. C."
+      },
+      {
+        "literal": "et al."
+      }
+    ],
+    "id": "rodrigues2023",
+    "issued": "2023",
+    "read": "arXiv, Eqs. 7-8",
+    "title": "Stimulated Brillouin scattering by surface acoustic waves in lithium niobate waveguides",
+    "type": "preprint"
+  }
+}

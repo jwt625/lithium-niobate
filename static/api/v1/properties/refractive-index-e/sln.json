@@ -1,0 +1,84 @@
+{
+  "alternatives": [
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 25,
+        "wavelength_nm": 632.8
+      },
+      "id": "refractive-index-e/sln/weis1985-boyd1967",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "Conflicts with volk2008 near-SLN values.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "Table 2, p. 197",
+        "original_reference": "Boyd, Bond, Carter, J. Appl. Phys. 38, 1941 (1967)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.2005,
+      "variant": "sln",
+      "variant_note": "labelled 'stoichiometric' (1967 crystal)"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "refractive-index-e",
+    "variant": "sln"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "conditions": {
+        "wavelength_nm": 633
+      },
+      "default": true,
+      "id": "refractive-index-e/sln/volk2008-633nm",
+      "kind": "scalar",
+      "name": "Extraordinary refractive index",
+      "notes": "The generalized (Schlarb) Sellmeier gives 2.1867 at 50.0 mol% (computed), supporting this value.",
+      "property": "refractive-index-e",
+      "provenance": {
+        "locator": "Table 1.2, p. 4 (refs. [26-28])",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.19,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 2.2005,
+    "min": 2.19,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "1"
+  }
+}

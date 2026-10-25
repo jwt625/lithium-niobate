@@ -1,0 +1,160 @@
+{
+  "alternatives": [
+    "permittivity-T/cln/cti1999",
+    "permittivity-T/cln/volk2008"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "permittivity-T",
+    "variant": "cln"
+  },
+  "recommended": {
+    "conditions": {
+      "frequency_text": "low frequency (below acoustic resonances)",
+      "mechanical_boundary": "T",
+      "method": "measured"
+    },
+    "consistency": [
+      {
+        "check": "eps^T = eps^S + d e^T / eps0 from the kushibiki1999 eps^S, e and derived d",
+        "result": "eps11^T = 83.3, eps33^T = 28.5 (measured 83.3, 28.5)",
+        "status": "C"
+      }
+    ],
+    "default": true,
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        83.3,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        83.3,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        28.5
+      ]
+    ],
+    "id": "permittivity-T/cln/kushibiki1999",
+    "independent": {
+      "eps11": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.8
+        },
+        "value": 83.3
+      },
+      "eps33": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.3
+        },
+        "value": 28.5
+      }
+    },
+    "kind": "tensor",
+    "name": "Relative permittivity, constant stress (free)",
+    "provenance": {
+      "locator": "Table IV",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 2,
+    "scale": 1,
+    "symbol": "eps^T/eps0",
+    "symmetry_form": {
+      "form": [
+        [
+          "eps11",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "eps11",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "eps33"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "eps22 = eps11",
+        "off-diagonal = 0"
+      ]
+    },
+    "tensor": "permittivity-T",
+    "unit": {
+      "display": "relative (eps/eps0)",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "variant": "cln",
+    "variant_note": "SAW-grade congruent; composition not stated in the source",
+    "voigt": [
+      [
+        83.3,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        83.3,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        28.5
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "full[i][j] = M[i][j]",
+      "order": [
+        "x",
+        "y",
+        "z"
+      ]
+    }
+  },
+  "recommended_note": null,
+  "spread": {
+    "eps11": {
+      "max": 85,
+      "min": 83.3,
+      "n_records": 3
+    },
+    "eps33": {
+      "max": 30,
+      "min": 28.5,
+      "n_records": 3
+    }
+  }
+}

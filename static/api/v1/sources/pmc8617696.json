@@ -1,0 +1,25 @@
+{
+  "citation": "\"2021 review cited by for the Reisman liquidus maximum (PMC8617696)\", (2026) https://pmc.ncbi.nlm.nih.gov/articles/PMC8617696/",
+  "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8617696/",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "pmc8617696",
+    "issued": "2026",
+    "notes": "Undated page; issued set to the access year.",
+    "read": "Per; not re-read",
+    "title": "2021 review cited by for the Reisman liquidus maximum (PMC8617696)",
+    "type": "article-journal",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8617696/"
+  }
+}

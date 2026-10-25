@@ -1,0 +1,46 @@
+{
+  "citation": "P. F. Bordui, R. G. Norwood, D. H. Jundt, et al., \"Preparation and characterization of off-congruent lithium niobate crystals\", Journal of Applied Physics 71, 875-879, (1992) doi:10.1063/1.351308",
+  "link": "https://doi.org/10.1063/1.351308",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Bordui",
+        "given": "P. F."
+      },
+      {
+        "family": "Norwood",
+        "given": "R. G."
+      },
+      {
+        "family": "Jundt",
+        "given": "D. H."
+      },
+      {
+        "family": "Fejer",
+        "given": "M. M."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.351308",
+    "id": "bordui1992",
+    "issue": "2",
+    "issued": "1992-01-15",
+    "page": "875-879",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Preparation and characterization of off-congruent lithium niobate crystals",
+    "type": "article-journal",
+    "volume": "71"
+  }
+}

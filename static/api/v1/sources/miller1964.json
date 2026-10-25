@@ -1,0 +1,34 @@
+{
+  "citation": "Robert C. Miller, \"OPTICAL SECOND HARMONIC GENERATION IN PIEZOELECTRIC CRYSTALS\", Applied Physics Letters 5, 17-19, (1964) doi:10.1063/1.1754022",
+  "link": "https://doi.org/10.1063/1.1754022",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Miller",
+        "given": "Robert C."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754022",
+    "id": "miller1964",
+    "issue": "1",
+    "issued": "1964-07-01",
+    "page": "17-19",
+    "read": "bibliographic record only (Crossref)",
+    "title": "OPTICAL SECOND HARMONIC GENERATION IN PIEZOELECTRIC CRYSTALS",
+    "type": "article-journal",
+    "volume": "5"
+  }
+}

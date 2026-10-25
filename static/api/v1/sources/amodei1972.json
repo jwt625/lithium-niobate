@@ -1,0 +1,39 @@
+{
+  "citation": "J. J. Amodei, W. Phillips, D. L. Staebler, \"Improved Electrooptic Materials and Fixing Techniques for Holographic Recording\", Applied Optics 11, 390, (1972) doi:10.1364/ao.11.000390",
+  "link": "https://doi.org/10.1364/ao.11.000390",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "J. J. Amodei"
+      },
+      {
+        "literal": "W. Phillips"
+      },
+      {
+        "literal": "D. L. Staebler"
+      }
+    ],
+    "container_title": "Applied Optics",
+    "doi": "10.1364/ao.11.000390",
+    "id": "amodei1972",
+    "issue": "2",
+    "issued": "1972-02-01",
+    "page": "390",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Improved Electrooptic Materials and Fixing Techniques for Holographic Recording",
+    "type": "article-journal",
+    "volume": "11"
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "elastic-stiffness-cE",
+    "variant": "cln"
+  },
+  "record": {
+    "conditions": {
+      "electrical_boundary": "E"
+    },
+    "consistency": [
+      {
+        "check": "piezo-stiffened longitudinal velocity along Z, sqrt((c33 + e33^2/eps33^S)/rho), kushibiki1999 constants and density",
+        "result": "7328.6 m/s (unstiffened 7102.1 m/s); measured 7328.20 m/s (kushibiki1999 Table II)",
+        "status": "C"
+      }
+    ],
+    "default": true,
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          [
+            198.86,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            54.67,
+            7.83
+          ],
+          [
+            0.0,
+            7.83,
+            67.99
+          ]
+        ],
+        [
+          [
+            0.0,
+            72.095,
+            7.83
+          ],
+          [
+            72.095,
+            0.0,
+            0.0
+          ],
+          [
+            7.83,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            7.83,
+            59.85
+          ],
+          [
+            7.83,
+            0.0,
+            0.0
+          ],
+          [
+            59.85,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            72.095,
+            7.83
+          ],
+          [
+            72.095,
+            0.0,
+            0.0
+          ],
+          [
+            7.83,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            54.67,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            198.86,
+            -7.83
+          ],
+          [
+            0.0,
+            -7.83,
+            67.99
+          ]
+        ],
+        [
+          [
+            7.83,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -7.83,
+            59.85
+          ],
+          [
+            0.0,
+            59.85,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            7.83,
+            59.85
+          ],
+          [
+            7.83,
+            0.0,
+            0.0
+          ],
+          [
+            59.85,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            7.83,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -7.83,
+            59.85
+          ],
+          [
+            0.0,
+            59.85,
+            0.0
+          ]
+        ],
+        [
+          [
+            67.99,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            67.99,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            234.18
+          ]
+        ]
+      ]
+    ],
+    "id": "elastic-stiffness-cE/cln/kushibiki1999",
+    "independent": {
+      "c11": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.03
+        },
+        "value": 198.86
+      },
+      "c12": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.04
+        },
+        "value": 54.67
+      },
+      "c13": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.55
+        },
+        "value": 67.99
+      },
+      "c14": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.02
+        },
+        "value": 7.83
+      },
+      "c33": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.75
+        },
+        "value": 234.18
+      },
+      "c44": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.01
+        },
+        "value": 59.85
+      }
+    },
+    "kind": "tensor",
+    "name": "Elastic stiffness at constant electric field",
+    "notes": "The source also lists c66 = 72.09 +- 0.02 GPa; the 3m relation (c11 - c12)/2 gives 72.095. In the same table LiTaO3 has c14 = -10.75 GPa.",
+    "provenance": {
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 4,
+    "scale": 1,
+    "symbol": "c^E",
+    "symmetry_form": {
+      "form": [
+        [
+          "c11",
+          "c12",
+          "c13",
+          "c14",
+          "0",
+          "0"
+        ],
+        [
+          "c12",
+          "c11",
+          "c13",
+          "-c14",
+          "0",
+          "0"
+        ],
+        [
+          "c13",
+          "c13",
+          "c33",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "c14",
+          "-c14",
+          "0",
+          "c44",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "c44",
+          "c14"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "c14",
+          "(c11-c12)/2"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "c22 = c11",
+        "c23 = c13",
+        "c24 = -c14",
+        "c55 = c44",
+        "c56 = c14",
+        "c66 = (c11 - c12)/2"
+      ]
+    },
+    "tensor": "elastic-stiffness-cE",
+    "unit": {
+      "display": "GPa",
+      "qudt": "http://qudt.org/vocab/unit/GigaPA",
+      "ucum": "GPa"
+    },
+    "variant": "cln",
+    "variant_note": "SAW-grade congruent",
+    "voigt": [
+      [
+        198.86,
+        54.67,
+        67.99,
+        7.83,
+        0.0,
+        0.0
+      ],
+      [
+        54.67,
+        198.86,
+        67.99,
+        -7.83,
+        0.0,
+        0.0
+      ],
+      [
+        67.99,
+        67.99,
+        234.18,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        7.83,
+        -7.83,
+        0.0,
+        59.85,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        59.85,
+        7.83
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        7.83,
+        72.095
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "C_ijkl = c_IJ, I = V(ij), J = V(kl)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

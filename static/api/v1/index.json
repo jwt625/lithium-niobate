@@ -1,0 +1,1036 @@
+{
+  "code_license": {
+    "id": "GPL-3.0",
+    "url": "https://www.gnu.org/licenses/gpl-3.0.html"
+  },
+  "counts": {
+    "dispersion_models": 7,
+    "glossary_terms": 344,
+    "history_events": 159,
+    "industry_events": 32,
+    "publications": 29,
+    "records": 131,
+    "scalar_records_public": 143,
+    "sources": 280,
+    "status": {
+      "C": 31,
+      "P": 22,
+      "P(abs)": 11,
+      "P-comp": 73,
+      "P-db": 17,
+      "S": 16,
+      "U": 6,
+      "V": 22
+    },
+    "tensor_records_public": 49,
+    "unverified": 39
+  },
+  "default_variant": "cln",
+  "description": "Static, path-parameterized JSON/CSV API for lithium niobate (LiNbO3): provenance-tagged property values, 3m tensors with frames and Voigt conventions, dispersion models with grids, history and industry events, the author's LN publications, device records and a glossary. Query strings are not used.",
+  "dispersion": [
+    {
+      "axis": "e",
+      "default": true,
+      "grid": "/api/v1/grids/index/gayer2008-mgo1-sln-e/T24.5C.csv",
+      "grid_rows": 3501,
+      "id": "gayer2008-mgo1-sln-e",
+      "name": "Gayer 2008, 1 mol% MgO:stoichiometric LiNbO3, extraordinary",
+      "reference_T_C": 24.5,
+      "rii": "/api/v1/dispersion/gayer2008-mgo1-sln-e.rii.yml",
+      "status": "P",
+      "url": "/api/v1/dispersion/gayer2008-mgo1-sln-e.json",
+      "valid_lambda_um": [
+        0.5,
+        4.0
+      ],
+      "variant": "mgo1-sln"
+    },
+    {
+      "axis": "e",
+      "default": false,
+      "grid": "/api/v1/grids/index/gayer2008-mgo5-e/T24.5C.csv",
+      "grid_rows": 3501,
+      "id": "gayer2008-mgo5-e",
+      "name": "Gayer 2008, 5 mol% MgO:congruent LiNbO3, extraordinary",
+      "reference_T_C": 24.5,
+      "rii": "/api/v1/dispersion/gayer2008-mgo5-e.rii.yml",
+      "status": "P",
+      "url": "/api/v1/dispersion/gayer2008-mgo5-e.json",
+      "valid_lambda_um": [
+        0.5,
+        4.0
+      ],
+      "variant": "mgo5-cln"
+    },
+    {
+      "axis": "o",
+      "default": false,
+      "grid": "/api/v1/grids/index/gayer2008-mgo5-o/T24.5C.csv",
+      "grid_rows": 1121,
+      "id": "gayer2008-mgo5-o",
+      "name": "Gayer 2008, 5 mol% MgO:congruent LiNbO3, ordinary",
+      "reference_T_C": 24.5,
+      "rii": "/api/v1/dispersion/gayer2008-mgo5-o.rii.yml",
+      "status": "P",
+      "url": "/api/v1/dispersion/gayer2008-mgo5-o.json",
+      "valid_lambda_um": [
+        0.5,
+        1.62
+      ],
+      "variant": "mgo5-cln"
+    },
+    {
+      "axis": "e",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-cln-e/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-cln-e",
+      "name": "Zelmon 1997, congruent LiNbO3, extraordinary",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-cln-e.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-cln-e.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "cln"
+    },
+    {
+      "axis": "o",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-cln-o/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-cln-o",
+      "name": "Zelmon 1997, congruent LiNbO3, ordinary",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-cln-o.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-cln-o.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "cln"
+    },
+    {
+      "axis": "e",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-mgo5-e/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-mgo5-e",
+      "name": "Zelmon 1997, 5 mol% MgO:congruent LiNbO3, extraordinary (erratum applied)",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-mgo5-e.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-mgo5-e.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "mgo5-cln"
+    },
+    {
+      "axis": "o",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-mgo5-o/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-mgo5-o",
+      "name": "Zelmon 1997, 5 mol% MgO:congruent LiNbO3, ordinary (erratum applied)",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-mgo5-o.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-mgo5-o.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "mgo5-cln"
+    }
+  ],
+  "endpoints": {
+    "datapackage": "/api/v1/datapackage.json",
+    "dispersion": "/api/v1/dispersion.json",
+    "dispersion_model": "/api/v1/dispersion/{model_id}.json",
+    "dispersion_rii": "/api/v1/dispersion/{model_id}.rii.yml",
+    "glossary": "/api/v1/glossary.json",
+    "history": "/api/v1/events/history.json",
+    "index_grid": "/api/v1/grids/index/{model_id}/T{T_C}C.csv",
+    "industry": "/api/v1/events/industry.json",
+    "llms": "/llms.txt",
+    "llms_full": "/llms-full.txt",
+    "openapi": "/api/openapi.json",
+    "properties": "/api/v1/properties.json",
+    "properties_csv": "/api/v1/properties.csv",
+    "property": "/api/v1/properties/{property}.json",
+    "property_variant": "/api/v1/properties/{property}/{variant}.json",
+    "publications": "/api/v1/publications.json",
+    "records": "/api/v1/records.json",
+    "records_csv": "/api/v1/records.csv",
+    "schema": "/api/v1/schema/{type}.schema.json",
+    "source": "/api/v1/sources/{source_id}.json",
+    "sources": "/api/v1/sources.json",
+    "tensor": "/api/v1/tensors/{tensor}.json",
+    "tensor_record": "/api/v1/tensors/{tensor}/{variant}/{source_id}.json",
+    "tensor_variant": "/api/v1/tensors/{tensor}/{variant}.json",
+    "tensors": "/api/v1/tensors.json",
+    "tensors_csv": "/api/v1/tensors.csv",
+    "unverified": "/api/v1/unverified.json",
+    "variants": "/api/v1/variants.json"
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "properties": [
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "Absorption coefficient in the transparent range",
+      "property": "absorption-coefficient",
+      "symbol": "alpha",
+      "url": "/api/v1/properties/absorption-coefficient.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 6,
+      "name": "Birefringence n_e - n_o",
+      "property": "birefringence",
+      "symbol": "n_e - n_o",
+      "url": "/api/v1/properties/birefringence.json",
+      "variants": [
+        "cln",
+        "mgo5-cln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Bulk longitudinal velocity along X",
+      "property": "bulk-velocity-longitudinal-x",
+      "symbol": "v_L,X",
+      "url": "/api/v1/properties/bulk-velocity-longitudinal-x.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Bulk longitudinal velocity along Y",
+      "property": "bulk-velocity-longitudinal-y",
+      "symbol": "v_L,Y",
+      "url": "/api/v1/properties/bulk-velocity-longitudinal-y.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Bulk longitudinal velocity along Z",
+      "property": "bulk-velocity-longitudinal-z",
+      "symbol": "v_L,Z",
+      "url": "/api/v1/properties/bulk-velocity-longitudinal-z.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Bulk shear velocity along X (resonance)",
+      "property": "bulk-velocity-shear-x",
+      "symbol": "v_S,X",
+      "url": "/api/v1/properties/bulk-velocity-shear-x.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Bulk shear velocity along Y",
+      "property": "bulk-velocity-shear-y",
+      "symbol": "v_S,Y",
+      "url": "/api/v1/properties/bulk-velocity-shear-y.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Bulk shear velocity along Z",
+      "property": "bulk-velocity-shear-z",
+      "symbol": "v_S,Z",
+      "url": "/api/v1/properties/bulk-velocity-shear-z.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "ferroelectric",
+      "n_records": 4,
+      "name": "Coercive field",
+      "property": "coercive-field",
+      "symbol": "E_c",
+      "url": "/api/v1/properties/coercive-field.json",
+      "variants": [
+        "cln",
+        "mgo1-sln",
+        "mgo5-cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "ferroelectric",
+      "n_records": 2,
+      "name": "Coercive field ratio E_c(CLN)/E_c(SLN)",
+      "property": "coercive-field-ratio-cln-sln",
+      "symbol": null,
+      "url": "/api/v1/properties/coercive-field-ratio-cln-sln.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 2,
+      "name": "Congruent composition",
+      "property": "congruent-composition",
+      "symbol": null,
+      "url": "/api/v1/properties/congruent-composition.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "ferroelectric",
+      "n_records": 6,
+      "name": "Curie temperature",
+      "property": "curie-temperature",
+      "symbol": "T_C",
+      "url": "/api/v1/properties/curie-temperature.json",
+      "variants": [
+        "cln",
+        "sln",
+        "unspecified"
+      ]
+    },
+    {
+      "category": "ferroelectric",
+      "n_records": 2,
+      "name": "Curie temperature vs crystal composition (linear fit)",
+      "property": "curie-temperature-vs-composition",
+      "symbol": null,
+      "url": "/api/v1/properties/curie-temperature-vs-composition.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "electrical",
+      "n_records": 1,
+      "name": "Dark conductivity",
+      "property": "dark-conductivity",
+      "symbol": "sigma_d",
+      "url": "/api/v1/properties/dark-conductivity.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "electrical",
+      "n_records": 1,
+      "name": "Activation energy of dark (protonic) conductivity",
+      "property": "dark-conductivity-activation-energy",
+      "symbol": null,
+      "url": "/api/v1/properties/dark-conductivity-activation-energy.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 6,
+      "name": "Density",
+      "property": "density",
+      "symbol": "rho",
+      "url": "/api/v1/properties/density.json",
+      "variants": [
+        "cln",
+        "sln",
+        "unspecified"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 5,
+      "name": "Thermo-optic coefficient, extraordinary",
+      "property": "dne-dt",
+      "symbol": "dn_e/dT",
+      "url": "/api/v1/properties/dne-dt.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 4,
+      "name": "Thermo-optic coefficient, ordinary",
+      "property": "dno-dt",
+      "symbol": "dn_o/dT",
+      "url": "/api/v1/properties/dno-dt.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Elastic stiffness component c14 (constant E)",
+      "property": "elastic-c14",
+      "symbol": "c14^E",
+      "url": "/api/v1/properties/elastic-c14.json",
+      "variants": [
+        "lt-saw"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "Electro-optic coefficient r13, unclamped",
+      "property": "eo-r13-T",
+      "symbol": "r13^T",
+      "url": "/api/v1/properties/eo-r13-T.json",
+      "variants": [
+        "sln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "Electro-optic coefficient r22, unclamped",
+      "property": "eo-r22-T",
+      "symbol": "r22^T",
+      "url": "/api/v1/properties/eo-r22-T.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "Electro-optic coefficient r33",
+      "property": "eo-r33",
+      "symbol": "r33",
+      "url": "/api/v1/properties/eo-r33.json",
+      "variants": [
+        "lt-unspecified"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "Electro-optic coefficient r33, unclamped",
+      "property": "eo-r33-T",
+      "symbol": "r33^T",
+      "url": "/api/v1/properties/eo-r33-T.json",
+      "variants": [
+        "sln"
+      ]
+    },
+    {
+      "category": "acoustic",
+      "n_records": 1,
+      "name": "Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33",
+      "property": "hydrostatic-piezo-dh",
+      "symbol": "d_h",
+      "url": "/api/v1/properties/hydrostatic-piezo-dh.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "ferroelectric",
+      "n_records": 3,
+      "name": "Internal field",
+      "property": "internal-field",
+      "symbol": "E_int",
+      "url": "/api/v1/properties/internal-field.json",
+      "variants": [
+        "cln",
+        "mgo5-cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "IR transmission cutoff",
+      "property": "ir-cutoff",
+      "symbol": null,
+      "url": "/api/v1/properties/ir-cutoff.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 7,
+      "name": "Lattice constant a (hexagonal setting)",
+      "property": "lattice-a",
+      "symbol": "a",
+      "url": "/api/v1/properties/lattice-a.json",
+      "variants": [
+        "cln",
+        "sln",
+        "unspecified"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 6,
+      "name": "Lattice constant c (hexagonal setting)",
+      "property": "lattice-c",
+      "symbol": "c",
+      "url": "/api/v1/properties/lattice-c.json",
+      "variants": [
+        "cln",
+        "sln",
+        "unspecified"
+      ]
+    },
+    {
+      "category": "electrical",
+      "n_records": 1,
+      "name": "Maxwell relaxation time (dark)",
+      "property": "maxwell-relaxation-time",
+      "symbol": "tau_M",
+      "url": "/api/v1/properties/maxwell-relaxation-time.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "ferroelectric",
+      "n_records": 3,
+      "name": "Melting point",
+      "property": "melting-point",
+      "symbol": "T_m",
+      "url": "/api/v1/properties/melting-point.json",
+      "variants": [
+        "cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "photorefractive",
+      "n_records": 1,
+      "name": "MgO concentration threshold for optical-damage resistance",
+      "property": "mgo-photorefractive-threshold",
+      "symbol": null,
+      "url": "/api/v1/properties/mgo-photorefractive-threshold.json",
+      "variants": [
+        "mgo5-cln"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 1,
+      "name": "Mohs hardness",
+      "property": "mohs-hardness",
+      "symbol": null,
+      "url": "/api/v1/properties/mohs-hardness.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 2,
+      "name": "Second-order nonlinear coefficient d31",
+      "property": "nlo-d31",
+      "symbol": "d31",
+      "url": "/api/v1/properties/nlo-d31.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 3,
+      "name": "Nonlinear (Kerr) refractive index",
+      "property": "nonlinear-index-n2",
+      "symbol": "n_2",
+      "url": "/api/v1/properties/nonlinear-index-n2.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 2,
+      "name": "OH stretch absorption band",
+      "property": "oh-stretch-band",
+      "symbol": null,
+      "url": "/api/v1/properties/oh-stretch-band.json",
+      "variants": [
+        "cln",
+        "mgo5-cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "Optical band gap (frequently cited)",
+      "property": "optical-band-gap",
+      "symbol": "E_g",
+      "url": "/api/v1/properties/optical-band-gap.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 1,
+      "name": "Point group (ferroelectric phase)",
+      "property": "point-group",
+      "symbol": null,
+      "url": "/api/v1/properties/point-group.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "thermal",
+      "n_records": 3,
+      "name": "Pyroelectric coefficient",
+      "property": "pyroelectric-p3",
+      "symbol": "p_3",
+      "url": "/api/v1/properties/pyroelectric-p3.json",
+      "variants": [
+        "cln",
+        "unspecified"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 14,
+      "name": "Extraordinary refractive index",
+      "property": "refractive-index-e",
+      "symbol": "n_e",
+      "url": "/api/v1/properties/refractive-index-e.json",
+      "variants": [
+        "cln",
+        "lt-unspecified",
+        "mgo5-cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 14,
+      "name": "Ordinary refractive index",
+      "property": "refractive-index-o",
+      "symbol": "n_o",
+      "url": "/api/v1/properties/refractive-index-o.json",
+      "variants": [
+        "cln",
+        "lt-unspecified",
+        "mgo5-cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "Residual absorption, as-grown crystals",
+      "property": "residual-absorption",
+      "symbol": null,
+      "url": "/api/v1/properties/residual-absorption.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 2,
+      "name": "Rhombohedral cell edge a_R",
+      "property": "rhombohedral-a",
+      "symbol": "a_R",
+      "url": "/api/v1/properties/rhombohedral-a.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 2,
+      "name": "Rhombohedral cell angle alpha",
+      "property": "rhombohedral-alpha",
+      "symbol": "alpha_R",
+      "url": "/api/v1/properties/rhombohedral-alpha.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 1,
+      "name": "Space group (ferroelectric phase, below Tc)",
+      "property": "space-group",
+      "symbol": null,
+      "url": "/api/v1/properties/space-group.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "structure",
+      "n_records": 1,
+      "name": "Space group (paraelectric phase, above Tc)",
+      "property": "space-group-paraelectric",
+      "symbol": null,
+      "url": "/api/v1/properties/space-group-paraelectric.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "thermal",
+      "n_records": 3,
+      "name": "Specific heat capacity",
+      "property": "specific-heat",
+      "symbol": "c_p",
+      "url": "/api/v1/properties/specific-heat.json",
+      "variants": [
+        "cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "ferroelectric",
+      "n_records": 2,
+      "name": "Spontaneous polarization",
+      "property": "spontaneous-polarization",
+      "symbol": "P_s",
+      "url": "/api/v1/properties/spontaneous-polarization.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "thermal",
+      "n_records": 4,
+      "name": "Thermal conductivity",
+      "property": "thermal-conductivity",
+      "symbol": "kappa",
+      "url": "/api/v1/properties/thermal-conductivity.json",
+      "variants": [
+        "cln",
+        "sln",
+        "unspecified"
+      ]
+    },
+    {
+      "category": "thermal",
+      "n_records": 3,
+      "name": "Thermal expansion coefficient perpendicular to c",
+      "property": "thermal-expansion-a",
+      "symbol": "alpha_11",
+      "url": "/api/v1/properties/thermal-expansion-a.json",
+      "variants": [
+        "cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "thermal",
+      "n_records": 3,
+      "name": "Thermal expansion coefficient parallel to c",
+      "property": "thermal-expansion-c",
+      "symbol": "alpha_33",
+      "url": "/api/v1/properties/thermal-expansion-c.json",
+      "variants": [
+        "cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 2,
+      "name": "Transparency range",
+      "property": "transparency-range",
+      "symbol": null,
+      "url": "/api/v1/properties/transparency-range.json",
+      "variants": [
+        "cln",
+        "sln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "UV transmission cutoff",
+      "property": "uv-cutoff",
+      "symbol": null,
+      "url": "/api/v1/properties/uv-cutoff.json",
+      "variants": [
+        "cln"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 1,
+      "name": "UV absorption edge vs composition",
+      "property": "uv-edge-formula",
+      "symbol": null,
+      "url": "/api/v1/properties/uv-edge-formula.json",
+      "variants": [
+        "unspecified"
+      ]
+    },
+    {
+      "category": "optical",
+      "n_records": 2,
+      "name": "UV absorption edge at alpha = 20 cm^-1",
+      "property": "uv-edge-lambda20",
+      "symbol": "lambda_20",
+      "url": "/api/v1/properties/uv-edge-lambda20.json",
+      "variants": [
+        "cln",
+        "sln"
+      ]
+    }
+  ],
+  "status_codes": "P: primary source read at the locator. P(abs): only the abstract read. P-comp: read in a compilation that names the original measurement (original not read). P-db: CC0 database transcription of a primary source. S: secondary. V: vendor datasheet. C: computed from listed inputs. U: unverified, never shown in default endpoints.",
+  "tensors": [
+    {
+      "default": "elastic-compliance-sE/cln/kushibiki1999",
+      "records": [
+        "elastic-compliance-sE/cln/kushibiki1999"
+      ],
+      "tensor": "elastic-compliance-sE",
+      "url": "/api/v1/tensors/elastic-compliance-sE/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "elastic-compliance-sE/unspecified/weis1985-smithwelsh1971",
+        "elastic-compliance-sE/unspecified/weis1985-warner1967"
+      ],
+      "tensor": "elastic-compliance-sE",
+      "url": "/api/v1/tensors/elastic-compliance-sE/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": "elastic-stiffness-cE/cln/kushibiki1999",
+      "records": [
+        "elastic-stiffness-cE/cln/kushibiki1999"
+      ],
+      "tensor": "elastic-stiffness-cE",
+      "url": "/api/v1/tensors/elastic-stiffness-cE/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "elastic-stiffness-cE/unspecified/andrushchak2009",
+        "elastic-stiffness-cE/unspecified/ogi2002",
+        "elastic-stiffness-cE/unspecified/ogi2002-kovacs1990",
+        "elastic-stiffness-cE/unspecified/weis1985-nakagawa1973",
+        "elastic-stiffness-cE/unspecified/weis1985-smithwelsh1971",
+        "elastic-stiffness-cE/unspecified/weis1985-warner1967"
+      ],
+      "tensor": "elastic-stiffness-cE",
+      "url": "/api/v1/tensors/elastic-stiffness-cE/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": null,
+      "records": [
+        "eo-rS/cln/cti1999",
+        "eo-rS/cln/turner1966"
+      ],
+      "tensor": "eo-rS",
+      "url": "/api/v1/tensors/eo-rS/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "eo-rS/unspecified/kaminow1980"
+      ],
+      "tensor": "eo-rS",
+      "url": "/api/v1/tensors/eo-rS/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": "eo-rT/cln/weis1985",
+      "records": [
+        "eo-rT/cln/cti1999",
+        "eo-rT/cln/weis1985"
+      ],
+      "tensor": "eo-rT",
+      "url": "/api/v1/tensors/eo-rT/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "nlo-d/cln/cti1999",
+        "nlo-d/cln/volk2008"
+      ],
+      "tensor": "nlo-d",
+      "url": "/api/v1/tensors/nlo-d/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "nlo-d/sln/volk2008"
+      ],
+      "tensor": "nlo-d",
+      "url": "/api/v1/tensors/nlo-d/sln.json",
+      "variant": "sln"
+    },
+    {
+      "default": null,
+      "records": [
+        "nlo-d/unspecified/zhu2021"
+      ],
+      "tensor": "nlo-d",
+      "url": "/api/v1/tensors/nlo-d/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": "permittivity-S/cln/kushibiki1999",
+      "records": [
+        "permittivity-S/cln/cti1999",
+        "permittivity-S/cln/kushibiki1999",
+        "permittivity-S/cln/volk2008"
+      ],
+      "tensor": "permittivity-S",
+      "url": "/api/v1/tensors/permittivity-S/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "permittivity-S/unspecified/weis1985-savage1966",
+        "permittivity-S/unspecified/weis1985-teague1975",
+        "permittivity-S/unspecified/weis1985-warner1967",
+        "permittivity-S/unspecified/weis1985-yamada1967"
+      ],
+      "tensor": "permittivity-S",
+      "url": "/api/v1/tensors/permittivity-S/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": "permittivity-T/cln/kushibiki1999",
+      "records": [
+        "permittivity-T/cln/cti1999",
+        "permittivity-T/cln/kushibiki1999",
+        "permittivity-T/cln/volk2008"
+      ],
+      "tensor": "permittivity-T",
+      "url": "/api/v1/tensors/permittivity-T/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "permittivity-T/unspecified/weis1985-savage1966",
+        "permittivity-T/unspecified/weis1985-smithwelsh1971",
+        "permittivity-T/unspecified/weis1985-teague1975",
+        "permittivity-T/unspecified/weis1985-warner1967"
+      ],
+      "tensor": "permittivity-T",
+      "url": "/api/v1/tensors/permittivity-T/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": null,
+      "records": [
+        "photoelastic-p/unspecified/andrushchak2009",
+        "photoelastic-p/unspecified/mys2015-krupych2014",
+        "photoelastic-p/unspecified/rodrigues2023",
+        "photoelastic-p/unspecified/weis1985-avakyants1976",
+        "photoelastic-p/unspecified/weis1985-coquin"
+      ],
+      "tensor": "photoelastic-p",
+      "url": "/api/v1/tensors/photoelastic-p/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": "piezo-strain-d/cln/kushibiki1999",
+      "records": [
+        "piezo-strain-d/cln/cti1999",
+        "piezo-strain-d/cln/kushibiki1999"
+      ],
+      "tensor": "piezo-strain-d",
+      "url": "/api/v1/tensors/piezo-strain-d/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "piezo-strain-d/unspecified/weis1985-smithwelsh1971",
+        "piezo-strain-d/unspecified/weis1985-warner1967",
+        "piezo-strain-d/unspecified/weis1985-yamada1967"
+      ],
+      "tensor": "piezo-strain-d",
+      "url": "/api/v1/tensors/piezo-strain-d/unspecified.json",
+      "variant": "unspecified"
+    },
+    {
+      "default": "piezo-stress-e/cln/kushibiki1999",
+      "records": [
+        "piezo-stress-e/cln/kushibiki1999"
+      ],
+      "tensor": "piezo-stress-e",
+      "url": "/api/v1/tensors/piezo-stress-e/cln.json",
+      "variant": "cln"
+    },
+    {
+      "default": null,
+      "records": [
+        "piezo-stress-e/unspecified/andrushchak2009",
+        "piezo-stress-e/unspecified/ogi2002",
+        "piezo-stress-e/unspecified/ogi2002-kovacs1990",
+        "piezo-stress-e/unspecified/ogi2002-smithwelsh1971",
+        "piezo-stress-e/unspecified/ogi2002-warner1967"
+      ],
+      "tensor": "piezo-stress-e",
+      "url": "/api/v1/tensors/piezo-stress-e/unspecified.json",
+      "variant": "unspecified"
+    }
+  ],
+  "title": "lithium-niobate.com data API",
+  "variants": [
+    "cln",
+    "lt-saw",
+    "lt-unspecified",
+    "mgo1-sln",
+    "mgo5-cln",
+    "sln",
+    "unspecified"
+  ]
+}

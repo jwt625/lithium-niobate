@@ -1,0 +1,74 @@
+{
+  "alternatives": [
+    {
+      "category": "ferroelectric",
+      "id": "melting-point/cln/cti1999",
+      "kind": "scalar",
+      "name": "Melting point",
+      "property": "melting-point",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_m",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1250,
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "melting-point",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "melting-point/cln/volk2008",
+      "kind": "scalar",
+      "name": "Melting point",
+      "notes": "Inside the 1240-1275 C range quoted across vendors and handbooks.",
+      "property": "melting-point",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_m",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1255,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 1255,
+    "min": 1250,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "Cel"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "citation": "O. Gayer, Z. Sacks, E. Galun, et al., \"Temperature and wavelength dependent refractive index equations for MgO-doped congruent and stoichiometric LiNbO3\", Applied Physics B 91, 343-348, (2008) doi:10.1007/s00340-008-2998-2",
+  "link": "https://doi.org/10.1007/s00340-008-2998-2",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Erratum free to read.",
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Gayer",
+        "given": "O."
+      },
+      {
+        "family": "Sacks",
+        "given": "Z."
+      },
+      {
+        "family": "Galun",
+        "given": "E."
+      },
+      {
+        "family": "Arie",
+        "given": "A."
+      }
+    ],
+    "container_title": "Applied Physics B",
+    "doi": "10.1007/s00340-008-2998-2",
+    "errata": [
+      {
+        "citation": "Erratum, Appl. Phys. B 94, 367 (2009)",
+        "content": "Replaces Fig. 3 (dispersion plot) only; Table 1 is unchanged.",
+        "doi": "10.1007/s00340-008-3316-8",
+        "issued": "2009",
+        "read": "full erratum"
+      }
+    ],
+    "id": "gayer2008",
+    "issued": "2008",
+    "notes": "Table 1 caption labels the 1% material as 1% MgO doped stoichiometric LiNbO3 (SLN).",
+    "page": "343-348",
+    "read": "full paper and erratum",
+    "title": "Temperature and wavelength dependent refractive index equations for MgO-doped congruent and stoichiometric LiNbO3",
+    "type": "article-journal",
+    "volume": "91"
+  }
+}

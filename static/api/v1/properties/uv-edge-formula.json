@@ -1,0 +1,92 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "UV absorption edge vs composition of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/uv-edge-formula.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/uv-edge-formula.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "UV absorption edge vs composition"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 UV absorption edge vs composition",
+    "url": "https://lithium-niobate.com/api/v1/properties/uv-edge-formula.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "absorption coefficient 20 (or 15) cm^-1; E parallel to c, k perpendicular to c",
+        "name": "UV absorption edge vs composition (unspecified)",
+        "unitText": "nm",
+        "value": "lambda_20 = 320.4 - 1.829 x - 5.485 x^2 nm; lambda_15 = 321.9 - 1.597 x - 5.745 x^2 nm; x = (mol% Li2O) - 48.38"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "uv-edge-formula"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "method": "absorption coefficient 20 (or 15) cm^-1; E parallel to c, k perpendicular to c",
+        "temperature_C": 22
+      },
+      "default": true,
+      "id": "uv-edge-formula/unspecified/volk2008-kovacs1997",
+      "kind": "scalar",
+      "name": "UV absorption edge vs composition",
+      "property": "uv-edge-formula",
+      "provenance": {
+        "locator": "Eqs. (6.5)-(6.6), p. 142",
+        "original_reference": "kovacs1997 (credited in Fig. 6.4)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "nm",
+        "ucum": "nm"
+      },
+      "value_text": "lambda_20 = 320.4 - 1.829 x - 5.485 x^2 nm; lambda_15 = 321.9 - 1.597 x - 5.745 x^2 nm; x = (mol% Li2O) - 48.38",
+      "variant": "unspecified"
+    }
+  ]
+}

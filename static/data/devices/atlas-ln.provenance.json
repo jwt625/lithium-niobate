@@ -1,0 +1,117 @@
+{
+ "repo": "https://github.com/jwt625/eo-modulator-atlas",
+ "sha": "eb97f961165a331599e8191c62e15b5a52ba1d51",
+ "commit_date": "2026-10-20",
+ "fetched_on": "2026-10-25",
+ "mode": "local checkout at the pinned commit",
+ "files": {
+  "data/devices.csv": {
+   "sha256": "0dd95c55abdf711b9511e561c5efa60db657f23553690dd211421f4036b987f7",
+   "bytes": 772730
+  },
+  "data/papers.csv": {
+   "sha256": "62d5ddf8325cd88f0a4995c62021cefafd9683e72b820ea6044e10585dad1b67",
+   "bytes": 416422
+  }
+ },
+ "license": "none upstream at the pin (open question Q6.1); facts with locators and attribution",
+ "conventions": "content/chapters/08-industry/chart-specs.md sec. 1",
+ "output": {
+  "file": "atlas-ln.json",
+  "sha256": "44d5aabd49d52c379cb6ca0619b87dc57e4b0b212cb107c2548e19f841e61b5b",
+  "bytes": 427074,
+  "devices": 398,
+  "papers": 161
+ },
+ "generator": "src/routes/devices/_data/fetch-atlas.mjs",
+ "acceptance": [
+  {
+   "name": "A1 default points",
+   "ok": true,
+   "got": 71
+  },
+  {
+   "name": "A1 platforms",
+   "ok": true,
+   "got": {
+    "AlGaAs": 1,
+    "InP": 1,
+    "Other": 1,
+    "Polymer": 3,
+    "TFLN": 56,
+    "TFLT": 9
+   }
+  },
+  {
+   "name": "A1 bounds",
+   "ok": true,
+   "got": 30
+  },
+  {
+   "name": "A1 all bands/conventions",
+   "ok": true,
+   "got": 146
+  },
+  {
+   "name": "A2 points",
+   "ok": true,
+   "got": 28
+  },
+  {
+   "name": "A2 within 0.1",
+   "ok": true,
+   "got": 23
+  },
+  {
+   "name": "A3 points",
+   "ok": true,
+   "got": 71
+  },
+  {
+   "name": "A4 points",
+   "ok": true,
+   "got": 91
+  },
+  {
+   "name": "A4 platforms",
+   "ok": true,
+   "got": {
+    "AlGaAs": 1,
+    "BTO": 2,
+    "InP": 3,
+    "Other": 3,
+    "Polymer": 8,
+    "TFLN": 60,
+    "TFLT": 14
+   }
+  },
+  {
+   "name": "A5 points",
+   "ok": true,
+   "got": 117
+  },
+  {
+   "name": "A5 platforms",
+   "ok": true,
+   "got": {
+    "TFLN": 95,
+    "TFLT": 22
+   }
+  },
+  {
+   "name": "A7 points",
+   "ok": true,
+   "got": 13
+  },
+  {
+   "name": "rows (all, device, papers referenced; 233 papers in papers.csv)",
+   "ok": true,
+   "got": [
+    519,
+    486,
+    215,
+    233
+   ]
+  }
+ ]
+}

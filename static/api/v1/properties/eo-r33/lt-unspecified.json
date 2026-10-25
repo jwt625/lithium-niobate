@@ -1,0 +1,46 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "eo-r33",
+    "variant": "lt-unspecified"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "default": true,
+      "id": "eo-r33/lt-unspecified/wang2025lt",
+      "kind": "scalar",
+      "name": "Electro-optic coefficient r33",
+      "notes": "Clamping condition and wavelength not stated where quoted.",
+      "property": "eo-r33",
+      "provenance": {
+        "locator": "introduction, ref. 29",
+        "original_reference": "Wang et al., Optica 11, 1614 (2024), DOI 10.1364/OPTICA.537730 (wang2024optica)",
+        "source_id": "wang2025lt",
+        "status": "S",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "r33",
+      "tensor_component": "r33",
+      "unit": {
+        "display": "pm/V",
+        "ucum": "pm/V"
+      },
+      "value": 30.5,
+      "variant": "lt-unspecified",
+      "variant_note": "thin-film LiTaO3 context"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

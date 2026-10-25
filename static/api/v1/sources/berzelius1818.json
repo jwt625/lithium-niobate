@@ -1,0 +1,32 @@
+{
+  "citation": "Jons Jacob Berzelius, \"Letter to C. L. Berthollet announcing a new alkali (dated 1818-02-09)\", Annales de Chimie et de Physique 7, 199-201, (1818) https://archive.org/details/s3id13207740",
+  "link": "https://archive.org/details/s3id13207740",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Jons Jacob Berzelius"
+      }
+    ],
+    "container_title": "Annales de Chimie et de Physique",
+    "id": "berzelius1818",
+    "issued": "1818",
+    "page": "199-201",
+    "read": "Scan read, 2026-10-25; volume title page reads 1817",
+    "title": "Letter to C. L. Berthollet announcing a new alkali (dated 1818-02-09)",
+    "type": "webpage",
+    "url": "https://archive.org/details/s3id13207740",
+    "volume": "7"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "citation": "Xuanhao Wang, Chenglin Shang, An Pan, et al., \"Thin-film lithium niobate dual-polarization IQ modulator on a silicon substrate for single-carrier 1.6 Tb/s transmission\", APL Photonics 7, 076101, (2022) doi:10.1063/5.0097296",
+  "link": "https://doi.org/10.1063/5.0097296",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Xuanhao Wang"
+      },
+      {
+        "literal": "Chenglin Shang"
+      },
+      {
+        "literal": "An Pan"
+      },
+      {
+        "literal": "Xingran Cheng"
+      },
+      {
+        "literal": "Tao Gui"
+      },
+      {
+        "literal": "Shuai Yuan"
+      },
+      {
+        "literal": "Chengcheng Gui"
+      },
+      {
+        "literal": "Keshuang Zheng"
+      },
+      {
+        "literal": "Peijie Zhang"
+      },
+      {
+        "literal": "Xiaolu Song"
+      },
+      {
+        "literal": "Yanbo Li"
+      },
+      {
+        "literal": "Liangchuan Li"
+      },
+      {
+        "literal": "Cheng Zeng"
+      },
+      {
+        "literal": "Jinsong Xia"
+      }
+    ],
+    "container_title": "APL Photonics",
+    "doi": "10.1063/5.0097296",
+    "id": "wang2022",
+    "issue": "7",
+    "issued": "2022-07-01",
+    "page": "076101",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Thin-film lithium niobate dual-polarization IQ modulator on a silicon substrate for single-carrier 1.6 Tb/s transmission",
+    "type": "article-journal",
+    "volume": "7"
+  }
+}

@@ -1,0 +1,188 @@
+/* Port of mockup/chapter.css. Every selector is scoped with :where(.chp) (zero specificity) so the chapter layer applies to
+   content pages only (the layout sets .chp on .app for every route except the landing) and cannot leak into the landing
+   after client-side navigation. Specificity and order are unchanged from the mockup. */
+/* Chapter 2.2 page styles. Uses the shared tokens of styles.css only. Sharp corners throughout. */
+
+:where(.chp) .ch-title { margin: 4px 0 0; }
+:where(.chp) .depth { position: sticky; top: 0; z-index: 15; background: var(--bg); }
+:root[data-mode="visual"] :where(.chp) .depth a.on { background: var(--acc); color: #06110a; }
+:where(.chp) .lay { margin-top: 22px; }
+:where(.chp) .lay .body { min-width: 0; }
+:where(.chp) .tx { font: 400 13px/20px var(--sans); max-width: 55.2em; margin: 0 0 8px; } /* FIX-S G04: 55.2em = 92ch of IBM Plex Sans (ch follows the fallback face before the swap) */
+:where(.chp) .tx b { font-weight: 600; }
+:where(.chp) .h3 { margin: 18px 0 6px; }
+:where(.chp) .fine { margin: 6px 0 0; }
+:where(.chp) .lk { color: var(--link); border-bottom: 1px solid var(--rule2); }
+
+/* equations */
+:where(.chp) .eq { display: flex; align-items: center; gap: 12px; }
+:where(.chp) .eq math { flex: 1 0 auto; }
+:where(.chp) .eqn { flex: none; font: 400 11px var(--mono); color: var(--fg3); }
+
+/* two-column blocks */
+:where(.chp) .duo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 14px; align-items: start; }
+@media (max-width: 1100px) { :where(.chp) .duo { grid-template-columns: minmax(0, 1fr); } }
+:where(.chp) .panel .ph { text-transform: none; letter-spacing: 0.02em; }
+:where(.chp) .panel .pf { display: block; line-height: 1.5; }
+:where(.chp) table.coef th, :where(.chp) table.map th, :where(.chp) table.ntab th, :where(.chp) table.kv th, :where(.chp) table.rt-mx th { text-transform: none; letter-spacing: 0.04em; }
+:where(.chp) .panel .ctl { grid-template-columns: 130px minmax(0, 1fr) 96px; }
+@media (max-width: 520px) { :where(.chp) .panel .ctl { grid-template-columns: 1fr 80px; } }
+
+/* key-value tables */
+:where(.chp) table.kv { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+:where(.chp) table.kv td { border-top: 1px solid var(--rule); padding: 4px 8px; vertical-align: middle; color: var(--fg2); }
+:where(.chp) table.kv td.v { color: var(--fg); text-align: right; white-space: nowrap; }
+:where(.chp) table.kv td.u { color: var(--fg3); width: 1%; white-space: nowrap; }
+:where(.chp) table.kv td.s { text-align: right; width: 1%; white-space: nowrap; }
+:where(.chp) table.kv th { text-align: left; font-weight: 400; padding: 6px 8px 4px; }
+:where(.chp) .panel table.kv tr:first-child td { border-top-color: var(--rule2); }
+
+/* MZM plot */
+:where(.chp) .mzm-plot { padding: 6px 4px 0; }
+:where(.chp) .mzm-plot svg { width: 100%; height: auto; display: block; touch-action: none; cursor: ew-resize; }
+:where(.chp) #mzm-svg .gl { stroke: var(--rule); stroke-width: 1; }
+:where(.chp) #mzm-svg .vpi { stroke: var(--rule2); stroke-width: 1; stroke-dasharray: 2 3; }
+:where(.chp) #mzm-svg .tk { font: 10px var(--mono); fill: var(--fg3); }
+:where(.chp) #mzm-svg .meas { fill: none; stroke: var(--fg); stroke-width: 1.5; }
+:where(.chp) #mzm-svg .eng { fill: none; stroke: var(--fg3); stroke-width: 1.2; stroke-dasharray: 4 3; }
+:where(.chp) #mzm-svg .cur { stroke: var(--fg2); stroke-width: 1; }
+:where(.chp) #mzm-svg .pt { fill: var(--fg); }
+:where(.chp) #mzm-svg .hit { fill: transparent; }
+:root[data-mode="visual"] :where(.chp) #mzm-svg .meas { stroke: var(--acc); }
+:root[data-mode="visual"] :where(.chp) #mzm-svg .pt { fill: var(--acc); }
+:root[data-mode="visual"] :where(.chp) #mzm-svg .eng { stroke: var(--gold); }
+
+/* r tensor explorer */
+:where(.chp) .rt-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+:where(.chp) .rt-ctl .lbl { margin-left: 4px; }
+:where(.chp) .rt-ctl .seg button { padding: 3px 9px; font-size: 11px; }
+:where(.chp) .seg button { font: inherit; }
+:where(.chp) .rt-grid { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; padding: 10px; align-items: start; }
+@media (max-width: 900px) { :where(.chp) .rt-grid { grid-template-columns: minmax(0, 1fr); } }
+:where(.chp) .rt-res { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 12px; align-items: start; }
+@media (max-width: 1100px) { :where(.chp) .rt-res { grid-template-columns: minmax(0, 1fr); } }
+:where(.chp) table.rt-mx { font-size: 12px; border-left: 0; border-right: 0; }
+:where(.chp) table.rt-mx th { font-weight: 400; font-size: 10.5px; color: var(--fg3); padding: 3px 10px; text-align: center; }
+:where(.chp) table.rt-mx th.ri { text-align: left; white-space: nowrap; }
+:where(.chp) table.rt-mx th.col { color: var(--fg); }
+:where(.chp) table.rt-mx td { min-width: 56px; padding: 4px 10px; border: 1px solid var(--rule); }
+:where(.chp) table.rt-mx td.z { color: var(--fg3); }
+:where(.chp) table.rt-mx td.nz { color: var(--fg2); }
+:where(.chp) table.rt-mx td.col { background: var(--acc-dim); }
+:where(.chp) table.rt-mx td.on { color: var(--bg); background: var(--fg); }
+:where(.chp) table.rt-mx td.rot { color: var(--fg); outline: 1px solid var(--fg); outline-offset: -3px; }
+:where(.chp) table.rt-mx td.oth { color: var(--fg); outline: 1px dashed var(--fg3); outline-offset: -3px; }
+:root[data-mode="visual"] :where(.chp) table.rt-mx td.on { background: var(--acc); color: #06110a; }
+:root[data-mode="visual"] :where(.chp) table.rt-mx td.rot { outline-color: var(--gold); color: var(--gold); }
+:where(.chp) .etag { font-size: 9.5px; color: var(--fg3); white-space: nowrap; }
+:where(.chp) .kh { font: 400 10px/14px var(--mono); letter-spacing: 0.04em; color: var(--fg3); text-align: left; padding: 6px 8px 4px; }
+:where(.chp) .key { display: inline-block; padding: 0 5px; margin-left: 6px; font-size: 10px; line-height: 15px; }
+:where(.chp) .key.on { color: var(--bg); background: var(--fg); }
+:where(.chp) .key.rot { outline: 1px solid var(--fg); outline-offset: -1px; color: var(--fg); }
+:where(.chp) .key.oth { outline: 1px dashed var(--fg3); outline-offset: -1px; color: var(--fg2); }
+:root[data-mode="visual"] :where(.chp) .key.on { background: var(--acc); color: #06110a; }
+:root[data-mode="visual"] :where(.chp) .key.rot { outline-color: var(--gold); color: var(--gold); }
+
+:where(.chp) table.coef tr.sel td { background: var(--acc-dim); color: var(--fg); }
+:where(.chp) table.coef td:first-child, :where(.chp) table.map td:first-child { width: auto; }
+:where(.chp) table.idx th.r { text-align: right; }
+
+/* L3 figures */
+:where(.chp) .figgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; margin-top: 16px; }
+:where(.chp) .figgrid .wide { grid-column: 1 / -1; }
+@media (max-width: 900px) { :where(.chp) .figgrid { grid-template-columns: minmax(0, 1fr); } }
+:where(.chp) .fig .ph { align-items: center; }
+:where(.chp) .fig .ph .seg button { padding: 1px 7px; font-size: 10.5px; }
+:where(.chp) .fig > canvas { cursor: crosshair; touch-action: none; }
+:where(.chp) .fig > canvas:focus-visible { outline: 1px solid var(--acc); outline-offset: -1px; }
+:where(.chp) .fig .cb { display: grid; grid-template-columns: auto minmax(60px, 260px) auto minmax(0, 1fr); align-items: center; gap: 8px; }
+:where(.chp) .fig .cb canvas { grid-column: 2; grid-row: 1; width: 100%; height: 8px; image-rendering: pixelated; }
+:where(.chp) .fig .cb .lo { grid-column: 1; grid-row: 1; }
+:where(.chp) .fig .cb .hi { grid-column: 3; grid-row: 1; }
+:where(.chp) .fig .cb .u { grid-column: 4; grid-row: 1; text-align: right; color: var(--fg2); }
+:where(.chp) #ro { display: flex; flex-wrap: wrap; gap: 2px 16px; border-bottom: 1px solid var(--rule); min-height: 30px; }
+:where(.chp) #ro span { white-space: nowrap; }
+:where(.chp) .readout.pad { padding: 5px 8px; border-top: 1px solid var(--rule); }
+
+:where(.chp) .l3b { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+@media (max-width: 1100px) { :where(.chp) .l3b { grid-template-columns: minmax(0, 1fr); } }
+:where(.chp) #fd-svg { width: 100%; display: block; }
+:where(.chp) #fd-svg .dpb { fill: var(--acc-dim); }
+:where(.chp) #fd-svg .dpb.b2 { fill: var(--bg3); }
+:where(.chp) #fd-svg .gl { stroke: var(--rule); }
+:where(.chp) #fd-svg .ax { stroke: var(--fg3); }
+:where(.chp) #fd-svg .frame { fill: none; stroke: var(--rule2); }
+:where(.chp) #fd-svg .tk { font: 10px var(--mono); fill: var(--fg3); }
+:where(.chp) #fd-svg .dpbar { fill: var(--fg2); }
+:where(.chp) #fd-svg .dpbar:hover { fill: var(--fg); }
+:where(.chp) #fd-svg .r33 { fill: none; stroke: var(--fg); stroke-width: 1; }
+:root[data-mode="visual"] :where(.chp) #fd-svg .dpbar { fill: #3b78b8; }
+:root[data-mode="visual"] :where(.chp) #fd-svg .dpbar:hover { fill: #6aaed6; }
+:root[data-mode="visual"] :where(.chp) #fd-svg .r33 { stroke: var(--acc); }
+
+:where(.chp) .ntabw { overflow-x: auto; min-width: 0; }
+:where(.chp) table.ntab { font-size: 11.5px; }
+:where(.chp) table.ntab td:first-child { white-space: normal; font-family: var(--mono); font-size: 11.5px; }
+:where(.chp) table.ntab td { padding: 3px 7px; }
+:where(.chp) table.ntab td:first-child { width: auto; color: var(--fg2); }
+:where(.chp) table.ntab td.num { color: var(--fg); white-space: nowrap; }
+:where(.chp) table.ntab tr.grp th { padding-top: 10px; color: var(--fg2); border-bottom: 1px solid var(--rule2); }
+:where(.chp) table.ntab td:nth-child(3) { color: var(--fg3); white-space: nowrap; }
+
+:where(.chp) footer .keys .b { margin: 0 4px 0 10px; }
+:where(.chp) footer .keys .b:first-child { margin-left: 0; }
+:where(.chp) footer p { margin: 0 0 8px; }
+
+/* narrow screens */
+:where(.chp) .rt-grid > *, :where(.chp) .rt-res > *, :where(.chp) .duo > *, :where(.chp) .figgrid > * { min-width: 0; }
+@media (max-width: 560px) {
+  :where(.chp) table.kv td { padding: 4px 5px; }
+  :where(.chp) table.kv td:first-child { overflow-wrap: anywhere; }
+  :where(.chp) .depth { width: auto; }
+}
+:where(.chp) .lay .sh { flex-wrap: wrap; }
+:where(.chp) .lay .sh .meta { white-space: normal; text-align: right; }
+
+/* layout stability: fixed columns, fixed value slots, no line-height jumps from sup/sub */
+:where(.chp) table.kv { table-layout: fixed; }
+:where(.chp) table.kv col.cv { width: 112px; }
+:where(.chp) table.kv col.cu { width: 52px; }
+:where(.chp) table.kv col.cs { width: 76px; }
+:where(.chp) table.kv col.cn { width: 176px; }
+:where(.chp) table.kv td { white-space: normal; }
+:where(.chp) table.kv td.v, :where(.chp) table.kv td.n, :where(.chp) table.kv td.s, :where(.chp) table.kv td.u { white-space: nowrap; overflow: hidden; }
+:where(.chp) table.kv td.v { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+:where(.chp) table.kv td.n { text-align: right; }
+:where(.chp) #rt-rot { margin-top: 8px; }
+:where(.chp) .vec { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+:where(.chp) table.kv sup, :where(.chp) table.kv sub, :where(.chp) .readout sup, :where(.chp) .readout sub, :where(.chp) .fv sup, :where(.chp) .fig .cb sup { line-height: 0; }
+:where(.chp) .fv { display: inline-block; min-width: 11.5ch; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+:where(.chp) .fv.w6 { min-width: 6ch; } :where(.chp) .fv.w7 { min-width: 7ch; } :where(.chp) .fv.w9 { min-width: 9ch; } :where(.chp) .fv.w14 { min-width: 14ch; }
+:where(.chp) .fv.l { text-align: left; }
+:where(.chp) #ro, :where(.chp) #fd-ro { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+:where(.chp) #ro > span { white-space: nowrap; }
+:where(.chp) .fig .cb .lo, :where(.chp) .fig .cb .hi { min-width: 10ch; font-variant-numeric: tabular-nums; white-space: nowrap; }
+:where(.chp) .fig .cb .lo { text-align: right; }
+:where(.chp) .panel .ctl output { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 560px) { :where(.chp) table.kv col.cv { width: 96px; } :where(.chp) table.kv col.cs { width: 70px; } :where(.chp) table.kv col.cn { width: 118px; } }
+:where(.chp) table.kv td { height: 27px; line-height: 16px; }
+:where(.chp) #ro { line-height: 18px; }
+:where(.chp) #rt .ph { flex-wrap: wrap; }
+:where(.chp) #rt .ph > span { white-space: nowrap; }
+:where(.chp) #rt-set-h { min-width: 44ch; text-align: right; }
+@media (max-width: 560px) { :where(.chp) #rt-set-h { text-align: left; } }
+
+/* reserved slots for data that arrives with the FEM json */
+:where(.chp) .ps { display: inline-block; font-family: var(--mono); font-size: 0.92em; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+:where(.chp) table.ntab { table-layout: fixed; }
+:where(.chp) table.ntab col.cv { width: 128px; }
+:where(.chp) table.ntab col.cu { width: 84px; }
+:where(.chp) table.ntab col.cs { width: 150px; }
+:where(.chp) table.ntab td { height: 25px; line-height: 16px; }
+:where(.chp) table.ntab td.num { overflow: hidden; }
+:where(.chp) table.ntab sup, :where(.chp) table.ntab sub, :where(.chp) .tx sup, :where(.chp) .tx sub, :where(.chp) .fine sup, :where(.chp) .fine sub, :where(.chp) .sh .meta sup { line-height: 0; }
+:where(.chp) .fig .cb { min-height: 20px; }
+:where(.chp) #fd-svg { height: 260px; }
+@media (max-width: 560px) { :where(.chp) table.ntab col.cv { width: 104px; } :where(.chp) table.ntab col.cu { width: 70px; } :where(.chp) table.ntab col.cs { width: 92px; } }
+/* narrow screens: colorbar unit on its own row (the 4-track row overflowed the 390 px viewport) */
+@media (max-width: 520px) { :where(.chp) .fig .cb { grid-template-columns: auto minmax(60px, 1fr) auto; } :where(.chp) .fig .cb .u { grid-column: 1 / -1; grid-row: 2; text-align: left; } }

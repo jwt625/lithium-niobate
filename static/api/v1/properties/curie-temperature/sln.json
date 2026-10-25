@@ -1,0 +1,72 @@
+{
+  "alternatives": [
+    {
+      "category": "ferroelectric",
+      "id": "curie-temperature/sln/wong2002",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "Quoted from wong2002 by a secondary web page (de.wikipedia); wong2002 not read. Lies 7 C above volk2008 and above both composition fits at 50.0 mol% (1202.3 and 1206.5 C).",
+      "property": "curie-temperature",
+      "provenance": {
+        "source_id": "wong2002",
+        "status": "S",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1213,
+      "variant": "sln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "curie-temperature",
+    "variant": "sln"
+  },
+  "recommended": [
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "curie-temperature/sln/volk2008",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "property": "curie-temperature",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Chen et al., Opt. Commun. 188, 359 (2001)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1206,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 1213,
+    "min": 1206,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "Cel"
+  }
+}

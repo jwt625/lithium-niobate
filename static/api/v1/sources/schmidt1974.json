@@ -1,0 +1,38 @@
+{
+  "citation": "R. V. Schmidt, I. P. Kaminow, \"Metal-diffused optical waveguides in LiNbO3\", Applied Physics Letters 25, 458-460, (1974) doi:10.1063/1.1655547",
+  "link": "https://doi.org/10.1063/1.1655547",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Schmidt",
+        "given": "R. V."
+      },
+      {
+        "family": "Kaminow",
+        "given": "I. P."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1655547",
+    "id": "schmidt1974",
+    "issue": "8",
+    "issued": "1974-10-15",
+    "page": "458-460",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Metal-diffused optical waveguides in LiNbO3",
+    "type": "article-journal",
+    "volume": "25"
+  }
+}

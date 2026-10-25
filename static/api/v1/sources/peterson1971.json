@@ -1,0 +1,39 @@
+{
+  "citation": "G. E. Peterson, A. M. Glass, T. J. Negran, \"Control of the Susceptibility of Lithium Niobate to Laser-Induced Refractive Index Changes\", Applied Physics Letters 19, 130-132, (1971) doi:10.1063/1.1653854",
+  "link": "https://doi.org/10.1063/1.1653854",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "G. E. Peterson"
+      },
+      {
+        "literal": "A. M. Glass"
+      },
+      {
+        "literal": "T. J. Negran"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1653854",
+    "id": "peterson1971",
+    "issue": "5",
+    "issued": "1971-09-01",
+    "page": "130-132",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Control of the Susceptibility of Lithium Niobate to Laser-Induced Refractive Index Changes",
+    "type": "article-journal",
+    "volume": "19"
+  }
+}

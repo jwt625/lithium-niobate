@@ -1,0 +1,548 @@
+# TFLN Mach-Zehnder modulator: fab flow for the Process viewer (figures.md F05-01)
+# Every number is a PDim: {value, unit, status, source, locator, analog, note}.
+#   status: reported | derived | template | na
+#   reported: read in the cited document at the locator.
+#   derived: computed from other PDims; `formula` names the inputs by id.
+#   template: illustrative; `note` gives the rationale; rendered desaturated and dashed with the tooltip
+#             "not reported; illustrative".
+#   na: not reported and not drawn (HUD shows "n/a"); allowed only for HUD-only parameters.
+#   analog: true when the value comes from a paper other than the route's anchor, or from LiTaO3.
+#           Analogs keep status `reported` but the HUD shows an "analog" mark and the source paper.
+# Source keys refer to refs.yaml. Research-note rows are written R0n:row.
+# Dates ISO. Units SI or field-standard. No value here is invented; template values say so.
+
+schema: ln-process-flow/0.1
+id: tfln_mzm_xcut
+title: Thin-film LN Mach-Zehnder modulator, x-cut, from charge to fibered chip
+date: 2026-10-25
+status: draft (lane C05); not audited
+anchors:
+  ridge_duv:
+    paper: luke2020
+    why: one paper reports the full wafer-scale patterning and cladding sequence (DUV, SiO2 hard mask, Ar ICP-RIE, HF strip, PECVD cladding) on 4- and 6-inch x-cut LNOI
+    gaps_filled_by_analog: electrodes (kharel2021, same group); facets (template)
+  strip_dlc:
+    paper: li2023nc
+    why: one paper reports DUV, DLC hard mask, Ar IBE, SC-1 redeposition clean, Ti/Au lift-off, etched facets (CC BY 4.0)
+    gaps_filled_by_analog: cladding (none stated in li2023nc; drawn uncladded); Si3N4 and DLC stack thicknesses from wang2024nature (LiTaO3)
+  shared_front_end:
+    note: crystal growth and LNOI formation are composite; both anchor papers bought commercial LNOI (NanoLN), so every front-end value is an analog or template
+
+scales:
+  - id: boule
+    note: Czochralski puller hot zone, crystal, melt
+  - id: wafer
+    note: 100 mm (ridge_duv shows 4-inch, as in luke2020 Fig. 3) or 150 mm
+  - id: die
+    note: one MZM die with electrodes and couplers
+  - id: cross_section
+    note: waveguide cross-section unit cell (LN rib or strip, SiO2, Si, Au)
+
+z_map_rule: one frozen illustrative z-map per step; bodies not touched in the step keep on-screen height; thinned bodies shrink (R13)
+camera_rule: pose persists across steps, scrub, play; re-target only at steps with camera.retarget = true
+
+routes:
+  - id: ridge_duv
+    label: Ridge, DUV + SiO2 mask (Luke 2020)
+  - id: strip_dlc
+    label: Strip, DUV + DLC mask (Li 2023)
+
+materials:
+  # Optical constants for procedural shading. Indices come from the PHY lane Sellmeier module (Zelmon 1997 CLN);
+  # values below are only what this lane checked.
+  - key: ln
+    look: transparent, birefringent, faint straw tint
+    n_display: {value: 2.21, unit: "", status: reported, source: R08:3.8, locator: "n_o at 1550 nm (Zhu 2021 table)", analog: false, note: "single ior for MeshPhysicalMaterial; birefringence shown only by the custom o/e demo (R05 B7)"}
+    F0: {value: 0.142, unit: "", status: derived, formula: "((n-1)/(n+1))^2 with n = n_display"}
+    tint: {value: "pale straw", unit: "", status: template, note: "tint not sourced (R12 'verify'); DevLog-003b token --v-ln"}
+  - key: sio2_thermal
+  - key: sio2_pecvd
+  - key: si
+  - key: quartz
+  - key: au
+  - key: ti
+  - key: cr
+  - key: dlc
+    look: dark, matte; hydrogenated amorphous carbon
+    note: {value: "a-C:H, up to 5% sp3", unit: "", status: reported, source: li2023nc, locator: "Raman D 1312.4, G 1541.0 cm^-1", analog: false}
+  - key: si3n4
+  - key: hsq
+  - key: duv_resist
+  - key: arc
+  - key: melt
+    look: incandescent display colour (template; not computed from a blackbody spectrum)
+    note: {value: "display colour, not computed", unit: "", status: template, note: "a blackbody colour (Planck spectrum at the melt temperature through CIE 1931) is not implemented"}
+  - key: slurry
+
+phases:
+  - id: crystal
+  - id: wafer
+  - id: lnoi
+  - id: device
+  - id: backend
+
+steps:
+
+# ---------------------------------------------------------------- crystal
+  - id: s01_charge
+    phase: crystal
+    name: Weigh and react Li2CO3 + Nb2O5 to a congruent charge
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: boule, inset: null}
+    tool: {id: crucible_charge, involved_part: "crucible with powder charge"}
+    camera: {retarget: true, reason: "first step"}
+    params:
+      composition_li2o: {value: 48.45, unit: "mol%", status: reported, source: volk2008, locator: "pp. 4-5 via R14 #11", analog: true, note: "compilation value; growers' exact charge not reported"}
+      li2co3_per_kg_ln: {value: 0.250, unit: "kg/kg", status: derived, formula: "0.5 M(Li2CO3) / M(LiNbO3); stoichiometric, not congruent"}
+      nb2o5_per_kg_ln: {value: 0.899, unit: "kg/kg", status: derived, formula: "0.5 M(Nb2O5) / M(LiNbO3)"}
+      co2_released_per_kg_ln: {value: 0.149, unit: "kg/kg", status: derived, formula: "0.5 M(CO2) / M(LiNbO3)"}
+      calcination_temperature: {value: null, unit: "C", status: na, note: "not found (open-questions Q1)"}
+    duration: {value: null, unit: h, status: na}
+    physics: none
+
+  - id: s02_melt
+    phase: crystal
+    name: Melt the charge
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: boule, inset: null}
+    tool: {id: cz_puller, involved_part: "crucible, RF coil, afterheater (cutaway)"}
+    camera: {retarget: false}
+    params:
+      melting_point: {value: 1255, unit: "C", status: reported, source: volk2008, locator: "Table 1.1 via R14 #13", analog: true}
+      melting_point_range: {value: [1240, 1275], unit: "C", status: reported, source: R06:2.1, locator: "range across sources", analog: true}
+      crucible_material: {value: null, unit: "", status: na, note: "not sourced (Q2); drawn as a generic metal crucible with template label"}
+      crucible_geometry: {value: null, unit: mm, status: template, note: "diameter drawn 1.5x the 153 mm crystal for legibility; no source"}
+    duration: {value: null, unit: h, status: na}
+    physics: none
+
+  - id: s03_pull
+    phase: crystal
+    name: Czochralski growth (seed, neck, shoulder, body, tail)
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: boule, inset: null}
+    tool: {id: cz_puller, involved_part: "seed rod, seed, meniscus, growing crystal"}
+    camera: {retarget: false}
+    params:
+      pull_rate: {value: [1, 2], unit: "mm/h", status: reported, source: wang2020cryst, locator: "via chen2021molecules Table 1", analog: true, note: "6-inch LN; secondary (review table)"}
+      rotation_rate: {value: [5, 10], unit: "rpm", status: reported, source: wang2020cryst, locator: "via chen2021molecules Table 1", analog: true}
+      crystal_diameter: {value: 153, unit: mm, status: reported, source: wang2020cryst, locator: "via chen2021molecules Table 1", analog: true}
+      body_length: {value: 110, unit: mm, status: reported, source: wang2020cryst, locator: "via chen2021molecules Table 1", analog: true}
+      tc_uniformity: {value: 1.3, unit: "C (max abs deviation)", status: reported, source: chen2021molecules, locator: "text, citing wang2020cryst", analog: true}
+      body_pull_time: {value: [55, 110], unit: h, status: derived, formula: "body_length / pull_rate"}
+      body_mass: {value: 9.4, unit: kg, status: derived, formula: "pi (crystal_diameter/2)^2 body_length x 4647 kg/m^3 (R14 #8)"}
+      seed_orientation: {value: null, unit: "", status: template, note: "drawn as a c-axis (Z) seed; production orientations not sourced (Q2)"}
+      shoulder_and_tail_angles: {value: null, unit: deg, status: template, note: "drawn 45 deg; no source (R05 A02 N/A)"}
+    duration: {value: [55, 110], unit: h, status: derived, formula: "body_pull_time (shoulder, tail, cooling excluded)"}
+    physics: |
+      Body length L(t) = v_pull t (v_pull from pull_rate, playback uses the midpoint 1.5 mm/h, labelled).
+      Rotation drawn at rotation_rate midpoint; growth striations as faint bands every rotation (decorative, template).
+
+  - id: s04_anneal_pole
+    phase: crystal
+    name: Anneal and pole the boule to a single domain
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: boule, inset: null}
+    tool: {id: poling_furnace, involved_part: "boule between electrodes in a furnace"}
+    camera: {retarget: true, reason: "crystal removed from puller"}
+    params:
+      curie_temperature: {value: 1140, unit: "C", status: reported, source: volk2008, locator: "Table 1.1 via R14 #16", analog: true}
+      poling_procedure: {value: "field applied across the boule while cooling through Tc", unit: "", status: template, note: "procedure of nassau1966b not read (Q3); badge U on the text"}
+      poling_field: {value: null, unit: "V/cm", status: na}
+      anneal_temperature: {value: null, unit: "C", status: na}
+    duration: {value: null, unit: h, status: na}
+    physics: "domain map inside the boule switches from random patches (template pattern, seeded PRNG) to one colour; drawn only as an illustration"
+
+# ---------------------------------------------------------------- wafer
+  - id: s05_orient_slice
+    phase: wafer
+    name: Orient, flat, and slice into x-cut wafers
+    note: "orientation and flat-grinding method not sourced; drawn as template (R09:1 gives poling -> slicing -> lapping/polishing)"
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: boule, inset: wafer}
+    tool: {id: wire_saw, involved_part: "wire web through the boule"}
+    camera: {retarget: true, reason: "boule re-oriented for x-cut slicing"}
+    params:
+      cut: {value: "x-cut", unit: "", status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      wafer_thickness_donor: {value: 500, unit: um, status: reported, source: R09:S3, locator: "Sumitomo 6-inch 128Y LN 500 um", analog: true, note: "SAW wafer spec used as donor proxy; donor thickness for LNOI not reported"}
+      flat_length: {value: null, unit: mm, status: template, note: "flat lengths not sourced (Q4); drawn at 32 mm on 100 mm"}
+      kerf: {value: null, unit: um, status: na}
+      wafers_per_boule: {value: null, unit: "", status: na, note: "needs kerf and lapping allowance"}
+    duration: {value: null, unit: h, status: na}
+    physics: none
+
+  - id: s06_lap_polish
+    phase: wafer
+    name: Lap and polish (optical grade)
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: wafer, inset: null}
+    tool: {id: cmp_polisher, involved_part: "pad, carrier head, slurry arm"}
+    camera: {retarget: true, reason: "wafer scale"}
+    params:
+      final_roughness: {value: null, unit: nm, status: na}
+    duration: {value: null, unit: h, status: na}
+    physics: "Preston removal (see s11); values template"
+
+# ---------------------------------------------------------------- lnoi
+  - id: s07_handle
+    phase: lnoi
+    name: Prepare the handle wafer (Si with thermal SiO2)
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: oxidation_furnace, involved_part: "quartz boat with wafers"}
+    camera: {retarget: false}
+    params:
+      handle_si_thickness_ridge: {value: 500, unit: um, status: reported, source: luke2020, locator: "Sec. III", analog: false, routes: [ridge_duv]}
+      handle_si_thickness_strip: {value: 525, unit: um, status: reported, source: li2023nc, locator: "Fabrication process with DLC hard mask", analog: false, routes: [strip_dlc]}
+      thermal_oxide: {value: 4.7, unit: um, status: reported, source: luke2020, locator: "Sec. III", analog: false, note: "li2023nc also 4.7 um"}
+      oxidation_temperature: {value: null, unit: "C", status: na}
+    duration: {value: null, unit: h, status: na}
+    physics: none
+
+  - id: s08_implant
+    phase: lnoi
+    name: He+ implantation into the LN donor
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: ion_implanter, involved_part: "beamline end, scanned beam, wafer on heated platen"}
+    camera: {retarget: false}
+    params:
+      ion: {value: "He+", unit: "", status: reported, source: guarino2007, locator: "Methods (arXiv v1)", analog: true, note: "z-cut CLN; anchors do not report their wafer supplier's implant"}
+      energy: {value: 195, unit: keV, status: reported, source: guarino2007, locator: "Methods (arXiv v1)", analog: true}
+      fluence: {value: 4.0e16, unit: "cm^-2", status: reported, source: guarino2007, locator: "Methods (arXiv v1)", analog: true}
+      platen_temperature: {value: 100, unit: "C", status: reported, source: guarino2007, locator: "Methods (arXiv v1)", analog: true}
+      projected_peak_depth: {value: 0.68, unit: um, status: reported, source: guarino2007, locator: "main text (arXiv v1)", analog: true}
+      tilt: {value: 7, unit: deg, status: reported, source: you2019, locator: "Methods", analog: true, note: "H implant, 4-inch LN"}
+      energy_for_600nm_film: {value: null, unit: keV, status: template, note: "needs SRIM range table (Q6); viewer keeps 195 keV and a 680 nm split depth, labelled"}
+      beam_current: {value: null, unit: mA, status: na}
+    duration: {value: null, unit: min, status: na, note: "derivable from fluence x area x e / I once beam current is sourced"}
+    physics: |
+      Implant profile drawn as a Gaussian in depth centred at projected_peak_depth; width template (Q6).
+      Damage layer shading in the donor at that depth. Donor is +X up before the flip.
+
+  - id: s09_bond
+    phase: lnoi
+    name: Clean, plasma-activate, flip, and bond donor to handle at room temperature
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: wafer_bonder, involved_part: "upper chuck with flipped donor, lower chuck with handle, centre pin"}
+    camera: {retarget: true, reason: "flip: implanted face down; crystal axes re-labelled (check P8)"}
+    params:
+      clean: {value: "RCA", unit: "", status: reported, source: you2019, locator: "Methods", analog: true}
+      activation: {value: "N2 plasma", unit: "", status: reported, source: you2019, locator: "Methods", analog: true}
+      bond_temperature: {value: "room temperature", unit: "", status: reported, source: you2019, locator: "Methods", analog: true}
+      bonder: {value: "EVG 301", unit: "", status: reported, source: you2019, locator: "Methods", analog: true, note: "named in source; drawn generic, no logo"}
+    duration: {value: null, unit: min, status: na}
+    physics: "rigid flip about the in-plane Y axis of the donor; contact wave from the centre pin outward (template speed)"
+
+  - id: s10_split
+    phase: lnoi
+    name: Strengthening anneal, then split at the implanted plane
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: anneal_oven, involved_part: "oven with bonded pair; residual donor lifts away"}
+    camera: {retarget: true, reason: "residual donor removed"}
+    params:
+      strengthening_anneal: {value: "< 200", unit: "C", status: reported, source: er_smartcut2022, locator: "Sec. II.A (arXiv v1)", analog: true}
+      split_temperature: {value: 230, unit: "C", status: reported, source: er_smartcut2022, locator: "Sec. II.A (arXiv v1), approximate", analog: true}
+      split_alt_lt: {value: "190 C for 10 h", unit: "", status: reported, source: wang2024nature, locator: "Methods, LTOI", analog: true, note: "LiTaO3"}
+      split_alt_h_ln: {value: "150 C for 2 h in N2", unit: "", status: reported, source: you2019, locator: "Methods", analog: true}
+      film_after_split: {value: 0.68, unit: um, status: derived, formula: "projected_peak_depth (s08)"}
+    duration: {value: null, unit: h, status: na}
+    physics: "T(t) profile in HUD; at split the residual donor rises (the ion-slice peel motif, R12); split surface drawn rough (template roughness)"
+
+  - id: s11_cmp
+    phase: lnoi
+    name: Edge removal and CMP of the split surface to target thickness
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: cmp_polisher, involved_part: "grooved pad, carrier head with retaining ring, slurry arm"}
+    camera: {retarget: false}
+    params:
+      target_film: {value: 600, unit: nm, status: reported, source: luke2020, locator: "Sec. III", analog: false, note: "li2023nc x-cut also 600 nm"}
+      removed_thickness: {value: 80, unit: nm, status: derived, formula: "film_after_split - target_film (both labelled; s10 is analog)"}
+      preston_kp: {value: null, unit: "1/Pa", status: template, note: "no LN Preston coefficient found; removal driven by a template rate"}
+      removal_rate: {value: null, unit: "nm/min", status: template, note: "drawn so the step plays in the standard step duration"}
+      edge_exclusion: {value: 8, unit: mm, status: reported, source: luke2020, locator: "Sec. III (rough rim)", analog: true, note: "measured exclusion, used here to draw the rim"}
+      lt_analog: {value: "edge removal and CMP to 600 nm", unit: "", status: reported, source: wang2024nature, locator: "Methods", analog: true}
+    duration: {value: null, unit: min, status: na}
+    physics: "Preston dz/dt = Kp P v with template Kp; thickness map evolves from a template initial non-uniformity; HUD shows 'template' on Kp"
+
+  - id: s12_recovery_anneal
+    phase: lnoi
+    name: Recovery anneal of the film (wafer supplier step)
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: wafer, inset: null}
+    tool: {id: anneal_oven, involved_part: "tube furnace"}
+    camera: {retarget: false}
+    params:
+      temperature: {value: null, unit: "C", status: na, note: "supplier recipe not public; device-level anneal shown in s19b/s17"}
+    duration: {value: null, unit: h, status: na}
+    physics: none
+
+# ---------------------------------------------------------------- device, route ridge_duv (anchor luke2020)
+  - id: s13r_hardmask
+    phase: device
+    name: PECVD SiO2 hard mask
+    routes: [ridge_duv]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: pecvd, involved_part: "showerhead, plasma, heated chuck"}
+    camera: {retarget: false}
+    params:
+      thickness: {value: 650, unit: nm, status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      temperature: {value: null, unit: "C", status: na}
+    duration: {value: null, unit: min, status: na}
+    physics: "conformal film growth, uniform rate"
+
+  - id: s14r_coat
+    phase: device
+    name: Spin ARC and DUV photoresist
+    routes: [ridge_duv]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: spin_coater, involved_part: "chuck, dispense nozzle"}
+    camera: {retarget: false}
+    params:
+      arc: {value: 60, unit: nm, status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      resist: {value: 600, unit: nm, status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      spin_speed: {value: null, unit: rpm, status: na}
+    duration: {value: null, unit: s, status: na}
+    physics: none
+
+  - id: s15r_expose
+    phase: device
+    name: DUV stepper exposure, step-and-repeat
+    routes: [ridge_duv]
+    scale: {primary: wafer, inset: die}
+    tool: {id: stepper, involved_part: "reticle, projection lens bottom element, wafer stage"}
+    camera: {retarget: false}
+    params:
+      wavelength: {value: 248, unit: nm, status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      reticle_field: {value: [22, 22], unit: mm, status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      exposure_time_per_wafer: {value: "< 1", unit: min, status: reported, source: luke2020, locator: "Sec. II", analog: false}
+      ebl_equivalent: {value: "> 8", unit: days, status: reported, source: luke2020, locator: "Sec. II (10 nA, 125 kV, authors' estimate)", analog: false}
+      fields_per_wafer: {value: null, unit: "", status: derived, formula: "count of 22 x 22 mm fields fully inside the 100 mm wafer minus 8 mm edge exclusion (computed in viewer; site-map motif R12)"}
+    duration: {value: "< 1", unit: min, status: reported, source: luke2020, locator: "Sec. II", analog: false}
+    physics: "fields expose in serpentine order (template order); latent image appears per field"
+
+  - id: s16r_mask_transfer
+    phase: device
+    name: Develop; etch ARC (Ar/O2) and SiO2 (C3F8)
+    routes: [ridge_duv]
+    scale: {primary: cross_section, inset: wafer}
+    tool: {id: rie, involved_part: "parallel-plate plasma over the wafer"}
+    camera: {retarget: true, reason: "move to cross-section scale"}
+    params:
+      arc_etch: {value: "Ar + O2", unit: "", status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      sio2_etch: {value: "C3F8", unit: "", status: reported, source: luke2020, locator: "Sec. III", analog: false}
+    duration: {value: null, unit: min, status: na}
+    physics: "anisotropic removal with template mask facet angle 85 deg (kaufmann2023 HSQ value used as illustration, analog)"
+
+  - id: s17r_ln_etch
+    phase: device
+    name: Ar ICP-RIE of LN (ridge)
+    routes: [ridge_duv]
+    scale: {primary: cross_section, inset: wafer}
+    tool: {id: icp_rie, involved_part: "ICP coil glow, biased chuck, ion flux"}
+    camera: {retarget: false}
+    params:
+      chemistry: {value: "Ar", unit: "", status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      etch_depth: {value: 300, unit: nm, status: reported, source: luke2020, locator: "Sec. III (thickness analysis)", analog: false}
+      slab: {value: [200, 300], unit: nm, status: reported, source: luke2020, locator: "Sec. III, device dependent", analog: false}
+      depth_std_4inch: {value: 5.9, unit: nm, status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      etch_rate: {value: 24, unit: "nm/min", status: reported, source: kaufmann2023, locator: "caption of the etch-depth series (110-260 nm): ICP 300 W, Ar 10 sccm, 1 mTorr, 600 V", analog: true, note: "drives playback time only"}
+      sidewall_angle: {value: 60, unit: deg, status: reported, source: li2023nc, locator: "intro: typical SiO2-masked ridges about 60 deg", analog: true}
+      redeposition_area: {value: null, unit: "um^2", status: template, note: "redeposition grown by the template model in figures.md F05-08"}
+    duration: {value: 12.5, unit: min, status: derived, formula: "etch_depth / etch_rate (analog rate)"}
+    physics: |
+      Mask-edge recession model: tan(a_LN) = S tan(a_mask), S = R_LN / R_mask (derived geometry, F05-08).
+      For this route the drawn angle is clamped to the reported 60 deg; the model output is shown as an upper bound in the HUD.
+      Redeposition: template film on sidewalls proportional to etched volume; removed in s18r.
+
+  - id: s18r_strip
+    phase: device
+    name: Strip resist and SiO2 hard mask in HF
+    routes: [ridge_duv]
+    scale: {primary: cross_section, inset: null}
+    tool: {id: wet_bench, involved_part: "PTFE cassette in HF bath"}
+    camera: {retarget: false}
+    params:
+      etchant: {value: "hydrofluoric acid", unit: "", status: reported, source: luke2020, locator: "Sec. III", analog: false}
+      concentration: {value: null, unit: "%", status: na}
+    duration: {value: null, unit: min, status: na}
+    physics: "isotropic removal of SiO2 mask; LN untouched; thermal BOX exposed in trenches only if the etch is full (not in this route)"
+
+  - id: s19r_clad
+    phase: device
+    name: PECVD SiO2 cladding
+    routes: [ridge_duv]
+    scale: {primary: cross_section, inset: null}
+    tool: {id: pecvd, involved_part: "showerhead, plasma"}
+    camera: {retarget: false}
+    params:
+      thickness: {value: 800, unit: nm, status: reported, source: luke2020, locator: "Sec. III", analog: false}
+    duration: {value: null, unit: min, status: na}
+    physics: "conformal-ish growth; step coverage fraction template"
+
+  - id: s20r_electrodes
+    phase: device
+    name: Au traveling-wave electrodes by lift-off
+    routes: [ridge_duv]
+    scale: {primary: die, inset: cross_section}
+    tool: {id: ebeam_evaporator, involved_part: "crucible, electron beam, vapour cone onto inverted wafer"}
+    camera: {retarget: true, reason: "die scale"}
+    params:
+      metal: {value: "Au", unit: "", status: reported, source: kharel2021, locator: "Sec. III (arXiv v1)", analog: true}
+      thickness: {value: 800, unit: nm, status: reported, source: kharel2021, locator: "Sec. III (arXiv v1)", analog: true}
+      gap: {value: 5, unit: um, status: reported, source: kharel2021, locator: "Fig. 1 caption via eo-modulator-atlas row kharel2021-b", analog: true}
+      adhesion_layer: {value: null, unit: nm, status: na}
+      electrode_length: {value: 20, unit: mm, status: reported, source: kharel2021, locator: "eo-modulator-atlas row kharel2021-b", analog: true}
+    duration: {value: null, unit: min, status: na}
+    physics: "line-of-sight deposition with template undercut resist; lift-off removes metal on resist"
+
+# ---------------------------------------------------------------- device, route strip_dlc (anchor li2023nc)
+  - id: s13s_hardmask
+    phase: device
+    name: PECVD DLC hard mask (from CH4) with Si3N4 intermediate mask
+    routes: [strip_dlc]
+    scale: {primary: wafer, inset: cross_section}
+    tool: {id: pecvd, involved_part: "showerhead, CH4 plasma"}
+    camera: {retarget: false}
+    params:
+      dlc_thickness: {value: 300, unit: nm, status: reported, source: li2023nc, locator: "Fabrication process with DLC hard mask", analog: false}
+      dlc_hardness: {value: "19-23", unit: "as printed", status: reported, source: li2023nc, locator: "same paragraph", analog: false, note: "printed as MPa in one sentence and 20 GPa in another; unit conflict in source (open-questions Q8)"}
+      si3n4_thickness: {value: null, unit: nm, status: na, note: "not stated in li2023nc"}
+      stack_lt_analog: {value: "30 nm Si3N4 / 480 nm DLC / 60 nm Si3N4", unit: "", status: reported, source: wang2024nature, locator: "Methods, LTOI PICs", analog: true}
+    duration: {value: null, unit: min, status: na}
+    physics: none
+
+  - id: s14s_expose
+    phase: device
+    name: DUV stepper lithography
+    routes: [strip_dlc]
+    scale: {primary: wafer, inset: die}
+    tool: {id: stepper, involved_part: "reticle, lens bottom element, stage"}
+    camera: {retarget: false}
+    params:
+      wavelength: {value: 248, unit: nm, status: reported, source: li2023nc, locator: "Fabrication process with DLC hard mask", analog: false}
+    duration: {value: null, unit: min, status: na}
+    physics: same as s15r
+
+  - id: s15s_mask_transfer
+    phase: device
+    name: Transfer into Si3N4 (fluorine plasma), then into DLC (oxygen plasma)
+    routes: [strip_dlc]
+    scale: {primary: cross_section, inset: null}
+    tool: {id: rie, involved_part: "parallel-plate plasma"}
+    camera: {retarget: true, reason: "cross-section scale"}
+    params:
+      si3n4_etch: {value: "fluoride chemistry", unit: "", status: reported, source: li2023nc, locator: "same paragraph", analog: false}
+      dlc_etch: {value: "O2 plasma", unit: "", status: reported, source: li2023nc, locator: "same paragraph", analog: false}
+    duration: {value: null, unit: min, status: na}
+    physics: none
+
+  - id: s16s_ln_etch
+    phase: device
+    name: Ar ion beam etching, full etch to the BOX
+    routes: [strip_dlc]
+    scale: {primary: cross_section, inset: wafer}
+    tool: {id: ion_beam_etcher, involved_part: "gridded ion source, collimated beam, tilted rotating stage"}
+    camera: {retarget: false}
+    params:
+      etch_depth: {value: 600, unit: nm, status: reported, source: li2023nc, locator: "x-cut film 600 nm, fully etched strip", analog: false, note: "the SEM example in the paper is 0.7 um high (z-cut 700 nm)"}
+      selectivity_ln_dlc: {value: 3, unit: "", status: reported, source: li2023nc, locator: "'up to x3'", analog: false}
+      selectivity_ln_sio2: {value: 1, unit: "", status: reported, source: li2023nc, locator: "comparison", analog: false}
+      sidewall_angle: {value: 80, unit: deg, status: reported, source: li2023nc, locator: "Fig. 1e", analog: false}
+      base_width: {value: 3.3, unit: um, status: reported, source: li2023nc, locator: "Fig. 1e", analog: false}
+      dlc_consumed: {value: 200, unit: nm, status: derived, formula: "etch_depth / selectivity_ln_dlc"}
+      etch_rate: {value: null, unit: "nm/min", status: na}
+      beam_voltage: {value: null, unit: V, status: na}
+    duration: {value: null, unit: min, status: na}
+    physics: "mask-recession model with S = 3; drawn angle set to reported 80 deg; model value shown alongside"
+
+  - id: s17s_clean
+    phase: device
+    name: SC-1 redeposition removal; O2 plasma DLC strip
+    routes: [strip_dlc]
+    scale: {primary: cross_section, inset: null}
+    tool: {id: wet_bench, involved_part: "heated SC-1 bath"}
+    camera: {retarget: false}
+    params:
+      sc1_ratio: {value: "NH4OH:H2O2:H2O = 1:1:5", unit: "", status: reported, source: li2023nc, locator: "same paragraph", analog: false}
+      sc1_temperature: {value: null, unit: "C", status: na}
+      dlc_strip: {value: "O2 plasma (resist asher)", unit: "", status: reported, source: li2023nc, locator: "same paragraph", analog: false}
+    duration: {value: null, unit: min, status: na}
+    physics: "redeposition film dissolves (template rate); DLC ashes; LN unchanged"
+
+  - id: s18s_electrodes
+    phase: device
+    name: Ti/Au electrodes by DUV lift-off and e-beam evaporation
+    routes: [strip_dlc]
+    scale: {primary: die, inset: cross_section}
+    tool: {id: ebeam_evaporator, involved_part: "crucible, beam, vapour cone"}
+    camera: {retarget: true, reason: "die scale"}
+    params:
+      ti: {value: 5, unit: nm, status: reported, source: li2023nc, locator: "same paragraph", analog: false}
+      au: {value: 400, unit: nm, status: reported, source: li2023nc, locator: "same paragraph", analog: false}
+      mzm_length: {value: 1.73, unit: cm, status: reported, source: li2023nc, locator: "abstract", analog: false}
+      vpi: {value: 1.94, unit: V, status: reported, source: li2023nc, locator: "abstract", analog: false}
+    duration: {value: null, unit: min, status: na}
+    physics: same as s20r
+
+  - id: s19s_facets
+    phase: backend
+    name: Chip separation by deep dry etch and backside grinding
+    routes: [strip_dlc]
+    scale: {primary: wafer, inset: die}
+    tool: {id: grinder, involved_part: "cup wheel on the wafer back side"}
+    camera: {retarget: true, reason: "wafer flipped for backside grind"}
+    params:
+      method: {value: "deep dry etch, then backside grinding", unit: "", status: reported, source: li2023nc, locator: "same paragraph", analog: false}
+      taper_tip: {value: 250, unit: nm, status: reported, source: li2023nc, locator: "results, edge coupling", analog: false}
+      coupling_loss: {value: 3, unit: "dB/facet", status: reported, source: li2023nc, locator: "results, edge coupling", analog: false}
+    duration: {value: null, unit: min, status: na}
+    physics: "grind reveals the etched trenches from the back; chips separate"
+
+# ---------------------------------------------------------------- backend, route ridge_duv
+  - id: s21r_dice
+    phase: backend
+    name: Dice and polish facets
+    routes: [ridge_duv]
+    scale: {primary: wafer, inset: die}
+    tool: {id: dicing_saw, involved_part: "blade, spindle, coolant jet"}
+    camera: {retarget: false}
+    params:
+      method: {value: "dice and polish", unit: "", status: template, note: "luke2020 does not state its facet method; a 2018 recipe recording dicing and polishing is U (R02 L9)"}
+      blade_kerf: {value: null, unit: um, status: na}
+    duration: {value: null, unit: min, status: na}
+    physics: none
+
+  - id: s22_fiber
+    phase: backend
+    name: Align and attach fibers to edge couplers
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: die, inset: null}
+    tool: {id: fiber_aligner, involved_part: "lensed fiber or fiber array on a 6-axis stage"}
+    camera: {retarget: true, reason: "die scale with fibers"}
+    params:
+      coupler_rib: {value: "< 1.7", unit: "dB/facet", status: reported, source: he2019ol, locator: "abstract", analog: true, routes: [ridge_duv]}
+      fiber_array_pitch: {value: 250, unit: um, status: reported, source: R05:A09, locator: "audited asset spec", analog: true}
+      adhesive: {value: null, unit: "", status: na}
+    duration: {value: null, unit: min, status: na}
+    physics: "coupling efficiency vs lateral offset drawn from a Gaussian overlap with template mode sizes (labelled)"
+
+  - id: s23_rf
+    phase: backend
+    name: RF probe or wire bond to the electrode pads
+    routes: [ridge_duv, strip_dlc]
+    scale: {primary: die, inset: null}
+    tool: {id: rf_probe, involved_part: "GSG probe tip"}
+    camera: {retarget: false}
+    params:
+      wire: {value: 25, unit: um, status: reported, source: R05:A10, locator: "grade B in source", analog: true}
+      probe_pitch: {value: null, unit: um, status: na}
+    duration: {value: null, unit: min, status: na}
+    physics: none
+
+summary:
+  # Counts are of PDims with a numeric or string value per status; recomputed by the build script, not by hand.
+  note: "per-route counts are produced by the builder; this lane did not hand-count to avoid a stale number"
+  expectation: "front end mostly analog or template; device steps reported from the anchor paper; HUD must show analog marks"

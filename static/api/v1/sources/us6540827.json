@@ -1,0 +1,35 @@
+{
+  "citation": "M. Levy, R. M. Osgood, A. Radojevic, \"US 6540827 B1 (crystal ion slicing of single-crystal films)\", (1998) https://patents.google.com/patent/US6540827B1/en",
+  "link": "https://patents.google.com/patent/US6540827B1/en",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "M. Levy"
+      },
+      {
+        "literal": "R. M. Osgood"
+      },
+      {
+        "literal": "A. Radojevic"
+      }
+    ],
+    "id": "us6540827",
+    "issued": "1998-02-17",
+    "read": "Read",
+    "title": "US 6540827 B1 (crystal ion slicing of single-crystal films)",
+    "type": "patent",
+    "url": "https://patents.google.com/patent/US6540827B1/en"
+  }
+}

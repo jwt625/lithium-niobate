@@ -1,0 +1,36 @@
+{
+  "citation": "Paweł E. Tomaszewski, Robert W. Cahn, \"Jan Czochralski and His Method of Pulling Crystals\", MRS Bulletin 29, 348-349, (2004) doi:10.1557/mrs2004.105",
+  "link": "https://doi.org/10.1557/mrs2004.105",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Paweł E. Tomaszewski"
+      },
+      {
+        "literal": "Robert W. Cahn"
+      }
+    ],
+    "container_title": "MRS Bulletin",
+    "doi": "10.1557/mrs2004.105",
+    "id": "tomaszewski2004",
+    "issue": "5",
+    "issued": "2004-05",
+    "page": "348-349",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Jan Czochralski and His Method of Pulling Crystals",
+    "type": "article-journal",
+    "volume": "29"
+  }
+}

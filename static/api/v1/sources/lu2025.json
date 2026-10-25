@@ -1,0 +1,33 @@
+{
+  "citation": "Ruochen Lu, \"Recent advances in high-performance millimeter-Wave acoustic resonators and filters using thin-film lithium niobate\", Progress in Quantum Electronics 100-101, 100565, (2025) doi:10.1016/j.pquantelec.2025.100565",
+  "link": "https://doi.org/10.1016/j.pquantelec.2025.100565",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Lu",
+        "given": "Ruochen"
+      }
+    ],
+    "container_title": "Progress in Quantum Electronics",
+    "doi": "10.1016/j.pquantelec.2025.100565",
+    "id": "lu2025",
+    "issued": "2025-03",
+    "page": "100565",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Recent advances in high-performance millimeter-Wave acoustic resonators and filters using thin-film lithium niobate",
+    "type": "article-journal",
+    "volume": "100-101"
+  }
+}

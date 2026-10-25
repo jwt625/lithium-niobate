@@ -1,0 +1,49 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "bulk-velocity-shear-z",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "acoustic",
+      "conditions": {
+        "method": "plane-wave ultrasonic, (006) plate"
+      },
+      "default": true,
+      "id": "bulk-velocity-shear-z/cln/kushibiki1999",
+      "kind": "scalar",
+      "name": "Bulk shear velocity along Z",
+      "property": "bulk-velocity-shear-z",
+      "provenance": {
+        "locator": "Table II",
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "v_S,Z",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.23
+      },
+      "unit": {
+        "display": "m/s",
+        "ucum": "m/s"
+      },
+      "value": 3590.41,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

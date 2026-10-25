@@ -1,0 +1,24 @@
+{
+  "citation": "\"CCRAFT photonic chips: Switzerland scaling\", (2026) https://www.csem.ch/en/press/ccraft-photonic-chips-switzerland-scaling/",
+  "link": "https://www.csem.ch/en/press/ccraft-photonic-chips-switzerland-scaling/",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "csem-2026",
+    "issued": "2026-07-02",
+    "read": "Read",
+    "title": "CCRAFT photonic chips: Switzerland scaling",
+    "type": "webpage",
+    "url": "https://www.csem.ch/en/press/ccraft-photonic-chips-switzerland-scaling/"
+  }
+}

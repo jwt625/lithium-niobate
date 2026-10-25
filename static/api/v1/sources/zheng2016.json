@@ -1,0 +1,54 @@
+{
+  "citation": "Dahuai Zheng, Yongfa Kong, Shiguo Liu, et al., \"The simultaneous enhancement of photorefraction and optical damage resistance in MgO and Bi2O3 co-doped LiNbO3 crystals\", Scientific Reports 6, 20308, (2016) doi:10.1038/srep20308",
+  "link": "https://doi.org/10.1038/srep20308",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Dahuai Zheng"
+      },
+      {
+        "literal": "Yongfa Kong"
+      },
+      {
+        "literal": "Shiguo Liu"
+      },
+      {
+        "literal": "Muling Chen"
+      },
+      {
+        "literal": "Shaolin Chen"
+      },
+      {
+        "literal": "Ling Zhang"
+      },
+      {
+        "literal": "Romano Rupp"
+      },
+      {
+        "literal": "Jingjun Xu"
+      }
+    ],
+    "container_title": "Scientific Reports",
+    "doi": "10.1038/srep20308",
+    "id": "zheng2016",
+    "issue": "1",
+    "issued": "2016-02-03",
+    "page": "20308",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "The simultaneous enhancement of photorefraction and optical damage resistance in MgO and Bi2O3 co-doped LiNbO3 crystals",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

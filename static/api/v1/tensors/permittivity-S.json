@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "All public records of this tensor across variants; spread is per component over all records (compare variant, conditions and frame before use).",
+    "tensor": "permittivity-S"
+  },
+  "records": [
+    "permittivity-S/cln/cti1999",
+    "permittivity-S/cln/kushibiki1999",
+    "permittivity-S/cln/volk2008",
+    "permittivity-S/unspecified/weis1985-savage1966",
+    "permittivity-S/unspecified/weis1985-teague1975",
+    "permittivity-S/unspecified/weis1985-warner1967",
+    "permittivity-S/unspecified/weis1985-yamada1967"
+  ],
+  "spread": {
+    "eps11": {
+      "max": 46.5,
+      "min": 43.9,
+      "n_records": 7
+    },
+    "eps33": {
+      "max": 29,
+      "min": 23.7,
+      "n_records": 7
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "citation": "Chrystel Deguet, Mathieu Pijolat, Nicolas Blanc, et al., \"LiNbO3 Single Crystal Layer Transfer Techniques for High Performances RF Filters\", ECS Transactions 33, 225-232, (2010) doi:10.1149/1.3483511",
+  "link": "https://doi.org/10.1149/1.3483511",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Chrystel Deguet"
+      },
+      {
+        "literal": "Mathieu Pijolat"
+      },
+      {
+        "literal": "Nicolas Blanc"
+      },
+      {
+        "literal": "Bruno Imbert"
+      },
+      {
+        "literal": "Sebastien Loubriat"
+      },
+      {
+        "literal": "Emmanuel Defay"
+      },
+      {
+        "literal": "Thibault Ricart"
+      },
+      {
+        "literal": "Laurent Clavelier"
+      },
+      {
+        "literal": "Jean Sebastien Moulet"
+      },
+      {
+        "literal": "Bruno Ghyselen"
+      },
+      {
+        "literal": "Fabrice Letertre"
+      },
+      {
+        "literal": "Sylvain Ballandras"
+      }
+    ],
+    "container_title": "ECS Transactions",
+    "doi": "10.1149/1.3483511",
+    "id": "deguet2010",
+    "issue": "4",
+    "issued": "2010-10-01",
+    "page": "225-232",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "LiNbO3 Single Crystal Layer Transfer Techniques for High Performances RF Filters",
+    "type": "article-journal",
+    "volume": "33"
+  }
+}

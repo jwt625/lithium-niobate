@@ -1,0 +1,32 @@
+{
+  "citation": "Materials Project, \"Materials Project mp-3731 (LiNbO3, R3c)\", (2023) doi:10.17188/1184005",
+  "link": "https://doi.org/10.17188/1184005",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Legacy terms CC BY 4.0; current terms page returned 403.",
+      "oa_status": "unknown"
+    },
+    "author": [
+      {
+        "literal": "Materials Project"
+      }
+    ],
+    "doi": "10.17188/1184005",
+    "id": "mp3731",
+    "issued": "2023-03-11",
+    "read": "partial; linked only",
+    "title": "Materials Project mp-3731 (LiNbO3, R3c)",
+    "type": "dataset"
+  }
+}

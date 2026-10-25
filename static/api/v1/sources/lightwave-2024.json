@@ -1,0 +1,25 @@
+{
+  "citation": "\"HyperLight secures $37M in new funding\", Lightwave, (2024) https://lightwaveonline.com/home/article/55142234/hyperlight-secures-37m-in-new-funding",
+  "link": "https://lightwaveonline.com/home/article/55142234/hyperlight-secures-37m-in-new-funding",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Lightwave",
+    "id": "lightwave-2024",
+    "issued": "2024-09-24",
+    "read": "Read",
+    "title": "HyperLight secures $37M in new funding",
+    "type": "webpage",
+    "url": "https://lightwaveonline.com/home/article/55142234/hyperlight-secures-37m-in-new-funding"
+  }
+}

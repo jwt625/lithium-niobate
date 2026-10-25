@@ -1,0 +1,24 @@
+{
+  "citation": "\"Ligentec and X-FAB expand integrated photonics offering with SOI and thin-film lithium niobate volume scaling\", (2026) https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling",
+  "link": "https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "xfab-2026",
+    "issued": "2026-01-19",
+    "read": "Read",
+    "title": "Ligentec and X-FAB expand integrated photonics offering with SOI and thin-film lithium niobate volume scaling",
+    "type": "webpage",
+    "url": "https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling"
+  }
+}

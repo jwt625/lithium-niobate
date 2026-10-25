@@ -1,0 +1,1249 @@
+# Chapter 02 Light: references
+# Bibliographic fields (authors, title, container, volume, issue, pages/article, issued) were taken from
+# api.crossref.org/works/{doi} on 2026-10-25 (no mailto or personal parameter). Entries marked
+# "biblio_check: R06/R14" rely on the project research notes.
+# content_read states how far the content was read; it limits the status a value from that source may carry:
+#   full / selected chapters -> P (value originates there) or P-comp (compilation of other measurements)
+#   database transcription   -> P-db
+#   abstract                 -> reported (number in the abstract) ; title -> no numbers taken from it
+#   "numbers via R08 (Y)"    -> reported, number from the abstract as recorded in research/R08
+#   not read                 -> any number from it is S (via a named secondary) or U
+# Status codes used in manuscript.md: P, P-comp, P-db, S, V, U, reported, derived, template, engine.
+# engine = computed by the eo-modulator-atlas FEM engine (see id atlas-engine).
+- id: weis1985
+  type: journal-article
+  authors: ["R. S. Weis", "T. K. Gaylord"]
+  title: "Lithium niobate: Summary of physical properties and crystal structure"
+  container: "Applied Physics A Solids and Surfaces"
+  volume: "37"
+  issue: "4"
+  pages: "191-203"
+  issued: "1985-08"
+  doi: 10.1007/BF00614817
+  biblio_check: crossref 2026-10-25
+  content_read: "full (R14: all 13 pages, tables checked against page images)"
+  used_for: "r tensor sets (Table 4), indices of Nelson & Mikulyak (Table 2), axis convention"
+  notes: "Compilation; originals cited inside were not read (status P-comp). Has no SHG d table. Table 2 misprints n_o at 472.7 nm as 3.3597 (should read 2.3597)."
+- id: volk2008
+  type: book
+  authors: ["Tatyana Volk", "Manfred Wöhlecke"]
+  title: "Lithium Niobate"
+  container: "Springer Series in Materials Science"
+  issued: "2009"
+  doi: 10.1007/978-3-540-70766-0
+  biblio_check: crossref 2026-10-25
+  content_read: "selected chapters (R14: Ch. 1 Tables 1.1-1.2, Sec. 6.1-6.4, Table 6.1)"
+  used_for: "d33/d31/d22 compilation values (Table 1.2), SLN indices, Schlarb generalized Sellmeier (Eqs. 6.9-6.10)"
+  notes: "Compilation (status P-comp). Crossref print year 2009; chapters dated 2008; cited here as volk2008 per the project register."
+- id: zelmon1997
+  type: journal-article
+  authors: ["David E. Zelmon", "David L. Small", "Dieter Jundt"]
+  title: "Infrared corrected Sellmeier coefficients for congruently grown lithium niobate and 5 mol% magnesium oxide –doped lithium niobate"
+  container: "Journal of the Optical Society of America B"
+  volume: "14"
+  issue: "12"
+  pages: "3319"
+  issued: "1997-12-01"
+  doi: 10.1364/JOSAB.14.003319
+  biblio_check: crossref 2026-10-25
+  content_read: "coefficients via refractiveindex.info (CC0); paper not read"
+  used_for: "Sellmeier n_o, n_e for CLN and 5 mol% MgO:CLN, 21 C, 0.4-5.0 um"
+  notes: "Status P-db. MgO5 o/e headings in Table 2 are swapped (see zelmon1997err)."
+- id: zelmon1997err
+  type: journal-article
+  authors: ["David E. Zelmon", "David L. Small", "Dieter Jundt"]
+  title: "Infrared corrected Sellmeier coefficients for congruently grown lithium niobate and 5 mol. % magnesium oxide–doped lithium niobate: erratum"
+  container: "Journal of the Optical Society of America B"
+  volume: "43"
+  issue: "11"
+  pages: "2788"
+  issued: "2026-10-22"
+  doi: 10.1364/JOSAB.616304
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "erratum: o/e headings for 5 mol% MgO:LN in Table 2 are switched"
+  notes: "Published 2026-10-22. gayer2008 p. 348 already states the swap (R14 row 36d)."
+- id: jundt1997
+  type: journal-article
+  authors: ["Dieter H. Jundt"]
+  title: "Temperature-dependent Sellmeier equation for the index of refraction, n_e, in congruent lithium niobate"
+  container: "Optics Letters"
+  volume: "22"
+  issue: "20"
+  pages: "1553"
+  issued: "1997-10-15"
+  doi: 10.1364/OL.22.001553
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; coefficients via en.wikipedia (S)"
+  used_for: "temperature-dependent n_e(lambda, T), CLN"
+  notes: "f = (T - 24.5)(T + 570.82), T in C, as transcribed by the secondary source; primary not held."
+- id: gayer2008
+  type: journal-article
+  authors: ["O. Gayer", "Z. Sacks", "E. Galun", "A. Arie"]
+  title: "Temperature and wavelength dependent refractive index equations for MgO-doped congruent and stoichiometric LiNbO3"
+  container: "Applied Physics B"
+  volume: "91"
+  issue: "2"
+  pages: "343-348"
+  issued: "2008-04-11"
+  doi: 10.1007/s00340-008-2998-2
+  biblio_check: crossref 2026-10-25
+  content_read: "full (R14)"
+  used_for: "T-dependent Sellmeier for MgO5 (n_e, n_o) and 1% MgO:SLN (n_e)"
+  notes: "Status P for all coefficients (R14 row 36). n_o reliable only to 1620 nm and about 20-100 C. dn/dT computed from the published b-coefficients is anomalous (R14 row 36c)."
+- id: gayer2008err
+  type: journal-article
+  authors: ["O. Gayer", "Z. Sacks", "E. Galun", "A. Arie"]
+  title: "Temperature and wavelength dependent refractive index equations for MgO-doped congruent and stoichiometric LiNbO3"
+  container: "Applied Physics B"
+  volume: "94"
+  issue: "2"
+  pages: "367-367"
+  issued: "2008-11-26"
+  doi: 10.1007/s00340-008-3316-8
+  biblio_check: crossref 2026-10-25
+  content_read: "full (R14)"
+  used_for: "erratum replaces Fig. 3 only; Table 1 unchanged"
+- id: rii2024
+  type: journal-article
+  authors: ["Mikhail N. Polyanskiy"]
+  title: "Refractiveindex.info database of optical constants"
+  container: "Scientific Data"
+  volume: "11"
+  issue: "1"
+  article: "94"
+  issued: "2024-01-18"
+  doi: 10.1038/s41597-023-02898-2
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref); database files read by R06"
+  used_for: "CC0 transcriptions of Zelmon 1997 (CLN o, e) and DeSalvo 1996 n2"
+  notes: "refractiveindex.info database, CC0."
+- id: nelson1974
+  type: journal-article
+  authors: ["D. F. Nelson", "R. M. Mikulyak"]
+  title: "Refractive indices of congruently melting lithium niobate"
+  container: "Journal of Applied Physics"
+  volume: "45"
+  issue: "8"
+  pages: "3688-3689"
+  issued: "1974-08-01"
+  doi: 10.1063/1.1663839
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref); values read in weis1985 Table 2"
+  used_for: "measured n_o, n_e of congruent LN, 0.40463-3.05148 um"
+  notes: "Values P-comp via weis1985."
+- id: edwards1984
+  type: journal-article
+  authors: ["G. J. Edwards", "M. Lawrence"]
+  title: "A temperature-dependent dispersion equation for congruently grown lithium niobate"
+  container: "Optical and Quantum Electronics"
+  volume: "16"
+  issue: "4"
+  pages: "373-375"
+  issued: "1984-07"
+  doi: 10.1007/bf00620081
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "alternative T-dependent Sellmeier, CLN"
+  notes: "Coefficients not entered."
+- id: moretti2005
+  type: journal-article
+  authors: ["Luigi Moretti", "Mario Iodice", "Francesco G. Della Corte", "Ivo Rendina"]
+  title: "Temperature dependence of the thermo-optic coefficient of lithium niobate, from 300 to 515 K in the visible and infrared regions"
+  container: "Journal of Applied Physics"
+  volume: "98"
+  issue: "3"
+  article: "036101"
+  issued: "2005-08-01"
+  doi: 10.1063/1.1988987
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref); fit formula via schwesyg2011 (S)"
+  used_for: "thermo-optic coefficients, 632 and 1523 nm, o and e, 320-515 K"
+  notes: "Title says 300 to 515 K; abstract says 320 to 515 K."
+- id: shoji1997
+  type: journal-article
+  authors: ["Ichiro Shoji", "Takashi Kondo", "Ayako Kitamoto", "Masayuki Shirane", "Ryoichi Ito"]
+  title: "Absolute scale of second-order nonlinear-optical coefficients"
+  container: "Journal of the Optical Society of America B"
+  volume: "14"
+  issue: "9"
+  pages: "2268"
+  issued: "1997-09-01"
+  doi: 10.1364/JOSAB.14.002268
+  biblio_check: crossref 2026-10-25
+  content_read: "not held; abstract seen by R06 only"
+  used_for: "absolute d scale (post-1997)"
+  notes: "Values quoted from it in this chapter are U."
+- id: miller1964
+  type: journal-article
+  authors: ["Robert C. Miller"]
+  title: "OPTICAL SECOND HARMONIC GENERATION IN PIEZOELECTRIC CRYSTALS"
+  container: "Applied Physics Letters"
+  volume: "5"
+  issue: "1"
+  pages: "17-19"
+  issued: "1964-07-01"
+  doi: 10.1063/1.1754022
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "Miller rule (scaling of chi(2) with linear susceptibilities)"
+- id: kleinman1962
+  type: journal-article
+  authors: ["D. A. Kleinman"]
+  title: "Nonlinear Dielectric Polarization in Optical Media"
+  container: "Physical Review"
+  volume: "126"
+  issue: "6"
+  pages: "1977-1979"
+  issued: "1962-06-15"
+  doi: 10.1103/PhysRev.126.1977
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "Kleinman permutation symmetry"
+- id: armstrong1962
+  type: journal-article
+  authors: ["J. A. Armstrong", "N. Bloembergen", "J. Ducuing", "P. S. Pershan"]
+  title: "Interactions between Light Waves in a Nonlinear Dielectric"
+  container: "Physical Review"
+  volume: "127"
+  issue: "6"
+  pages: "1918-1939"
+  issued: "1962-09-15"
+  doi: 10.1103/PhysRev.127.1918
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "coupled-amplitude equations for three-wave mixing; quasi-phase matching proposal"
+- id: fejer1992
+  type: journal-article
+  authors: ["M.M. Fejer", "G.A. Magel", "D.H. Jundt", "R.L. Byer"]
+  title: "Quasi-phase-matched second harmonic generation: tuning and tolerances"
+  container: "IEEE Journal of Quantum Electronics"
+  volume: "28"
+  issue: "11"
+  pages: "2631-2654"
+  issued: "1992"
+  doi: 10.1109/3.161322
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "QPM tuning and tolerances; d_eff = (2/(m pi)) d sin(m pi D); acceptance bandwidths"
+- id: boydkleinman1968
+  type: journal-article
+  authors: ["G. D. Boyd", "D. A. Kleinman"]
+  title: "Parametric Interaction of Focused Gaussian Light Beams"
+  container: "Journal of Applied Physics"
+  volume: "39"
+  issue: "8"
+  pages: "3597-3639"
+  issued: "1968-07-01"
+  doi: 10.1063/1.1656831
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "optimum focusing l/b = 2.84 for SHG without walk-off"
+- id: giordmaine1965
+  type: journal-article
+  authors: ["J. A. Giordmaine", "Robert C. Miller"]
+  title: "Tunable Coherent Parametric Oscillation in LiNbO3 at Optical Frequencies"
+  container: "Physical Review Letters"
+  volume: "14"
+  issue: "24"
+  pages: "973-976"
+  issued: "1965-06-14"
+  doi: 10.1103/PhysRevLett.14.973
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "first tunable OPO, in LiNbO3"
+- id: myers1995
+  type: journal-article
+  authors: ["L. E. Myers", "R. C. Eckardt", "M. M. Fejer", "R. L. Byer", "W. R. Bosenberg", "J. W. Pierce"]
+  title: "Quasi-phase-matched optical parametric oscillators in bulk periodically poled LiNbO3"
+  container: "Journal of the Optical Society of America B"
+  volume: "12"
+  issue: "11"
+  pages: "2102"
+  issued: "1995-11-01"
+  doi: 10.1364/JOSAB.12.002102
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "bulk PPLN OPOs"
+  notes: "Tuning data not read."
+- id: yamada1993
+  type: journal-article
+  authors: ["M. Yamada", "N. Nada", "M. Saitoh", "K. Watanabe"]
+  title: "First-order quasi-phase matched LiNbO3 waveguide periodically poled by applying an external field for efficient blue second-harmonic generation"
+  container: "Applied Physics Letters"
+  volume: "62"
+  issue: "5"
+  pages: "435-436"
+  issued: "1993-02-01"
+  doi: 10.1063/1.108925
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "first-order QPM LN waveguide periodically poled by external field; 20.7 mW blue, 600 %/W cm^2"
+- id: zhao2020jap
+  type: journal-article
+  authors: ["Jie Zhao", "Michael Rüsing", "Matthias Roeper", "Lukas M. Eng", "Shayan Mookherjea"]
+  title: "Poling thin-film x-cut lithium niobate for quasi-phase matching with sub-micrometer periodicity"
+  container: "Journal of Applied Physics"
+  volume: "127"
+  issue: "19"
+  article: "193104"
+  issued: "2020-05-18"
+  doi: 10.1063/1.5143266
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "x-cut TFLN poling, 600 nm period, features < 200 nm"
+- id: nagy2020
+  type: journal-article
+  authors: ["Jonathan Tyler Nagy", "Ronald M. Reano"]
+  title: "Submicrometer periodic poling of lithium niobate thin films with bipolar preconditioning pulses"
+  container: "Optical Materials Express"
+  volume: "10"
+  issue: "8"
+  pages: "1911"
+  issued: "2020-07-22"
+  doi: 10.1364/OME.394724
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "x-cut MgO:TFLN, 747 nm period with bipolar preconditioning"
+- id: chang2016
+  type: journal-article
+  authors: ["Lin Chang", "Yifei Li", "Nicolas Volet", "Leiran Wang", "Jon Peters", "John E. Bowers"]
+  title: "Thin film wavelength converters for photonic integrated circuits"
+  container: "Optica"
+  volume: "3"
+  issue: "5"
+  pages: "531"
+  issued: "2016-05-13"
+  doi: 10.1364/OPTICA.3.000531
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "thin-film PPLN wavelength converters (early)"
+- id: wang2018optica
+  type: journal-article
+  authors: ["Cheng Wang", "Carsten Langrock", "Alireza Marandi", "et al."]  # 8 authors in Crossref
+  title: "Ultrahigh-efficiency wavelength conversion in nanophotonic periodically poled lithium niobate waveguides"
+  container: "Optica"
+  volume: "5"
+  issue: "11"
+  pages: "1438"
+  issued: "2018-11-07"
+  doi: 10.1364/OPTICA.5.001438
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y)"
+  used_for: "nanophotonic PPLN SHG, 2600 %/W/cm^2, 4 um period"
+  notes: "Numbers not re-read here."
+- id: rao2019
+  type: journal-article
+  authors: ["Ashutosh Rao", "Kamal Abdelsalam", "Tracy Sjaardema", "Amirmahdi Honardoost", "Guillermo F. Camacho-Gonzalez", "Sasan Fathpour"]
+  title: "Actively-monitored periodic-poling in thin-film lithium niobate photonic waveguides with ultrahigh nonlinear conversion efficiency of 4600 %W−1cm−2"
+  container: "Optics Express"
+  volume: "27"
+  issue: "18"
+  pages: "25920"
+  issued: "2019-08-28"
+  doi: 10.1364/OE.27.025920
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "actively monitored poling; 4600 %/W/cm^2 (in title)"
+- id: zhao2020oe
+  type: journal-article
+  authors: ["Jie Zhao", "Michael Rüsing", "Usman A. Javid", "et al."]  # 7 authors in Crossref
+  title: "Shallow-etched thin-film lithium niobate waveguides for highly-efficient second-harmonic generation"
+  container: "Optics Express"
+  volume: "28"
+  issue: "13"
+  pages: "19669"
+  issued: "2020-06-19"
+  doi: 10.1364/OE.395545
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "shallow-etched x-cut MgO:TFLN, 5 mm, 939 %/W, 3757 %/W/cm^2, 1 nm linewidth, 0.1 nm/C tuning"
+- id: chen2024nn
+  type: journal-article
+  authors: ["Pao-Kang Chen", "Ian Briggs", "Chaohan Cui", "Liang Zhang", "Manav Shah", "Linran Fan"]
+  title: "Adapted poling to break the nonlinear efficiency limit in nanophotonic lithium niobate waveguides"
+  container: "Nature Nanotechnology"
+  volume: "19"
+  issue: "1"
+  pages: "44-50"
+  issued: "2023-10-26"
+  volume_year: "2024"  # year of the journal volume; issued = online date (Crossref)
+  doi: 10.1038/s41565-023-01525-w
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y)"
+  used_for: "adapted poling against film nonuniformity"
+  notes: "Crossref lists the online date 2023-10-26; issue 2024. Numbers (104 %/W, >80% at 20 mW) not re-read here."
+- id: li2024apn
+  type: journal-article
+  authors: ["Yuan Li", "Xiuquan Zhang", "Lutong Cai", "Lin Zhang"]
+  title: "Highly efficient second-harmonic generation in a double-layer thin-film lithium niobate waveguide"
+  container: "Advanced Photonics Nexus"
+  volume: "3"
+  issue: "06"
+  pages: "1-7"
+  issued: "2024-11-07"
+  doi: 10.1117/1.APN.3.6.066009
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "double-layer polarization-reversed TFLN; 9600 %/W/cm^2 measured, >10,000 theory, 85% absolute"
+- id: park2022
+  type: journal-article
+  authors: ["Taewon Park", "Hubert S. Stokowski", "Vahid Ansari", "et al."]  # 7 authors in Crossref
+  title: "High-efficiency second harmonic generation of blue light on thin-film lithium niobate"
+  container: "Optics Letters"
+  volume: "47"
+  issue: "11"
+  pages: "2706"
+  issued: "2022-05-19"
+  doi: 10.1364/OL.455046
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "blue SHG on TFLN, 33,000 %/W/cm^2"
+- id: mishra2021
+  type: journal-article
+  authors: ["Jatadhari Mishra", "Timothy P. McKenna", "Edwin Ng", "et al."]  # 10 authors in Crossref
+  title: "Mid-infrared nonlinear optics in thin-film lithium niobate on sapphire"
+  container: "Optica"
+  volume: "8"
+  issue: "6"
+  pages: "921"
+  issued: "2021-06-16"
+  doi: 10.1364/OPTICA.427428
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "TFLN on sapphire, DFG to 3.66 um, up to 200 %/W/cm^2; silica absorbs beyond 2.5 um"
+- id: luo2018
+  type: journal-article
+  authors: ["Rui Luo", "Yang He", "Hanxiao Liang", "Mingxiao Li", "Qiang Lin"]
+  title: "Highly tunable efficient second-harmonic generation in a lithium niobate nanophotonic waveguide"
+  container: "Optica"
+  volume: "5"
+  issue: "8"
+  pages: "1006"
+  issued: "2018-08-16"
+  doi: 10.1364/OPTICA.5.001006
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); number via R08 Y(arXiv)"
+  used_for: "modal phase matching SHG"
+  notes: "4.7 %/W in 8 mm not re-read."
+- id: lu2019
+  type: journal-article
+  authors: ["Juanjuan Lu", "Joshua B. Surya", "Xianwen Liu", "et al."]  # 7 authors in Crossref
+  title: "Periodically poled thin-film lithium niobate microring resonators with a second-harmonic generation efficiency of 250,000%/W"
+  container: "Optica"
+  volume: "6"
+  issue: "12"
+  pages: "1455"
+  issued: "2019-11-21"
+  doi: 10.1364/OPTICA.6.001455
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "PPLN microring SHG 250,000 %/W (in title)"
+- id: lu2020
+  type: journal-article
+  authors: ["Juanjuan Lu", "Ming Li", "Chang-Ling Zou", "Ayed Al Sayem", "Hong X. Tang"]
+  title: "Toward 1% single-photon anharmonicity with periodically poled lithium niobate microring resonators"
+  container: "Optica"
+  volume: "7"
+  issue: "12"
+  pages: "1654"
+  issued: "2020-11-23"
+  doi: 10.1364/OPTICA.403931
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "PPLN microring 5,000,000 %/W; g/2pi about 1.2 MHz"
+- id: mckenna2022
+  type: journal-article
+  authors: ["Timothy P. McKenna", "Hubert S. Stokowski", "Vahid Ansari", "et al."]  # 10 authors in Crossref
+  title: "Ultra-low-power second-order nonlinear optics on a chip"
+  container: "Nature Communications"
+  volume: "13"
+  issue: "1"
+  article: "4532"
+  issued: "2022-08-04"
+  doi: 10.1038/s41467-022-31134-5
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "integrated SHG and OPO; threshold tens of uW; >1 THz tuning"
+- id: ledezma2022
+  type: journal-article
+  authors: ["Luis Ledezma", "Ryoto Sekine", "Qiushi Guo", "Rajveer Nehra", "Saman Jahani", "Alireza Marandi"]
+  title: "Intense optical parametric amplification in dispersion-engineered nanophotonic lithium niobate waveguides"
+  container: "Optica"
+  volume: "9"
+  issue: "3"
+  pages: "303"
+  issued: "2022-03-14"
+  doi: 10.1364/OPTICA.442332
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "OPA >50 dB/cm (6 mm); >100 dB/cm over 600 nm near 2 um"
+- id: jankowski2022
+  type: journal-article
+  authors: ["Marc Jankowski", "Nayara Jornod", "Carsten Langrock", "et al."]  # 7 authors in Crossref
+  title: "Quasi-static optical parametric amplification"
+  container: "Optica"
+  volume: "9"
+  issue: "3"
+  pages: "273"
+  issued: "2022-03-01"
+  doi: 10.1364/OPTICA.442550
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "quasi-static OPA: 71 dB (118 dB/cm) with 4 pJ; 88 dB saturated"
+- id: lu2021
+  type: journal-article
+  authors: ["Juanjuan Lu", "Ayed Al Sayem", "Zheng Gong", "Joshua B. Surya", "Chang-Ling Zou", "Hong X. Tang"]
+  title: "Ultralow-threshold thin-film lithium niobate optical parametric oscillator"
+  container: "Optica"
+  volume: "8"
+  issue: "4"
+  pages: "539"
+  issued: "2021-04-12"
+  doi: 10.1364/OPTICA.418984
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "TFLN ring OPO, threshold about 30 uW; 11% at 93 uW"
+- id: gao2021
+  type: journal-article
+  authors: ["Renhong Gao", "Haisu Zhang", "Fang Bo", "et al."]  # 12 authors in Crossref
+  title: "Broadband highly efficient nonlinear optical processes in on-chip integrated lithium niobate microdisk resonators of Q-factor above 10^8"
+  container: "New Journal of Physics"
+  volume: "23"
+  issue: "12"
+  pages: "123027"
+  issued: "2021-12-01"
+  doi: 10.1088/1367-2630/ac3d52
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref, truncated); threshold via R08 (Y)"
+  used_for: "microdisk Q > 1e8; OPO threshold 19.6 uW"
+  notes: "The 19.6 uW value is not in the part of the abstract read here."
+- id: ledezma2023
+  type: journal-article
+  authors: ["Luis Ledezma", "Arkadev Roy", "Luis Costa", "et al."]  # 9 authors in Crossref
+  title: "Octave-spanning tunable infrared parametric oscillators in nanophotonics"
+  container: "Science Advances"
+  volume: "9"
+  issue: "30"
+  article: "eadf9711"
+  issued: "2023-07-28"
+  doi: 10.1126/sciadv.adf9711
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "OPO tunable 1.53-3.25 um, 100 ns pulses near 1 um, tens of mW"
+- id: roy2023
+  type: journal-article
+  authors: ["Arkadev Roy", "Luis Ledezma", "Luis Costa", "et al."]  # 9 authors in Crossref
+  title: "Visible-to-mid-IR tunable frequency comb in nanophotonics"
+  container: "Nature Communications"
+  volume: "14"
+  issue: "1"
+  article: "6549"
+  issued: "2023-10-17"
+  doi: 10.1038/s41467-023-42289-0
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "OPO combs 1.5-3.3 um, fJ thresholds, visible to 620 nm"
+- id: hwang2023
+  type: journal-article
+  authors: ["Alexander Y. Hwang", "Hubert S. Stokowski", "Taewon Park", "et al."]  # 10 authors in Crossref
+  title: "Mid-infrared spectroscopy with a broadly tunable thin-film lithium niobate optical parametric oscillator"
+  container: "Optica"
+  volume: "10"
+  issue: "11"
+  pages: "1535"
+  issued: "2023-11-15"
+  doi: 10.1364/OPTICA.502487
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "singly resonant TFLN-on-sapphire OPO, 1.5-3.3 um, >25 mW at 3.2 um, 15%"
+- id: hwang2026
+  type: journal-article
+  authors: ["Alexander Y. Hwang", "Hubert S. Stokowski", "Luke Qi", "et al."]  # 10 authors in Crossref
+  title: "Ultra-wideband electrically tuned mid-infrared on-chip parametric oscillator"
+  container: "Nature Photonics"
+  issued: "2026-08-27"
+  doi: 10.1038/s41566-026-01999-9
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 Y(arXiv)"
+  used_for: "electrically tuned mid-IR OPO, 22 THz span"
+  notes: "Published 2026-08-27; volume not yet in Crossref."
+- id: stokowski2024
+  type: journal-article
+  authors: ["Hubert S. Stokowski", "Devin J. Dean", "Alexander Y. Hwang", "et al."]  # 11 authors in Crossref
+  title: "Integrated frequency-modulated optical parametric oscillator"
+  container: "Nature"
+  volume: "627"
+  issue: "8002"
+  pages: "95-100"
+  issued: "2024-03-06"
+  doi: 10.1038/s41586-024-07071-2
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y)"
+  used_for: "FM-OPO comb; >93% internal pump-to-comb, about 200 modes"
+- id: wang2026apr
+  type: journal-article
+  authors: ["Zhenyu Wang", "Changjiang Wan", "Jianfeng Xiong", "et al."]  # 8 authors in Crossref
+  title: "On-chip nonlinear photonics: Advances and challenges in integrated PPLN optical parametric oscillators"
+  container: "Applied Physics Reviews"
+  volume: "13"
+  issue: "3"
+  article: "031312"
+  issued: "2026-07-22"
+  doi: 10.1063/5.0315274
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "review of integrated PPLN OPOs"
+- id: desalvo1996
+  type: journal-article
+  authors: ["R. DeSalvo", "A.A. Said", "D.J. Hagan", "E.W. Van Stryland", "M. Sheik-Bahae"]
+  title: "Infrared to ultraviolet measurements of two-photon absorption and n2 in wide bandgap solids"
+  container: "IEEE Journal of Quantum Electronics"
+  volume: "32"
+  issue: "8"
+  pages: "1324-1333"
+  issued: "1996"
+  doi: 10.1109/3.511545
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; n2 via refractiveindex.info (P-db)"
+  used_for: "n2 = 9.33e-20 m^2/W at 1064 nm (30 ps, Z-scan, e-pol); 8.25e-19 m^2/W at 532 nm"
+- id: desalvo1992
+  type: journal-article
+  authors: ["R. DeSalvo", "H. Vanherzeele", "D. J. Hagan", "M. Sheik-Bahae", "G. Stegeman", "E. W. Van Stryland"]
+  title: "Self-focusing and self-defocusing by cascaded second-order effects in KTP"
+  container: "Optics Letters"
+  volume: "17"
+  issue: "1"
+  pages: "28"
+  issued: "1992-01-01"
+  doi: 10.1364/OL.17.000028
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "cascaded chi(2) self-focusing and defocusing (KTP)"
+  notes: "Principle only."
+- id: jankowski2020
+  type: journal-article
+  authors: ["Marc Jankowski", "Carsten Langrock", "Boris Desiatov", "et al."]  # 9 authors in Crossref
+  title: "Ultrabroadband nonlinear optics in nanophotonic periodically poled lithium niobate waveguides"
+  container: "Optica"
+  volume: "7"
+  issue: "1"
+  pages: "40"
+  issued: "2020-01-07"
+  doi: 10.1364/OPTICA.7.000040
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "dispersion-engineered nanophotonic PPLN; QPM SHG with <100 fJ; broadening with 2 pJ at strong mismatch"
+- id: zhu2021
+  type: journal-article
+  authors: ["Di Zhu", "Linbo Shao", "Mengjie Yu", "et al."]  # 15 authors in Crossref
+  title: "Integrated photonics on thin-film lithium niobate"
+  container: "Advances in Optics and Photonics"
+  volume: "13"
+  issue: "2"
+  pages: "242"
+  issued: "2021-05-03"
+  doi: 10.1364/AOP.411024
+  biblio_check: crossref 2026-10-25
+  content_read: "arXiv version read by R06/R08 subagents (S)"
+  used_for: "TFLN review; tabulated n2 1.8e-19 m^2/W and d values without per-cell references"
+- id: he2019
+  type: journal-article
+  authors: ["Yang He", "Qi-Fan Yang", "Jingwei Ling", "et al."]  # 10 authors in Crossref
+  title: "Self-starting bi-chromatic LiNbO3 soliton microcomb"
+  container: "Optica"
+  volume: "6"
+  issue: "9"
+  pages: "1138"
+  issued: "2019-08-30"
+  doi: 10.1364/OPTICA.6.001138
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "first LN soliton microcomb (self-starting, bichromatic)"
+- id: wang2019nc
+  type: journal-article
+  authors: ["Cheng Wang", "Mian Zhang", "Mengjie Yu", "Rongrong Zhu", "Han Hu", "Marko Loncar"]
+  title: "Monolithic lithium niobate photonic circuits for Kerr frequency comb generation and modulation"
+  container: "Nature Communications"
+  volume: "10"
+  issue: "1"
+  article: "978"
+  issued: "2019-02-28"
+  doi: 10.1038/s41467-019-08969-6
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "monolithic Kerr comb + EO filter and modulation"
+- id: gong2020
+  type: journal-article
+  authors: ["Zheng Gong", "Xianwen Liu", "Yuntao Xu", "Hong X. Tang"]
+  title: "Near-octave lithium niobate soliton microcomb"
+  container: "Optica"
+  volume: "7"
+  issue: "10"
+  pages: "1275"
+  issued: "2020-09-28"
+  doi: 10.1364/OPTICA.400994
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "TFLN soliton 4/5 octave, 335 GHz, Raman suppressed"
+- id: song2024
+  type: journal-article
+  authors: ["Yunxiang Song", "Yaowen Hu", "Xinrui Zhu", "Kiyoul Yang", "Marko Lončar"]
+  title: "Octave-spanning Kerr soliton frequency combs in dispersion- and dissipation-engineered lithium niobate microresonators"
+  container: "Light: Science & Applications"
+  volume: "13"
+  issue: "1"
+  article: "225"
+  issued: "2024-09-02"
+  doi: 10.1038/s41377-024-01546-7
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "octave-spanning TFLN soliton; Raman suppressed; near-unity yield"
+- id: wan2024
+  type: journal-article
+  authors: ["Shuai Wan", "Pi‐Yu Wang", "Rui Ma", "et al."]  # 10 authors in Crossref
+  title: "Photorefraction‐Assisted Self‐Emergence of Dissipative Kerr Solitons"
+  container: "Laser & Photonics Reviews"
+  volume: "18"
+  issue: "2"
+  article: "2300627"
+  issued: "2023-11-23"
+  volume_year: "2024"  # year of the journal volume; issued = online date (Crossref)
+  doi: 10.1002/lpor.202300627
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "photorefraction-assisted self-emerging soliton, >13 h without feedback"
+  notes: "Online 2023-11-23; issue 2024."
+- id: lugiato1987
+  type: journal-article
+  authors: ["L. A. Lugiato", "R. Lefever"]
+  title: "Spatial Dissipative Structures in Passive Optical Systems"
+  container: "Physical Review Letters"
+  volume: "58"
+  issue: "21"
+  pages: "2209-2211"
+  issued: "1987-05-25"
+  doi: 10.1103/PhysRevLett.58.2209
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "Lugiato-Lefever equation"
+- id: chembo2013
+  type: journal-article
+  authors: ["Yanne K. Chembo", "Curtis R. Menyuk"]
+  title: "Spatiotemporal Lugiato-Lefever formalism for Kerr-comb generation in whispering-gallery-mode resonators"
+  container: "Physical Review A"
+  volume: "87"
+  issue: "5"
+  article: "053852"
+  issued: "2013-05-31"
+  doi: 10.1103/PhysRevA.87.053852
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "LLE for WGM resonators"
+- id: coen2013
+  type: journal-article
+  authors: ["Stéphane Coen", "Hamish G. Randle", "Thibaut Sylvestre", "Miro Erkintalo"]
+  title: "Modeling of octave-spanning Kerr frequency combs using a generalized mean-field Lugiato–Lefever model"
+  container: "Optics Letters"
+  volume: "38"
+  issue: "1"
+  pages: "37"
+  issued: "2012-12-21"
+  volume_year: "2013"  # year of the journal volume; issued = online date (Crossref)
+  doi: 10.1364/OL.38.000037
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "generalized mean-field LLE"
+  notes: "Crossref issued date 2012-12-21; issue 2013."
+- id: herr2014
+  type: journal-article
+  authors: ["T. Herr", "V. Brasch", "J. D. Jost", "et al."]  # 7 authors in Crossref
+  title: "Temporal solitons in optical microresonators"
+  container: "Nature Photonics"
+  volume: "8"
+  issue: "2"
+  pages: "145-152"
+  issued: "2013-12-22"
+  volume_year: "2014"  # year of the journal volume; issued = online date (Crossref)
+  doi: 10.1038/nphoton.2013.343
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "temporal solitons in microresonators, soliton steps"
+  notes: "Online 2013-12-22; issue 2014."
+- id: kippenberg2018
+  type: journal-article
+  authors: ["Tobias J. Kippenberg", "Alexander L. Gaeta", "Michal Lipson", "Michael L. Gorodetsky"]
+  title: "Dissipative Kerr solitons in optical microresonators"
+  container: "Science"
+  volume: "361"
+  issue: "6402"
+  article: "eaan8083"
+  issued: "2018-08-10"
+  doi: 10.1126/science.aan8083
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "DKS review"
+- id: zhang2019
+  type: journal-article
+  authors: ["Mian Zhang", "Brandon Buscaino", "Cheng Wang", "et al."]  # 8 authors in Crossref
+  title: "Broadband electro-optic frequency comb generation in a lithium niobate microring resonator"
+  container: "Nature"
+  volume: "568"
+  issue: "7752"
+  pages: "373-377"
+  issued: "2019-03-11"
+  doi: 10.1038/s41586-019-1008-7
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y, coordinator re-read)"
+  used_for: "TFLN resonant EO comb, >900 lines at about 10 GHz"
+- id: rueda2019
+  type: journal-article
+  authors: ["Alfredo Rueda", "Florian Sedlmeir", "Madhuri Kumari", "Gerd Leuchs", "Harald G. L. Schwefel"]
+  title: "Resonant electro-optic frequency comb"
+  container: "Nature"
+  volume: "568"
+  issue: "7752"
+  pages: "378-381"
+  issued: "2019-04"
+  doi: 10.1038/s41586-019-1110-x
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "bulk LN WGM resonant EO comb"
+  notes: "Publisher correction 10.1038/s41586-019-1220-5."
+- id: hu2022
+  type: journal-article
+  authors: ["Yaowen Hu", "Mengjie Yu", "Brandon Buscaino", "et al."]  # 11 authors in Crossref
+  title: "High-efficiency and broadband on-chip electro-optic frequency comb generators"
+  container: "Nature Photonics"
+  volume: "16"
+  issue: "10"
+  pages: "679-685"
+  issued: "2022-08-29"
+  doi: 10.1038/s41566-022-01059-y
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 Y(arXiv)"
+  used_for: "coupled-ring EO comb, 30% efficiency, 132 nm"
+- id: yu2022
+  type: journal-article
+  authors: ["Mengjie Yu", "David Barton III", "Rebecca Cheng", "et al."]  # 15 authors in Crossref
+  title: "Integrated femtosecond pulse generator on thin-film lithium niobate"
+  container: "Nature"
+  volume: "612"
+  issue: "7939"
+  pages: "252-258"
+  issued: "2022-11-16"
+  doi: 10.1038/s41586-022-05345-1
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y)"
+  used_for: "EO time-lens pulses, 520 fs, 30 GHz"
+- id: zhangk2023
+  type: journal-article
+  authors: ["Ke Zhang", "Wenzhao Sun", "Yikun Chen", "et al."]  # 7 authors in Crossref
+  title: "A power-efficient integrated lithium niobate electro-optic comb generator"
+  container: "Communications Physics"
+  volume: "6"
+  issue: "1"
+  article: "17"
+  issued: "2023-01-23"
+  doi: 10.1038/s42005-023-01137-9
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "non-resonant 4-pass EO comb, 47 lines at 25 GHz, 28 dBm"
+- id: zhangj2025
+  type: journal-article
+  authors: ["Junyin Zhang", "Chengli Wang", "Connor Denney", "et al."]  # 14 authors in Crossref
+  title: "Ultrabroadband integrated electro-optic frequency comb in lithium tantalate"
+  container: "Nature"
+  volume: "637"
+  issue: "8048"
+  pages: "1096-1103"
+  issued: "2025-01-22"
+  doi: 10.1038/s41586-024-08354-4
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y)"
+  used_for: "TFLT EO comb >450 nm, >2000 lines (lithium tantalate, not LN)"
+- id: kourogi1993
+  type: journal-article
+  authors: ["M. Kourogi", "K. Nakagawa", "M. Ohtsu"]
+  title: "Wide-span optical frequency comb generator for accurate optical frequency difference measurement"
+  container: "IEEE Journal of Quantum Electronics"
+  volume: "29"
+  issue: "10"
+  pages: "2693-2701"
+  issued: "1993"
+  doi: 10.1109/3.250392
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "optical frequency comb generator (intracavity phase modulator)"
+- id: buscaino2020
+  type: journal-article
+  authors: ["Brandon Buscaino", "Mian Zhang", "Marko Loncar", "Joseph M. Kahn"]
+  title: "Design of Efficient Resonator-Enhanced Electro-Optic Frequency Comb Generators"
+  container: "Journal of Lightwave Technology"
+  volume: "38"
+  issue: "6"
+  pages: "1400-1413"
+  issued: "2020-03-15"
+  doi: 10.1109/JLT.2020.2973884
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "design of resonator-enhanced EO combs"
+- id: hu2021
+  type: journal-article
+  authors: ["Yaowen Hu", "Mengjie Yu", "Di Zhu", "et al."]  # 10 authors in Crossref
+  title: "On-chip electro-optic frequency shifters and beam splitters"
+  container: "Nature"
+  volume: "599"
+  issue: "7886"
+  pages: "587-593"
+  issued: "2021-11-24"
+  doi: 10.1038/s41586-021-03999-x
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y, coordinator re-read)"
+  used_for: "EO frequency shifter, up to 28 GHz at about 90%; cascaded 119.2 GHz"
+  notes: "arXiv v1 said about 99%."
+- id: zhang2017
+  type: journal-article
+  authors: ["Mian Zhang", "Cheng Wang", "Rebecca Cheng", "Amirhassan Shams-Ansari", "Marko Lončar"]
+  title: "Monolithic ultra-high-Q lithium niobate microring resonator"
+  container: "Optica"
+  volume: "4"
+  issue: "12"
+  pages: "1536"
+  issued: "2017-12-18"
+  doi: 10.1364/OPTICA.4.001536
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y)"
+  used_for: "dry-etched TFLN ring, Q about 1e7, 2.7 dB/m"
+- id: zhu2024
+  type: journal-article
+  authors: ["Xinrui Zhu", "Yaowen Hu", "Shengyuan Lu", "et al."]  # 11 authors in Crossref
+  title: "Twenty-nine million intrinsic Q-factor monolithic microresonators on thin-film lithium niobate"
+  container: "Photonics Research"
+  volume: "12"
+  issue: "8"
+  pages: "A63"
+  issued: "2024-07-26"
+  doi: 10.1364/prj.521172
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "intrinsic Q 29 million, 1.3 dB/m"
+- id: shamsansari2022
+  type: journal-article
+  authors: ["Amirhassan Shams-Ansari", "Guanhao Huang", "Lingyan He", "et al."]  # 15 authors in Crossref
+  title: "Reduced material loss in thin-film lithium niobate waveguides"
+  container: "APL Photonics"
+  volume: "7"
+  issue: "8"
+  article: "081301"
+  issued: "2022-08-01"
+  doi: 10.1063/5.0095146
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "material-limited Q about 1.6e8 (0.2 dB/m) after annealing"
+- id: gao2022
+  type: journal-article
+  authors: ["Renhong Gao", "Ni Yao", "Jianglin Guan", "et al."]  # 9 authors in Crossref
+  title: "Lithium niobate microring with ultra-high Q factor above 10^8"
+  container: "Chinese Optics Letters"
+  volume: "20"
+  issue: "1"
+  pages: "011902"
+  issued: "2022"
+  doi: 10.3788/col202220.011902
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "CMP microring Q above 1e8"
+  notes: "0.28 dB/m via R08 Y(arXiv)."
+- id: luke2020
+  type: journal-article
+  authors: ["Kevin Luke", "Prashanta Kharel", "Christian Reimer", "Lingyan He", "Marko Loncar", "Mian Zhang"]
+  title: "Wafer-scale low-loss lithium niobate photonic integrated circuits"
+  container: "Optics Express"
+  volume: "28"
+  issue: "17"
+  pages: "24452"
+  issued: "2020-08-03"
+  doi: 10.1364/oe.401959
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "wafer-scale DUV TFLN, 0.27 dB/cm on 4- and 6-inch"
+- id: desiatov2019
+  type: journal-article
+  authors: ["Boris Desiatov", "Amirhassan Shams-Ansari", "Mian Zhang", "Cheng Wang", "Marko Lončar"]
+  title: "Ultra-low-loss integrated visible photonics using thin-film lithium niobate"
+  container: "Optica"
+  volume: "6"
+  issue: "3"
+  pages: "380"
+  issued: "2019-03-15"
+  doi: 10.1364/OPTICA.6.000380
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref); numbers via R08 (Y)"
+  used_for: "visible TFLN, 6 dB/m, Q_i 11e6 at 637 nm"
+- id: leidinger2015
+  type: journal-article
+  authors: ["J. Leidinger", "et al."]
+  container: "Optics Express"
+  volume: "23"
+  pages: "21690"
+  issued: "2015"
+  doi: 10.1364/OE.23.021690
+  biblio_check: R06 (crossref 2026-10-24); title not re-checked here
+  content_read: "abstract (R06, OpenAlex); DOI checked by R06"
+  used_for: "absorption of CLN 390-3800 nm, <1e-4 to 2 /cm"
+  notes: "Value at 1550 nm not read (gap)."
+- id: schwesyg2011
+  type: thesis
+  authors: ["J. R. M.-L. Schwesyg"]
+  title: "Interaction of light with impurities in lithium niobate crystals"
+  container: "Dr. rer. nat. dissertation, Universitat Bonn"
+  issued: "2011"
+  doi: null
+  biblio_check: R14 (local copy)
+  content_read: "selected chapters (R14)"
+  used_for: "residual absorption bounds; Moretti thermo-optic fit (quoted)"
+  notes: "Dr. rer. nat. dissertation, Universitat Bonn (2011); no DOI."
+- id: xu2021
+  type: journal-article
+  authors: ["Yuntao Xu", "Mohan Shen", "Juanjuan Lu", "Joshua B. Surya", "Ayed Al Sayem", "Hong X. Tang"]
+  title: "Mitigating photorefractive effect in thin-film lithium niobate microring resonators"
+  container: "Optics Express"
+  volume: "29"
+  issue: "4"
+  pages: "5497"
+  issued: "2021-02-04"
+  doi: 10.1364/OE.418877
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "cladding removal mitigates photorefraction in TFLN rings"
+- id: pan2019
+  type: journal-article
+  authors: ["An Pan", "Changran Hu", "Cheng Zeng", "Jinsong Xia"]
+  title: "Fundamental mode hybridization in a thin film lithium niobate ridge waveguide"
+  container: "Optics Express"
+  volume: "27"
+  issue: "24"
+  pages: "35659"
+  issued: "2019-11-20"
+  doi: 10.1364/oe.27.035659
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "fundamental mode hybridization in TFLN ridge waveguides"
+- id: kaushalram2020
+  type: journal-article
+  authors: ["Archana Kaushalram", "Gopalkrishna Hegde", "Srinivas Talabattula"]
+  title: "Mode hybridization analysis in thin film lithium niobate strip multimode waveguides"
+  container: "Scientific Reports"
+  volume: "10"
+  issue: "1"
+  article: "16692"
+  issued: "2020-10-07"
+  doi: 10.1038/s41598-020-73936-x
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "hybridization in x-cut y- and z-propagating strip waveguides; TM0 to higher-order TE taper (99.5%, numerical)"
+- id: tan2024
+  type: journal-article
+  authors: ["Zelin Tan", "Jianfa Zhang", "Zhihong Zhu", "et al."]  # 7 authors in Crossref
+  title: "Intrinsic polarization conversion and avoided-mode crossing in X-cut lithium niobate microrings"
+  container: "Chinese Physics B"
+  volume: "33"
+  issue: "6"
+  pages: "064205"
+  issued: "2024-05-01"
+  doi: 10.1088/1674-1056/ad47b2
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "x-cut microrings: birefringence-induced TE-TM conversion and avoided-mode crossing that suppresses a FWM sideband"
+- id: wangc2024
+  type: journal-article
+  authors: ["Cheng Wang"]
+  title: "Breaking anisotropy limitations in thin-film lithium niobate arrayed waveguide gratings"
+  container: "Light: Science & Applications"
+  volume: "13"
+  issue: "1"
+  article: "209"
+  issued: "2024-08-23"
+  doi: 10.1038/s41377-024-01551-w
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "design strategy for dispersive elements (AWG) on anisotropic TFLN"
+- id: li2026aa
+  type: journal-article
+  authors: ["Qiyuan Li", "Qiyuan Yi", "Aolong Sun", "et al."]  # 18 authors in Crossref
+  title: "Ultra-broadband near- to mid-infrared electro-optic modulator on thin-film lithium niobate"
+  container: "Nature Communications"
+  volume: "17"
+  issue: "1"
+  article: "1138"
+  issued: "2026-01-08"
+  doi: 10.1038/s41467-025-67902-2
+  biblio_check: crossref 2026-10-25
+  content_read: "full text via eo-modulator-atlas evidence file (audited 2026-10-04)"
+  used_for: "9 mm x-cut TFLN MZM: V_pi 1310-2000 nm, geometry for the FEM case"
+  notes: "License CC BY-NC-ND 4.0; values re-keyed, no figures copied."
+- id: boes2023
+  type: journal-article
+  authors: ["Andreas Boes", "Lin Chang", "Carsten Langrock", "et al."]  # 10 authors in Crossref
+  title: "Lithium niobate photonics: Unlocking the electromagnetic spectrum"
+  container: "Science"
+  volume: "379"
+  issue: "6627"
+  article: "eabj4396"
+  issued: "2023-01-06"
+  doi: 10.1126/science.abj4396
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "LN photonics review (UV to microwave)"
+- id: you2024
+  type: journal-article
+  authors: ["Bin You", "Shuangxiu Yuan", "Yuan Tian", "et al."]  # 7 authors in Crossref
+  title: "Lithium niobate on insulator – fundamental opto‐electronic properties and photonic device prospects"
+  container: "Nanophotonics"
+  volume: "13"
+  issue: "17"
+  pages: "3037-3057"
+  issued: "2024-05-29"
+  doi: 10.1515/nanoph-2024-0132
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract (Crossref)"
+  used_for: "LNOI fundamentals review (BPM, MPM, QPM, EO, TO, AO)"
+- id: bornwolf
+  type: monograph
+  authors: ["Max Born", "Emil Wolf"]
+  title: "Principles of Optics"
+  issued: "2019-12-19"
+  doi: 10.1017/9781108769914
+  biblio_check: crossref 2026-10-25
+  content_read: "title (Crossref)"
+  used_for: "crystal optics: index ellipsoid, conoscopic figures"
+  notes: "7th expanded edition, 60th anniversary printing (Cambridge University Press)."
+- id: boyd2008
+  type: book-chapter
+  authors: ["Robert W. Boyd"]
+  title: "Nonlinear Optics, 3rd ed."
+  container: "Academic Press"
+  issued: "2008"
+  doi: 10.1016/b978-0-12-369470-6.00014-9
+  biblio_check: crossref 2026-10-25
+  content_read: "front matter DOI (Crossref)"
+  used_for: "nonlinear optics textbook: d tensor, coupled-wave equations"
+  notes: "R. W. Boyd, Nonlinear Optics, 3rd ed., Academic Press (2008). DOI is that of the preface chapter."
+- id: ieee176
+  type: standard
+  authors: ["IEEE"]
+  title: "IEEE Standard on Piezoelectricity (IEEE Std 176-1987)"
+  issued: "1988"
+  doi: 10.1109/IEEESTD.1988.79638
+  biblio_check: crossref 2026-10-25 (DOI resolves; metadata sparse)
+  content_read: "selected sections (R14: Sec. 3.2.5, Table 5)"
+  used_for: "axis convention: +Z by positive d33, +Y by positive d22, X perpendicular to a mirror plane"
+- id: turner1966
+  type: journal-article
+  authors: ["E. H. Turner"]
+  container: "Applied Physics Letters"
+  volume: "8"
+  pages: "303"
+  issued: "1966"
+  doi: null
+  biblio_check: citation as printed in weis1985; DOI not checked
+  content_read: "not read; values via weis1985 Table 4 (P-comp)"
+  used_for: "clamped r13 8.6, r22 3.4, r33 30.8, r51 28 pm/V at 633 nm"
+- id: kaminow1980
+  type: journal-article
+  authors: ["I. P. Kaminow", "E. H. Turner", "R. L. Barns", "J. L. Bernstein"]
+  container: "Journal of Applied Physics"
+  volume: "51"
+  pages: "4379"
+  issued: "1980"
+  doi: null
+  biblio_check: citation as printed in weis1985 / R14; DOI not checked
+  content_read: "not read; values via weis1985 Table 4 (P-comp)"
+  used_for: "clamped r13 7.7, r22 3.4, r33 28.8, r51 18.2 pm/V (fringing-field corrected; preferred by weis1985)"
+- id: zook1967
+  type: journal-article
+  authors: ["J. D. Zook", "D. Chen", "G. N. Otto"]
+  container: "Applied Physics Letters"
+  volume: "11"
+  pages: "159"
+  issued: "1967"
+  doi: null
+  biblio_check: citation as printed in weis1985 / R14; DOI not checked
+  content_read: "not read; values via weis1985 Table 4 (P-comp)"
+  used_for: "free r13 +10.0, r22 +6.81, r33 +32.2 pm/V"
+- id: lenzo1966
+  type: journal-article
+  authors: ["P. V. Lenzo", "et al."]
+  issued: "1966"
+  doi: null
+  biblio_check: as listed in weis1985; full citation not transcribed
+  content_read: "not read; value via weis1985 Table 4 (P-comp)"
+  used_for: "free r22 6.7 pm/V"
+- id: bernal1966
+  type: journal-article
+  authors: ["E. Bernal G.", "et al."]
+  issued: "1966"
+  doi: null
+  biblio_check: as listed in weis1985; full citation not transcribed
+  content_read: "not read; value via weis1985 Table 4 (P-comp)"
+  used_for: "free r51 32 pm/V"
+- id: kitamoto1995
+  type: journal-article
+  authors: ["A. Kitamoto", "T. Kondo", "I. Shoji", "R. Ito"]
+  container: "Optical Review"
+  volume: "2"
+  pages: "280"
+  issued: "1995"
+  doi: null
+  biblio_check: R06 (DOI not checked)
+  content_read: "abstract seen by R06 only"
+  used_for: "d31 by parametric fluorescence: 4.8 +- 0.5 (488 nm pump), 4.3 +- 0.5 pm/V (532 nm pump)"
+  notes: "Values U here."
+- id: yariv1984
+  type: book
+  authors: ["A. Yariv", "P. Yeh"]
+  title: "Optical Waves in Crystals"
+  container: "Wiley"
+  issued: "1984"
+  doi: null
+  biblio_check: none (standard text; edition data not re-checked)
+  content_read: "not read in this lane"
+  used_for: "index ellipsoid and r-tensor formalism (cited by research/R11)"
+- id: atlas-engine
+  type: software
+  authors: ["W. Jiang"]
+  title: "eo-modulator-atlas: FEM engine (electrostatics, full-vector optical modes, Pockels overlap)"
+  url: "https://github.com/jwt625/eo-modulator-atlas"
+  license: "GPL-3.0-or-later"
+  issued: "2026"
+  content_read: "source and exported results (mockup/data/eo-overlap-li2026aa.json, exported 2026-10-25)"
+  used_for: "li2026aa cross-section: dn_eff/dV, Gamma, Ebar, n_eff, n_g, VpiL; integrand fields for F2-05"
+  notes: "Files used: engine/src/eo-overlap.mjs, engine/src/postproc/eo-analysis.mjs; case sims/li2026aa/config.yaml. Export script: scripts/export_eo_overlap.mjs."
+- id: nanoln
+  type: webpage
+  authors: ["Jinan Jingzheng Electronics (NanoLN)"]
+  title: "Products"
+  url: "https://www.nanoln.com/PRODUCTS.html"
+  issued: null
+  content_read: "fetched 2026-10-24 by R08 (undated page)"
+  used_for: "LNOI film thickness range 300-900 nm; 3-8 inch"
+  notes: "Vendor statement (status V)."
+- id: R06
+  type: research-note
+  title: "R06: LiNbO3 material properties, authoritative data and API design"
+  url: "research/R06-material-properties-data.md"
+  issued: "2026-10-24"
+  used_for: "register of sources, computed indices (C), pitfalls"
+- id: R14
+  type: research-note
+  title: "R14: Property verification against primary and handbook sources"
+  url: "research/R14-property-verification.md"
+  issued: "2026-10-24"
+  used_for: "P/P-comp status of r, n, d compilation values; Gayer verification; Moretti fit via schwesyg2011"
+- id: R08
+  type: research-note
+  title: "R08: TFLN science and technology state of the art"
+  url: "research/R08-tfln-state-of-art.md"
+  issued: "2026-10-24"
+  used_for: "record table and verification flags (Y, Y(arXiv), title)"

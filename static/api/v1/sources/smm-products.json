@@ -1,0 +1,26 @@
+{
+  "citation": "\"Single-Crystal Products: LT (Lithium Tantalate) / LN (Lithium Niobate)\", (2026) https://www.smm.co.jp/en/business/material/products/lithium/",
+  "link": "https://www.smm.co.jp/en/business/material/products/lithium/",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "smm-products",
+    "issued": "2026",
+    "notes": "Undated page; issued set to the access year.",
+    "publisher": "Sumitomo Metal Mining Co., Ltd.",
+    "read": "Product page read 2026-10-25; lists LN wafers with 128 deg rotated Y orientation",
+    "title": "Single-Crystal Products: LT (Lithium Tantalate) / LN (Lithium Niobate)",
+    "type": "webpage",
+    "url": "https://www.smm.co.jp/en/business/material/products/lithium/"
+  }
+}

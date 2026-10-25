@@ -1,0 +1,46 @@
+{
+  "citation": "M. Yamada, N. Nada, M. Saitoh, et al., \"First-order quasi-phase matched LiNbO3 waveguide periodically poled by applying an external field for efficient blue second-harmonic generation\", Applied Physics Letters 62, 435-436, (1993) doi:10.1063/1.108925",
+  "link": "https://doi.org/10.1063/1.108925",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Yamada",
+        "given": "M."
+      },
+      {
+        "family": "Nada",
+        "given": "N."
+      },
+      {
+        "family": "Saitoh",
+        "given": "M."
+      },
+      {
+        "family": "Watanabe",
+        "given": "K."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.108925",
+    "id": "yamada1993",
+    "issue": "5",
+    "issued": "1993-02-01",
+    "page": "435-436",
+    "read": "bibliographic record only (Crossref)",
+    "title": "First-order quasi-phase matched LiNbO3 waveguide periodically poled by applying an external field for efficient blue second-harmonic generation",
+    "type": "article-journal",
+    "volume": "62"
+  }
+}

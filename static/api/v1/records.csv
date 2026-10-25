@@ -1,0 +1,311 @@
+id,category,metric,platform,quantity,value,unit_ucum,qualifier,date,first_author,venue,doi,arxiv,url,verification,highest_found
+acousto-optics-arrangoizarriola2019,acousto-optics,Phonon-number resolution (LN + qubit),LN + qubit,number splitting / qubit linewidth,5,1,~,2019,Arrangoiz-Arriola P.,Nature,10.1038/s41586-019-1386-x,,,Y,false
+acousto-optics-jiang2019,acousto-optics,LN optomechanical crystal,LN,g0/2pi,120,kHz,~,2019,Jiang W.,"Optica 6, 845",10.1364/OPTICA.6.000845,,,Y(arXiv),false
+acousto-optics-plessky2019,acousto-optics,"XBAR (laterally excited bulk acoustic resonator), first",ZY-LN (400 nm film),resonance frequency,4.8,GHz,~,2019,Plessky V.,"Electron. Lett. 55, 98",10.1049/el.2018.7297,,,Y,false
+acousto-optics-plessky2019,acousto-optics,"XBAR (laterally excited bulk acoustic resonator), first",ZY-LN (400 nm film),film thickness,400,nm,=,2019,Plessky V.,"Electron. Lett. 55, 98",10.1049/el.2018.7297,,,Y,false
+acousto-optics-plessky2019,acousto-optics,"XBAR (laterally excited bulk acoustic resonator), first",ZY-LN (400 nm film),coupling,25,%,~,2019,Plessky V.,"Electron. Lett. 55, 98",10.1049/el.2018.7297,,,Y,false
+acousto-optics-plessky2019,acousto-optics,"XBAR (laterally excited bulk acoustic resonator), first",ZY-LN (400 nm film),Q,300,1,~,2019,Plessky V.,"Electron. Lett. 55, 98",10.1049/el.2018.7297,,,Y,false
+acousto-optics-sarabalis2020,acousto-optics,"AO modulator, LN on sapphire",LN on sapphire,,,,,2020,Sarabalis C.J.,APL Photonics,10.1063/5.0012288,,,Y,false
+acousto-optics-sarabalis2021,acousto-optics,"AO, wavelength-scale waveguide",TFLN,,,,,2021,Sarabalis C.J.,Optica,10.1364/OPTICA.413401,,,Y,false
+acousto-optics-wan2022,acousto-optics,"AO modulator VpiL, lowest found",TFLN + chalcogenide,VpiL,0.03,V.cm,=,2022,Wan L.,Light Sci. Appl.,10.1038/s41377-022-00840-6,,,Y,true
+acousto-optics-wollack2022,acousto-optics,Entangled mechanical resonators (LN),LN,,,,,2022,Wollack E.A.,Nature,10.1038/s41586-022-04500-y,,,Y,false
+eo-comb-zhang2019,eo-comb,Resonant EO comb,TFLN,comb lines,900,1,>,2019,Zhang M.,"Nature 568, 373",10.1038/s41586-019-1008-7,,,Y,false
+eo-comb-zhang2019,eo-comb,Resonant EO comb,TFLN,line spacing,10,GHz,~,2019,Zhang M.,"Nature 568, 373",10.1038/s41586-019-1008-7,,,Y,false
+eo-comb-zhang2019,eo-comb,Resonant EO comb,TFLN,spacing tuning min,10,Hz,=,2019,Zhang M.,"Nature 568, 373",10.1038/s41586-019-1008-7,,,Y,false
+eo-comb-zhang2019,eo-comb,Resonant EO comb,TFLN,spacing tuning max,100,MHz,=,2019,Zhang M.,"Nature 568, 373",10.1038/s41586-019-1008-7,,,Y,false
+eo-comb-shao2020,eo-comb,AO frequency shifter,TFLN,frequency shift,3,GHz,=,2020,Shao L.,Opt. Express,10.1364/OE.397138,,,Y,false
+eo-comb-shao2020,eo-comb,AO frequency shifter,TFLN,carrier suppression,30,dB,>,2020,Shao L.,Opt. Express,10.1364/OE.397138,,,Y,false
+eo-comb-hu2021,eo-comb,EO frequency shifter,TFLN,frequency shift,28,GHz,=,2021,Hu Y.,"Nature 599, 587",10.1038/s41586-021-03999-x,,,Y,false
+eo-comb-hu2021,eo-comb,EO frequency shifter,TFLN,on-chip efficiency,90,%,~,2021,Hu Y.,"Nature 599, 587",10.1038/s41586-021-03999-x,,,Y,false
+eo-comb-hu2021,eo-comb,EO frequency shifter,TFLN,cascaded frequency shift,119.2,GHz,=,2021,Hu Y.,"Nature 599, 587",10.1038/s41586-021-03999-x,,,Y,false
+eo-comb-hu2021,eo-comb,EO frequency shifter,TFLN,drive frequency,29.8,GHz,=,2021,Hu Y.,"Nature 599, 587",10.1038/s41586-021-03999-x,,,Y,false
+eo-comb-hu2022,eo-comb,Coupled-ring EO comb,TFLN,conversion efficiency,30,%,=,2022,Hu Y.,Nat. Photonics,10.1038/s41566-022-01059-y,,,Y(arXiv),false
+eo-comb-hu2022,eo-comb,Coupled-ring EO comb,TFLN,comb span,132,nm,=,2022,Hu Y.,Nat. Photonics,10.1038/s41566-022-01059-y,,,Y(arXiv),false
+eo-comb-hu2022,eo-comb,Coupled-ring EO comb,TFLN,pulse width,336,fs,=,2022,Hu Y.,Nat. Photonics,10.1038/s41566-022-01059-y,,,Y(arXiv),false
+eo-comb-yu2022,eo-comb,Time-lens pulse generator,TFLN,pulse width,520,fs,=,2022,Yu M.,Nature,10.1038/s41586-022-05345-1,,,Y,false
+eo-comb-yu2022,eo-comb,Time-lens pulse generator,TFLN,repetition rate,30,GHz,=,2022,Yu M.,Nature,10.1038/s41586-022-05345-1,,,Y,false
+eo-comb-yu2022,eo-comb,Time-lens pulse generator,TFLN,pulse energy,0.54,pJ,=,2022,Yu M.,Nature,10.1038/s41586-022-05345-1,,,Y,false
+eo-comb-zhang2023,eo-comb,Non-resonant EO comb,TFLN,comb lines,47,1,=,2023,Zhang K.,Commun. Phys.,10.1038/s42005-023-01137-9,,,Y,false
+eo-comb-zhang2023,eo-comb,Non-resonant EO comb,TFLN,line spacing,25,GHz,=,2023,Zhang K.,Commun. Phys.,10.1038/s42005-023-01137-9,,,Y,false
+eo-comb-zhang2025-tflt,eo-comb,"Widest integrated EO comb found (TFLT, not LN)",TFLT,comb span,450,nm,>,2025,Zhang J.,Nature,10.1038/s41586-024-08354-4,,,Y,true
+eo-comb-zhang2025-tflt,eo-comb,"Widest integrated EO comb found (TFLT, not LN)",TFLT,comb span,60,THz,>,2025,Zhang J.,Nature,10.1038/s41586-024-08354-4,,,Y,true
+eo-comb-zhang2025-tflt,eo-comb,"Widest integrated EO comb found (TFLT, not LN)",TFLT,comb lines,2000,1,>,2025,Zhang J.,Nature,10.1038/s41586-024-08354-4,,,Y,true
+heterogeneous-desiatov2019,heterogeneous,a-Si detector (visible),a-Si on TFLN,responsivity min,22,mA/W,=,2019,Desiatov B.,APL,10.1063/1.5118901,,,Y,false
+heterogeneous-desiatov2019,heterogeneous,a-Si detector (visible),a-Si on TFLN,responsivity max,37,mA/W,=,2019,Desiatov B.,APL,10.1063/1.5118901,,,Y,false
+heterogeneous-desiatov2019,heterogeneous,a-Si detector (visible),a-Si on TFLN,wavelength range min,635,nm,=,2019,Desiatov B.,APL,10.1063/1.5118901,,,Y,false
+heterogeneous-desiatov2019,heterogeneous,a-Si detector (visible),a-Si on TFLN,wavelength range max,850,nm,=,2019,Desiatov B.,APL,10.1063/1.5118901,,,Y,false
+heterogeneous-opdebeeck2021,heterogeneous,III-V on TFLN lasers + amps,III-V on TFLN,,,,,2021-10,Op de Beeck C.,Optica,10.1364/OPTICA.438620,,,Y,false
+heterogeneous-shamsansari2022,heterogeneous,Laser transmitter,III-V + TFLN,on-chip optical power,60,mW,=,2022-04,Shams-Ansari A.,Optica,10.1364/OPTICA.448617,,,Y,false
+heterogeneous-shamsansari2022,heterogeneous,Laser transmitter,III-V + TFLN,modulator bandwidth,50,GHz,=,2022-04,Shams-Ansari A.,Optica,10.1364/OPTICA.448617,,,Y,false
+heterogeneous-li2022,heterogeneous,Pockels laser,TFLN,frequency modulation speed,2e+18,Hz/s,=,2022-09,Li M.,Nat. Commun.,10.1038/s41467-022-33101-6,,,Y,false
+heterogeneous-li2022,heterogeneous,Pockels laser,TFLN,switching rate,50,MHz,=,2022-09,Li M.,Nat. Commun.,10.1038/s41467-022-33101-6,,,Y,false
+heterogeneous-guo2023,heterogeneous,Mode-locked laser,III-V + TFLN,,,,,2023,Guo Q.,Science,10.1126/science.adj5438,,,Y,false
+heterogeneous-wei2023,heterogeneous,InP MUTC (modified uni-traveling-carrier) PD on TFLN,InP on TFLN,PD bandwidth,110,GHz,=,2023,Wei C.,Light Adv. Manuf. 4:30,10.37188/lam.2023.030,,,Y,false
+heterogeneous-wei2023,heterogeneous,InP MUTC (modified uni-traveling-carrier) PD on TFLN,InP on TFLN,responsivity,0.4,A/W,=,2023,Wei C.,Light Adv. Manuf. 4:30,10.37188/lam.2023.030,,,Y,false
+heterogeneous-zhang2023,heterogeneous,Er/Yb TFLN,Er/Yb:TFLN,,,,,2023,Zhang,Optica Open,10.1364/opticaopen.23309342,,,title,false
+heterogeneous-snigirev2023,heterogeneous,Self-injection-locked Si3N4-LN laser,Si3N4-LN,intrinsic linewidth,3,kHz,=,2023-03,Snigirev V.,Nature,10.1038/s41586-023-05724-2,,,Y,false
+heterogeneous-snigirev2023,heterogeneous,Self-injection-locked Si3N4-LN laser,Si3N4-LN,tuning rate,1.2e+16,Hz/s,=,2023-03,Snigirev V.,Nature,10.1038/s41586-023-05724-2,,,Y,false
+heterogeneous-wang2024,heterogeneous,"Er:TFLN amp, internal",Er:TFLN,internal net gain,38,dB,=,2024,Wang,CLEO 2024 ATu4M.3,10.1364/cleo_at.2024.atu4m.3,,,Y(conf),false
+heterogeneous-wang2024,heterogeneous,"Er:TFLN amp, internal",Er:TFLN,waveguide length,9.16,cm,=,2024,Wang,CLEO 2024 ATu4M.3,10.1364/cleo_at.2024.atu4m.3,,,Y(conf),false
+heterogeneous-xie2025,heterogeneous,"PD bandwidth, highest found",TFLN,PD bandwidth,140,GHz,=,2025-04,Xie X.,"Light Sci. Appl. 14, 172",10.1038/s41377-025-01821-1,,,Y,true
+heterogeneous-xie2025,heterogeneous,"PD bandwidth, highest found",TFLN,receiver channels,7,1,=,2025-04,Xie X.,"Light Sci. Appl. 14, 172",10.1038/s41377-025-01821-1,,,Y,true
+heterogeneous-xie2025,heterogeneous,"PD bandwidth, highest found",TFLN,aggregate bit rate,3.584,Tbit/s,=,2025-04,Xie X.,"Light Sci. Appl. 14, 172",10.1038/s41377-025-01821-1,,,Y,true
+heterogeneous-yu2026,heterogeneous,"Er:TFLN amp, fiber-to-fiber, highest found",Er:TFLN,fiber-to-fiber net gain,28,dB,>,2026-08,Yu,Laser Photon. Rev.,10.1002/lpor.71753,,,Y,true
+heterogeneous-yu2026,heterogeneous,"Er:TFLN amp, fiber-to-fiber, highest found",Er:TFLN,wavelength,1531,nm,=,2026-08,Yu,Laser Photon. Rev.,10.1002/lpor.71753,,,Y,true
+heterogeneous-yu2026,heterogeneous,"Er:TFLN amp, fiber-to-fiber, highest found",Er:TFLN,noise figure,5.3,dB,=,2026-08,Yu,Laser Photon. Rev.,10.1002/lpor.71753,,,Y,true
+heterogeneous-yu2026,heterogeneous,"Er:TFLN amp, fiber-to-fiber, highest found",Er:TFLN,output power,15,dB[mW],>,2026-08,Yu,Laser Photon. Rev.,10.1002/lpor.71753,,,Y,true
+kerr-he2019,kerr,First LN soliton,TFLN,,,,,2019,He Y.,"Optica 6, 1138",10.1364/OPTICA.6.001138,,,Y(arXiv),false
+kerr-wang2019,kerr,Monolithic Kerr comb + EO,TFLN,,,,,2019,Wang C.,Nat. Commun.,10.1038/s41467-019-08969-6,,,Y,false
+kerr-gong2020,kerr,Near-octave soliton,TFLN,repetition rate,335,GHz,=,2020,Gong Z.,Optica,10.1364/OPTICA.400994,,,Y,false
+kerr-song2024,kerr,Octave-spanning TFLN soliton,TFLN,,,,,2024,Song Y.,Light Sci. Appl.,10.1038/s41377-024-01546-7,,,Y,true
+kerr-wan2024,kerr,Photorefraction-assisted soliton,TFLN,single-soliton duration,13,h,>,2024,Wan S.,Laser Photon. Rev. 18,10.1002/lpor.202300627,,,Y,false
+loss-q-zhang2017,loss-q,Dry-etched ring (baseline),TFLN,Q,10000000.0,1,~,2017-12,Zhang M.,"Optica 4, 1536",10.1364/OPTICA.4.001536,,,Y,false
+loss-q-zhang2017,loss-q,Dry-etched ring (baseline),TFLN,propagation loss,2.7,dB/m,=,2017-12,Zhang M.,"Optica 4, 1536",10.1364/OPTICA.4.001536,,,Y,false
+loss-q-desiatov2019,loss-q,Visible,TFLN,propagation loss,6,dB/m,=,2019-03,Desiatov B.,"Optica 6, 380",10.1364/OPTICA.6.000380,,,Y,false
+loss-q-desiatov2019,loss-q,Visible,TFLN,intrinsic Q,11000000.0,1,=,2019-03,Desiatov B.,"Optica 6, 380",10.1364/OPTICA.6.000380,,,Y,false
+loss-q-desiatov2019,loss-q,Visible,TFLN,wavelength,637,nm,=,2019-03,Desiatov B.,"Optica 6, 380",10.1364/OPTICA.6.000380,,,Y,false
+loss-q-luke2020,loss-q,Wafer-scale deep-UV (DUV) lithography,TFLN,propagation loss,0.27,dB/cm,=,2020-08,Luke K.,Opt. Express,10.1364/oe.401959,,,Y,false
+loss-q-luke2020,loss-q,Wafer-scale deep-UV (DUV) lithography,TFLN,wafer diameter,4,[in_i],=,2020-08,Luke K.,Opt. Express,10.1364/oe.401959,,,Y,false
+loss-q-luke2020,loss-q,Wafer-scale deep-UV (DUV) lithography,TFLN,wafer diameter,6,[in_i],=,2020-08,Luke K.,Opt. Express,10.1364/oe.401959,,,Y,false
+loss-q-gao2021,loss-q,PLACE microdisk,TFLN (PLACE microdisk),Q,100000000.0,1,>,2021-12,Gao R.,New J. Phys.,10.1088/1367-2630/ac3d52,,,Y,false
+loss-q-gao2022,loss-q,"CMP microring, film thinned from bulk (no ion slicing)","TFLN (CMP, thinned from bulk)",Q,100000000.0,1,>,2022,Gao R.,"Chin. Opt. Lett. 20, 011902",10.3788/col202220.011902,,,Y(arXiv),false
+loss-q-gao2022,loss-q,"CMP microring, film thinned from bulk (no ion slicing)","TFLN (CMP, thinned from bulk)",propagation loss,0.28,dB/m,~,2022,Gao R.,"Chin. Opt. Lett. 20, 011902",10.3788/col202220.011902,,,Y(arXiv),false
+loss-q-gao2022,loss-q,"CMP microring, film thinned from bulk (no ion slicing)","TFLN (CMP, thinned from bulk)",wavelength,1550,nm,=,2022,Gao R.,"Chin. Opt. Lett. 20, 011902",10.3788/col202220.011902,,,Y(arXiv),false
+loss-q-shamsansari2022,loss-q,Material-limited estimate (not a device),TFLN (annealed ion-sliced),material Q,160000000.0,1,~,2022-08,Shams-Ansari A.,APL Photonics,10.1063/5.0095146,,,Y,false
+loss-q-shamsansari2022,loss-q,Material-limited estimate (not a device),TFLN (annealed ion-sliced),material-limited loss,0.2,dB/m,=,2022-08,Shams-Ansari A.,APL Photonics,10.1063/5.0095146,,,Y,false
+loss-q-renaud2023,loss-q,Near-IR modulator waveguide,TFLN,propagation loss,0.7,dB/cm,~,2023-03,Renaud D.,Nat. Commun.,10.1038/s41467-023-36870-w,,,Y,false
+loss-q-renaud2023,loss-q,Near-IR modulator waveguide,TFLN,wavelength,738,nm,=,2023-03,Renaud D.,Nat. Commun.,10.1038/s41467-023-36870-w,,,Y,false
+loss-q-li2023,loss-q,Photolithography-assisted chemo-mechanical etching (PLACE) ring with bus,TFLN (PLACE ring),intrinsic Q,40400000.0,1,=,2023-09,Li,Opt. Express,10.1364/oe.498086,,,Y,false
+loss-q-li2023,loss-q,Photolithography-assisted chemo-mechanical etching (PLACE) ring with bus,TFLN (PLACE ring),propagation loss,1,dB/m,<,2023-09,Li,Opt. Express,10.1364/oe.498086,,,Y,false
+loss-q-zhu2024,loss-q,"Dry-etched ring, highest found",TFLN (ion-sliced),intrinsic Q,29000000.0,1,=,2024-07,Zhu X.,"Photon. Res. 12, A63",10.1364/prj.521172,,,Y,true
+loss-q-zhu2024,loss-q,"Dry-etched ring, highest found",TFLN (ion-sliced),propagation loss,1.3,dB/m,=,2024-07,Zhu X.,"Photon. Res. 12, A63",10.1364/prj.521172,,,Y,true
+loss-q-xanadu2025-press,loss-q,Industry claim,TFLN,waveguide loss,2,dB/m,<,2025-07-30,,Press,,,https://thequantuminsider.com/2025/07/30/xanadu-and-hyperlight-unveil-advances-in-photonic-chips-setting-new-quantum-computing-benchmarks/,press,false
+loss-q-franken2026,loss-q,UV,TFLN,propagation loss,2.3,dB/cm,=,2026,Franken C.,"Nat. Commun. 17, 3651",10.1038/s41467-026-68524-y,,,partial,false
+loss-q-franken2026,loss-q,UV,TFLN,wavelength,390,nm,=,2026,Franken C.,"Nat. Commun. 17, 3651",10.1038/s41467-026-68524-y,,,partial,false
+modulator-wang2017,modulator,Early TFLN,TFLN,VpiL,1.8,V.cm,=,2017,Wang C.,arXiv 1701.06470,,1701.06470,,Y(arXiv),false
+modulator-mercante2018,modulator,Early mmWave,TFLN,,,,,2018,Mercante A.,"Opt. Express 26, 14810",10.1364/OE.26.014810,,,title,false
+modulator-wang2018,modulator,Benchmark MZM,TFLN,data rate,210,Gbit/s,=,2018-09,Wang C.,"Nature 562, 101",10.1038/s41586-018-0551-y,,,Y,false
+modulator-wang2018,modulator,Benchmark MZM,TFLN,on-chip loss,0.5,dB,<,2018-09,Wang C.,"Nature 562, 101",10.1038/s41586-018-0551-y,,,Y,false
+modulator-kharel2021,modulator,Segmented (T-) electrodes,TFLN,RF Vpi,1.3,V,=,2021-03,Kharel P.,"Optica 8, 357",10.1364/OPTICA.416155,,,Y,false
+modulator-kharel2021,modulator,Segmented (T-) electrodes,TFLN,EO roll-off,1.8,dB,=,2021-03,Kharel P.,"Optica 8, 357",10.1364/OPTICA.416155,,,Y,false
+modulator-kharel2021,modulator,Segmented (T-) electrodes,TFLN,roll-off frequency,50,GHz,=,2021-03,Kharel P.,"Optica 8, 357",10.1364/OPTICA.416155,,,Y,false
+modulator-valdez2022,modulator,Etchless TFLN bonded on SiN,TFLN + SiN,VpiL,0.8,V.cm,=,2022,Valdez F.,arXiv 2211.13348,,2211.13348,,Y(preprint),false
+modulator-valdez2022,modulator,Etchless TFLN bonded on SiN,TFLN + SiN,wavelength,784,nm,=,2022,Valdez F.,arXiv 2211.13348,,2211.13348,,Y(preprint),false
+modulator-valdez2022,modulator,Etchless TFLN bonded on SiN,TFLN + SiN,EO bandwidth,100,GHz,>,2022,Valdez F.,arXiv 2211.13348,,2211.13348,,Y(preprint),false
+modulator-xu2022,modulator,Dual-pol IQ,TFLN,drive voltage,1,V,<,2022-01,Xu M.,"Optica 9, 61",10.1364/OPTICA.449691,,,Y,false
+modulator-xu2022,modulator,Dual-pol IQ,TFLN,EO bandwidth,110,GHz,=,2022-01,Xu M.,"Optica 9, 61",10.1364/OPTICA.449691,,,Y,false
+modulator-zhang2022,modulator,Highest measured 3-dB EO bandwidth found,TFLN,3-dB EO bandwidth,170,GHz,=,2022-09,Zhang Y.,Photon. Res.,10.1364/prj.468518,,,Y,true
+modulator-zhang2022,modulator,Highest measured 3-dB EO bandwidth found,TFLN,6-dB EO bandwidth,295,GHz,=,2022-09,Zhang Y.,Photon. Res.,10.1364/prj.468518,,,Y,true
+modulator-zhang2022,modulator,Highest measured 3-dB EO bandwidth found,TFLN,RF Vpi,7.3,V,=,2022-09,Zhang Y.,Photon. Res.,10.1364/prj.468518,,,Y,true
+modulator-zhang2022,modulator,Highest measured 3-dB EO bandwidth found,TFLN,RF Vpi frequency,250,GHz,=,2022-09,Zhang Y.,Photon. Res.,10.1364/prj.468518,,,Y,true
+modulator-zhang2022,modulator,Highest measured 3-dB EO bandwidth found,TFLN,maximum measured frequency,325,GHz,=,2022-09,Zhang Y.,Photon. Res.,10.1364/prj.468518,,,Y,true
+modulator-renaud2023,modulator,Visible/NIR,TFLN,VpiL,0.55,V.cm,=,2023,Renaud D.,Nat. Commun.,10.1038/s41467-023-36870-w,,,Y,false
+modulator-renaud2023,modulator,Visible/NIR,TFLN,wavelength,738,nm,=,2023,Renaud D.,Nat. Commun.,10.1038/s41467-023-36870-w,,,Y,false
+modulator-renaud2023,modulator,Visible/NIR,TFLN,EO bandwidth,35,GHz,>,2023,Renaud D.,Nat. Commun.,10.1038/s41467-023-36870-w,,,Y,false
+modulator-shen2024,modulator,"Slow-light MZM, non-resonant",SiN-loaded TFLN,VpiL,0.21,V.cm,=,2024-10-12,Shen J.,"Laser Photon. Rev. 19, 2401092",10.1002/lpor.202401092,,,Y,false
+modulator-shen2024,modulator,"Slow-light MZM, non-resonant",SiN-loaded TFLN,modulation length,1,mm,=,2024-10-12,Shen J.,"Laser Photon. Rev. 19, 2401092",10.1002/lpor.202401092,,,Y,false
+modulator-shen2024,modulator,"Slow-light MZM, non-resonant",SiN-loaded TFLN,EO bandwidth,110,GHz,>,2024-10-12,Shen J.,"Laser Photon. Rev. 19, 2401092",10.1002/lpor.202401092,,,Y,false
+modulator-shen2024,modulator,"Slow-light MZM, non-resonant",SiN-loaded TFLN,NRZ data rate,180,Gbit/s,=,2024-10-12,Shen J.,"Laser Photon. Rev. 19, 2401092",10.1002/lpor.202401092,,,Y,false
+modulator-shen2024,modulator,"Slow-light MZM, non-resonant",SiN-loaded TFLN,PAM8 data rate,300,Gbit/s,=,2024-10-12,Shen J.,"Laser Photon. Rev. 19, 2401092",10.1002/lpor.202401092,,,Y,false
+modulator-liu2025-wafer,modulator,Wafer-scale manufacturing,TFLN on quartz,wafer diameter,4,[in_i],=,2025,Liu,Light Adv. Manuf.,10.37188/lam.2025.047,,,Y,false
+modulator-liu2025-wafer,modulator,Wafer-scale manufacturing,TFLN on quartz,EO bandwidth,110,GHz,>,2025,Liu,Light Adv. Manuf.,10.37188/lam.2025.047,,,Y,false
+modulator-liu2025-wafer,modulator,Wafer-scale manufacturing,TFLN on quartz,Vpi,3,V,<,2025,Liu,Light Adv. Manuf.,10.37188/lam.2025.047,,,Y,false
+modulator-liu2025-wafer,modulator,Wafer-scale manufacturing,TFLN on quartz,VpiL,2.92,V.cm,=,2025,Liu,Light Adv. Manuf.,10.37188/lam.2025.047,,,Y,false
+modulator-liu2025-wafer,modulator,Wafer-scale manufacturing,TFLN on quartz,yield,50,%,=,2025,Liu,Light Adv. Manuf.,10.37188/lam.2025.047,,,Y,false
+modulator-liu2025-lowk,modulator,Low-k underfill,TFLN,Vpi (C-band),1.9,V,=,2025-03,Liu H.,Laser Photon. Rev.,10.1002/lpor.202402053,,,Y,false
+modulator-liu2025-lowk,modulator,Low-k underfill,TFLN,Vpi (O-band),1.54,V,=,2025-03,Liu H.,Laser Photon. Rev.,10.1002/lpor.202402053,,,Y,false
+modulator-liu2025-lowk,modulator,Low-k underfill,TFLN,electrode length,7,mm,=,2025-03,Liu H.,Laser Photon. Rev.,10.1002/lpor.202402053,,,Y,false
+modulator-liu2025-lowk,modulator,Low-k underfill,TFLN,VpiL (C-band),1.33,V.cm,=,2025-03,Liu H.,Laser Photon. Rev.,10.1002/lpor.202402053,,,Y,false
+modulator-liu2025-lowk,modulator,Low-k underfill,TFLN,VpiL (O-band),1.08,V.cm,=,2025-03,Liu H.,Laser Photon. Rev.,10.1002/lpor.202402053,,,Y,false
+modulator-liu2025-lowk,modulator,Low-k underfill,TFLN,3-dB EO bandwidth (C-band),220,GHz,=,2025-03,Liu H.,Laser Photon. Rev.,10.1002/lpor.202402053,,,Y,false
+modulator-liu2025-lowk,modulator,Low-k underfill,TFLN,3-dB EO bandwidth (O-band),218,GHz,=,2025-03,Liu H.,Laser Photon. Rev.,10.1002/lpor.202402053,,,Y,false
+modulator-yu2025,modulator,Lowest telecom-class VpiL found,TFLN,VpiL,0.33,V.cm,=,2025-09,Yu,Opt. Express,10.1364/oe.572384,,,Y,true
+modulator-yu2025,modulator,Lowest telecom-class VpiL found,TFLN,device length,300,um,=,2025-09,Yu,Opt. Express,10.1364/oe.572384,,,Y,true
+modulator-yu2025,modulator,Lowest telecom-class VpiL found,TFLN,EO roll-off,2.4,dB,=,2025-09,Yu,Opt. Express,10.1364/oe.572384,,,Y,true
+modulator-yu2025,modulator,Lowest telecom-class VpiL found,TFLN,roll-off frequency,110,GHz,=,2025-09,Yu,Opt. Express,10.1364/oe.572384,,,Y,true
+modulator-yu2025,modulator,Lowest telecom-class VpiL found,TFLN,3-dB EO bandwidth,145,GHz,=,2025-09,Yu,Opt. Express,10.1364/oe.572384,,,Y,true
+modulator-yu2025,modulator,Lowest telecom-class VpiL found,TFLN,insertion loss,2.7,dB,=,2025-09,Yu,Opt. Express,10.1364/oe.572384,,,Y,true
+modulator-xiong2026,modulator,Er-doped amplified MZM,Er:TFLN,net on-chip gain,6,dB,>,2026-04,Xiong,Photon. Res.,10.1364/prj.586899,,,Y,false
+modulator-xiong2026,modulator,Er-doped amplified MZM,Er:TFLN,EO bandwidth,110,GHz,>,2026-04,Xiong,Photon. Res.,10.1364/prj.586899,,,Y,false
+modulator-xiong2026,modulator,Er-doped amplified MZM,Er:TFLN,data rate,144,Gbit/s,=,2026-04,Xiong,Photon. Res.,10.1364/prj.586899,,,Y,false
+opa-opo-gao2021,opa-opo,"CW OPO threshold, PLACE microdisk",TFLN (PLACE microdisk),OPO threshold,19.6,uW,=,2021,Gao R.,New J. Phys.,10.1088/1367-2630/ac3d52,,,Y,false
+opa-opo-lu2021,opa-opo,"CW OPO threshold, ring",TFLN,OPO threshold,30,uW,~,2021,Lu J.,Optica,10.1364/OPTICA.418984,,,Y(arXiv),false
+opa-opo-lu2021,opa-opo,"CW OPO threshold, ring",TFLN,conversion efficiency,11,%,=,2021,Lu J.,Optica,10.1364/OPTICA.418984,,,Y(arXiv),false
+opa-opo-lu2021,opa-opo,"CW OPO threshold, ring",TFLN,pump power,93,uW,=,2021,Lu J.,Optica,10.1364/OPTICA.418984,,,Y(arXiv),false
+opa-opo-guo2022,opa-opo,All-optical switching,TFLN,switching time,18,fs,=,2022,Guo Q.,Nat. Photonics,10.1038/s41566-022-01044-5,,,Y(arXiv),false
+opa-opo-guo2022,opa-opo,All-optical switching,TFLN,energy-time product,1.4e-27,J.s,=,2022,Guo Q.,Nat. Photonics,10.1038/s41566-022-01044-5,,,Y(arXiv),false
+opa-opo-jankowski2022,opa-opo,"fs OPA, highest found",TFLN,unsaturated gain,71,dB,=,2022,Jankowski M.,Optica,10.1364/OPTICA.442550,,,Y,true
+opa-opo-jankowski2022,opa-opo,"fs OPA, highest found",TFLN,unsaturated gain per length,118,dB/cm,=,2022,Jankowski M.,Optica,10.1364/OPTICA.442550,,,Y,true
+opa-opo-jankowski2022,opa-opo,"fs OPA, highest found",TFLN,wavelength range min,1700,nm,=,2022,Jankowski M.,Optica,10.1364/OPTICA.442550,,,Y,true
+opa-opo-jankowski2022,opa-opo,"fs OPA, highest found",TFLN,wavelength range max,2700,nm,=,2022,Jankowski M.,Optica,10.1364/OPTICA.442550,,,Y,true
+opa-opo-jankowski2022,opa-opo,"fs OPA, highest found",TFLN,pump pulse energy,4,pJ,=,2022,Jankowski M.,Optica,10.1364/OPTICA.442550,,,Y,true
+opa-opo-jankowski2022,opa-opo,"fs OPA, highest found",TFLN,saturated gain,88,dB,=,2022,Jankowski M.,Optica,10.1364/OPTICA.442550,,,Y,true
+opa-opo-jankowski2022,opa-opo,"fs OPA, highest found",TFLN,saturated gain per length,146,dB/cm,>,2022,Jankowski M.,Optica,10.1364/OPTICA.442550,,,Y,true
+opa-opo-ledezma2022,opa-opo,fs OPA,TFLN,phase-sensitive gain,50,dB/cm,>,2022,Ledezma L.,Optica,10.1364/OPTICA.442332,,,Y,false
+opa-opo-ledezma2022,opa-opo,fs OPA,TFLN,device length,6,mm,=,2022,Ledezma L.,Optica,10.1364/OPTICA.442332,,,Y,false
+opa-opo-ledezma2022,opa-opo,fs OPA,TFLN,OPG gain,100,dB/cm,>,2022,Ledezma L.,Optica,10.1364/OPTICA.442332,,,Y,false
+opa-opo-ledezma2022,opa-opo,fs OPA,TFLN,gain bandwidth,600,nm,=,2022,Ledezma L.,Optica,10.1364/OPTICA.442332,,,Y,false
+opa-opo-ledezma2022,opa-opo,fs OPA,TFLN,center wavelength,2,um,=,2022,Ledezma L.,Optica,10.1364/OPTICA.442332,,,Y,false
+opa-opo-roy2022,opa-opo,Quadratic soliton,TFLN,,,,,2022,Roy A.,Nat. Photonics,10.1038/s41566-021-00942-4,,,title,false
+opa-opo-guo2023,opa-opo,Mode-locked laser (III-V + TFLN),III-V + TFLN,pulse width,4.8,ps,~,2023,Guo Q.,Science,10.1126/science.adj5438,,,Y,false
+opa-opo-guo2023,opa-opo,Mode-locked laser (III-V + TFLN),III-V + TFLN,repetition rate,10,GHz,~,2023,Guo Q.,Science,10.1126/science.adj5438,,,Y,false
+opa-opo-guo2023,opa-opo,Mode-locked laser (III-V + TFLN),III-V + TFLN,pulse energy,2.6,pJ,>,2023,Guo Q.,Science,10.1126/science.adj5438,,,Y,false
+opa-opo-guo2023,opa-opo,Mode-locked laser (III-V + TFLN),III-V + TFLN,peak power,0.5,W,>,2023,Guo Q.,Science,10.1126/science.adj5438,,,Y,false
+opa-opo-guo2023,opa-opo,Mode-locked laser (III-V + TFLN),III-V + TFLN,wavelength,1065,nm,~,2023,Guo Q.,Science,10.1126/science.adj5438,,,Y,false
+opa-opo-hwang2023,opa-opo,"Mid-IR OPO, LN on sapphire",LN on sapphire,output power,25,mW,>,2023,Hwang A.Y.,Optica,10.1364/OPTICA.502487,,,Y(arXiv),false
+opa-opo-hwang2023,opa-opo,"Mid-IR OPO, LN on sapphire",LN on sapphire,wavelength,3.2,um,=,2023,Hwang A.Y.,Optica,10.1364/OPTICA.502487,,,Y(arXiv),false
+opa-opo-hwang2023,opa-opo,"Mid-IR OPO, LN on sapphire",LN on sapphire,power conversion efficiency,15,%,=,2023,Hwang A.Y.,Optica,10.1364/OPTICA.502487,,,Y(arXiv),false
+opa-opo-hwang2023,opa-opo,"Mid-IR OPO, LN on sapphire",LN on sapphire,quantum efficiency,45,%,=,2023,Hwang A.Y.,Optica,10.1364/OPTICA.502487,,,Y(arXiv),false
+opa-opo-ledezma2023,opa-opo,Pulsed tunable OPO,TFLN,tuning range min,1.53,um,=,2023,Ledezma L.,Sci. Adv.,10.1126/sciadv.adf9711,,,Y,false
+opa-opo-ledezma2023,opa-opo,Pulsed tunable OPO,TFLN,tuning range max,3.25,um,=,2023,Ledezma L.,Sci. Adv.,10.1126/sciadv.adf9711,,,Y,false
+opa-opo-roy2023,opa-opo,fs OPO comb,TFLN,spectral range min,1.5,um,=,2023,Roy A.,Nat. Commun.,10.1038/s41467-023-42289-0,,,Y,false
+opa-opo-roy2023,opa-opo,fs OPO comb,TFLN,spectral range max,3.3,um,=,2023,Roy A.,Nat. Commun.,10.1038/s41467-023-42289-0,,,Y,false
+opa-opo-stokowski2024,opa-opo,FM-OPO comb,TFLN,internal pump-to-comb efficiency,93,%,>,2024,Stokowski H.S.,Nature,10.1038/s41586-024-07071-2,,,Y,false
+opa-opo-stokowski2024,opa-opo,FM-OPO comb,TFLN,out-coupled efficiency,34,%,=,2024,Stokowski H.S.,Nature,10.1038/s41586-024-07071-2,,,Y,false
+opa-opo-stokowski2024,opa-opo,FM-OPO comb,TFLN,comb modes,200,1,~,2024,Stokowski H.S.,Nature,10.1038/s41586-024-07071-2,,,Y,false
+opa-opo-stokowski2024,opa-opo,FM-OPO comb,TFLN,comb span,1,THz,>,2024,Stokowski H.S.,Nature,10.1038/s41586-024-07071-2,,,Y,false
+opa-opo-hwang2026,opa-opo,Electrically tuned mid-IR OPO,TFLN,tuning span,22,THz,=,2026-08-27,Hwang A.Y.,Nat. Photonics,10.1038/s41566-026-01999-9,,,Y(arXiv),false
+opa-opo-hwang2026,opa-opo,Electrically tuned mid-IR OPO,TFLN,tuning range min,2.7,um,=,2026-08-27,Hwang A.Y.,Nat. Photonics,10.1038/s41566-026-01999-9,,,Y(arXiv),false
+opa-opo-hwang2026,opa-opo,Electrically tuned mid-IR OPO,TFLN,tuning range max,3.4,um,=,2026-08-27,Hwang A.Y.,Nat. Photonics,10.1038/s41566-026-01999-9,,,Y(arXiv),false
+quantum-ma2020,quantum,"Pairs, PPLN microring",TFLN (PPLN microring),pair rate,36.3,MHz,=,2020,Ma Z.,"PRL 125, 263602",10.1103/PhysRevLett.125.263602,,,Y,false
+quantum-ma2020,quantum,"Pairs, PPLN microring",TFLN (PPLN microring),pump power,13.4,uW,=,2020,Ma Z.,"PRL 125, 263602",10.1103/PhysRevLett.125.263602,,,Y,false
+quantum-ma2020,quantum,"Pairs, PPLN microring",TFLN (PPLN microring),coincidence-to-accidental ratio (CAR),14682,1,=,2020,Ma Z.,"PRL 125, 263602",10.1103/PhysRevLett.125.263602,,,Y,false
+quantum-ma2020,quantum,"Pairs, PPLN microring",TFLN (PPLN microring),g2(0),0.008,1,=,2020,Ma Z.,"PRL 125, 263602",10.1103/PhysRevLett.125.263602,,,Y,false
+quantum-zhao2020,quantum,"Pairs, waveguide",TFLN,coincidence-to-accidental ratio (CAR),67000,1,>,2020,Zhao J.,"PRL 124, 163603",10.1103/PhysRevLett.124.163603,,,Y,false
+quantum-zhao2020,quantum,"Pairs, waveguide",TFLN,heralded g2(0),0.025,1,<,2020,Zhao J.,"PRL 124, 163603",10.1103/PhysRevLett.124.163603,,,Y,false
+quantum-chen2022,quantum,Single-pass squeezing,TFLN,measured squeezing,0.56,dB,=,2022,Chen P.-K.,Opt. Lett.,10.1364/OL.447695,,,Y,false
+quantum-chen2022,quantum,Single-pass squeezing,TFLN,inferred on-chip squeezing,2.6,dB,~,2022,Chen P.-K.,Opt. Lett.,10.1364/OL.447695,,,Y,false
+quantum-chen2022,quantum,Single-pass squeezing,TFLN,squeezing bandwidth,7,THz,=,2022,Chen P.-K.,Opt. Lett.,10.1364/OL.447695,,,Y,false
+quantum-nehra2022,quantum,"On-chip TFLN squeezing, highest found",TFLN,measured squeezing,4.9,dB,=,2022,Nehra R.,Science,10.1126/science.abo6213,,,Y,true
+quantum-nehra2022,quantum,"On-chip TFLN squeezing, highest found",TFLN,squeezing bandwidth,25,THz,>,2022,Nehra R.,Science,10.1126/science.abo6213,,,Y,true
+quantum-kashiwazaki2023,quantum,"Comparison, bulk-bonded PPLN ridge (not TFLN)",bulk-bonded PPLN ridge,CW squeezing,8.3,dB,=,2023,Kashiwazaki T.,APL,10.1063/5.0144385,,,Y,false
+quantum-wang2023,quantum,QFC telecom to near-visible,TFLN,internal conversion efficiency,73,%,=,2023,Wang X.,npj Quantum Inf.,10.1038/s41534-023-00704-w,,,Y(arXiv),false
+quantum-wang2023,quantum,QFC telecom to near-visible,TFLN,noise count rate,900,{counts}/s,=,2023,Wang X.,npj Quantum Inf.,10.1038/s41534-023-00704-w,,,Y(arXiv),false
+quantum-park2024,quantum,"OPO squeezing, on-chip SHG pump + homodyne",TFLN,squeezing,0.55,dB,=,2024,Park T.,Sci. Adv.,10.1126/sciadv.adl1814,,,Y,false
+quantum-park2024,quantum,"OPO squeezing, on-chip SHG pump + homodyne",TFLN,anti-squeezing,1.55,dB,=,2024,Park T.,Sci. Adv.,10.1126/sciadv.adl1814,,,Y,false
+quantum-arxiv2509.03869,quantum,"QFC, hybrid electrically pumped",TFLN,on-chip quantum efficiency,57,%,=,2025,,arXiv 2509.03869,,2509.03869,,Y(preprint),false
+quantum-arxiv2509.03869,quantum,"QFC, hybrid electrically pumped",TFLN,ring SHG efficiency,386000,%/W,=,2025,,arXiv 2509.03869,,2509.03869,,Y(preprint),false
+shg-luo2018,shg,Modal phase matching (no poling),TFLN,SHG efficiency,4.7,%/W,=,2018,Luo R.,"Optica 5, 1006",10.1364/OPTICA.5.001006,,,Y(arXiv),false
+shg-luo2018,shg,Modal phase matching (no poling),TFLN,waveguide length,8,mm,=,2018,Luo R.,"Optica 5, 1006",10.1364/OPTICA.5.001006,,,Y(arXiv),false
+shg-wang2018,shg,"Waveguide, normalized",TFLN,normalized SHG efficiency,2600,%/W/cm2,=,2018,Wang C.,"Optica 5, 1438",10.1364/OPTICA.5.001438,,,Y,false
+shg-wang2018,shg,"Waveguide, normalized",TFLN,pump wavelength,1.5,um,=,2018,Wang C.,"Optica 5, 1438",10.1364/OPTICA.5.001438,,,Y,false
+shg-wang2018,shg,"Waveguide, normalized",TFLN,poling period,4,um,=,2018,Wang C.,"Optica 5, 1438",10.1364/OPTICA.5.001438,,,Y,false
+shg-chen2019,shg,"Ring, x-cut QPM racetrack",TFLN (x-cut),SHG efficiency,3.8,%/mW,=,2019,Chen J.-Y.,"Optica 6, 1244",10.1364/OPTICA.6.001244,,,partial,false
+shg-lu2019,shg,"Ring, z-cut PPLN",TFLN (z-cut PPLN),SHG efficiency,250000,%/W,=,2019,Lu J.,"Optica 6, 1455",10.1364/OPTICA.6.001455,,,Y(arXiv),false
+shg-lu2019,shg,"Ring, z-cut PPLN",TFLN (z-cut PPLN),absolute conversion efficiency,15,%,=,2019,Lu J.,"Optica 6, 1455",10.1364/OPTICA.6.001455,,,Y(arXiv),false
+shg-lu2019,shg,"Ring, z-cut PPLN",TFLN (z-cut PPLN),pump power,115,uW,=,2019,Lu J.,"Optica 6, 1455",10.1364/OPTICA.6.001455,,,Y(arXiv),false
+shg-rao2019,shg,"Waveguide, normalized",TFLN,,,,,2019,Rao A.,"Opt. Express 27, 25920",10.1364/OE.27.025920,,,title,false
+shg-lu2020,shg,"Ring, highest found",TFLN,SHG efficiency,5000000,%/W,=,2020,Lu J.,Optica,10.1364/OPTICA.403931,,,Y,true
+shg-lu2020,shg,"Ring, highest found",TFLN,single-photon coupling g/2pi,1.2,MHz,~,2020,Lu J.,Optica,10.1364/OPTICA.403931,,,Y,true
+shg-lu2020,shg,"Ring, highest found",TFLN,g/kappa,1,%,=,2020,Lu J.,Optica,10.1364/OPTICA.403931,,,Y,true
+shg-zhao2020,shg,"Waveguide, shallow etch",MgO:TFLN (x-cut),normalized SHG efficiency,3757,%/W/cm2,=,2020,Zhao J.,Opt. Express,10.1364/OE.395545,,,Y,false
+shg-zhao2020,shg,"Waveguide, shallow etch",MgO:TFLN (x-cut),SHG efficiency,939,%/W,=,2020,Zhao J.,Opt. Express,10.1364/OE.395545,,,Y,false
+shg-mishra2021,shg,Mid-IR DFG (LN on sapphire),LN on sapphire,normalized DFG efficiency,200,%/W/cm2,=,2021,Mishra J.,Optica,10.1364/OPTICA.427428,,,Y,false
+shg-mishra2021,shg,Mid-IR DFG (LN on sapphire),LN on sapphire,longest wavelength,3.66,um,=,2021,Mishra J.,Optica,10.1364/OPTICA.427428,,,Y,false
+shg-mckenna2022,shg,Ring SHG + OPO,TFLN,SHG conversion efficiency,10,%,>,2022,McKenna T.P.,Nat. Commun.,10.1038/s41467-022-31134-5,,,Y,false
+shg-mckenna2022,shg,Ring SHG + OPO,TFLN,tuning range,1,THz,>,2022,McKenna T.P.,Nat. Commun.,10.1038/s41467-022-31134-5,,,Y,false
+shg-park2022,shg,Blue SHG,TFLN,normalized SHG efficiency,33000,%/W/cm2,=,2022,Park T.,"Opt. Lett. 47, 2706",10.1364/OL.455046,,,Y,false
+shg-chen2024,shg,"Waveguide, adapted poling",TFLN,SHG efficiency (overall),104,%/W,=,2024,Chen P.-K.,"Nat. Nanotechnol. 19, 44",10.1038/s41565-023-01525-w,,,Y,false
+shg-chen2024,shg,"Waveguide, adapted poling",TFLN,conversion efficiency,80,%,>,2024,Chen P.-K.,"Nat. Nanotechnol. 19, 44",10.1038/s41565-023-01525-w,,,Y,false
+shg-chen2024,shg,"Waveguide, adapted poling",TFLN,pump power,20,mW,=,2024,Chen P.-K.,"Nat. Nanotechnol. 19, 44",10.1038/s41565-023-01525-w,,,Y,false
+shg-li2024,shg,"Waveguide, highest normalized found",TFLN (polarization-reversed double layer),normalized SHG efficiency,9600,%/W/cm2,=,2024,Li,Adv. Photonics Nexus,10.1117/1.APN.3.6.066009,,,Y,true
+shg-li2024,shg,"Waveguide, highest normalized found",TFLN (polarization-reversed double layer),absolute conversion efficiency,85,%,=,2024,Li,Adv. Photonics Nexus,10.1117/1.APN.3.6.066009,,,Y,true
+symbol-rate-xu2022,symbol-rate,"Coherent, single wavelength",TFLN,net bit rate,1.96,Tbit/s,=,2022,Xu M.,Optica,10.1364/OPTICA.449691,,,Y,false
+symbol-rate-wang2022,symbol-rate,"Coherent, single carrier",TFLN on Si,net bit rate,1.6,Tbit/s,=,2022-07,Wang,APL Photonics,10.1063/5.0097296,,,Y,false
+symbol-rate-berikaa2022,symbol-rate,IM/DD (intensity modulation / direct detection),TFLN,symbol rate,128,GBd,=,2022-12,Berikaa E.,Opt. Lett.,10.1364/ol.476399,,,Y,false
+symbol-rate-berikaa2022,symbol-rate,IM/DD (intensity modulation / direct detection),TFLN,net bit rate,400,Gbit/s,=,2022-12,Berikaa E.,Opt. Lett.,10.1364/ol.476399,,,Y,false
+symbol-rate-almonacil2023,symbol-rate,Coherent,TFLN,,,,,2023-06,Almonacil S.,JLT,10.1109/jlt.2023.3269740,,,title,false
+symbol-rate-deakin2025,symbol-rate,Highest symbol rate found,TFLN,symbol rate,440,GBd,=,2025,Deakin C.,OFC 2025 postdeadline Th4B.7; JLT 2026-02 (Che D.),10.1364/ofc.2025.th4b.7,,,Y,true
+symbol-rate-deakin2025,symbol-rate,Highest symbol rate found,TFLN,DAC bandwidth,221,GHz,=,2025,Deakin C.,OFC 2025 postdeadline Th4B.7; JLT 2026-02 (Che D.),10.1364/ofc.2025.th4b.7,,,Y,true
+symbol-rate-deakin2025,symbol-rate,Highest symbol rate found,TFLN,net bit rate per modulation dimension,1,Tbit/s,>,2025,Deakin C.,OFC 2025 postdeadline Th4B.7; JLT 2026-02 (Che D.),10.1364/ofc.2025.th4b.7,,,Y,true
+symbol-rate-che2025,symbol-rate,Earlier step,TFLN,symbol rate,314,GBd,=,2025-04,Che D.,arXiv 2504.15331,,2504.15331,,Y(arXiv),false
+symbol-rate-che2025,symbol-rate,Earlier step,TFLN,DAC bandwidth,158,GHz,=,2025-04,Che D.,arXiv 2504.15331,,2504.15331,,Y(arXiv),false
+symbol-rate-zhang2025,symbol-rate,"IM/DD, dual polarization",TFLN,bit rate,512,Gbit/s,=,2025-11,Zhang,Nanophotonics,10.1515/nanoph-2025-0472,,,Y,false
+symbol-rate-murata2026-industry,symbol-rate,Industry,TFLN,EO bandwidth (Murata),100,GHz,>,2026-03,,Company news (hyperlightcorp.com; corporate.murata.com),,,https://corporate.murata.com/en-us/newsroom/news/company/general/2026/0310,press,false
+symbol-rate-murata2026-industry,symbol-rate,Industry,TFLN,bit rate per channel (Murata),400,Gbit/s,=,2026-03,,Company news (hyperlightcorp.com; corporate.murata.com),,,https://corporate.murata.com/en-us/newsroom/news/company/general/2026/0310,press,false
+symbol-rate-tian2026,symbol-rate,"IM/DD, microring",TFLN,bit rate,517,Gbit/s,=,2026-09,Tian,Research Square,10.21203/rs.3.rs-10811928/v1,,,Y(preprint),false
+symbol-rate-tian2026,symbol-rate,"IM/DD, microring",TFLN,symbol rate,200,GBd,=,2026-09,Tian,Research Square,10.21203/rs.3.rs-10811928/v1,,,Y(preprint),false
+symbol-rate-tian2026,symbol-rate,"IM/DD, microring",TFLN,energy per bit,1.5,fJ/bit,=,2026-09,Tian,Research Square,10.21203/rs.3.rs-10811928/v1,,,Y(preprint),false
+tflt-wang2024-platform,tflt,Platform paper,TFLT,propagation loss,5.6,dB/m,=,2024-05,Wang C.,"Nature 629, 784",10.1038/s41586-024-07369-1,,,Y,false
+tflt-wang2024-platform,tflt,Platform paper,TFLT,MZM VpiL,1.9,V.cm,=,2024-05,Wang C.,"Nature 629, 784",10.1038/s41586-024-07369-1,,,Y,false
+tflt-wang2024-platform,tflt,Platform paper,TFLT,EO bandwidth,40,GHz,=,2024-05,Wang C.,"Nature 629, 784",10.1038/s41586-024-07369-1,,,Y,false
+tflt-wang2024-switch,tflt,Ultralow DC drift switch,TFLT,stable duration,2,h,=,2024-09,Wang,Opt. Lett.,10.1364/ol.531263,,,Y,false
+tflt-powell2024,tflt,DC stability vs TFLN,TFLT,DC drift (TFLT),1,dB,<,2024-11,Powell K.,"Opt. Express 32, 44115",10.1364/oe.538870,,,Y,false
+tflt-powell2024,tflt,DC stability vs TFLN,TFLT,DC drift (TFLN),5,dB,=,2024-11,Powell K.,"Opt. Express 32, 44115",10.1364/oe.538870,,,Y,false
+tflt-powell2024,tflt,DC stability vs TFLN,TFLT,test duration,46,h,=,2024-11,Powell K.,"Opt. Express 32, 44115",10.1364/oe.538870,,,Y,false
+tflt-powell2024,tflt,DC stability vs TFLN,TFLT,optical power,12.1,dB[mW],=,2024-11,Powell K.,"Opt. Express 32, 44115",10.1364/oe.538870,,,Y,false
+tflt-powell2024,tflt,DC stability vs TFLN,TFLT,VpiL,3.4,V.cm,=,2024-11,Powell K.,"Opt. Express 32, 44115",10.1364/oe.538870,,,Y,false
+tflt-powell2024,tflt,DC stability vs TFLN,TFLT,temperature range min,0,Cel,=,2024-11,Powell K.,"Opt. Express 32, 44115",10.1364/oe.538870,,,Y,false
+tflt-powell2024,tflt,DC stability vs TFLN,TFLT,temperature range max,70,Cel,=,2024-11,Powell K.,"Opt. Express 32, 44115",10.1364/oe.538870,,,Y,false
+tflt-wang2024-highspeed,tflt,High-speed,TFLT,EO bandwidth,110,GHz,=,2024-11,Wang C.,Optica,10.1364/OPTICA.537730,,,Y,false
+tflt-wang2024-highspeed,tflt,High-speed,TFLT,symbol rate,176,GBd,=,2024-11,Wang C.,Optica,10.1364/OPTICA.537730,,,Y,false
+tflt-wang2024-highspeed,tflt,High-speed,TFLT,net bit rate,400,Gbit/s,>,2024-11,Wang C.,Optica,10.1364/OPTICA.537730,,,Y,false
+tflt-powell2025,tflt,"DC stability, visible",TFLT,DC drift (TFLT),2,dB,<,2025,Powell K.,arXiv 2505.00906,,2505.00906,,Y(preprint),false
+tflt-powell2025,tflt,"DC stability, visible",TFLT,DC drift (comparison),8,dB,=,2025,Powell K.,arXiv 2505.00906,,2505.00906,,Y(preprint),false
+tflt-powell2025,tflt,"DC stability, visible",TFLT,wavelength,737,nm,=,2025,Powell K.,arXiv 2505.00906,,2505.00906,,Y(preprint),false
+tflt-powell2025,tflt,"DC stability, visible",TFLT,test duration,16,min,=,2025,Powell K.,arXiv 2505.00906,,2505.00906,,Y(preprint),false
+tflt-zhang2025,tflt,TFLT EO comb,TFLT,comb span,450,nm,>,2025,Zhang J.,Nature,10.1038/s41586-024-08354-4,,,Y,false
+tflt-zhang2025,tflt,TFLT EO comb,TFLT,comb lines,2000,1,>,2025,Zhang J.,Nature,10.1038/s41586-024-08354-4,,,Y,false
+tflt-kuznetsov2025,tflt,On-chip PPLT SHG,PPLT,SH output power,1,W,>,2025-12,Kuznetsov,arXiv 2512.07968,,2512.07968,,Y(preprint),false
+tflt-kuznetsov2025,tflt,On-chip PPLT SHG,PPLT,SH wavelength,775,nm,=,2025-12,Kuznetsov,arXiv 2512.07968,,2512.07968,,Y(preprint),false
+tflt-kuznetsov2025,tflt,On-chip PPLT SHG,PPLT,coercive field ratio PPLT / MgO:LN,4,1,~,2025-12,Kuznetsov,arXiv 2512.07968,,2512.07968,,Y(preprint),false
+tflt-he2026,tflt,Resonant,TFLT (PhC nanobeam),Q,10000000.0,1,>,2026,He,CLEO 2026 SM4K.1,10.1364/cleo_si.2026.sm4k.1,,,Y(conf),false
+tflt-he2026,tflt,Resonant,TFLT (PhC nanobeam),"Vpi (resonant, DC)",12.85,mV,=,2026,He,CLEO 2026 SM4K.1,10.1364/cleo_si.2026.sm4k.1,,,Y(conf),false
+tflt-hulyal2026,tflt,WDM transmitter,TFLT,aggregate net bit rate,1.6,Tbit/s,=,2026,Hulyal,CLEO 2026 STh1F.2,10.1364/cleo_si.2026.sth1f.2,,,Y(conf),false
+tflt-li2026-fusedsilica,tflt,TFLT on fused silica,TFLT on fused silica,EO bandwidth,64,GHz,=,2026,Li Z.,arXiv 2604.14836; OFC 2026 W1A.5,10.1364/ofc.2026.w1a.5,2604.14836,,Y(conf),false
+tflt-li2026-fusedsilica,tflt,TFLT on fused silica,TFLT on fused silica,Vpi,1.53,V,=,2026,Li Z.,arXiv 2604.14836; OFC 2026 W1A.5,10.1364/ofc.2026.w1a.5,2604.14836,,Y(conf),false
+tflt-li2026-fusedsilica,tflt,TFLT on fused silica,TFLT on fused silica,bias-stable low-frequency limit,10,mHz,=,2026,Li Z.,arXiv 2604.14836; OFC 2026 W1A.5,10.1364/ofc.2026.w1a.5,2604.14836,,Y(conf),false
+tflt-li2026-fusedsilica,tflt,TFLT on fused silica,TFLT on fused silica,bit rate,440.6,Gbit/s,=,2026,Li Z.,arXiv 2604.14836; OFC 2026 W1A.5,10.1364/ofc.2026.w1a.5,2604.14836,,Y(conf),false
+tflt-xu2026,tflt,O-band sub-V,TFLT,Vpi,1,V,=,2026,Xu,OFC 2026 W1A.4,10.1364/ofc.2026.w1a.4,,,Y(conf),false
+tflt-xu2026,tflt,O-band sub-V,TFLT,EO bandwidth,110,GHz,>,2026,Xu,OFC 2026 W1A.4,10.1364/ofc.2026.w1a.4,,,Y(conf),false
+tflt-xu2026-th4a2,tflt,"C-band TFLT MZM, line rate",TFLT,Vpi,1.35,V,=,2026,Xu M.,OFC 2026 Th4A.2,10.1364/ofc.2026.th4a.2,,,Y(conf),false
+tflt-xu2026-th4a2,tflt,"C-band TFLT MZM, line rate",TFLT,EO bandwidth,110,GHz,>,2026,Xu M.,OFC 2026 Th4A.2,10.1364/ofc.2026.th4a.2,,,Y(conf),false
+tflt-xu2026-th4a2,tflt,"C-band TFLT MZM, line rate",TFLT,line rate,768,Gbit/s,=,2026,Xu M.,OFC 2026 Th4A.2,10.1364/ofc.2026.th4a.2,,,Y(conf),false
+tflt-xu2026-th4a2,tflt,"C-band TFLT MZM, line rate",TFLT,net bit rate,536,Gbit/s,=,2026,Xu M.,OFC 2026 Th4A.2,10.1364/ofc.2026.th4a.2,,,Y(conf),false
+tflt-alsayem2026,tflt,High temperature,TFLT,operating temperature,120,Cel,=,2026-04,Al Sayem A.,arXiv 2604.27285,,2604.27285,,Y(preprint),false
+tflt-chen2026,tflt,Bandwidth + drift,TFLT,EO bandwidth,67,GHz,>,2026-04,Chen,Opt. Express,10.1364/oe.595937,,,Y,false
+tflt-chen2026,tflt,Bandwidth + drift,TFLT,VpiL,2.4,V.cm,=,2026-04,Chen,Opt. Express,10.1364/oe.595937,,,Y,false
+tflt-chen2026,tflt,Bandwidth + drift,TFLT,DC drift,1,dB,<,2026-04,Chen,Opt. Express,10.1364/oe.595937,,,Y,false
+tflt-chen2026,tflt,Bandwidth + drift,TFLT,test duration,60,min,=,2026-04,Chen,Opt. Express,10.1364/oe.595937,,,Y,false
+tflt-li2026-suspended,tflt,Suspended TFLT,TFLT (suspended),EO bandwidth,110,GHz,=,2026-07,Li Z.,arXiv 2607.17436,,2607.17436,,Y(preprint),false
+tflt-li2026-suspended,tflt,Suspended TFLT,TFLT (suspended),net bit rate,460,Gbit/s,=,2026-07,Li Z.,arXiv 2607.17436,,2607.17436,,Y(preprint),false
+thermo-optic-ji2025,thermo-optic,Thermo-optic phase shifter P_pi (candidate),TFLN,,,,,2025-07-15,Ji,JLT,10.1109/jlt.2025.3564158,,,title,false
+transduction-shao2019,transduction,"Room-temp AO, suspended TFLN",TFLN (suspended),acoustic frequency,4.5,GHz,=,2019,Shao L.,"Optica 6, 1498",10.1364/OPTICA.6.001498,,,Y(arXiv),false
+transduction-shao2019,transduction,"Room-temp AO, suspended TFLN",TFLN (suspended),Vpi (racetrack),0.77,V,=,2019,Shao L.,"Optica 6, 1498",10.1364/OPTICA.6.001498,,,Y(arXiv),false
+transduction-shao2019,transduction,"Room-temp AO, suspended TFLN",TFLN (suspended),g0/2pi,1.1,kHz,=,2019,Shao L.,"Optica 6, 1498",10.1364/OPTICA.6.001498,,,Y(arXiv),false
+transduction-holzgrafe2020,transduction,"Cavity EO, TFLN",TFLN,conversion efficiency,2.7e-05,1,=,2020,Holzgrafe J.,"Optica 7, 1714",10.1364/OPTICA.397513,,,Y(arXiv),false
+transduction-jiang2020,transduction,"Piezo-optomechanical, room temp",TFLN,Vpi,0.02,V,=,2020,Jiang W.,Nat. Commun.,10.1038/s41467-020-14863-3,,,Y(arXiv),false
+transduction-jiang2020,transduction,"Piezo-optomechanical, room temp",TFLN,conversion efficiency,5.5,%,=,2020,Jiang W.,Nat. Commun.,10.1038/s41467-020-14863-3,,,Y(arXiv),false
+transduction-jiang2020,transduction,"Piezo-optomechanical, room temp",TFLN,pump power,323,uW,=,2020,Jiang W.,Nat. Commun.,10.1038/s41467-020-14863-3,,,Y(arXiv),false
+transduction-mckenna2020,transduction,"Triply resonant LN on sapphire, mK",LN on sapphire,on-chip conversion efficiency,6.6e-06,1,=,2020,McKenna T.P.,"Optica 7, 1737",10.1364/OPTICA.397235,,,Y,false
+transduction-xu2021,transduction,"EO, TFLN + superconducting resonator",TFLN + superconducting resonator,total conversion efficiency,1.02,%,=,2021,Xu Y.,Nat. Commun.,10.1038/s41467-021-24809-y,,,Y,false
+transduction-xu2021,transduction,"EO, TFLN + superconducting resonator",TFLN + superconducting resonator,internal conversion efficiency,15.2,%,=,2021,Xu Y.,Nat. Commun.,10.1038/s41467-021-24809-y,,,Y,false
+transduction-sahu2022,transduction,"Bulk LN WGM EO (not thin film), comparison",bulk LN (WGM),conversion efficiency,8.7,%,=,2022,Sahu R.,Nat. Commun.,10.1038/s41467-022-28924-2,,,Y,false
+transduction-sahu2022,transduction,"Bulk LN WGM EO (not thin film), comparison",bulk LN (WGM),added noise photons,0.16,1,=,2022,Sahu R.,Nat. Commun.,10.1038/s41467-022-28924-2,,,Y,false
+transduction-jiang2023,transduction,Optically heralded microwave photon addition,TFLN,CW conversion efficiency,5,%,=,2023,Jiang W.,Nat. Phys.,10.1038/s41567-023-02129-w,,,Y(arXiv),false
+transduction-jiang2023,transduction,Optically heralded microwave photon addition,TFLN,heralding rate,15,Hz,=,2023,Jiang W.,Nat. Phys.,10.1038/s41567-023-02129-w,,,Y(arXiv),false
+transduction-sahu2023,transduction,"Bulk LN, microwave-optical entanglement",bulk LN,,,,,2023,Sahu R.,Science,10.1126/science.adg3812,,,Y,false
+transduction-weaver2024,transduction,Integrated interface (LN-on-Si mechanics),LN on Si,conversion efficiency,0.9,%,=,2024,Weaver M.J.,Nat. Nanotechnol.,10.1038/s41565-023-01515-y,,,Y,false
+transduction-weaver2024,transduction,Integrated interface (LN-on-Si mechanics),LN on Si,pump power,1,uW,=,2024,Weaver M.J.,Nat. Nanotechnol.,10.1038/s41565-023-01515-y,,,Y,false
+transduction-weaver2024,transduction,Integrated interface (LN-on-Si mechanics),LN on Si,bandwidth,14.8,MHz,=,2024,Weaver M.J.,Nat. Nanotechnol.,10.1038/s41565-023-01515-y,,,Y,false
+transduction-arnold2025,transduction,"Bulk LN EO, all-optical qubit readout",bulk LN,,,,,2025,Arnold G.,Nat. Phys.,10.1038/s41567-024-02741-4,,,Y,false
+transduction-warner2025,transduction,"Optical control of a qubit, TFLN EO",TFLN,conversion efficiency,1.18,%,=,2025,Warner H.K.,Nat. Phys.,10.1038/s41567-025-02812-0,,,Y(arXiv),false
+wafer-foundry-luke2020,wafer-foundry,Academic wafer-scale,TFLN,wafer diameter,4,[in_i],=,2020,Luke,,10.1364/oe.401959,,,Y,false
+wafer-foundry-luke2020,wafer-foundry,Academic wafer-scale,TFLN,wafer diameter,6,[in_i],=,2020,Luke,,10.1364/oe.401959,,,Y,false
+wafer-foundry-noeic,wafer-foundry,Wuhan NOEIC / Peng Cheng Lab,TFLN on quartz,wafer diameter,4,[in_i],=,2025,,,10.37188/lam.2025.047,,,Y,false
+wafer-foundry-ccraft,wafer-foundry,CCRAFT (CSEM spin-off),TFLN,wafer diameter,150,mm,=,2025-05-13,,optics.org,,,https://optics.org/news/csem-spins-off-lithium-niobate-photonic-integrated-circuit-foundry,press,false
+wafer-foundry-qci,wafer-foundry,QCi (Tempe),TFLN,,,,,2025-05-13,,Press release (quantumcomputinginc.com),,,https://quantumcomputinginc.com,press,false
+wafer-foundry-ligentec-xfab,wafer-foundry,Ligentec + X-FAB,TFLN-on-SiN / TFLN-on-SOI,wafer diameter,200,mm,=,2026-01-19,,X-FAB news; picmagazine.net,,,https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling,partial,false
+wafer-foundry-tflt-arxiv2604.14836,wafer-foundry,"TFLT, academic",TFLT on fused silica,wafer diameter,4,[in_i],=,2026-04,,arXiv 2604.14836,,2604.14836,,Y(preprint),false
+wafer-foundry-lightium,wafer-foundry,Lightium (Zurich),TFLN,wafer diameter,200,mm,=,2026-10-24,,Company page (lightium.com),,,https://lightium.com,press,false
+wafer-foundry-lightium,wafer-foundry,Lightium (Zurich),TFLN,PDK wavelength,780,nm,=,2026-10-24,,Company page (lightium.com),,,https://lightium.com,press,false
+wafer-foundry-lightium,wafer-foundry,Lightium (Zurich),TFLN,PDK wavelength,830,nm,=,2026-10-24,,Company page (lightium.com),,,https://lightium.com,press,false
+wafer-foundry-nanoln,wafer-foundry,NanoLN (Jinan Jingzheng) LNOI and LTOI,"LNOI, LTOI",wafer diameter,3,[in_i],=,2026-10-24,,Company page (nanoln.com),,,https://nanoln.com/PRODUCTS.html,press,false
+wafer-foundry-nanoln,wafer-foundry,NanoLN (Jinan Jingzheng) LNOI and LTOI,"LNOI, LTOI",wafer diameter,4,[in_i],=,2026-10-24,,Company page (nanoln.com),,,https://nanoln.com/PRODUCTS.html,press,false
+wafer-foundry-nanoln,wafer-foundry,NanoLN (Jinan Jingzheng) LNOI and LTOI,"LNOI, LTOI",wafer diameter,6,[in_i],=,2026-10-24,,Company page (nanoln.com),,,https://nanoln.com/PRODUCTS.html,press,false
+wafer-foundry-nanoln,wafer-foundry,NanoLN (Jinan Jingzheng) LNOI and LTOI,"LNOI, LTOI",wafer diameter,8,[in_i],=,2026-10-24,,Company page (nanoln.com),,,https://nanoln.com/PRODUCTS.html,press,false
+wafer-foundry-nanoln,wafer-foundry,NanoLN (Jinan Jingzheng) LNOI and LTOI,"LNOI, LTOI",film thickness min,300,nm,=,2026-10-24,,Company page (nanoln.com),,,https://nanoln.com/PRODUCTS.html,press,false
+wafer-foundry-nanoln,wafer-foundry,NanoLN (Jinan Jingzheng) LNOI and LTOI,"LNOI, LTOI",film thickness max,900,nm,=,2026-10-24,,Company page (nanoln.com),,,https://nanoln.com/PRODUCTS.html,press,false
+wafer-foundry-soitec,wafer-foundry,Soitec POI (piezoelectric-on-insulator),"POI (LT, LN)",wafer diameter (LT),150,mm,=,2026-10-24,,Company page (soitec.com),,,https://soitec.com/en/products/poi,press,false
+wafer-foundry-soitec,wafer-foundry,Soitec POI (piezoelectric-on-insulator),"POI (LT, LN)",wafer diameter (LT),200,mm,=,2026-10-24,,Company page (soitec.com),,,https://soitec.com/en/products/poi,press,false
+wafer-foundry-soitec,wafer-foundry,Soitec POI (piezoelectric-on-insulator),"POI (LT, LN)",wafer diameter (LN),150,mm,=,2026-10-24,,Company page (soitec.com),,,https://soitec.com/en/products/poi,press,false

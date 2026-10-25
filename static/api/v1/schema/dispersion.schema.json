@@ -1,0 +1,183 @@
+{
+  "$id": "https://lithium-niobate.com/api/v1/schema/dispersion.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Sellmeier-type refractive-index model for one variant and one axis: named formula, coefficients, validity, reference temperature, errata, and check values that the builder reproduces.",
+  "properties": {
+    "axis": {
+      "enum": [
+        "o",
+        "e"
+      ]
+    },
+    "caveats": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "check_values": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "T_C": {
+            "type": "number"
+          },
+          "lambda_nm": {
+            "type": "number"
+          },
+          "n": {
+            "type": "number"
+          },
+          "source": {
+            "type": "string"
+          },
+          "tolerance": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "lambda_nm",
+          "T_C",
+          "n",
+          "tolerance",
+          "source"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "coefficient_units": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "coefficients": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "type": "object"
+    },
+    "default": {
+      "type": "boolean"
+    },
+    "errata": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "applied": {
+            "type": "boolean"
+          },
+          "citation": {
+            "type": "string"
+          },
+          "doi": {
+            "$ref": "common.schema.json#/$defs/doi"
+          },
+          "effect": {
+            "type": "string"
+          },
+          "issued": {
+            "$ref": "common.schema.json#/$defs/isoDate"
+          }
+        },
+        "required": [
+          "citation",
+          "effect",
+          "applied"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "formula": {
+      "additionalProperties": false,
+      "properties": {
+        "expression": {
+          "description": "Plain-text formula with the variable names used in coefficients.",
+          "type": "string"
+        },
+        "form": {
+          "enum": [
+            "sellmeier-3term",
+            "gayer-2008"
+          ]
+        },
+        "latex": {
+          "type": "string"
+        },
+        "rii_formula": {
+          "description": "refractiveindex.info formula number, when one exists.",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "form",
+        "latex",
+        "expression"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "lambda_unit": {
+      "const": "um"
+    },
+    "name": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "reference_T_C": {
+      "type": "number"
+    },
+    "temperature_dependent": {
+      "type": "boolean"
+    },
+    "valid_T_C": {
+      "items": {
+        "type": "number"
+      },
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "valid_lambda_um": {
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "variant": {
+      "$ref": "common.schema.json#/$defs/id"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "variant",
+    "axis",
+    "formula",
+    "coefficients",
+    "lambda_unit",
+    "valid_lambda_um",
+    "reference_T_C",
+    "provenance",
+    "check_values"
+  ],
+  "title": "Dispersion model",
+  "type": "object"
+}

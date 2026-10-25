@@ -1,0 +1,46 @@
+{
+  "citation": "M. Seino, T. Nakazawa, Y. Kubota, et al., \"A low DC-drift Ti:LiNbO3 modulator assured over 15 years\", Digest of Conference on Optical Fiber Communication, PD3, (1992) doi:10.1364/ofc.1992.pd3",
+  "link": "https://doi.org/10.1364/ofc.1992.pd3",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "M. Seino"
+      },
+      {
+        "literal": "T. Nakazawa"
+      },
+      {
+        "literal": "Y. Kubota"
+      },
+      {
+        "literal": "M. Doi"
+      },
+      {
+        "literal": "T. Yamane"
+      },
+      {
+        "literal": "H. Hakogi"
+      }
+    ],
+    "container_title": "Digest of Conference on Optical Fiber Communication",
+    "doi": "10.1364/ofc.1992.pd3",
+    "id": "seino1992",
+    "issued": "1992",
+    "page": "PD3",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "A low DC-drift Ti:LiNbO3 modulator assured over 15 years",
+    "type": "paper-conference"
+  }
+}

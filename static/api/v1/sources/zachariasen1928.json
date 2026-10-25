@@ -1,0 +1,30 @@
+{
+  "citation": "W. H. Zachariasen, \"Untersuchungen uber die Kristallstruktur von Sesquioxyden und Verbindungen ABO3\", Skrifter utgitt av det Norske Videnskaps-Akademi i Oslo, I. Mat.-Naturv. Klasse 1928, No. 4, 165 pp. (1928)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "W. H. Zachariasen"
+      }
+    ],
+    "container_title": "Skrifter utgitt av det Norske Videnskaps-Akademi i Oslo, I. Mat.-Naturv. Klasse 1928, No. 4",
+    "id": "zachariasen1928",
+    "issued": "1928",
+    "page": "165 pp.",
+    "read": "Scan not seen. Catalogs (Crystallography Open Database entries; National Library of Belarus record, series imprint 1929) and citing papers (matthias1949, abrahams1966a, bartasyte2017)",
+    "title": "Untersuchungen uber die Kristallstruktur von Sesquioxyden und Verbindungen ABO3",
+    "type": "thesis"
+  }
+}

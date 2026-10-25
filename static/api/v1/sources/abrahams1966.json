@@ -1,0 +1,44 @@
+{
+  "citation": "S.C. Abrahams, J.M. Reddy, J.L. Bernstein, \"Ferroelectric lithium niobate. 3. Single crystal X-ray diffraction study at 24 C\", Journal of Physics and Chemistry of Solids 27, 997, (1966) doi:10.1016/0022-3697(66)90072-2",
+  "link": "https://doi.org/10.1016/0022-3697(66)90072-2",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Abrahams",
+        "given": "S.C."
+      },
+      {
+        "family": "Reddy",
+        "given": "J.M."
+      },
+      {
+        "family": "Bernstein",
+        "given": "J.L."
+      }
+    ],
+    "container_title": "Journal of Physics and Chemistry of Solids",
+    "doi": "10.1016/0022-3697(66)90072-2",
+    "id": "abrahams1966",
+    "issued": "1966-06",
+    "notes": "Parts 3 (p. 997), 4 (p. 1013, DOI 10.1016/0022-3697(66)90073-4) and 5 (p. 1019, DOI 10.1016/0022-3697(66)90074-6). Parts 1-2 are by Nassau, Levinstein, Loiacono.",
+    "page": "997",
+    "read": "via COD CIF transcription",
+    "title": "Ferroelectric lithium niobate. 3. Single crystal X-ray diffraction study at 24 C",
+    "type": "article-journal",
+    "volume": "27"
+  }
+}

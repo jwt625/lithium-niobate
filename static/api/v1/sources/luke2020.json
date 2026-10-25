@@ -1,0 +1,54 @@
+{
+  "citation": "Kevin Luke, Prashanta Kharel, Christian Reimer, et al., \"Wafer-scale low-loss lithium niobate photonic integrated circuits\", Optics Express 28, 24452, (2020) doi:10.1364/oe.401959",
+  "link": "https://doi.org/10.1364/oe.401959",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Luke",
+        "given": "Kevin"
+      },
+      {
+        "family": "Kharel",
+        "given": "Prashanta"
+      },
+      {
+        "family": "Reimer",
+        "given": "Christian"
+      },
+      {
+        "family": "He",
+        "given": "Lingyan"
+      },
+      {
+        "family": "Loncar",
+        "given": "Marko"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      }
+    ],
+    "container_title": "Optics Express",
+    "doi": "10.1364/oe.401959",
+    "id": "luke2020",
+    "issue": "17",
+    "issued": "2020-08-03",
+    "page": "24452",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Wafer-scale low-loss lithium niobate photonic integrated circuits",
+    "type": "article-journal",
+    "volume": "28"
+  }
+}

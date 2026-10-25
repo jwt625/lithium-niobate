@@ -1,0 +1,34 @@
+{
+  "citation": "J. Czochralski, \"Ein neues Verfahren zur Messung der Kristallisationsgeschwindigkeit der Metalle\", Zeitschrift für Physikalische Chemie 92U, 219-221, (1918) doi:10.1515/zpch-1918-9212",
+  "link": "https://doi.org/10.1515/zpch-1918-9212",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "J. Czochralski"
+      }
+    ],
+    "container_title": "Zeitschrift für Physikalische Chemie",
+    "doi": "10.1515/zpch-1918-9212",
+    "id": "czochralski1918",
+    "issue": "1",
+    "issued": "1918-11-01",
+    "notes": "Issue scan: received 1916-08-19, issued 1917-04-24; volume 92 dated 1918.",
+    "page": "219-221",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Ein neues Verfahren zur Messung der Kristallisationsgeschwindigkeit der Metalle",
+    "type": "article-journal",
+    "volume": "92U"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "piezo-stress-e",
+    "variant": "unspecified"
+  },
+  "record": {
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -2.43,
+          3.76
+        ],
+        [
+          -2.43,
+          0.0,
+          0.0
+        ],
+        [
+          3.76,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -2.43,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.43,
+          3.76
+        ],
+        [
+          0.0,
+          3.76,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.23,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.23,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.33
+        ]
+      ]
+    ],
+    "id": "piezo-stress-e/unspecified/ogi2002-smithwelsh1971",
+    "independent": {
+      "e15": {
+        "value": 3.76
+      },
+      "e22": {
+        "value": 2.43
+      },
+      "e31": {
+        "value": 0.23
+      },
+      "e33": {
+        "value": 1.33
+      }
+    },
+    "kind": "tensor",
+    "name": "Piezoelectric stress constants",
+    "provenance": {
+      "locator": "Table III",
+      "original_reference": "Smith & Welsh, J. Appl. Phys. 42, 2219 (1971)",
+      "source_id": "ogi2002",
+      "status": "S",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "e",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "e15",
+          "-e22"
+        ],
+        [
+          "-e22",
+          "e22",
+          "0",
+          "e15",
+          "0",
+          "0"
+        ],
+        [
+          "e31",
+          "e31",
+          "e33",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "e16 = -e22",
+        "e21 = -e22",
+        "e24 = e15",
+        "e32 = e31"
+      ]
+    },
+    "tensor": "piezo-stress-e",
+    "unit": {
+      "display": "C/m^2",
+      "qudt": "http://qudt.org/vocab/unit/C-PER-M2",
+      "ucum": "C/m2"
+    },
+    "variant": "unspecified",
+    "voigt": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.76,
+        -2.43
+      ],
+      [
+        -2.43,
+        2.43,
+        0.0,
+        3.76,
+        0.0,
+        0.0
+      ],
+      [
+        0.23,
+        0.23,
+        1.33,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "e_ijk = e_iJ, J = V(jk)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

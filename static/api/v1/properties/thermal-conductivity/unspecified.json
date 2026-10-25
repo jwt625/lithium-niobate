@@ -1,0 +1,43 @@
+{
+  "alternatives": [
+    {
+      "category": "thermal",
+      "id": "thermal-conductivity/unspecified/schwesyg2011",
+      "kind": "scalar",
+      "name": "Thermal conductivity",
+      "property": "thermal-conductivity",
+      "provenance": {
+        "locator": "Eq. (2.28)",
+        "original_reference": "Wong 2002 (EMIS Datareview 28)",
+        "source_id": "schwesyg2011",
+        "status": "S",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "kappa",
+      "unit": {
+        "display": "W/(m K)",
+        "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "ucum": "W/(m.K)"
+      },
+      "value": 5,
+      "variant": "unspecified"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "thermal-conductivity",
+    "variant": "unspecified"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": null
+}

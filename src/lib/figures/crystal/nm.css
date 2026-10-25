@@ -1,0 +1,122 @@
+/* FIG-01-06 Neumann machine (prefix nm-). TECH first; VISUAL under :root[data-mode="visual"]. Every box that holds live text has
+   a fixed size (character grid 7 x 7, relation and impermeability boxes 6 lines, outputs in ch), so no control moves layout. */
+.nm-t { margin: 14px 0 0; }
+.nm-t .ph { flex-wrap: wrap; }
+.nm-t .ph .nm-kind { width: 32ch; }
+.nm-t .ph .nm-hdr { width: 30ch; }
+.nm-t .nm-ctl { display: grid; grid-template-columns: 11ch minmax(0, 1fr); gap: 6px 10px; align-items: center; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+.nm-t .nm-ctl .lbl { font: 400 10.5px/16px var(--mono); color: var(--fg3); }
+.nm-t .nm-ctl .seg { flex-wrap: wrap; justify-self: start; }
+.nm-t .nm-ctl .seg button { padding: 3px 8px; }
+.nm-t .nm-ctl .seg button.nm-imp { box-shadow: inset 0 0 0 1px var(--fg); color: var(--fg); }
+.nm-t .nm-ops { display: flex; flex-wrap: wrap; gap: 6px; }
+.nm-el { display: flex; flex-wrap: wrap; gap: 4px; }
+.nm-t .nm-e { display: inline-block; min-width: 7ch; text-align: center; padding: 1px 5px; border: 1px solid var(--rule2); font: 400 10.5px/16px var(--mono); color: var(--fg3); }
+.nm-t .nm-e.on { color: var(--fg); border-color: var(--fg); font-weight: 500; }
+.nm-t .nm-e.imp { color: var(--fg); border: 1px dashed var(--fg); }
+.nm-t .nm-e.cut { text-decoration: line-through; color: var(--fg2); border-style: dashed; }
+.nm-t .nm-e.off { border-style: dotted; }
+.nm-t .nm-body { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 10px 14px; padding: 8px; align-items: start; }
+@media (max-width: 1000px) { .nm-t .nm-body { grid-template-columns: minmax(0, 1fr); } }
+.nm-t .nm-mx { display: grid; grid-template-columns: 3ch repeat(6, 12ch); grid-template-rows: repeat(7, 22px); gap: 2px; width: max-content; font: 400 10.5px/20px var(--mono); font-variant-ligatures: none; }
+.nm-t .nm-mx > span { display: block; text-align: center; white-space: nowrap; overflow: hidden; }
+.nm-t .nm-mx .h { color: var(--fg3); }
+.nm-t .nm-mx .c { border: 1px solid var(--rule); color: var(--fg); }
+.nm-t .nm-mx .c.z { color: var(--fg3); }
+.nm-t .nm-mx .c.i { background: var(--fg); color: var(--bg); border-color: var(--fg); font-weight: 500; }
+.nm-t .nm-mx .c.t { border-color: var(--rule2); }
+.nm-t .nm-mx .c.tr { color: var(--fg3); border-style: dotted; }
+.nm-t .nm-mx .c.n { outline: 1px dashed var(--fg); outline-offset: -4px; }
+.nm-t .nm-mx .c.i.n { outline-color: var(--bg); }
+.nm-t .nm-mx .c.hv { box-shadow: 0 0 0 1px var(--fg); }
+.nm-t .nm-side { display: grid; gap: 8px; min-width: 0; }
+.nm-box { border: 1px solid var(--rule2); min-width: 0; }
+.nm-t .nm-bh { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 10px; padding: 3px 8px; border-bottom: 1px solid var(--rule); font: 400 10.5px/16px var(--mono); color: var(--fg3); }
+.nm-t .nm-bh sup, .nm-t .nm-bh sub { line-height: 0; }
+.nm-t .nm-bh output { max-width: 100%; }
+.nm-t .nm-bh .nm-sub { width: 40ch; }
+.nm-t .nm-bh .nm-opt { width: 30ch; }
+.nm-t pre.nm-rel, .nm-t pre.nm-db { margin: 0; padding: 4px 8px; height: 98px; overflow: hidden; font: 400 10.5px/15px var(--mono); color: var(--fg); white-space: pre; font-variant-ligatures: none; }
+.nm-t .nm-hov { display: block; height: 22px; padding: 3px 8px; border-top: 1px solid var(--rule); font-size: 10.5px; line-height: 16px; color: var(--fg2); width: 100%; }
+.nm-t .pf .nm-key { display: inline-block; margin-right: 14px; white-space: nowrap; }
+.nm-t .pf .nm-key b { display: inline-block; min-width: 5ch; margin-right: 5px; padding: 0 4px; text-align: center; font: 400 10.5px/16px var(--mono); border: 1px solid var(--rule); color: var(--fg); }
+.nm-t .pf .nm-key b.i { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.nm-t .pf .nm-key b.z, .nm-t .pf .nm-key b.tr { color: var(--fg3); }
+.nm-t .pf .nm-key b.tr { border-style: dotted; }
+.nm-t .pf .nm-key b.n { outline: 1px dashed var(--fg); outline-offset: -3px; }
+@media (max-width: 560px) { .nm-t .nm-ctl { grid-template-columns: minmax(0, 1fr); } }
+
+:root[data-mode="visual"] {
+  & .nm-v { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px 40px; margin: 40px 0 0; align-items: start; }
+  @media (max-width: 1000px) { & .nm-v { grid-template-columns: minmax(0, 1fr); } }
+  & .nm-v .nm-vart { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 12px; align-items: center; padding: 28px 22px; background: var(--v-ink1); border: 1px solid var(--v-line); }
+  @media (max-width: 640px) { & .nm-v .nm-vart { grid-template-columns: minmax(0, 1fr); padding: 22px 12px; } }
+  & .nm-v svg.nm-st, & .nm-v svg.nm-gg { display: block; width: 100%; height: auto; aspect-ratio: 1; overflow: visible; }
+  & .nm-v .nm-vside { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+  & .nm-v .nm-vbig { display: grid; grid-template-columns: auto auto; justify-content: start; gap: 4px 48px; }
+  & .nm-v .nm-vbig > div { display: flex; flex-direction: column; }
+  & .nm-v .nm-vbig .k { font: 500 15px/22px var(--v-ui); color: var(--v-text3); }
+  & .nm-v .nm-vbig .v { font: 400 56px/60px var(--v-serif); font-variant-numeric: lining-nums tabular-nums; color: var(--v-text); white-space: pre; }
+  & .nm-v .nm-vbig .v .sl { color: var(--v-text3); }
+  & .nm-v .nm-vbig .nm-grp { display: inline-block; width: 1.5em; overflow: hidden; }
+  & .nm-v .nm-vbig .nm-ind, & .nm-v .nm-vbig .nm-gen { display: inline-block; width: 1.3em; overflow: hidden; }
+  & .nm-v .nm-vbig .nm-ind { text-align: right; }
+  & .nm-v .nm-vbig .sl { display: inline-block; width: 0.5em; text-align: center; white-space: nowrap; }
+  & .nm-v .nm-vrow { display: flex; flex-wrap: wrap; gap: 18px 28px; }
+  & .nm-v .v-ctl > .v-seg { flex-wrap: wrap; }
+  & .nm-v .v-seg button.nm-imp { box-shadow: inset 0 0 0 2px var(--v-l532); color: var(--v-l532); }
+  & .nm-v .nm-el { gap: 6px; }
+  & .nm-v .nm-e { display: inline-block; min-width: 72px; padding: 4px 8px; text-align: center; border: 1px solid var(--v-line2); font: 500 14px/20px var(--v-ui); color: var(--v-text3); }
+  & .nm-v .nm-e.on { background: var(--v-l532-dim); color: var(--v-l532); border-color: var(--v-l532); }
+  & .nm-v .nm-e.imp { border: 1px dashed var(--v-l532); color: var(--v-l532); }
+  & .nm-v .nm-e.cut { text-decoration: line-through; border-style: dashed; color: var(--v-text2); }
+  & .nm-v .nm-e.off { opacity: 0.55; }
+  & .nm-v .nm-hov { display: block; height: 24px; overflow: hidden; white-space: pre; font: 500 16px/24px var(--v-ui); font-variant-numeric: tabular-nums; color: var(--v-text); }
+  & .nm-v .nm-vboxes { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px 40px; }
+  @media (max-width: 1000px) { & .nm-v .nm-vboxes { grid-template-columns: minmax(0, 1fr); } }
+  & .nm-v .nm-box { border: 0; border-top: 2px solid var(--v-line2); padding-top: 10px; }
+  & .nm-v .nm-bh { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; font: 500 15px/22px var(--v-ui); color: var(--v-text2); }
+  & .nm-v .nm-bh output { display: inline-block; max-width: 100%; overflow: hidden; white-space: pre; font: 400 14px/22px var(--v-ui); color: var(--v-text3); font-variant-numeric: tabular-nums; }
+  & .nm-v .nm-bh .nm-sub { width: 36ch; } & .nm-v .nm-bh .nm-opt { width: 30ch; }
+  @media (max-width: 640px) { & .nm-v .nm-hov { height: 72px; white-space: normal; overflow-wrap: anywhere; } & .nm-v .nm-bh .nm-sub { width: 100%; height: 48px; white-space: normal; } }
+  & .nm-v pre.nm-rel, & .nm-v pre.nm-db { margin: 8px 0 0; height: 132px; overflow: hidden; font: 400 14px/22px var(--v-code); color: var(--v-text); white-space: pre; }
+  @media (max-width: 640px) { & .nm-v pre.nm-rel, & .nm-v pre.nm-db { font-size: 12px; } }
+  & .nm-v .nm-vcap { grid-column: 1 / -1; margin: 0; max-width: 90ch; }
+
+  /* stereogram */
+  & .nm-st .rim { fill: none; stroke: var(--v-text3); stroke-width: 1.2; }
+  & .nm-st .rim2 { fill: none; stroke: var(--v-line2); stroke-width: 1; }
+  & .nm-st .hub { fill: none; stroke: var(--v-line2); stroke-width: 1; }
+  & .nm-st .lobe { fill: color-mix(in srgb, var(--v-text) 7%, transparent); stroke: var(--v-text2); stroke-width: 1.3; stroke-linejoin: round; }
+  & .nm-st .pole { fill: var(--v-text); }
+  & .nm-st .mir { stroke-linecap: square; }
+  & .nm-st .mir.on { stroke: var(--v-l532); stroke-width: 2.6; filter: drop-shadow(0 0 4px color-mix(in srgb, var(--v-l532) 55%, transparent)); }
+  & .nm-st .mir.cut { stroke: var(--v-text3); stroke-width: 1.5; stroke-dasharray: 6 5; }
+  & .nm-st .mir.off { stroke: var(--v-line); stroke-width: 1; }
+  & .nm-st .c3.on { fill: var(--v-l532); stroke: var(--v-l532); }
+  & .nm-st .c3.cut { fill: none; stroke: var(--v-text3); stroke-width: 1.5; stroke-dasharray: 3 2; }
+  & .nm-st .c3.off { fill: none; stroke: var(--v-line2); stroke-width: 1.2; }
+  & .nm-st .ax { stroke: var(--v-text3); stroke-width: 1.2; }
+  & .nm-st .axl { font: italic 400 16px/1 var(--v-serif); fill: var(--v-text3); }
+  & .nm-st .ef line { stroke: var(--v-au); stroke-width: 2.6; }
+  & .nm-st .ef path { fill: var(--v-au); }
+  & .nm-st .ef .ring { fill: none; stroke: var(--v-au); stroke-width: 2; }
+  & .nm-st .ef text { font: italic 500 18px/1 var(--v-serif); fill: var(--v-au); }
+
+  /* glyph grid */
+  & .nm-gg .ix { font: 500 13px/1 var(--v-ui); fill: var(--v-text3); text-anchor: middle; }
+  & .nm-gg rect.z { fill: none; stroke: var(--v-line); stroke-width: 1; }
+  & .nm-gg .zd { fill: var(--v-text3); }
+  & .nm-gg rect.tr { fill: none; stroke: var(--v-text3); stroke-width: 1; stroke-dasharray: 3 3; opacity: 0.7; }
+  & .nm-gg rect.i { fill: var(--v-text); stroke: var(--v-text); stroke-width: 1; }
+  & .nm-gg .il { font: 600 12px/1 var(--v-ui); fill: var(--v-ink0); text-anchor: middle; }
+  & .nm-gg rect.t { fill: var(--v-ink1); stroke: var(--v-text2); stroke-width: 1.6; }
+  & .nm-gg .tl { font: 600 14px/1 var(--v-ui); fill: var(--v-text2); text-anchor: middle; }
+  & .nm-gg rect.i.n { fill: var(--v-au); stroke: var(--v-au); }
+  & .nm-gg rect.t.n { stroke: var(--v-au); stroke-dasharray: 4 3; }
+  & .nm-gg .tl.n { fill: var(--v-au); }
+  & .nm-gg .cn { fill: none; stroke: var(--v-text3); stroke-width: 1; opacity: 0.8; }
+  & .nm-gg .cn.hv { stroke: var(--v-l532); stroke-width: 2; opacity: 1; }
+  & .nm-gg rect.hv { stroke: var(--v-l532); stroke-width: 2.6; }
+  & .nm-gg rect.hit { fill: transparent; stroke: none; }
+}

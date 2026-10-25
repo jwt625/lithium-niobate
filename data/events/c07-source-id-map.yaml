@@ -1,0 +1,12 @@
+# Map from lane C07 refs.yaml ids to data/sources.yaml ids where they differ (2026-10-25).
+# Same work already present (deduplicated by DOI) or id clash with a different work (suffix -h).
+R02: note-r02
+R04: note-r04
+R07: note-r07
+R09: note-r09
+abrahams1966a: abrahams1966
+amodei1971b: staebler1971
+he2019: he2019-h
+myers1995b: myers1995
+volk2009: volk2008
+wang2018b: wang2018

@@ -3,3 +3,16 @@ review/
 .DS_Store
 node_modules/
 .request-tmp/
+
+# SvelteKit app (lane F0)
+.svelte-kit/
+build/
+test-results/
+playwright-report/
+
+# pipeline logs (timestamped JSONL)
+logs/
+
+# Python (data builder, data tests)
+__pycache__/
+*.pyc

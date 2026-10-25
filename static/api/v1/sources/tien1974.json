@@ -1,0 +1,39 @@
+{
+  "citation": "P. K. Tien, S. Riva-Sanseverino, A. A. Ballman, \"Light beam scanning and deflection in epitaxial LiNbO3 electro-optic waveguides\", Applied Physics Letters 25, 563-565, (1974) doi:10.1063/1.1655311",
+  "link": "https://doi.org/10.1063/1.1655311",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "P. K. Tien"
+      },
+      {
+        "literal": "S. Riva-Sanseverino"
+      },
+      {
+        "literal": "A. A. Ballman"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1655311",
+    "id": "tien1974",
+    "issue": "10",
+    "issued": "1974-11-15",
+    "page": "563-565",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Light beam scanning and deflection in epitaxial LiNbO3 electro-optic waveguides",
+    "type": "article-journal",
+    "volume": "25"
+  }
+}

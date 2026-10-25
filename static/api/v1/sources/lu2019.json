@@ -1,0 +1,51 @@
+{
+  "citation": "Juanjuan Lu, Joshua B. Surya, Xianwen Liu, et al., \"Periodically poled thin-film lithium niobate microring resonators with a second-harmonic generation efficiency of 250,000%/W\", Optica 6, 1455, (2019) doi:10.1364/optica.6.001455",
+  "link": "https://doi.org/10.1364/optica.6.001455",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Juanjuan Lu"
+      },
+      {
+        "literal": "Joshua B. Surya"
+      },
+      {
+        "literal": "Xianwen Liu"
+      },
+      {
+        "literal": "Alexander W. Bruch"
+      },
+      {
+        "literal": "Zheng Gong"
+      },
+      {
+        "literal": "Yuntao Xu"
+      },
+      {
+        "literal": "Hong X. Tang"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.6.001455",
+    "id": "lu2019",
+    "issue": "12",
+    "issued": "2019-12-20",
+    "page": "1455",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Periodically poled thin-film lithium niobate microring resonators with a second-harmonic generation efficiency of 250,000%/W",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

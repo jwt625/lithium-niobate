@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "All public records of this tensor across variants; spread is per component over all records (compare variant, conditions and frame before use).",
+    "tensor": "eo-rS"
+  },
+  "records": [
+    "eo-rS/cln/cti1999",
+    "eo-rS/cln/turner1966",
+    "eo-rS/unspecified/kaminow1980"
+  ],
+  "spread": {
+    "r13": {
+      "max": 9,
+      "min": 7.7,
+      "n_records": 3
+    },
+    "r22": {
+      "max": 3.4,
+      "min": 3,
+      "n_records": 3
+    },
+    "r33": {
+      "max": 31,
+      "min": 28.8,
+      "n_records": 3
+    },
+    "r51": {
+      "max": 28,
+      "min": 18.2,
+      "n_records": 3
+    }
+  }
+}

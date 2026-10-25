@@ -1,0 +1,39 @@
+{
+  "citation": "U. Schlarb, K. Betzler, \"Refractive indices of lithium niobate as a function of temperature, wavelength, and composition: A generalized fit\", Physical Review B 48, 15613, (1993) doi:10.1103/PhysRevB.48.15613",
+  "link": "https://doi.org/10.1103/PhysRevB.48.15613",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Schlarb",
+        "given": "U."
+      },
+      {
+        "family": "Betzler",
+        "given": "K."
+      }
+    ],
+    "container_title": "Physical Review B",
+    "doi": "10.1103/PhysRevB.48.15613",
+    "id": "schlarb1993",
+    "issued": "1993",
+    "page": "15613",
+    "read": "abstract only; coefficients seen only as reproduced in volk2008 Table 6.1",
+    "title": "Refractive indices of lithium niobate as a function of temperature, wavelength, and composition: A generalized fit",
+    "type": "article-journal",
+    "volume": "48"
+  }
+}

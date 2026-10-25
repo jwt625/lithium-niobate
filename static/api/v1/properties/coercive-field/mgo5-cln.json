@@ -1,0 +1,47 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "coercive-field",
+    "variant": "mgo5-cln"
+  },
+  "recommended": [
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "coercive-field/mgo5-cln/volk2008",
+      "kind": "scalar",
+      "max": 6.8,
+      "min": 6.0,
+      "name": "Coercive field",
+      "notes": "Individual reports in the text (p. 184): switching at 4.45 kV/mm (0.5 mm wafer, Kuroda et al.); poling with 2.5 kV/mm pulses (4.8% MgO, 0.3 mm, Mizuuchi et al.).",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185 (60-68 kV/cm, table average)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_c",
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "variant": "mgo5-cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

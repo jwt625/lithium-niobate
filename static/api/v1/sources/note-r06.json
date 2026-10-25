@@ -1,0 +1,28 @@
+{
+  "citation": "lithium-niobate.com research notes, \"LiNbO3 material properties - authoritative data and machine-readable API design (research note)\" (2026)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "author": [
+      {
+        "literal": "lithium-niobate.com research notes"
+      }
+    ],
+    "id": "note-r06",
+    "issued": "2026-10-24",
+    "notes": "Cited only for unverified (U) claims recorded in the note; such rows are excluded from default endpoints.",
+    "read": "research note in this repository (research/R06-material-properties-data.md)",
+    "title": "LiNbO3 material properties - authoritative data and machine-readable API design (research note)",
+    "type": "report"
+  }
+}

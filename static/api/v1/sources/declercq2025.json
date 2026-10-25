@@ -1,0 +1,133 @@
+{
+  "citation": "Jakob Declercq, Shengpu Niu, Margot Niels, et al., \"320 Gb/s Unamplified Transmission Using 1 00 GHz Ge PD and TFLN MZM on a Foundry-Compatible SiPh Platform Co-Packaged with Traveling-Wave Drivers and TIAs\", 2025 European Conference on Optical Communications (ECOC), 1-4, (2025) doi:10.1109/ecoc66593.2025.11263113",
+  "link": "https://doi.org/10.1109/ecoc66593.2025.11263113",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Jakob Declercq"
+      },
+      {
+        "literal": "Shengpu Niu"
+      },
+      {
+        "literal": "Margot Niels"
+      },
+      {
+        "literal": "Amir Shahin"
+      },
+      {
+        "literal": "Joris van Kerrebrouck"
+      },
+      {
+        "literal": "Maximilien Billet"
+      },
+      {
+        "literal": "Mathias Berclano"
+      },
+      {
+        "literal": "Joris Lambrech"
+      },
+      {
+        "literal": "Bart Moeneclaey"
+      },
+      {
+        "literal": "Tom Vanackere"
+      },
+      {
+        "literal": "Ewoud Vissers"
+      },
+      {
+        "literal": "Conor Coughlan"
+      },
+      {
+        "literal": "Gunther Roelkens"
+      },
+      {
+        "literal": "Arno Moerman"
+      },
+      {
+        "literal": "Olivier Caytan"
+      },
+      {
+        "literal": "Sam Lemey"
+      },
+      {
+        "literal": "Maumita Chakrabarti"
+      },
+      {
+        "literal": "Hakim Kobbi"
+      },
+      {
+        "literal": "Minkyu Kim"
+      },
+      {
+        "literal": "Didit Yudistra"
+      },
+      {
+        "literal": "Roger Loo"
+      },
+      {
+        "literal": "Swetanshu Bipul"
+      },
+      {
+        "literal": "Filippo Ferraro"
+      },
+      {
+        "literal": "Yoojin Ban"
+      },
+      {
+        "literal": "Peter De Heyn"
+      },
+      {
+        "literal": "Guy Torfs"
+      },
+      {
+        "literal": "Johan Bauwelinck"
+      },
+      {
+        "literal": "Dimitrios Velenis"
+      },
+      {
+        "literal": "Peter Ossieur"
+      },
+      {
+        "literal": "Philippe Absil"
+      },
+      {
+        "literal": "Bart Kuyken"
+      },
+      {
+        "literal": "Joris van Campenhout"
+      },
+      {
+        "literal": "Nishant Singh"
+      },
+      {
+        "literal": "Cedric Bruynsteen"
+      },
+      {
+        "literal": "Xin Yin"
+      }
+    ],
+    "container_title": "2025 European Conference on Optical Communications (ECOC)",
+    "doi": "10.1109/ecoc66593.2025.11263113",
+    "id": "declercq2025",
+    "issued": "2025-09-28",
+    "page": "1-4",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "320 Gb/s Unamplified Transmission Using 1 00 GHz Ge PD and TFLN MZM on a Foundry-Compatible SiPh Platform Co-Packaged with Traveling-Wave Drivers and TIAs",
+    "type": "paper-conference"
+  }
+}

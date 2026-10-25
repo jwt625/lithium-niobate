@@ -1,0 +1,24 @@
+{
+  "citation": "\"AFR at OFC 2025: TFLN coherent driver modulators in volume shipment\", (2025) https://www.fiber-resources.com/medias/140.html",
+  "link": "https://www.fiber-resources.com/medias/140.html",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "afr-2025",
+    "issued": "2025-04-07",
+    "read": "Read",
+    "title": "AFR at OFC 2025: TFLN coherent driver modulators in volume shipment",
+    "type": "webpage",
+    "url": "https://www.fiber-resources.com/medias/140.html"
+  }
+}

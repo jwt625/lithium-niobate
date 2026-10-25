@@ -1,0 +1,36 @@
+{
+  "citation": "Geoff Rayner-Canham, Zheng Zheng, \"Naming elements after scientists: an account of a controversy\", Foundations of Chemistry 10, 13-18, (2008) doi:10.1007/s10698-007-9042-1",
+  "link": "https://doi.org/10.1007/s10698-007-9042-1",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Geoff Rayner-Canham"
+      },
+      {
+        "literal": "Zheng Zheng"
+      }
+    ],
+    "container_title": "Foundations of Chemistry",
+    "doi": "10.1007/s10698-007-9042-1",
+    "id": "raynercanham2008",
+    "issue": "1",
+    "issued": "2008-04",
+    "page": "13-18",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Naming elements after scientists: an account of a controversy",
+    "type": "article-journal",
+    "volume": "10"
+  }
+}

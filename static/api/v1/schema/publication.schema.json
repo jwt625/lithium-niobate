@@ -1,0 +1,129 @@
+{
+  "$id": "https://lithium-niobate.com/api/v1/schema/publication.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "An LN-relevant item from the author's (Wentao Jiang) public record, with full author list, identifiers, LN class, and license per item.",
+  "properties": {
+    "access": {
+      "$ref": "common.schema.json#/$defs/license"
+    },
+    "article_number": {
+      "type": "string"
+    },
+    "arxiv": {
+      "$ref": "common.schema.json#/$defs/arxiv"
+    },
+    "arxiv_license": {
+      "type": "string"
+    },
+    "author_position": {
+      "pattern": "^[0-9]+/[0-9]+$",
+      "type": "string"
+    },
+    "authors": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "container_title": {
+      "type": "string"
+    },
+    "doi": {
+      "$ref": "common.schema.json#/$defs/doi"
+    },
+    "first_author": {
+      "type": "boolean"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "issue": {
+      "type": "string"
+    },
+    "issued": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "ln_class": {
+      "description": "TFLN, TFLN-hyb, TFLN (LN on sapphire), review, etc.",
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "open_data": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "doi": {
+            "$ref": "common.schema.json#/$defs/doi"
+          },
+          "license": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "doi",
+          "license"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "page": {
+      "type": "string"
+    },
+    "r01_id": {
+      "description": "Row id (e.g. P03).",
+      "type": "string"
+    },
+    "summary": {
+      "description": "One factual sentence on the LN result.",
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "topics": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "type": {
+      "enum": [
+        "article-journal",
+        "preprint",
+        "thesis",
+        "paper-conference",
+        "patent",
+        "review"
+      ]
+    },
+    "url": {
+      "$ref": "common.schema.json#/$defs/url"
+    },
+    "verification": {
+      "description": "How the bibliographic record was checked (e.g. Crossref, arXiv API).",
+      "type": "string"
+    },
+    "volume": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "authors",
+    "issued",
+    "ln_class",
+    "access"
+  ],
+  "title": "Publication",
+  "type": "object"
+}

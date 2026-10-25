@@ -1,0 +1,32 @@
+{
+  "citation": "Johan August Arfwedson, \"Undersokning af nagra vid Uto jernmalmsbrott forekommande fossilier, och af ett deri funnet eget eldfast Alkali\", Afhandlingar i Fysik, Kemi och Mineralogi 6, 145-172 (Berzelius addendum 173-176), (1818) https://archive.org/details/bub_gb_71QrAAAAcAAJ",
+  "link": "https://archive.org/details/bub_gb_71QrAAAAcAAJ",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Johan August Arfwedson"
+      }
+    ],
+    "container_title": "Afhandlingar i Fysik, Kemi och Mineralogi",
+    "id": "arfwedson1818",
+    "issued": "1818",
+    "page": "145-172 (Berzelius addendum 173-176)",
+    "read": "Scan read (title page, contents, pp. 145, 153), 2026-10-25",
+    "title": "Undersokning af nagra vid Uto jernmalmsbrott forekommande fossilier, och af ett deri funnet eget eldfast Alkali",
+    "type": "webpage",
+    "url": "https://archive.org/details/bub_gb_71QrAAAAcAAJ",
+    "volume": "6"
+  }
+}

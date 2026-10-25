@@ -1,0 +1,35 @@
+{
+  "alternatives": [
+    "permittivity-T/unspecified/weis1985-savage1966",
+    "permittivity-T/unspecified/weis1985-smithwelsh1971",
+    "permittivity-T/unspecified/weis1985-teague1975",
+    "permittivity-T/unspecified/weis1985-warner1967"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "permittivity-T",
+    "variant": "unspecified"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "eps11": {
+      "max": 85.2,
+      "min": 84,
+      "n_records": 4
+    },
+    "eps33": {
+      "max": 30,
+      "min": 28.1,
+      "n_records": 4
+    }
+  }
+}

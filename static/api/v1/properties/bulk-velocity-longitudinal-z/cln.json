@@ -1,0 +1,51 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "bulk-velocity-longitudinal-z",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "acoustic",
+      "conditions": {
+        "method": "plane-wave ultrasonic, (006) plate"
+      },
+      "default": true,
+      "id": "bulk-velocity-longitudinal-z/cln/kushibiki1999",
+      "kind": "scalar",
+      "name": "Bulk longitudinal velocity along Z",
+      "notes": "Reproduced to 0.4 m/s by the piezo-stiffened velocity from the kushibiki1999 constants (consistency check in the tensor records).",
+      "property": "bulk-velocity-longitudinal-z",
+      "provenance": {
+        "locator": "Table II",
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "v_L,Z",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.32
+      },
+      "unit": {
+        "display": "m/s",
+        "ucum": "m/s"
+      },
+      "value": 7328.2,
+      "variant": "cln",
+      "variant_note": "SAW-grade congruent"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

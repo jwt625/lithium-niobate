@@ -1,0 +1,124 @@
+{
+  "alternatives": [
+    {
+      "category": "structure",
+      "conditions": {
+        "method": "single-crystal neutron diffraction",
+        "temperature_C": 24
+      },
+      "id": "lattice-a/unspecified/cod-abrahams1966-pt4",
+      "kind": "scalar",
+      "name": "Lattice constant a (hexagonal setting)",
+      "property": "lattice-a",
+      "provenance": {
+        "locator": "COD 1541936",
+        "original_reference": "Abrahams, Hamilton, Reddy, J. Phys. Chem. Solids 27, 1013 (1966), part 4, DOI 10.1016/0022-3697(66)90073-4",
+        "source_id": "cod",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "a",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 5.14829,
+      "variant": "unspecified",
+      "variant_note": "1966 crystal, composition not stated"
+    },
+    {
+      "category": "structure",
+      "id": "lattice-a/unspecified/cod-ohgaki1992",
+      "kind": "scalar",
+      "name": "Lattice constant a (hexagonal setting)",
+      "property": "lattice-a",
+      "provenance": {
+        "locator": "COD 1544665",
+        "source_id": "ohgaki1992",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "a",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 5.1502,
+      "variant": "unspecified"
+    },
+    {
+      "category": "structure",
+      "id": "lattice-a/unspecified/weis1985-from-density",
+      "kind": "scalar",
+      "name": "Lattice constant a (hexagonal setting)",
+      "property": "lattice-a",
+      "provenance": {
+        "derivation": "calculated in the source from c = 13.863 A and rho = 4628 kg/m^3",
+        "locator": "p. 194",
+        "source_id": "weis1985",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "a",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 5.15,
+      "variant": "unspecified"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "lattice-a",
+    "variant": "unspecified"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "conditions": {
+        "method": "synchrotron X-ray diffraction",
+        "temperature_text": "293 K (COD CIF)"
+      },
+      "default": true,
+      "id": "lattice-a/unspecified/hsu1997",
+      "kind": "scalar",
+      "name": "Lattice constant a (hexagonal setting)",
+      "notes": "Same value as W. L. Bond quoted in weis1985 p. 193 (P-comp).",
+      "property": "lattice-a",
+      "provenance": {
+        "locator": "COD 2101845",
+        "source_id": "hsu1997",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "a",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 5.148,
+      "variant": "unspecified"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 5.1502,
+    "min": 5.148,
+    "n_records": 4,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "Ao"
+  }
+}

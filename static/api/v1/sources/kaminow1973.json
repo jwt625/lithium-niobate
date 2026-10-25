@@ -1,0 +1,46 @@
+{
+  "citation": "I.P. Kaminow, J.R. Carruthers, E.H. Turner, et al., \"Thin-film LiNbO3 electro-optic light modulator\", Applied Physics Letters 22, 540-542, (1973) doi:10.1063/1.1654500",
+  "link": "https://doi.org/10.1063/1.1654500",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Kaminow",
+        "given": "I.P."
+      },
+      {
+        "family": "Carruthers",
+        "given": "J.R."
+      },
+      {
+        "family": "Turner",
+        "given": "E.H."
+      },
+      {
+        "family": "Stulz",
+        "given": "L.W."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1654500",
+    "id": "kaminow1973",
+    "issue": "10",
+    "issued": "1973-05-15",
+    "page": "540-542",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Thin-film LiNbO3 electro-optic light modulator",
+    "type": "article-journal",
+    "volume": "22"
+  }
+}

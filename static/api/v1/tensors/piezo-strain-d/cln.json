@@ -1,0 +1,215 @@
+{
+  "alternatives": [
+    "piezo-strain-d/cln/cti1999"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "piezo-strain-d",
+    "variant": "cln"
+  },
+  "recommended": {
+    "default": true,
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -20.2979,
+          33.19025
+        ],
+        [
+          -20.2979,
+          0.0,
+          0.0
+        ],
+        [
+          33.19025,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -20.2979,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.2979,
+          33.19025
+        ],
+        [
+          0.0,
+          33.19025,
+          0.0
+        ]
+      ],
+      [
+        [
+          -1.03662,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.03662,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          8.68973
+        ]
+      ]
+    ],
+    "id": "piezo-strain-d/cln/kushibiki1999",
+    "independent": {
+      "d15": {
+        "value": 66.3805
+      },
+      "d22": {
+        "value": 20.2979
+      },
+      "d31": {
+        "value": -1.03662
+      },
+      "d33": {
+        "value": 8.68973
+      }
+    },
+    "kind": "tensor",
+    "name": "Piezoelectric strain constants",
+    "notes": "Derived, not a published number. d15 66.4, d22 20.3, d31 -1.04, d33 8.7 pC/N. The hydrostatic d_h = 2 d31 + d33 from this set (about 6.6 pC/N) is within 5% of the measured 6.31 pC/N.",
+    "provenance": {
+      "derivation": "d = e s^E from the kushibiki1999 e and c^E sets, computed by scripts/build_data.py",
+      "source_id": "kushibiki1999",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "d",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "d15",
+          "-2*d22"
+        ],
+        [
+          "-d22",
+          "d22",
+          "0",
+          "d15",
+          "0",
+          "0"
+        ],
+        [
+          "d31",
+          "d31",
+          "d33",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "d16 = -2 d22",
+        "d21 = -d22",
+        "d24 = d15",
+        "d32 = d31"
+      ]
+    },
+    "tensor": "piezo-strain-d",
+    "unit": {
+      "display": "pC/N",
+      "ucum": "pC/N"
+    },
+    "variant": "cln",
+    "variant_note": "SAW-grade congruent",
+    "voigt": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        66.3805,
+        -40.5958
+      ],
+      [
+        -20.2979,
+        20.2979,
+        0.0,
+        66.3805,
+        0.0,
+        0.0
+      ],
+      [
+        -1.03662,
+        -1.03662,
+        8.68973,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "d_ijk = d_iJ x (1 if J<=3 else 1/2) (engineering shear strain)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  },
+  "recommended_note": null,
+  "spread": {
+    "d15": {
+      "max": 69.2,
+      "min": 66.3805,
+      "n_records": 2
+    },
+    "d22": {
+      "max": 20.8,
+      "min": 20.2979,
+      "n_records": 2
+    },
+    "d31": {
+      "max": -0.85,
+      "min": -1.03662,
+      "n_records": 2
+    },
+    "d33": {
+      "max": 8.68973,
+      "min": 6.0,
+      "n_records": 2
+    }
+  }
+}

@@ -1,0 +1,958 @@
+# refs.yaml: chapter 08 Industry
+# As of 2026-10-25.
+# Web sources: grades and access dates from research/R09 (all URLs accessed 2026-10-24 by R09).
+#   Grades: F fact from a primary source opened and read; V vendor claim; T trade press opened and read;
+#   C snippet or aggregator only (page not opened); LG low-grade (direction only); E estimate; S speculation.
+#   `r09_id` keys into R09 sec. 10. Re-checks in this lane on 2026-10-25: USGS niobium PDF re-read in full;
+#   HTTP 200 reachability checked for S1, S6, S10, S16, S18, S20, S28, S31, S32, S37, S41, S46 and the Murata
+#   2026-03-10 release (read in full).
+# DOI entries: metadata from https://api.crossref.org/works/{doi}, fetched 2026-10-25, no mailto or personal parameter.
+
+# ---- Government, company, trade press, market teasers ----
+
+- id: usgs2026nb
+  type: web
+  r09_id: S1
+  publisher: "U.S. Geological Survey"
+  title: "Mineral Commodity Summaries 2026: Niobium (Columbium)"
+  date: "2026-02"
+  url: "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-niobium.pdf"
+  grade: "F"
+  accessed: 2026-10-25
+  note: "Re-read 2026-10-25: world 112,000 t (2024, 2025e); Brazil 104,000 t (~93%); Canada e6,900 / 6,000 t; reserves Brazil 14 Mt, world > 21 Mt; FeNb exports 92,000 t 2024 (China 49%, Netherlands 17%, Singapore 9%); steels ~77%, superalloys ~23%; Nb2O5 69.904% Nb; US Nb oxide imports Brazil 89%, Estonia 4%, Thailand 4%"
+
+- id: usgs2026li
+  type: web
+  r09_id: S2
+  publisher: "U.S. Geological Survey"
+  title: "Mineral Commodity Summaries 2026: Lithium"
+  date: "2026-02"
+  url: "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-lithium.pdf"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "290,000 t Li 2025 (excl. US), 222,000 t 2024; batteries 88%"
+
+- id: smm-ltln
+  type: web
+  r09_id: S3
+  publisher: "Sumitomo Metal Mining Co., Ltd."
+  title: "LT/LN single crystals and wafers (product page)"
+  date: "undated"
+  url: "https://www.smm.co.jp/en/business/material/products/lithium/"
+  grade: "F/V"
+  accessed: 2026-10-24
+  note: "Cz growth; 4-inch/6-inch; LN 128 deg Y (350 um at 4-inch, 500 um at 6-inch); LT 36-50 deg Y; SAW use; 'top-level flatness' is V"
+
+- id: shinetsu-lt
+  type: web
+  r09_id: S4
+  publisher: "Shin-Etsu Chemical Co., Ltd."
+  title: "Oxide single crystals (LT)"
+  date: "undated"
+  url: "https://www.shinetsu.co.jp/en/products/electronics-materials/oxide-single-crystals/"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "LT only on the page; 4-inch/6-inch; SAW"
+
+- id: tdg2026ir
+  type: web
+  r09_id: S5
+  publisher: "TDG Holding Co., Ltd. (SSE 600330)"
+  title: "Investor relations activity record"
+  date: "2026-06-03"
+  url: "https://pdf.dfcfw.com/pdf/H22_AN202606041823249221_1.pdf"
+  grade: "F (statements) / V (roadmap)"
+  accessed: 2026-10-24
+  note: "8-inch LN mass production (statement); 2029-12 plan 1.68 M piezo + 0.42 M bonded wafers; does not make optical modules; expects LN modulators mainstream for 3.2T+"
+
+- id: nanoln-home
+  type: web
+  r09_id: S6
+  publisher: "NANOLN (Jinan Jingzheng Electronics Co., Ltd.)"
+  title: "Homepage"
+  date: "undated"
+  url: "https://www.nanoln.com/"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "300-900 nm LNOI/LTOI; thick films; services. Wafer sizes 3-8 inch per R08 sec. 2.11 (nanoln.com/PRODUCTS.html)"
+
+- id: r09-s7
+  type: web
+  r09_id: S7
+  publisher: "Economic Herald via 10jqka"
+  title: "NanoLN funding article"
+  date: "2026-06-29"
+  url: "https://stock.10jqka.com.cn/20260629/c677805800.shtml"
+  grade: "T"
+  accessed: 2026-10-24
+  note: "Investors incl. Huawei Hubble; strategic investment Shandong Hi-Speed (2026-04)"
+
+- id: r09-s8
+  type: web
+  r09_id: S8
+  publisher: "Shanghai Securities News"
+  title: "TFLN supply-chain financing article"
+  date: "2026-06-17"
+  url: "https://paper.cnstock.com/html/2026-06/17/content_2232363.htm"
+  grade: "T"
+  accessed: 2026-10-24
+  note: "Niobao Series C; Nanzhi Xincai Pre-A > CNY 100 M; Xili round; NanoLN preparing IPO; Innolight 1.6T in mass production"
+
+- id: r09-s9
+  type: web
+  r09_id: S9
+  publisher: "Securities Star via 10jqka (AI-assisted disclaimer)"
+  title: "LN supply article"
+  date: "2026-10-03"
+  url: "https://stock.10jqka.com.cn/20261003/c680435922.shtml"
+  grade: "LG"
+  accessed: 2026-10-24
+  note: "Direction only: 12-inch claim, supply gap, wafer price, margins. Never plotted"
+
+- id: soitec-poi
+  type: web
+  r09_id: S10
+  publisher: "Soitec SA"
+  title: "Connect POI (product page)"
+  date: "undated"
+  url: "https://www.soitec.com/en/products/poi"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "LT6, LT8, LN6; 5G, GNSS, Wi-Fi coexistence; reachable 2026-10-25"
+
+- id: r09-s11
+  type: web
+  r09_id: S11
+  publisher: "eeNews Europe"
+  title: "Qualcomm adopts Soitec POI wafers for SAW filters"
+  date: "2020-07-07"
+  url: "https://www.eenewseurope.com/en/qualcomm-adopts-soitec-poi-wafers-for-saw-filters/"
+  grade: "T"
+  accessed: 2026-10-24
+
+- id: r09-s12
+  type: web
+  r09_id: S12
+  publisher: "PIC Magazine"
+  title: "EU project announces Europe's first commercial supplier of LNOI wafers (ELENA)"
+  date: "2025-06-23"
+  url: "https://picmagazine.net/article/121970/EU_project_announces_Europe’s_first_commercial_supplier_of_LNOI_wafers"
+  grade: "T/V"
+  accessed: 2026-10-24
+
+- id: opticsorg-2025-06-25
+  type: web
+  r09_id: S13
+  publisher: "optics.org"
+  title: "LASER 2025: CCRAFT and Lightium push thin-film lithium niobate PICs"
+  date: "2025-06-25"
+  url: "https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics"
+  grade: "T"
+  accessed: 2026-10-24
+  note: "Soitec 150 mm LNOI to CCRAFT; 200 mm shown; Lightium CEO on wafer supply"
+
+- id: opticsorg-2025-05-13
+  type: web
+  r09_id: S14
+  publisher: "optics.org"
+  title: "CSEM spins off lithium niobate photonic integrated circuit foundry"
+  date: "2025-05-13"
+  url: "https://optics.org/news/csem-spins-off-lithium-niobate-photonic-integrated-circuit-foundry"
+  grade: "T/V"
+  accessed: 2026-10-24
+  note: "CCRAFT; 12 M chips/yr target by 2030 (V)"
+
+- id: r09-s15
+  type: web
+  r09_id: S15
+  publisher: "Evertiq"
+  title: "CCRAFT raises 7.8 million to scale photonic chip manufacturing"
+  date: "2026-07-06"
+  url: "https://evertiq.com/news/2026-07-06-ccraft-raises-78-million-to-scale-photonic-chip-manufacturing"
+  grade: "T"
+  accessed: 2026-10-24
+
+- id: r09-s16
+  type: web
+  r09_id: S16
+  publisher: "CSEM"
+  title: "CCRAFT photonic chips: Switzerland scaling (press)"
+  date: "2026-07-02"
+  url: "https://www.csem.ch/en/press/ccraft-photonic-chips-switzerland-scaling/"
+  grade: "F/V"
+  accessed: 2026-10-24
+  note: "2,000 wafers/month by 2030 (V); reachable 2026-10-25"
+
+- id: r09-s18
+  type: web
+  r09_id: S18
+  publisher: "Summit Partners"
+  title: "HyperLight announces 80 million Series C"
+  date: "2026-06-18"
+  url: "https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure"
+  grade: "F/V"
+  accessed: 2026-10-24
+  note: "Led by MediaTek; 200 G/lane available, 400 G/lane sampling (V); reachable 2026-10-25"
+
+- id: r09-s19
+  type: web
+  r09_id: S19
+  publisher: "UMC"
+  title: "Press release (HyperLight / Wavetek partnership)"
+  date: "2026-03-12"
+  url: "https://www.umc.com/en/News/press_release/Content/corporate/20260312"
+  grade: "C (403; content via trade press)"
+  accessed: 2026-10-24
+  note: "Shown as T in the manuscript because R09 read it through TrendForce / iConnect007 coverage; primary page not opened"
+
+- id: bwchina-2026-03-17
+  type: web
+  r09_id: S20
+  publisher: "Business Wire China"
+  title: "HyperLight 1.6T-DR8 reference transceiver"
+  date: "2026-03-17"
+  url: "https://www.businesswirechina.com/en/news/62386.html"
+  grade: "F/V"
+  accessed: 2026-10-24
+  note: "20 W, about 20% below alternatives (V); with Suzhou TFC; reachable 2026-10-25"
+
+- id: r09-s21
+  type: web
+  r09_id: S21
+  publisher: "Lightwave"
+  title: "HyperLight secures 37M in new funding"
+  date: "2024-09-24"
+  url: "https://lightwaveonline.com/home/article/55142234/hyperlight-secures-37m-in-new-funding"
+  grade: "T"
+  accessed: 2026-10-24
+
+- id: r09-s24
+  type: web
+  r09_id: S24
+  publisher: "eeNews Europe"
+  title: "Swiss photonic foundry Lightium raises seed funding"
+  date: "2024-09-20"
+  url: "https://www.eenewseurope.com/en/swiss-photonic-foundry-lightium-raises-seed-funding/"
+  grade: "T/V"
+  accessed: 2026-10-24
+
+- id: r09-s26
+  type: web
+  r09_id: S26
+  publisher: "Lightwave"
+  title: "Quantum Computing Inc. receives first TFLN foundry order"
+  date: "2024-11-18"
+  url: "https://www.lightwaveonline.com/business/article/55243823/quantum-computing-inc-receives-first-tfln-foundry-order"
+  grade: "T/V"
+  accessed: 2026-10-24
+  note: "Announcement dated 2024-11-13 per R09"
+
+- id: xfab-2026-01-19
+  type: web
+  r09_id: S28
+  publisher: "X-FAB Silicon Foundries"
+  title: "Ligentec and X-FAB expand integrated photonics offering with SOI and TFLN volume scaling"
+  date: "2026-01-19"
+  url: "https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "200 mm; no production dates; reachable 2026-10-25"
+
+- id: r09-s29
+  type: web
+  r09_id: S29
+  publisher: "C114"
+  title: "CHIPX first 6-inch TFLN wafer"
+  date: "2025-06-09"
+  url: "https://m.c114.com.cn/w5285-1290717.html"
+  grade: "T (text partly garbled)"
+  accessed: 2026-10-24
+
+- id: r09-s30
+  type: web
+  r09_id: S30
+  publisher: "Yicai via Sina"
+  title: "Anpai / Jiufengshan 8-inch TFLN line"
+  date: "2024-08-27"
+  url: "https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html"
+  grade: "T (reporter claim)"
+  accessed: 2026-10-24
+
+- id: afr-2025-04-07
+  type: web
+  r09_id: S31
+  publisher: "Advanced Fiber Resources (Zhuhai) Ltd."
+  title: "OFC 2025 news"
+  date: "2025-04-07"
+  url: "https://www.fiber-resources.com/medias/140.html"
+  grade: "F/V"
+  accessed: 2026-10-24
+  note: "96/130 GBd CDM and AM70 volume shipment; 400 Gb/s/lane PAM4 chip debut; reachable 2026-10-25"
+
+- id: afr-2025-10-01
+  type: web
+  r09_id: S32
+  publisher: "Advanced Fiber Resources (Zhuhai) Ltd."
+  title: "ECOC 2025 news"
+  date: "2025-10-01"
+  url: "https://www.fiber-resources.com/medias/143.html"
+  grade: "F/V"
+  accessed: 2026-10-24
+  note: "400 G/lane chip for 1.6T/3.2T; 130 GBd CDM < 3.5 W; 40 GHz TFLN IQ for FMCW LiDAR; reachable 2026-10-25"
+
+- id: r09-s33
+  type: web
+  r09_id: S33
+  publisher: "AFR and Lightwave"
+  title: "AFR acquires Lumentum LN high-speed modulator line"
+  date: "2019-12"
+  url: "https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr"
+  grade: "C/T"
+  accessed: 2026-10-24
+  note: "Correction row only"
+
+- id: exail-ln
+  type: web
+  r09_id: S37
+  publisher: "Exail"
+  title: "What is a lithium niobate electro-optical modulator"
+  date: "undated"
+  url: "https://www.exail.com/resources/knowledge-center/resources/what-is-a-lithium-niobate-electro-optical-modulator"
+  grade: "F/V"
+  accessed: 2026-10-24
+  note: "LN modulators since 2000; FOG IOCs; over 25,000 FOGs sold (V); reachable 2026-10-25"
+
+- id: optica-advr-2025
+  type: web
+  r09_id: S41
+  publisher: "Optica (corporate member news)"
+  title: "AdvR joins Covesion in strategic expansion"
+  date: "2025-06-05"
+  url: "https://www.optica.org/about/newsroom/corporate_member_news/2025/advr_joins_covesion_in_strategic_expansion"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "MgO:PPLN 460-6000 nm; Hawthorn Photonics; reachable 2026-10-25"
+
+- id: korth-ln
+  type: web
+  r09_id: S45
+  publisher: "Korth Kristalle GmbH"
+  title: "Lithium Niobate (material page)"
+  date: "undated"
+  url: "https://www.korth.de/en/materials/detail/Lithium%20Niobate"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "Q-switches, SAW substrates, Pockels cells, frequency doublers; not marked grown in-house"
+
+- id: murata-resonant-2022
+  type: web
+  r09_id: S46
+  publisher: "Murata Manufacturing Co., Ltd."
+  title: "Completion of acquisition of Resonant Inc."
+  date: "2022-03-29"
+  url: "https://corporate.murata.com/newsroom/news/company/general/2022/0329"
+  grade: "F"
+  accessed: 2026-10-24
+  note: "Closed 2022-03-28 (US time); reachable 2026-10-25"
+
+- id: mwj-2018
+  type: web
+  r09_id: S50
+  publisher: "Microwave Journal"
+  title: "SAW/BAW: new market entrants offer new approaches"
+  date: "2018-10-11"
+  url: "https://www.microwavejournal.com/articles/31149-sawbaw-new-market-entrants-offer-new-approaches"
+  grade: "T/V"
+  accessed: 2026-10-24
+  note: "> 50 filters in mid/high-tier 4G phones, > 70 expected with 5G (Akoustis contribution)"
+
+- id: r09-s51
+  type: web
+  r09_id: S51
+  publisher: "Evertiq"
+  title: "Q.ANT raises 62M"
+  date: "2025-07-22"
+  url: "https://evertiq.com/news/2025-07-22-qant-raises-62m-to-advance-computing-with-photonic-processing"
+  grade: "T/V"
+  accessed: 2026-10-24
+  note: "Release date 2025-07-17 per R08 sec. 6"
+
+- id: r09-s53
+  type: web
+  r09_id: S53
+  publisher: "The Quantum Insider"
+  title: "Xanadu and HyperLight unveil advances in photonic chips"
+  date: "2025-07-30"
+  url: "https://thequantuminsider.com/2025/07/30/xanadu-and-hyperlight-unveil-advances-in-photonic-chips-setting-new-quantum-computing-benchmarks/"
+  grade: "T/V"
+  accessed: 2026-10-24
+  note: "< 2 dB/m, about 20 mdB switch; Aurora used HyperLight TFLN"
+
+- id: r09-s54
+  type: web
+  r09_id: S54
+  publisher: "The Quantum Insider"
+  title: "PsiQuantum announces Omega"
+  date: "2025-02-26"
+  url: "https://thequantuminsider.com/2025/02/26/psiquantum-announces-omega-a-manufacturable-photonic-quantum-computing-chipset/"
+  grade: "C"
+  accessed: 2026-10-24
+  note: "BTO switches on SiN; correction row only"
+
+- id: lfw-hecht-2010
+  type: web
+  r09_id: S56
+  publisher: "Laser Focus World (J. Hecht)"
+  title: "Photonic frontiers: frequency-shifted diode lasers"
+  date: "2010-07-01"
+  url: "https://laserfocusworld.com/lasers-sources/article/16552084/photonic-frontiers-frequencyshifted-diode-lasers-shifting-semiconductor-laser-wavelengths-poses-challenges"
+  grade: "T"
+  accessed: 2026-10-24
+  note: "PPLN green for Corning lasers in MicroVision pico-projectors"
+
+- id: mkt-valuates
+  type: web
+  r09_id: S57
+  publisher: "Valuates Reports via PR Newswire"
+  title: "TFLN modulator market to hit USD 3.8 billion by 2031"
+  date: "2025-04-04"
+  url: "https://www.prnewswire.com/news-releases/thin-film-lithium-niobate-tfln-modulator-market-to-hit-usd-3-8-billion-by-2031--driven-by-optical-communication-data-centers-and-5g--valuates-reports-302421134.html"
+  grade: "LG"
+  accessed: 2026-10-24
+
+- id: mkt-24mr
+  type: web
+  r09_id: S58
+  publisher: "24marketreports"
+  title: "Global thin film lithium niobate optical modulator forecast"
+  date: "2025-09-12"
+  url: "https://www.24marketreports.com/machines/global-thin-film-lithium-niobate-optical-modulator-forecast-market"
+  grade: "LG"
+  accessed: 2026-10-24
+  note: "Lists AVANEX (defunct)"
+
+- id: mkt-intel
+  type: web
+  r09_id: S59
+  publisher: "Intel Market Research"
+  title: "Thin film lithium niobate modulator market"
+  date: "2026-08-16"
+  url: "https://www.intelmarketresearch.com/thin-film-lithium-niobate-modulator-market-21963"
+  grade: "LG"
+  accessed: 2026-10-24
+  note: "Player list includes NeoPhotonics and II-VI Photonics Division"
+
+- id: mkt-qyr
+  type: web
+  r09_id: S60
+  publisher: "QYResearch"
+  title: "TFLN modulator market report page"
+  date: "undated"
+  url: "https://www.qyresearch.com/reports/4810950/thin-film-lithium-niobate--tfln--modulator"
+  grade: "LG/C"
+  accessed: 2026-10-24
+
+- id: mkt-qyr-dri
+  type: web
+  r09_id: S61
+  publisher: "QYResearch via DRI"
+  title: "TFLN modulator (edition 2026-08)"
+  date: "undated"
+  url: "https://www.dri.co.jp/auto/report/qyr/260824-thin-film-lithium-niobate-tfln-modulator-.html"
+  grade: "LG/C"
+  accessed: 2026-10-24
+
+- id: mkt-astute
+  type: web
+  r09_id: S62
+  publisher: "Astute Analytica via GlobeNewswire"
+  title: "TFLN devices market US$3.19 billion by 2033"
+  date: "2025-07-07"
+  url: "https://www.globenewswire.com/news-release/2025/07/07/3111078/0/en/thin-film-lithium-niobate-devices-market-poised-to-attain-valuation-of-us-3-19-billion-by-2033-astute-analytica.html"
+  grade: "LG/C"
+  accessed: 2026-10-24
+
+- id: mkt-qyr-crystal
+  type: web
+  r09_id: S63
+  publisher: "QYResearch via DRI"
+  title: "LN single crystal market"
+  date: "undated"
+  url: "https://www.dri.co.jp/auto/report/qyr/251015-lithium-niobate-single-crystal-global.html"
+  grade: "LG/C"
+  accessed: 2026-10-24
+
+- id: mkt-dataintelo
+  type: web
+  r09_id: S64
+  publisher: "Dataintelo and other teasers"
+  title: "LN market to reach USD 352 million by 2032"
+  date: "undated"
+  url: "https://marketinsights.odoo.com/blog/news-2/lithium-niobate-market-to-reach-usd-352-million-by-2032-dataintelo-143"
+  grade: "LG/C"
+  accessed: 2026-10-24
+
+- id: mkt-zhiyan
+  type: web
+  r09_id: S65
+  publisher: "Zhiyan Consulting (chyxx)"
+  title: "China LN industry report"
+  date: "2025-09-30"
+  url: "https://www.chyxx.com/industry/1237520.html"
+  grade: "LG"
+  accessed: 2026-10-24
+  note: "China only, CNY 454 M (2024)"
+
+- id: r09-s66
+  type: web
+  r09_id: S66
+  publisher: "Hengtong (vendor blog)"
+  title: "TFLN, 3.2T optics and fiber cabling"
+  date: "2026-08-01"
+  url: "https://www.hengtongglobal.com/info/tfln-3-2t-optics-fiber-cabling-103603656.html"
+  grade: "C"
+  accessed: 2026-10-24
+
+- id: yole-rf
+  type: web
+  r09_id: S78
+  publisher: "Yole Group"
+  title: "RF filters in 2025 (insight page)"
+  date: "undated"
+  url: "https://www.yolegroup.com/strategy-insights/rf-filters-in-2025-choosing-the-right-technology-for-performance-cost-and-integration/"
+  grade: "C (403; snippet)"
+  accessed: 2026-10-24
+  note: "RF filter market US$7.3 B (2021), US$8.2 B (2025)"
+
+- id: mkt-gii
+  type: web
+  r09_id: S80
+  publisher: "GII listing"
+  title: "Lithium niobate market"
+  date: "undated"
+  url: "https://www.giiresearch.com/report/tsci1770895-lithium-niobate-market-global-industry-size-share.html"
+  grade: "LG/C"
+  accessed: 2026-10-24
+  note: "Outlier; scope unclear; excluded from ranges"
+
+- id: nanoln-products
+  type: web
+  r09_id: "(R08 sec. 2.11)"
+  publisher: "NANOLN (Jinan Jingzheng Electronics Co., Ltd.)"
+  title: "Products"
+  date: "undated"
+  url: "https://www.nanoln.com/PRODUCTS.html"
+  grade: "F (company page)"
+  accessed: 2026-10-24
+  note: "LNOI and LTOI at 3, 4, 6, 8 inch; film 300-900 nm; Si, LN, quartz, fused silica substrates (R08)"
+
+- id: murata2026
+  type: web
+  publisher: "Murata Manufacturing Co., Ltd."
+  title: "Murata exhibits at OFC 2026 (news release, 2026-03-10)"
+  date: "2026-03-10"
+  url: "https://corporate.murata.com/en-us/newsroom/news/company/general/2026/0310"
+  grade: "V"
+  accessed: 2026-10-25
+  note: "Read in full: TFLN EO modulator, EO bandwidth over 100 GHz, 400 Gbps/ch PAM4, products in development; states expertise in high-frequency filters that utilize LiNbO3"
+
+# ---- Literature (Crossref-verified) ----
+
+- id: kushibiki1999
+  type: article
+  first_author: "Kushibiki"
+  n_authors: 4
+  title: "Accurate measurements of the acoustical physical constants of LiNbO/sub 3/ and LiTaO/sub 3/ single crystals"
+  venue: "IEEE Transactions on Ultrasonics, Ferroelectrics and Frequency Control"
+  volume: "46"
+  pages: "1315-1323"
+  year: 1999
+  doi: 10.1109/58.796136
+  url: https://doi.org/10.1109/58.796136
+  crossref_checked: 2026-10-25
+  numbers_ver: "P (R06)"
+  sections: [8.1 L3, F8.11]
+  note: "Density 4642.8 kg/m^3, congruent SAW-grade LN (Table IV)"
+
+- id: luke2020
+  type: article
+  first_author: "Luke"
+  n_authors: 6
+  title: "Wafer-scale low-loss lithium niobate photonic integrated circuits"
+  venue: "Optics Express"
+  volume: "28"
+  pages: "24452"
+  year: 2020
+  doi: 10.1364/oe.401959
+  url: https://doi.org/10.1364/oe.401959
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [8.3]
+  note: "Wafer-scale TFLN, 0.27 dB/cm, 4- and 6-inch DUV"
+
+- id: liu2025lam
+  type: article
+  first_author: "Liu"
+  n_authors: 10
+  title: "Volume manufacturing of thin-film lithium niobate modulators with bandwidth > 110 GHz based on 4-inch wafer with a quartz handle"
+  venue: "Light: Advanced Manufacturing"
+  volume: "6"
+  pages: "1"
+  year: 2025
+  doi: 10.37188/lam.2025.047
+  url: https://doi.org/10.37188/lam.2025.047
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (R08)"
+  sections: [8.3]
+  note: "4-inch TFLN on quartz, > 110 GHz, 2.92 V cm, 50% yield"
+
+- id: berikaa2022
+  type: article
+  first_author: "Berikaa"
+  n_authors: 3
+  title: "Net 400-Gbps/λ IMDD transmission using a single-DAC DSP-free transmitter and a thin-film lithium niobate MZM"
+  venue: "Optics Letters"
+  volume: "47"
+  pages: "6273"
+  year: 2022
+  doi: 10.1364/ol.476399
+  url: https://doi.org/10.1364/ol.476399
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [8.3]
+  note: "128 GBd PAM16, net 400 Gb/s IM/DD with TFLN"
+
+- id: deakin2025ofc
+  type: conference
+  first_author: "Deakin"
+  n_authors: 4
+  title: "440-GBaud All-Electronic Signaling Enabling Single- Wavelength Net Rate over 1 Tb/s per Modulation Dimension"
+  venue: "Optical Fiber Communication Conference (OFC) Postdeadline Papers 2025"
+  volume: ""
+  pages: "Th4B.7"
+  year: 2025
+  doi: 10.1364/ofc.2025.th4b.7
+  url: https://doi.org/10.1364/ofc.2025.th4b.7
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [8.3]
+  note: "440 GBd single-wavelength PS-16-ASK through a TFLN modulator"
+
+- id: he2019np
+  type: article
+  first_author: "He"
+  n_authors: 16
+  title: "High-performance hybrid silicon and lithium niobate Mach–Zehnder modulators for 100 Gbit s−1 and beyond"
+  venue: "Nature Photonics"
+  volume: "13"
+  pages: "359-364"
+  year: 2019
+  doi: 10.1038/s41566-019-0378-6
+  url: https://doi.org/10.1038/s41566-019-0378-6
+  crossref_checked: 2026-10-25
+  numbers_ver: "title (numbers in title)"
+  sections: [8.3]
+  note: "Hybrid Si/LN MZM; atlas he2019-a 100 GBd OOK, 112 Gb/s PAM4"
+
+- id: wang2024nat
+  type: article
+  first_author: "Wang"
+  n_authors: 15
+  title: "Lithium tantalate photonic integrated circuits for volume manufacturing"
+  venue: "Nature"
+  volume: "629"
+  pages: "784-790"
+  year: 2024
+  doi: 10.1038/s41586-024-07369-1
+  url: https://doi.org/10.1038/s41586-024-07369-1
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [8.8, F8.10]
+  note: "LT PICs for volume manufacturing; LT already used in 5G RF filters"
+
+- id: ofc2026-th4a2
+  type: conference
+  first_author: "Xu"
+  n_authors: 5
+  title: "C-band 110-GHz-Bandwidth Thin-Film Lithium Tantalate Modulator Enabling 768 (536) Gbit/s Line (Net) Data Rates"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th4A.2"
+  year: 2026
+  doi: 10.1364/ofc.2026.th4a.2
+  url: https://doi.org/10.1364/ofc.2026.th4a.2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.3, 8.5]
+  note: "atlas xu2026b-a"
+
+- id: ofc2026-th4a5
+  type: conference
+  first_author: "Shen"
+  n_authors: 20
+  title: "Fully Integrated 1064 nm Transmitters with Widely Tunable GaAs Lasers and > 100-GHz Thin-Film LiNbO3 Modulators"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th4A.5"
+  year: 2026
+  doi: 10.1364/ofc.2026.th4a.5
+  url: https://doi.org/10.1364/ofc.2026.th4a.5
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas shen2026-a"
+
+- id: ofc2026-th4a6
+  type: conference
+  first_author: "Huang"
+  n_authors: 7
+  title: "TFLN-based Wafer-Level Co-Packaged Optics Engine for Ultrahigh-Bandwidth Electro-Optical Modulation"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th4A.6"
+  year: 2026
+  doi: 10.1364/ofc.2026.th4a.6
+  url: https://doi.org/10.1364/ofc.2026.th4a.6
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas huang2026-a/b"
+
+- id: ofc2026-th4b2
+  type: conference
+  first_author: "St-Arnault"
+  n_authors: 10
+  title: "Driver-less 448 Gbps PAM4 and 1.2 Tbps 16-QAM IMDD/Coherent-lite transmission using TFLN optical DACs"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th4B.2"
+  year: 2026
+  doi: 10.1364/ofc.2026.th4b.2
+  url: https://doi.org/10.1364/ofc.2026.th4b.2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas starnault2026-a/b"
+
+- id: ofc2026-w4j4
+  type: conference
+  first_author: "Yu"
+  n_authors: 15
+  title: "A 420 Gb/s/lane O-Band PAM-4 TOSA Based on Thin-Film Lithium Niobate for IM-DD Applications"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W4J.4"
+  year: 2026
+  doi: 10.1364/ofc.2026.w4j.4
+  url: https://doi.org/10.1364/ofc.2026.w4j.4
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.3, 8.5]
+  note: "atlas yu2026-a"
+
+- id: ofc2026-th1c3
+  type: conference
+  first_author: "Zhou"
+  n_authors: 7
+  title: "400G/lane for Linear-drive Optics Applications"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th1C.3"
+  year: 2026
+  doi: 10.1364/ofc.2026.th1c.3
+  url: https://doi.org/10.1364/ofc.2026.th1c.3
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas zhou2026-a; fab Liobate"
+
+- id: ofc2026-m4d4
+  type: conference
+  first_author: "Aimone"
+  n_authors: 10
+  title: "Truly-Differential Drive of TFLN TWE-MZM by Linear SiGe Driver in a Codesigned Hybrid Integrated Assembly"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "M4D.4"
+  year: 2026
+  doi: 10.1364/ofc.2026.m4d.4
+  url: https://doi.org/10.1364/ofc.2026.m4d.4
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas aimone2026-a"
+
+- id: ofc2026-w1a3
+  type: conference
+  first_author: "Zhang"
+  n_authors: 12
+  title: "Thin-Film Lithium Niobate Modulators with 110 GHz Bandwidth and 1.9 V·cm Efficiency on 200-mm Silicon Substrate"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.3"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.3
+  url: https://doi.org/10.1364/ofc.2026.w1a.3
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.3, 8.5]
+  note: "atlas zhang2026b"
+
+- id: ofc2026-th1d1
+  type: conference
+  first_author: "Tobing"
+  n_authors: 24
+  title: "Photonics Heterogeneous Integration (PHI) of Thin-Film Lithium Niobate and Hydrogen-Free Silicon Nitride on a 200-mm Silicon Photonics Platform"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th1D.1"
+  year: 2026
+  doi: 10.1364/ofc.2026.th1d.1
+  url: https://doi.org/10.1364/ofc.2026.th1d.1
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas tobing2026-a"
+
+- id: ofc2026-w1a4
+  type: conference
+  first_author: "Xu"
+  n_authors: 4
+  title: "Sub-V-driven 110-GHz O-band Electro-optic Modulator on Thin-film Litihum Tantalate"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.4"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.4
+  url: https://doi.org/10.1364/ofc.2026.w1a.4
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas xu2026a-a"
+
+- id: ofc2026-w1a5
+  type: conference
+  first_author: "Li"
+  n_authors: 5
+  title: "Lithium-Tantalate-on-Fused Silica Mach-Zehnder Modulators"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.5"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.5
+  url: https://doi.org/10.1364/ofc.2026.w1a.5
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas li2026a-a"
+
+- id: ofc2026-w1a6
+  type: conference
+  first_author: "Valdez"
+  n_authors: 9
+  title: "High-Efficiency Ring-Assisted Mach-Zehnder Modulator on a Lithium Tantalate-on-Silicon Nitride Platform"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.6"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.6
+  url: https://doi.org/10.1364/ofc.2026.w1a.6
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas valdez2026-a"
+
+- id: ofc2026-w1a7
+  type: conference
+  first_author: "Hulyal"
+  n_authors: 7
+  title: "A 1.6 Tbit/s WDM Integrated Photonic IMDD Transmitter on Thin-Film Lithium Tantalate"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.7"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.7
+  url: https://doi.org/10.1364/ofc.2026.w1a.7
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas hulyal2026-a"
+
+- id: ofc2026-w1a1
+  type: conference
+  first_author: "Yamaguchi"
+  n_authors: 12
+  title: "Integrated Electro-Optic Frequency-Domain Equalizer for Ultra-Broadband Optical Modulator"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.1"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.1
+  url: https://doi.org/10.1364/ofc.2026.w1a.1
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas yamaguchi2026"
+
+- id: ofc2026-th1h4
+  type: conference
+  first_author: "Su"
+  n_authors: 4
+  title: "High Efficiency and High Speed Electro-Optical Modulator Based on Hybrid Calcium Titanate and Lithium Niobate"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th1H.4"
+  year: 2026
+  doi: 10.1364/ofc.2026.th1h.4
+  url: https://doi.org/10.1364/ofc.2026.th1h.4
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [8.5]
+  note: "atlas su2026-a"
+
+
+# ---- Datasets and local research notes ----
+
+- id: atlas
+  type: dataset
+  title: "eo-modulator-atlas (devices.csv, papers.csv, schema)"
+  url: https://github.com/jwt625/eo-modulator-atlas/tree/eb97f961165a331599e8191c62e15b5a52ba1d51
+  commit: eb97f961165a331599e8191c62e15b5a52ba1d51
+  commit_date: 2026-10-20
+  fetched: 2026-10-25
+  sha256_devices_csv: 0dd95c55abdf711b9511e561c5efa60db657f23553690dd211421f4036b987f7
+  sha256_papers_csv: 62d5ddf8325cd88f0a4995c62021cefafd9683e72b820ea6044e10585dad1b67
+  license: "none (no LICENSE file, R04 sec. 1.1)"
+  sections: [8.1, 8.2, 8.3, 8.4, 8.5, B1-B6]
+
+- id: photonics-atlas
+  type: dataset
+  title: "photonics-atlas (supply/product_usage.csv)"
+  url: https://github.com/jwt625/photonics-atlas
+  commit: "26aa340 (2026-10-23, per R04)"
+  license: "none (no LICENSE file; README 'Rights': facts with locators, R04 sec. 1.1)"
+  sections: [B4 cross-check]
+  note: "Category A2.1 LNOI: 44 usage records, all Jinan Jingzheng (R04 sec. 1.3); derived from the same papers as the eo-modulator-atlas"
+
+- id: R04
+  type: research_note
+  title: "R04: LN/TFLN industry and technology trends from the author's atlases"
+  path: research/R04-atlas-industry-trends.md
+  date: 2026-10-24
+  sections: [8.4, 8.5]
+  note: "OFC 2026 corpus counts (677 papers with extracted text; program metadata public; full texts not redistributed)"
+
+- id: R08
+  type: research_note
+  title: "R08: TFLN science and technology state of the art (through 2026-10)"
+  path: research/R08-tfln-state-of-art.md
+  date: 2026-10-24
+  sections: [8.3]
+
+- id: R09
+  type: research_note
+  title: "R09: LN industry, market, and supply chain (public sources)"
+  path: research/R09-industry-market.md
+  date: 2026-10-24
+  sections: [8.0-8.9]
+  note: "Grades, access dates, and the S-id register used throughout this chapter"

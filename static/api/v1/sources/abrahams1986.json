@@ -1,0 +1,38 @@
+{
+  "citation": "S. C. Abrahams, P. Marsh, \"Defect structure dependence on composition in lithium niobate\", Acta Crystallographica Section B Structural Science 42, 61-68, (1986) doi:10.1107/s0108768186098567",
+  "link": "https://doi.org/10.1107/s0108768186098567",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Abrahams",
+        "given": "S. C."
+      },
+      {
+        "family": "Marsh",
+        "given": "P."
+      }
+    ],
+    "container_title": "Acta Crystallographica Section B Structural Science",
+    "doi": "10.1107/s0108768186098567",
+    "id": "abrahams1986",
+    "issue": "1",
+    "issued": "1986-02-01",
+    "page": "61-68",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Defect structure dependence on composition in lithium niobate",
+    "type": "article-journal",
+    "volume": "42"
+  }
+}

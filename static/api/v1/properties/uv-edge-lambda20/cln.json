@@ -1,0 +1,47 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "uv-edge-lambda20",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 22
+      },
+      "default": true,
+      "id": "uv-edge-lambda20/cln/volk2008-kovacs1997",
+      "kind": "scalar",
+      "name": "UV absorption edge at alpha = 20 cm^-1",
+      "property": "uv-edge-lambda20",
+      "provenance": {
+        "derivation": "lambda_20 formula at x = 0 (48.38 mol%)",
+        "locator": "Eq. (6.5), p. 142",
+        "source_id": "volk2008",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "lambda_20",
+      "unit": {
+        "display": "nm",
+        "ucum": "nm"
+      },
+      "value": 320.4,
+      "variant": "cln",
+      "variant_note": "48.38 mol% Li2O"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

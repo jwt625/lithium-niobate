@@ -1,0 +1,36 @@
+{
+  "citation": "V I Belinicher, B I Sturman, \"The photogalvanic effect in media lacking a center of symmetry\", Soviet Physics Uspekhi 23, 199-223, (1980) doi:10.1070/pu1980v023n03abeh004703",
+  "link": "https://doi.org/10.1070/pu1980v023n03abeh004703",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "V I Belinicher"
+      },
+      {
+        "literal": "B I Sturman"
+      }
+    ],
+    "container_title": "Soviet Physics Uspekhi",
+    "doi": "10.1070/pu1980v023n03abeh004703",
+    "id": "belinicher1980",
+    "issue": "3",
+    "issued": "1980-03-31",
+    "page": "199-223",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "The photogalvanic effect in media lacking a center of symmetry",
+    "type": "article-journal",
+    "volume": "23"
+  }
+}

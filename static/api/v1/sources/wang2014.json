@@ -1,0 +1,54 @@
+{
+  "citation": "Cheng Wang, Michael J. Burek, Zin Lin, et al., \"Integrated high quality factor lithium niobate microdisk resonators\", Optics Express 22, 30924, (2014) doi:10.1364/oe.22.030924",
+  "link": "https://doi.org/10.1364/oe.22.030924",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Cheng Wang"
+      },
+      {
+        "literal": "Michael J. Burek"
+      },
+      {
+        "literal": "Zin Lin"
+      },
+      {
+        "literal": "Haig A. Atikian"
+      },
+      {
+        "literal": "Vivek Venkataraman"
+      },
+      {
+        "literal": "I-Chun Huang"
+      },
+      {
+        "literal": "Peter Stark"
+      },
+      {
+        "literal": "Marko Lončar"
+      }
+    ],
+    "container_title": "Optics Express",
+    "doi": "10.1364/oe.22.030924",
+    "id": "wang2014",
+    "issue": "25",
+    "issued": "2014-12-15",
+    "page": "30924",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Integrated high quality factor lithium niobate microdisk resonators",
+    "type": "article-journal",
+    "volume": "22"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "citation": "Mian Zhang, Brandon Buscaino, Cheng Wang, et al., \"Broadband electro-optic frequency comb generation in a lithium niobate microring resonator\", Nature 568, 373-377, (2019) doi:10.1038/s41586-019-1008-7",
+  "link": "https://doi.org/10.1038/s41586-019-1008-7",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Buscaino",
+        "given": "Brandon"
+      },
+      {
+        "family": "Wang",
+        "given": "Cheng"
+      },
+      {
+        "family": "Shams-Ansari",
+        "given": "Amirhassan"
+      },
+      {
+        "family": "Reimer",
+        "given": "Christian"
+      },
+      {
+        "family": "Zhu",
+        "given": "Rongrong"
+      },
+      {
+        "family": "Kahn",
+        "given": "Joseph M."
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Nature",
+    "doi": "10.1038/s41586-019-1008-7",
+    "id": "zhang2019",
+    "issue": "7752",
+    "issued": "2019-03-11",
+    "page": "373-377",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Broadband electro-optic frequency comb generation in a lithium niobate microring resonator",
+    "type": "article-journal",
+    "volume": "568"
+  }
+}

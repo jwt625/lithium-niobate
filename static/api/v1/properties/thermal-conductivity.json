@@ -1,0 +1,182 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermal conductivity of lithium niobate (LiNbO3): 4 provenance-tagged value(s) from 3 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/thermal-conductivity.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/thermal-conductivity.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermal conductivity"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermal conductivity",
+    "url": "https://lithium-niobate.com/api/v1/properties/thermal-conductivity.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "kappa (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "unitText": "W/(m.K)",
+        "value": 3.92
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "kappa (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "unitText": "W/(m.K)",
+        "value": 5.97
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 4,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "thermal-conductivity"
+  },
+  "records": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_C": 25
+      },
+      "id": "thermal-conductivity/cln/cti1999",
+      "kind": "scalar",
+      "name": "Thermal conductivity",
+      "property": "thermal-conductivity",
+      "provenance": {
+        "derivation": "converted from 1.0e-2 cal/(cm s C)",
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "kappa",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "W/(m K)",
+        "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "ucum": "W/(m.K)"
+      },
+      "value": 4.2,
+      "variant": "cln"
+    },
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "thermal-conductivity/cln/volk2008",
+      "kind": "scalar",
+      "name": "Thermal conductivity",
+      "notes": "Axis not stated in the compilation.",
+      "property": "thermal-conductivity",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nakamura et al., J. Cryst. Growth 290, 144 (2006)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "kappa",
+      "unit": {
+        "display": "W/(m K)",
+        "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "ucum": "W/(m.K)"
+      },
+      "value": 3.92,
+      "variant": "cln"
+    },
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "thermal-conductivity/sln/volk2008",
+      "kind": "scalar",
+      "name": "Thermal conductivity",
+      "property": "thermal-conductivity",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nakamura et al., J. Cryst. Growth 290, 144 (2006)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "kappa",
+      "unit": {
+        "display": "W/(m K)",
+        "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "ucum": "W/(m.K)"
+      },
+      "value": 5.97,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    },
+    {
+      "category": "thermal",
+      "id": "thermal-conductivity/unspecified/schwesyg2011",
+      "kind": "scalar",
+      "name": "Thermal conductivity",
+      "property": "thermal-conductivity",
+      "provenance": {
+        "locator": "Eq. (2.28)",
+        "original_reference": "Wong 2002 (EMIS Datareview 28)",
+        "source_id": "schwesyg2011",
+        "status": "S",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "kappa",
+      "unit": {
+        "display": "W/(m K)",
+        "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+        "ucum": "W/(m.K)"
+      },
+      "value": 5,
+      "variant": "unspecified"
+    }
+  ]
+}

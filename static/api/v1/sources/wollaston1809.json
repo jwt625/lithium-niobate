@@ -1,0 +1,27 @@
+{
+  "citation": "\"XV. On the identity of Columbium and Tantalum\", Philosophical Transactions of the Royal Society of London 99, 246-252, (1809) doi:10.1098/rstl.1809.0017",
+  "link": "https://doi.org/10.1098/rstl.1809.0017",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Philosophical Transactions of the Royal Society of London",
+    "doi": "10.1098/rstl.1809.0017",
+    "id": "wollaston1809",
+    "issued": "1809-12-31",
+    "page": "246-252",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "XV. On the identity of Columbium and Tantalum",
+    "type": "article-journal",
+    "volume": "99"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "alternatives": [
+    "elastic-compliance-sE/unspecified/weis1985-smithwelsh1971",
+    "elastic-compliance-sE/unspecified/weis1985-warner1967"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "elastic-compliance-sE",
+    "variant": "unspecified"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "s11": {
+      "max": 5.831,
+      "min": 5.78,
+      "n_records": 2
+    },
+    "s12": {
+      "max": -1.01,
+      "min": -1.15,
+      "n_records": 2
+    },
+    "s13": {
+      "max": -1.452,
+      "min": -1.47,
+      "n_records": 2
+    },
+    "s14": {
+      "max": -1.0,
+      "min": -1.02,
+      "n_records": 2
+    },
+    "s33": {
+      "max": 5.026,
+      "min": 5.02,
+      "n_records": 2
+    },
+    "s44": {
+      "max": 17.1,
+      "min": 17.0,
+      "n_records": 2
+    }
+  }
+}

@@ -1,318 +1,532 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mode="tech" data-theme="dark" data-fx="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lithium Niobate (mockup)</title>
-<meta name="description" content="Static mockup of lithium-niobate.com: theme Optic Axis, layout, and core elements, for review.">
+<title>Lithium Niobate</title>
+<meta name="description" content="Lithium niobate (LiNbO3): properties with sources, live conoscope, chapter index, chronology.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,400&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="visual.css">
 </head>
 <body>
 <canvas id="pr-trace" aria-hidden="true"></canvas>
 
-<header class="topbar">
-  <div class="wrap row">
-    <a class="brand" href="index.html" aria-label="lithium niobate home">
-      <canvas id="logo" aria-hidden="true"></canvas>
-      <span class="name">lithium niobate</span><span class="formula">LiNbO<sub>3</sub></span>
-    </a>
-    <nav class="nav" aria-label="Chapters">
-      <a href="#doors">Crystal</a><a href="chapter.html">Light</a><a href="#doors">Sound</a><a href="#doors">Quirks</a>
-      <a href="#doors">Making</a><a href="#doors">Devices</a><a href="#history">History</a><a href="#industry">Industry</a>
-      <a href="#lab">Lab</a><a href="#data">Data</a>
-    </nav>
+<header class="mast">
+  <div class="row">
+    <a class="brand" href="index.html" aria-label="lithium niobate, landing page"><canvas id="logo" aria-hidden="true"></canvas><b>lithium niobate</b><span>LiNbO<sub>3</sub></span></a>
     <div class="tools">
-      <div class="seg" data-units role="group" aria-label="Wavelength units"><button data-u="nm">nm</button><button data-u="THz">THz</button><button data-u="eV">eV</button></div>
-      <button class="iconbtn" id="motion-btn" aria-label="Toggle motion"></button>
-      <button class="iconbtn" id="theme-btn" aria-label="Toggle theme"></button>
+      <div class="seg mode" role="group" aria-label="Display mode"><button type="button" data-m="tech" title="Monochrome, static">TECH</button><button type="button" data-m="visual" title="Color and effects">VISUAL</button></div>
+      <button type="button" class="iconbtn" id="theme-btn" aria-label="Toggle light or dark theme"></button>
     </div>
   </div>
+  <div class="band" data-pop="qpm" data-pop-visual="v-qpm" data-qpm="1.064" aria-label="Poled-domain band"><span class="qpm-lab"></span></div>
+  <nav class="nav" aria-label="Chapters">
+    <span aria-disabled="true" title="Not built"><span class="n">01</span>Crystal</span>
+    <a href="chapter.html"><span class="n">02</span>Light</a>
+    <span aria-disabled="true" title="Not built"><span class="n">03</span>Sound</span>
+    <span aria-disabled="true" title="Not built"><span class="n">04</span>Quirks</span>
+    <span aria-disabled="true" title="Not built"><span class="n">05</span>Making</span>
+    <span aria-disabled="true" title="Not built"><span class="n">06</span>Devices</span>
+    <span aria-disabled="true" title="Not built"><span class="n">07</span>History</span>
+    <span aria-disabled="true" title="Not built"><span class="n">08</span>Industry</span>
+  </nav>
 </header>
 
 <div class="spine" aria-hidden="true"><span class="axislabel">c</span></div>
 
-<main class="wrap">
+<main>
+  <section id="cell" class="cellfull" data-variant="tech" data-pair="top" aria-label="Fig. 1, LiNbO3 unit cell, ASCII rendering">
+    <script>
+      // fixed section size per viewport: section top (below the masthead) and scrollbar width (recomputed on resize only)
+      (() => { const r = document.documentElement, sec = document.currentScript.parentElement, f = () => { r.style.setProperty("--mast-b", `${Math.round(sec.getBoundingClientRect().top + scrollY)}px`); r.style.setProperty("--sbw", `${innerWidth - r.clientWidth}px`); }; f(); addEventListener("resize", f); })();
+    </script>
+    <div class="cbar top"><span class="lab"><b>Fig. 1</b> LiNbO<sub>3</sub> R3c cell, hexagonal axes, Z = 6</span><span class="b pc" data-pop="s-cell">P-db</span><span class="b d" data-pop="s-cell-d">derived</span><span class="facts">a 5.148, c 13.863 &Aring; &middot; Li 6, Nb 6, O 18 &middot; Nb&ndash;O 1.876, 2.130 &Aring; &middot; Li&ndash;O 2.063, 2.245 &Aring;</span></div>
+    <div class="cstage" tabindex="0" role="img" aria-label="ASCII rendering of the conventional hexagonal unit cell of lithium niobate; drag to orbit, arrow keys rotate, plus and minus zoom"><canvas aria-hidden="true"></canvas></div>
+    <div class="cbar ctl"><div class="seg" role="group" aria-label="Show in Fig. 1"><button type="button" data-t="nb" title="NbO6 octahedron edges">NbO<sub>6</sub></button><button type="button" data-t="li" title="LiO6 octahedron edges (dashed)">LiO<sub>6</sub></button><button type="button" data-t="vac" title="Empty octahedral sites (dotted rings; dotted O6 edges when an octahedron toggle is on)">empty</button><button type="button" data-t="bonds" title="Nb-O and Li-O bonds inside the cell">bonds</button><button type="button" data-t="ax" title="a1, a2, c axes; Ps along +c">c, P<sub>s</sub></button><button type="button" data-t="sup" title="2 x 2 x 1 block of cells">2&times;2&times;1</button></div><button type="button" class="reset" title="Reset view (key 0)">reset</button></div>
+    <div class="cbar legend"><span><b>.:-=+*#%@</b>Nb 6a, r 0.62</span><span><b>.',;il</b>Li 6a, r 0.52</span><span><b>.coO0</b>O 18b, r 0.45</span><span><b>. .</b>empty 6a ring, bonds</span><span><b>-|/\</b>cell, octahedron edges</span><span class="rampnote">ramps: shadow to highlight</span><span>near bright, far dim; r in &Aring;, display radii (not ionic)</span></div>
+    <div class="cbar readout" aria-live="polite"></div>
+  </section>
 
-  <!-- L0 hero -->
-  <section class="hero" id="welcome" data-spine="Welcome">
+  <!-- ============ hero ============ -->
+  <section class="v-hero v-w" id="v-top" data-variant="visual" data-pair="top" data-spine="Lithium niobate">
+    <div class="v-hero-text">
+      <p class="v-kicker">LiNbO<sub>3</sub> &middot; trigonal &middot; point group 3m &middot; space group R3c</p>
+      <h1 class="v-display biref">Lithium niobate</h1>
+      <p class="v-lede">A trigonal ferroelectric oxide whose refractive index changes linearly with an applied electric field (Pockels effect) and whose second-order susceptibility <i>&chi;</i><sup>(2)</sup> is large. Ti-indiffused bulk waveguides (1974) became the standard fiber-optic modulator; since 2017, sub-micron films on insulator (TFLN) carry the same physics on chips.</p>
+      <dl class="v-keys">
+        <div><dt>r<sub>33</sub>, clamped, 633 nm</dt><dd>30.8<small>pm/V</small></dd><span class="b pc" data-pop="s-r33">P-comp</span></div>
+        <div><dt>n<sub>e</sub>, 1550 nm, 21 &deg;C</dt><dd id="v-key-ne"></dd><span class="b pc" data-pop="s-n">P-db</span> <span class="b d" data-pop="s-n">derived</span></div>
+        <div><dt>Curie temperature</dt><dd>1140<small>&deg;C</small></dd><span class="b pc" data-pop="s-tc">P-comp</span></div>
+      </dl>
+    </div>
+
+    <figure class="v-cell" id="fig1">
+      <div class="stage v-frame" role="img" aria-label="Conventional hexagonal unit cell of lithium niobate: 6 Li, 6 Nb, 18 O; drag to orbit, wheel or pinch to zoom">
+        <div class="labels" aria-hidden="true"></div>
+        <button type="button" class="reset" title="Reset view">Reset view</button>
+      </div>
+      <div class="v-cell-meta"><span class="v-cap"><b>Fig. 1</b>R3c cell, hexagonal axes, Z = 6</span><span class="b pc" data-pop="s-cell">P-db</span></div>
+      <div class="hudrow readout1" aria-live="polite"></div>
+      <div class="v-seg" role="group" aria-label="Show in Fig. 1"><button type="button" data-t="nb" title="NbO6 octahedra">NbO<sub>6</sub></button><button type="button" data-t="li" title="LiO6 octahedra">LiO<sub>6</sub></button><button type="button" data-t="vac" title="Empty octahedral sites; along +c each column repeats Nb, empty, Li">Empty sites</button><button type="button" data-t="ax" title="c axis and spontaneous polarization direction">c, P<sub>s</sub></button></div>
+      <div class="legend1" aria-label="Legend"></div>
+    </figure>
+  </section>
+
+  <section class="hero" id="spec" data-variant="tech" data-pair="spec" data-spine="Specification">
     <div>
-      <div class="eyebrow">A crystal that steers light with electricity</div>
-      <h1 class="biref">Meet lithium&nbsp;niobate.</h1>
-      <p class="lede">A clear, slightly golden crystal of lithium, niobium, and oxygen. Put a voltage across it and light inside it changes, billions of times a second. That simple trick carries much of the world's internet traffic, and is now heading into
-        <span class="term" data-pop="ai">AI data centers</span>, quantum labs, and your phone's radio.</p>
-      <p class="lede" style="font-size:18px">Here is the real thing, simulated live: a thin slice of the crystal seen between
-        <span class="term" data-pop="crossed">crossed polarizers</span>. Drag the voltage and watch the dark cross split. That is the
-        <span class="term" data-pop="pockels">Pockels effect</span>.</p>
-      <div class="ctas">
-        <a class="btn primary facet" href="#doors">Take the tour</a>
-        <a class="btn facet" href="#lab">Go straight to tools and data</a>
+      <p class="def"><b>Lithium niobate</b>, LiNbO<sub>3</sub> &mdash; trigonal ferroelectric oxide whose refractive index changes linearly with an applied electric field (Pockels effect) and whose second-order susceptibility &chi;<sup>(2)</sup> is large. Ti-indiffused bulk waveguides (1974) became the standard fiber-optic modulator; since 2017, sub-micron films on insulator (TFLN) carry the same physics on chips.</p>
+      <div class="sh"><h2 class="biref">Specification</h2></div>
+      <div class="scrollx">
+      <table class="spec">
+        <thead><tr><th>Property</th><th>Value</th><th>Condition</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Point group, space group</td><td class="v">3m, R3c</td><td class="c">ferroelectric phase</td><td class="s"><span class="b pc" data-pop="s-pg">P-comp</span></td></tr>
+          <tr><td>Lattice a, c</td><td class="v">5.148, 13.863 &Aring;</td><td class="c">hexagonal setting, room T</td><td class="s"><span class="b pc" data-pop="s-lat">P-comp</span></td></tr>
+          <tr><td>Density</td><td class="v">4642.8 kg/m<sup>3</sup></td><td class="c">congruent</td><td class="s"><span class="b p" data-pop="s-rho">P</span></td></tr>
+          <tr><td>Curie temperature</td><td class="v">1140 &deg;C</td><td class="c">congruent</td><td class="s"><span class="b pc" data-pop="s-tc">P-comp</span></td></tr>
+          <tr><td>Melting point</td><td class="v">1255 &deg;C</td><td class="c">congruent</td><td class="s"><span class="b pc" data-pop="s-tm">P-comp</span></td></tr>
+          <tr><td>Coercive field</td><td class="v">21 kV/mm</td><td class="c">congruent, room T</td><td class="s"><span class="b pc" data-pop="s-ec">P-comp</span></td></tr>
+          <tr><td>Transparency</td><td class="v">0.32&ndash;5 &micro;m</td><td class="c">congruent; cutoff criterion not stated</td><td class="s"><span class="b pc" data-pop="s-tr">P-comp</span></td></tr>
+          <tr><td>n<sub>o</sub>, n<sub>e</sub></td><td class="v ir-el" id="v-n"></td><td class="c">1550 nm, 21 &deg;C</td><td class="s"><span class="b pc" data-pop="s-n">P-db</span> <span class="b d" data-pop="s-n">derived</span></td></tr>
+          <tr><td>r<sub>33</sub> clamped / free</td><td class="v">30.8 / 32.2 pm/V</td><td class="c">633 nm</td><td class="s"><span class="b pc" data-pop="s-r33">P-comp</span></td></tr>
+          <tr><td>Thermal conductivity</td><td class="v">3.92 W/(m&middot;K)</td><td class="c">congruent, room T</td><td class="s"><span class="b pc" data-pop="s-k">P-comp</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div id="record" class="sub" data-pair="record" data-spine="Data record">
+        <div class="sh"><h2 class="biref">Data record</h2></div>
+        <div class="rec">
+          <div class="l">
+            <div class="cap">n<sub>e</sub> &middot; congruent LN &middot; 1550 nm &middot; 21 &deg;C</div>
+            <div class="val ir-el" id="rec-ne"></div>
+            <dl>
+              <dt>Model</dt><dd>Zelmon, Small, Jundt, JOSA B 14, 3319 (1997)</dd>
+              <dt>Validity</dt><dd>0.4&ndash;5.0 &micro;m, 21 &deg;C</dd>
+              <dt>Erratum</dt><dd>JOSA B 43, 2788 (2026-10-22): MgO:LN o/e headings switched; CLN coefficients unaffected</dd>
+              <dt>Status</dt><dd><span class="b pc" data-pop="s-n">P-db</span> <span class="b d" data-pop="s-n">derived</span></dd>
+            </dl>
+          </div>
+          <pre id="json" aria-label="JSON record"></pre>
+          <div class="u">not served by the mockup: GET /api/v1/properties/refractive-index/cln.json &middot; /api/v1/dispersion/zelmon1997-cln.json &middot; /llms.txt</div>
+        </div>
       </div>
     </div>
 
-    <div class="bench facet" style="--cut:18px">
+    <div class="figcol">
+    <figure class="panel" id="fig0" style="margin:0">
+      <div class="ph"><span><b>Fig. 0</b> conoscope, z-cut LN, crossed polarizers</span><span class="term" data-pop="cono">model</span></div>
       <div class="stage">
-        <canvas id="conoscope" role="img" aria-label="Simulated conoscopic interference figure of a z-cut lithium niobate plate"></canvas>
-        <div class="hud">z-cut plate · crossed polarizers</div>
-        <div class="hud r" id="hud-r"></div>
+        <canvas id="conoscope" role="img" aria-label="Computed conoscopic figure of a z-cut lithium niobate plate between crossed polarizers"></canvas>
+        <div class="hud tl">P &#8596; x &middot; A &#8597; y<br>NA 0.55</div>
+        <div class="hud tr" id="hud-src"></div>
       </div>
-      <div class="controls">
-        <div class="ctl"><label for="v">Field across the crystal</label><input id="v" type="range" min="0" max="5" step="0.05" value="0" aria-valuetext="0 kilovolts per millimeter"><output id="vo">0.00 kV/mm</output></div>
-        <div class="ctl"><label for="d">Plate thickness</label><input id="d" type="range" min="0.2" max="2" step="0.01" value="0.6" aria-valuetext="0.6 millimeters"><output id="do">0.60 mm</output></div>
-        <div class="ctl"><label>Light</label>
-          <div class="seg" id="light" role="group" aria-label="Light source"><button data-l="white" class="on">white</button><button data-l="red">HeNe <span data-lam="0.6328"></span></button></div><span></span></div>
-        <div class="ctl"><label>Field direction</label>
-          <div class="seg" id="fdir" role="group" aria-label="Field direction"><button data-f="x" class="on">x (a-axis)</button><button data-f="y">y</button></div><span></span></div>
+      <div class="hudrow" aria-live="polite"><span id="hud-dn"></span><span id="hud-st"></span></div>
+      <div class="ctl"><label for="e">Field E &perp; c</label><input id="e" type="range" min="0" max="5" step="0.05" value="0" aria-valuetext="0.00 kilovolts per millimeter"><output id="eo" for="e">0.00 kV/mm</output></div>
+      <div class="ctl"><label for="d">Thickness d</label><input id="d" type="range" min="0.2" max="2" step="0.01" value="0.6" aria-valuetext="0.60 millimeters"><output id="do" for="d">0.60 mm</output></div>
+      <div class="ctl"><span class="k">E along</span><div class="seg" id="fdir" role="group" aria-label="Field direction"><button type="button" data-f="x">x</button><button type="button" data-f="y">y</button></div><span></span></div>
+      <div class="ctl"><span class="k">Source</span><div class="seg" id="src" role="group" aria-label="Light source"><button type="button" data-s="633">632.8 nm</button><button type="button" data-s="white">white</button></div><span></span></div>
+      <div class="pf">
+        <span>n<sub>o</sub>, n<sub>e</sub> Zelmon 1997 <span class="b pc" data-pop="s-n">P-db</span></span>
+        <span>r<sub>22</sub> 6.8 pm/V <span class="b pc" data-pop="r22">P-comp</span></span>
+        <span>NA 0.55 <span class="b t" data-pop="na">template</span></span>
+        <span>image <span class="b d" data-pop="cono">derived</span></span>
       </div>
-      <p class="caption">Rings: equal optical delay. Cross: polarization aligned with the polarizers. A transverse field makes the uniaxial crystal biaxial: the cross opens into two
-        <span class="term" data-pop="isogyre">isogyres</span>.</p>
-      <div class="prov">
-        <span class="term" data-pop="zelmon">n<sub>o</sub>, n<sub>e</sub>: Zelmon 1997</span><span class="badge p">P-db</span>
-        <span class="term" data-pop="r22">r<sub>22</sub><sup>T</sup> = 6.8 pm/V</span><span class="badge p">P-comp</span>
-        <span>NA 0.55</span><span class="badge template">template</span>
-        <span>model</span><span class="badge derived">derived</span>
+    </figure>
+
+    </div>
+    <script type="module" src="lattice.js"></script>
+  </section>
+
+  <!-- ============ conoscope bench ============ -->
+  <section class="v-sec v-w" id="v-conoscope" data-variant="visual" data-pair="spec" data-spine="Conoscope">
+    <header class="v-sh">
+      <h2 class="biref">Conoscope</h2>
+      <p class="v-sub">A z-cut plate between crossed polarizers in convergent light shows a dark cross and rings. A field perpendicular to c acts through r<sub>22</sub>: the uniaxial crystal turns biaxial and the cross splits into two isogyres.</p>
+    </header>
+    <div class="v-bench">
+      <div class="v-bench-art">
+        <svg id="v-bench-svg" viewBox="0 0 880 290" role="img" aria-label="Optical bench: lamp, polarizer along x, condenser, z-cut LN plate between electrodes, objective, analyzer along y, Bertrand lens"></svg>
+        <div class="v-bench-ctl">
+          <div class="v-group"><h3>Lamp</h3>
+            <div class="v-ctl"><span class="v-lab">Source</span><div class="v-seg" id="v-src" role="group" aria-label="Light source"><button type="button" data-s="633">632.8 nm</button><button type="button" data-s="white">White</button></div></div>
+          </div>
+          <div class="v-group"><h3>Plate</h3>
+            <div class="v-ctl" style="--w:8ch"><label for="v-d">Thickness d</label><output id="v-d-o" for="v-d"></output><input class="v-range" id="v-d" type="range" min="0.2" max="2" step="0.01" value="0.6"></div>
+          </div>
+          <div class="v-group"><h3>Electrodes</h3>
+            <div class="v-ctl" style="--w:10ch"><label for="v-e">Field E &perp; c</label><output id="v-e-o" for="v-e"></output><input class="v-range" id="v-e" type="range" min="0" max="5" step="0.05" value="0"></div>
+            <div class="v-ctl"><span class="v-lab">E along</span><div class="v-seg" id="v-fdir" role="group" aria-label="Field direction"><button type="button" data-f="x">x</button><button type="button" data-f="y">y</button></div></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <div class="poled" data-pop="qpm" aria-label="Periodically poled domain divider"><svg aria-hidden="true"></svg><span class="lab" id="qpm-lab"></span></div>
-
-  <!-- LN in your life -->
-  <section class="block" id="life" data-spine="In your life">
-    <div class="sechead"><h2 class="biref">Already in your life</h2><p>Four places this crystal (or its sibling) works for you today. Hover for the evidence.</p></div>
-    <div class="cards">
-      <div class="card facet" data-pop="life-internet"><span class="idx">01</span>
-        <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 20h10l5-8h6l5 8h10M17 28h6"/><path d="M12 20l5 8M28 20l-5 8"/></svg>
-        <h3>The internet's light switches</h3><p>For decades, LN modulators have written data onto laser light in long-haul fiber links.</p></div>
-      <div class="card facet" data-pop="life-phone"><span class="idx">02</span>
-        <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 26h24M10 26v-8M14 26v-8M18 26v-8M22 26v-8M26 26v-8M30 26v-8"/><path d="M4 12c4-4 8 4 12 0s8 4 12 0 8 4 8 0" opacity=".6"/></svg>
-        <h3>Filters in your phone</h3><p>Radio filters ride sound waves on piezoelectric crystals. Most use lithium tantalate, LN's close sibling.</p></div>
-      <div class="card facet" data-pop="life-quantum"><span class="idx">03</span>
-        <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 20h12"/><path d="M16 20l20-8M16 20l20 8"/><circle cx="16" cy="20" r="2"/></svg>
-        <h3>Quantum light</h3><p>Periodically poled LN splits photons into entangled pairs and squeezes light below the noise floor.</p></div>
-      <div class="card facet" data-pop="life-ai"><span class="idx">04</span>
-        <svg class="glyph" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="8" y="8" width="24" height="24"/><path d="M14 8V4M20 8V4M26 8V4M14 36v-4M20 36v-4M26 36v-4M8 14H4M8 20H4M8 26H4M36 14h-4M36 20h-4M36 26h-4"/><path class="ir-el" d="M14 20h12" stroke="var(--ir)"/></svg>
-        <h3>Light for AI</h3><p>Thin-film LN modulators are entering the optical links between AI accelerators.</p></div>
-    </div>
-  </section>
-
-  <!-- chapter doors -->
-  <section class="block" id="doors" data-spine="Chapters" style="margin-top:56px">
-    <div class="sechead"><h2 class="biref">Eight doors into the crystal</h2><p>Each chapter starts with one idea you can play with. Every term previews on hover; equations, data, and sources are one or two clicks deeper.</p></div>
-    <div class="doors">
-      <a class="door" href="#doors"><span class="num">01</span>
-        <svg class="g" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M27 4l20 11.5v23L27 50 7 38.5v-23z"/><path d="M27 14l11 19H16z"/><circle cx="27" cy="27" r="1.6" fill="currentColor"/></svg>
-        <h3>The crystal</h3><p>Lithium, niobium, oxygen, and an empty cage in every third octahedron. Why it is polar, and why that matters.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert</span></div><span class="go">Enter &rarr;</span></a>
-      <a class="door" href="chapter.html"><span class="num">02</span>
-        <svg class="g" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.1"><ellipse cx="27" cy="16" rx="5" ry="12"/><ellipse cx="27" cy="16" rx="5" ry="12" transform="rotate(120 27 30)"/><ellipse cx="27" cy="16" rx="5" ry="12" transform="rotate(240 27 30)"/></svg>
-        <h3>Light</h3><p>Bend it, split it, switch it, change its color. Birefringence, the Pockels effect, nonlinear optics.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert</span></div><span class="go">Enter (sample page) &rarr;</span></a>
-      <a class="door" href="#doors"><span class="num">03</span>
-        <svg class="g" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M27 6l22 38H5z"/><path d="M27 16l13.5 23.5h-27z" opacity=".7"/><path d="M27 26l6 10.5H21z" opacity=".45"/></svg>
-        <h3>Sound</h3><p>Squeeze it and it makes a voltage; ring it and it sings at gigahertz. Piezoelectricity, surface waves, phonons meeting photons.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert</span></div><span class="go">Enter &rarr;</span></a>
-      <a class="door" href="#doors"><span class="num">04</span>
-        <svg class="g" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M27 6l22 38H5z"/><path d="M27 6q0 18 -11 26M49 44q-15-9-27-1M5 44q15-2 22-12" opacity=".7"/></svg>
-        <h3>Quirks</h3><p>Optical damage, pyroelectric sparks, drift. Living with a brilliant, temperamental crystal.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert</span></div><span class="go">Enter &rarr;</span></a>
-      <a class="door" href="#doors"><span class="num">05</span>
-        <svg class="g" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M27 5l19 33H8z"/><path d="M27 49L8 16h38z" opacity=".7"/><path d="M27 5l19 33H8z" fill="currentColor" opacity=".12"/></svg>
-        <h3>Making it</h3><p>From a glowing melt to a film thinner than the light it guides. Growth, slicing, etching, poling.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert</span></div><span class="go">Enter &rarr;</span></a>
-      <a class="door" href="#doors"><span class="num">06</span>
-        <svg class="g" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M27 27V5M27 27L8 38M27 27l19 11"/><circle cx="27" cy="27" r="4"/><circle cx="27" cy="5" r="1.6" fill="currentColor"/><circle cx="8" cy="38" r="1.6" fill="currentColor"/><circle cx="46" cy="38" r="1.6" fill="currentColor"/></svg>
-        <h3>Devices</h3><p>Modulators, frequency converters, combs, quantum transducers: what people build with it.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert</span></div><span class="go">Enter &rarr;</span></a>
-      <a class="door" href="#history"><span class="num">07</span>
-        <svg class="g" viewBox="0 0 54 54" fill="currentColor"><circle cx="27" cy="12" r="2.2"/><circle cx="21" cy="22.4" r="2.2"/><circle cx="33" cy="22.4" r="2.2"/><circle cx="15" cy="32.8" r="2.2"/><circle cx="27" cy="32.8" r="2.2" opacity=".35"/><circle cx="39" cy="32.8" r="2.2"/><circle cx="9" cy="43.2" r="2.2"/><circle cx="21" cy="43.2" r="2.2"/><circle cx="33" cy="43.2" r="2.2"/><circle cx="45" cy="43.2" r="2.2"/></svg>
-        <h3>History</h3><p>Seventy-seven years from a Bell Labs ferroelectric to the AI data center.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span></div><span class="go">Enter &rarr;</span></a>
-      <a class="door" href="#industry"><span class="num">08</span>
-        <svg class="g" viewBox="0 0 54 54" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M27 17l8.7 5v10L27 37l-8.7-5V22z"/><path d="M27 5l8.7 5v10L27 25l-8.7-5V10z" fill="currentColor" opacity=".15"/><path d="M44.3 32l8.7 5v10l-8.7 5-8.7-5V37z" transform="translate(-6 -6)" fill="currentColor" opacity=".15"/><path d="M9.7 32l8.7 5v10l-8.7 5L1 47V37z" transform="translate(6 -6)" fill="currentColor" opacity=".15"/></svg>
-        <h3>Industry</h3><p>Who grows it, slices it, and builds with it. Honest trends, dated sources.</p>
-        <div class="chips"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert</span></div><span class="go">Enter &rarr;</span></a>
-    </div>
-  </section>
-
-  <div class="poled" data-pop="qpm"><svg aria-hidden="true"></svg></div>
-
-  <!-- flagship tools -->
-  <section class="block" id="lab" data-spine="Lab">
-    <div class="sechead"><h2 class="biref">The lab bench</h2><p>Real models in your browser, with every constant traceable. Launch set (P1).</p></div>
-    <div class="tiles">
-      <div class="tile facet">
-        <div class="vis"><svg viewBox="0 0 300 132"><g opacity=".9"><path d="M0 66h300" stroke="var(--pump)" stroke-width="2"/><path d="M150 52h150" stroke="var(--shg)" stroke-width="2"/></g><g fill="var(--line-2)"><rect x="70" y="30" width="8" height="72"/><rect x="94" y="30" width="8" height="72"/><rect x="118" y="30" width="8" height="72"/><rect x="142" y="30" width="8" height="72"/><rect x="166" y="30" width="8" height="72"/><rect x="190" y="30" width="8" height="72"/><rect x="214" y="30" width="8" height="72"/></g></svg></div>
-        <div class="body"><h3>Phase-Matching Lab</h3><p>Pick two colors; the crystal makes a third. Sellmeier models with errata, poling periods, tuning curves.</p><span class="badge">F2 · P1</span></div></div>
-      <div class="tile facet">
-        <div class="vis"><svg viewBox="0 0 300 132" fill="none"><path d="M20 66h50l30-24h100l30 24h50M70 66l30 24h100l30-24" stroke="var(--text-2)" stroke-width="1.5"/><rect x="104" y="30" width="92" height="7" fill="var(--gold)"/><rect x="104" y="95" width="92" height="7" fill="var(--gold)"/><rect x="104" y="58" width="92" height="16" fill="var(--gold)" opacity=".8"/></svg></div>
-        <div class="body"><h3>Modulator Designer</h3><p>Turn voltage into light pulses. V<sub>&pi;</sub>L, bandwidth limits, live eye diagram; later the full field solver.</p><span class="badge">F3 · P1 closed-form</span></div></div>
-      <div class="tile facet">
-        <div class="vis"><svg viewBox="0 0 300 132" fill="none" stroke="var(--crystal)" stroke-width="1.1"><path d="M150 18l34 12v52l-34 12-34-12V30z"/><path d="M116 30l34 12 34-12M150 42v52" opacity=".6"/><path d="M150 106V8" stroke="var(--shg)" stroke-dasharray="3 3"/><text x="156" y="14" fill="var(--shg)" stroke="none" font-family="IBM Plex Mono" font-size="10">c (z)</text></svg></div>
-        <div class="body"><h3>Tensor &amp; Convention Explorer</h3><p>Spin the crystal; see which way it squeezes or bends light. Frames, signs, and COMSOL-ready export.</p><span class="badge">F4 · P1</span></div></div>
-      <div class="tile facet">
-        <div class="vis"><svg viewBox="0 0 300 132"><defs><linearGradient id="tf" x1="0" x2="1"><stop offset="0" stop-color="#5a3f9a"/><stop offset=".35" stop-color="#2f7fa8"/><stop offset=".6" stop-color="#5fb36a"/><stop offset=".85" stop-color="#d6a84e"/><stop offset="1" stop-color="#b24f6e"/></linearGradient></defs><circle cx="150" cy="66" r="52" fill="url(#tf)" opacity=".75"/><rect x="104" y="114" width="92" height="8" fill="var(--ink-3)"/></svg></div>
-        <div class="body"><h3>Crystal in Hand</h3><p>Pick up a crystal and a thin-film wafer. Spin, zoom into the lattice, watch interference colors shift with film thickness.</p><span class="badge">F6 · P1 (3D)</span> <span class="badge template">colors illustrative</span></div></div>
-      <div class="tile facet">
-        <div class="vis"><div class="placeholder" style="height:132px;border:0"><span>layout placeholder, no data</span></div></div>
-        <div class="body"><h3>TFLN vs everything</h3><p>V<sub>&pi;</sub>L, bandwidth, and year for every platform, from the eo-modulator-atlas at build time.</p><span class="badge">F5 · P1</span></div></div>
-      <div class="tile facet">
-        <div class="vis"><canvas id="mini-cono" style="width:132px;height:132px;display:block;margin:0 auto"></canvas></div>
-        <div class="body"><h3>Crystal Optics Bench</h3><p>The hero above, in full: any cut, thickness, wavelength, and field; index ellipsoid alongside.</p><span class="badge">F1 · P1</span></div></div>
-    </div>
-  </section>
-
-  <div class="poled" data-pop="qpm"><svg aria-hidden="true"></svg></div>
-
-  <!-- history strip -->
-  <section class="block" id="history" data-spine="History">
-    <div class="sechead"><h2 class="biref">Seventy-seven years in ten moments</h2><p>Every event is dated and sourced; hover for the paper. The full timeline has about 90.</p></div>
-    <div class="timeline"><div class="track" id="track"><div class="axis"></div></div></div>
-  </section>
-
-  <div class="poled" data-pop="qpm"><svg aria-hidden="true"></svg></div>
-
-  <!-- industry -->
-  <section class="block" id="industry" data-spine="Industry">
-    <div class="sechead"><h2 class="biref">Faster, not yet smaller</h2><p>Live chart from the eo-modulator-atlas, pinned to a commit at build time. Lower bounds drawn as arrows; push-pull convention by default.</p></div>
-    <div class="placeholder"><span>Layout placeholder: V<sub>&pi;</sub>L vs EO bandwidth vs year, by platform. No data in the mockup.</span></div>
-  </section>
-
-  <!-- data card -->
-  <section class="block" id="data" data-spine="Data" style="margin-top:56px">
-    <div class="sechead"><h2 class="biref">Every number has a home</h2><p>Each value on this site has a page, a source, a status, and a machine-readable twin for people, code, and AI agents.</p></div>
-    <div class="datacard facet" style="--cut:16px">
-      <div class="human">
-        <div class="eyebrow">Extraordinary index · congruent LN</div>
-        <div class="val" id="ne1550"></div>
-        <div class="small">at <span data-lam="1.55"></span>, 21 &deg;C</div>
-        <dl>
-          <dt>Model</dt><dd>Zelmon, Small, Jundt, JOSA B 14, 3319 (1997)</dd>
-          <dt>Erratum</dt><dd>JOSA B 43, 2788 (2026-10-22), MgO:LN o/e swap; not affecting CLN</dd>
-          <dt>Validity</dt><dd>0.4 to 5.0 &micro;m, 21 &deg;C</dd>
-          <dt>Status</dt><dd><span class="badge p">P-db</span> <span class="badge derived">derived</span></dd>
+      <div class="v-eyepiece">
+        <div class="v-eye"><canvas id="v-cono" role="img" aria-label="Computed conoscopic figure of a z-cut lithium niobate plate between crossed polarizers"></canvas><svg id="v-eye-ring" viewBox="0 0 100 100" aria-hidden="true"></svg></div>
+        <div class="v-ret"><canvas id="v-ret" aria-label="Isochromatic sequence along the 45 degree diagonal at E = 0" role="img"></canvas>
+          <div class="v-ret-ticks"><span style="left:0">0&deg;</span><span style="left:31.6%">10&deg;</span><span style="left:62.2%">20&deg;</span><span style="left:100%">33.4&deg;</span></div>
+        </div>
+        <dl class="v-hud">
+          <dt>Ring scale, angle in air</dt><dd>E = 0, 45&deg; diagonal</dd>
+          <dt>Retardation at NA edge</dt><dd id="v-hud-g"></dd>
+          <dt>&Delta;n<sub>ind</sub> = n<sub>o</sub><sup>3</sup> r<sub>22</sub> E</dt><dd id="v-hud-dn"></dd>
+          <dt>Optic-axis state</dt><dd id="v-hud-st"></dd>
         </dl>
       </div>
-      <div>
-<pre id="json"></pre>
-        <div class="url">GET /api/v1/properties/refractive-index/cln.json · /llms.txt · planned</div>
-      </div>
+    </div>
+    <div class="v-prov">
+      <span>n<sub>o</sub>, n<sub>e</sub> Zelmon 1997 <span class="b pc" data-pop="s-n">P-db</span></span>
+      <span>r<sub>22</sub> 6.8 pm/V <span class="b pc" data-pop="r22">P-comp</span></span>
+      <span>NA 0.55 <span class="b t" data-pop="na">template</span></span>
+      <span>figure, ring scale <span class="b d" data-pop="v-cono">derived</span></span>
+      <span>ring ticks: mirror-plane traces of 3m <span class="b d" data-pop="v-ring">derived</span></span>
     </div>
   </section>
 
+  <!-- ============ specimen sheet ============ -->
+  <section class="v-sec v-w" id="v-spec" data-variant="visual" data-pair="record" data-spine="Specification">
+    <header class="v-sh"><h2 class="biref">Specification</h2></header>
+    <div class="v-sheet">
+      <article class="v-card v-facet">
+        <header><h3>Symmetry</h3><span class="b pc" data-pop="s-pg">P-comp</span></header>
+        <p class="v-val">3m<span class="sep">/</span>R3c</p>
+        <p class="v-cond">point group / space group, ferroelectric phase</p>
+        <div class="v-glyph" id="g-sym"></div>
+      </article>
+      <article class="v-card">
+        <header><h3>Lattice, hexagonal setting</h3><span class="b pc" data-pop="s-lat">P-comp</span></header>
+        <p class="v-val">5.148<span class="sep">/</span>13.863<small>&Aring;</small></p>
+        <p class="v-cond">a / c, room temperature</p>
+        <div class="v-glyph" id="g-lat"></div>
+      </article>
+      <article class="v-card w2">
+        <header><h3>Refractive index, congruent, 21 &deg;C</h3><span><span class="b pc" data-pop="s-n">P-db</span> <span class="b d" data-pop="s-n">derived</span></span></header>
+        <div class="v-plot" id="g-n"></div>
+        <div class="v-ctl"><label for="v-lam">Wavelength (logarithmic slider, 0.4 to 5 &micro;m)</label><input class="v-range" id="v-lam" type="range" min="0" max="1000" step="any"></div>
+        <dl class="v-hud"><dt>&lambda;</dt><dd id="v-lam-o"></dd><dt>n<sub>o</sub></dt><dd id="v-no"></dd><dt>n<sub>e</sub></dt><dd id="v-ne"></dd><dt>&Delta;n</dt><dd id="v-dn"></dd></dl>
+      </article>
+      <article class="v-card w2">
+        <header><h3>Curie and melting temperature, congruent</h3><span><span class="b pc" data-pop="s-tc">P-comp</span> <span class="b pc" data-pop="s-tm">P-comp</span></span></header>
+        <p class="v-val">1140<small>&deg;C</small><span class="sep">/</span>1255<small>&deg;C</small></p>
+        <p class="v-cond">T<sub>c</sub> / T<sub>m</sub></p>
+        <div class="v-glyph" id="g-th"></div>
+      </article>
+      <article class="v-card w2">
+        <header><h3>Transparency, congruent</h3><span class="b pc" data-pop="s-tr">P-comp</span></header>
+        <p class="v-val">0.32&ndash;5<small>&micro;m</small></p>
+        <p class="v-cond">cutoff criterion not stated; dashed marks: infrared, <span class="term" data-pop="v-false">false color</span></p>
+        <div class="v-glyph" id="g-tr"></div>
+      </article>
+      <article class="v-card">
+        <header><h3>r<sub>33</sub>, 633 nm</h3><span class="b pc" data-pop="s-r33">P-comp</span></header>
+        <p class="v-val">30.8<span class="sep">/</span>32.2<small>pm/V</small></p>
+        <p class="v-cond">clamped / free</p>
+        <div class="v-glyph" id="g-r33"></div>
+      </article>
+      <article class="v-card">
+        <header><h3>Coercive field</h3><span class="b pc" data-pop="s-ec">P-comp</span></header>
+        <p class="v-val">21<small>kV/mm</small></p>
+        <p class="v-cond">congruent, room T; inverts P<sub>s</sub></p>
+        <div class="v-glyph" id="g-ec"></div>
+      </article>
+      <article class="v-card">
+        <header><h3>Density, congruent</h3><span class="b p" data-pop="s-rho">P</span></header>
+        <p class="v-val">4642.8<small>kg/m<sup>3</sup></small></p>
+        <p class="v-cond">&plusmn;0.2 kg/m<sup>3</sup></p>
+        <div class="v-glyph" id="g-rho"></div>
+      </article>
+      <article class="v-card">
+        <header><h3>Thermal conductivity, room T</h3><span class="b pc" data-pop="s-k">P-comp</span></header>
+        <p class="v-val">3.92<small>W/(m&middot;K)</small></p>
+        <p class="v-cond">congruent</p>
+        <div class="v-glyph" id="g-k"></div>
+      </article>
+      <article class="v-card w4">
+        <header><h3>Data record</h3><span><span class="b pc" data-pop="s-n">P-db</span> <span class="b d" data-pop="s-n">derived</span></span></header>
+        <div class="v-rec">
+          <div>
+            <p class="v-cond">n<sub>e</sub> &middot; congruent LN &middot; 1550 nm &middot; 21 &deg;C</p>
+            <p class="v-val" id="v-rec-ne"></p>
+            <dl>
+              <dt>Model</dt><dd>Zelmon, Small, Jundt, JOSA B 14, 3319 (1997)</dd>
+              <dt>Validity</dt><dd>0.4&ndash;5.0 &micro;m, 21 &deg;C</dd>
+              <dt>Erratum</dt><dd>JOSA B 43, 2788 (2026-10-22): MgO:LN o/e headings switched; CLN coefficients unaffected</dd>
+            </dl>
+          </div>
+          <pre id="v-json" aria-label="JSON record"></pre>
+          <p class="u">not served by the mockup: GET /api/v1/properties/refractive-index/cln.json &middot; /api/v1/dispersion/zelmon1997-cln.json &middot; /llms.txt</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="index" data-variant="tech" data-pair="index" data-spine="Index">
+    <div class="sh"><h2 class="biref">Index</h2></div>
+    <div class="scrollx">
+    <table class="idx kw">
+      <thead><tr><th>No.</th><th>Chapter</th><th>L1</th><th>L2</th><th>L3</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td class="h">Crystal</td><td>R3c cell, polarity, congruent vs stoichiometric</td><td>Li / Nb / empty octahedra along c; antisite and vacancy models; T<sub>c</sub>, E<sub>c</sub> vs composition</td><td>defect equilibria, domain-wall energetics, composition-dependent tensors</td></tr>
+        <tr><td>02</td><td class="h"><a href="chapter.html">Light</a></td><td>birefringence, <a href="chapter.html">Pockels effect</a>, frequency conversion</td><td>index ellipsoid, r and d tensors, QPM, Sellmeier models with errata</td><td>EO overlap and its normalization, coupled-mode &chi;<sup>(2)</sup>, Lugiato-Lefever combs</td></tr>
+        <tr><td>03</td><td class="h">Sound</td><td>piezoelectricity, SAW</td><td>c, e, &epsilon; tensors; IDTs; k<sup>2</sup> by cut</td><td>Christoffel slowness, piezo-optomechanics, phonon waveguides</td></tr>
+        <tr><td>04</td><td class="h">Quirks</td><td>optical damage, pyroelectric charging, bias drift</td><td>photorefractive transport, GRIIRA, DC-drift mechanisms</td><td>multilayer relaxation models, MgO threshold doping</td></tr>
+        <tr><td>05</td><td class="h">Making</td><td>boule, wafer, thin film</td><td>Czochralski, ion slicing, bonding, CMP, Ar<sup>+</sup> milling, poling</td><td>process windows, sidewall and redeposition, loss vs process</td></tr>
+        <tr><td>06</td><td class="h">Devices</td><td>modulators, converters, combs, transducers</td><td>V<sub>&pi;</sub>L vs bandwidth, ring EO tuning, PPLN SHG and OPO</td><td>traveling-wave response, records with dated sources</td></tr>
+        <tr><td>07</td><td class="h">History</td><td>1949 to 2026</td><td>about 90 dated events</td><td>disputed priorities</td></tr>
+        <tr><td>08</td><td class="h">Industry</td><td>supply chain</td><td>platform comparison from eo-modulator-atlas</td><td>market estimates by evidence grade, ecosystem by region</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- ============ chapters ============ -->
+  <section class="v-sec v-w" id="v-chapters" data-variant="visual" data-pair="index" data-spine="Chapters">
+    <header class="v-sh"><h2 class="biref">Chapters</h2></header>
+    <div class="v-doors">
+      <div class="v-door" data-art="crystal" aria-disabled="true" data-pop="d01"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">01</span></div><div class="v-door-body"><span class="v-door-t">Crystal</span><span class="v-door-kw">R3c cell, polarity, congruent vs stoichiometric</span><span class="v-door-st">Not built</span></div></div>
+      <a class="v-door" data-art="light" href="chapter.html?mode=visual" data-pop="d02"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">02</span></div><div class="v-door-body"><span class="v-door-t">Light</span><span class="v-door-kw">birefringence, Pockels effect, frequency conversion</span><span class="v-door-st">2.2 Pockels effect, L1 to L3</span></div></a>
+      <div class="v-door" data-art="sound" aria-disabled="true" data-pop="d03"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">03</span></div><div class="v-door-body"><span class="v-door-t">Sound</span><span class="v-door-kw">piezoelectricity, SAW</span><span class="v-door-st">Not built</span></div></div>
+      <div class="v-door" data-art="quirks" aria-disabled="true" data-pop="d04"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">04</span></div><div class="v-door-body"><span class="v-door-t">Quirks</span><span class="v-door-kw">optical damage, pyroelectric charging, bias drift</span><span class="v-door-st">Not built</span></div></div>
+      <div class="v-door" data-art="making" aria-disabled="true" data-pop="d05"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">05</span></div><div class="v-door-body"><span class="v-door-t">Making</span><span class="v-door-kw">boule, wafer, thin film</span><span class="v-door-st">Not built</span></div></div>
+      <div class="v-door" data-art="devices" aria-disabled="true" data-pop="d06"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">06</span></div><div class="v-door-body"><span class="v-door-t">Devices</span><span class="v-door-kw">modulators, converters, combs, transducers</span><span class="v-door-st">Not built</span></div></div>
+      <div class="v-door" data-art="history" aria-disabled="true" data-pop="d07"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">07</span></div><div class="v-door-body"><span class="v-door-t">History</span><span class="v-door-kw">1949 to 2026</span><span class="v-door-st">Not built</span></div></div>
+      <div class="v-door" data-art="industry" aria-disabled="true" data-pop="d08"><div class="v-door-art"><canvas aria-hidden="true"></canvas><span class="v-door-no">08</span></div><div class="v-door-body"><span class="v-door-t">Industry</span><span class="v-door-kw">supply chain</span><span class="v-door-st">Not built</span></div></div>
+    </div>
+  </section>
+
+  <section id="instruments" data-variant="tech" data-pair="instruments" data-spine="Instruments">
+    <div class="sh"><h2 class="biref">Instruments</h2></div>
+    <div class="scrollx">
+    <table class="idx kw">
+      <thead><tr><th>ID</th><th>Instrument</th><th>Inputs</th><th>Outputs</th><th>Model</th></tr></thead>
+      <tbody>
+        <tr><td><a href="#fig0">F1</a></td><td class="h"><a href="#fig0">Conoscope, index ellipsoid</a></td><td>cut, thickness, E (x, y, z), &lambda; or white light</td><td>conoscopic figure, index ellipsoid, induced &Delta;n</td><td>Zelmon 1997 n<sub>o</sub>, n<sub>e</sub>; r tensor (Weis &amp; Gaylord 1985)</td></tr>
+        <tr><td>F2</td><td class="h">Phase matching</td><td>&lambda;<sub>pump</sub>, &lambda;<sub>signal</sub>, T; SHG, SFG, DFG, OPO</td><td>QPM period (1064 &rarr; 532 nm: <span class="mono" id="v-qpm"></span>), tuning curves, acceptance bandwidths</td><td>Sellmeier models with errata; coupled-mode &chi;<sup>(2)</sup></td></tr>
+        <tr><td>F3</td><td class="h">Modulator</td><td>electrode gap, length, waveguide cross-section</td><td>V<sub>&pi;</sub>L, velocity mismatch, RF loss, impedance, EO response</td><td>eo-modulator-atlas FEM, <span class="term" data-pop="atlas">11/11 vs scikit-fem</span></td></tr>
+        <tr><td>F4</td><td class="h">Tensors</td><td>Euler angles; X-, Y-, Z-cut, 128&deg; Y-X; +z flip</td><td>rotated r, d, c, e, &epsilon;; COMSOL-ordered and JSON export</td><td>IEEE Std 176-1987 axes</td></tr>
+        <tr><td>F5</td><td class="h">Platforms</td><td>platform filter: TFLN, TFLT, SiPh, InP, BTO, polymer, bulk Ti:LN</td><td>V<sub>&pi;</sub>L vs EO bandwidth vs year</td><td>eo-modulator-atlas rows, pinned commit</td></tr>
+        <tr><td>F6</td><td class="h">Crystal in hand</td><td>crystal or LNOI wafer orientation, zoom, film thickness</td><td>R3c lattice, thin-film interference color</td><td>Hsu 1997 CIF (COD 2101845), transfer matrix</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- ============ instruments (VISUAL) ============ -->
+  <section class="v-sec v-w" id="v-instr" data-variant="visual" data-pair="instruments" data-spine="Instruments">
+    <header class="v-sh"><h2 class="biref">Instruments</h2></header>
+    <div class="v-instr">
+      <a class="v-icard" href="#v-conoscope"><span class="v-icard-id">F1</span><span class="v-icard-t">Conoscope, index ellipsoid</span><span class="v-io"><span>cut, thickness, E (x, y, z), &lambda; or white light</span><span class="v-io-arrow" aria-hidden="true"></span><span>conoscopic figure, index ellipsoid, induced &Delta;n</span></span><span class="v-icard-m">Zelmon 1997 n<sub>o</sub>, n<sub>e</sub>; r tensor (Weis &amp; Gaylord 1985)</span><span class="v-icard-st">Built: conoscope above</span></a>
+      <div class="v-icard" aria-disabled="true"><span class="v-icard-id">F2</span><span class="v-icard-t">Phase matching</span><span class="v-io"><span>&lambda;<sub>pump</sub>, &lambda;<sub>signal</sub>, T; SHG, SFG, DFG, OPO</span><span class="v-io-arrow" aria-hidden="true"></span><span>QPM period (1064 &rarr; 532 nm: <span class="v-num" id="v-qpm2"></span>), tuning curves, acceptance bandwidths</span></span><span class="v-icard-m">Sellmeier models with errata; coupled-mode <i>&chi;</i><sup>(2)</sup></span><span class="v-icard-st">Not built</span></div>
+      <div class="v-icard" aria-disabled="true"><span class="v-icard-id">F3</span><span class="v-icard-t">Modulator</span><span class="v-io"><span>electrode gap, length, waveguide cross-section</span><span class="v-io-arrow" aria-hidden="true"></span><span>V<sub>&pi;</sub>L, velocity mismatch, RF loss, impedance, EO response</span></span><span class="v-icard-m">eo-modulator-atlas FEM, <span class="term" data-pop="atlas">11/11 vs scikit-fem</span></span><span class="v-icard-st">Not built</span></div>
+      <div class="v-icard" aria-disabled="true"><span class="v-icard-id">F4</span><span class="v-icard-t">Tensors</span><span class="v-io"><span>Euler angles; X-, Y-, Z-cut, 128&deg; Y-X; +z flip</span><span class="v-io-arrow" aria-hidden="true"></span><span>rotated r, d, c, e, &epsilon;; COMSOL-ordered and JSON export</span></span><span class="v-icard-m">IEEE Std 176-1987 axes</span><span class="v-icard-st">Not built</span></div>
+      <div class="v-icard" aria-disabled="true"><span class="v-icard-id">F5</span><span class="v-icard-t">Platforms</span><span class="v-io"><span>platform filter: TFLN, TFLT, SiPh, InP, BTO, polymer, bulk Ti:LN</span><span class="v-io-arrow" aria-hidden="true"></span><span>V<sub>&pi;</sub>L vs EO bandwidth vs year</span></span><span class="v-icard-m">eo-modulator-atlas rows, pinned commit</span><span class="v-icard-st">Not built</span></div>
+      <div class="v-icard" aria-disabled="true"><span class="v-icard-id">F6</span><span class="v-icard-t">Crystal in hand</span><span class="v-io"><span>crystal or LNOI wafer orientation, zoom, film thickness</span><span class="v-io-arrow" aria-hidden="true"></span><span>R3c lattice, thin-film interference color</span></span><span class="v-icard-m">Hsu 1997 CIF (COD 2101845), transfer matrix</span><span class="v-icard-st">Not built</span></div>
+    </div>
+  </section>
+
+  <section id="chronology" data-variant="tech" data-pair="chronology" data-spine="Chronology">
+    <div class="sh"><h2 class="biref">Chronology</h2></div>
+    <div class="scrollx">
+    <table class="log">
+      <thead><tr><th>Date</th><th>Event</th><th>Reference</th></tr></thead>
+      <tbody id="chron"></tbody>
+    </table>
+    </div>
+  </section>
+
+
+  <!-- ============ chronology ============ -->
+  <section class="v-sec v-w" id="v-chron" data-variant="visual" data-pair="chronology" data-spine="Chronology">
+    <header class="v-sh"><h2 class="biref">Chronology</h2><p class="v-sub">Select a marker on the time axis to bring its event card into view; the cards scroll sideways.</p></header>
+    <div class="v-tl-axis" id="v-tl-axis"></div>
+    <ol class="v-tl-cards" id="v-tl-cards"></ol>
+  </section>
+
+  <section id="platforms" data-spine="Platforms">
+    <div class="sh"><h2 class="biref">Platforms</h2></div>
+    <p class="nodata">F5 (eo-modulator-atlas rows, pinned commit) is not rendered in the mockup; this area holds no data.</p>
+  </section>
 </main>
 
 <footer>
-  <div class="wrap grid">
-    <div class="wafer"><div class="small" style="margin-bottom:8px">Site map (each die is a page)</div><svg viewBox="0 0 240 250" data-here=""></svg></div>
-    <div class="fine">
-      <p style="margin-top:0"><b style="color:var(--text)">Mockup, 2026-10-25.</b> Theme proposal "Optic Axis": the c-axis spine on the left, ornaments with the crystal's own 3m symmetry, color from polarization optics. Every number shows a provenance badge (<span class="badge reported">reported</span> <span class="badge derived">derived</span> <span class="badge template">template</span>; source status <span class="badge p">P</span> <span class="badge s">S</span> <span class="badge u">U</span>). Placeholders hold no data.</p>
-      <p>Hidden details: the background dots are a triangular lattice with missing sites (lithium vacancies; decorative density). Move the mouse: a faint green trace is written and slowly erased, like a photorefractive grating; IR-colored marks nearby dim (GRIIRA). The section dividers are poled domains. Motion toggle in the top bar turns all of it off.</p>
-      <p>Code GPL-3.0. Sources and research notes in the repository.</p>
+  <div class="grid">
+    <div class="wafer"><h3>Site map</h3><svg data-here="Landing" role="img" aria-label="Site map as a wafer map; each die is a page"></svg></div>
+    <div>
+      <h3>Status key</h3>
+      <div class="key">
+        <span><span class="b p">P</span></span><span>source read at the locator; the value originates there</span>
+        <span><span class="b pc">P-comp</span></span><span>read in a compilation that cites the original; original not read</span>
+        <span><span class="b pc">P-db</span></span><span>CC0 database transcription of a primary source</span>
+        <span><span class="b s">S</span></span><span>secondary source quoting the original</span>
+        <span><span class="b r">reported</span></span><span>as reported by the authors</span>
+        <span><span class="b d">derived</span></span><span>computed in the page from the listed inputs</span>
+        <span><span class="b t">template</span></span><span>display parameter, not a material property</span>
+      </div>
     </div>
-    <div class="bias"><div>Modulator bias point</div><div class="meter" title="Click to re-lock" data-pop="drift"><span class="pt"></span></div><div class="state"></div></div>
+    <div>
+      <h3>License</h3>
+      <p class="fine">Code GPL-3.0. Data CC BY 4.0.<br>Source: <a class="u" href="https://github.com/jwt625/lithium-niobate">github.com/jwt625/lithium-niobate</a></p>
+      <div data-variant="visual"><h3 class="v-foot-h">Background lattice</h3><p class="fine">Li sites of congruent LN: 4.0% vacant, 1.0% Nb antisites <span class="b d" data-pop="v-vac">derived</span></p></div>
+    </div>
+    <div class="bias">
+      <h3>MZM bias</h3>
+      <svg data-pop="drift" role="img" aria-label="Modulator transfer curve with bias point; click to re-lock"></svg>
+      <div class="state" aria-live="off"></div>
+    </div>
   </div>
+  <div class="imprint"><span>lithium-niobate.com</span><span><span class="tag">Mockup</span> <span class="tag">2026-10-25</span></span></div>
 </footer>
 
 <script src="ln.js"></script>
 <script>
+// Popup contents. Sources: DevLog-003 spec table; research/R06, R14 (status codes and locators).
+const WG = "R. S. Weis, T. K. Gaylord, Appl. Phys. A 37, 191 (1985), <a href='https://doi.org/10.1007/BF00614817'>doi:10.1007/BF00614817</a>";
+const VW = "T. Volk, M. W&ouml;hlecke, <i>Lithium Niobate: Defects, Photorefraction and Ferroelectric Switching</i>, Springer Ser. Mater. Sci. 115 (2008), <a href='https://doi.org/10.1007/978-3-540-70766-0'>doi:10.1007/978-3-540-70766-0</a>";
+const ZEL = "D. E. Zelmon, D. L. Small, D. Jundt, JOSA B 14, 3319 (1997), <a href='https://doi.org/10.1364/JOSAB.14.003319'>doi:10.1364/JOSAB.14.003319</a>; coefficients via refractiveindex.info (CC0). Erratum JOSA B 43, 2788 (2026), <a href='https://doi.org/10.1364/JOSAB.616304'>doi:10.1364/JOSAB.616304</a>: MgO:LN headings only";
+const PC = ["pc", "P-comp"];
+const DOOR = (h, l1, l2, l3) => ({ h, body: `<b>L1</b> ${l1}<br><b>L2</b> ${l2}<br><b>L3</b> ${l3}` });
 window.POPS = {
-  pockels: { h: "Pockels effect", body: "An electric field changes the crystal's refractive index in proportion to the field. No moving parts and no free carriers: the response is essentially instantaneous, so LN modulators reach EO bandwidths beyond 100 GHz. Largest coefficient: r<sub>33</sub> about 31 pm/V (clamped, visible light).", badges: [["s", "S: Rauber 1978 via Veit et al."], ["reported", "reported"]], src: "r values: arXiv cond-mat/0311240, Table 1. Bandwidth records: research note R08.", more: ["Chapter 2.2: the Pockels effect", "chapter.html"] },
-  crossed: { h: "Crossed polarizers", body: "Two polarizing filters at 90 degrees block all light, unless something between them rotates or splits the polarization. A birefringent crystal does exactly that, so it lights up in colors." },
-  isogyre: { h: "Isogyres and isochromes", body: "In convergent light, a uniaxial plate cut perpendicular to its optic axis shows a dark cross (isogyres: polarization along the polarizers) and colored rings (isochromes: equal retardation). A field perpendicular to c makes LN biaxial through r<sub>22</sub>; the cross separates into two branches around two optic axes. A field along c keeps it uniaxial and only rescales the rings.", badges: [["derived", "derived"]], src: "Model: weak-birefringence doubled-angle sum of the natural and field-induced terms (mockup ln.js)." },
-  zelmon: { h: "Refractive indices", body: "Congruent LN, 21 C. Ordinary n<sub>o</sub> = <span class='mono' id='p-no'></span>, extraordinary n<sub>e</sub> = <span class='mono' id='p-ne'></span> at 632.8 nm. Negative uniaxial: light polarized along the c axis travels faster.", badges: [["p", "P-db"], ["derived", "derived"]], src: "Zelmon, Small, Jundt, JOSA B 14, 3319 (1997), <a href='https://doi.org/10.1364/JOSAB.14.003319'>doi:10.1364/JOSAB.14.003319</a>; coefficients via refractiveindex.info (CC0)." },
-  r22: { h: "r<sub>22</sub>, unclamped", body: "The coefficient that couples an in-plane field to in-plane birefringence. Composition-dependent (reported 1.5 to 9.9 pm/V); roughly halves when the crystal is clamped (high frequency).", badges: [["p", "P-comp"]], src: "Matches 6.7 (Lenzo et al. 1966) and +6.81 (Zook et al. 1967) as compiled in Weis &amp; Gaylord, Appl. Phys. A 37, 191 (1985); composition range via Veit et al. Status P-comp: read in a compilation, original papers not yet read (research R14)." },
-  qpm: { h: "Poled domains", body: "These stripes are ferroelectric domains with alternating polarization, as in periodically poled LN. The period on this page is real: first-order quasi-phase matching for 1064 nm to 532 nm second-harmonic generation in bulk congruent LN is <span class='mono' id='p-qpm'></span>.", badges: [["p", "P-db inputs"], ["derived", "derived"]], src: "Computed from Zelmon 1997 n<sub>e</sub> (21 C): &Lambda; = &lambda; / (2 (n<sub>e</sub>(&lambda;/2) - n<sub>e</sub>(&lambda;)))." },
-  ai: { h: "TFLN in AI data centers", body: "Thin-film LN modulators target 200 Gb/s per lane links now, with 400 Gb/s per lane sampling. Vendor and trade-press claims, dated 2026.", badges: [["v", "vendor claim"]], src: "Research note R09 (graded sources)." },
-  "life-internet": { h: "Long-haul modulators", body: "Titanium-indiffused LN waveguides (Schmidt and Kaminow, 1974) became the workhorse electro-optic modulators of fiber-optic telecom.", badges: [["p", "V: paper metadata checked"]], src: "Appl. Phys. Lett. 25, 458 (1974), <a href='https://doi.org/10.1063/1.1655547'>doi:10.1063/1.1655547</a>; research note R07." },
-  "life-phone": { h: "SAW filters", body: "Surface-acoustic-wave filters launch sound on a piezoelectric crystal with interdigital electrodes (White and Voltmer, 1965). In phones most SAW filters use lithium tantalate; BAW filters use AlN.", src: "IDT: Appl. Phys. Lett. 7, 314 (1965); market split: research note R09." },
-  "life-quantum": { h: "Quantum light from PPLN", body: "Periodically poled LN waveguides generate photon pairs and squeezed light; on-chip squeezing of several dB has been measured.", src: "Research note R08 (records table)." },
-  "life-ai": { h: "Light for AI", body: "Thin-film LN modulators are being built into pluggable and co-packaged optics for AI clusters. The IR-colored trace on this card dims when the green cursor passes: a nod to green-induced infrared absorption (GRIIRA).", badges: [["v", "vendor claim"]], src: "Research notes R04, R09." },
-  drift: { h: "Bias drift", body: "A DC bias on a thin-film LN modulator is slowly screened by mobile charge in the film, cladding, and interfaces, so the operating point drifts and needs a control loop. This indicator drifts while the page is open; click it to re-lock. Mechanism literature: 2024-2026.", src: "Research note R08 sec. 3 (Holzgrafe 2024; Yeh 2026)." },
+  "s-pg": { h: "Point group 3m, space group R3c", body: "Ferroelectric phase.", badges: [PC], src: `${WG}. Structure: R. Hsu et al., Acta Cryst. B 53, 420 (1997), <a href='https://doi.org/10.1107/S010876819600777X'>doi:10.1107/S010876819600777X</a> (COD 2101845).` },
+  "s-lat": { h: "Lattice constants", body: "<span class='v'>a = 5.148 &Aring;, c = 13.863 &Aring;</span>, hexagonal setting, room T. Hsu et al. 1997 (COD 2101845) gives the same values.", badges: [PC], src: `W. L. Bond values in Abrahams et al. (1966), quoted in ${WG}, p. 193, Fig. 6.` },
+  "s-rho": { h: "Density", body: "<span class='v'>4642.8 &plusmn; 0.2 kg/m<sup>3</sup></span>, congruent.", badges: [["p", "P"]], src: "J. Kushibiki et al., IEEE Trans. Ultrason. Ferroelectr. Freq. Control 46, 1315 (1999), <a href='https://doi.org/10.1109/58.796136'>doi:10.1109/58.796136</a>." },
+  "s-tc": { h: "Curie temperature", body: "<span class='v'>1140 &deg;C</span>, congruent.", badges: [PC], src: `${VW}, Table 1.1.` },
+  "s-tm": { h: "Melting point", body: "<span class='v'>1255 &deg;C</span>, congruent.", badges: [PC], src: `${VW}, Table 1.1.` },
+  "s-ec": { h: "Coercive field", body: "<span class='v'>21 kV/mm</span> (210 kV/cm), congruent, room T.", badges: [PC], src: `${VW}, Table 7.1, p. 185.` },
+  "s-tr": { h: "Transparency range", body: "<span class='v'>0.32&ndash;5 &micro;m</span>, congruent. The source does not state the absorption criterion for the edges.", badges: [PC], src: `${VW}, Table 1.2, p. 4.` },
+  "s-n": { h: "Refractive indices, congruent LN, 21 &deg;C", body: "<span class='v' id='p-n'></span>Sellmeier, valid 0.4&ndash;5.0 &micro;m; evaluated in the browser.", badges: [["pc", "P-db"], ["d", "derived"]], src: `${ZEL}.` },
+  "s-r33": { h: "r<sub>33</sub>, 633 nm", body: "<span class='v'>30.8 pm/V</span> clamped (S, Turner 1966); <span class='v'>32.2 pm/V</span> free (T, Zook et al. 1967).", badges: [PC], src: `${WG}.` },
+  "s-k": { h: "Thermal conductivity", body: "<span class='v'>3.92 W/(m&middot;K)</span>, congruent, room T.", badges: [PC], src: `${VW}, Table 1.1 (ref. Nakamura et al., J. Cryst. Growth 290, 144 (2006)).` },
+  r22: { h: "r<sub>22</sub>, free (T)", body: "<span class='v'>6.8 pm/V</span>. Couples a field perpendicular to c to birefringence in the plane perpendicular to c. Compiled values: 6.7 (Lenzo et al. 1966), +6.81 (Zook et al. 1967).", badges: [PC], src: `${WG}; ${VW}, Table 1.2.` },
+  na: { h: "Numerical aperture 0.55", body: "Half-angle of the convergent cone in air, 33.4&deg;. Chosen for display.", badges: [["t", "template"]] },
+  cono: { h: "Fig. 0 model", body: "z-cut plate, polarizer along x, analyzer along y. Retardance vector B = natural term (n<sub>o</sub> &minus; n<sub>e</sub>) sin<sup>2</sup>&theta; (slow axis tangential) + field term n<sub>o</sub><sup>3</sup> r<sub>22</sub> E (E along x: axes at 45&deg;; E along y: axes along x, y), summed in doubled angle. I = sin<sup>2</sup>2&psi; &middot; sin<sup>2</sup>(&Gamma;/2), &Gamma; = 2&pi; d |B| / (&lambda; cos &theta;). White light: 11 spectral samples, 420&ndash;680 nm. Optic axes lie where the two terms cancel: sin<sup>2</sup>&theta;<sub>int</sub> = n<sub>o</sub><sup>3</sup> r<sub>22</sub> E / (n<sub>o</sub> &minus; n<sub>e</sub>), sin &theta;<sub>air</sub> = n<sub>o</sub> sin &theta;<sub>int</sub>. TECH mode shows white light as luminance.", badges: [["d", "derived"]], src: "Weak-birefringence approximation; indices Zelmon 1997 (P-db); r<sub>22</sub> as listed." },
+  atlas: { h: "eo-modulator-atlas engine", body: "Browser FEM cross-section solver (GPL-3.0-or-later). 11/11 independent-reference tests against a scikit-fem full-vector mode solver; 226 engine tests (223 pass, 2 skipped, 1 todo), gate audit 2026-10-15.", src: "<a href='https://github.com/jwt625/eo-modulator-atlas'>github.com/jwt625/eo-modulator-atlas</a>" },
+  qpm: { h: "Poled domains", body: "Alternating &plusmn;z ferroelectric domains, drawn not to scale. First-order QPM period for e-e-e SHG 1064 &rarr; 532 nm in bulk congruent LN at 21 &deg;C: <span class='v' id='p-qpm'></span>, &Lambda; = &lambda; / (2 (n<sub>e</sub>(&lambda;/2) &minus; n<sub>e</sub>(&lambda;))).", badges: [["pc", "P-db inputs"], ["d", "derived"]], src: "n<sub>e</sub>: Zelmon et al. 1997." },
+  "v-cono": { h: "Conoscope model", body: "z-cut plate, polarizer along x, analyzer along y. Retardance vector B = natural term (n<sub>o</sub> &minus; n<sub>e</sub>) sin<sup>2</sup>&theta; (slow axis tangential) + field term n<sub>o</sub><sup>3</sup> r<sub>22</sub> E, summed in doubled angle. I = sin<sup>2</sup>2&psi; &middot; sin<sup>2</sup>(&Gamma;/2), &Gamma; = 2&pi; d |B| / (&lambda; cos &theta;). White light: 11 spectral samples, 420&ndash;680 nm. The ring scale under the eyepiece samples the E = 0 figure for the current d and source along the 45&deg; diagonal; retardation at the edge: d (n<sub>o</sub> &minus; n<sub>e</sub>) sin<sup>2</sup>&theta;<sub>int</sub> / cos &theta;<sub>int</sub> at 550 nm, sin &theta;<sub>int</sub> = NA / n<sub>o</sub>.", badges: [["d", "derived"]], src: "Weak-birefringence approximation; indices Zelmon 1997 (P-db); r<sub>22</sub> as listed." },
+  "v-ring": { h: "Eyepiece ring ticks", body: "Long ticks at 90&deg;, 210&deg;, 330&deg; from x: traces of the three mirror planes of 3m with x perpendicular to a mirror plane (the setting of Weis &amp; Gaylord 1985). Short ticks: the opposite ends of the same traces.", badges: [["d", "derived"]] },
+  "v-qpm": { h: "Poled domains, to scale", body: "Alternating &plusmn;z ferroelectric domains drawn at 2 px per &micro;m, 50% duty cycle. First-order QPM period for e-e-e SHG 1064 &rarr; 532 nm in bulk congruent LN at 21 &deg;C, &Lambda; = &lambda; / (2 (n<sub>e</sub>(&lambda;/2) &minus; n<sub>e</sub>(&lambda;))). Section rules on this page repeat the same period.", badges: [["pc", "P-db inputs"], ["d", "derived"]], src: "n<sub>e</sub>: Zelmon et al. 1997." },
+  "v-false": { h: "False color", body: "1064 nm and 1550 nm light is invisible. These pages draw it in declared false colors, always dashed: 1064 nm orange, 1550 nm magenta. Visible wavelengths use computed spectral colors: CIE 1931 2&deg; color-matching functions (Wyman, Sloan, Shirley 2013 fit), desaturated toward the sRGB white point until in gamut, which keeps the dominant wavelength." },
+  "v-vac": { h: "Li-vacancy lattice", body: "Congruent LN has [Li]/[Nb] = 0.94. In the Li-site vacancy model (Li<sub>1&minus;5x</sub>Nb<sub>x</sub>V<sub>4x</sub>)NbO<sub>3</sub>, (1 &minus; 5x)/(1 + x) = 0.94 gives x = 0.0101: 4.0% of Li sites vacant (missing dots), 1.0% occupied by Nb antisites (rings). Lattice spacing is decorative.", badges: [["pc", "P-comp input"], ["d", "derived"]], src: `${VW}, p. 9. The vacancy model is an assumption of this texture.` },
+  d01: DOOR("01 Crystal", "R3c cell, polarity, congruent vs stoichiometric", "Li / Nb / empty octahedra along c; antisite and vacancy models; T<sub>c</sub>, E<sub>c</sub> vs composition", "defect equilibria, domain-wall energetics, composition-dependent tensors"),
+  d02: DOOR("02 Light", "birefringence, Pockels effect, frequency conversion", "index ellipsoid, r and d tensors, QPM, Sellmeier models with errata", "EO overlap and its normalization, coupled-mode &chi;<sup>(2)</sup>, Lugiato-Lefever combs"),
+  d03: DOOR("03 Sound", "piezoelectricity, SAW", "c, e, &epsilon; tensors; IDTs; k<sup>2</sup> by cut", "Christoffel slowness, piezo-optomechanics, phonon waveguides"),
+  d04: DOOR("04 Quirks", "optical damage, pyroelectric charging, bias drift", "photorefractive transport, GRIIRA, DC-drift mechanisms", "multilayer relaxation models, MgO threshold doping"),
+  d05: DOOR("05 Making", "boule, wafer, thin film", "Czochralski, ion slicing, bonding, CMP, Ar<sup>+</sup> milling, poling", "process windows, sidewall and redeposition, loss vs process"),
+  d06: DOOR("06 Devices", "modulators, converters, combs, transducers", "V<sub>&pi;</sub>L vs bandwidth, ring EO tuning, PPLN SHG and OPO", "traveling-wave response, records with dated sources"),
+  d07: DOOR("07 History", "1949 to 2026", "about 90 dated events", "disputed priorities"),
+  d08: DOOR("08 Industry", "supply chain", "platform comparison from eo-modulator-atlas", "market estimates by evidence grade, ecosystem by region"),
+  drift: { h: "Bias drift", body: "A DC bias on a thin-film LN modulator is screened over time by charge in the film, cladding, and interfaces, so the operating point moves and needs a control loop. TECH: fixed at quadrature. VISUAL: single-RC drift with &tau; = 40 s and 90&deg; span (display values, not measured); click to re-lock.", src: "TFLN EO relaxation, 1 mHz to 1 MHz: J. Holzgrafe et al., Opt. Express 32, 3619 (2024), <a href='https://doi.org/10.1364/OE.507536'>doi:10.1364/OE.507536</a>." },
 };
 </script>
 <script src="app.js"></script>
 <script>
-// hero conoscope
 (() => {
+  const no = (l) => LN.n("o", l), ne = (l) => LN.n("e", l);
+  const LAM = 0.6328;
+
+  // live numbers
+  document.getElementById("v-n").textContent = `${no(1.55).toFixed(4)}, ${ne(1.55).toFixed(4)}`;
+  const qpm = LN.qpmPeriodSHG(1.064);
+  document.getElementById("v-qpm").textContent = `${qpm.toFixed(2)} µm`;
+  const neRec = ne(1.55);
+  document.getElementById("rec-ne").textContent = neRec.toFixed(4);
+  const J = (k, v) => `  <span class="k">"${k}"</span>: ${v}`;
+  document.getElementById("json").innerHTML = ["{",
+    J("property", '"refractive_index_extraordinary"') + ",",
+    J("variant", '"cln"') + ",",
+    J("value", neRec.toFixed(4)) + ",",
+    J("unit", '{"ucum": "1"}') + ",",
+    J("conditions", "{"),
+    '    <span class="k">"wavelength_nm"</span>: 1550,',
+    '    <span class="k">"temperature_C"</span>: 21',
+    "  },",
+    J("model", '"zelmon1997-cln-e"') + ",",
+    J("doi", '"10.1364/JOSAB.14.003319"') + ",",
+    J("status", '"P-db"') + ",",
+    J("role", '"derived"'),
+    "}"].join("\n");
+  window.addEventListener("ln-pop", () => {
+    const a = document.getElementById("p-n");
+    if (a) a.innerHTML = [0.6328, 1.064, 1.55].map((l) => `${(l * 1000).toFixed(l < 1 ? 1 : 0)} nm: n<sub>o</sub> ${no(l).toFixed(4)}, n<sub>e</sub> ${ne(l).toFixed(4)}`).join("<br>") + "<br>";
+    const c = document.getElementById("p-qpm");
+    if (c) c.textContent = `${qpm.toFixed(2)} µm`;
+  });
+
+  // chronology (dates, references, DOIs: DevLog-003 / research R07)
+  const EV = [
+    ["1949-12-15", "Ferroelectricity in LiNbO<sub>3</sub> reported", "Matthias & Remeika, Phys. Rev. 76, 1886", "10.1103/PhysRev.76.1886.2"],
+    ["1965-06-14", "Tunable optical parametric oscillation in LiNbO<sub>3</sub>", "Giordmaine & Miller, PRL 14, 973", "10.1103/PhysRevLett.14.973"],
+    ["1965-12-15", "Interdigital transducer couples directly to surface elastic waves", "White & Voltmer, APL 7, 314", "10.1063/1.1754276"],
+    ["1966-07-01", "Optically induced index inhomogeneities (optical damage) in LiNbO<sub>3</sub> and LiTaO<sub>3</sub>", "Ashkin et al., APL 9, 72", "10.1063/1.1754607"],
+    ["1968-10-01", "Holographic storage in LiNbO<sub>3</sub>", "Chen, LaMacchia & Fraser, APL 13, 223", "10.1063/1.1652580"],
+    ["1974-10-15", "Ti-indiffused LiNbO<sub>3</sub> waveguides", "Schmidt & Kaminow, APL 25, 458", "10.1063/1.1655547"],
+    ["1993-02-01", "Field-poled first-order QPM waveguide for blue SHG", "Yamada et al., APL 62, 435", "10.1063/1.108925"],
+    ["1998-10-19", "Single-crystal LiNbO<sub>3</sub> films by crystal ion slicing", "Levy et al., APL 73, 2293", "10.1063/1.121801"],
+    ["2017-12-20", "Monolithic ultra-high-Q thin-film LiNbO<sub>3</sub> microring", "Zhang et al., Optica 4, 1536", "10.1364/OPTICA.4.001536"],
+    ["2018-10", "Thin-film LiNbO<sub>3</sub> modulators at CMOS-compatible voltages", "Wang et al., Nature 562, 101", "10.1038/s41586-018-0551-y"],
+  ];
+  document.getElementById("chron").innerHTML = EV.map(([d, e, c, doi]) =>
+    `<tr><td>${d}</td><td class="e">${e}</td><td><a href="https://doi.org/${doi}">${c.replace(/&/g, "&amp;")}</a></td></tr>`).join("");
+
+  // Fig. 0 conoscope
   const cv = document.getElementById("conoscope");
-  const S = Math.round(Math.min(560, cv.clientWidth * Math.min(2, devicePixelRatio || 1)));
-  cv.width = S; cv.height = S;
+  let S = 0;
+  const size = () => { // canvas resolution from the displayed width; skipped while the TECH panel is hidden (VISUAL)
+    if (!cv.clientWidth && S) return;
+    const s = Math.max(240, Math.round(Math.min(560, cv.clientWidth * Math.min(2, devicePixelRatio || 1))));
+    if (s !== S) { S = s; cv.width = S; cv.height = S; }
+  };
+  size();
   const ctx = cv.getContext("2d");
-  const st = { thicknessMm: 0.6, fieldKVmm: 0, fieldDir: "x", white: true, NA: 0.55 };
+  const st = ((window.LNSTATE ||= {}).cono ||= { E: 0, d: 0.6, dir: "x", src: null }); // shared with the VISUAL bench (visual.js)
+  const hudSrc = document.getElementById("hud-src"), hudDn = document.getElementById("hud-dn"), hudSt = document.getElementById("hud-st");
+  const srcEff = () => st.src || (LNUI.visual() ? "white" : "633");
   let queued = false;
-  const hud = document.getElementById("hud-r");
   function draw() {
     queued = false;
-    LN.renderConoscope(ctx, S, st);
-    const dn = LN.n("o", 0.6328) ** 3 * LN.R22_T * st.fieldKVmm * 1e6;
-    hud.textContent = `induced Δn = ${dn.toExponential(1)}`;
+    if (LNUI.visual()) return; // VISUAL draws the bench (visual.js) from the same state
+    size();
+    const white = srcEff() === "white", tech = !LNUI.visual();
+    LN.renderConoscope(ctx, S, { thicknessMm: st.d, fieldKVmm: st.E, fieldDir: st.dir, white, mono: tech, NA: 0.55 });
+    if (white && tech) { // luminance of the white-light figure
+      const img = ctx.getImageData(0, 0, S, S), p = img.data;
+      for (let i = 0; i < p.length; i += 4) { const y = 0.2126 * p[i] + 0.7152 * p[i + 1] + 0.0722 * p[i + 2]; p[i] = p[i + 1] = p[i + 2] = y; }
+      ctx.putImageData(img, 0, 0);
+    }
+    const dn = no(LAM) ** 3 * LN.R22_T * st.E * 1e6;
+    hudSrc.textContent = white ? (tech ? "white, luminance" : "white") : "632.8 nm";
+    hudDn.innerHTML = `Δn<sub>ind</sub> = ${dn.toExponential(2)} at 632.8 nm`; // fixed width: d.dde+0 at E = 0, d.dde-N otherwise
+    if (st.E > 0) {
+      const sInt = Math.sqrt(dn / (no(LAM) - ne(LAM))), sAir = no(LAM) * sInt;
+      const ang = sAir < 1 ? (Math.asin(sAir) * 180) / Math.PI : NaN;
+      hudSt.textContent = `biaxial, axes ±${Number.isFinite(ang) ? ang.toFixed(1).padStart(4) : " n/a"}° in air`;
+    } else hudSt.textContent = "uniaxial";
+    hudSt.title = "optic-axis state; angle from the plate normal, in air";
+    document.querySelectorAll("#src button").forEach((b) => b.classList.toggle("on", b.dataset.s === srcEff()));
+    document.querySelectorAll("#fdir button").forEach((b) => b.classList.toggle("on", b.dataset.f === st.dir));
   }
   const req = () => { if (!queued) { queued = true; requestAnimationFrame(draw); } };
-  const v = document.getElementById("v"), d = document.getElementById("d");
-  v.addEventListener("input", () => { st.fieldKVmm = +v.value; document.getElementById("vo").textContent = `${st.fieldKVmm.toFixed(2)} kV/mm`; v.setAttribute("aria-valuetext", `${st.fieldKVmm.toFixed(2)} kilovolts per millimeter`); req(); });
-  d.addEventListener("input", () => { st.thicknessMm = +d.value; document.getElementById("do").textContent = `${st.thicknessMm.toFixed(2)} mm`; d.setAttribute("aria-valuetext", `${st.thicknessMm.toFixed(2)} millimeters`); req(); });
-  document.querySelectorAll("#light button").forEach((b) => b.addEventListener("click", () => { document.querySelectorAll("#light button").forEach((x) => x.classList.toggle("on", x === b)); st.white = b.dataset.l === "white"; req(); }));
-  document.querySelectorAll("#fdir button").forEach((b) => b.addEventListener("click", () => { document.querySelectorAll("#fdir button").forEach((x) => x.classList.toggle("on", x === b)); st.fieldDir = b.dataset.f; req(); }));
-  const q = new URLSearchParams(location.search);
-  if (q.has("E")) { v.value = q.get("E"); v.dispatchEvent(new Event("input")); }
-  draw();
-
-  // mini conoscope in the F1 tile (field on, to show the split)
-  const mc = document.getElementById("mini-cono");
-  mc.width = 200; mc.height = 200;
-  LN.renderConoscope(mc.getContext("2d"), 200, { thicknessMm: 0.8, fieldKVmm: 3, fieldDir: "x", white: true, NA: 0.55 });
-
-  // live numbers for popups and data card
-  const qpm = LN.qpmPeriodSHG(1.064);
-  document.getElementById("qpm-lab").textContent = `Λ = ${qpm.toFixed(2)} µm (1064 → 532 nm SHG, CLN, 21 °C)`;
-  const ne = LN.n("e", 1.55);
-  document.getElementById("ne1550").textContent = ne.toFixed(4);
-  const J = (k, v, cls) => `  <span class="k">"${k}"</span>: <span class="${cls}">${v}</span>`;
-  document.getElementById("json").innerHTML = ["{",
-    J("property", '"refractive_index_extraordinary"', "s") + ",",
-    J("variant", '"cln"', "s") + ",",
-    J("value", ne.toFixed(4), "n") + ",",
-    J("unit", '{"ucum": "1"}', "s") + ",",
-    J("conditions", '{"wavelength_nm": 1550, "temperature_C": 21}', "s") + ",",
-    J("provenance", '{"model": "zelmon1997-cln-e",', "s"),
-    '                 <span class="s">"doi": "10.1364/JOSAB.14.003319",</span>',
-    '                 <span class="s">"status": "P-db", "role": "derived"}</span>',
-    "}"].join("\n");
-  const fillPop = () => {
-    const a = document.getElementById("p-no"), b = document.getElementById("p-ne"), c = document.getElementById("p-qpm");
-    if (a) a.textContent = LN.n("o", 0.6328).toFixed(4);
-    if (b) b.textContent = LN.n("e", 0.6328).toFixed(4);
-    if (c) c.textContent = `${qpm.toFixed(2)} µm`;
-  };
-  new MutationObserver(fillPop).observe(document.querySelector(".pop"), { childList: true });
-
-  // history strip (dates and DOIs from research note R07; status V = metadata checked)
-  const EV = [
-    ["1949-12-15", "Ferroelectricity found", "Matthias & Remeika, Phys. Rev. 76, 1886", "10.1103/PhysRev.76.1886.2"],
-    ["1965-06-14", "First tunable optical parametric oscillator", "Giordmaine & Miller, PRL 14, 973", "10.1103/PhysRevLett.14.973"],
-    ["1965-12-15", "Interdigital transducer: sound on a chip", "White & Voltmer, APL 7, 314", "10.1063/1.1754276"],
-    ["1966-07-01", "Optical damage discovered", "Ashkin et al., APL 9, 72", "10.1063/1.1754607"],
-    ["1968-10-01", "The damage becomes a memory: holograms", "Chen, LaMacchia & Fraser, APL 13, 223", "10.1063/1.1652580"],
-    ["1974-10-15", "Titanium-indiffused waveguides", "Schmidt & Kaminow, APL 25, 458", "10.1063/1.1655547"],
-    ["1993-02-01", "Electric-field periodic poling", "Yamada et al., APL 62, 435", "10.1063/1.108925"],
-    ["1998-10-19", "Crystal ion slicing of single-crystal films", "Levy et al., APL 73, 2293", "10.1063/1.121801"],
-    ["2017-12-20", "Ultra-high-Q thin-film LN microring", "Zhang et al., Optica 4, 1536", "10.1364/OPTICA.4.001536"],
-    ["2018-10", "CMOS-voltage thin-film LN modulators", "Wang et al., Nature 562, 101", "10.1038/s41586-018-0551-y"],
-  ];
-  const track = document.getElementById("track");
-  EV.forEach(([d, t, c, doi], i) => {
-    const el = document.createElement("div");
-    el.className = `ev ${i % 2 ? "dn" : "up"}`;
-    el.style.left = `${2 + i * 9.6}%`;
-    el.dataset.pop = `ev${i}`;
-    el.innerHTML = `<div class="d">${d}</div><div class="t">${t}</div>`;
-    track.appendChild(el);
-    window.POPS[`ev${i}`] = { h: t, body: `${c}.`, badges: [["p", "V: metadata checked"]], src: `<a href="https://doi.org/${doi}">doi:${doi}</a> · research note R07` };
+  const eIn = document.getElementById("e"), dIn = document.getElementById("d");
+  const setE = () => { st.E = +eIn.value; const t = st.E.toFixed(2); document.getElementById("eo").textContent = `${t} kV/mm`; eIn.setAttribute("aria-valuetext", `${t} kilovolts per millimeter`); req(); };
+  const setD = () => { st.d = +dIn.value; const t = st.d.toFixed(2); document.getElementById("do").textContent = `${t} mm`; dIn.setAttribute("aria-valuetext", `${t} millimeters`); req(); };
+  eIn.addEventListener("input", setE); dIn.addEventListener("input", setD);
+  document.querySelectorAll("#fdir button").forEach((b) => b.addEventListener("click", () => { st.dir = b.dataset.f; req(); }));
+  document.querySelectorAll("#src button").forEach((b) => b.addEventListener("click", () => { st.src = b.dataset.s; req(); }));
+  window.addEventListener("ln-mode", () => { // resync inputs from the shared state, then redraw
+    eIn.value = st.E; dIn.value = st.d;
+    const tE = st.E.toFixed(2), tD = st.d.toFixed(2);
+    document.getElementById("eo").textContent = `${tE} kV/mm`; eIn.setAttribute("aria-valuetext", `${tE} kilovolts per millimeter`);
+    document.getElementById("do").textContent = `${tD} mm`; dIn.setAttribute("aria-valuetext", `${tD} millimeters`);
+    req();
   });
+  const q = new URLSearchParams(location.search);
+  if (q.has("E")) { const v = Math.min(5, Math.max(0, parseFloat(q.get("E")) || 0)); eIn.value = v; setE(); }
+  if (q.has("d")) { const v = Math.min(2, Math.max(0.2, parseFloat(q.get("d")) || 0.6)); dIn.value = v; setD(); }
+  document.getElementById("v-qpm2").textContent = `${qpm.toFixed(2)} µm`;
+  draw();
 })();
 </script>
+<script src="visual.js"></script>
 </body>
 </html>

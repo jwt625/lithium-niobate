@@ -1,0 +1,1041 @@
+{
+  "dispersion": [],
+  "events": [
+    {
+      "chapter": 2,
+      "citations": [
+        {
+          "text": "Lead: Original paper; Polish Academy history pages"
+        }
+      ],
+      "date": "1916",
+      "date_alt": [
+        {
+          "date": "1918",
+          "note": "Claimed publication, Z. Phys. Chem. 92, 219"
+        }
+      ],
+      "date_precision": "year",
+      "id": "1916-czochralski-method-unverified",
+      "kind": "history",
+      "notes": "Why unverified: the pen anecdote has no primary source (lead: Tomaszewski 2002, doi:10.1016/S0022-0248(01)02195-9). The method paper itself is verified: Z. Phys. Chem. 92, 219, received 1916-08-19, issued 1917-04-24, volume dated 1918; event h-1917-czochralski if present).",
+      "status": "U",
+      "title": "Czochralski discovered the pulling method in 1916 (pen dipped into molten tin)",
+      "verified": false
+    },
+    {
+      "chapter": 5,
+      "citations": [
+        {
+          "text": "Lead: APL 22, 540"
+        }
+      ],
+      "date": "1973",
+      "date_precision": "year",
+      "id": "1973-kaminow-thin-film-method-unverified",
+      "kind": "history",
+      "notes": "Why unverified: Abstract says out-diffused planar guide in bulk LN; paper body not read",
+      "status": "U",
+      "title": "How the 1973 Kaminow \"thin film\" was made",
+      "verified": false
+    },
+    {
+      "chapter": 4,
+      "citations": [
+        {
+          "text": "Lead: europhysicsnews.org 1979/12"
+        }
+      ],
+      "date": "1979",
+      "date_precision": "year",
+      "id": "1979-saw-tv-if-filter-volume-unverified",
+      "kind": "history",
+      "notes": "Why unverified: Europhysics News 1979 PDF, seen only via a search snippet",
+      "status": "U",
+      "title": "By 1979, SAW TV IF filter production ran to \"several million units annually\"",
+      "verified": false
+    },
+    {
+      "chapter": 7,
+      "citations": [
+        {
+          "text": "Lead: eospace.com"
+        }
+      ],
+      "date": "1997",
+      "date_alt": [
+        {
+          "date": "1999",
+          "note": "Founding year given by one directory"
+        }
+      ],
+      "date_precision": "year",
+      "id": "1997-eospace-founded-unverified",
+      "kind": "history",
+      "notes": "Why unverified: Directory sites only. EOSPACE founding: 1997 in most directories, 1999 in one; unverified (directories only)",
+      "status": "U",
+      "title": "EOSPACE: founded 1997, Redmond WA, founder Suwat Thaniyavarn, Boeing High Technology Center roots",
+      "verified": false
+    },
+    {
+      "chapter": 4,
+      "citations": [
+        {
+          "text": "SMM Tokyo Stock Exchange disclosure, 2014-12-18",
+          "url": "https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf"
+        }
+      ],
+      "date": "2014-12-18",
+      "date_precision": "day",
+      "era": "Sound on a crystal",
+      "hook": "Smartphone filters need so many crystal wafers that one maker plans 210,000 a month.",
+      "id": "h-2014-smm-saw-expansion",
+      "kind": "history",
+      "notes": "Search snippet only (PDF returned 403): 120k to 210k wafers per month, about JPY 3.5 bn, completion 2016-09; text reportedly says SMM has made LT/LN substrates for about 30 years. Routed to unverified: snippet-only basis (merge rule).",
+      "organizations": [
+        "Sumitomo Metal Mining (Sumiko Kunitomi Denshi)"
+      ],
+      "organizations_verified": false,
+      "status": "U",
+      "title": "Sumitomo Metal Mining plans LT/LN SAW substrate expansion to 210k wafers per month",
+      "verified": false
+    },
+    {
+      "chapter": 9,
+      "citations": [
+        {
+          "text": "Lightwave, 2022 (search snippet)",
+          "url": "https://www.lightwaveonline.com/optical-tech/transmission/article/14235578/eoptolink-demos-800g-osfp-dr8-optical-transceiver-featuring-thin-film-lithium-niobate-modulator"
+        }
+      ],
+      "date": "2022-03",
+      "date_precision": "month",
+      "era": "The thin-film renaissance",
+      "hook": "Thin-film lithium niobate appears inside a data-center transceiver prototype.",
+      "id": "h-2022-eoptolink-800g",
+      "kind": "history",
+      "notes": "Snippet only. Routed to unverified: snippet-only basis (merge rule).",
+      "organizations": [
+        "Eoptolink",
+        "HyperLight"
+      ],
+      "organizations_verified": false,
+      "status": "U",
+      "title": "800G OSFP DR8 transceiver with a HyperLight TFLN modulator shown at OFC 2022",
+      "verified": false
+    },
+    {
+      "chapter": 9,
+      "citations": [
+        {
+          "text": "Business Wire, 2023-03-07 (snippet)",
+          "url": "https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules"
+        }
+      ],
+      "date": "2023-03-07",
+      "date_precision": "day",
+      "era": "The thin-film renaissance",
+      "hook": "Thin-film transmitter chips are offered for 800G and 1.6T modules.",
+      "id": "h-2023-hyperlight-tx",
+      "kind": "history",
+      "notes": "Snippet only. Vendor claim. Routed to unverified: snippet-only basis (merge rule).",
+      "organizations": [
+        "HyperLight"
+      ],
+      "organizations_verified": false,
+      "status": "U",
+      "title": "HyperLight announces TFLN transmitter PICs for 200 G/lane IM/DD and 1.6 Tb/s coherent",
+      "verified": false
+    },
+    {
+      "chapter": 10,
+      "citations": [
+        {
+          "text": "Lead: Company press releases"
+        }
+      ],
+      "date": "2026",
+      "date_precision": "year",
+      "id": "2026-liobate-afr-ofc-unverified",
+      "kind": "history",
+      "notes": "Why unverified: Vendor or market-blog roundups",
+      "status": "U",
+      "title": "Liobate 1.6T coherent PDM-IQ modulator and AFR 200G/400G TFLN chips at OFC 2026",
+      "verified": false
+    },
+    {
+      "chapter": 10,
+      "citations": [
+        {
+          "text": "Research note (author's OFC 2026 corpus)"
+        }
+      ],
+      "date": "2026-03",
+      "date_precision": "month",
+      "era": "Into the AI data center",
+      "hook": "At the main optical-networking conference, one paper in twelve mentions thin-film lithium niobate.",
+      "id": "h-2026-ofc-corpus",
+      "kind": "history",
+      "notes": "Counts from the author's extracted corpus of 677 OFC 2026 papers. Session W1A 'Thin-Film LN/LT and Silicon Mach-Zehnder Modulators': 6 of 7 papers LN/LT. 56/677 = 8.3%, so 'one in twelve'.",
+      "organizations": [
+        "OFC 2026 (Optical Fiber Communication Conference)"
+      ],
+      "organizations_verified": false,
+      "status": "U",
+      "title": "OFC 2026: 56 of 677 extracted papers mention TFLN/LNOI; 4 of 24 postdeadline papers are LN/LT devices",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "chapter": 10,
+      "citations": [
+        {
+          "text": "Business Wire, 2026-03-17 (seen via search summary; page returned 403)"
+        }
+      ],
+      "date": "2026-03-17",
+      "date_precision": "day",
+      "era": "Into the AI data center, 2024-2026",
+      "id": "2026-hyperlight-400g-per-lane",
+      "kind": "history",
+      "notes": "status S, set to U here: the release was seen only via a search summary (page returned 403).",
+      "organizations": [
+        "HyperLight"
+      ],
+      "significance": "Vendor claim, at OFC 2026",
+      "status": "U",
+      "title": "400G-per-lane TFLN PICs for AI interconnects",
+      "verified": false
+    },
+    {
+      "chapter": 10,
+      "citations": [
+        {
+          "text": "EIN Presswire, 2026-09 (snippet)",
+          "url": "https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026"
+        }
+      ],
+      "date": "2026-09",
+      "date_precision": "month",
+      "era": "Into the AI data center",
+      "hook": "Eight lanes of 400-plus gigabits each, through thin-film crystal, in one pluggable.",
+      "id": "h-2026-genuine-3p2t",
+      "kind": "history",
+      "notes": "Snippet only. Vendor claim. Routed to unverified: snippet-only basis (merge rule).",
+      "organizations": [
+        "Wuhan HG Genuine Optics"
+      ],
+      "organizations_verified": false,
+      "status": "U",
+      "title": "3.2T OSFP module on a TFLN platform, up to 450 Gb/s per lane, shown at ECOC 2026",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "EPCOS AG Form 20-F FY2006 (snippet)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001095409/000119312507061492/d20f.htm"
+        }
+      ],
+      "date": "2009",
+      "date_precision": "year",
+      "grade": "C",
+      "id": "2009-epcos-crystal-technology-ppln-chips",
+      "kind": "industry",
+      "notes": "Snippet only.",
+      "organizations": [
+        "Crystal Technology, Inc.",
+        "EPCOS AG"
+      ],
+      "tags": [
+        "background",
+        "product",
+        "ppln",
+        "us"
+      ],
+      "title": "Crystal Technology, Inc. (EPCOS) launched PPLN chips (2009 EPCOS item) (background)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Sumitomo Metal Mining TSE disclosure, 2014-12 (403; snippet)",
+          "url": "https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf"
+        }
+      ],
+      "date": "2014-12",
+      "date_note": "Expansion period Dec 2014 to Sep 2016; TSE disclosure dated 2014-12.",
+      "date_precision": "month",
+      "grade": "C",
+      "id": "2014-12-sumitomo-metal-mining-lt-ln-substrate-expansion",
+      "kind": "industry",
+      "notes": "Disclosure PDF returned 403; only the snippet was read.",
+      "organizations": [
+        "Sumitomo Metal Mining Co., Ltd.",
+        "Sumiko Kunitomi Denshi"
+      ],
+      "tags": [
+        "background",
+        "wafer",
+        "capacity",
+        "bulk-ln",
+        "rf-filter",
+        "japan"
+      ],
+      "title": "Sumitomo Metal Mining: about JPY 3.5 bn LT/LN substrate expansion for smartphone SAW filters, Dec 2014 to Sep 2016, at subsidiary Sumiko Kunitomi Denshi (background)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)",
+          "url": "https://www.nikkan.co.jp/articles/view/00410032"
+        },
+        {
+          "accessed": "2026-10-24",
+          "text": "Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)",
+          "url": "https://www.nikkan.co.jp/articles/view/00442372"
+        }
+      ],
+      "date": "2016-12",
+      "date_note": "Date of the Nikkan Kogyo report.",
+      "date_precision": "month",
+      "grade": "C",
+      "id": "2016-12-sumitomo-osaka-cement-guangdong-ln-modulator-line",
+      "kind": "industry",
+      "notes": "Snippet only. lists two Nikkan Kogyo URLs (2016-12 and 2017-09) under S36 without mapping; both given. Present TFLN status N/A.",
+      "organizations": [
+        "Sumitomo Osaka Cement Co., Ltd."
+      ],
+      "tags": [
+        "background",
+        "bulk-ln",
+        "modulator",
+        "japan",
+        "china"
+      ],
+      "title": "Sumitomo Osaka Cement: LN modulator line at its Guangdong plant (Nikkan Kogyo 2016-12) (background)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)",
+          "url": "https://www.nikkan.co.jp/articles/view/00410032"
+        },
+        {
+          "accessed": "2026-10-24",
+          "text": "Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)",
+          "url": "https://www.nikkan.co.jp/articles/view/00442372"
+        }
+      ],
+      "date": "2017-09",
+      "date_precision": "month",
+      "grade": "C",
+      "id": "2017-09-sumitomo-osaka-cement-100g-ln-modulator-china",
+      "kind": "industry",
+      "notes": "Snippet only. lists two Nikkan Kogyo URLs (2016-12 and 2017-09) under S36 without mapping; both given.",
+      "organizations": [
+        "Sumitomo Osaka Cement Co., Ltd."
+      ],
+      "tags": [
+        "background",
+        "bulk-ln",
+        "modulator",
+        "japan",
+        "china"
+      ],
+      "title": "Sumitomo Osaka Cement: 100G LN modulator production in China from 2017-09 (background)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "AFR (acquisition), 2019-12 (snippet)",
+          "url": "https://www.fiber-resources.com/afr-acquired-assets-of-lumentum-ln-high-speed-modulator-product-line_n22"
+        },
+        {
+          "accessed": "2026-10-24",
+          "text": "Lightwave (Lumentum sale), 2019-12 (snippet)",
+          "url": "https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr"
+        }
+      ],
+      "date": "2019-11-28",
+      "date_precision": "day",
+      "grade": "C",
+      "id": "2019-11-28-afr-lumentum-ln-modulator-line",
+      "kind": "industry",
+      "notes": "US$17 M is the AFR figure; Lumentum did not disclose the price. Lumentum exited LN modulators in 2019 and shifted to InP PICs; no TFLN product found (sec. 6). Snippet-only sources.",
+      "organizations": [
+        "Advanced Fiber Resources (Zhuhai) Ltd. (AFR)",
+        "Lumentum Holdings Inc."
+      ],
+      "tags": [
+        "background",
+        "acquisition",
+        "bulk-ln",
+        "modulator",
+        "europe",
+        "china"
+      ],
+      "title": "AFR signs to buy Lumentum's LN modulator line and fab (San Donato Milanese), US$17 M (background)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Lightwave (Eoptolink 800G TFLN), 2022 (snippet)",
+          "url": "https://www.lightwaveonline.com/optical-tech/transmission/article/14235578/eoptolink-demos-800g-osfp-dr8-optical-transceiver-featuring-thin-film-lithium-niobate-modulator"
+        }
+      ],
+      "date": "2022-03",
+      "date_note": "OFC 2022; gives month only.",
+      "date_precision": "month",
+      "grade": "C",
+      "id": "2022-03-eoptolink-800g-dr8-hyperlight-tfln",
+      "kind": "industry",
+      "notes": "Snippet only. Before the 2023-2026 window.",
+      "organizations": [
+        "Eoptolink Technology Inc., Ltd.",
+        "HyperLight Corporation"
+      ],
+      "tags": [
+        "background",
+        "product",
+        "tfln",
+        "modulator",
+        "conference"
+      ],
+      "title": "Eoptolink 800G DR8 with a HyperLight TFLN modulator at OFC 2022 (background)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Thorlabs datasheets (snippets)",
+          "url": "https://www.thorlabs.us/catalogpages/obsolete/2022/LN86S-FC.pdf"
+        }
+      ],
+      "date": "2022-08-17",
+      "date_precision": "day",
+      "grade": "C",
+      "id": "2022-08-17-thorlabs-ln27s-fc-discontinued",
+      "kind": "industry",
+      "notes": "Snippet only. Example of several obsolete Thorlabs Ti-indiffused LN modulator part numbers.",
+      "organizations": [
+        "Thorlabs, Inc."
+      ],
+      "tags": [
+        "product",
+        "discontinued",
+        "bulk-ln",
+        "modulator",
+        "us"
+      ],
+      "title": "Thorlabs: LN27S-FC discontinued 2022-08-17",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Securities Star via 10jqka, 2026-10-03 (AI-assisted disclaimer)",
+          "url": "https://stock.10jqka.com.cn/20261003/c680435922.shtml"
+        },
+        {
+          "accessed": "2026-10-24",
+          "text": "36Kr PitchHub, Jingzheng project page (snippet)",
+          "url": "https://pitchhub.36kr.com/project/1678490981790729"
+        }
+      ],
+      "date": "2023",
+      "date_precision": "year",
+      "grade": "LG/C",
+      "id": "2023-jingzheng-8-inch-ln-film",
+      "kind": "industry",
+      "notes": "Secondary claim ( LG/C); not verified against a primary source.",
+      "organizations": [
+        "Jinan Jingzheng Electronics Co., Ltd. (NANOLN)"
+      ],
+      "tags": [
+        "wafer",
+        "lnoi",
+        "200mm",
+        "china"
+      ],
+      "title": "Jingzheng: 8-inch 300-900 nm LN film developed",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Business Wire (HyperLight TFLN Tx), 2023-03-07 (snippet)",
+          "url": "https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules"
+        }
+      ],
+      "date": "2023-03-07",
+      "date_precision": "day",
+      "grade": "C",
+      "id": "2023-03-07-hyperlight-tfln-tx-pics",
+      "kind": "industry",
+      "notes": "Snippet only. Targets 200 G/lane IMDD (800G-DR4 OSFP) and 1.6 Tb/s per wavelength coherent.",
+      "organizations": [
+        "HyperLight Corporation"
+      ],
+      "tags": [
+        "product",
+        "tfln",
+        "modulator",
+        "us"
+      ],
+      "title": "HyperLight announces TFLN Tx PICs for 1.6T coherent and 200 G/lane IMDD",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Securities Star via 10jqka, 2026-10-03 (AI-assisted disclaimer)",
+          "url": "https://stock.10jqka.com.cn/20261003/c680435922.shtml"
+        },
+        {
+          "accessed": "2026-10-24",
+          "text": "36Kr PitchHub, Jingzheng project page (snippet)",
+          "url": "https://pitchhub.36kr.com/project/1678490981790729"
+        }
+      ],
+      "date": "2025",
+      "date_precision": "year",
+      "grade": "LG/C",
+      "id": "2025-jingzheng-national-standard-ln-thin-film",
+      "kind": "industry",
+      "notes": "Secondary claim ( LG/C); not verified against a primary source.",
+      "organizations": [
+        "Jinan Jingzheng Electronics Co., Ltd. (NANOLN)"
+      ],
+      "tags": [
+        "standard",
+        "wafer",
+        "lnoi",
+        "china"
+      ],
+      "title": "Jingzheng: led the 2025 national standard for LN thin-film substrates for EO modulators",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "QCi Q1 2025 results via finanzen.net (snippet)",
+          "url": "https://www.finanzen.net/nachricht/aktien/quantum-computing-inc-reports-first-quarter-2025-financial-results-14488766"
+        }
+      ],
+      "date": "2025-01",
+      "date_note": "date cell 2025-01; foundry completion stated as Q1 2025.",
+      "date_precision": "month",
+      "grade": "C",
+      "id": "2025-01-qci-orders-foundry-completed",
+      "kind": "industry",
+      "notes": "Snippet only. Five orders by Q1 2025. QCi claims capacity for \">US$180 M sellable product in first full year\" (vendor claim, sec. 7).",
+      "organizations": [
+        "Quantum Computing Inc. (QCi)"
+      ],
+      "tags": [
+        "foundry",
+        "tfln",
+        "us"
+      ],
+      "title": "QCi orders three to five; foundry completed in Q1 2025",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "CB Insights, Liobate financials (aggregator)",
+          "url": "https://www.cbinsights.com/company/nio-optoelectronics/financials"
+        }
+      ],
+      "date": "2025-02-20",
+      "date_precision": "day",
+      "grade": "C",
+      "id": "2025-02-20-liobate-series-a-ii",
+      "kind": "industry",
+      "notes": "Aggregator listing (CB Insights). Whether Liobate is the same firm as Jiangsu Niobao is unclear (sec. 9).",
+      "organizations": [
+        "Liobate Technologies"
+      ],
+      "tags": [
+        "funding",
+        "tfln",
+        "china"
+      ],
+      "title": "Liobate Series A-II (aggregator)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "The Quantum Insider, 2025-02-26 (snippet)",
+          "url": "https://thequantuminsider.com/2025/02/26/psiquantum-announces-omega-a-manufacturable-photonic-quantum-computing-chipset/"
+        }
+      ],
+      "date": "2025-02-26",
+      "date_precision": "day",
+      "grade": "C",
+      "id": "2025-02-26-psiquantum-omega-bto",
+      "kind": "industry",
+      "notes": "Not LN: barium titanate (BTO) switches on SiN, made at GlobalFoundries (sec. 6). Listed as a competing EO material note.",
+      "organizations": [
+        "PsiQuantum Corp.",
+        "GlobalFoundries"
+      ],
+      "tags": [
+        "not-ln",
+        "quantum",
+        "competing-material",
+        "us"
+      ],
+      "title": "PsiQuantum Omega: BTO switches, not LN",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "The Quantum Insider, 2025-10-30 (snippet)",
+          "url": "https://thequantuminsider.com/2025/10/30/duquesne-family-office-invests-in-q-ant-to-drive-sustainable-photonic-ai-infrastructure/"
+        }
+      ],
+      "date": "2025-10-30",
+      "date_precision": "day",
+      "grade": "C",
+      "id": "2025-10-30-qant-series-a-expanded",
+      "kind": "industry",
+      "notes": "Snippet only. Expansion with Duquesne Family Office.",
+      "organizations": [
+        "Q.ANT GmbH",
+        "Duquesne Family Office"
+      ],
+      "tags": [
+        "funding",
+        "photonic-computing",
+        "tfln",
+        "europe"
+      ],
+      "title": "Q.ANT Series A expanded to US$80 M",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Summit Partners (HyperLight Series C), 2026-06-18",
+          "url": "https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure"
+        }
+      ],
+      "date": "2026-06",
+      "date_precision": "month",
+      "grade": "C/V",
+      "id": "2026-06-hyperlight-200g-lane-available-400g-sampling",
+      "kind": "industry",
+      "notes": "Vendor claim. grades the HyperLight row \"C / V\" with sources S22, S20, S18 and does not map items to sources; this 2026-06 item is attributed to S18 (2026-06-18) by date.",
+      "organizations": [
+        "HyperLight Corporation"
+      ],
+      "tags": [
+        "product",
+        "tfln",
+        "modulator",
+        "us"
+      ],
+      "title": "HyperLight: 200 G/lane products available, 400 G/lane sampling",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Hengtong blog, 2026-08-01 (snippet)",
+          "url": "https://www.hengtongglobal.com/info/tfln-3-2t-optics-fiber-cabling-103603656.html"
+        }
+      ],
+      "date": "2026-08-01",
+      "date_precision": "day",
+      "grade": "C",
+      "id": "2026-08-01-hengtong-blog-3.2t-pluggables",
+      "kind": "industry",
+      "notes": "Vendor blog, snippet only.",
+      "organizations": [
+        "Hengtong"
+      ],
+      "tags": [
+        "statement",
+        "tfln",
+        "transceiver",
+        "china"
+      ],
+      "title": "Vendor blog: interoperable 3.2T pluggables \"not yet a purchasable commodity\". TFLN modulators commercially available",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "EIN Presswire, Genuine Optics, 2026-09 (403; snippet)",
+          "url": "https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026"
+        }
+      ],
+      "date": "2026-09",
+      "date_note": "ECOC 2026, Malaga ( date cell \"2026-09 (ECOC, Malaga)\").",
+      "date_precision": "month",
+      "grade": "C/V",
+      "id": "2026-09-genuine-optics-3.2t-osfp-tfln-ecoc",
+      "kind": "industry",
+      "notes": "Press release page returned 403; release text not verified. Up to 450 Gb/s/lane.",
+      "organizations": [
+        "Genuine Optics"
+      ],
+      "tags": [
+        "product",
+        "tfln",
+        "transceiver",
+        "conference",
+        "china"
+      ],
+      "title": "Genuine Optics 3.2T OSFP on TFLN, 450 Gb/s/lane (press release via snippet)",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "Pulse 2.0 (VentureTech Alliance joins Series C), 2026-09 (snippet)",
+          "url": "https://pulse2.com/hyperlight-adds-venturetech-alliance-to-series-c-to-expand-tfln-semiconductor-ecosystem/"
+        }
+      ],
+      "date": "2026-09",
+      "date_note": "About 2026-09-09 ( date cell \"2026-09 (about 09-09)\").",
+      "date_precision": "month",
+      "grade": "C",
+      "id": "2026-09-venturetech-alliance-hyperlight-series-c",
+      "kind": "industry",
+      "notes": "Snippet only.",
+      "organizations": [
+        "VentureTech Alliance",
+        "HyperLight Corporation"
+      ],
+      "tags": [
+        "funding",
+        "tfln",
+        "us"
+      ],
+      "title": "VentureTech Alliance added to HyperLight Series C",
+      "verified": false
+    },
+    {
+      "access_date": "2026-10-24",
+      "citations": [
+        {
+          "accessed": "2026-10-24",
+          "text": "ChinaVenture, Xili Photonics Pre-A, 2026-09-18 (snippet)",
+          "url": "https://m.chinaventure.com.cn/news/113-20260918-393335.html"
+        }
+      ],
+      "date": "2026-09",
+      "date_note": "gives 2026-09; S77 dated 2026-09-18.",
+      "date_precision": "month",
+      "grade": "C",
+      "id": "2026-09-xili-photonics-pre-a",
+      "kind": "industry",
+      "notes": "grades the Xili row T/C (S8, S77); this item rests on S77 alone, a snippet, so it is graded C here. English name Xili is a transliteration.",
+      "organizations": [
+        "Xili Photonics",
+        "Futeng Capital"
+      ],
+      "tags": [
+        "funding",
+        "tfln",
+        "china"
+      ],
+      "title": "Xili Photonics: Pre-A led by Futeng Capital",
+      "verified": false
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "Rows that must not be presented as fact: property status U, history status U, industry events graded only C/LG/E/S, records flagged unverified or simulation."
+  },
+  "records": [
+    {
+      "as_of": "2026-10-24",
+      "category": "kerr",
+      "date": "2021",
+      "date_precision": "year",
+      "doi": "10.1364/AOP.411024",
+      "first_author": "Zhu",
+      "id": "kerr-zhu2021-n2",
+      "metric": "n2 of LN",
+      "notes": "Ver.: unverified (primary). DOI is the review that tabulates the value, not a primary measurement; value not in values.",
+      "platform": "LN",
+      "provisional": true,
+      "public": false,
+      "value_text": "1.8e-19 m^2/W as tabulated in Zhu 2021 (10.1364/AOP.411024); primary measurement source not traced",
+      "verification": "unverified"
+    },
+    {
+      "as_of": "2026-10-24",
+      "category": "modulator",
+      "date": "2026-02",
+      "date_precision": "month",
+      "doi": "10.1002/adpr.202500237",
+      "first_author": "Dadkhah",
+      "id": "modulator-dadkhah2026-sim",
+      "metric": "Exclude",
+      "notes": "Simulated design only; excluded from records.",
+      "platform": "TFLN",
+      "provisional": true,
+      "public": false,
+      "value_text": "\"0.105 V cm, 235 GHz\": simulated design only",
+      "values": [
+        {
+          "note": "simulated",
+          "qualifier": "=",
+          "quantity": "VpiL",
+          "unit": "V.cm",
+          "value": 0.105
+        },
+        {
+          "note": "simulated",
+          "qualifier": "=",
+          "quantity": "EO bandwidth",
+          "unit": "GHz",
+          "value": 235
+        }
+      ],
+      "venue": "Adv. Photon. Res.",
+      "verification": "simulation"
+    },
+    {
+      "as_of": "2026-10-24",
+      "category": "wafer-foundry",
+      "date": "2026-06-18",
+      "date_precision": "day",
+      "id": "wafer-foundry-hyperlight-umc",
+      "metric": "HyperLight + UMC + Wavetek",
+      "notes": "Ver.: trade press. Source: ConvergeDigest on 2026-06-18 Series C; HyperLight headlines 2026-03. the cited sources give no URL; the URL is the UMC press release of 2026-03-12 on the same foundry deal (grade C: page returned 403, content via snippets).",
+      "platform": "TFLN",
+      "provisional": true,
+      "public": false,
+      "url": "https://www.umc.com/en/News/press_release/Content/corporate/20260312",
+      "value_text": "Foundry production on 6- and 8-inch",
+      "values": [
+        {
+          "qualifier": "=",
+          "quantity": "wafer diameter",
+          "unit": "[in_i]",
+          "value": 6
+        },
+        {
+          "qualifier": "=",
+          "quantity": "wafer diameter",
+          "unit": "[in_i]",
+          "value": 8
+        }
+      ],
+      "venue": "ConvergeDigest",
+      "verification": "unverified"
+    }
+  ],
+  "scalars": [
+    {
+      "category": "ferroelectric",
+      "id": "coercive-field/mgo5-cln/note-r06-claim",
+      "kind": "scalar",
+      "max": 5,
+      "min": 4,
+      "name": "Coercive field",
+      "notes": "Unverified claim; found a 6.0-6.8 kV/mm table average and individual reports of 2.5-4.45 kV/mm in volk2008.",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "sec. 2.1",
+        "original_reference": "claimed: Kitamura, Furukawa et al. (not checked)",
+        "source_id": "note-r06",
+        "status": "U",
+        "transcribed": "2026-10-25"
+      },
+      "public": false,
+      "symbol": "E_c",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "variant": "mgo5-cln"
+    },
+    {
+      "category": "ferroelectric",
+      "id": "coercive-field/sln/note-r06-claim",
+      "kind": "scalar",
+      "max": 5,
+      "min": 4,
+      "name": "Coercive field",
+      "notes": "Unverified claim; found 6.0-6.5 kV/mm in volk2008 Table 7.1.",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "sec. 2.1",
+        "original_reference": "claimed: Kitamura, Furukawa et al. (not checked)",
+        "source_id": "note-r06",
+        "status": "U",
+        "transcribed": "2026-10-25"
+      },
+      "public": false,
+      "symbol": "E_c",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "variant": "sln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "wavelength_nm": 1064
+      },
+      "id": "nlo-d31/cln/shoji1997",
+      "kind": "scalar",
+      "name": "Second-order nonlinear coefficient d31",
+      "notes": "Claimed value (about 4.6); not verified.",
+      "property": "nlo-d31",
+      "provenance": {
+        "source_id": "shoji1997",
+        "status": "U",
+        "transcribed": "2026-10-25"
+      },
+      "public": false,
+      "symbol": "d31",
+      "tensor_component": "d31",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "pm/V",
+        "ucum": "pm/V"
+      },
+      "value": 4.6,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "wavelength_nm": 1064
+      },
+      "id": "nlo-d33/cln/shoji1997",
+      "kind": "scalar",
+      "name": "Second-order nonlinear coefficient d33",
+      "notes": "Claimed value; only the abstract was seen, which states that many accepted standard values are overestimated. Not verified.",
+      "property": "nlo-d33",
+      "provenance": {
+        "source_id": "shoji1997",
+        "status": "U",
+        "transcribed": "2026-10-25"
+      },
+      "public": false,
+      "symbol": "d33",
+      "tensor_component": "d33",
+      "unit": {
+        "display": "pm/V",
+        "ucum": "pm/V"
+      },
+      "value": 25.2,
+      "variant": "cln"
+    },
+    {
+      "category": "photorefractive",
+      "id": "polaron-absorption-peaks/unspecified/schirmer2009",
+      "kind": "scalar",
+      "name": "Polaron absorption band peaks",
+      "notes": "Recalled values, not checked against the source.",
+      "property": "polaron-absorption-peaks",
+      "provenance": {
+        "source_id": "schirmer2009",
+        "status": "U",
+        "transcribed": "2026-10-25"
+      },
+      "public": false,
+      "unit": {
+        "display": "eV",
+        "ucum": "eV"
+      },
+      "value_text": "about 1.0 eV (free), 1.6 eV (bound), 2.5 eV (bipolaron)",
+      "variant": "unspecified"
+    },
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "id": "spontaneous-polarization/sln/volk2008",
+      "kind": "scalar",
+      "name": "Spontaneous polarization",
+      "notes": "Printed in volk2008 Table 1.1, but the cited original (ref. [24], APL 73, 3073) is a LiTaO3 paper per Crossref: no LN source on record, so the value is unverified and excluded from default endpoints.",
+      "property": "spontaneous-polarization",
+      "provenance": {
+        "locator": "Table 1.1, p. 3 (refs. [22], [24])",
+        "source_id": "volk2008",
+        "status": "U",
+        "transcribed": "2026-10-25"
+      },
+      "public": false,
+      "symbol": "P_s",
+      "unit": {
+        "display": "uC/cm^2",
+        "ucum": "uC/cm2"
+      },
+      "value": 62,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ],
+  "tensors": []
+}

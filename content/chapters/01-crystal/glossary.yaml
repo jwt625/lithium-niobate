@@ -1,0 +1,218 @@
+# glossary.yaml: terms introduced in chapter 01 "The crystal"
+# Lane C01, 2026-10-25. One-sentence definitions; source ids resolve in refs.yaml.
+
+- term: R3c
+  definition: "The space group (No. 161) of ferroelectric LiNbO3: a rhombohedral lattice with a threefold axis and c-glide planes, no inversion centre."
+  source: weis1985
+
+- term: R-3c
+  definition: "The centrosymmetric space group (No. 167) of the paraelectric phase above the Curie temperature."
+  source: boysen1994
+
+- term: point group 3m
+  definition: "The symmetry of the ferroelectric crystal's macroscopic properties: a threefold rotation axis plus three mirror planes containing it, 60 degrees apart (Schoenflies C3v)."
+  source: weis1985
+
+- term: hexagonal setting
+  definition: "Description of the trigonal lattice by a hexagonal prism cell with a = 5.148 A, c = 13.863 A and six formula units."
+  source: hsu1997
+
+- term: rhombohedral setting
+  definition: "Description of the same lattice by its primitive cell with edge a_R = 5.494 A, angle 55.87 deg and two formula units (10 atoms)."
+  source: weis1985
+
+- term: orthohexagonal (crystal-physics) frame
+  definition: "The right-handed Cartesian x, y, z frame used for tensor properties, with z along c, x along an a axis perpendicular to a mirror plane, and y in a mirror plane."
+  source: weis1985
+
+- term: oxygen octahedron
+  definition: "The cage of six oxygen atoms around each cation site; in LiNbO3 one third of the octahedra hold Li, one third Nb, one third are empty."
+  source: weis1985
+
+- term: empty octahedral site
+  definition: "The structurally vacant octahedron in the sequence Nb, empty, Li along +c, distinct from a Li vacancy, which is a defect."
+  source: volk2008
+
+- term: spontaneous polarization (Ps)
+  definition: "The electric dipole moment per unit volume that the crystal carries without applied field, 0.71-0.80 C/m^2 along c in LiNbO3."
+  source: gopalan1998
+
+- term: ferroelectric
+  definition: "A crystal with spontaneous polarization whose direction can be reversed by an applied electric field."
+  source: volk2008
+
+- term: paraelectric phase
+  definition: "The non-polar, centrosymmetric phase above the Curie temperature, in which Li lies in the oxygen layers and Nb at octahedron centres."
+  source: weis1985
+
+- term: Curie temperature (Tc)
+  definition: "The temperature of the ferroelectric-to-paraelectric transition, about 1140 C for congruent and 1206 C for near-stoichiometric LiNbO3."
+  source: volk2008
+
+- term: displacive vs order-disorder transition
+  definition: "Two limiting pictures of a structural phase transition: a soft mode whose frequency goes to zero, or ions hopping among pre-existing wells that become equally occupied above Tc."
+  source: inbar1996
+
+- term: congruent melting composition
+  definition: "The composition at which melt and growing crystal are identical, about 48.4-48.5 mol% Li2O for LiNbO3."
+  source: volk2008
+
+- term: CLN
+  definition: "Congruent lithium niobate, the Li-deficient standard commercial composition."
+  source: volk2008
+
+- term: SLN, NSLN
+  definition: "Stoichiometric or near-stoichiometric lithium niobate, with Li2O content close to 50 mol%."
+  source: volk2008
+
+- term: R1, R2
+  definition: "Composition ratios [Li]/[Nb] and [Li]/([Li] + [Nb]); R2 times 100 equals the Li2O content in mol%."
+  source: volk2008
+
+- term: vapor transport equilibration (VTE)
+  definition: "Post-growth Li enrichment of a crystal plate by annealing it near Li-rich powder above 1000 C for days."
+  source: bordui1992
+
+- term: double-crucible Czochralski (DCCZ)
+  definition: "Growth of near-stoichiometric LiNbO3 from an Li-rich inner melt replenished by stoichiometric powder fed to an outer crucible."
+  source: kitamura1992
+
+- term: top-seeded solution growth (TSSG)
+  definition: "Growth of near-stoichiometric LiNbO3 from a K2O-containing high-temperature solution."
+  source: polgar1997
+
+- term: Nb antisite (Nb_Li)
+  definition: "A niobium ion on a lithium site, the main intrinsic defect of Li-deficient LiNbO3."
+  source: volk2008
+
+- term: Li vacancy (V_Li)
+  definition: "An empty lithium site; in the Li-site vacancy model four of them compensate each Nb antisite."
+  source: volk2008
+
+- term: Li-site vacancy model
+  definition: "Defect model [Li(1-5x) Nb_Li(x) V_Li(4x)] Nb O3, supported by X-ray plus neutron refinement and NMR and commonly accepted."
+  source: iyi1992
+
+- term: Nb-site vacancy model
+  definition: "Defect model [Li(1-5x) Nb_Li(5x)] [Nb(1-4x) V_Nb(4x)] O3, proposed from X-ray occupancies of 4.9% Nb on Li sites."
+  source: abrahams1986
+
+- term: Kroeger-Vink notation
+  definition: "Defect notation giving species, site and charge relative to the host site, with a prime for negative and a bullet for positive excess charge."
+  source: volk2008
+
+- term: small polaron
+  definition: "A charge carrier localized on one lattice site by the lattice distortion it creates, moving by thermally activated hopping."
+  source: volk2008
+
+- term: bound polaron (Nb_Li^4+)
+  definition: "An electron trapped on a Nb antisite with its lattice distortion, absorbing near 1.6 eV."
+  source: volk2008
+
+- term: free polaron (Nb_Nb^4+)
+  definition: "An electron self-trapped on a regular Nb site, absorbing near 0.95 eV."
+  source: volk2008
+
+- term: bipolaron
+  definition: "A diamagnetic electron pair shared by neighbouring Nb_Li and Nb_Nb ions, absorbing near 2.5 eV and formed by chemical reduction."
+  source: volk2008
+
+- term: hole polaron (O^-)
+  definition: "A hole trapped on an oxygen ion next to a cation defect such as a Li vacancy, absorbing broadly near 500 nm."
+  source: volk2008
+
+- term: OH stretch band
+  definition: "Infrared absorption of OH^- ions near 3480 cm^-1 (2.87 um) whose shape and position track composition and dopant thresholds."
+  source: volk2008
+
+- term: optical-damage-resistant ion
+  definition: "A dopant (Mg, Zn, In, Sc, Hf, Zr) that strongly reduces photorefraction above a threshold concentration."
+  source: volk2008
+
+- term: threshold concentration
+  definition: "The dopant level above which photorefraction drops by orders of magnitude and many properties change abruptly, about 5 mol% MgO in congruent LiNbO3."
+  source: volk2008
+
+- term: GRIIRA
+  definition: "Green-induced infrared absorption: transient IR absorption caused by green light, assigned to Nb_Li small polarons."
+  source: furukawa2001
+
+- term: Neumann's principle
+  definition: "The symmetry elements of any physical property of a crystal include the symmetry elements of its point group."
+  source: weis1985
+
+- term: Voigt notation
+  definition: "Contraction of tensor index pairs 11, 22, 33, 23, 13, 12 to 1-6, with factors of 2 for shear terms in some tensors."
+  source: weis1985
+
+- term: +z (+c) face
+  definition: "The c face that becomes negative on compression and positive on cooling."
+  source: weis1985
+
+- term: glide plane
+  definition: "A mirror reflection combined with a translation along the plane; in R3c the mirrors of 3m are c-glide planes."
+  source: hsu1997
+
+- term: domain
+  definition: "A region of uniform spontaneous polarization; in LiNbO3 polarization is either +c or -c."
+  source: gopalan2007
+
+- term: 180 deg domain wall
+  definition: "The boundary between antiparallel domains, ideally one to two lattice units wide."
+  source: gopalan2007
+
+- term: Y-wall
+  definition: "A domain wall parallel to a (11-20) plane, i.e. parallel to the yz plane, the low-energy wall that bounds hexagonal domains in LiNbO3."
+  source: lee2011
+
+- term: internal field (Eint)
+  definition: "A built-in bias that shifts the P-E loop of congruent crystal along the field axis by about 2.5 kV/mm and vanishes in stoichiometric crystal."
+  source: gopalan1998
+
+- term: coercive field (Ec)
+  definition: "The field at which the polarization reverses, about 21 kV/mm for congruent LiNbO3 at room temperature."
+  source: volk2008
+
+- term: forward and reverse poling
+  definition: "Reversal from the virgin single-domain state (forward) and back to it (reverse); forward needs the larger field in congruent crystal."
+  source: volk2008
+
+- term: unipolarity
+  definition: "The asymmetry of the ferroelectric hysteresis loop caused by the internal field."
+  source: volk2008
+
+- term: backswitching
+  definition: "Spontaneous return of freshly reversed domains to the original direction after a too-short poling pulse."
+  source: volk2008
+
+- term: domain merging
+  definition: "Lateral spread of reversed domains beyond the electrode, which widens stripes and changes the duty cycle."
+  source: volk2008
+
+- term: duty cycle
+  definition: "Ratio of reversed-domain width to period in a periodically poled structure, optimally 0.5 for first-order QPM."
+  source: volk2008
+
+- term: periodic poling (PPLN)
+  definition: "Writing alternating +c and -c domains with a set period by applying field through patterned electrodes."
+  source: yamada1993
+
+- term: quasi-phase-matching (QPM)
+  definition: "Keeping a nonlinear interaction in step by periodically reversing the sign of the nonlinear coefficient."
+  source: armstrong1962
+
+- term: Miller-Savage method
+  definition: "Measurement of domain-wall velocity from the shift of etched wall positions between field pulses."
+  source: volk2008
+
+- term: charged domain wall
+  definition: "A domain wall inclined to c, carrying bound charge 2 Ps sin(theta) per area that mobile carriers screen."
+  source: werner2017
+
+- term: domain-wall conduction
+  definition: "Electrical conduction along charged domain walls, more than 13 orders of magnitude above the bulk in MgO-doped LiNbO3."
+  source: werner2017
+
+- term: Kolmogorov-Avrami-Ishibashi (KAI) model
+  definition: "Switched-fraction law X(t) = 1 - exp(-(t/t0)^n) for nucleation-and-growth polarization reversal."
+  source: note-R11

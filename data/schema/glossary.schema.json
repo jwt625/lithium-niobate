@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lithium-niobate.com/api/v1/schema/glossary.schema.json",
+  "title": "Glossary term",
+  "description": "A glossary term with a one-sentence definition, a longer definition, and sources. Canonical terms (data/glossary.yaml) carry at least one source from the sources register; terms merged from the chapter glossaries (origin chapter) carry the sources their chapter cites, either a register id or a citation from the chapter refs.yaml, and may carry none when the chapter cites none.",
+  "type": "object",
+  "required": [
+    "id",
+    "term",
+    "short",
+    "long",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "term": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "category": {
+      "enum": [
+        "crystal",
+        "defects",
+        "ferroelectric",
+        "optics",
+        "nonlinear-optics",
+        "electro-optics",
+        "acoustics",
+        "fabrication",
+        "devices",
+        "quirks",
+        "rf",
+        "general"
+      ]
+    },
+    "short": {
+      "type": "string",
+      "description": "One sentence."
+    },
+    "long": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {
+            "$ref": "common.schema.json#/$defs/id"
+          },
+          "locator": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string",
+            "description": "Chapter reference '<chapter folder>/<refs.yaml id>' when the work is not in the sources register."
+          },
+          "citation": {
+            "type": "string"
+          },
+          "doi": {
+            "$ref": "common.schema.json#/$defs/doi"
+          },
+          "url": {
+            "$ref": "common.schema.json#/$defs/url"
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "source_id"
+            ]
+          },
+          {
+            "required": [
+              "ref",
+              "citation"
+            ]
+          }
+        ]
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "origin": {
+      "enum": [
+        "canonical",
+        "chapter"
+      ],
+      "description": "Generated: canonical (data/glossary.yaml) or chapter (merged from content/chapters/*/glossary.yaml)."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "origin"
+        ],
+        "properties": {
+          "origin": {
+            "const": "chapter"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "sources": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

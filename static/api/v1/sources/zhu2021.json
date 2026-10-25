@@ -1,0 +1,94 @@
+{
+  "citation": "Di Zhu, Linbo Shao, Mengjie Yu, et al., \"Integrated photonics on thin-film lithium niobate\", Advances in Optics and Photonics 13, 242-352, (2021) doi:10.1364/AOP.411024",
+  "link": "https://doi.org/10.1364/AOP.411024",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Version of record paywalled; arXiv and CHORUS accepted manuscript.",
+      "oa_status": "green"
+    },
+    "arxiv": "2102.11956",
+    "author": [
+      {
+        "family": "Zhu",
+        "given": "Di"
+      },
+      {
+        "family": "Shao",
+        "given": "Linbo"
+      },
+      {
+        "family": "Yu",
+        "given": "Mengjie"
+      },
+      {
+        "family": "Cheng",
+        "given": "Rebecca"
+      },
+      {
+        "family": "Desiatov",
+        "given": "Boris"
+      },
+      {
+        "family": "Xin",
+        "given": "C. J."
+      },
+      {
+        "family": "Hu",
+        "given": "Yaowen"
+      },
+      {
+        "family": "Holzgrafe",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Ghosh",
+        "given": "Soumya"
+      },
+      {
+        "family": "Shams-Ansari",
+        "given": "Amirhassan"
+      },
+      {
+        "family": "Puma",
+        "given": "Eric"
+      },
+      {
+        "family": "Sinclair",
+        "given": "Neil"
+      },
+      {
+        "family": "Reimer",
+        "given": "Christian"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Advances in Optics and Photonics",
+    "doi": "10.1364/AOP.411024",
+    "id": "zhu2021",
+    "issued": "2021-06-30",
+    "notes": "Table 1 gives no per-cell references.",
+    "page": "242-352",
+    "read": "arXiv version",
+    "title": "Integrated photonics on thin-film lithium niobate",
+    "type": "article-journal",
+    "volume": "13"
+  }
+}

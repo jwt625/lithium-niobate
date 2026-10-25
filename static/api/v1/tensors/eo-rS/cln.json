@@ -1,0 +1,43 @@
+{
+  "alternatives": [
+    "eo-rS/cln/cti1999",
+    "eo-rS/cln/turner1966"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "eo-rS",
+    "variant": "cln"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "r13": {
+      "max": 9,
+      "min": 8.6,
+      "n_records": 2
+    },
+    "r22": {
+      "max": 3.4,
+      "min": 3,
+      "n_records": 2
+    },
+    "r33": {
+      "max": 31,
+      "min": 30.8,
+      "n_records": 2
+    },
+    "r51": {
+      "max": 28,
+      "min": 28,
+      "n_records": 2
+    }
+  }
+}

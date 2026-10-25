@@ -1,0 +1,36 @@
+{
+  "citation": "F. J. Leonberger, S. W. Merritt, P. G. Suchoski, \"Optical modulators find wider use in CATV and telecommunications\", Laser Focus World, (1995) https://www.laserfocusworld.com/optics/article/16553605/optical-modulators-find-wider-use-in-catv-and-telecommunications",
+  "link": "https://www.laserfocusworld.com/optics/article/16553605/optical-modulators-find-wider-use-in-catv-and-telecommunications",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "F. J. Leonberger"
+      },
+      {
+        "literal": "S. W. Merritt"
+      },
+      {
+        "literal": "P. G. Suchoski"
+      }
+    ],
+    "container_title": "Laser Focus World",
+    "id": "lfw-1995",
+    "issued": "1995-07-01",
+    "read": "Read; vendor authors",
+    "title": "Optical modulators find wider use in CATV and telecommunications",
+    "type": "webpage",
+    "url": "https://www.laserfocusworld.com/optics/article/16553605/optical-modulators-find-wider-use-in-catv-and-telecommunications"
+  }
+}

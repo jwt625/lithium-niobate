@@ -1,0 +1,105 @@
+{
+  "citation": "Margot Niels, Tom Vanackere, Ewoud Vissers, et al., \"A high-speed heterogeneous lithium tantalate silicon photonics platform\", Nature Photonics 20, 225-231, (2026) doi:10.1038/s41566-025-01832-9",
+  "link": "https://doi.org/10.1038/s41566-025-01832-9",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Margot Niels"
+      },
+      {
+        "literal": "Tom Vanackere"
+      },
+      {
+        "literal": "Ewoud Vissers"
+      },
+      {
+        "literal": "Tingting Zhai"
+      },
+      {
+        "literal": "Patrick Nenezic"
+      },
+      {
+        "literal": "Jakob Declercq"
+      },
+      {
+        "literal": "Cédric Bruynsteen"
+      },
+      {
+        "literal": "Shengpu Niu"
+      },
+      {
+        "literal": "Arno Moerman"
+      },
+      {
+        "literal": "Olivier Caytan"
+      },
+      {
+        "literal": "Nishant Singh"
+      },
+      {
+        "literal": "Sam Lemey"
+      },
+      {
+        "literal": "Xin Yin"
+      },
+      {
+        "literal": "Sofie Janssen"
+      },
+      {
+        "literal": "Peter Verheyen"
+      },
+      {
+        "literal": "Neha Singh"
+      },
+      {
+        "literal": "Dieter Bode"
+      },
+      {
+        "literal": "Martin Davi"
+      },
+      {
+        "literal": "Filippo Ferraro"
+      },
+      {
+        "literal": "Philippe Absil"
+      },
+      {
+        "literal": "Sadhishkumar Balakrishnan"
+      },
+      {
+        "literal": "Joris Van Campenhout"
+      },
+      {
+        "literal": "Günther Roelkens"
+      },
+      {
+        "literal": "Bart Kuyken"
+      },
+      {
+        "literal": "Maximilien Billet"
+      }
+    ],
+    "container_title": "Nature Photonics",
+    "doi": "10.1038/s41566-025-01832-9",
+    "id": "niels2026",
+    "issue": "2",
+    "issued": "2026-02",
+    "page": "225-231",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "A high-speed heterogeneous lithium tantalate silicon photonics platform",
+    "type": "article-journal",
+    "volume": "20"
+  }
+}

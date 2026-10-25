@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 7,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "models": [
+    {
+      "axis": "e",
+      "default": true,
+      "grid": "/api/v1/grids/index/gayer2008-mgo1-sln-e/T24.5C.csv",
+      "grid_rows": 3501,
+      "id": "gayer2008-mgo1-sln-e",
+      "name": "Gayer 2008, 1 mol% MgO:stoichiometric LiNbO3, extraordinary",
+      "reference_T_C": 24.5,
+      "rii": "/api/v1/dispersion/gayer2008-mgo1-sln-e.rii.yml",
+      "status": "P",
+      "url": "/api/v1/dispersion/gayer2008-mgo1-sln-e.json",
+      "valid_lambda_um": [
+        0.5,
+        4.0
+      ],
+      "variant": "mgo1-sln"
+    },
+    {
+      "axis": "e",
+      "default": false,
+      "grid": "/api/v1/grids/index/gayer2008-mgo5-e/T24.5C.csv",
+      "grid_rows": 3501,
+      "id": "gayer2008-mgo5-e",
+      "name": "Gayer 2008, 5 mol% MgO:congruent LiNbO3, extraordinary",
+      "reference_T_C": 24.5,
+      "rii": "/api/v1/dispersion/gayer2008-mgo5-e.rii.yml",
+      "status": "P",
+      "url": "/api/v1/dispersion/gayer2008-mgo5-e.json",
+      "valid_lambda_um": [
+        0.5,
+        4.0
+      ],
+      "variant": "mgo5-cln"
+    },
+    {
+      "axis": "o",
+      "default": false,
+      "grid": "/api/v1/grids/index/gayer2008-mgo5-o/T24.5C.csv",
+      "grid_rows": 1121,
+      "id": "gayer2008-mgo5-o",
+      "name": "Gayer 2008, 5 mol% MgO:congruent LiNbO3, ordinary",
+      "reference_T_C": 24.5,
+      "rii": "/api/v1/dispersion/gayer2008-mgo5-o.rii.yml",
+      "status": "P",
+      "url": "/api/v1/dispersion/gayer2008-mgo5-o.json",
+      "valid_lambda_um": [
+        0.5,
+        1.62
+      ],
+      "variant": "mgo5-cln"
+    },
+    {
+      "axis": "e",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-cln-e/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-cln-e",
+      "name": "Zelmon 1997, congruent LiNbO3, extraordinary",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-cln-e.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-cln-e.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "cln"
+    },
+    {
+      "axis": "o",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-cln-o/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-cln-o",
+      "name": "Zelmon 1997, congruent LiNbO3, ordinary",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-cln-o.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-cln-o.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "cln"
+    },
+    {
+      "axis": "e",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-mgo5-e/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-mgo5-e",
+      "name": "Zelmon 1997, 5 mol% MgO:congruent LiNbO3, extraordinary (erratum applied)",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-mgo5-e.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-mgo5-e.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "mgo5-cln"
+    },
+    {
+      "axis": "o",
+      "default": true,
+      "grid": "/api/v1/grids/index/zelmon1997-mgo5-o/T21C.csv",
+      "grid_rows": 4601,
+      "id": "zelmon1997-mgo5-o",
+      "name": "Zelmon 1997, 5 mol% MgO:congruent LiNbO3, ordinary (erratum applied)",
+      "reference_T_C": 21,
+      "rii": "/api/v1/dispersion/zelmon1997-mgo5-o.rii.yml",
+      "status": "P-db",
+      "url": "/api/v1/dispersion/zelmon1997-mgo5-o.json",
+      "valid_lambda_um": [
+        0.4,
+        5.0
+      ],
+      "variant": "mgo5-cln"
+    }
+  ]
+}

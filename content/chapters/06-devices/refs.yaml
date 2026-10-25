@@ -1,0 +1,2087 @@
+# refs.yaml: chapter 06 Devices
+# As of 2026-10-25.
+# DOI entries: title, first author, author count, venue, volume, pages, and issued year taken from
+# https://api.crossref.org/works/{doi}, fetched 2026-10-25 with no mailto, user, or other personal parameter.
+# Every DOI below resolved. `numbers_ver` is the R08 verification code for the numbers this chapter
+# quotes (Y = in the published abstract; Y(arXiv) / Y(conf) / Y(preprint); title = only metadata;
+# atlas = eo-modulator-atlas row with evidence locator; P / P-comp / P-db = property status per R06/R14).
+# "abstract read 2026-10-25" marks numbers re-checked against the Crossref abstract in this lane.
+# `year` is the Crossref issued year (online date); print-volume years are given in `note` where they differ.
+
+- id: alferness1982
+  type: article
+  first_author: "Alferness"
+  n_authors: 1
+  title: "Waveguide Electrooptic Modulators"
+  venue: "IEEE Transactions on Microwave Theory and Techniques"
+  volume: "30"
+  pages: "1121-1137"
+  year: 1982
+  doi: 10.1109/tmtt.1982.1131213
+  url: https://doi.org/10.1109/tmtt.1982.1131213
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited for model class (no number)"
+  sections: [6.2]
+  note: "Traveling-wave modulator theory; corrections in IEEE T-MTT 31, 315 (1983)"
+
+- id: chung1991
+  type: article
+  first_author: "Chung"
+  n_authors: 3
+  title: "Modeling and optimization of traveling-wave LiNbO/sub 3/ interferometric modulators"
+  venue: "IEEE Journal of Quantum Electronics"
+  volume: "27"
+  pages: "608-617"
+  year: 1991
+  doi: 10.1109/3.81370
+  url: https://doi.org/10.1109/3.81370
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited for model class (no number)"
+  sections: [6.2]
+  note: "Traveling-wave LN modulator model incl. impedance mismatch; equation form to be checked by PHY (Q6.2)"
+
+- id: wooten2000
+  type: article
+  first_author: "Wooten"
+  n_authors: 11
+  title: "A review of lithium niobate modulators for fiber-optic communications systems"
+  venue: "IEEE Journal of Selected Topics in Quantum Electronics"
+  volume: "6"
+  pages: "69-82"
+  year: 2000
+  doi: 10.1109/2944.826874
+  url: https://doi.org/10.1109/2944.826874
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (no number)"
+  sections: [6.1, 6.2]
+  note: "Bulk LN modulator review"
+
+- id: weis1985
+  type: article
+  first_author: "Weis"
+  second_author: "Gaylord"
+  n_authors: 2
+  title: "Lithium niobate: Summary of physical properties and crystal structure"
+  venue: "Applied Physics A Solids and Surfaces"
+  volume: "37"
+  pages: "191-203"
+  year: 1985
+  doi: 10.1007/BF00614817
+  url: https://doi.org/10.1007/BF00614817
+  crossref_checked: 2026-10-25
+  numbers_ver: "P-comp (R14)"
+  sections: [6.1]
+  note: "r33 = 30.8 (Turner 1966) and 28.8 pm/V (Kaminow 1980), clamped, 633 nm, Table 4 p. 199"
+
+- id: zelmon1997
+  type: article
+  first_author: "Zelmon"
+  n_authors: 3
+  title: "Infrared corrected Sellmeier coefficients for congruently grown lithium niobate and 5 mol% magnesium oxide –doped lithium niobate"
+  venue: "Journal of the Optical Society of America B"
+  volume: "14"
+  pages: "3319"
+  year: 1997
+  doi: 10.1364/JOSAB.14.003319
+  url: https://doi.org/10.1364/JOSAB.14.003319
+  crossref_checked: 2026-10-25
+  numbers_ver: "P-db (R06)"
+  sections: [6.1, F6.03]
+  note: "CLN Sellmeier, 21 C, 0.4-5 um; n_e(1550 nm) = 2.1376 recomputed"
+
+- id: zelmon2026erratum
+  type: article
+  first_author: "Zelmon"
+  n_authors: 3
+  title: "Infrared corrected Sellmeier coefficients for congruently grown lithium niobate and 5 mol. % magnesium oxide–doped lithium niobate: erratum"
+  venue: "Journal of the Optical Society of America B"
+  volume: "43"
+  pages: "2788"
+  year: 2026
+  doi: 10.1364/JOSAB.616304
+  url: https://doi.org/10.1364/JOSAB.616304
+  crossref_checked: 2026-10-25
+  numbers_ver: "P(abs) (R06)"
+  sections: [6.1]
+  note: "Erratum: MgO5 o/e headings swapped; CLN unaffected"
+
+- id: kushibiki1999
+  type: article
+  first_author: "Kushibiki"
+  n_authors: 4
+  title: "Accurate measurements of the acoustical physical constants of LiNbO/sub 3/ and LiTaO/sub 3/ single crystals"
+  venue: "IEEE Transactions on Ultrasonics, Ferroelectrics and Frequency Control"
+  volume: "46"
+  pages: "1315-1323"
+  year: 1999
+  doi: 10.1109/58.796136
+  url: https://doi.org/10.1109/58.796136
+  crossref_checked: 2026-10-25
+  numbers_ver: "P (R06)"
+  sections: [08 L3 reference]
+  note: "Density 4642.8 kg/m^3 (CLN, SAW grade)"
+
+- id: wang2018nat
+  type: article
+  first_author: "Wang"
+  n_authors: 8
+  title: "Integrated lithium niobate electro-optic modulators operating at CMOS-compatible voltages"
+  venue: "Nature"
+  volume: "562"
+  pages: "101-104"
+  year: 2018
+  doi: 10.1038/s41586-018-0551-y
+  url: https://doi.org/10.1038/s41586-018-0551-y
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (R08 coordinator re-read)"
+  sections: [6.1]
+  note: "CMOS-compatible drive, up to 210 Gb/s, on-chip loss < 0.5 dB; 'Vpi 1.4 V' and '100 GHz' are main-text figures, not verified"
+
+- id: wang2018oe
+  type: article
+  first_author: "Wang"
+  n_authors: 5
+  title: "Nanophotonic lithium niobate electro-optic modulators"
+  venue: "Optics Express"
+  volume: "26"
+  pages: "1547"
+  year: 2018
+  doi: 10.1364/oe.26.001547
+  url: https://doi.org/10.1364/oe.26.001547
+  crossref_checked: 2026-10-25
+  numbers_ver: "atlas"
+  sections: [6.1]
+  note: "Ring rows wang2018-rt-*; atlas year 2017 (arXiv v1)"
+
+- id: mercante2018
+  type: article
+  first_author: "Mercante"
+  n_authors: 6
+  title: "Thin film lithium niobate electro-optic modulator with terahertz operating bandwidth"
+  venue: "Optics Express"
+  volume: "26"
+  pages: "14810"
+  year: 2018
+  doi: 10.1364/OE.26.014810
+  url: https://doi.org/10.1364/OE.26.014810
+  crossref_checked: 2026-10-25
+  numbers_ver: "title"
+  sections: [6.1]
+  note: "'THz operating bandwidth' in title; 3 dB value not verified"
+
+- id: he2019np
+  type: article
+  first_author: "He"
+  n_authors: 16
+  title: "High-performance hybrid silicon and lithium niobate Mach–Zehnder modulators for 100 Gbit s−1 and beyond"
+  venue: "Nature Photonics"
+  volume: "13"
+  pages: "359-364"
+  year: 2019
+  doi: 10.1038/s41566-019-0378-6
+  url: https://doi.org/10.1038/s41566-019-0378-6
+  crossref_checked: 2026-10-25
+  numbers_ver: "title (numbers in title)"
+  sections: [6.1, 8.3]
+  note: "Hybrid Si/LN MZM for 100 Gbit/s and beyond; atlas he2019-a"
+
+- id: xu2020nc
+  type: article
+  first_author: "Xu"
+  n_authors: 14
+  title: "High-performance coherent optical modulators based on thin-film lithium niobate platform"
+  venue: "Nature Communications"
+  volume: "11"
+  pages: "3911"
+  year: 2020
+  doi: 10.1038/s41467-020-17806-0
+  url: https://doi.org/10.1038/s41467-020-17806-0
+  crossref_checked: 2026-10-25
+  numbers_ver: "title"
+  sections: [6.1]
+  note: "TFLN coherent modulators; atlas xu2020"
+
+- id: li2020nc
+  type: article
+  first_author: "Li"
+  n_authors: 6
+  title: "Lithium niobate photonic-crystal electro-optic modulator"
+  venue: "Nature Communications"
+  volume: "11"
+  pages: "4123"
+  year: 2020
+  doi: 10.1038/s41467-020-17950-7
+  url: https://doi.org/10.1038/s41467-020-17950-7
+  crossref_checked: 2026-10-25
+  numbers_ver: "atlas"
+  sections: [6.1]
+  note: "Photonic-crystal EO modulator; atlas li2020-b, li2020-c"
+
+- id: kharel2021
+  type: article
+  first_author: "Kharel"
+  n_authors: 5
+  title: "Breaking voltage–bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes"
+  venue: "Optica"
+  volume: "8"
+  pages: "357"
+  year: 2021
+  doi: 10.1364/OPTICA.416155
+  url: https://doi.org/10.1364/OPTICA.416155
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.1, 6.2]
+  note: "RF Vpi 1.3 V, 1.8 dB roll-off at 50 GHz, micro-structured electrodes"
+
+- id: zhang2021optica
+  type: article
+  first_author: "Zhang"
+  n_authors: 5
+  title: "Integrated lithium niobate electro-optic modulators: when performance meets scalability"
+  venue: "Optica"
+  volume: "8"
+  pages: "652"
+  year: 2021
+  doi: 10.1364/OPTICA.415762
+  url: https://doi.org/10.1364/OPTICA.415762
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.1]
+  note: "TFLN EO modulator review"
+
+- id: zhu2021aop
+  type: article
+  first_author: "Zhu"
+  n_authors: 15
+  title: "Integrated photonics on thin-film lithium niobate"
+  venue: "Advances in Optics and Photonics"
+  volume: "13"
+  pages: "242"
+  year: 2021
+  doi: 10.1364/AOP.411024
+  url: https://doi.org/10.1364/AOP.411024
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.6]
+  note: "Reference review; tabulates n2 = 1.8e-19 m^2/W (primary not traced, U)"
+
+- id: xu2022optica
+  type: article
+  first_author: "Xu"
+  n_authors: 14
+  title: "Dual-polarization thin-film lithium niobate in-phase quadrature modulators for terabit-per-second transmission"
+  venue: "Optica"
+  volume: "9"
+  pages: "61"
+  year: 2022
+  doi: 10.1364/OPTICA.449691
+  url: https://doi.org/10.1364/OPTICA.449691
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.1, 6.12]
+  note: "Dual-pol IQ, sub-1-V, 110 GHz, 1.96 Tb/s net single wavelength"
+
+- id: zhang2022prj
+  type: article
+  first_author: "Zhang"
+  n_authors: 10
+  title: "Systematic investigation of millimeter-wave optic modulation performance in thin-film lithium niobate"
+  venue: "Photonics Research"
+  volume: "10"
+  pages: "2380"
+  year: 2022
+  doi: 10.1364/prj.468518
+  url: https://doi.org/10.1364/prj.468518
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.3, 6.12]
+  note: "170 GHz 3 dB, 295 GHz 6 dB, measured to 325 GHz (abstract continues beyond Crossref snippet; R08 Y)"
+
+- id: valdez2022
+  type: article
+  first_author: "Valdez"
+  n_authors: 12
+  title: "110 GHz, 110 mW hybrid silicon-lithium niobate Mach-Zehnder modulator"
+  venue: "Scientific Reports"
+  volume: "12"
+  pages: "18611"
+  year: 2022
+  doi: 10.1038/s41598-022-23403-6
+  url: https://doi.org/10.1038/s41598-022-23403-6
+  crossref_checked: 2026-10-25
+  numbers_ver: "title (numbers in title)"
+  sections: [6.1]
+  note: "110 GHz, 110 mW hybrid Si-LN MZM"
+
+- id: nelan2022
+  type: article
+  first_author: "Nelan"
+  n_authors: 7
+  title: "Integrated Lithium Niobate Intensity Modulator on a Silicon Handle With Slow-Wave Electrodes"
+  venue: "IEEE Photonics Technology Letters"
+  volume: "34"
+  pages: "981-984"
+  year: 2022
+  doi: 10.1109/lpt.2022.3197085
+  url: https://doi.org/10.1109/lpt.2022.3197085
+  crossref_checked: 2026-10-25
+  numbers_ver: "atlas"
+  sections: [6.1, A7]
+  note: "Slow-wave electrode TFLN on Si handle; atlas nelan2022a-a"
+
+- id: berikaa2022
+  type: article
+  first_author: "Berikaa"
+  n_authors: 3
+  title: "Net 400-Gbps/λ IMDD transmission using a single-DAC DSP-free transmitter and a thin-film lithium niobate MZM"
+  venue: "Optics Letters"
+  volume: "47"
+  pages: "6273"
+  year: 2022
+  doi: 10.1364/ol.476399
+  url: https://doi.org/10.1364/ol.476399
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [8.3]
+  note: "128 GBd PAM16, net 400 Gb/s IM/DD"
+
+- id: mookherjea2023
+  type: article
+  first_author: "Mookherjea"
+  n_authors: 3
+  title: "Thin-film lithium niobate electro-optic modulators: To etch or not to etch"
+  venue: "Applied Physics Letters"
+  volume: "122"
+  pages: "120501"
+  year: 2023
+  doi: 10.1063/5.0142232
+  url: https://doi.org/10.1063/5.0142232
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.1]
+  note: "Etched vs etchless TFLN modulators"
+
+- id: renaud2023
+  type: article
+  first_author: "Renaud"
+  n_authors: 8
+  title: "Sub-1 Volt and high-bandwidth visible to near-infrared electro-optic modulators"
+  venue: "Nature Communications"
+  volume: "14"
+  pages: "1496"
+  year: 2023
+  doi: 10.1038/s41467-023-36870-w
+  url: https://doi.org/10.1038/s41467-023-36870-w
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.3]
+  note: "0.55 V cm at 738 nm, > 35 GHz"
+
+- id: xue2023
+  type: article
+  first_author: "Xue"
+  n_authors: 11
+  title: "Full-spectrum visible electro-optic modulator"
+  venue: "Optica"
+  volume: "10"
+  pages: "125"
+  year: 2023
+  doi: 10.1364/optica.482667
+  url: https://doi.org/10.1364/optica.482667
+  crossref_checked: 2026-10-25
+  numbers_ver: "atlas"
+  sections: [6.3]
+  note: "Visible MZM; atlas xue2023-c 0.17 V cm at 450 nm"
+
+- id: shen2024lpr
+  type: article
+  first_author: "Shen"
+  n_authors: 14
+  title: "Highly Efficient Slow‐Light Mach–Zehnder Modulator Achieving 0.21 V cm Efficiency with Bandwidth Surpassing 110 GHz"
+  venue: "Laser & Photonics Reviews"
+  volume: "19"
+  pages: "2401092"
+  year: 2024
+  doi: 10.1002/lpor.202401092
+  url: https://doi.org/10.1002/lpor.202401092
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.1, 6.2, 6.12]
+  note: "0.21 V cm, 1 mm slow-light MZM (abstract); atlas shen2025-a (atlas id uses 2025)"
+
+- id: holzgrafe2024
+  type: article
+  first_author: "Holzgrafe"
+  n_authors: 7
+  title: "Relaxation of the electro-optic response in thin-film lithium niobate modulators"
+  venue: "Optics Express"
+  volume: "32"
+  pages: "3619"
+  year: 2024
+  doi: 10.1364/OE.507536
+  url: https://doi.org/10.1364/OE.507536
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.1]
+  note: "EO response 1 mHz-1 MHz; relaxation-enhanced 1-20 kHz"
+
+- id: liu2025lpr
+  type: article
+  first_author: "Liu"
+  n_authors: 11
+  title: "Ultrahigh‐Efficiency Dual‐Band Thin‐Film Lithium Niobate Modulator Incorporating Low‐k Underfill for 390 Gbit s −1 PAM8 Transmission"
+  venue: "Laser & Photonics Reviews"
+  volume: "19"
+  pages: "2402053"
+  year: 2025
+  doi: 10.1002/lpor.202402053
+  url: https://doi.org/10.1002/lpor.202402053
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.1, 6.2]
+  note: "Low-k underfill; Vpi 1.9 V (C) / 1.54 V (O), 7 mm; 220 / 218 GHz extrapolated (R08)"
+
+- id: yu2025oe
+  type: article
+  first_author: "Yu"
+  n_authors: 5
+  title: "0.33 V · cm thin-film lithium niobate Mach-Zehnder modulator with ridge-top transparent electrode"
+  venue: "Optics Express"
+  volume: "33"
+  pages: "41353"
+  year: 2025
+  doi: 10.1364/oe.572384
+  url: https://doi.org/10.1364/oe.572384
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.1, 6.12]
+  note: "0.33 V cm, 300 um, 2.4 dB at 110 GHz, 145 GHz extrapolated, IL 2.7 dB"
+
+- id: liu2025lam
+  type: article
+  first_author: "Liu"
+  n_authors: 10
+  title: "Volume manufacturing of thin-film lithium niobate modulators with bandwidth > 110 GHz based on 4-inch wafer with a quartz handle"
+  venue: "Light: Advanced Manufacturing"
+  volume: "6"
+  pages: "1"
+  year: 2025
+  doi: 10.37188/lam.2025.047
+  url: https://doi.org/10.37188/lam.2025.047
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (R08)"
+  sections: [8.3]
+  note: "4-inch TFLN on quartz, > 110 GHz, 2.92 V cm, 50% yield"
+
+- id: chen2025lpr
+  type: article
+  first_author: "Chen"
+  n_authors: 9
+  title: "Ultra‐Compact and Ultra‐High Speed Topological Photonic Crystal Modulator Based on Thin Film Lithium Niobate"
+  venue: "Laser & Photonics Reviews"
+  volume: "19"
+  pages: "e00380"
+  year: 2025
+  doi: 10.1002/lpor.202500380
+  url: https://doi.org/10.1002/lpor.202500380
+  crossref_checked: 2026-10-25
+  numbers_ver: "atlas"
+  sections: [6.1, A7]
+  note: "Topological PhC modulator; atlas chen2025-a, 220 GBd"
+
+- id: deakin2025ofc
+  type: conference
+  first_author: "Deakin"
+  n_authors: 4
+  title: "440-GBaud All-Electronic Signaling Enabling Single- Wavelength Net Rate over 1 Tb/s per Modulation Dimension"
+  venue: "Optical Fiber Communication Conference (OFC) Postdeadline Papers 2025"
+  volume: ""
+  pages: "Th4B.7"
+  year: 2025
+  doi: 10.1364/ofc.2025.th4b.7
+  url: https://doi.org/10.1364/ofc.2025.th4b.7
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.12, 8.3]
+  note: "440 GBd PS-16-ASK, 221 GHz DAC (abstract read 2026-10-25)"
+
+- id: che2026jlt
+  type: article
+  first_author: "Che"
+  n_authors: 4
+  title: "440-GBaud All-Electronic Signaling Enabling Single-Wavelength Net Rate Over 1 Tb/s Per Modulation Dimension"
+  venue: "Journal of Lightwave Technology"
+  volume: "44"
+  pages: "1178-1193"
+  year: 2026
+  doi: 10.1109/jlt.2025.3632244
+  url: https://doi.org/10.1109/jlt.2025.3632244
+  crossref_checked: 2026-10-25
+  numbers_ver: "title"
+  sections: [6.12]
+  note: "Journal version of the 440 GBd result"
+
+- id: hu2025nrp
+  type: article
+  first_author: "Hu"
+  n_authors: 16
+  title: "Integrated electro-optics on thin-film lithium niobate"
+  venue: "Nature Reviews Physics"
+  volume: "7"
+  pages: "237-254"
+  year: 2025
+  doi: 10.1038/s42254-025-00825-5
+  url: https://doi.org/10.1038/s42254-025-00825-5
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.1]
+  note: "Integrated EO on TFLN review"
+
+- id: boes2023
+  type: article
+  first_author: "Boes"
+  n_authors: 10
+  title: "Lithium niobate photonics: Unlocking the electromagnetic spectrum"
+  venue: "Science"
+  volume: "379"
+  pages: "eabj4396"
+  year: 2023
+  doi: 10.1126/science.abj4396
+  url: https://doi.org/10.1126/science.abj4396
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.0]
+  note: "LN photonics across the spectrum"
+
+- id: liu2026acsp
+  type: article
+  first_author: "Liu"
+  n_authors: 5
+  title: "Visible and Near-Infrared Thin-Film Lithium Niobate Modulators with Thermo-Optic Bias"
+  venue: "ACS Photonics"
+  volume: "13"
+  pages: "3951-3962"
+  year: 2026
+  doi: 10.1021/acsphotonics.6c00668
+  url: https://doi.org/10.1021/acsphotonics.6c00668
+  crossref_checked: 2026-10-25
+  numbers_ver: "atlas"
+  sections: [6.3]
+  note: "Visible/NIR TFLN modulators; atlas liu2026d-*"
+
+- id: zhang2017optica
+  type: article
+  first_author: "Zhang"
+  n_authors: 5
+  title: "Monolithic ultra-high-Q lithium niobate microring resonator"
+  venue: "Optica"
+  volume: "4"
+  pages: "1536"
+  year: 2017
+  doi: 10.1364/OPTICA.4.001536
+  url: https://doi.org/10.1364/OPTICA.4.001536
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.12 context]
+  note: "Ring Q about 1e7, 2.7 dB/m"
+
+- id: luke2020
+  type: article
+  first_author: "Luke"
+  n_authors: 6
+  title: "Wafer-scale low-loss lithium niobate photonic integrated circuits"
+  venue: "Optics Express"
+  volume: "28"
+  pages: "24452"
+  year: 2020
+  doi: 10.1364/oe.401959
+  url: https://doi.org/10.1364/oe.401959
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.12, 8.3]
+  note: "0.27 dB/cm, 4- and 6-inch DUV"
+
+- id: zhu2024prj
+  type: article
+  first_author: "Zhu"
+  n_authors: 11
+  title: "Twenty-nine million intrinsic Q -factor monolithic microresonators on thin-film lithium niobate"
+  venue: "Photonics Research"
+  volume: "12"
+  pages: "A63"
+  year: 2024
+  doi: 10.1364/prj.521172
+  url: https://doi.org/10.1364/prj.521172
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.12]
+  note: "Intrinsic Q 29 million, 1.3 dB/m (abstract read 2026-10-25)"
+
+- id: gao2022col
+  type: article
+  first_author: "Gao"
+  n_authors: 9
+  title: "Lithium niobate microring with ultra-high Q factor above 10^8"
+  venue: "Chinese Optics Letters"
+  volume: "20"
+  pages: "011902"
+  year: 2022
+  doi: 10.3788/col202220.011902
+  url: https://doi.org/10.3788/col202220.011902
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.12]
+  note: "Q above 1e8 (title); about 0.28 dB/m (R08)"
+
+- id: shamsansari2022app
+  type: article
+  first_author: "Shams-Ansari"
+  n_authors: 15
+  title: "Reduced material loss in thin-film lithium niobate waveguides"
+  venue: "APL Photonics"
+  volume: "7"
+  pages: "081301"
+  year: 2022
+  doi: 10.1063/5.0095146
+  url: https://doi.org/10.1063/5.0095146
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (inferred limit)"
+  sections: [6.12]
+  note: "Material Q about 1.6e8 (0.2 dB/m), inferred"
+
+- id: desiatov2019optica
+  type: article
+  first_author: "Desiatov"
+  n_authors: 5
+  title: "Ultra-low-loss integrated visible photonics using thin-film lithium niobate"
+  venue: "Optica"
+  volume: "6"
+  pages: "380"
+  year: 2019
+  doi: 10.1364/OPTICA.6.000380
+  url: https://doi.org/10.1364/OPTICA.6.000380
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.12 context]
+  note: "6 dB/m, Q_i 11e6 at 637 nm"
+
+- id: gao2021njp
+  type: article
+  first_author: "Gao"
+  n_authors: 12
+  title: "Broadband highly efficient nonlinear optical processes in on-chip integrated lithium niobate microdisk resonators of Q-factor above 10^8"
+  venue: "New Journal of Physics"
+  volume: "23"
+  pages: "123027"
+  year: 2021
+  doi: 10.1088/1367-2630/ac3d52
+  url: https://doi.org/10.1088/1367-2630/ac3d52
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.5, 6.12]
+  note: "OPO threshold 19.6 uW, PLACE microdisk"
+
+- id: wang2018optica
+  type: article
+  first_author: "Wang"
+  n_authors: 8
+  title: "Ultrahigh-efficiency wavelength conversion in nanophotonic periodically poled lithium niobate waveguides"
+  venue: "Optica"
+  volume: "5"
+  pages: "1438"
+  year: 2018
+  doi: 10.1364/OPTICA.5.001438
+  url: https://doi.org/10.1364/OPTICA.5.001438
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.4]
+  note: "2600 %/W/cm^2, 4 um period"
+
+- id: chen2024nn
+  type: article
+  first_author: "Chen"
+  n_authors: 6
+  title: "Adapted poling to break the nonlinear efficiency limit in nanophotonic lithium niobate waveguides"
+  venue: "Nature Nanotechnology"
+  volume: "19"
+  pages: "44-50"
+  year: 2023
+  doi: 10.1038/s41565-023-01525-w
+  url: https://doi.org/10.1038/s41565-023-01525-w
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv) 2307.11671"
+  sections: [6.4]
+  note: "Overall SHG efficiency near 10^4 %/W; > 80% at 20 mW (arXiv abstract read 2026-10-25). Nat. Nanotechnol. 19, 44-50 (2024); Crossref issued 2023 (online). R08's '104 %/W' is a lost superscript"
+
+- id: li2024apn
+  type: article
+  first_author: "Li"
+  n_authors: 4
+  title: "Highly efficient second-harmonic generation in a double-layer thin-film lithium niobate waveguide"
+  venue: "Advanced Photonics Nexus"
+  volume: "3"
+  pages: "066009"
+  year: 2024
+  doi: 10.1117/1.APN.3.6.066009
+  url: https://doi.org/10.1117/1.APN.3.6.066009
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.4, 6.12]
+  note: "9600 %/W/cm^2 measured, 85% absolute"
+
+- id: park2022ol
+  type: article
+  first_author: "Park"
+  n_authors: 7
+  title: "High-efficiency second harmonic generation of blue light on thin-film lithium niobate"
+  venue: "Optics Letters"
+  volume: "47"
+  pages: "2706"
+  year: 2022
+  doi: 10.1364/OL.455046
+  url: https://doi.org/10.1364/OL.455046
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.4]
+  note: "33,000 %/W/cm^2 blue SHG"
+
+- id: mishra2021
+  type: article
+  first_author: "Mishra"
+  n_authors: 10
+  title: "Mid-infrared nonlinear optics in thin-film lithium niobate on sapphire"
+  venue: "Optica"
+  volume: "8"
+  pages: "921"
+  year: 2021
+  doi: 10.1364/OPTICA.427428
+  url: https://doi.org/10.1364/OPTICA.427428
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.4]
+  note: "200 %/W/cm^2 DFG, to 3.66 um, LN on sapphire"
+
+- id: lu2019optica
+  type: article
+  first_author: "Lu"
+  n_authors: 7
+  title: "Periodically poled thin-film lithium niobate microring resonators with a second-harmonic generation efficiency of 250,000%/W"
+  venue: "Optica"
+  volume: "6"
+  pages: "1455"
+  year: 2019
+  doi: 10.1364/OPTICA.6.001455
+  url: https://doi.org/10.1364/OPTICA.6.001455
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.4]
+  note: "250,000 %/W; 15% at 115 uW, z-cut PPLN ring"
+
+- id: lu2020optica
+  type: article
+  first_author: "Lu"
+  n_authors: 5
+  title: "Toward 1% single-photon anharmonicity with periodically poled lithium niobate microring resonators"
+  venue: "Optica"
+  volume: "7"
+  pages: "1654"
+  year: 2020
+  doi: 10.1364/OPTICA.403931
+  url: https://doi.org/10.1364/OPTICA.403931
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.4, 6.12]
+  note: "5,000,000 %/W ring SHG (abstract read 2026-10-25)"
+
+- id: chen2019optica
+  type: article
+  first_author: "Chen"
+  n_authors: 6
+  title: "Ultra-efficient frequency conversion in quasi-phase-matched lithium niobate microrings"
+  venue: "Optica"
+  volume: "6"
+  pages: "1244"
+  year: 2019
+  doi: 10.1364/OPTICA.6.001244
+  url: https://doi.org/10.1364/OPTICA.6.001244
+  crossref_checked: 2026-10-25
+  numbers_ver: "partial (R08)"
+  sections: [not printed]
+  note: "3.8 %/mW (arXiv v1); 230,000 %/W unverified"
+
+- id: jankowski2022
+  type: article
+  first_author: "Jankowski"
+  n_authors: 7
+  title: "Quasi-static optical parametric amplification"
+  venue: "Optica"
+  volume: "9"
+  pages: "273"
+  year: 2022
+  doi: 10.1364/OPTICA.442550
+  url: https://doi.org/10.1364/OPTICA.442550
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.5, 6.12]
+  note: "71 dB (118 dB/cm) unsaturated; 88 dB saturated"
+
+- id: ledezma2022
+  type: article
+  first_author: "Ledezma"
+  n_authors: 6
+  title: "Intense optical parametric amplification in dispersion-engineered nanophotonic lithium niobate waveguides"
+  venue: "Optica"
+  volume: "9"
+  pages: "303"
+  year: 2022
+  doi: 10.1364/OPTICA.442332
+  url: https://doi.org/10.1364/OPTICA.442332
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.5]
+  note: "> 50 dB/cm; > 100 dB/cm over 600 nm near 2 um"
+
+- id: lu2021optica
+  type: article
+  first_author: "Lu"
+  n_authors: 6
+  title: "Ultralow-threshold thin-film lithium niobate optical parametric oscillator"
+  venue: "Optica"
+  volume: "8"
+  pages: "539"
+  year: 2021
+  doi: 10.1364/OPTICA.418984
+  url: https://doi.org/10.1364/OPTICA.418984
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.5]
+  note: "threshold about 30 uW; 11% at 93 uW"
+
+- id: mckenna2022
+  type: article
+  first_author: "McKenna"
+  n_authors: 10
+  title: "Ultra-low-power second-order nonlinear optics on a chip"
+  venue: "Nature Communications"
+  volume: "13"
+  pages: "4532"
+  year: 2022
+  doi: 10.1038/s41467-022-31134-5
+  url: https://doi.org/10.1038/s41467-022-31134-5
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.5]
+  note: "threshold tens of uW; tuning over 1 THz (abstract read 2026-10-25)"
+
+- id: ledezma2023
+  type: article
+  first_author: "Ledezma"
+  n_authors: 9
+  title: "Octave-spanning tunable infrared parametric oscillators in nanophotonics"
+  venue: "Science Advances"
+  volume: "9"
+  pages: "eadf9711"
+  year: 2023
+  doi: 10.1126/sciadv.adf9711
+  url: https://doi.org/10.1126/sciadv.adf9711
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.5]
+  note: "1.53-3.25 um tunable OPO"
+
+- id: roy2023
+  type: article
+  first_author: "Roy"
+  n_authors: 9
+  title: "Visible-to-mid-IR tunable frequency comb in nanophotonics"
+  venue: "Nature Communications"
+  volume: "14"
+  pages: "6549"
+  year: 2023
+  doi: 10.1038/s41467-023-42289-0
+  url: https://doi.org/10.1038/s41467-023-42289-0
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.5]
+  note: "fs OPO comb 1.5-3.3 um"
+
+- id: stokowski2024
+  type: article
+  first_author: "Stokowski"
+  n_authors: 11
+  title: "Integrated frequency-modulated optical parametric oscillator"
+  venue: "Nature"
+  volume: "627"
+  pages: "95-100"
+  year: 2024
+  doi: 10.1038/s41586-024-07071-2
+  url: https://doi.org/10.1038/s41586-024-07071-2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.5]
+  note: "FM-OPO, > 93% internal, about 200 modes"
+
+- id: hwang2023
+  type: article
+  first_author: "Hwang"
+  n_authors: 10
+  title: "Mid-infrared spectroscopy with a broadly tunable thin-film lithium niobate optical parametric oscillator"
+  venue: "Optica"
+  volume: "10"
+  pages: "1535"
+  year: 2023
+  doi: 10.1364/OPTICA.502487
+  url: https://doi.org/10.1364/OPTICA.502487
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.5]
+  note: "> 25 mW at 3.2 um, LN on sapphire"
+
+- id: hwang2026
+  type: article
+  first_author: "Hwang"
+  n_authors: 10
+  title: "Ultra-wideband electrically tuned mid-infrared on-chip parametric oscillator"
+  venue: "Nature Photonics"
+  volume: ""
+  pages: ""
+  year: 2026
+  doi: 10.1038/s41566-026-01999-9
+  url: https://doi.org/10.1038/s41566-026-01999-9
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.5]
+  note: "22 THz, 2.7-3.4 um"
+
+- id: guo2022np
+  type: article
+  first_author: "Guo"
+  n_authors: 9
+  title: "Femtojoule femtosecond all-optical switching in lithium niobate nanophotonics"
+  venue: "Nature Photonics"
+  volume: "16"
+  pages: "625-631"
+  year: 2022
+  doi: 10.1038/s41566-022-01044-5
+  url: https://doi.org/10.1038/s41566-022-01044-5
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.5]
+  note: "tens of fJ, 18 fs switching"
+
+- id: guo2023sci
+  type: article
+  first_author: "Guo"
+  n_authors: 11
+  title: "Ultrafast mode-locked laser in nanophotonic lithium niobate"
+  venue: "Science"
+  volume: "382"
+  pages: "708-713"
+  year: 2023
+  doi: 10.1126/science.adj5438
+  url: https://doi.org/10.1126/science.adj5438
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10]
+  note: "Mode-locked laser 4.8 ps, 10 GHz, > 2.6 pJ, 1065 nm"
+
+- id: zhang2019nat
+  type: article
+  first_author: "Zhang"
+  n_authors: 8
+  title: "Broadband electro-optic frequency comb generation in a lithium niobate microring resonator"
+  venue: "Nature"
+  volume: "568"
+  pages: "373-377"
+  year: 2019
+  doi: 10.1038/s41586-019-1008-7
+  url: https://doi.org/10.1038/s41586-019-1008-7
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (R08 coordinator re-read)"
+  sections: [6.6]
+  note: "> 900 lines at about 10 GHz; '80 nm' not in abstract"
+
+- id: hu2022np
+  type: article
+  first_author: "Hu"
+  n_authors: 11
+  title: "High-efficiency and broadband on-chip electro-optic frequency comb generators"
+  venue: "Nature Photonics"
+  volume: "16"
+  pages: "679-685"
+  year: 2022
+  doi: 10.1038/s41566-022-01059-y
+  url: https://doi.org/10.1038/s41566-022-01059-y
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.6]
+  note: "30% efficiency, 132 nm, 336 fs"
+
+- id: yu2022nat
+  type: article
+  first_author: "Yu"
+  n_authors: 15
+  title: "Integrated femtosecond pulse generator on thin-film lithium niobate"
+  venue: "Nature"
+  volume: "612"
+  pages: "252-258"
+  year: 2022
+  doi: 10.1038/s41586-022-05345-1
+  url: https://doi.org/10.1038/s41586-022-05345-1
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.6]
+  note: "520 fs, 30 GHz, 0.54 pJ"
+
+- id: zhang2025nat
+  type: article
+  first_author: "Zhang"
+  n_authors: 14
+  title: "Ultrabroadband integrated electro-optic frequency comb in lithium tantalate"
+  venue: "Nature"
+  volume: "637"
+  pages: "1096-1103"
+  year: 2025
+  doi: 10.1038/s41586-024-08354-4
+  url: https://doi.org/10.1038/s41586-024-08354-4
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.6, 6.11, 6.12]
+  note: "TFLT EO comb > 450 nm, > 2000 lines"
+
+- id: hu2021nat
+  type: article
+  first_author: "Hu"
+  n_authors: 10
+  title: "On-chip electro-optic frequency shifters and beam splitters"
+  venue: "Nature"
+  volume: "599"
+  pages: "587-593"
+  year: 2021
+  doi: 10.1038/s41586-021-03999-x
+  url: https://doi.org/10.1038/s41586-021-03999-x
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (R08 coordinator re-read)"
+  sections: [6.6]
+  note: "28 GHz at about 90%; 119.2 GHz cascaded"
+
+- id: parriaux2020
+  type: article
+  first_author: "Parriaux"
+  n_authors: 3
+  title: "Electro-optic frequency combs"
+  venue: "Advances in Optics and Photonics"
+  volume: "12"
+  pages: "223"
+  year: 2020
+  doi: 10.1364/AOP.382052
+  url: https://doi.org/10.1364/AOP.382052
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.6]
+  note: "EO comb theory review (for Q6.4)"
+
+- id: he2019optica
+  type: article
+  first_author: "He"
+  n_authors: 10
+  title: "Self-starting bi-chromatic LiNbO 3 soliton microcomb"
+  venue: "Optica"
+  volume: "6"
+  pages: "1138"
+  year: 2019
+  doi: 10.1364/OPTICA.6.001138
+  url: https://doi.org/10.1364/OPTICA.6.001138
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.6]
+  note: "First LN soliton, self-starting"
+
+- id: gong2020
+  type: article
+  first_author: "Gong"
+  n_authors: 4
+  title: "Near-octave lithium niobate soliton microcomb"
+  venue: "Optica"
+  volume: "7"
+  pages: "1275"
+  year: 2020
+  doi: 10.1364/OPTICA.400994
+  url: https://doi.org/10.1364/OPTICA.400994
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.6]
+  note: "4/5 octave, 335 GHz"
+
+- id: song2024lsa
+  type: article
+  first_author: "Song"
+  n_authors: 5
+  title: "Octave-spanning Kerr soliton frequency combs in dispersion- and dissipation-engineered lithium niobate microresonators"
+  venue: "Light: Science & Applications"
+  volume: "13"
+  pages: "225"
+  year: 2024
+  doi: 10.1038/s41377-024-01546-7
+  url: https://doi.org/10.1038/s41377-024-01546-7
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.6]
+  note: "Octave-spanning soliton"
+
+- id: wan2024lpr
+  type: article
+  first_author: "Wan"
+  n_authors: 10
+  title: "Photorefraction‐Assisted Self‐Emergence of Dissipative Kerr Solitons"
+  venue: "Laser & Photonics Reviews"
+  volume: "18"
+  pages: "2300627"
+  year: 2023
+  doi: 10.1002/lpor.202300627
+  url: https://doi.org/10.1002/lpor.202300627
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.6]
+  note: "Single soliton > 13 h; Laser Photon. Rev. 18 (2024), Crossref issued 2023 (online)"
+
+- id: nehra2022
+  type: article
+  first_author: "Nehra"
+  n_authors: 7
+  title: "Few-cycle vacuum squeezing in nanophotonics"
+  venue: "Science"
+  volume: "377"
+  pages: "1333-1337"
+  year: 2022
+  doi: 10.1126/science.abo6213
+  url: https://doi.org/10.1126/science.abo6213
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7, 6.12]
+  note: "4.9 dB measured, > 25 THz (abstract read 2026-10-25)"
+
+- id: chen2022ol
+  type: article
+  first_author: "Chen"
+  n_authors: 4
+  title: "Ultra-broadband quadrature squeezing with thin-film lithium niobate nanophotonics"
+  venue: "Optics Letters"
+  volume: "47"
+  pages: "1506"
+  year: 2022
+  doi: 10.1364/OL.447695
+  url: https://doi.org/10.1364/OL.447695
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "0.56 dB measured single pass"
+
+- id: park2024sa
+  type: article
+  first_author: "Park"
+  n_authors: 12
+  title: "Single-mode squeezed-light generation and tomography with an integrated optical parametric oscillator"
+  venue: "Science Advances"
+  volume: "10"
+  pages: "eadl1814"
+  year: 2024
+  doi: 10.1126/sciadv.adl1814
+  url: https://doi.org/10.1126/sciadv.adl1814
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "0.55 dB squeezing, 1.55 dB anti-squeezing"
+
+- id: kashiwazaki2023
+  type: article
+  first_author: "Kashiwazaki"
+  n_authors: 9
+  title: "Over-8-dB squeezed light generation by a broadband waveguide optical parametric amplifier toward fault-tolerant ultra-fast quantum computers"
+  venue: "Applied Physics Letters"
+  volume: "122"
+  pages: "234003"
+  year: 2023
+  doi: 10.1063/5.0144385
+  url: https://doi.org/10.1063/5.0144385
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "8.3 dB CW, bulk-bonded PPLN ridge (not TFLN)"
+
+- id: zhao2020prl
+  type: article
+  first_author: "Zhao"
+  n_authors: 4
+  title: "High Quality Entangled Photon Pair Generation in Periodically Poled Thin-Film Lithium Niobate Waveguides"
+  venue: "Physical Review Letters"
+  volume: "124"
+  pages: "163603"
+  year: 2020
+  doi: 10.1103/PhysRevLett.124.163603
+  url: https://doi.org/10.1103/PhysRevLett.124.163603
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "CAR > 67,000; g2(0) < 0.025"
+
+- id: ma2020prl
+  type: article
+  first_author: "Ma"
+  n_authors: 7
+  title: "Ultrabright Quantum Photon Sources on Chip"
+  venue: "Physical Review Letters"
+  volume: "125"
+  pages: "263602"
+  year: 2020
+  doi: 10.1103/PhysRevLett.125.263602
+  url: https://doi.org/10.1103/PhysRevLett.125.263602
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "36.3 MHz at 13.4 uW; CAR up to 14,682; g2(0) 0.008"
+
+- id: wang2023npjqi
+  type: article
+  first_author: "Wang"
+  n_authors: 8
+  title: "Quantum frequency conversion and single-photon detection with lithium niobate nanophotonic chips"
+  venue: "npj Quantum Information"
+  volume: "9"
+  pages: "38"
+  year: 2023
+  doi: 10.1038/s41534-023-00704-w
+  url: https://doi.org/10.1038/s41534-023-00704-w
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.7]
+  note: "QFC 73% internal, 900 cps noise"
+
+- id: aghaeerad2025
+  type: article
+  first_author: "Aghaee Rad"
+  n_authors: 90
+  title: "Scaling and networking a modular photonic quantum computer"
+  venue: "Nature"
+  volume: "638"
+  pages: "912-919"
+  year: 2025
+  doi: 10.1038/s41586-024-08406-9
+  url: https://doi.org/10.1038/s41586-024-08406-9
+  crossref_checked: 2026-10-25
+  numbers_ver: "title"
+  sections: [6.0]
+  note: "Xanadu Aurora; TFLN use per R09 S53 (T), not checked in the paper"
+
+- id: holzgrafe2020
+  type: article
+  first_author: "Holzgrafe"
+  n_authors: 9
+  title: "Cavity electro-optics in thin-film lithium niobate for efficient microwave-to-optical transduction"
+  venue: "Optica"
+  volume: "7"
+  pages: "1714"
+  year: 2020
+  doi: 10.1364/OPTICA.397513
+  url: https://doi.org/10.1364/OPTICA.397513
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.7]
+  note: "Cavity EO transduction 2.7e-5"
+
+- id: mckenna2020
+  type: article
+  first_author: "McKenna"
+  n_authors: 9
+  title: "Cryogenic microwave-to-optical conversion using a triply resonant lithium-niobate-on-sapphire transducer"
+  venue: "Optica"
+  volume: "7"
+  pages: "1737"
+  year: 2020
+  doi: 10.1364/OPTICA.397235
+  url: https://doi.org/10.1364/OPTICA.397235
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "6.6e-6 on chip, triply resonant LN on sapphire"
+
+- id: xu2021nc
+  type: article
+  first_author: "Xu"
+  n_authors: 10
+  title: "Bidirectional interconversion of microwave and light with thin-film lithium niobate"
+  venue: "Nature Communications"
+  volume: "12"
+  pages: "4453"
+  year: 2021
+  doi: 10.1038/s41467-021-24809-y
+  url: https://doi.org/10.1038/s41467-021-24809-y
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7, 6.12]
+  note: "1.02% total (15.2% internal), bidirectional; air-clad suppresses photorefraction (abstract read 2026-10-25)"
+
+- id: jiang2020nc
+  type: article
+  first_author: "Jiang"
+  n_authors: 8
+  title: "Efficient bidirectional piezo-optomechanical transduction between microwave and optical frequency"
+  venue: "Nature Communications"
+  volume: "11"
+  pages: "1166"
+  year: 2020
+  doi: 10.1038/s41467-020-14863-3
+  url: https://doi.org/10.1038/s41467-020-14863-3
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.7]
+  note: "5.5% with 323 uW; AO Vpi 0.02 V"
+
+- id: jiang2023np
+  type: article
+  first_author: "Jiang"
+  n_authors: 8
+  title: "Optically heralded microwave photon addition"
+  venue: "Nature Physics"
+  volume: "19"
+  pages: "1423-1428"
+  year: 2023
+  doi: 10.1038/s41567-023-02129-w
+  url: https://doi.org/10.1038/s41567-023-02129-w
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.7]
+  note: "5% CW conversion; 15 Hz heralding"
+
+- id: weaver2024nn
+  type: article
+  first_author: "Weaver"
+  n_authors: 10
+  title: "An integrated microwave-to-optics interface for scalable quantum computing"
+  venue: "Nature Nanotechnology"
+  volume: "19"
+  pages: "166-172"
+  year: 2023
+  doi: 10.1038/s41565-023-01515-y
+  url: https://doi.org/10.1038/s41565-023-01515-y
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "0.9% at 1 uW; 14.8 MHz; Nat. Nanotechnol. 19 (2024), Crossref issued 2023 (online)"
+
+- id: warner2025np
+  type: article
+  first_author: "Warner"
+  n_authors: 18
+  title: "Coherent control of a superconducting qubit using light"
+  venue: "Nature Physics"
+  volume: "21"
+  pages: "831-838"
+  year: 2025
+  doi: 10.1038/s41567-025-02812-0
+  url: https://doi.org/10.1038/s41567-025-02812-0
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.7]
+  note: "up to 1.18%, optical qubit control"
+
+- id: sahu2022nc
+  type: article
+  first_author: "Sahu"
+  n_authors: 6
+  title: "Quantum-enabled operation of a microwave-optical interface"
+  venue: "Nature Communications"
+  volume: "13"
+  pages: "1276"
+  year: 2022
+  doi: 10.1038/s41467-022-28924-2
+  url: https://doi.org/10.1038/s41467-022-28924-2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.7]
+  note: "8.7% at 0.16 added noise photons, bulk LN"
+
+- id: han2021optica
+  type: article
+  first_author: "Han"
+  n_authors: 5
+  title: "Microwave-optical quantum frequency conversion"
+  venue: "Optica"
+  volume: "8"
+  pages: "1050"
+  year: 2021
+  doi: 10.1364/OPTICA.425414
+  url: https://doi.org/10.1364/OPTICA.425414
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.7]
+  note: "Microwave-optical QFC review"
+
+- id: shao2019optica
+  type: article
+  first_author: "Shao"
+  n_authors: 11
+  title: "Microwave-to-optical conversion using lithium niobate thin-film acoustic resonators"
+  venue: "Optica"
+  volume: "6"
+  pages: "1498"
+  year: 2019
+  doi: 10.1364/OPTICA.6.001498
+  url: https://doi.org/10.1364/OPTICA.6.001498
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.8]
+  note: "up to 4.5 GHz; Vpi 0.77 V; g0/2pi 1.1 kHz"
+
+- id: jiang2019optica
+  type: article
+  first_author: "Jiang"
+  n_authors: 9
+  title: "Lithium niobate piezo-optomechanical crystals"
+  venue: "Optica"
+  volume: "6"
+  pages: "845"
+  year: 2019
+  doi: 10.1364/OPTICA.6.000845
+  url: https://doi.org/10.1364/OPTICA.6.000845
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(arXiv)"
+  sections: [6.8]
+  note: "g0/2pi about 120 kHz; phonon lasing"
+
+- id: sarabalis2020
+  type: article
+  first_author: "Sarabalis"
+  n_authors: 5
+  title: "Acousto-optic modulation in lithium niobate on sapphire"
+  venue: "APL Photonics"
+  volume: "5"
+  pages: "086104"
+  year: 2020
+  doi: 10.1063/5.0012288
+  url: https://doi.org/10.1063/5.0012288
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.8]
+  note: "AO modulation in LN on sapphire, unsuspended"
+
+- id: wan2022lsa
+  type: article
+  first_author: "Wan"
+  n_authors: 12
+  title: "Highly efficient acousto-optic modulation using nonsuspended thin-film lithium niobate-chalcogenide hybrid waveguides"
+  venue: "Light: Science & Applications"
+  volume: "11"
+  pages: "145"
+  year: 2022
+  doi: 10.1038/s41377-022-00840-6
+  url: https://doi.org/10.1038/s41377-022-00840-6
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.8, 6.12]
+  note: "AO VpiL 0.03 V cm (abstract read 2026-10-25)"
+
+- id: shao2020oe
+  type: article
+  first_author: "Shao"
+  n_authors: 8
+  title: "Integrated microwave acousto-optic frequency shifter on thin-film lithium niobate"
+  venue: "Optics Express"
+  volume: "28"
+  pages: "23728"
+  year: 2020
+  doi: 10.1364/OE.397138
+  url: https://doi.org/10.1364/OE.397138
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.6, 6.8]
+  note: "AO frequency shifter 3 GHz, > 30 dB suppression"
+
+- id: arrangoiz2019
+  type: article
+  first_author: "Arrangoiz-Arriola"
+  n_authors: 9
+  title: "Resolving the energy levels of a nanomechanical oscillator"
+  venue: "Nature"
+  volume: "571"
+  pages: "537-540"
+  year: 2019
+  doi: 10.1038/s41586-019-1386-x
+  url: https://doi.org/10.1038/s41586-019-1386-x
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.8]
+  note: "Phonon-number resolution"
+
+- id: wollack2022
+  type: article
+  first_author: "Wollack"
+  n_authors: 6
+  title: "Quantum state preparation and tomography of entangled mechanical resonators"
+  venue: "Nature"
+  volume: "604"
+  pages: "463-467"
+  year: 2022
+  doi: 10.1038/s41586-022-04500-y
+  url: https://doi.org/10.1038/s41586-022-04500-y
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.8]
+  note: "Entangled mechanical resonators"
+
+- id: plessky2019
+  type: article
+  first_author: "Plessky"
+  n_authors: 6
+  title: "5 GHz laterally‐excited bulk‐wave resonators (XBARs) based on thin platelets of lithium niobate"
+  venue: "Electronics Letters"
+  volume: "55"
+  pages: "98-100"
+  year: 2019
+  doi: 10.1049/el.2018.7297
+  url: https://doi.org/10.1049/el.2018.7297
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.9]
+  note: "XBAR about 4800 MHz, coupling about 25%, Q about 300 (abstract read 2026-10-25)"
+
+- id: lu2025pqe
+  type: article
+  first_author: "Lu"
+  n_authors: 1
+  title: "Recent advances in high-performance millimeter-Wave acoustic resonators and filters using thin-film lithium niobate"
+  venue: "Progress in Quantum Electronics"
+  volume: "100-101"
+  pages: "100565"
+  year: 2025
+  doi: 10.1016/j.pquantelec.2025.100565
+  url: https://doi.org/10.1016/j.pquantelec.2025.100565
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.9]
+  note: "mmWave TFLN acoustic resonators review"
+
+- id: opdebeeck2021
+  type: article
+  first_author: "Op de Beeck"
+  n_authors: 14
+  title: "III/V-on-lithium niobate amplifiers and lasers"
+  venue: "Optica"
+  volume: "8"
+  pages: "1288"
+  year: 2021
+  doi: 10.1364/OPTICA.438620
+  url: https://doi.org/10.1364/OPTICA.438620
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (no numbers)"
+  sections: [6.10]
+  note: "III-V-on-LN amplifiers and lasers"
+
+- id: shamsansari2022optica
+  type: article
+  first_author: "Shams-Ansari"
+  n_authors: 11
+  title: "Electrically pumped laser transmitter integrated on thin-film lithium niobate"
+  venue: "Optica"
+  volume: "9"
+  pages: "408"
+  year: 2022
+  doi: 10.1364/OPTICA.448617
+  url: https://doi.org/10.1364/OPTICA.448617
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10]
+  note: "up to 60 mW, 50 GHz modulator"
+
+- id: li2022nc
+  type: article
+  first_author: "Li"
+  n_authors: 17
+  title: "Integrated Pockels laser"
+  venue: "Nature Communications"
+  volume: "13"
+  pages: "5344"
+  year: 2022
+  doi: 10.1038/s41467-022-33101-6
+  url: https://doi.org/10.1038/s41467-022-33101-6
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10]
+  note: "2.0e18 Hz/s, 50 MHz switching"
+
+- id: snigirev2023
+  type: article
+  first_author: "Snigirev"
+  n_authors: 16
+  title: "Ultrafast tunable lasers using lithium niobate integrated photonics"
+  venue: "Nature"
+  volume: "615"
+  pages: "411-417"
+  year: 2023
+  doi: 10.1038/s41586-023-05724-2
+  url: https://doi.org/10.1038/s41586-023-05724-2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10]
+  note: "3 kHz linewidth, 12e15 Hz/s"
+
+- id: desiatov2019apl
+  type: article
+  first_author: "Desiatov"
+  second_author: "Lončar"
+  n_authors: 2
+  title: "Silicon photodetector for integrated lithium niobate photonics"
+  venue: "Applied Physics Letters"
+  volume: "115"
+  pages: "121108"
+  year: 2019
+  doi: 10.1063/1.5118901
+  url: https://doi.org/10.1063/1.5118901
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10]
+  note: "22-37 mA/W, 635-850 nm"
+
+- id: wei2023lam
+  type: article
+  first_author: "Wei"
+  n_authors: 10
+  title: "Ultra-wideband Waveguide-coupled Photodiodes Heterogeneously Integrated on a Thin-film Lithium Niobate Platform"
+  venue: "Light: Advanced Manufacturing"
+  volume: "4"
+  pages: "1"
+  year: 2023
+  doi: 10.37188/lam.2023.030
+  url: https://doi.org/10.37188/lam.2023.030
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10]
+  note: "110 GHz, 0.4 A/W InP MUTC"
+
+- id: xie2025lsa
+  type: article
+  first_author: "Xie"
+  n_authors: 11
+  title: "A 3.584 Tbps coherent receiver chip on InP-LiNbO3 wafer-level integration platform"
+  venue: "Light: Science & Applications"
+  volume: "14"
+  pages: "172"
+  year: 2025
+  doi: 10.1038/s41377-025-01821-1
+  url: https://doi.org/10.1038/s41377-025-01821-1
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10, 6.12]
+  note: "140 GHz PD; 3.584 Tb/s receiver"
+
+- id: yu2026lpr
+  type: article
+  first_author: "Yu"
+  n_authors: 9
+  title: "Erbium‐Doped Lithium Niobate‐on‐Insulator Waveguide Amplifier With 28 dB Fiber‐to‐Fiber Net Gain"
+  venue: "Laser & Photonics Reviews"
+  volume: ""
+  pages: "e71753"
+  year: 2026
+  doi: 10.1002/lpor.71753
+  url: https://doi.org/10.1002/lpor.71753
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.10, 6.12]
+  note: "> 28 dB fiber-to-fiber net gain at 1531 nm, NF 5.3 dB, > 15 dBm (abstract read 2026-10-25)"
+
+- id: han2025lpr
+  type: article
+  first_author: "Han"
+  n_authors: 3
+  title: "Heterogeneously Integrated Photonics Based on Thin Film Lithium Niobate Platform"
+  venue: "Laser & Photonics Reviews"
+  volume: "19"
+  pages: "2400649"
+  year: 2024
+  doi: 10.1002/lpor.202400649
+  url: https://doi.org/10.1002/lpor.202400649
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.10]
+  note: "Heterogeneous TFLN review; Laser Photon. Rev. 19 (2025), Crossref issued 2024 (online)"
+
+- id: luo2023ap
+  type: article
+  first_author: "Luo"
+  n_authors: 5
+  title: "Advances in lithium niobate thin-film lasers and amplifiers: a review"
+  venue: "Advanced Photonics"
+  volume: "5"
+  pages: "1-26"
+  year: 2023
+  doi: 10.1117/1.AP.5.3.034002
+  url: https://doi.org/10.1117/1.AP.5.3.034002
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (review)"
+  sections: [6.10]
+  note: "TFLN lasers and amplifiers review"
+
+- id: wang2024nat
+  type: article
+  first_author: "Wang"
+  n_authors: 15
+  title: "Lithium tantalate photonic integrated circuits for volume manufacturing"
+  venue: "Nature"
+  volume: "629"
+  pages: "784-790"
+  year: 2024
+  doi: 10.1038/s41586-024-07369-1
+  url: https://doi.org/10.1038/s41586-024-07369-1
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y (R08 coordinator re-read)"
+  sections: [6.11, 8.8]
+  note: "5.6 dB/m; VpiL 1.9 V cm to 40 GHz; LT used in 5G RF filters"
+
+- id: wang2024optica
+  type: article
+  first_author: "Wang"
+  n_authors: 11
+  title: "Ultrabroadband thin-film lithium tantalate modulator for high-speed communications"
+  venue: "Optica"
+  volume: "11"
+  pages: "1614"
+  year: 2024
+  doi: 10.1364/OPTICA.537730
+  url: https://doi.org/10.1364/OPTICA.537730
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.11]
+  note: "110 GHz TFLT; 176 GBd PAM8 > 400 Gb/s net"
+
+- id: powell2024
+  type: article
+  first_author: "Powell"
+  n_authors: 6
+  title: "DC-stable electro-optic modulators using thin-film lithium tantalate"
+  venue: "Optics Express"
+  volume: "32"
+  pages: "44115"
+  year: 2024
+  doi: 10.1364/oe.538870
+  url: https://doi.org/10.1364/oe.538870
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.11]
+  note: "< 1 dB vs 5 dB over 46 h; 3.4 V cm; 0-70 C (abstract read 2026-10-25)"
+
+- id: wang2024ol
+  type: article
+  first_author: "Wang"
+  n_authors: 7
+  title: "Optical switch with an ultralow DC drift based on thin-film lithium tantalate"
+  venue: "Optics Letters"
+  volume: "49"
+  pages: "5019"
+  year: 2024
+  doi: 10.1364/OL.531263
+  url: https://doi.org/10.1364/OL.531263
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.11 context]
+  note: "TFLT switch, ultralow DC drift"
+
+- id: chen2026oe
+  type: article
+  first_author: "Chen"
+  n_authors: 8
+  title: "Thin-film lithium tantalate electro-optic modulator with balanced bandwidth-voltage and low DC drift"
+  venue: "Optics Express"
+  volume: "34"
+  pages: "17229"
+  year: 2026
+  doi: 10.1364/oe.595937
+  url: https://doi.org/10.1364/oe.595937
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y"
+  sections: [6.11]
+  note: "> 67 GHz, 2.4 V cm, < 1 dB drift over 60 min"
+
+- id: cai2026nc
+  type: article
+  first_author: "Cai"
+  n_authors: 12
+  title: "Heterogeneously integrated lithium tantalate-on-silicon nitride modulators for high-speed communications"
+  venue: "Nature Communications"
+  volume: "17"
+  pages: "3314"
+  year: 2026
+  doi: 10.1038/s41467-026-69769-3
+  url: https://doi.org/10.1038/s41467-026-69769-3
+  crossref_checked: 2026-10-25
+  numbers_ver: "atlas"
+  sections: [6.11 context]
+  note: "LT-on-SiN modulators; atlas cai2025-b 704 Gb/s line (atlas year 2025)"
+
+- id: su2026np
+  type: article
+  first_author: "Su"
+  second_author: "Zhang"
+  n_authors: 2
+  title: "Lithium tantalate meets silicon photonics"
+  venue: "Nature Photonics"
+  volume: "20"
+  pages: "133-134"
+  year: 2026
+  doi: 10.1038/s41566-025-01831-w
+  url: https://doi.org/10.1038/s41566-025-01831-w
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (News & Views)"
+  sections: [6.11]
+  note: "Lithium tantalate meets silicon photonics"
+
+- id: curtis2026opn
+  type: article
+  first_author: "Curtis"
+  n_authors: 1
+  title: "Lithium Tantalate: Making a Material Difference"
+  venue: "Optics and Photonics News"
+  volume: "37"
+  pages: "26"
+  year: 2026
+  doi: 10.1364/opn.37.4.000026
+  url: https://doi.org/10.1364/opn.37.4.000026
+  crossref_checked: 2026-10-25
+  numbers_ver: "cited (feature)"
+  sections: [6.11]
+  note: "OPN feature on lithium tantalate"
+
+- id: li2026ofc_w1a5
+  type: conference
+  first_author: "Li"
+  n_authors: 5
+  title: "Lithium-Tantalate-on-Fused Silica Mach-Zehnder Modulators"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.5"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.5
+  url: https://doi.org/10.1364/ofc.2026.w1a.5
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [6.11, 8.5]
+  note: "LT on fused silica, 4-inch; atlas li2026a-a"
+
+- id: xu2026ofc_w1a4
+  type: conference
+  first_author: "Xu"
+  n_authors: 4
+  title: "Sub-V-driven 110-GHz O-band Electro-optic Modulator on Thin-film Litihum Tantalate"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "W1A.4"
+  year: 2026
+  doi: 10.1364/ofc.2026.w1a.4
+  url: https://doi.org/10.1364/ofc.2026.w1a.4
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [6.11, 8.5]
+  note: "Sub-V O-band TFLT; atlas xu2026a-a"
+
+- id: xu2026ofc_th4a2
+  type: conference
+  first_author: "Xu"
+  n_authors: 5
+  title: "C-band 110-GHz-Bandwidth Thin-Film Lithium Tantalate Modulator Enabling 768 (536) Gbit/s Line (Net) Data Rates"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th4A.2"
+  year: 2026
+  doi: 10.1364/ofc.2026.th4a.2
+  url: https://doi.org/10.1364/ofc.2026.th4a.2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [6.11, 6.12, 8.5]
+  note: "768 (536) Gb/s TFLT; atlas xu2026b-a"
+
+- id: starnault2026ofc
+  type: conference
+  first_author: "St-Arnault"
+  n_authors: 10
+  title: "Driver-less 448 Gbps PAM4 and 1.2 Tbps 16-QAM IMDD/Coherent-lite transmission using TFLN optical DACs"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th4B.2"
+  year: 2026
+  doi: 10.1364/ofc.2026.th4b.2
+  url: https://doi.org/10.1364/ofc.2026.th4b.2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [6.3, 8.5]
+  note: "Driver-less 448 Gb/s PAM4, 1.2 Tb/s 16-QAM; atlas starnault2026-a/b"
+
+- id: shen2026ofc
+  type: conference
+  first_author: "Shen"
+  n_authors: 20
+  title: "Fully Integrated 1064 nm Transmitters with Widely Tunable GaAs Lasers and > 100-GHz Thin-Film LiNbO3 Modulators"
+  venue: "Optical Fiber Communication Conference (OFC) 2026"
+  volume: ""
+  pages: "Th4A.5"
+  year: 2026
+  doi: 10.1364/ofc.2026.th4a.5
+  url: https://doi.org/10.1364/ofc.2026.th4a.5
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [6.10, 8.5]
+  note: "GaAs lasers + TFLN 1064 nm transmitter; atlas shen2026-a"
+
+- id: hulyal2026cleo
+  type: conference
+  first_author: "Hulyal"
+  n_authors: 7
+  title: "A 1.6 Tbit/s WDM Integrated Photonic IMDD Transmitter on Thin-Film Lithium Tantalate"
+  venue: "CLEO 2026"
+  volume: ""
+  pages: "STH1F.2"
+  year: 2026
+  doi: 10.1364/cleo_si.2026.sth1f.2
+  url: https://doi.org/10.1364/cleo_si.2026.sth1f.2
+  crossref_checked: 2026-10-25
+  numbers_ver: "Y(conf)"
+  sections: [6.11]
+  note: "1.6 Tb/s WDM TFLT transmitter (CLEO version; OFC 2026 W1A.7 is the companion)"
+
+- id: feng2024nat
+  type: article
+  first_author: "Feng"
+  n_authors: 12
+  title: "Integrated lithium niobate microwave photonic processing engine"
+  venue: "Nature"
+  volume: "627"
+  pages: "80-87"
+  year: 2024
+  doi: 10.1038/s41586-024-07078-9
+  url: https://doi.org/10.1038/s41586-024-07078-9
+  crossref_checked: 2026-10-25
+  numbers_ver: "title"
+  sections: [6.0 context]
+  note: "Integrated LN microwave photonic processing engine"
+
+
+# ---- Preprints (arXiv metadata; not Crossref) ----
+
+- id: chen2023arxiv
+  type: preprint
+  first_author: "Chen"
+  title: "Adapted poling to break the nonlinear efficiency limit in nanophotonic lithium niobate waveguides"
+  arxiv: "2307.11671"
+  url: https://arxiv.org/abs/2307.11671
+  checked: 2026-10-25 (arXiv API abstract; no personal parameter)
+  numbers_ver: "Y(arXiv)"
+  sections: [6.4]
+  note: "Overall SHG efficiency near 10^4 %/W; > 80% conversion at 20 mW. Published as chen2024nn"
+
+- id: alsayem2026arxiv
+  type: preprint
+  first_author: "Al Sayem"
+  title: "Stable thin-film lithium tantalate modulators operating at high temperature for uncooled operation"
+  arxiv: "2604.27285"
+  url: https://arxiv.org/abs/2604.27285
+  checked: 2026-10-25 (arXiv API abstract; no personal parameter)
+  numbers_ver: "Y(preprint)"
+  sections: [6.11]
+  note: "Platform is TFLT (title and abstract). Waveguide and resonant modulators DC-bias stable at 120 C. Do not attribute to TFLN"
+
+- id: lin2026a_arxiv
+  type: preprint
+  first_author: "Lin"
+  title: "Thin-film lithium tantalate for ultraviolet integrated electro-optic modulator"
+  arxiv: "2605.02758"
+  url: https://arxiv.org/abs/2605.02758
+  checked: "atlas papers.csv lin2026a (title, arXiv id); not fetched in this lane"
+  numbers_ver: "atlas"
+  sections: [6.3, A5]
+  note: "Atlas lin2026a-a: 0.085 V cm at 375 nm, Vpi 4.2 V, 0.2 mm, lumped"
+
+- id: kuznetsov2025arxiv
+  type: preprint
+  first_author: "Kuznetsov"
+  n_authors: 3
+  title: "Watt-level second harmonic generation in periodically poled thin-film lithium tantalate"
+  year: 2025
+  arxiv: "2512.07968"
+  url: https://arxiv.org/abs/2512.07968
+  checked: "arXiv API record read 2026-10-25 (title, authors)"
+  numbers_ver: "Y(preprint)"
+  sections: [6.4, 6.11]
+  note: "On-chip PPLT SHG > 1 W at 775 nm; PPLT coercive field about 4x MgO:LN; TFLN SH typically tens of mW"
+
+- id: wang2024cleo
+  type: article
+  first_author: "Wang"
+  n_authors: 7
+  title: "Erbium-doped lithium niobate on insulator waveguide amplifier with ultra-high internal net gain of 38 dB"
+  venue: "CLEO 2024"
+  pages: "ATu4M.3"
+  year: 2024
+  doi: 10.1364/cleo_at.2024.atu4m.3
+  url: https://doi.org/10.1364/cleo_at.2024.atu4m.3
+  crossref_checked: 2026-10-25
+  numbers_ver: "title (number in title)"
+  sections: [6.10]
+  note: "Internal net gain; not comparable with fiber-to-fiber net gain"
+
+# ---- Web sources ----
+
+- id: murata2026
+  type: web
+  publisher: "Murata Manufacturing Co., Ltd."
+  title: "Murata exhibits at OFC 2026 (news release, 2026-03-10)"
+  url: https://corporate.murata.com/en-us/newsroom/news/company/general/2026/0310
+  accessed: 2026-10-25
+  grade: "V (company statement about its own products in development)"
+  sections: [6.0, 6.9, 8.1, 8.2]
+  note: "Read: TFLN EO modulator, EO bandwidth over 100 GHz, supports 400 Gbps/ch PAM4, products in development; Murata states mass-production expertise in high-frequency filters that utilize LiNbO3"
+
+# ---- Datasets and local research notes ----
+
+- id: atlas
+  type: dataset
+  title: "eo-modulator-atlas (devices.csv, papers.csv, schema)"
+  url: https://github.com/jwt625/eo-modulator-atlas/tree/eb97f961165a331599e8191c62e15b5a52ba1d51
+  commit: eb97f961165a331599e8191c62e15b5a52ba1d51
+  commit_date: 2026-10-20
+  fetched: 2026-10-25
+  sha256_devices_csv: 0dd95c55abdf711b9511e561c5efa60db657f23553690dd211421f4036b987f7
+  sha256_papers_csv: 62d5ddf8325cd88f0a4995c62021cefafd9683e72b820ea6044e10585dad1b67
+  license: "none (no LICENSE file in the repository, R04 sec. 1.1)"
+  sections: [6.1, 6.2, 6.3, 6.11, A1-A7]
+  note: "Values cited with device_id; evidence in data/evidence/<paper_id>.yaml at the same commit"
+
+- id: R08
+  type: research_note
+  title: "R08: TFLN science and technology state of the art (through 2026-10)"
+  path: research/R08-tfln-state-of-art.md
+  date: 2026-10-24
+  sections: [6.0-6.12]
+  note: "Source of record values and verification codes; one correction applied here (chen2024nn efficiency, see manuscript editorial note)"
+
+- id: R09
+  type: research_note
+  title: "R09: LN industry, market, and supply chain (public sources)"
+  path: research/R09-industry-market.md
+  date: 2026-10-24
+  sections: [6.0, 6.9, 6.11]
+  note: "S-ids cited inline (S3 Sumitomo Metal Mining, S4 Shin-Etsu, S10 Soitec POI, S37 Exail, S41 Optica/Covesion, S50 Microwave Journal, S53 Quantum Insider); full URL list in ../08-industry/refs.yaml"
+
+- id: R12
+  type: research_note
+  title: "R12: Theme and visual language"
+  path: research/R12-theme-and-visual-language.md
+  date: 2026-10-24
+  sections: [6.11]
+  note: "Niobium / tantalum naming anchor (two sources listed there)"
+
+- id: R14
+  type: research_note
+  title: "R14: Property verification against primary and handbook sources"
+  path: research/R14-property-verification.md
+  date: 2026-10-24
+  sections: [6.1]
+  note: "r33 values and permittivity re-keyed from weis1985 Table 4 / Table 1 (P-comp)"

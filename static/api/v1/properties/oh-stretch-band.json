@@ -1,0 +1,116 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.94946"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "OH stretch absorption band of lithium niobate (LiNbO3): 2 provenance-tagged value(s) from 1 source(s) for variant(s) cln, mgo5-cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/oh-stretch-band.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/oh-stretch-band.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "OH stretch absorption band"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 OH stretch absorption band",
+    "url": "https://lithium-niobate.com/api/v1/properties/oh-stretch-band.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "OH stretch absorption band (cln)",
+        "unitText": "um",
+        "value": 2.87
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "OH stretch absorption band (mgo5-cln)",
+        "unitText": "um",
+        "value": 2.83
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 2,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "oh-stretch-band"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "default": true,
+      "id": "oh-stretch-band/cln/bryan1984",
+      "kind": "scalar",
+      "name": "OH stretch absorption band",
+      "property": "oh-stretch-band",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "bryan1984",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "um",
+        "ucum": "um"
+      },
+      "value": 2.87,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "default": true,
+      "id": "oh-stretch-band/mgo5-cln/bryan1984",
+      "kind": "scalar",
+      "name": "OH stretch absorption band",
+      "property": "oh-stretch-band",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "bryan1984",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "um",
+        "ucum": "um"
+      },
+      "value": 2.83,
+      "variant": "mgo5-cln",
+      "variant_note": "MgO >= 4.5 at.%"
+    }
+  ]
+}

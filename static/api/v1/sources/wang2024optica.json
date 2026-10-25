@@ -1,0 +1,78 @@
+{
+  "citation": "Chengli Wang, Dengyang Fang, Junyin Zhang, et al., \"Ultrabroadband thin-film lithium tantalate modulator for high-speed communications\", Optica 11, 1614, (2024) doi:10.1364/OPTICA.537730",
+  "link": "https://doi.org/10.1364/OPTICA.537730",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "license": "Optica Open Access License v2",
+      "oa_status": "gold"
+    },
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Chengli"
+      },
+      {
+        "family": "Fang",
+        "given": "Dengyang"
+      },
+      {
+        "family": "Zhang",
+        "given": "Junyin"
+      },
+      {
+        "family": "Kotz",
+        "given": "Alexander"
+      },
+      {
+        "family": "Lihachev",
+        "given": "Grigory"
+      },
+      {
+        "family": "Churaev",
+        "given": "Mikhail"
+      },
+      {
+        "family": "Li",
+        "given": "Zihan"
+      },
+      {
+        "family": "Schwarzenberger",
+        "given": "Adrian"
+      },
+      {
+        "family": "Ou",
+        "given": "Xin"
+      },
+      {
+        "family": "Koos",
+        "given": "Christian"
+      },
+      {
+        "family": "Kippenberg",
+        "given": "Tobias J."
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/OPTICA.537730",
+    "id": "wang2024optica",
+    "issue": "12",
+    "issued": "2024-11-26",
+    "page": "1614",
+    "read": "bibliographic record only (Crossref, 2026-10-25); cited by wang2025lt for r33",
+    "title": "Ultrabroadband thin-film lithium tantalate modulator for high-speed communications",
+    "type": "article-journal",
+    "volume": "11"
+  }
+}

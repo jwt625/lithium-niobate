@@ -1,0 +1,36 @@
+{
+  "citation": "C. J. Sarabalis, et al., \"Acousto-optic modulation in lithium niobate on sapphire\", (2020) arXiv:2005.00916",
+  "link": "https://arxiv.org/abs/2005.00916",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "preprint"
+    },
+    "arxiv": "2005.00916",
+    "author": [
+      {
+        "family": "Sarabalis",
+        "given": "C. J."
+      },
+      {
+        "literal": "et al."
+      }
+    ],
+    "id": "sarabalis2020",
+    "issued": "2020",
+    "notes": "Published as APL Photonics (2020), DOI 10.1063/5.0012288.",
+    "read": "arXiv full text (via subagent)",
+    "title": "Acousto-optic modulation in lithium niobate on sapphire",
+    "type": "preprint"
+  }
+}

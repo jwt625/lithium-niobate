@@ -1,0 +1,24 @@
+/* Chapter 2.2 page fixes (audit G05, G06, G09): wider fixed value, unit and status columns so no value, unit or badge is
+   clipped (a clipped right-aligned value also slid its exponent sideways); direction vectors on their own line at phone
+   width. Scoped by this page's element ids. */
+#calc-out col.cu, #mzm-out col.cu, #rt-vec col.cu, #rt-dn col.cu, #rt-rot col.cu { width: 60px; }
+:root[data-mode="visual"] {
+  & #calc-out col.cv, & #mzm-out col.cv { width: 136px; }
+  & #calc-out col.cu, & #mzm-out col.cu, & #rt-vec col.cu, & #rt-dn col.cu, & #rt-rot col.cu { width: 88px; }
+  & #calc-out col.cs, & #mzm-out col.cs, & #rt-vec col.cs, & #rt-dn col.cs, & #rt-rot col.cs { width: 104px; }
+  @media (max-width: 560px) {
+    & #calc-out col.cv, & #mzm-out col.cv { width: 116px; }
+    & #calc-out col.cu, & #mzm-out col.cu { width: 70px; }
+    & #calc-out col.cs, & #mzm-out col.cs { width: 92px; }
+  }
+  & #v-ell .v-hud dt.full, & #v-ell .v-hud dd.full { grid-column: 1 / -1; text-align: left; }
+  & #v-ell .v-hud dd.full { margin-top: -4px; }
+}
+@media (max-width: 560px) {
+  #ntab col.cv { width: 122px; }
+  #ntab col.cs { width: 84px; }
+}
+@media (max-width: 600px) {
+  #rt-dn .vec { display: block; white-space: normal; overflow-wrap: anywhere; font-size: 10.5px; line-height: 14px; }
+  #rt-dn td.v { white-space: nowrap; }
+}

@@ -1,0 +1,49 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "optical-band-gap",
+    "variant": "unspecified"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "conditions": {
+        "method": "optical absorption (direct)"
+      },
+      "default": true,
+      "id": "optical-band-gap/unspecified/thierfelder2010",
+      "kind": "scalar",
+      "name": "Optical band gap (frequently cited)",
+      "notes": "GW calculations give a fundamental (quasiparticle) gap at least 1 eV larger; the quasiparticle gap is debated.",
+      "property": "optical-band-gap",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "thierfelder2010",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_g",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "eV",
+        "ucum": "eV"
+      },
+      "value": 3.7,
+      "variant": "unspecified"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

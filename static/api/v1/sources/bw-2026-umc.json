@@ -1,0 +1,24 @@
+{
+  "citation": "\"HyperLight, UMC, and Wavetek Announce Strategic Partnership for High-Volume Foundry Production of TFLN Chiplet Platform\", (2026) https://web.archive.org/web/20260311212337/https://www.businesswire.com/news/home/20260311544174/en/",
+  "link": "https://web.archive.org/web/20260311212337/https://www.businesswire.com/news/home/20260311544174/en/",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "bw-2026-umc",
+    "issued": "2026-03-11",
+    "read": "Archived copy read",
+    "title": "HyperLight, UMC, and Wavetek Announce Strategic Partnership for High-Volume Foundry Production of TFLN Chiplet Platform",
+    "type": "webpage",
+    "url": "https://web.archive.org/web/20260311212337/https://www.businesswire.com/news/home/20260311544174/en/"
+  }
+}

@@ -1,0 +1,768 @@
+# lithium-niobate.com: LiNbO3 property data (full text)
+
+> Recommended values with conditions, status and source for every property, followed by tensors, dispersion models and the glossary. Data license CC BY 4.0. Generated from the canonical data; the JSON API carries all alternatives.
+
+Status codes: P: primary source read at the locator. P(abs): only the abstract read. P-comp: read in a compilation that names the original measurement (original not read). P-db: CC0 database transcription of a primary source. S: secondary. V: vendor datasheet. C: computed from listed inputs. U: unverified, never shown in default endpoints.
+
+## Scalar properties
+
+### Absorption coefficient in the transparent range (absorption-coefficient)
+
+- cln: 0.0001-2 cm^-1; P(abs); recommended; source leidinger2015 (abstract), https://doi.org/10.1364/OE.23.021690
+
+### Birefringence n_e - n_o (birefringence)
+
+- cln: -0.0766 (1064 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- cln: -0.0736 (1550 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- cln: -0.0842 (632.8 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- mgo5-cln: -0.0815 (1064 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- mgo5-cln: -0.0782 (1550 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- mgo5-cln: -0.0897 (632.8 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+
+### Bulk longitudinal velocity along X (bulk-velocity-longitudinal-x)
+
+- cln: 6544.53 +- 0.3 m/s; P; recommended; source kushibiki1999 (Table II), https://doi.org/10.1109/58.796136
+
+### Bulk longitudinal velocity along Y (bulk-velocity-longitudinal-y)
+
+- cln: 6806.55 +- 0.26 m/s; P; recommended; source kushibiki1999 (Table II), https://doi.org/10.1109/58.796136
+
+### Bulk longitudinal velocity along Z (bulk-velocity-longitudinal-z)
+
+- cln: 7328.2 +- 0.32 m/s; P; recommended; source kushibiki1999 (Table II), https://doi.org/10.1109/58.796136
+
+### Bulk shear velocity along X (resonance) (bulk-velocity-shear-x)
+
+- cln: 4750.67 +- 0.59 m/s; P; recommended; source kushibiki1999 (Table II), https://doi.org/10.1109/58.796136
+
+### Bulk shear velocity along Y (bulk-velocity-shear-y)
+
+- cln: 3940.49 +- 0.21 m/s; P; recommended; source kushibiki1999 (Table II), https://doi.org/10.1109/58.796136
+
+### Bulk shear velocity along Z (bulk-velocity-shear-z)
+
+- cln: 3590.41 +- 0.23 m/s; P; recommended; source kushibiki1999 (Table II), https://doi.org/10.1109/58.796136
+
+### Coercive field (coercive-field)
+
+- cln: 21 kV/mm (room temperature); P-comp; recommended; source volk2008 (Table 7.1, p. 185 (210 kV/cm, literature average); p. 118 (210-220 kV/cm)), https://doi.org/10.1007/978-3-540-70766-0
+- mgo1-sln: 2.5 kV/mm (room temperature); P-comp; recommended; source volk2008 (Table 7.1, p. 185 (25 kV/cm)), https://doi.org/10.1007/978-3-540-70766-0
+- mgo5-cln: 6-6.8 kV/mm (room temperature); P-comp; recommended; source volk2008 (Table 7.1, p. 185 (60-68 kV/cm, table average)), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 6-6.5 kV/mm (room temperature); P-comp; recommended; source volk2008 (Table 7.1, p. 185 (60-65 kV/cm)), https://doi.org/10.1007/978-3-540-70766-0
+
+### Coercive field ratio E_c(CLN)/E_c(SLN) (coercive-field-ratio-cln-sln)
+
+- cln: about 4-5 (room temperature); P(abs); alternative; source gopalan1998 (abstract), https://doi.org/10.1063/1.121491
+- cln: 3.2-3.5; C; alternative; source volk2008 (Table 7.1, p. 185; p. 184 ('factor of three', ref. Chen et al. 2001)), https://doi.org/10.1007/978-3-540-70766-0
+
+### Congruent composition (congruent-composition)
+
+- cln: 48.45 mol% Li2O; P-comp; recommended; source volk2008 (pp. 4-5, 9), https://doi.org/10.1007/978-3-540-70766-0
+- cln: 48.38 +- 0.01 mol% Li2O; V; alternative; source cti1999
+
+### Curie temperature (curie-temperature)
+
+- cln: 1140 C; P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 1206 C; P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- cln: 1142.3 +- 0.7 C; V; alternative; source cti1999
+- sln: 1213 C; S; alternative; source wong2002
+- unspecified: about 1430 K; P(abs); alternative; source boysen1994, https://doi.org/10.1107/S0108768193012820
+- unspecified: 1165 C; P-comp; alternative; source weis1985 (Table 1, p. 197), https://doi.org/10.1007/BF00614817
+
+### Curie temperature vs crystal composition (linear fit) (curie-temperature-vs-composition)
+
+- unspecified: T_C = 39.26 c - 760.67 (T_C in C, c in mol% Li2O) C; P-comp; recommended; source volk2008 (Eq. (6.2), p. 140), https://doi.org/10.1007/978-3-540-70766-0
+- unspecified: T_C = 39.064 c - 746.73 (T_C in C, c in mol% Li2O) C; P-comp; alternative; source volk2008 (Eq. (6.3), p. 140), https://doi.org/10.1007/978-3-540-70766-0
+
+### Dark conductivity (dark-conductivity)
+
+- cln: 1e-16-1e-14 S/m (room temperature, extrapolated from high temperature); P-comp; recommended; source volk2008 (Sec. 3.2.1, pp. 59-60 (1e-16 to 1.0e-18 Ohm^-1 cm^-1)), https://doi.org/10.1007/978-3-540-70766-0
+
+### Activation energy of dark (protonic) conductivity (dark-conductivity-activation-energy)
+
+- cln: about 1.1 eV (200-1000 C); P-comp; recommended; source volk2008 (Sec. 3.2.1, pp. 59-60), https://doi.org/10.1007/978-3-540-70766-0
+
+### Density (density)
+
+- cln: 4642.8 +- 0.2 kg/m^3; P; recommended; source kushibiki1999 (Table IV), https://doi.org/10.1109/58.796136
+- sln: 4635 kg/m^3; P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- cln: 4650 kg/m^3; V; alternative; source cti1999
+- cln: 4647 kg/m^3; P-comp; alternative; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- unspecified: 4636 kg/m^3 (30 C); P; alternative; source ogi2002, https://doi.org/10.1063/1.1497702
+- unspecified: 4628 kg/m^3; P; alternative; source weis1985 (p. 194), https://doi.org/10.1007/BF00614817
+
+### Thermo-optic coefficient, extraordinary (dne-dt)
+
+- cln: 3.75e-05 1/K (1550 nm, 25 C); C; recommended; source jundt1997, https://doi.org/10.1364/OL.22.001553
+- cln: 4.01e-05 1/K (1064 nm, 25 C); C; alternative; source jundt1997, https://doi.org/10.1364/OL.22.001553
+- cln: 4.89e-05 1/K (633 nm, 25 C); C; alternative; source jundt1997, https://doi.org/10.1364/OL.22.001553
+- cln: 3.34e-05 1/K (1523 nm, 300 K); S; alternative; source moretti2005, https://doi.org/10.1063/1.1988987
+- cln: 4.12e-05 1/K (632 nm, 300 K); C; alternative; source moretti2005 (schwesyg2011 Eqs. (2.26)-(2.27)), https://doi.org/10.1063/1.1988987
+
+### Thermo-optic coefficient, ordinary (dno-dt)
+
+- cln: 5.4e-06 1/K (1064 nm, 25 C); C; alternative; source cti1999
+- cln: 4.1e-06 1/K (1550 nm, 25 C); C; alternative; source cti1999
+- cln: 9.4e-06 1/K (633 nm, 25 C); C; alternative; source cti1999
+- cln: 3.7e-06 1/K (632 nm, 300 K); C; alternative; source moretti2005 (schwesyg2011 Eqs. (2.26)-(2.27)), https://doi.org/10.1063/1.1988987
+
+### Elastic stiffness component c14 (constant E) (elastic-c14)
+
+- lt-saw [LiTaO3 comparison]: -10.75 GPa; P; recommended; source kushibiki1999, https://doi.org/10.1109/58.796136
+
+### Electro-optic coefficient r13, unclamped (eo-r13-T)
+
+- sln: 10.4 pm/V (633 nm, unclamped (T)); P-comp; recommended; source volk2008 (Table 1.2, p. 4), https://doi.org/10.1007/978-3-540-70766-0
+
+### Electro-optic coefficient r22, unclamped (eo-r22-T)
+
+- cln: 6.54 pm/V (unclamped (T)); P-comp; alternative; source volk2008 (p. 150), https://doi.org/10.1007/978-3-540-70766-0
+
+### Electro-optic coefficient r33 (eo-r33)
+
+- lt-unspecified [LiTaO3 comparison]: 30.5 pm/V; S; recommended; source wang2025lt (introduction, ref. 29), https://doi.org/10.1021/acsphotonics.5c00159
+
+### Electro-optic coefficient r33, unclamped (eo-r33-T)
+
+- sln: 38 pm/V (633 nm, unclamped (T)); P-comp; recommended; source volk2008 (Table 1.2, p. 4), https://doi.org/10.1007/978-3-540-70766-0
+
+### Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33 (hydrostatic-piezo-dh)
+
+- unspecified: 6.31 +- 0.014 pC/N; P-comp; recommended; source weis1985 (p. 198), https://doi.org/10.1007/BF00614817
+
+### Internal field (internal-field)
+
+- cln: about 2.5 kV/mm; P(abs); recommended; source gopalan1998 (abstract), https://doi.org/10.1063/1.121491
+- mgo5-cln: 0.5 kV/mm; P-comp; recommended; source volk2008 (Table 7.1, p. 185 (5 kV/cm)), https://doi.org/10.1007/978-3-540-70766-0
+- cln: printed '2-33' kV/cm (likely a misprinted range) kV/cm; P-comp; alternative; source volk2008 (Table 7.1, p. 185), https://doi.org/10.1007/978-3-540-70766-0
+
+### IR transmission cutoff (ir-cutoff)
+
+- cln: 4600 nm; V; alternative; source cti1999
+
+### Lattice constant a (hexagonal setting) (lattice-a)
+
+- cln: 5.15 Angstrom (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3 (515.0 pm)), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 5.147 Angstrom (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3 (514.7 pm)), https://doi.org/10.1007/978-3-540-70766-0
+- unspecified: 5.148 Angstrom (293 K (COD CIF)); P-db; recommended; source hsu1997 (COD 2101845), https://doi.org/10.1107/S010876819600777X
+- cln: 5.151 Angstrom; V; alternative; source cti1999
+- unspecified: 5.14829 Angstrom (24 C); P-db; alternative; source cod (COD 1541936), https://www.crystallography.net/cod/
+- unspecified: 5.1502 Angstrom; P-db; alternative; source ohgaki1992 (COD 1544665)
+- unspecified: 5.15 Angstrom; P; alternative; source weis1985 (p. 194), https://doi.org/10.1007/BF00614817
+
+### Lattice constant c (hexagonal setting) (lattice-c)
+
+- cln: 13.864 Angstrom (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3 (1386.4 pm)), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 13.856 Angstrom (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3 (1385.6 pm)), https://doi.org/10.1007/978-3-540-70766-0
+- unspecified: 13.863 Angstrom (293 K (COD CIF)); P-db; recommended; source hsu1997 (COD 2101845), https://doi.org/10.1107/S010876819600777X
+- cln: 13.866 Angstrom; V; alternative; source cti1999
+- unspecified: 13.8631 Angstrom (24 C); P-db; alternative; source cod (COD 1541936), https://www.crystallography.net/cod/
+- unspecified: 13.8653 Angstrom; P-db; alternative; source ohgaki1992 (COD 1544665)
+
+### Maxwell relaxation time (dark) (maxwell-relaxation-time)
+
+- cln: 5-500 days; P-comp; recommended; source volk2008 (p. 159), https://doi.org/10.1007/978-3-540-70766-0
+
+### Melting point (melting-point)
+
+- cln: 1255 C; P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- sln: < 1200 C; P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- cln: about 1250 C; V; alternative; source cti1999
+
+### MgO concentration threshold for optical-damage resistance (mgo-photorefractive-threshold)
+
+- mgo5-cln: >= 4.5 at.% MgO at.% MgO; P(abs); recommended; source bryan1984 (abstract), https://doi.org/10.1063/1.94946
+
+### Mohs hardness (mohs-hardness)
+
+- cln: 5 Mohs; V; alternative; source cti1999
+
+### Second-order nonlinear coefficient d31 (nlo-d31)
+
+- cln: 4.8 +- 0.5 pm/V; P(abs); alternative; source kitamoto1995 (abstract), https://doi.org/10.1007/s10043-995-0280-y
+- cln: 4.3 +- 0.5 pm/V; P(abs); alternative; source kitamoto1995 (abstract), https://doi.org/10.1007/s10043-995-0280-y
+
+### Nonlinear (Kerr) refractive index (nonlinear-index-n2)
+
+- unspecified: 9.33e-20 m^2/W (1064 nm); P-db; recommended; source desalvo1996, https://doi.org/10.1109/3.511545
+- unspecified: 8.25e-19 m^2/W (532 nm); P-db; alternative; source desalvo1996, https://doi.org/10.1109/3.511545
+- unspecified: 1.8e-19 m^2/W; S; alternative; source zhu2021 (Table 1), https://doi.org/10.1364/AOP.411024
+
+### OH stretch absorption band (oh-stretch-band)
+
+- cln: 2.87 um; P(abs); recommended; source bryan1984 (abstract), https://doi.org/10.1063/1.94946
+- mgo5-cln: 2.83 um; P(abs); recommended; source bryan1984 (abstract), https://doi.org/10.1063/1.94946
+
+### Optical band gap (frequently cited) (optical-band-gap)
+
+- unspecified: about 3.7 eV; P(abs); recommended; source thierfelder2010 (abstract), https://doi.org/10.1002/pssc.200982473
+
+### Point group (ferroelectric phase) (point-group)
+
+- unspecified: 3m (C3v); P; recommended; source weis1985 (p. 192, Sec. 2.1), https://doi.org/10.1007/BF00614817
+
+### Pyroelectric coefficient (pyroelectric-p3)
+
+- cln: -8.3e-05 C/(m^2 K) (25 C); V; alternative; source cti1999
+- unspecified: -6.4e-05 C/(m^2 K) (room temperature); S; alternative; source schwesyg2011 (Eq. (2.17))
+- unspecified: -4e-05 C/(m^2 K) (room temperature); P-comp; alternative; source weis1985 (Eq. (2), p. 196), https://doi.org/10.1007/BF00614817
+
+### Extraordinary refractive index (refractive-index-e)
+
+- cln: 2.1555 (1064 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- cln: 2.1376 (1550 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- cln: 2.2022 (632.8 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- lt-unspecified [LiTaO3 comparison]: 2.1432 (1000 nm, room temperature); P-db; recommended; source bond1965 (refractiveindex.info LiTaO3/Bond-e tabulated data), https://doi.org/10.1063/1.1703106
+- lt-unspecified [LiTaO3 comparison]: 2.1213 (1600 nm, room temperature); P-db; recommended; source bond1965 (refractiveindex.info LiTaO3/Bond-e tabulated data), https://doi.org/10.1063/1.1703106
+- lt-unspecified [LiTaO3 comparison]: 2.1878 (600 nm, room temperature); P-db; recommended; source bond1965 (refractiveindex.info LiTaO3/Bond-e tabulated data), https://doi.org/10.1063/1.1703106
+- mgo5-cln: 2.1474 (1064 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- mgo5-cln: 2.1299 (1550 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- mgo5-cln: 2.1928 (632.8 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- sln: 2.19 (633 nm); P-comp; recommended; source volk2008 (Table 1.2, p. 4 (refs. [26-28])), https://doi.org/10.1007/978-3-540-70766-0
+- cln: 2.2028 (632.8 nm); V; alternative; source cti1999
+- cln: 2.1561 (1060 nm, 24.5 C); P-comp; alternative; source weis1985 (Table 2, p. 197), https://doi.org/10.1007/BF00614817
+- cln: 2.2028 (632.8 nm, 24.5 C); P-comp; alternative; source weis1985 (Table 2, p. 197), https://doi.org/10.1007/BF00614817
+- sln: 2.2005 (632.8 nm, 25 C); P-comp; alternative; source weis1985 (Table 2, p. 197), https://doi.org/10.1007/BF00614817
+
+### Ordinary refractive index (refractive-index-o)
+
+- cln: 2.2321 (1064 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- cln: 2.2111 (1550 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- cln: 2.2865 (632.8 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- lt-unspecified [LiTaO3 comparison]: 2.1391 (1000 nm, room temperature); P-db; recommended; source bond1965 (refractiveindex.info LiTaO3/Bond-o tabulated data), https://doi.org/10.1063/1.1703106
+- lt-unspecified [LiTaO3 comparison]: 2.1174 (1600 nm, room temperature); P-db; recommended; source bond1965 (refractiveindex.info LiTaO3/Bond-o tabulated data), https://doi.org/10.1063/1.1703106
+- lt-unspecified [LiTaO3 comparison]: 2.1834 (600 nm, room temperature); P-db; recommended; source bond1965 (refractiveindex.info LiTaO3/Bond-o tabulated data), https://doi.org/10.1063/1.1703106
+- mgo5-cln: 2.2288 (1064 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- mgo5-cln: 2.2082 (1550 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- mgo5-cln: 2.2825 (632.8 nm, 21 C); C; recommended; source zelmon1997, https://doi.org/10.1364/JOSAB.14.003319
+- sln: 2.288 (633 nm); P-comp; recommended; source volk2008 (Table 1.2, p. 4 (refs. [26-28])), https://doi.org/10.1007/978-3-540-70766-0
+- cln: 2.2866 (632.8 nm); V; alternative; source cti1999
+- cln: 2.2323 (1060 nm, 24.5 C); P-comp; alternative; source weis1985 (Table 2, p. 197), https://doi.org/10.1007/BF00614817
+- cln: 2.2866 (632.8 nm, 24.5 C); P-comp; alternative; source weis1985 (Table 2, p. 197), https://doi.org/10.1007/BF00614817
+- sln: 2.291 (632.8 nm, 25 C); P-comp; alternative; source weis1985 (Table 2, p. 197), https://doi.org/10.1007/BF00614817
+
+### Residual absorption, as-grown crystals (residual-absorption)
+
+- cln: up to 0.04 cm^-1 (transition-metal impurities, 400-2000 nm); about 0.001 cm^-1 H-related bands at 2300-2800 nm; annealing lowers absorption by up to 10x cm^-1; P; recommended; source schwesyg2011 (abstract; Sec. 3.1, 3.3)
+
+### Rhombohedral cell edge a_R (rhombohedral-a)
+
+- unspecified: 5.494 Angstrom; P; recommended; source weis1985 (p. 194, Eq. (1)), https://doi.org/10.1007/BF00614817
+- unspecified: 5.493 +- 0.002 Angstrom; P-db; alternative; source hsu1997 (COD 2101845), https://doi.org/10.1107/S010876819600777X
+
+### Rhombohedral cell angle alpha (rhombohedral-alpha)
+
+- unspecified: 55.867 deg; P; recommended; source weis1985 (p. 194, Eq. (1)), https://doi.org/10.1007/BF00614817
+- unspecified: 55.89 +- 0.03 deg; P-db; alternative; source hsu1997 (COD 2101845), https://doi.org/10.1107/S010876819600777X
+
+### Space group (ferroelectric phase, below Tc) (space-group)
+
+- unspecified: R3c (No. 161); P; recommended; source weis1985 (p. 192, Sec. 2.1), https://doi.org/10.1007/BF00614817
+
+### Space group (paraelectric phase, above Tc) (space-group-paraelectric)
+
+- unspecified: R-3c (No. 167); P-db; recommended; source boysen1994 (COD 2101175-2101185 high-temperature entries), https://doi.org/10.1107/S0108768193012820
+
+### Specific heat capacity (specific-heat)
+
+- cln: 628 J/(kg K) (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 651 J/(kg K) (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- cln: about 628 J/(kg K) (25 C); V; alternative; source cti1999
+
+### Spontaneous polarization (spontaneous-polarization)
+
+- cln: 80 +- 5 uC/cm^2; P(abs); alternative; source gopalan1998 (abstract), https://doi.org/10.1063/1.121491
+- cln: 71 uC/cm^2 (room temperature); P-comp; alternative; source volk2008 (Table 1.1, p. 3 (refs. [22], [24])), https://doi.org/10.1007/978-3-540-70766-0
+
+### Thermal conductivity (thermal-conductivity)
+
+- cln: 3.92 W/(m K) (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 5.97 W/(m K) (room temperature); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- cln: about 4.2 W/(m K) (25 C); V; alternative; source cti1999
+- unspecified: 5 W/(m K); S; alternative; source schwesyg2011 (Eq. (2.28))
+
+### Thermal expansion coefficient perpendicular to c (thermal-expansion-a)
+
+- cln: 1.41e-05 1/K (300 K); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 1.41e-05 1/K (300 K); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- cln: 1.5e-05 1/K (25 C); V; alternative; source cti1999
+
+### Thermal expansion coefficient parallel to c (thermal-expansion-c)
+
+- cln: 4.1e-06 1/K (300 K); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 6e-06 1/K (300 K); P-comp; recommended; source volk2008 (Table 1.1, p. 3), https://doi.org/10.1007/978-3-540-70766-0
+- cln: 7.5e-06 1/K (25 C); V; alternative; source cti1999
+
+### Transparency range (transparency-range)
+
+- cln: 0.32-5 um; P-comp; recommended; source volk2008 (Table 1.2, p. 4), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 0.3-5 um; P-comp; recommended; source volk2008 (Table 1.2, p. 4), https://doi.org/10.1007/978-3-540-70766-0
+
+### UV transmission cutoff (uv-cutoff)
+
+- cln: 340 nm; V; alternative; source cti1999
+
+### UV absorption edge vs composition (uv-edge-formula)
+
+- unspecified: lambda_20 = 320.4 - 1.829 x - 5.485 x^2 nm; lambda_15 = 321.9 - 1.597 x - 5.745 x^2 nm; x = (mol% Li2O) - 48.38 nm (22 C); P-comp; recommended; source volk2008 (Eqs. (6.5)-(6.6), p. 142), https://doi.org/10.1007/978-3-540-70766-0
+
+### UV absorption edge at alpha = 20 cm^-1 (uv-edge-lambda20)
+
+- cln: 320.4 nm (22 C); C; recommended; source volk2008 (Eq. (6.5), p. 142), https://doi.org/10.1007/978-3-540-70766-0
+- sln: 303 nm (22 C); C; recommended; source volk2008 (Eq. (6.5), p. 142), https://doi.org/10.1007/978-3-540-70766-0
+
+## Tensors (point group 3m; x perpendicular to a mirror plane, z polar c axis)
+
+- elastic-compliance-sE/cln/kushibiki1999: s11 = 5.85352, s12 = -1.18173, s13 = -1.35637, s14 = -0.920402, s33 = 5.05782, s44 = 16.9493 1e-12 m^2/N; conditions in record; C; recommended; frame convention unstated; source kushibiki1999, https://doi.org/10.1109/58.796136
+- elastic-compliance-sE/unspecified/weis1985-smithwelsh1971: s11 = 5.831, s12 = -1.15, s13 = -1.452, s14 = -1, s33 = 5.026, s44 = 17.1 1e-12 m^2/N; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- elastic-compliance-sE/unspecified/weis1985-warner1967: s11 = 5.78, s12 = -1.01, s13 = -1.47, s14 = -1.02, s33 = 5.02, s44 = 17 1e-12 m^2/N; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- elastic-stiffness-cE/cln/kushibiki1999: c11 = 198.86, c12 = 54.67, c13 = 67.99, c14 = 7.83, c33 = 234.18, c44 = 59.85 GPa; conditions in record; P; recommended; frame convention unstated; source kushibiki1999, https://doi.org/10.1109/58.796136
+- elastic-stiffness-cE/unspecified/andrushchak2009: c11 = 199, c12 = 54.7, c13 = 70, c14 = 7.9, c33 = 240, c44 = 59.9 GPa; conditions in record; S; frame convention unstated; source andrushchak2009, https://doi.org/10.1063/1.3238507
+- elastic-stiffness-cE/unspecified/ogi2002: c11 = 199.5, c12 = 55.27, c13 = 67.67, c14 = 8.7, c33 = 235.2, c44 = 59.48 GPa; 30 C; P; frame convention unstated; source ogi2002, https://doi.org/10.1063/1.1497702
+- elastic-stiffness-cE/unspecified/ogi2002-kovacs1990: c11 = 198.4, c12 = 54.72, c13 = 65.13, c14 = 7.88, c33 = 227.9, c44 = 59.65 GPa; conditions in record; S; frame convention unstated; source ogi2002, https://doi.org/10.1063/1.1497702
+- elastic-stiffness-cE/unspecified/weis1985-nakagawa1973: c11 = 200, c12 = 54, c13 = 60, c14 = 8, c33 = 243, c44 = 60 GPa; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- elastic-stiffness-cE/unspecified/weis1985-smithwelsh1971: c11 = 203, c12 = 57.3, c13 = 75.2, c14 = 8.5, c33 = 242.4, c44 = 59.5 GPa; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- elastic-stiffness-cE/unspecified/weis1985-warner1967: c11 = 203, c12 = 53, c13 = 75, c14 = 9, c33 = 245, c44 = 60 GPa; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- eo-rS/cln/cti1999: r13 = 9, r22 = 3, r33 = 31, r51 = 28 pm/V; 633 nm, clamped (S); V; frame convention unstated; source cti1999
+- eo-rS/cln/turner1966: r13 = 8.6, r22 = 3.4, r33 = 30.8, r51 = 28 pm/V; 633 nm, clamped (S); P-comp; frame convention IRE-1949; source turner1966, https://doi.org/10.1063/1.1754449
+- eo-rS/unspecified/kaminow1980: r13 = 7.7, r22 = 3.4, r33 = 28.8, r51 = 18.2 pm/V; 633 nm, clamped (S); P-comp; frame convention IRE-1949; source kaminow1980, https://doi.org/10.1063/1.328301
+- eo-rT/cln/cti1999: r13 = 10, r22 = 7, r33 = 33, r51 = 33 pm/V; 633 nm, unclamped (T); V; frame convention unstated; source cti1999
+- eo-rT/cln/weis1985: r13 = 10, r22 = 6.81, r33 = 32.2, r51 = 32 pm/V; 633 nm, unclamped (T); P-comp; recommended; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- nlo-d/cln/cti1999: d22 = 3, d31 = -5, d33 = -33 pm/V; 1060 nm; V; frame convention unstated; source cti1999
+- nlo-d/cln/volk2008: d22 = 3, d31 = 6, d33 = 34 pm/V; 1060 nm; P-comp; frame convention unstated; source volk2008, https://doi.org/10.1007/978-3-540-70766-0
+- nlo-d/sln/volk2008: d22 = 2.5, d31 = 5, d33 = 42 pm/V; 1060 nm; P-comp; frame convention unstated; source volk2008, https://doi.org/10.1007/978-3-540-70766-0
+- nlo-d/unspecified/zhu2021: d22 = 2.1, d31 = -4.3, d33 = -27 pm/V; 1064 nm; S; frame convention unstated; source zhu2021, https://doi.org/10.1364/AOP.411024
+- permittivity-S/cln/cti1999: eps11 = 44, eps33 = 27.9 relative (eps/eps0); clamped (S); V; frame convention unstated; source cti1999
+- permittivity-S/cln/kushibiki1999: eps11 = 44.9, eps33 = 26.7 relative (eps/eps0); clamped (S); P; recommended; frame convention unstated; source kushibiki1999, https://doi.org/10.1109/58.796136
+- permittivity-S/cln/volk2008: eps11 = 44, eps33 = 29 relative (eps/eps0); clamped (S); P-comp; frame convention unstated; source volk2008, https://doi.org/10.1007/978-3-540-70766-0
+- permittivity-S/unspecified/weis1985-savage1966: eps11 = 44, eps33 = 29 relative (eps/eps0); clamped (S); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- permittivity-S/unspecified/weis1985-teague1975: eps11 = 46.5, eps33 = 27.3 relative (eps/eps0); clamped (S); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- permittivity-S/unspecified/weis1985-warner1967: eps11 = 44.3, eps33 = 27.9 relative (eps/eps0); clamped (S); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- permittivity-S/unspecified/weis1985-yamada1967: eps11 = 43.9, eps33 = 23.7 relative (eps/eps0); clamped (S); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- permittivity-T/cln/cti1999: eps11 = 85, eps33 = 28.7 relative (eps/eps0); unclamped (T); V; frame convention unstated; source cti1999
+- permittivity-T/cln/kushibiki1999: eps11 = 83.3, eps33 = 28.5 relative (eps/eps0); unclamped (T); P; recommended; frame convention unstated; source kushibiki1999, https://doi.org/10.1109/58.796136
+- permittivity-T/cln/volk2008: eps11 = 84, eps33 = 30 relative (eps/eps0); unclamped (T); P-comp; frame convention unstated; source volk2008, https://doi.org/10.1007/978-3-540-70766-0
+- permittivity-T/unspecified/weis1985-savage1966: eps11 = 84, eps33 = 30 relative (eps/eps0); unclamped (T); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- permittivity-T/unspecified/weis1985-smithwelsh1971: eps11 = 84.6, eps33 = 28.6 relative (eps/eps0); unclamped (T); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- permittivity-T/unspecified/weis1985-teague1975: eps11 = 84.1, eps33 = 28.1 relative (eps/eps0); unclamped (T); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- permittivity-T/unspecified/weis1985-warner1967: eps11 = 85.2, eps33 = 28.7 relative (eps/eps0); unclamped (T); P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- photoelastic-p/unspecified/andrushchak2009: p11 = -0.021, p12 = 0.06, p13 = 0.172, p14 = -0.052, p31 = 0.141, p33 = 0.118, p41 = -0.109, p44 = 0.121 -; 633 nm; S; frame convention unstated; source andrushchak2009, https://doi.org/10.1063/1.3238507
+- photoelastic-p/unspecified/mys2015-krupych2014: p11 = -0.023, p12 = 0.076, p13 = 0.147, p14 = 0.057, p31 = 0.157, p33 = 0.141, p41 = 0.051, p44 = 0.126 -; 633 nm; S; frame convention unstated; source mys2015, https://arxiv.org/abs/1508.01075
+- photoelastic-p/unspecified/rodrigues2023: p11 = -0.026, p12 = 0.088, p13 = 0.134, p14 = -0.083, p31 = 0.177, p33 = 0.07, p41 = -0.151, p44 = 0.145 -; 633 nm; S; frame convention unstated; source rodrigues2023, https://arxiv.org/abs/2302.03890
+- photoelastic-p/unspecified/weis1985-avakyants1976: p11 = -0.026, p12 = 0.09, p13 = 0.133, p14 = -0.075, p31 = 0.179, p33 = 0.071, p41 = -0.151, p44 = 0.146 -; 633 nm; P-comp; frame convention unstated; source weis1985, https://doi.org/10.1007/BF00614817
+- photoelastic-p/unspecified/weis1985-coquin: p11 = -0.02, p12 = 0.08, p13 = 0.13, p14 = -0.08, p31 = 0.17, p33 = 0.07, p41 = -0.15, p44 = 0.12 -; 633 nm; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- piezo-strain-d/cln/cti1999: d15 = 69.2, d22 = 20.8, d31 = -0.85, d33 = 6 pC/N; conditions in record; V; frame convention unstated; source cti1999
+- piezo-strain-d/cln/kushibiki1999: d15 = 66.3805, d22 = 20.2979, d31 = -1.03662, d33 = 8.68973 pC/N; conditions in record; C; recommended; frame convention unstated; source kushibiki1999, https://doi.org/10.1109/58.796136
+- piezo-strain-d/unspecified/weis1985-smithwelsh1971: d15 = 69.2, d22 = 20.8, d31 = -0.85, d33 = 6 pC/N; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- piezo-strain-d/unspecified/weis1985-warner1967: d15 = 68, d22 = 21, d31 = -1, d33 = 6 pC/N; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- piezo-strain-d/unspecified/weis1985-yamada1967: d15 = 74, d22 = 21, d31 = -0.87, d33 = 16 pC/N; conditions in record; P-comp; frame convention IRE-1949; source weis1985, https://doi.org/10.1007/BF00614817
+- piezo-stress-e/cln/kushibiki1999: e15 = 3.655, e22 = 2.407, e31 = 0.328, e33 = 1.894 C/m^2; conditions in record; P; recommended; frame convention unstated; source kushibiki1999, https://doi.org/10.1109/58.796136
+- piezo-stress-e/unspecified/andrushchak2009: e15 = 3.67, e22 = 2.38, e31 = 0.34, e33 = 1.6 C/m^2; conditions in record; S; frame convention unstated; source andrushchak2009, https://doi.org/10.1063/1.3238507
+- piezo-stress-e/unspecified/ogi2002: e15 = 3.65, e22 = 2.39, e31 = 0.31, e33 = 1.72 C/m^2; 30 C; P; frame convention unstated; source ogi2002, https://doi.org/10.1063/1.1497702
+- piezo-stress-e/unspecified/ogi2002-kovacs1990: e15 = 3.69, e22 = 2.42, e31 = 0.3, e33 = 1.77 C/m^2; conditions in record; S; frame convention unstated; source ogi2002, https://doi.org/10.1063/1.1497702
+- piezo-stress-e/unspecified/ogi2002-smithwelsh1971: e15 = 3.76, e22 = 2.43, e31 = 0.23, e33 = 1.33 C/m^2; conditions in record; S; frame convention unstated; source ogi2002, https://doi.org/10.1063/1.1497702
+- piezo-stress-e/unspecified/ogi2002-warner1967: e15 = 3.7, e22 = 2.5, e31 = 0.2, e33 = 1.3 C/m^2; conditions in record; S; frame convention unstated; source ogi2002, https://doi.org/10.1063/1.1497702
+
+## Dispersion models
+
+### Gayer 2008, 1 mol% MgO:stoichiometric LiNbO3, extraordinary (gayer2008-mgo1-sln-e)
+
+- Formula: n^2 = a1 + b1 f + (a2 + b2 f)/(L^2 - (a3 + b3 f)^2) + (a4 + b4 f)/(L^2 - a5^2) - a6 L^2; f = (T - 24.5)(T + 570.82), T in C, L in um
+- Coefficients: a1 = 5.078, a2 = 0.0964, a3 = 0.2065, a4 = 61.16, a5 = 10.55, a6 = 0.0159, b1 = 4.677e-07, b2 = 7.822e-08, b3 = -2.653e-08, b4 = 0.0001096
+- Validity: 0.5-4 um; reference 24.5 C; status P
+- Erratum: Erratum, Appl. Phys. B 94, 367 (2009); applied: true
+- Caveat: dn/dT from these coefficients: -7.1e-5 /K at 1550 nm (negative); do not use for absolute dn/dT.
+- Caveat: The refractiveindex.info comment calling this material congruent is wrong; the paper labels it SLN.
+
+### Gayer 2008, 5 mol% MgO:congruent LiNbO3, extraordinary (gayer2008-mgo5-e)
+
+- Formula: n^2 = a1 + b1 f + (a2 + b2 f)/(L^2 - (a3 + b3 f)^2) + (a4 + b4 f)/(L^2 - a5^2) - a6 L^2; f = (T - 24.5)(T + 570.82), T in C, L in um
+- Coefficients: a1 = 5.756, a2 = 0.0983, a3 = 0.202, a4 = 189.32, a5 = 12.52, a6 = 0.0132, b1 = 2.86e-06, b2 = 4.7e-08, b3 = 6.113e-08, b4 = 0.0001516
+- Validity: 0.5-4 um; reference 24.5 C; status P
+- Erratum: Erratum, Appl. Phys. B 94, 367 (2009); applied: true
+- Caveat: dn/dT from these coefficients is anomalous (2.65e-4 /K for MgO5 n_e at 1550 nm vs 3.75e-5 /K from Jundt CLN). Do not use for absolute dn/dT.
+- Caveat: Wavelength validity from the refractiveindex.info entries; temperature validity from the paper.
+
+### Gayer 2008, 5 mol% MgO:congruent LiNbO3, ordinary (gayer2008-mgo5-o)
+
+- Formula: n^2 = a1 + b1 f + (a2 + b2 f)/(L^2 - (a3 + b3 f)^2) + (a4 + b4 f)/(L^2 - a5^2) - a6 L^2; f = (T - 24.5)(T + 570.82), T in C, L in um
+- Coefficients: a1 = 5.653, a2 = 0.1185, a3 = 0.2091, a4 = 89.61, a5 = 10.85, a6 = 0.0197, b1 = 7.941e-07, b2 = 3.134e-08, b3 = -4.641e-09, b4 = -2.188e-06
+- Validity: 0.5-1.62 um; reference 24.5 C; status P
+- Erratum: Erratum, Appl. Phys. B 94, 367 (2009); applied: true
+- Caveat: n_o is reliable only to 1620 nm and about 20-100 C (gayer2008 p. 348); refractiveindex.info lists 0.5-1.7 um.
+- Caveat: dn/dT from these coefficients: 1.11e-4 /K at 1550 nm; do not use for absolute dn/dT.
+
+### Zelmon 1997, congruent LiNbO3, extraordinary (zelmon1997-cln-e)
+
+- Formula: n^2 - 1 = B1 L^2/(L^2 - C1) + B2 L^2/(L^2 - C2) + B3 L^2/(L^2 - C3), L in um
+- Coefficients: B1 = 2.9804, C1 = 0.02047, B2 = 0.5981, C2 = 0.0666, B3 = 8.9543, C3 = 416.08
+- Validity: 0.4-5 um; reference 21 C; status P-db
+
+### Zelmon 1997, congruent LiNbO3, ordinary (zelmon1997-cln-o)
+
+- Formula: n^2 - 1 = B1 L^2/(L^2 - C1) + B2 L^2/(L^2 - C2) + B3 L^2/(L^2 - C3), L in um
+- Coefficients: B1 = 2.6734, C1 = 0.01764, B2 = 1.229, C2 = 0.05914, B3 = 12.614, C3 = 474.6
+- Validity: 0.4-5 um; reference 21 C; status P-db
+
+### Zelmon 1997, 5 mol% MgO:congruent LiNbO3, extraordinary (erratum applied) (zelmon1997-mgo5-e)
+
+- Formula: n^2 - 1 = B1 L^2/(L^2 - C1) + B2 L^2/(L^2 - C2) + B3 L^2/(L^2 - C3), L in um
+- Coefficients: B1 = 2.2454, C1 = 0.01242, B2 = 1.3005, C2 = 0.05313, B3 = 6.8972, C3 = 331.33
+- Validity: 0.4-5 um; reference 21 C; status P-db
+- Erratum: Erratum, J. Opt. Soc. Am. B 43(11), 2788 (2026): the headings for the ordinary and extraordinary index for 5 mol.% doped lithium niobate are switched; applied: true
+- Erratum: Gayer et al., Appl. Phys. B 91, 343 (2008), p. 348: the Zelmon MgO5 n_o and n_e parameters 'were switched by mistake'; applied: true
+
+### Zelmon 1997, 5 mol% MgO:congruent LiNbO3, ordinary (erratum applied) (zelmon1997-mgo5-o)
+
+- Formula: n^2 - 1 = B1 L^2/(L^2 - C1) + B2 L^2/(L^2 - C2) + B3 L^2/(L^2 - C3), L in um
+- Coefficients: B1 = 2.4272, C1 = 0.01478, B2 = 1.4617, C2 = 0.05612, B3 = 9.6536, C3 = 371.216
+- Validity: 0.4-5 um; reference 21 C; status P-db
+- Erratum: Erratum, J. Opt. Soc. Am. B 43(11), 2788 (2026): the headings for the ordinary and extraordinary index for 5 mol.% doped lithium niobate are switched; applied: true
+- Erratum: Gayer et al., Appl. Phys. B 91, 343 (2008), p. 348: the Zelmon MgO5 n_o and n_e parameters 'were switched by mistake'; applied: true
+
+## Glossary
+
+- **+z face (+c face)**: The +z (+c) face of LiNbO3 is the c face that becomes negatively charged under compression along c and positively charged on cooling. (source: weis1985, ieee176, volk2008, ire1949, weis1985)
+- **1.6T / 3.2T**: Pluggable optical modules with 1.6 or 3.2 Tb/s aggregate rate, e.g. 8 lanes of 200 or 400 Gb/s (DR8 = 8 parallel single-mode lanes).
+- **128 deg Y-X cut**: The 128 deg Y-X cut of LiNbO3 is a substrate orientation whose plate normal is the y axis rotated by about 128 deg about x, with surface waves propagating along x. (source: shibayama1976)
+- **180 deg domain wall**: The boundary between antiparallel domains, ideally one to two lattice units wide. (source: gopalan2007)
+- **3m point group**: 3m (Schoenflies C3v) is the point group of ferroelectric LiNbO3: a threefold rotation axis along c with three mirror planes that contain it. (source: weis1985, ieee176, weis1985)
+- **acceptance bandwidth**: Range of wavelength, temperature or angle over which phase matching holds.
+- **acousto-optic effect**: The acousto-optic effect is the modulation or diffraction of light by an acoustic wave through the index changes it carries: photoelastic, plus electro-optic from the accompanying piezoelectric field in LiNbO3. (source: weis1985, shao2019, sarabalis2020)
+- **acousto-optic figure of merit**: Material ranking numbers for acousto-optic devices, e.g. M2 = n^6 p²/(rho v³). (source: weis1985, R. W. Dixon, "Photoelastic Properties of Selected Materials and Their Relevance for Applications to Acoustic Light Modulators and Scanners", Journal of Applied Physics 38 5149-5153 (1967))
+- **Analog (provenance)**: A reported value taken from a paper other than the one anchoring a process flow, or from LiTaO3, and marked as such.
+- **AO modulator**: A modulator in which an acoustic wave, launched piezoelectrically, changes the refractive index and modulates or frequency-shifts light.
+- **Ar+ milling**: Ar+ milling is physical dry etching in which accelerated argon ions sputter material, the usual way to etch LiNbO3 waveguides because LN resists chemical dry etching. (source: zhu2021, shi2025)
+- **Argon ion milling / ion beam etching**: Physical removal of material by a directed beam of argon ions.
+- **atlas sample**: The curated set of modulator papers in eo-modulator-atlas (233 papers at the pinned commit); counts describe the sample, not the whole field.
+- **backswitching**: Spontaneous return of freshly reversed domains to the original direction after a too-short poling pulse. (source: volk2008)
+- **band gap**: The band gap of LiNbO3 is usually quoted as about 3.7 eV from optical absorption, while GW calculations place the fundamental quasiparticle gap at least 1 eV higher. (source: thierfelder2010)
+- **BCB**: Benzocyclobutene, a polymer adhesive used to bond early LN films; it limits later annealing temperatures. (source: guarino2007)
+- **BEOL**: The metal interconnect layers of a CMOS process, above the transistors.
+- **birefringence**: Birefringence is the index difference n_e - n_o, which for congruent LiNbO3 is negative, about -0.07 to -0.08 between 633 and 1550 nm. (source: zelmon1997, rii)
+- **birefringent phase matching**: Birefringent phase matching cancels material dispersion with the difference between ordinary and extraordinary indices, so that orthogonally polarized waves share the same phase velocity. (source: boyd1964, miller1965)
+- **BLIIRA (blue-light-induced infrared absorption)**: BLIIRA is the infrared absorption induced in LiNbO3 by blue (or two-photon) excitation through the same light-generated polaron absorption bands. (source: hirohashi2007, imlau2015)
+- **boule**: A boule is the as-grown single-crystal ingot from which LiNbO3 wafers are cut after orientation. (source: ballman1965, carruthers1971, volk2008)
+- **bound small polaron**: Electron trapped on a Nb antisite; absorption band near 1.6 eV; cause of GRIIRA. (source: Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **Bragg diffraction**: Diffraction of light by a thick acoustic grating at the angle where momentum is conserved: sin(theta_B) = lambda0/(2 n Lambda).
+- **bulk acoustic wave (BAW)**: A bulk acoustic wave (BAW) is an elastic wave propagating through the volume of a crystal as a quasi-longitudinal or one of two quasi-shear modes. (source: kushibiki1999, lu2025)
+- **bulk photovoltaic effect**: The bulk photovoltaic effect is a DC current driven by uniform illumination in a crystal without inversion symmetry, j = kappa alpha I along c in LiNbO3, with no applied field or gradient. (source: glass1974, bryan1984)
+- **CAGR**: The constant yearly growth rate that links a base value to a forecast value; as quoted by each market report.
+- **capacitively loaded electrode**: A traveling-wave electrode with small T-shaped segments that reach toward the waveguide from wide rails, keeping the field gap small while the current flows in low-loss rails.
+- **CAR**: Ratio of true photon-pair coincidences to accidental coincidences; a pair-source quality figure.
+- **cascaded chi(2)**: A mismatched chi(2) process that acts like a Kerr effect of chosen sign. (source: R. DeSalvo et al., "Self-focusing and self-defocusing by cascaded second-order effects in KTP", Optics Letters 17 28 (1992))
+- **CDM**: A packaged IQ modulator with integrated RF drivers for coherent transceivers; HB-CDM is the high-bandwidth class.
+- **CDM, HB-CDM**: Packaged coherent IQ modulator with integrated RF driver.
+- **characteristic impedance Z0**: The characteristic impedance Z0 = sqrt((R + j omega L) / (G + j omega C)) of a transmission-line electrode is the voltage-to-current ratio of a single traveling wave on it. (source: zhang2021)
+- **charged domain wall**: A domain wall inclined to c, carrying bound charge 2 Ps sin(theta) per area that mobile carriers screen. (source: C. S. Werner, S. J. Herr, K. Buse, B. Sturman, E. Soergel, C. Razzaghi, I. Breunig, "Large and accessible conductivity of charged domain walls in lithium niobate", Sci. Rep. 7, 9862 (2017))
+- **chemical-mechanical polishing (CMP)**: Chemical-mechanical polishing (CMP) smooths and thins a surface by combined chemical attack and abrasive polishing with a slurry, used on LiNbO3 films after ion slicing and to pattern low-loss structures. (source: lin2020, jia2021)
+- **Christoffel equation**: The Christoffel equation, det(Gamma_ik - rho v² delta_ik) = 0 with Gamma_ik = c_ijkl n_j n_l, gives the phase velocities and polarizations of the three bulk acoustic waves for propagation direction n. (source: kushibiki1999, warner1967, ieee176, J. W. Jaeken & S. Cottenier, "Solving the Christoffel equation: Phase and group velocities", Computer Physics Communications 207 445-451 (2016))
+- **clamped (constant strain, S)**: A clamped coefficient (superscript S) is defined at constant strain, the condition reached at drive frequencies above the mechanical resonances of the sample, where the lattice cannot follow the field. (source: weis1985, kushibiki1999)
+- **clamped (S) and free (T) coefficients**: Coefficients measured above or below the acoustic resonances. (source: weis1985)
+- **clamped and free (S and T)**: Mechanical boundary condition: constant strain (clamped, above mechanical resonances) or constant stress (free, below them). (source: ieee176, kushibiki1999, weis1985)
+- **CLN, congruent LN**: LN grown at the composition where melt and crystal match; Li-deficient. (source: volk2008)
+- **CLN, SLN**: CLN is grown at the congruent composition and is Li-deficient; SLN approaches [Li]/[Nb] = 1, grown by double-crucible Czochralski (Kitamura et al. 1992) or made by vapor transport equilibration (Y.S. Luh et al. 1987). (source: kitamura1992, luh1987)
+- **coercive field**: The coercive field E_c is the field along c needed to reverse the spontaneous polarization of LiNbO3 at a given temperature and field ramp. (source: volk2008, gopalan1998, volk2008, Carsten Langrock, "Classical and low-light-level detection and pulse characterization using optical-frequency mixers", PhD dissertation, Department of Electrical Engineering, Stanford University (advisor M. M. Fejer) (2007))
+- **coherence length**: The coherence length L_c = pi / |Delta k| is the distance over which the phase mismatch between nonlinear polarization and generated wave reaches pi, after which conversion reverses. (source: fejer1992)
+- **coherent**: Transmission that encodes amplitude and phase on two polarizations and detects them against a local oscillator; used for long reach.
+- **columbium**: Name given by Hatchett (1801) to the element now called niobium (Hatchett 1802). (source: hatchett1802)
+- **congruent lithium niobate (CLN)**: Congruent LiNbO3 is the Li-deficient composition (about 48.4-48.5 mol% Li2O) at which melt and crystal have the same composition, so Czochralski boules grow uniform. (source: volk2008, reisman1958, lerner1968, carruthers1971, volk2008)
+- **congruent LN**: LN grown from the melt composition at which crystal and melt have the same composition; Li-deficient; the standard SAW and optical grade.
+- **congruent melting composition**: The composition at which melt and growing crystal are identical, about 48.4-48.5 mol% Li2O for LiNbO3. (source: volk2008)
+- **conoscopy**: Viewing a crystal plate in a cone of light between crossed polarizers. (source: Max Born & Emil Wolf, "Principles of Optics" (2019))
+- **constant E, constant D**: Electrical boundary condition: shorted (E = 0) or open (D = 0). (source: ieee176)
+- **constitutive equations**: Linear relations between stress, strain, electric field and displacement in a piezoelectric. (source: ieee176)
+- **contracted (Voigt) index**: Shorthand that maps index pairs to 1..6.
+- **convention of 2s**: Factors of 2 and 4 that appear when tensors are written in Voigt matrices. (source: ieee176, weis1985)
+- **cooperativity**: C = 4 g0² n_c/(kappa gamma): ratio of optomechanical coupling to the optical and mechanical loss rates. (source: jiang2020)
+- **CPO / NPO / LPO**: Ways to place optics close to a switch chip (CPO, NPO) or to drive a pluggable without a retiming DSP (LPO).
+- **CPW**: A transmission line with a signal conductor between two ground conductors on one surface.
+- **CTE**: Coefficient of thermal expansion.
+- **CTLE**: An analog filter that boosts high frequencies to compensate channel or device roll-off.
+- **Curie temperature**: The Curie temperature T_c is the temperature of the ferroelectric (R3c) to paraelectric (R-3c) transition of LiNbO3, and it rises with Li content. (source: volk2008, bordui1992, weis1985, volk2008, smolenskii1966)
+- **Czochralski growth**: Czochralski growth pulls a single crystal from a melt on a rotating seed, the standard method for LiNbO3 boules. (source: ballman1965, carruthers1971, kitamura1992, Wang, Ji, Dai, Shen, Bao, "The growth and characterization of six inch lithium niobate crystals with high homogeneity", CrystEngComm 22 794-801 (2020), Chen, Zhu, Liu, Xue, "State of the Art in Crystallization of LiNbO3 and Their Applications", Molecules 26 7044 (2021), czochralski1918, fedulov1965)
+- **d coefficient**: Piezoelectric strain constant, C/N = m/V: charge per unit stress, or strain per unit field. (source: ieee176, kushibiki1999)
+- **d33 (nonlinear)**: d33 is the chi(2) component coupling optical fields polarized along c, the largest nonlinear coefficient of LiNbO3 and the one used by PPLN. (source: volk2008, shoji1997, zhu2021)
+- **DAC**: The electronic circuit that generates the multilevel drive waveform; its bandwidth often limits symbol rate in modulator experiments.
+- **dark conductivity**: Dark conductivity is the electrical conductivity of LiNbO3 without illumination, which sets how long space-charge and bias fields persist. (source: volk2008, holzgrafe2024, volk2008)
+- **dark trace**: Gray coloration in the visible left by intense pulsed light; stable in congruent LN, decays within minutes in Mg- or Zn-doped crystals above threshold. (source: volk2008)
+- **DC (bias) drift**: DC bias drift is the slow change of an LN modulator's operating point under constant bias voltage, caused by charge redistribution that screens the applied field. (source: zhu2021, yamada1981, holzgrafe2024, shi2025, seino1992)
+- **Diamond-like carbon**: Hard amorphous carbon film used as an etch mask that erodes slowly under argon ions. (source: Li, Wang, Lihachev, Zhang, Tan, Churaev et al., "High density lithium niobate photonic integrated circuits", Nature Communications 14 4856 (2023))
+- **dielectric permittivity (eps^T, eps^S)**: The relative permittivity of LiNbO3 is a uniaxial tensor (eps11 perpendicular, eps33 parallel to c) whose value depends on whether the crystal is mechanically free (eps^T) or clamped (eps^S). (source: kushibiki1999, weis1985)
+- **dielectric relaxation time**: Time eps eps0 / sigma over which free charge screens a field in a medium of conductivity sigma; sets photorefractive write, erase, and drift times. (source: volk2008)
+- **difference-frequency generation (DFG)**: Difference-frequency generation (DFG) is the chi(2) process in which a pump at omega_p and a signal at omega_s generate an idler at omega_i = omega_p - omega_s while amplifying the signal. (source: armstrong1962)
+- **diffusion field**: Space-charge field set up by diffusion of carriers from bright to dark fringes; independent of intensity and shifted a quarter period from the light pattern. (source: volk2008)
+- **discharge layer**: Thin conductive film (for example a few nm of Al) over resist on an insulating substrate that carries away charge during electron-beam lithography. (source: Wentao Jiang, "Yapping on e-beam lithography" (2024))
+- **displacive vs order-disorder transition**: Two limiting pictures of a structural phase transition: a soft mode whose frequency goes to zero, or ions hopping among pre-existing wells that become equally occupied above Tc. (source: inbar1996)
+- **domain inversion layer**: Surface layer with reversed spontaneous polarization, formed for example on the +c face during Ti indiffusion. (source: S. Miyazawa, "Ferroelectric domain inversion in Ti-diffused LiNbO3 optical waveguide", Journal of Applied Physics 50 4599-4603 (1979))
+- **domain merging**: Lateral spread of reversed domains beyond the electrode, which widens stripes and changes the duty cycle. (source: volk2008)
+- **domain wall**: A domain wall is the narrow boundary between antiparallel domains in LiNbO3, across which the polarization reverses. (source: gopalan2007, chakkoria2025)
+- **domain-wall conduction**: Electrical conduction along charged domain walls, more than 13 orders of magnitude above the bulk in MgO-doped LiNbO3. (source: C. S. Werner, S. J. Herr, K. Buse, B. Sturman, E. Soergel, C. Razzaghi, I. Breunig, "Large and accessible conductivity of charged domain walls in lithium niobate", Sci. Rep. 7, 9862 (2017))
+- **double-crucible Czochralski (DCCZ)**: Growth of near-stoichiometric LiNbO3 from an Li-rich inner melt replenished by stoichiometric powder fed to an outer crucible. (source: kitamura1992)
+- **DP-QPSK**: Coherent format carrying 2 bits per symbol in each of two polarizations; an LN modulator for it, described by Fujitsu as a world first, announced in 2009 (Fujitsu Introduces World's First DP-QPSK LN Modulator for 100Gbps Optical Networks). (source: fujitsu-2009)
+- **duty cycle**: Ratio of reversed-domain width to period in a periodically poled structure, optimally 0.5 for first-order QPM. (source: volk2008, fejer1992)
+- **DUV lithography**: Deep-ultraviolet (DUV) lithography patterns resist by projection exposure in steppers or scanners, enabling wafer-scale, foundry-style patterning of TFLN instead of electron-beam writing. (source: luke2020, wang2024)
+- **e coefficient**: Piezoelectric stress constant, C/m²: stress per unit field at constant strain, or charge per unit strain. (source: ieee176, kushibiki1999)
+- **Edge exclusion**: Rim of a wafer left out of measurement or devices because film quality or handling degrades there. (source: luke2020)
+- **effective area**: Cross-section that sets nonlinear intensity in a waveguide.
+- **effective index**: The effective index n_eff = beta / k0 of a waveguide mode is its propagation constant divided by the vacuum wavenumber. (source: zhu2021)
+- **effective nonlinear coefficient**: The effective nonlinear coefficient d_eff is the projection of the d tensor onto the polarizations of the interacting waves, including any reduction by a QPM grating. (source: fejer1992)
+- **EIC**: The driver or receiver chip paired with a photonic chip.
+- **elastic stiffness c^E**: The elastic stiffness tensor c_IJ^E (GPa) of LiNbO3 relates stress to strain at constant electric field, with six independent components for 3m: c11, c12, c13, c14, c33 and c44. (source: kushibiki1999, ogi2002, weis1985)
+- **electro-optic bandwidth**: The electro-optic bandwidth of a modulator is the modulation frequency at which its EO response has fallen by a stated amount, usually 3 dB, from its low-frequency value. (source: zhang2021, kharel2021)
+- **electro-optic frequency comb**: An electro-optic (EO) frequency comb is a set of equally spaced optical lines produced by strong phase or intensity modulation at a microwave frequency, which sets the line spacing. (source: zhang2019, parriaux2020)
+- **electro-optic frequency shifter**: Device that moves light to a new frequency with a microwave drive. (source: hu2021)
+- **electro-optic tensor**: The table of coefficients r_Ij linking field to index change. (source: weis1985)
+- **electro-optic tensor r_ij**: The electro-optic tensor r_Ij (pm/V) relates the change of optical impermeability to the applied field, Delta B_I = r_Ij E_j, with I = 1-6 in Voigt notation. (source: weis1985)
+- **electromechanical coupling factor**: Dimensionless k: the fraction of stored energy that converts between mechanical and electrical form, as k². (source: ieee176, K. A. Ingebrigtsen, "Surface Waves in Piezoelectrics", Journal of Applied Physics 40 2681-2686 (1969))
+- **electromechanical coupling k^2**: The electromechanical coupling coefficient k² measures the fraction of energy converted between electrical and mechanical form in a given piezoelectric mode, e.g. k_t² = e33² / (c33^D eps33^S) for a thickness mode. (source: shibayama1976, plessky2019, yamanouchi1972)
+- **Electron-beam lithography**: Writing a pattern into resist point by point with a focused electron beam. (source: Kaufmann, Finco, Maeder, Grange, "Redeposition‐free inductively‐coupled plasma etching of lithium niobate for integrated photonics", Nanophotonics 12 1601-1611 (2023))
+- **empty octahedral site**: The structurally vacant octahedron in the sequence Nb, empty, Li along +c, distinct from a Li vacancy, which is a defect. (source: volk2008)
+- **EO hysteresis**: Persistent change of DC electro-optic response magnitude and linearity after long biasing; reversible with zero or reverse bias. (source: Matthew Yeh et al., "Hysteresis and Trap Emission in dc-Biased Integrated Lithium Niobate Electro-optic Modulators", Nano Letters 26 13450-13456 (2026))
+- **EO overlap factor**: Fraction of the ideal field-mode coupling a real electrode achieves.
+- **EO S21**: The modulator's measured response, optical modulation amplitude per unit RF drive, versus frequency, usually in dB relative to a low-frequency reference.
+- **Er:LNOI**: Erbium-doped LNOI; provides optical gain near 1530 nm when pumped near 980 or 1480 nm.
+- **Etch selectivity**: Ratio of the etch rate of the target material to that of the mask.
+- **evidence grade**: The site's label for how a claim was checked: F (primary source read), V (vendor claim), T (trade press read), C (snippet only), LG (low-grade), E (site estimate), S (speculation).
+- **extinction ratio**: Ratio of maximum to minimum output power of a modulator, in dB, static (DC sweep) or dynamic (eye).
+- **extraordinary index**: The extraordinary index n_e is the refractive index of LiNbO3 for light polarized parallel to the c axis. (source: weis1985, zelmon1997, jundt1997, volk2008)
+- **Fe doping (Fe:LN)**: Iron doping supplies Fe2+/Fe3+ deep traps in LiNbO3 that act as photorefractive donors and acceptors, making Fe:LN a holographic recording medium. (source: volk2008, schwesyg2011, staebler1971, peterson1971, mok1993)
+- **ferroelectric domain**: A ferroelectric domain is a region of uniform spontaneous polarization; LiNbO3 has only 180 deg domains, with P_s along +c or -c. (source: nassau1965, gopalan2007, volk2008)
+- **ferroelectricity**: LiNbO3 is ferroelectric: it has a spontaneous polarization along c that a sufficiently strong applied field can reverse. (source: matthias1949, abrahams1966, volk2008, volk2008)
+- **ferroniobium**: An iron-niobium alloy, the main traded niobium product, used to make high-strength steel.
+- **finesse**: Resonance spacing divided by resonance width.
+- **Fluence**: Number of implanted ions per unit area, in cm^-2. (source: guarino2007, wang2024)
+- **FOG**: A rotation sensor that measures the Sagnac phase between counter-propagating light in a fiber coil; LN integrated optical circuits split and modulate the light.
+- **forward and reverse poling**: Reversal from the virgin single-domain state (forward) and back to it (reverse); forward needs the larger field in congruent crystal. (source: volk2008)
+- **foundry**: A company that manufactures chips to customers' designs; a pure-play foundry makes no products of its own.
+- **free small polaron**: Electron self-trapped on a regular Nb site; absorption band near 1.0 eV. (source: Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **free spectral range**: Frequency spacing between adjacent ring resonances.
+- **g coefficient**: Piezoelectric voltage constant, V m/N: field per unit stress at constant D. (source: ieee176, kushibiki1999)
+- **g2(0)**: Measures multi-photon contamination of a heralded single photon; 0 is ideal.
+- **GBd**: Symbol rate in 1e9 symbols per second; bit rate = symbol rate x bits per symbol.
+- **Glass constant**: Scalar coefficient in j_pv = k_G alpha I linking photovoltaic current density to absorbed intensity. (source: volk2008)
+- **glide plane**: A mirror reflection combined with a translation along the plane; in R3c the mirrors of 3m are c-glide planes. (source: hsu1997)
+- **GRIIRA (green-induced infrared absorption)**: GRIIRA is the transient infrared absorption induced in LiNbO3 by green light, caused by light-generated small polarons. (source: furukawa2001, imlau2015)
+- **group index**: The group index n_g = n_eff - lambda dn_eff/dlambda gives the speed c/n_g at which an optical pulse envelope, or a modulation imprinted on it, travels in a waveguide. (source: zhu2021, zhang2021)
+- **group-velocity mismatch**: Pulses at two wavelengths travel at different speeds.
+- **GSG / GSSG**: Electrode layouts for single-ended (GSG) or differential (GSSG) traveling-wave drive.
+- **h coefficient**: Piezoelectric stiffness-voltage constant, V/m: field per unit strain at constant D. (source: ieee176)
+- **half-wave voltage V_pi**: The half-wave voltage V_pi is the drive voltage that produces a pi phase shift in a phase modulator, or switches an MZM from maximum to minimum transmission. (source: wang2018, zhang2021, alferness1982)
+- **Hard mask**: An inorganic layer patterned first and then used to protect material during a harsher etch.
+- **heralded microwave photon**: A microwave photon whose creation is signalled by the detection of a partner optical photon. (source: W. Jiang et al., "Optically heralded microwave photon addition", Nature Physics 19 1423-1428 (2023), W. Jiang et al., "Optically heralded microwave photon addition", Zenodo (2023))
+- **hexagonal and rhombohedral cells**: The R3c structure of LiNbO3 can be described by a hexagonal cell (a = 5.148 A, c = 13.863 A at room temperature) or by the primitive rhombohedral cell (a_R = 5.494 A, alpha = 55.867 deg). (source: weis1985, volk2008, hsu1997)
+- **hexagonal setting**: Description of the trigonal lattice by a hexagonal prism cell with a = 5.148 A, c = 13.863 A and six formula units. (source: hsu1997)
+- **hole polaron (O^-)**: A hole trapped on an oxygen ion next to a cation defect such as a Li vacancy, absorbing broadly near 500 nm. (source: volk2008, Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **hologram fixing**: Hologram fixing converts a photorefractive electronic charge grating in LiNbO3 into a stable ionic grating, so that reading light no longer erases it. (source: staebler1971, chen1968, volk2008)
+- **HSQ**: Hydrogen silsesquioxane, a negative EBL resist that becomes silicon oxide and serves as an etch mask or cladding. (source: Kaufmann, Finco, Maeder, Grange, "Redeposition‐free inductively‐coupled plasma etching of lithium niobate for integrated photonics", Nanophotonics 12 1601-1611 (2023))
+- **ICP-RIE**: Inductively coupled plasma reactive ion etching, where a coil sustains a dense plasma and a separate bias sets ion energy. (source: Kaufmann, Finco, Maeder, Grange, "Redeposition‐free inductively‐coupled plasma etching of lithium niobate for integrated photonics", Nanophotonics 12 1601-1611 (2023))
+- **ICPCVD**: Chemical vapour deposition in an inductively coupled plasma, allowing films near room temperature. (source: Shams-Ansari, Huang, He, Li, Holzgrafe, Jankowski et al., "Reduced material loss in thin-film lithium niobate waveguides", APL Photonics 7 081301 (2022))
+- **IEEE Std 176-1987**: IEEE Std 176-1987, the IEEE Standard on Piezoelectricity, sets axis and sign conventions for piezoelectric crystals and lists LiNbO3 as its class-3m example. (source: ieee176, ire1949, weis1985, ieee176)
+- **ilmenite**: FeTiO3 structure type, centrosymmetric (as noted by Matthias & Remeika 1949). (source: matthias1949, abrahams1966)
+- **IM/DD**: Transmission that encodes data in optical intensity and detects it with a photodiode; used inside data centers.
+- **IM/DD, PAM-4**: Data-center link format; PAM-4 carries 2 bits per symbol.
+- **index ellipsoid**: The index ellipsoid is the surface B_ij x_i x_j = 1, where B = (eps/eps0)⁻¹ is the optical impermeability tensor, whose semi-axes are the principal refractive indices. (source: weis1985, zhu2021, Max Born & Emil Wolf, "Principles of Optics" (2019))
+- **indirect photoelastic effect**: Index change from strain via the piezoelectric field and the electro-optic effect. (source: weis1985)
+- **insertion loss**: Optical power lost through a device, either on chip with couplers removed or fiber to fiber with couplers included; the two are not comparable.
+- **interdigital transducer (IDT)**: An interdigital transducer (IDT) is a pair of interleaved comb electrodes on a piezoelectric surface that converts an RF voltage into a surface acoustic wave and back. (source: white1965, W. R. Smith et al., "Analysis of Interdigital Surface Wave Transducers by Use of an Equivalent Circuit Model", IEEE Transactions on Microwave Theory and Techniques 17 856-864 (1969))
+- **internal field**: The internal field is a built-in bias in congruent LiNbO3 that makes the forward and reverse coercive fields unequal, shifting the hysteresis loop along the field axis. (source: gopalan1998, volk2008, gopalan1998)
+- **Inverse taper edge coupler**: Waveguide that narrows toward the chip edge so the mode expands to match a fiber. (source: He, Zhang, Shams-Ansari, Zhu, Wang, Marko, "Low-loss fiber-to-chip interface for lithium niobate photonic integrated circuits", Optics Letters 44 2314 (2019))
+- **ion slicing (Smart Cut)**: Ion slicing (crystal ion slicing, a Smart Cut variant) detaches a sub-micrometre single-crystal layer from a LiNbO3 wafer by light-ion implantation to a set depth, bonding to a handle wafer, and splitting along the implanted plane. (source: bruel1995, levy1998, jia2021)
+- **IQ modulator**: Two MZMs nested in an outer interferometer with a 90-degree phase offset, used to write amplitude and phase (QAM) onto light.
+- **IQEC**: Conference where the 1980 MgO:LN abstract appeared (Iqec 1980). (source: iqec1980)
+- **isochrome**: Ring of equal retardation.
+- **isogyre**: Dark brush where an eigen-polarization lines up with the polarizer.
+- **ITO buffer**: Indium tin oxide, a transparent conductor, used in place of SiO2 as the buffer layer under modulator electrodes to reduce drift. (source: C. M. Gee et al., "Minimizing dc drift in LiNbO3 waveguide devices", Applied Physics Letters 47 211-213 (1985))
+- **Kerr frequency comb**: Equally spaced laser lines generated by four-wave mixing in a ring. (source: Tobias J. Kippenberg et al., "Dissipative Kerr solitons in optical microresonators", Science 361 (2018))
+- **Kerr soliton**: A stable pulse circulating in a chi(3) microresonator whose spectrum is a frequency comb.
+- **Kerr soliton microcomb**: A Kerr soliton microcomb is a frequency comb formed by a dissipative Kerr soliton circulating in a high-Q microresonator with anomalous dispersion under CW pumping. (source: he2019, wang2019)
+- **Kleinman symmetry**: Kleinman symmetry is the approximate invariance of the chi(2) tensor under any permutation of its Cartesian indices, valid when all frequencies lie far from material resonances. (source: armstrong1962, D. A. Kleinman, "Nonlinear Dielectric Polarization in Optical Media", Physical Review 126 1977-1979 (1962))
+- **Kolmogorov-Avrami-Ishibashi (KAI) model**: Switched-fraction law X(t) = 1 - exp(-(t/t0)^n) for nucleation-and-growth polarization reversal.
+- **Kroeger-Vink notation**: Defect notation giving species, site and charge relative to the host site, with a prime for negative and a bullet for positive excess charge. (source: volk2008)
+- **Kukhtarev equations**: Band-transport rate equations for photorefractive recording (N. V. Kukhtarev et al. 1978). (source: kukhtarev1978a)
+- **Kukhtarev model**: Band-transport rate equations (generation, recombination, drift, diffusion, photovoltaic current, Gauss law) for photorefractive gratings. (source: kukhtarev1978a)
+- **Lamb wave**: Guided wave in a free plate with symmetric (S) and antisymmetric (A) families.
+- **laser-induced damage**: Irreversible mechanical destruction (optical breakdown) at very high pulsed intensity or fluence; separate from photorefraction. (source: volk2008)
+- **leaky SAW**: A surface wave faster than the slow shear bulk wave that slowly radiates energy into the substrate (pseudo-SAW). (source: yamanouchi1972, kushibiki1999, warner1967)
+- **Li out-diffusion**: Li out-diffusion is the loss of Li2O from the surface of LiNbO3 at high temperature, leaving a Li-poor surface layer with a higher extraordinary index. (source: carruthers1974, kaminow1973, zhu2021)
+- **Li vacancy**: A lithium vacancy (V_Li) is an empty Li site; in the Li-site vacancy model of congruent LiNbO3, four V_Li compensate each Nb_Li antisite. (source: iyi1992, abrahams1986, lerner1968, volk2008)
+- **Li-site vacancy model**: Defect model [Li(1-5x) Nb_Li(x) V_Li(4x)] Nb O3, supported by X-ray plus neutron refinement and NMR and commonly accepted. (source: iyi1992)
+- **Li2CO3**: The lithium starting powder for LN crystal growth; most lithium is consumed by batteries.
+- **Lift-off**: Patterning metal by evaporating it over a resist pattern and dissolving the resist, leaving metal only where the resist was open.
+- **line rate / net rate**: Line rate counts all transmitted bits; net rate subtracts forward-error-correction and other overhead.
+- **lithium niobate on insulator (LNOI)**: LNOI (lithium niobate on insulator) is a layer stack of a thin single-crystal LiNbO3 film on a low-index insulator, usually SiO2, on a handle wafer such as Si, LN or quartz. (source: poberaj2012, levy1998, jia2021, rabiei2004)
+- **LN**: Ferroelectric oxide crystal, space group R3c; ferroelectricity reported in 1949 (Matthias & Remeika 1949). (source: matthias1949)
+- **LN on sapphire**: Thin-film LN bonded on sapphire; acoustic waves are guided without suspension. (source: F. M. Mayor et al., "Gigahertz Phononic Integrated Circuits on Thin-Film Lithium Niobate on Sapphire", Physical Review Applied 15 014039 (2021), C. J. Sarabalis et al., "Acousto-optic modulation in lithium niobate on sapphire", APL Photonics 5 086104 (2020))
+- **LNOI / LTOI**: Thin-film wafers for photonics: LN or LT film on buried oxide on a Si, LN, or quartz handle.
+- **LNOI, TFLN**: Thin-film lithium niobate on insulator.
+- **Love wave**: Shear-horizontal wave guided by a surface layer slower than the substrate.
+- **LT**: Isomorphous sibling of LN; reported ferroelectric with LN in 1949 (Matthias & Remeika 1949); main substrate for phone SAW filters by qualitative industry evidence. (source: matthias1949)
+- **Lugiato-Lefever equation**: The equation that models Kerr combs in a ring. (source: L. A. Lugiato & R. Lefever, "Spatial Dissipative Structures in Passive Optical Systems", Physical Review Letters 58 2209-2211 (1987))
+- **Mach-Zehnder modulator (MZM)**: A Mach-Zehnder modulator (MZM) splits light into two arms with EO phase shifters and recombines it, converting the phase difference into intensity, T = cos²(Delta phi / 2). (source: alferness1982, wooten2000, wang2018)
+- **market teaser**: The free summary page of a paid market report; it shows headline numbers without data or method.
+- **Maxwell-Wagner relaxation**: Relaxation in a layered dielectric whose layers differ in eps/sigma: voltage moves from capacitive to resistive division with time constant (C1+C2)/(G1+G2).
+- **melatope**: Point in a conoscopic figure where an optic axis emerges.
+- **metallization ratio**: Fraction of the IDT period covered by metal fingers.
+- **MgO doping**: MgO doping above a threshold (about 4.5 at.% MgO in congruent LiNbO3) makes the crystal resistant to photorefractive damage by raising its photoconductivity. (source: bryan1984, furukawa2001, volk2008, bryan1984, zheng2016, iqec1980)
+- **microring resonator**: A microring resonator is a closed waveguide loop, coupled to a bus waveguide, that resonates where the round-trip phase is a multiple of 2 pi (n_eff L = m lambda). (source: zhang2017, zhang2019, he2019)
+- **microwave-optical transducer**: A device that converts microwave photons (e.g. from a superconducting qubit) to optical photons and back, via the Pockels effect or a mechanical intermediary.
+- **microwave-to-optical transduction**: Microwave-to-optical transduction converts signals or single quanta between GHz microwave and optical carriers, for example to link superconducting qubits through optical fibre. (source: han2021, jiang2020)
+- **Miller's rule**: Miller's rule states that chi(2)(omega3; omega1, omega2) is approximately proportional to the product of the linear susceptibilities at the three frequencies, with a nearly material-independent constant. (source: miller1964, shoji1997)
+- **Miller-Savage method**: Measurement of domain-wall velocity from the shift of etched wall positions between field pulses. (source: volk2008)
+- **mirror plane**: Each of the three mirror planes of LiNbO3 contains the c axis, and the crystal-physics x axis is chosen perpendicular to one of them. (source: ieee176, weis1985)
+- **mode hybridization**: TE and TM modes mix where their indices would cross. (source: Archana Kaushalram et al., "Mode hybridization analysis in thin film lithium niobate strip multimode waveguides", Scientific Reports 10 (2020))
+- **MPW**: A shared fabrication run in which several customers' designs occupy one wafer, splitting the cost.
+- **MPW, PDK**: Shared wafer runs among customers; the design rules and component library for a process (luxtelligence-about, TFLN photonic foundry emerges from CSEM spin-off). (source: csem-2025)
+- **MUTC photodiode**: A III-V photodiode design in which only electrons transit the depletion region, enabling high bandwidth.
+- **n_g**: c divided by the optical group velocity in the waveguide; atlas column `ng_opt`.
+- **n_RF**: c divided by the microwave phase velocity on the electrode line; atlas column `n_rf`.
+- **nanobender**: A submicron piezoelectric bending beam driven by non-uniform fields from closely spaced electrodes. (source: W. Jiang et al., "Nanobenders as efficient piezoelectric actuators for widely tunable nanophotonics at CMOS-level voltages", Communications Physics 3 156 (2020))
+- **Nb antisite (Nb_Li)**: A niobium ion on a lithium site, the main intrinsic defect of Li-deficient LiNbO3. (source: volk2008)
+- **Nb-site vacancy model**: Defect model [Li(1-5x) Nb_Li(5x)] [Nb(1-4x) V_Nb(4x)] O3, proposed from X-ray occupancies of 4.9% Nb on Li sites. (source: abrahams1986)
+- **Nb2O5**: High-purity niobium oxide, one of the two starting powders for LN crystal growth; 69.904 wt% Nb.
+- **Nb_Li antisite**: An Nb_Li antisite is a niobium ion on a lithium site, the dominant intrinsic defect that accommodates the Li deficit of congruent LiNbO3. (source: iyi1992, abrahams1986, volk2008, furukawa2001)
+- **near-stoichiometric lithium niobate**: Crystal close to the 50:50 Li:Nb ratio, grown from Li-rich or K2O-modified melts or made by vapor transport equilibration. (source: gopalan1998)
+- **negative uniaxial**: LiNbO3 is negative uniaxial: its extraordinary index is smaller than its ordinary index (n_e < n_o). (source: zelmon1997, gayer2008)
+- **Neumann's principle**: The symmetry elements of any physical property of a crystal include the symmetry elements of its point group. (source: weis1985)
+- **nonlinear coefficient tensor**: Coefficients d_il that set how strongly light mixes. (source: Robert W. Boyd, "Nonlinear Optics, 3rd ed.", Academic Press (2008))
+- **nonlinear parameter**: Kerr phase per watt per metre in a waveguide.
+- **nonlinear refractive index n2**: n2 is the nonlinear refractive index coefficient in n = n0 + n2 I, expressed in m²/W. (source: desalvo1996, rii, zhu2021)
+- **normalized conversion efficiency**: SHG efficiency per watt and per length squared.
+- **NRZ / PAM4**: Intensity formats carrying 1 bit (NRZ) or 2 bits (PAM4) per symbol.
+- **OFC, ECOC**: Main annual optical-networking conferences.
+- **OH stretch band**: Infrared absorption of OH^- ions near 3480 cm⁻¹ (2.87 µm) whose shape and position track composition and dopant thresholds. (source: volk2008)
+- **OPO threshold**: Pump power at which the OPO starts oscillating.
+- **optic axis**: The optic axis of LiNbO3 is the crystal c axis, the single direction along which light of any polarization propagates with index n_o. (source: weis1985, zhu2021)
+- **optical impermeability**: The inverse dielectric tensor, the quantity the Pockels effect changes linearly.
+- **optical Kerr effect**: The optical Kerr effect is the intensity-dependent refractive index n = n0 + n2 I arising from the third-order susceptibility chi(3). (source: desalvo1996, he2019, wang2019)
+- **optical parametric amplification (OPA)**: Optical parametric amplification (OPA) is chi(2) gain for a signal at omega_s pumped at omega_p > omega_s, generating an idler at omega_i = omega_p - omega_s. (source: armstrong1962, zhu2021)
+- **optical parametric oscillator (OPO)**: An optical parametric oscillator (OPO) places a parametric amplifier in a resonator so that signal and/or idler build up from noise above a pump threshold. (source: giordmaine1965, myers1995, harris1969)
+- **optical-damage-resistant ion**: A dopant (Mg, Zn, In, Sc, Hf, Zr) that strongly reduces photorefraction above a threshold concentration. (source: volk2008)
+- **ordinary index**: The ordinary index n_o is the refractive index of LiNbO3 for light polarized perpendicular to the c axis. (source: weis1985, zelmon1997, volk2008)
+- **orthohexagonal (crystal-physics) frame**: The right-handed Cartesian x, y, z frame used for tensor properties, with z along c, x along an a axis perpendicular to a mirror plane, and y in a mirror plane. (source: weis1985)
+- **OSFP, DR8**: Pluggable transceiver form factor; DR8 uses eight parallel fiber lanes.
+- **overlap factor Gamma**: The electro-optic overlap factor Gamma is the overlap between the applied RF field, normalized to V/g, and the optical mode intensity inside the EO material. (source: zhang2021, rao2018)
+- **oxygen octahedron**: The cage of six oxygen atoms around each cation site; in LiNbO3 one third of the octahedra hold Li, one third Nb, one third are empty. (source: weis1985)
+- **PAM4**: Four-level pulse amplitude modulation, a line code carrying two bits per symbol.
+- **paraelectric phase**: The non-polar, centrosymmetric phase above the Curie temperature, in which Li lies in the oxygen layers and Nb at octahedron centres. (source: weis1985)
+- **partial-wave method**: SAW calculation that superposes bulk-like partial waves decaying into the substrate and enforces the surface boundary conditions. (source: J. J. Campbell & W. R. Jones, "A method for estimating optimal crystal cuts and propagation directions for excitation of piezoelectric surface waves", IEEE Transactions on Sonics and Ultrasonics 15 209-217 (1968))
+- **PDK**: The design rules, component library, and models a foundry supplies so customers can design for its process.
+- **PECVD**: Plasma-enhanced chemical vapour deposition, used for SiO2 masks and cladding at a few hundred degrees C. (source: Shams-Ansari, Huang, He, Li, Holzgrafe, Jankowski et al., "Reduced material loss in thin-film lithium niobate waveguides", APL Photonics 7 081301 (2022))
+- **pelopium**: Name Rose gave in 1846 to a supposed second new metal in Bavarian tantalite, after Pelops; shown to be niobium (Rose 1846, Jean Charles Galissard de Marignac 1866). (source: rose1846, marignac1866)
+- **per-lane rate**: Data rate carried by one optical lane (one wavelength on one fiber); 200 G/lane and 400 G/lane are the module generations behind 1.6T and 3.2T.
+- **periodically poled lithium niobate (PPLN)**: Periodically poled lithium niobate (PPLN) is LiNbO3 with a periodic pattern of inverted ferroelectric domains that acts as a QPM grating. (source: yamada1993, myers1995, fejer1992, Chen, Wang, Tian, Tang, Gu, Qian et al., "Wafer-Scale Periodic Poling of Thin-Film Lithium Niobate", Materials 17 1720 (2024))
+- **phase matching**: Phase matching is the condition Delta k = 0 under which the nonlinear polarization and the generated wave stay in phase, so the generated field grows over the whole interaction length. (source: armstrong1962, boyd1964, fejer1992, miller1965)
+- **PhC**: A periodically patterned waveguide or cavity that confines light by a photonic band gap; used for compact, high-Q EO modulators.
+- **phononic index guiding**: Confinement of an acoustic wave in a film whose acoustic velocity is lower than the substrate's, without suspension. (source: F. M. Mayor et al., "Gigahertz Phononic Integrated Circuits on Thin-Film Lithium Niobate on Sapphire", Physical Review Applied 15 014039 (2021))
+- **photoconductivity**: Photoconductivity sigma_ph is the light-induced increase of electrical conductivity, proportional to intensity in the simplest one-center model. (source: bryan1984, volk2008, Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **photoelastic effect**: The photoelastic effect is the linear change of optical impermeability with strain, Delta B_I = p_IJ S_J, described in LiNbO3 by the photoelastic tensor p_IJ. (source: weis1985, andrushchak2009, mytsyk2021, weis1985)
+- **photon lifetime**: tau = Q_L / omega_0, the decay time of energy stored in a resonator; it sets the scale of a resonant modulator's bandwidth.
+- **photonic molecule**: Two coupled resonators with split supermodes.
+- **Photonic wire bonding**: Connecting chips with 3D-printed polymer waveguides written in place. (source: Franken, Cheng, Powell, Kyriazidis, Rosborough, Musolf et al., "High-power and narrow-linewidth laser on thin-film lithium niobate enabled by photonic wire bonding", APL Photonics 10 026107 (2025))
+- **photorefraction**: Photorefraction is the light-induced refractive-index change in LiNbO3 caused by photoexcited charge redistribution, whose space-charge field alters the index through the Pockels effect. (source: ashkin1966, chen1969, glass1974, volk2008, jiang2017)
+- **photorefractive damage**: Photorefraction when it is unwanted: beam distortion and scattering by the beam's own index change. (source: Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **photovoltaic tensor**: Third-rank tensor in j_i = beta_ijk e_j e_k I; for point group 3m its symmetric part has the same nonzero pattern as the piezoelectric d tensor. (source: volk2008)
+- **PIC**: Multiple optical components fabricated on one chip.
+- **piezo-optomechanics**: Piezo-optomechanics couples microwave signals to optical modes through a mechanical mode that is driven piezoelectrically and modulates an optical cavity photoelastically and by boundary motion. (source: jiang2019, jiang2020, W. Jiang et al., "Optically heralded microwave photon addition", Nature Physics 19 1423-1428 (2023))
+- **piezoelectric coefficients e_ij and d_ij**: The piezoelectric stress constants e_iJ (C/m²) and strain constants d_iJ (pC/N) of LiNbO3 relate polarization to strain and to stress respectively, with d = e s^E. (source: kushibiki1999, ogi2002, weis1985)
+- **piezoelectric effect**: The piezoelectric effect is the linear coupling between mechanical strain or stress and electric polarization, allowed in LiNbO3 because it lacks an inversion center. (source: kushibiki1999, weis1985, ieee176, ieee176)
+- **piezoelectric stiffening**: Increase of the effective elastic constant because the wave's own electric field resists deformation. (source: ieee176, kushibiki1999)
+- **PLACE**: Photolithography-assisted chemo-mechanical etching, in which a patterned Cr mask protects LN while CMP removes the exposed film. (source: Li, Guan, Lin, Gao, Wang, Qiao et al., "Ultra-high Q lithium niobate microring monolithically fabricated by photolithography assisted chemo-mechanical etching", Optics Express 31 31556 (2023))
+- **Plasma-activated direct bonding**: Joining two polished wafers without adhesive after a plasma treatment makes their surfaces bond at room temperature. (source: You, Huang, Zhao, Yi, Chen, Ren et al., "Engineering of self-rectifying filamentary resistive switching in LiNbO3 single crystalline thin film via strain doping", Scientific Reports 9 19134 (2019))
+- **Pockels effect**: The Pockels effect is a change of refractive index linear in an applied electric field, allowed only in crystals without inversion symmetry, such as LiNbO3. (source: weis1985, turner1966)
+- **POI**: Piezoelectric-on-insulator: a thin LT or LN layer bonded on oxide on silicon for SAW filters. (source: Soitec SA, "Connect POI", eenews-2020-soitec)
+- **polar c-axis**: The c axis (crystal-physics z axis) of LiNbO3 is polar: its two ends are inequivalent, and the spontaneous polarization points along it. (source: weis1985, ieee176)
+- **poling**: Poling is the reversal of ferroelectric domains in LiNbO3 by a field above the coercive field, either over a whole crystal (single-domain) or in a pattern. (source: yamada1993, chakkoria2025, volk2008)
+- **postdeadline paper**: A late-submitted conference paper accepted for results judged exceptional; OFC 2026 had 24.
+- **Preston equation**: Empirical CMP law that removal rate is proportional to applied pressure times relative velocity, dz/dt = Kp P v. (source: F. W. Preston, "The theory and design of plate glass polishing machines", Journal of the Society of Glass Technology 11, 214 (1927))
+- **Projected range**: Mean depth at which implanted ions come to rest, set mainly by ion species and energy. (source: guarino2007, Ziegler, Ziegler, Biersack, "SRIM – The stopping and range of ions in matter (2010)", Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms 268 1818-1823)
+- **propagation loss**: Propagation loss is the power attenuation per unit length of a guided mode from absorption and scattering, usually given in dB/m or dB/cm. (source: zhang2017, zhu2021)
+- **proton exchange**: Proton exchange replaces Li+ by H+ near the LiNbO3 surface in an acid melt such as benzoic acid, raising n_e and lowering n_o to form waveguides that guide only the extraordinary polarization. (source: jackel1982, Carsten Langrock, "Classical and low-light-level detection and pulse characterization using optical-frequency mixers", PhD dissertation, Department of Electrical Engineering, Stanford University (advisor M. M. Fejer) (2007))
+- **push-pull drive**: Push-pull drive applies opposite phase shifts to the two arms of an MZM, doubling the differential phase per volt and cancelling the common-mode phase (chirp). (source: zhang2021, alferness1982)
+- **pyrochlore**: The niobium ore mineral mined in Brazil and Canada; the main primary source of niobium.
+- **pyroelectric coefficient**: Rate of change of spontaneous polarization with temperature, dPs/dT; negative in LiNbO3. (source: savage1966)
+- **pyroelectric effect**: The pyroelectric effect is the change of spontaneous polarization with temperature, which leaves bound charge on the c faces of LiNbO3 after a temperature change. (source: weis1985, savage1966, volk2008)
+- **pyroelectric field**: Field from uncompensated bound charge after a temperature change; decays as free charge screens it. (source: Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **Q factor**: The quality factor Q = omega0 tau = lambda0 / delta_lambda (FWHM, for a Lorentzian resonance) measures stored energy relative to the energy lost per optical cycle. (source: zhang2017, zhu2021)
+- **QFC**: Changing the frequency of single photons by SFG or DFG while preserving their quantum state.
+- **quadrature**: Bias point at half transmission of an MZM, where the transfer slope is largest.
+- **quasi-phase matching (QPM)**: Quasi-phase matching (QPM) compensates phase mismatch by periodically reversing the sign of the nonlinear coefficient, adding a grating wave vector K = 2 pi m / Lambda to the momentum balance. (source: armstrong1962, fejer1992, feng1980, yamada1993)
+- **R-3c**: The centrosymmetric space group (No. 167) of the paraelectric phase above the Curie temperature. (source: boysen1994)
+- **R1, R2**: Composition ratios [Li]/[Nb] and [Li]/([Li] + [Nb]); R2 times 100 equals the Li2O content in mol%. (source: volk2008)
+- **r13**: r13 (= r23) is the electro-optic coefficient that changes n_o for a field along c. (source: weis1985, kaminow1980, turner1966)
+- **r22**: r22 is the electro-optic coefficient through which a field perpendicular to c changes and rotates the ordinary-index axes (r12 = r61 = -r22). (source: weis1985, volk2008)
+- **r33**: r33 is the electro-optic coefficient that changes n_e for a field along c, the largest Pockels coefficient of LiNbO3 and the one most modulators use. (source: weis1985, kaminow1980, turner1966)
+- **R3c**: The space group (No. 161) of ferroelectric LiNbO3: a rhombohedral lattice with a threefold axis and c-glide planes, no inversion centre. (source: weis1985)
+- **R3c space group**: R3c (No. 161) is the space group of LiNbO3 below the Curie temperature: a rhombohedral lattice with glide planes containing the threefold axis. (source: weis1985, volk2008, cod)
+- **r51**: r51 (= r42) is the electro-optic coefficient through which a field perpendicular to c creates xz or yz impermeability components, tilting the principal axes out of the basal plane. (source: weis1985, kaminow1980, turner1966)
+- **Redeposition**: Etched material that lands back on the sidewalls or mask during physical etching. (source: Li, Wang, Lihachev, Zhang, Tan, Churaev et al., "High density lithium niobate photonic integrated circuits", Nature Communications 14 4856 (2023), Kaufmann, Finco, Maeder, Grange, "Redeposition‐free inductively‐coupled plasma etching of lithium niobate for integrated photonics", Nanophotonics 12 1601-1611 (2023))
+- **retardation**: Phase lag between the two polarizations after a plate.
+- **RF loss**: Attenuation of the microwave on the electrode, in dB/cm at a stated frequency (atlas `rf_loss_db_per_cm` at `rf_loss_freq_ghz`); conductor loss scales about as sqrt(f).
+- **rhombohedral setting**: Description of the same lattice by its primitive cell with edge a_R = 5.494 A, angle 55.87 deg and two formula units (10 atoms). (source: weis1985)
+- **rib waveguide**: Partially etched film forming a ridge on a thin slab.
+- **ring modulator**: A ring resonator whose resonance wavelength is shifted by the Pockels effect; efficient and compact, but its speed is limited by the photon lifetime.
+- **rotational photoelastic contribution**: Index change from local rotation (antisymmetric displacement gradient) in birefringent crystals. (source: D. F. Nelson & M. Lax, "New Symmetry for Acousto-Optic Scattering", Physical Review Letters 24 379-380 (1970), D. F. Nelson & M. Lax, "Theory of the Photoelastic Interaction", Physical Review B 3 2778-2794 (1971), weis1985)
+- **sagittal plane**: The plane containing the propagation direction and the surface normal.
+- **SAW grade / optical grade**: Wafer specifications for acoustic filters (rotated-Y cuts, e.g. 128-degree Y LN) versus optics (x- or z-cut, optical quality).
+- **second-harmonic generation (SHG)**: Second-harmonic generation (SHG) is the chi(2) process in which two photons at frequency omega combine into one at 2 omega. (source: boyd1964, fejer1992)
+- **second-order susceptibility chi(2)**: The second-order susceptibility chi(2), usually given as the d tensor (d = chi(2)/2), describes the polarization quadratic in the optical field that drives SHG, SFG, DFG and parametric processes in LiNbO3. (source: volk2008, shoji1997, armstrong1962)
+- **self-injection locking**: Narrowing a laser's linewidth by feeding back light from a high-Q resonator.
+- **Sellmeier equation**: A Sellmeier equation is an empirical fit of refractive index versus wavelength, n² = 1 + sum_i B_i lambda² / (lambda² - C_i), with separate coefficients for n_o and n_e of LiNbO3. (source: zelmon1997, jundt1997, gayer2008, schlarb1993, rii)
+- **SH0 mode**: Fundamental shear-horizontal plate mode; in-plane displacement normal to propagation. (source: C. J. Sarabalis et al., "Acousto-optic modulation of a wavelength-scale waveguide", Optica 8 477 (2021))
+- **SHG / SFG / DFG**: chi(2) processes that produce light at 2 omega, omega1 + omega2, or omega1 - omega2.
+- **Sidewall angle**: Angle between an etched waveguide wall and the substrate plane; 90 deg is vertical.
+- **sign frame**: The choice of +X, +Y, +Z that fixes the signs of odd-rank and some even-rank tensor components. (source: ieee176, weis1985)
+- **single-domain (poled) crystal**: Crystal whose spontaneous polarization points one way throughout, prepared by applying a field near the Curie temperature (K. Nassau et al. 1966). (source: nassau1966b)
+- **Single-domain poling (boule)**: Making the spontaneous polarization point the same way throughout a grown crystal. (source: nassau1966b)
+- **SLN, NSLN**: Stoichiometric or near-stoichiometric lithium niobate, with Li2O content close to 50 mol%. (source: volk2008)
+- **slow light**: Propagation with a large optical group index in a structured waveguide; it raises the phase shift per unit index change and per unit length.
+- **slow-wave electrode**: A periodically loaded electrode that lowers the microwave phase velocity (raises n_RF) to match a high optical group index.
+- **slowness surface**: Plot of 1/v versus propagation direction; one sheet per bulk mode. (source: J. W. Jaeken & S. Cottenier, "Solving the Christoffel equation: Phase and group velocities", Computer Physics Communications 207 445-451 (2016))
+- **small polaron**: A small polaron in LiNbO3 is an electron or hole self-trapped on a single ion by the lattice distortion it creates. (source: schirmer2009, imlau2015, volk2008, Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **SNSPD**: Superconducting nanowire single-photon detector.
+- **soliton step**: Plateau in intracavity power as solitons form during a laser scan. (source: T. Herr et al., "Temporal solitons in optical microresonators", Nature Photonics 8 145-152 (2013))
+- **space-charge field**: The space-charge field E_sc is the electrostatic field of charges separated by photoexcitation, transport and retrapping in a photorefractive crystal. (source: chen1969, glass1974, volk2008)
+- **Splitting anneal**: The heating step that makes implanted gas coalesce in a buried plane until the film separates from the donor. (source: Sihao Wang, Likai Yang, Mohan Shen, Wei Fu, Yuntao Xu, et al. (H. X. Tang group, Yale), "SmartCut Er:LiNbO3 with high optical coherence enabling optical thickness control", arXiv preprint (2022))
+- **spontaneous polarization**: The spontaneous polarization P_s of LiNbO3 is the electric dipole moment per unit volume along c present without an applied field below T_c. (source: gopalan1998, volk2008, savage1966, gopalan1998)
+- **squeezed light**: Light whose noise in one quadrature is below the vacuum (shot-noise) level; quoted in dB, measured or loss-corrected (inferred).
+- **stimulated Raman scattering**: Light scattering from lattice vibrations that can steal comb power. (source: Zheng Gong et al., "Near-octave lithium niobate soliton microcomb", Optica 7 1275 (2020))
+- **stoichiometric lithium niobate (SLN)**: Stoichiometric (in practice near-stoichiometric, about 49.8-50 mol% Li2O) LiNbO3 has [Li]/[Nb] close to 1 and far fewer intrinsic defects than congruent LN. (source: volk2008, gopalan1998, kitamura1992, bordui1992)
+- **sum-frequency generation (SFG)**: Sum-frequency generation (SFG) is the chi(2) process omega1 + omega2 -> omega3 that combines two input photons into one at the sum frequency. (source: armstrong1962)
+- **surface acoustic wave (SAW)**: A surface acoustic wave (SAW) is an elastic wave bound to the surface of a solid, decaying within about one wavelength into the bulk. (source: white1965, shibayama1976, sarabalis2020, Lord Rayleigh, "On Waves Propagated along the Plane Surface of an Elastic Solid", Proceedings of the London Mathematical Society s1-17 4-11 (1885), J. J. Campbell & W. R. Jones, "A method for estimating optimal crystal cuts and propagation directions for excitation of piezoelectric surface waves", IEEE Transactions on Sonics and Ultrasonics 15 209-217 (1968), kushibiki1999)
+- **TE, TM (quasi-)modes**: Modes polarized mainly in the plane or normal to the film.
+- **temperature coefficient of frequency**: TCF: relative change of a resonator's or filter's frequency per kelvin, in ppm/K. (source: OJSC Fomos-Materials, "Lithium niobate (knowledge base)")
+- **TFLN, TFLT**: Photonic platforms on LNOI or LTOI wafers; TFLT PICs for volume manufacturing reported in 2024 (Wang et al. 2024). (source: wang2024)
+- **thermal lens**: Lens formed by the temperature profile of an absorbing beam through dn/dT. (source: Judith R. M.-L. Schwesyg, "Interaction of light with impurities in lithium niobate crystals", Dr. rer. nat. dissertation, Universität Bonn (2011))
+- **thermal triangle**: Triangular resonance shape in a self-heated resonator when the laser is swept toward longer wavelength; a form of thermal bistability. (source: T. Carmon et al., "Dynamical thermal behavior and thermal self-stability of microcavities", Optics Express 12 4742 (2004))
+- **thermo-optic coefficient**: The thermo-optic coefficient dn/dT is the change of refractive index with temperature; in LiNbO3 it is much larger for n_e than for n_o. (source: jundt1997, zhu2021, schwesyg2011, jiang2017, moretti2005)
+- **thin-film lithium niobate (TFLN)**: TFLN (thin-film lithium niobate) is integrated photonics in sub-micrometre LiNbO3 films, typically LNOI, patterned into high-confinement waveguides. (source: zhu2021, boes2023, wang2018, kaminow1973)
+- **thin-film lithium tantalate (TFLT)**: TFLT (thin-film lithium tantalate) is the LiTaO3 counterpart of TFLN: integrated photonics in thin LiTaO3 films on insulator. (source: wang2024, matthias1949, K. Powell et al., "DC-stable electro-optic modulators using thin-film lithium tantalate", Optics Express 32 44115 (2024))
+- **threshold concentration**: The dopant level above which photorefraction drops by orders of magnitude and many properties change abruptly, about 5 mol% MgO in congruent LiNbO3. (source: volk2008)
+- **Ti indiffusion**: Ti indiffusion forms optical waveguides in bulk LiNbO3 by depositing titanium stripes and diffusing them in at high temperature, raising both n_o and n_e locally. (source: schmidt1974, wooten2000, Luo, Brauner, Eigner, Sharapova, Ricken, Meier et al., "Nonlinear integrated quantum electro-optic circuits", Science Advances 5 eaat1451 (2019))
+- **top-seeded solution growth (TSSG)**: Growth of near-stoichiometric LiNbO3 from a K2O-containing high-temperature solution. (source: K. Polgar, A. Peter, L. Kovacs, G. Corradi, Zs. Szaller, "Growth of stoichiometric LiNbO3 single crystals by top seeded solution growth method", J. Cryst. Growth 177, 211-216 (1997))
+- **TOSA**: The packaged laser, modulator, and optics on the transmit side of a pluggable module.
+- **transparency window**: The transparency window of LiNbO3 spans roughly 0.32 to 5 µm, bounded by electronic absorption in the UV and lattice absorption in the mid-IR. (source: volk2008, bryan1984, schwesyg2011)
+- **traveling-wave electrode**: A traveling-wave electrode is a transmission line running along the optical waveguide so that the modulating microwave co-propagates with the light, removing the RC limit of a lumped electrode. (source: alferness1982, zhang2021, kharel2021)
+- **two-center model**: Charge-transport scheme in LiNbO3 with a deep trap (for example Fe) and the Nb antisite as a shallow electron trap. (source: volk2008)
+- **unclamped (constant stress, T)**: An unclamped (free) coefficient (superscript T) is defined at constant stress, the condition reached at frequencies below the mechanical resonances, where the crystal deforms freely under the field. (source: weis1985, holzgrafe2024)
+- **uniaxial crystal**: A crystal with one optic axis; LN is uniaxial along c.
+- **unipolarity**: The asymmetry of the ferroelectric hysteresis loop caused by the internal field. (source: volk2008)
+- **UV absorption edge**: The UV absorption edge of LiNbO3 moves to shorter wavelength as the Li content rises, and its position is used to measure composition. (source: kovacs1997, volk2008)
+- **V_pi L**: Half-wave voltage times electrode length; a modulator's efficiency figure.
+- **V_pi*L**: V_pi*L is the product of half-wave voltage and electrode length, a length-independent figure of merit for electro-optic modulation efficiency, usually in V cm. (source: zhang2021, rao2018)
+- **V_pi, V_pi L**: Voltage for a pi phase difference; V_pi L normalizes by electrode length (units V cm).
+- **vacuum optomechanical coupling rate**: g0: optical frequency shift produced by the zero-point motion of the mechanical mode. (source: jiang2019, jiang2020)
+- **vapor transport equilibration (VTE)**: Vapor transport equilibration (VTE) raises the Li content of LiNbO3 wafers toward stoichiometry by annealing them next to Li-rich powder so that Li2O diffuses in through the vapor phase. (source: bordui1992, volk2008)
+- **velocity matching**: Velocity matching equalizes the microwave phase velocity on the electrode (index n_m) with the optical group velocity (index n_g), so the light sees the same modulating phase along the whole device. (source: zhang2021, rao2018)
+- **Voigt notation**: Voigt notation contracts symmetric index pairs (xx, yy, zz, yz, xz, xy) to 1-6, so rank-3 and rank-4 property tensors of LiNbO3 become 3x6 and 6x6 matrices. (source: weis1985, ogi2002, weis1985, ieee176)
+- **Vpi convention**: The definition behind a quoted V_pi (per-arm phase shifter, push-pull MZM, differential V+ minus V-, single arm); conventions differ by factors of 2 and are never converted on this site.
+- **wafer bonding**: Wafer bonding joins two polished wafers, for example an implanted LiNbO3 donor and an oxidized Si or LN handle, by direct or adhesive bonding. (source: rabiei2004, poberaj2012, volk2008)
+- **Wafer flat**: A straight edge ground on a wafer whose position encodes the crystal orientation.
+- **walk-off**: Walk-off is the angle rho between the Poynting vector and the wave vector of an extraordinary wave in a birefringent crystal, which separates beams and limits the useful interaction length. (source: miller1965)
+- **X-cut**: An X-cut LiNbO3 wafer or film has its surface normal along the crystal x axis, so the c axis lies in the plane. (source: zhu2021, zhang2021)
+- **x-cut, y-cut, z-cut**: Wafer named after the crystal axis normal to its surface. (source: wang2018a)
+- **XBAR (laterally excited bulk acoustic resonator)**: An XBAR is a suspended thin LiNbO3 plate with interdigital electrodes on its surface whose lateral field excites a thickness-shear bulk mode. (source: plessky2019, lu2025, murata-2022)
+- **Y-cut**: A Y-cut LiNbO3 wafer has its surface normal along the crystal y axis, which lies in a mirror plane; a rotated Y-cut tilts that normal about x by a stated angle. (source: shibayama1976, ieee176)
+- **Y-wall**: A domain wall parallel to a (11-20) plane, i.e. parallel to the yz plane, the low-energy wall that bounds hexagonal domains in LiNbO3. (source: D. Lee, H. Xu, V. Dierolf, V. Gopalan, S. R. Phillpot, "Shape of ferroelectric domains in LiNbO3 and LiTaO3 from defect/domain-wall interactions", Appl. Phys. Lett. 98, 092903 (2011))
+- **Z-cut**: A Z-cut LiNbO3 wafer or film has its surface normal along the polar c axis, so its two faces are the +z and -z faces. (source: zhu2021)
+- **Z0**: The ratio of voltage to current of a wave on the line, sqrt(L'/C') for a quasi-TEM line; mismatch to the 50 ohm source and load reduces and ripples the response.

@@ -1,0 +1,43 @@
+{
+  "citation": "Venkatraman Gopalan, Volkmar Dierolf, David A. Scrymgeour, \"Defect-domain wall interactions in trigonal ferroelectrics\", Annual Review of Materials Research 37, 449, (2007) doi:10.1146/annurev.matsci.37.052506.084247",
+  "link": "https://doi.org/10.1146/annurev.matsci.37.052506.084247",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Gopalan",
+        "given": "Venkatraman"
+      },
+      {
+        "family": "Dierolf",
+        "given": "Volkmar"
+      },
+      {
+        "family": "Scrymgeour",
+        "given": "David A."
+      }
+    ],
+    "container_title": "Annual Review of Materials Research",
+    "doi": "10.1146/annurev.matsci.37.052506.084247",
+    "id": "gopalan2007",
+    "issued": "2007",
+    "page": "449",
+    "read": "not read",
+    "title": "Defect-domain wall interactions in trigonal ferroelectrics",
+    "type": "article-journal",
+    "volume": "37"
+  }
+}

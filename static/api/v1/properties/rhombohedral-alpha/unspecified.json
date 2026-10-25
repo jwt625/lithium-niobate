@@ -1,0 +1,74 @@
+{
+  "alternatives": [
+    {
+      "category": "structure",
+      "id": "rhombohedral-alpha/unspecified/hsu1997",
+      "kind": "scalar",
+      "name": "Rhombohedral cell angle alpha",
+      "property": "rhombohedral-alpha",
+      "provenance": {
+        "locator": "COD 2101845",
+        "source_id": "hsu1997",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_R",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.03
+      },
+      "unit": {
+        "display": "deg",
+        "ucum": "deg"
+      },
+      "value": 55.89,
+      "variant": "unspecified"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "rhombohedral-alpha",
+    "variant": "unspecified"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "default": true,
+      "id": "rhombohedral-alpha/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Rhombohedral cell angle alpha",
+      "property": "rhombohedral-alpha",
+      "provenance": {
+        "locator": "p. 194, Eq. (1)",
+        "source_id": "weis1985",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_R",
+      "unit": {
+        "display": "deg",
+        "ucum": "deg"
+      },
+      "value": 55.867,
+      "variant": "unspecified"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 55.89,
+    "min": 55.867,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "deg"
+  }
+}

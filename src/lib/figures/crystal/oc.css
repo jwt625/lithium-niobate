@@ -1,0 +1,49 @@
+/* 1.1 VISUAL octahedral columns (prefix oc-). VISUAL only (the block sits in the VISUAL variant). */
+:root[data-mode="visual"] {
+  & .oc-v { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 40px; align-items: start; margin: 40px 0 0; }
+  @media (max-width: 1100px) { & .oc-v { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+  & .oc-panels { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 16px; align-items: start; min-width: 0; }
+  @media (max-width: 640px) { & .oc-panels { grid-template-columns: minmax(0, 1fr); } }
+  & .oc-pn { min-width: 0; background: var(--v-ink1); border: 1px solid var(--v-line); padding: 12px; }
+  & .oc-pn svg { display: block; width: 100%; height: auto; }
+  & svg.oc-side { aspect-ratio: 420 / 640; }
+  & svg.oc-top { aspect-ratio: 420 / 300; }
+  & .oc-pc { margin: 8px 0 0; font: 400 13px/18px var(--v-ui); color: var(--v-text3); }
+  & .oc-side-ctl { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+  & .oc-hud dd { height: 24px; }
+  & .oc-hud dd.oc-occ { height: 48px; white-space: normal; text-align: left; }
+  @media (max-width: 640px) { & .oc-hud dd.oc-occ { height: 72px; } }
+  & .oc-key { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 400 14px/20px var(--v-ui); color: var(--v-text2); }
+  & .oc-key i { display: inline-block; width: 11px; height: 11px; margin-right: 8px; vertical-align: -1px; }
+  & .oc-key i.Nb { background: var(--nb); transform: rotate(45deg); }
+  & .oc-key i.Li { background: var(--v-au); transform: rotate(45deg); }
+  & .oc-key i.empty { border: 1.5px dashed var(--v-text3); transform: rotate(45deg); }
+  & .oc-key i.ob { background: var(--oc-o); clip-path: circle(50%); }
+  & .oc-key i.oa { border: 2px solid var(--oc-o); clip-path: circle(50%); }
+  --oc-o: #e5664f;
+  &[data-theme="light"] { --oc-o: #c2402c; }
+  /* side view */
+  & svg.oc-side .oc-ol { stroke: var(--oc-o); stroke-opacity: 0.35; stroke-width: 1; stroke-dasharray: 2 4; }
+  & svg.oc-side .oc-olt { font: 500 13px/1 var(--v-ui); fill: var(--oc-o); }
+  & svg.oc-side .oc-band { fill: none; stroke: var(--v-l532); stroke-width: 2; }
+  & svg.oc-side .oc-cl { font: 500 14px/1 var(--v-ui); fill: var(--v-text2); }
+  & svg.oc-side .oc-oct { stroke-width: 1.2; }
+  & svg.oc-side .oc-oct.Nb { fill: color-mix(in srgb, var(--nb) 22%, transparent); stroke: var(--nb); }
+  & svg.oc-side .oc-oct.Li { fill: color-mix(in srgb, var(--v-au) 22%, transparent); stroke: var(--v-au); }
+  & svg.oc-side .oc-oct.empty { fill: none; stroke: var(--v-text3); stroke-dasharray: 4 3; }
+  & svg.oc-side .oc-oct { opacity: 0.55; } & svg.oc-side .oc-oct.on { stroke-width: 2.4; opacity: 1; }
+  & svg.oc-side .oc-ctr { fill: var(--v-text3); }
+  & svg.oc-side .oc-cat.Nb { fill: var(--nb); stroke: var(--v-ink0); stroke-width: 1.5; }
+  & svg.oc-side .oc-cat.Li { fill: var(--v-au); stroke: var(--v-ink0); stroke-width: 1.5; }
+  & svg.oc-side .oc-sb, & svg.oc-side .oc-axp { fill: none; stroke: var(--v-text3); stroke-width: 1.3; }
+  & svg.oc-side .oc-sbt, & svg.oc-side .oc-ax { font: 500 13px/1 var(--v-ui); fill: var(--v-text3); }
+  & svg.oc-side .oc-ax { fill: var(--v-l532); }
+  /* top view */
+  & svg.oc-top .oc-cell { stroke: var(--v-line2); stroke-width: 1; }
+  & svg.oc-top .oc-ob { fill: var(--oc-o); fill-opacity: 0.85; }
+  & svg.oc-top .oc-oa { fill: none; stroke: var(--oc-o); stroke-width: 2; }
+  & svg.oc-top .oc-site.Nb { fill: var(--nb); stroke: var(--v-ink0); stroke-width: 1.5; }
+  & svg.oc-top .oc-site.Li { fill: var(--v-au); stroke: var(--v-ink0); stroke-width: 1.5; }
+  & svg.oc-top .oc-site.empty { fill: none; stroke: var(--v-text2); stroke-width: 1.5; stroke-dasharray: 3 3; }
+  & svg.oc-top .oc-lab { font: italic 400 16px/1 var(--v-serif); fill: var(--v-text2); }
+}

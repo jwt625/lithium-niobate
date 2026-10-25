@@ -1,0 +1,70 @@
+{
+  "citation": "J.-S. Moulet, M. Pijolat, J. Dechamp, et al., \"High piezoelectric properties in LiNbO3 transferred layer by the Smart Cut™ technology for ultra wide band BAW filter applications\", 2008 IEEE International Electron Devices Meeting, 1-4, (2008) doi:10.1109/iedm.2008.4796785",
+  "link": "https://doi.org/10.1109/iedm.2008.4796785",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "J.-S. Moulet"
+      },
+      {
+        "literal": "M. Pijolat"
+      },
+      {
+        "literal": "J. Dechamp"
+      },
+      {
+        "literal": "F. Mazen"
+      },
+      {
+        "literal": "A. Tauzin"
+      },
+      {
+        "literal": "F. Rieutord"
+      },
+      {
+        "literal": "A. Reinhardt"
+      },
+      {
+        "literal": "E. Defay"
+      },
+      {
+        "literal": "C. Deguet"
+      },
+      {
+        "literal": "B. Ghyselen"
+      },
+      {
+        "literal": "L. Clavelier"
+      },
+      {
+        "literal": "M. Aid"
+      },
+      {
+        "literal": "S. Ballandras"
+      },
+      {
+        "literal": "C. Mazure"
+      }
+    ],
+    "container_title": "2008 IEEE International Electron Devices Meeting",
+    "doi": "10.1109/iedm.2008.4796785",
+    "id": "moulet2008",
+    "issued": "2008-12",
+    "page": "1-4",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "High piezoelectric properties in LiNbO3 transferred layer by the Smart Cut™ technology for ultra wide band BAW filter applications",
+    "type": "paper-conference"
+  }
+}

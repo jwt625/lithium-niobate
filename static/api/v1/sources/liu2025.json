@@ -1,0 +1,60 @@
+{
+  "citation": "Yang Liu, Zihan Zhou, Peiqi Zhou, et al., \"Volume manufacturing of thin-film lithium niobate modulators with bandwidth > 110 GHz based on 4-inch wafer with a quartz handle\", Light: Advanced Manufacturing 6, 1, (2025) doi:10.37188/lam.2025.047",
+  "link": "https://doi.org/10.37188/lam.2025.047",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Yang Liu"
+      },
+      {
+        "literal": "Zihan Zhou"
+      },
+      {
+        "literal": "Peiqi Zhou"
+      },
+      {
+        "literal": "Changqing Wang"
+      },
+      {
+        "literal": "Qiansheng Wang"
+      },
+      {
+        "literal": "Ye Liu"
+      },
+      {
+        "literal": "Dong Wang"
+      },
+      {
+        "literal": "Daigao Chen"
+      },
+      {
+        "literal": "Lei Wang"
+      },
+      {
+        "literal": "Xi Xiao"
+      }
+    ],
+    "container_title": "Light: Advanced Manufacturing",
+    "doi": "10.37188/lam.2025.047",
+    "id": "liu2025",
+    "issue": "3",
+    "issued": "2025",
+    "page": "1",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Volume manufacturing of thin-film lithium niobate modulators with bandwidth > 110 GHz based on 4-inch wafer with a quartz handle",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

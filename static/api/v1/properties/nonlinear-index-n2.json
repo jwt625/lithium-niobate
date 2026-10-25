@@ -1,0 +1,140 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/3.511545",
+      "https://doi.org/10.1364/AOP.411024"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Nonlinear (Kerr) refractive index of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/nonlinear-index-n2.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/nonlinear-index-n2.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Nonlinear (Kerr) refractive index"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Nonlinear (Kerr) refractive index",
+    "url": "https://lithium-niobate.com/api/v1/properties/nonlinear-index-n2.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "Z-scan, 30 ps, e-polarization",
+        "name": "n_2 (unspecified)",
+        "unitText": "m2/W",
+        "value": 9.33e-20
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 3,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "nonlinear-index-n2"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "method": "Z-scan, 30 ps, e-polarization",
+        "wavelength_nm": 1064
+      },
+      "default": true,
+      "id": "nonlinear-index-n2/unspecified/desalvo1996-1064nm",
+      "kind": "scalar",
+      "name": "Nonlinear (Kerr) refractive index",
+      "property": "nonlinear-index-n2",
+      "provenance": {
+        "source_id": "desalvo1996",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_2",
+      "unit": {
+        "display": "m^2/W",
+        "ucum": "m2/W"
+      },
+      "value": 9.33e-20,
+      "variant": "unspecified"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "method": "Z-scan, 22 ps",
+        "wavelength_nm": 532
+      },
+      "id": "nonlinear-index-n2/unspecified/desalvo1996-532nm",
+      "kind": "scalar",
+      "name": "Nonlinear (Kerr) refractive index",
+      "property": "nonlinear-index-n2",
+      "provenance": {
+        "source_id": "desalvo1996",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_2",
+      "unit": {
+        "display": "m^2/W",
+        "ucum": "m2/W"
+      },
+      "value": 8.25e-19,
+      "variant": "unspecified"
+    },
+    {
+      "category": "optical",
+      "id": "nonlinear-index-n2/unspecified/zhu2021",
+      "kind": "scalar",
+      "name": "Nonlinear (Kerr) refractive index",
+      "notes": "Wavelength and primary measurement not given in the review table.",
+      "property": "nonlinear-index-n2",
+      "provenance": {
+        "locator": "Table 1",
+        "source_id": "zhu2021",
+        "status": "S",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_2",
+      "unit": {
+        "display": "m^2/W",
+        "ucum": "m2/W"
+      },
+      "value": 1.8e-19,
+      "variant": "unspecified"
+    }
+  ]
+}

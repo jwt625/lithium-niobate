@@ -1,0 +1,81 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Mohs hardness of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/mohs-hardness.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/mohs-hardness.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Mohs hardness"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Mohs hardness",
+    "url": "https://lithium-niobate.com/api/v1/properties/mohs-hardness.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Mohs hardness",
+        "unitText": "1"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "mohs-hardness"
+  },
+  "records": [
+    {
+      "category": "structure",
+      "id": "mohs-hardness/cln/cti1999",
+      "kind": "scalar",
+      "name": "Mohs hardness",
+      "property": "mohs-hardness",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "Mohs",
+        "ucum": "1"
+      },
+      "value": 5,
+      "variant": "cln"
+    }
+  ]
+}

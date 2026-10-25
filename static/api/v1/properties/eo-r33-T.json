@@ -1,0 +1,96 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Electro-optic coefficient r33, unclamped of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/eo-r33-T.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/eo-r33-T.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Electro-optic coefficient r33, unclamped"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Electro-optic coefficient r33, unclamped",
+    "url": "https://lithium-niobate.com/api/v1/properties/eo-r33-T.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "r33^T (sln)",
+        "unitText": "pm/V",
+        "value": 38
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "eo-r33-T"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "mechanical_boundary": "T",
+        "wavelength_nm": 633
+      },
+      "default": true,
+      "id": "eo-r33-T/sln/volk2008",
+      "kind": "scalar",
+      "name": "Electro-optic coefficient r33, unclamped",
+      "notes": "Partial set (r22 absent), so stored as scalars rather than a tensor.",
+      "property": "eo-r33-T",
+      "provenance": {
+        "locator": "Table 1.2, p. 4",
+        "original_reference": "Nikogosyan 2005",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "r33^T",
+      "tensor_component": "r33",
+      "unit": {
+        "display": "pm/V",
+        "ucum": "pm/V"
+      },
+      "value": 38,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ]
+}

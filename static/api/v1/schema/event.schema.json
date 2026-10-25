@@ -1,0 +1,181 @@
+{
+  "$id": "https://lithium-niobate.com/api/v1/schema/event.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "history"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "status"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "industry"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "grade",
+          "access_date"
+        ]
+      }
+    }
+  ],
+  "description": "A dated history milestone (kind history, status V/P/S/U ) or industry event (kind industry, evidence grade ), with date precision, citation (DOI or URL) and access date.",
+  "properties": {
+    "access_date": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "chapter": {
+      "description": "History narrative chapter.",
+      "maximum": 10,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "citations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "accessed": {
+            "$ref": "common.schema.json#/$defs/isoDate"
+          },
+          "doi": {
+            "$ref": "common.schema.json#/$defs/doi"
+          },
+          "text": {
+            "type": "string"
+          },
+          "url": {
+            "$ref": "common.schema.json#/$defs/url"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "date": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "date_alt": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "date": {
+            "$ref": "common.schema.json#/$defs/isoDate"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "date",
+          "note"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "date_approximate": {
+      "type": "boolean"
+    },
+    "date_note": {
+      "type": "string"
+    },
+    "date_precision": {
+      "$ref": "common.schema.json#/$defs/datePrecision"
+    },
+    "era": {
+      "type": "string"
+    },
+    "grade": {
+      "description": "Industry evidence grade(s) per F fact (primary read), V vendor claim, T trade press read, C snippet only, LG low grade, E estimate, S speculation. Combined grades joined by '/'.",
+      "pattern": "^(F|V|T|C|LG|E|S)( \\(statement\\)| \\(as reported\\))?(/(F|V|T|C|LG|E|S))*$",
+      "type": "string"
+    },
+    "hook": {
+      "description": "Lay hook, at most 20 words.",
+      "type": "string"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "kind": {
+      "enum": [
+        "history",
+        "industry"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "organizations": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "organizations_verified": {
+      "description": "False when the institution is standard attribution not re-checked against the byline ( '*').",
+      "type": "boolean"
+    },
+    "people": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "significance": {
+      "type": "string"
+    },
+    "status": {
+      "description": "History: V = publication or announcement confirmed by Crossref or a primary page (bibliographic record verified at the source; the YAML source uses V, the published API writes it as rec so it is not read as the site-wide V = vendor datasheet); P = publication confirmed, LN link or a detail from a secondary source; S = secondary source read (trade press, retrospective, catalog); derived = count or calculation from cited data (method in notes); U = unverified (snippet-only or unchecked), excluded from default endpoints.",
+      "enum": [
+        "V",
+        "rec",
+        "P",
+        "S",
+        "U",
+        "derived"
+      ]
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "title": {
+      "type": "string"
+    },
+    "verified": {
+      "description": "Generated: false for history status U and for industry events graded only C, LG, E or S.",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "date",
+    "date_precision",
+    "title",
+    "citations"
+  ],
+  "title": "Event",
+  "type": "object"
+}

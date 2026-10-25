@@ -1,0 +1,47 @@
+{
+  "citation": "R. Hsu, E. N. Maslen, D. du Boulay, et al., \"Synchrotron X-ray studies of LiNbO3 and LiTaO3\", Acta Crystallographica Section B 53, 420, (1997) doi:10.1107/S010876819600777X",
+  "link": "https://doi.org/10.1107/S010876819600777X",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Hsu",
+        "given": "R."
+      },
+      {
+        "family": "Maslen",
+        "given": "E. N."
+      },
+      {
+        "family": "du Boulay",
+        "given": "D."
+      },
+      {
+        "family": "Ishizawa",
+        "given": "N."
+      }
+    ],
+    "container_title": "Acta Crystallographica Section B",
+    "doi": "10.1107/S010876819600777X",
+    "id": "hsu1997",
+    "issued": "1997",
+    "page": "420",
+    "read": "via COD 2101845 CIF transcription",
+    "title": "Synchrotron X-ray studies of LiNbO3 and LiTaO3",
+    "type": "article-journal",
+    "volume": "53"
+  }
+}

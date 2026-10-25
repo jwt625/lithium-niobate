@@ -1,0 +1,39 @@
+{
+  "citation": "H. Hu, R. Ricken, W. Sohler, \"Lithium niobate photonic wires\", Optics Express 17, 24261, (2009) doi:10.1364/oe.17.024261",
+  "link": "https://doi.org/10.1364/oe.17.024261",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "H. Hu"
+      },
+      {
+        "literal": "R. Ricken"
+      },
+      {
+        "literal": "W. Sohler"
+      }
+    ],
+    "container_title": "Optics Express",
+    "doi": "10.1364/oe.17.024261",
+    "id": "hu2009",
+    "issue": "26",
+    "issued": "2009-12-21",
+    "page": "24261",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Lithium niobate photonic wires",
+    "type": "article-journal",
+    "volume": "17"
+  }
+}

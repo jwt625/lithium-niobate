@@ -1,0 +1,40 @@
+{
+  "citation": "R. S. Weis, T. K. Gaylord, \"Lithium niobate: summary of physical properties and crystal structure\", Applied Physics A 37, 191-203, (1985) doi:10.1007/BF00614817",
+  "link": "https://doi.org/10.1007/BF00614817",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Weis",
+        "given": "R. S."
+      },
+      {
+        "family": "Gaylord",
+        "given": "T. K."
+      }
+    ],
+    "container_title": "Applied Physics A",
+    "doi": "10.1007/BF00614817",
+    "id": "weis1985",
+    "issued": "1985",
+    "notes": "Uses the IRE 1949 axis standard (its ref. [9]). No SHG d table, no thermal-expansion values. Typos: Schoenflies symbol printed C6v (3m is C3v); Table 2 n_o at 472.7 nm printed 3.3597 (2.3597).",
+    "page": "191-203",
+    "read": "full text, all 13 pages; Tables 1-7 re-checked against page images",
+    "title": "Lithium niobate: summary of physical properties and crystal structure",
+    "type": "article-journal",
+    "volume": "37"
+  }
+}

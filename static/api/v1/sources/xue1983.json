@@ -1,0 +1,45 @@
+{
+  "citation": "XUE YING-HUA, MIN NAI-BEN, ZHU JIN-SONG, et al., \"THE SECOND HARMONIC GENERATION IN LiNbO3 CRYSTALS WITH PERIODIC LAMINAR FERROELECTRIC DOMAINS\", Acta Physica Sinica 32, 1515, (1983) doi:10.7498/aps.32.1515",
+  "link": "https://doi.org/10.7498/aps.32.1515",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "XUE YING-HUA"
+      },
+      {
+        "literal": "MIN NAI-BEN"
+      },
+      {
+        "literal": "ZHU JIN-SONG"
+      },
+      {
+        "literal": "FENG DUAN"
+      },
+      {
+        "literal": "南京大学物理系"
+      }
+    ],
+    "container_title": "Acta Physica Sinica",
+    "doi": "10.7498/aps.32.1515",
+    "id": "xue1983",
+    "issue": "12",
+    "issued": "1983",
+    "page": "1515",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "THE SECOND HARMONIC GENERATION IN LiNbO3 CRYSTALS WITH PERIODIC LAMINAR FERROELECTRIC DOMAINS",
+    "type": "article-journal",
+    "volume": "32"
+  }
+}

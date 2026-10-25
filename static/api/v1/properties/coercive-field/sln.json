@@ -1,0 +1,47 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "coercive-field",
+    "variant": "sln"
+  },
+  "recommended": [
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "coercive-field/sln/volk2008",
+      "kind": "scalar",
+      "max": 6.5,
+      "min": 6.0,
+      "name": "Coercive field",
+      "notes": "Conflicts within volk2008: p. 118 gives about 21-25 kV/cm (2.1-2.5 kV/mm) for near-stoichiometric crystals, citing gopalan1998.",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185 (60-65 kV/cm)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_c",
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "variant": "sln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

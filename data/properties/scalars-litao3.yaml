@@ -1,0 +1,118 @@
+# Comparison material: LiTaO3 (LT). Schema: data/schema/scalar.schema.json. Requested for LN vs LT figures.
+# Only values with a recorded locator are included. Full LT elastic, piezoelectric and permittivity sets (kushibiki1999)
+# are not yet transcribed: the research notes record only c14, and the full text was not re-read (open item).
+
+- id: elastic-c14/lt-saw/kushibiki1999
+  kind: scalar
+  property: elastic-c14
+  name: Elastic stiffness component c14 (constant E)
+  symbol: c14^E
+  category: acoustic
+  tensor_component: c14
+  value: -10.75
+  unit: {ucum: "GPa", qudt: "http://qudt.org/vocab/unit/GigaPA", display: "GPa"}
+  variant: lt-saw
+  conditions: {electrical_boundary: E}
+  provenance: {source_id: kushibiki1999, status: P, research_note: "R06 sec. 2.9 note", transcribed: "2026-10-25"}
+  default: true
+  notes: "In the same table and convention LiNbO3 has c14 = +7.83 GPa: the c14 sign differs between LN and LT (R06 sec. 2.9)."
+
+- id: eo-r33/lt-unspecified/wang2025lt
+  kind: scalar
+  property: eo-r33
+  name: Electro-optic coefficient r33
+  symbol: r33
+  category: optical
+  tensor_component: r33
+  value: 30.5
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: lt-unspecified
+  variant_note: "thin-film LiTaO3 context"
+  provenance: {source_id: wang2025lt, locator: "introduction, ref. 29", status: S, original_reference: "Wang et al., Optica 11, 1614 (2024), DOI 10.1364/OPTICA.537730 (wang2024optica)", transcribed: "2026-10-25"}
+  default: true
+  notes: "Clamping condition and wavelength not stated where quoted."
+
+- id: refractive-index-o/lt-unspecified/bond1965-600nm
+  kind: scalar
+  property: refractive-index-o
+  name: Ordinary refractive index
+  symbol: n_o
+  category: optical
+  value: 2.1834
+  unit: {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "-"}
+  variant: lt-unspecified
+  variant_note: "1965 bulk crystal"
+  conditions: {temperature_text: "room temperature", wavelength_nm: 600}
+  provenance: {source_id: bond1965, locator: "refractiveindex.info LiTaO3/Bond-o tabulated data", status: P-db, via: rii, transcribed: "2026-10-25"}
+  default: true
+  notes: "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN."
+- id: refractive-index-e/lt-unspecified/bond1965-600nm
+  kind: scalar
+  property: refractive-index-e
+  name: Extraordinary refractive index
+  symbol: n_e
+  category: optical
+  value: 2.1878
+  unit: {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "-"}
+  variant: lt-unspecified
+  variant_note: "1965 bulk crystal"
+  conditions: {temperature_text: "room temperature", wavelength_nm: 600}
+  provenance: {source_id: bond1965, locator: "refractiveindex.info LiTaO3/Bond-e tabulated data", status: P-db, via: rii, transcribed: "2026-10-25"}
+  default: true
+  notes: "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN."
+- id: refractive-index-o/lt-unspecified/bond1965-1000nm
+  kind: scalar
+  property: refractive-index-o
+  name: Ordinary refractive index
+  symbol: n_o
+  category: optical
+  value: 2.1391
+  unit: {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "-"}
+  variant: lt-unspecified
+  variant_note: "1965 bulk crystal"
+  conditions: {temperature_text: "room temperature", wavelength_nm: 1000}
+  provenance: {source_id: bond1965, locator: "refractiveindex.info LiTaO3/Bond-o tabulated data", status: P-db, via: rii, transcribed: "2026-10-25"}
+  default: true
+  notes: "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN."
+- id: refractive-index-e/lt-unspecified/bond1965-1000nm
+  kind: scalar
+  property: refractive-index-e
+  name: Extraordinary refractive index
+  symbol: n_e
+  category: optical
+  value: 2.1432
+  unit: {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "-"}
+  variant: lt-unspecified
+  variant_note: "1965 bulk crystal"
+  conditions: {temperature_text: "room temperature", wavelength_nm: 1000}
+  provenance: {source_id: bond1965, locator: "refractiveindex.info LiTaO3/Bond-e tabulated data", status: P-db, via: rii, transcribed: "2026-10-25"}
+  default: true
+  notes: "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN."
+- id: refractive-index-o/lt-unspecified/bond1965-1600nm
+  kind: scalar
+  property: refractive-index-o
+  name: Ordinary refractive index
+  symbol: n_o
+  category: optical
+  value: 2.1174
+  unit: {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "-"}
+  variant: lt-unspecified
+  variant_note: "1965 bulk crystal"
+  conditions: {temperature_text: "room temperature", wavelength_nm: 1600}
+  provenance: {source_id: bond1965, locator: "refractiveindex.info LiTaO3/Bond-o tabulated data", status: P-db, via: rii, transcribed: "2026-10-25"}
+  default: true
+  notes: "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN."
+- id: refractive-index-e/lt-unspecified/bond1965-1600nm
+  kind: scalar
+  property: refractive-index-e
+  name: Extraordinary refractive index
+  symbol: n_e
+  category: optical
+  value: 2.1213
+  unit: {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "-"}
+  variant: lt-unspecified
+  variant_note: "1965 bulk crystal"
+  conditions: {temperature_text: "room temperature", wavelength_nm: 1600}
+  provenance: {source_id: bond1965, locator: "refractiveindex.info LiTaO3/Bond-e tabulated data", status: P-db, via: rii, transcribed: "2026-10-25"}
+  default: true
+  notes: "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN."

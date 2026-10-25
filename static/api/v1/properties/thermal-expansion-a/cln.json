@@ -1,0 +1,79 @@
+{
+  "alternatives": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_C": 25
+      },
+      "id": "thermal-expansion-a/cln/cti1999",
+      "kind": "scalar",
+      "name": "Thermal expansion coefficient perpendicular to c",
+      "property": "thermal-expansion-a",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_11",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 1.5e-05,
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "thermal-expansion-a",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_C": null,
+        "temperature_text": "300 K"
+      },
+      "default": true,
+      "id": "thermal-expansion-a/cln/volk2008",
+      "kind": "scalar",
+      "name": "Thermal expansion coefficient perpendicular to c",
+      "property": "thermal-expansion-a",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005; Gallagher et al., Ferroelectrics 75, 71 (1987)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_11",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 1.41e-05,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 1.5e-05,
+    "min": 1.41e-05,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "/K"
+  }
+}

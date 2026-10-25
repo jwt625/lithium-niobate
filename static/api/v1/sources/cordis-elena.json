@@ -1,0 +1,25 @@
+{
+  "citation": "\"CORDIS project 101016138: ELENA\", (2026) https://cordis.europa.eu/project/id/101016138",
+  "link": "https://cordis.europa.eu/project/id/101016138",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "cordis-elena",
+    "issued": "2026",
+    "notes": "Undated page; issued set to the access year.",
+    "read": "Read",
+    "title": "CORDIS project 101016138: ELENA",
+    "type": "dataset",
+    "url": "https://cordis.europa.eu/project/id/101016138"
+  }
+}

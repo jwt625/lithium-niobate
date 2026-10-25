@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "photoelastic-p",
+    "variant": "unspecified"
+  },
+  "record": {
+    "conditions": {
+      "wavelength_nm": 633
+    },
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          [
+            -0.021,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.06,
+            -0.052
+          ],
+          [
+            0.0,
+            -0.052,
+            0.172
+          ]
+        ],
+        [
+          [
+            0.0,
+            -0.0405,
+            -0.052
+          ],
+          [
+            -0.0405,
+            0.0,
+            0.0
+          ],
+          [
+            -0.052,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            -0.109,
+            0.121
+          ],
+          [
+            -0.109,
+            0.0,
+            0.0
+          ],
+          [
+            0.121,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            -0.0405,
+            -0.052
+          ],
+          [
+            -0.0405,
+            0.0,
+            0.0
+          ],
+          [
+            -0.052,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.06,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.021,
+            0.052
+          ],
+          [
+            0.0,
+            0.052,
+            0.172
+          ]
+        ],
+        [
+          [
+            -0.109,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.109,
+            0.121
+          ],
+          [
+            0.0,
+            0.121,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            -0.109,
+            0.121
+          ],
+          [
+            -0.109,
+            0.0,
+            0.0
+          ],
+          [
+            0.121,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            -0.109,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.109,
+            0.121
+          ],
+          [
+            0.0,
+            0.121,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.141,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.141,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.118
+          ]
+        ]
+      ]
+    ],
+    "id": "photoelastic-p/unspecified/andrushchak2009",
+    "independent": {
+      "p11": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.018
+        },
+        "value": -0.021
+      },
+      "p12": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.019
+        },
+        "value": 0.06
+      },
+      "p13": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.029
+        },
+        "value": 0.172
+      },
+      "p14": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.007
+        },
+        "value": -0.052
+      },
+      "p31": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.017
+        },
+        "value": 0.141
+      },
+      "p33": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.02
+        },
+        "value": 0.118
+      },
+      "p41": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.017
+        },
+        "value": -0.109
+      },
+      "p44": {
+        "uncertainty": {
+          "type": "stated",
+          "value": 0.019
+        },
+        "value": 0.121
+      }
+    },
+    "kind": "tensor",
+    "name": "Photoelastic (strain-optic) coefficients",
+    "provenance": {
+      "locator": "sarabalis2020 Table I; mytsyk2021 Table 6",
+      "source_id": "andrushchak2009",
+      "status": "S",
+      "transcribed": "2026-10-25",
+      "via": "sarabalis2020"
+    },
+    "public": true,
+    "rank": 4,
+    "scale": 1,
+    "symbol": "p",
+    "symmetry_form": {
+      "form": [
+        [
+          "p11",
+          "p12",
+          "p13",
+          "p14",
+          "0",
+          "0"
+        ],
+        [
+          "p12",
+          "p11",
+          "p13",
+          "-p14",
+          "0",
+          "0"
+        ],
+        [
+          "p31",
+          "p31",
+          "p33",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "p41",
+          "-p41",
+          "0",
+          "p44",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "p44",
+          "p41"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "p14",
+          "(p11-p12)/2"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "p22 = p11",
+        "p23 = p13",
+        "p24 = -p14",
+        "p32 = p31",
+        "p42 = -p41",
+        "p55 = p44",
+        "p56 = p41",
+        "p65 = p14",
+        "p66 = (p11 - p12)/2",
+        "p_IJ is not symmetric (p14 != p41)"
+      ]
+    },
+    "tensor": "photoelastic-p",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "variant": "unspecified",
+    "voigt": [
+      [
+        -0.021,
+        0.06,
+        0.172,
+        -0.052,
+        0.0,
+        0.0
+      ],
+      [
+        0.06,
+        -0.021,
+        0.172,
+        0.052,
+        0.0,
+        0.0
+      ],
+      [
+        0.141,
+        0.141,
+        0.118,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.109,
+        0.109,
+        0.0,
+        0.121,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.121,
+        -0.109
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.052,
+        -0.0405
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "p_ijkl = p_IJ, I = V(ij), J = V(kl) (d(eta)_I = p_IJ S_J with engineering S_4..S_6)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "permittivity-T",
+    "variant": "unspecified"
+  },
+  "record": {
+    "conditions": {
+      "mechanical_boundary": "T"
+    },
+    "frame": {
+      "convention": "IRE-1949",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"
+    },
+    "full": [
+      [
+        84.1,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        84.1,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        28.1
+      ]
+    ],
+    "id": "permittivity-T/unspecified/weis1985-teague1975",
+    "independent": {
+      "eps11": {
+        "value": 84.1
+      },
+      "eps33": {
+        "value": 28.1
+      }
+    },
+    "kind": "tensor",
+    "name": "Relative permittivity, constant stress (free)",
+    "provenance": {
+      "locator": "Table 1, p. 197",
+      "original_reference": "Teague, Rice, Gerson, J. Appl. Phys. 46, 2864 (1975)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 2,
+    "scale": 1,
+    "symbol": "eps^T/eps0",
+    "symmetry_form": {
+      "form": [
+        [
+          "eps11",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "eps11",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "eps33"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "eps22 = eps11",
+        "off-diagonal = 0"
+      ]
+    },
+    "tensor": "permittivity-T",
+    "unit": {
+      "display": "relative (eps/eps0)",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "variant": "unspecified",
+    "voigt": [
+      [
+        84.1,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        84.1,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        28.1
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "full[i][j] = M[i][j]",
+      "order": [
+        "x",
+        "y",
+        "z"
+      ]
+    }
+  }
+}

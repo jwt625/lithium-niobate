@@ -1,0 +1,39 @@
+{
+  "citation": "R. T. Smith, F. S. Welsh, \"Temperature dependence of the elastic, piezoelectric, and dielectric constants of lithium tantalate and lithium niobate\", Journal of Applied Physics 42, 2219, (1971) doi:10.1063/1.1660528",
+  "link": "https://doi.org/10.1063/1.1660528",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Smith",
+        "given": "R. T."
+      },
+      {
+        "family": "Welsh",
+        "given": "F. S."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1660528",
+    "id": "smithwelsh1971",
+    "issued": "1971",
+    "page": "2219",
+    "read": "abstract only; values via weis1985 (P-comp)",
+    "title": "Temperature dependence of the elastic, piezoelectric, and dielectric constants of lithium tantalate and lithium niobate",
+    "type": "article-journal",
+    "volume": "42"
+  }
+}

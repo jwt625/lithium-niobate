@@ -1,0 +1,140 @@
+/* FIG-01-08 Hysteresis comparator (prefix hy-). TECH: .hy-t panel with an 86 x 23 character plot whose font size follows the
+   container width (fixed rows, so the height never changes on interaction), fixed-layout readout tables. VISUAL rules nested
+   under :root[data-mode="visual"]. Every readout has a reserved width; no control moves anything. */
+
+/* ================= TECH ================= */
+.hy-t { margin: 14px 0 0; }
+.hy-t .hy-row { grid-template-columns: 96px minmax(0, 1fr); }
+.hy-t .hy-row > .k, .hy-t .hy-trow > label { color: var(--fg2); }
+.hy-t .hy-seg { flex-wrap: wrap; justify-self: start; }
+.hy-t .hy-seg button { white-space: nowrap; }
+.hy-t .hy-tg { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.hy-t .hy-artw { container-type: inline-size; min-width: 0; padding: 8px 10px; border-right: 1px solid var(--rule); }
+.hy-t pre.hy-art { font-size: min(11.5px, calc(100cqw / 51.9)); line-height: 1.22em; }
+.hy-t .cx-ascii .hi { color: var(--fg); font-weight: 600; }
+.hy-t .cx-ascii .dim { color: var(--fg3); }
+.hy-t .hy-key { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 6px; font: 400 10.5px/16px var(--mono); color: var(--fg3); }
+.hy-t .hy-key b { font-weight: 600; color: var(--fg); margin-right: 5px; white-space: pre; }
+.hy-t .hy-key sub, .hy-t .hy-key sup, .hy-t .hy-kv sub, .hy-t .hy-kv sup, .hy-at sub { line-height: 0; }
+.hy-t .hy-tside { min-width: 0; display: flex; flex-direction: column; }
+.hy-t .hy-hud { display: flex; flex-direction: column; padding: 4px 10px; border-bottom: 1px solid var(--rule); font: 400 11px/17px var(--mono); color: var(--fg); background: var(--bg2); overflow: hidden; }
+.hy-t .hy-hud output { display: block; height: 17px; }
+.hy-t table.hy-kv { margin: 0; width: 100%; table-layout: fixed; }
+.hy-t table.hy-kv tr:first-child td { border-top: 0; }
+.hy-t table.hy-kv col.cv { width: 22ch; }
+.hy-t table.hy-kv col.cs { width: 20ch; }
+.hy-t table.hy-kv td { overflow: hidden; vertical-align: middle; height: 31px; box-sizing: border-box; }
+.hy-t table.hy-kv td.v { font-family: var(--mono); white-space: nowrap; }
+.hy-t table.hy-kv td.v .cx-ro { display: block; width: 100%; height: 17px; line-height: 17px; }
+.hy-t table.hy-kv td.s { white-space: nowrap; }
+.hy-g { display: none; white-space: nowrap; }
+.hy-g.on { display: inline; }
+.hy-t .hy-trow { grid-template-columns: 116px minmax(0, 1fr) 8ch; }
+.hy-t .hy-trow output { white-space: pre; font-family: var(--mono); }
+.hy-t.panel .pf { display: flex; flex-wrap: wrap; gap: 2px 16px; }
+.hy-t.panel .pf > span { white-space: normal; min-width: 0; }
+table.hy-at { margin: 0; width: 100%; border-top: 0; }
+table.hy-at td, table.hy-at th { vertical-align: middle; }
+table.hy-at tr.on td { background: var(--acc-dim); }
+table.hy-at tr.on td.h { color: var(--fg); }
+table.hy-at .hy-alt { color: var(--fg3); }
+table.hy-at td .cx-ro { width: 11ch; text-align: right; }
+.hy-tog { width: 22px; height: 22px; padding: 0; border: 1px solid var(--rule2); background: none; color: var(--fg3); font: 600 11px/20px var(--mono); cursor: pointer; }
+.hy-tog.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.hy-tog:hover { background: var(--acc-dim); color: var(--fg); }
+.hy-tog.on:hover { background: var(--fg); color: var(--bg); }
+.hy-tog:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
+table.hy-ft td, table.hy-dt td, table.idx.hy-ft td.h, table.idx.hy-dt td.h { vertical-align: top; white-space: normal; }
+table.hy-ft td.h { width: 26%; min-width: 14ch; }
+table.hy-ft, table.hy-wt, table.hy-dt { margin: 6px 0 10px; }
+table.hy-wt { width: auto; }
+table.hy-wt td.num { padding-left: 28px; }
+.hy-cap { max-width: none; }
+@media (max-width: 1000px) {
+  .hy-t .hy-tg { grid-template-columns: minmax(0, 1fr); }
+  .hy-t .hy-artw { border-right: 0; border-bottom: 1px solid var(--rule); }
+}
+@media (max-width: 520px) {
+  .hy-t table.hy-kv td { padding: 4px 5px; }
+  .hy-t table.hy-kv col.cv { width: 17.5ch; }
+  .hy-t table.hy-kv col.cs { width: 19ch; }
+  .hy-t .hy-hud { font-size: 10px; }
+  .hy-t .hy-row, .hy-t .hy-trow { grid-template-columns: minmax(0, 1fr) 8ch; }
+  .hy-t .hy-row > .k, .hy-t .hy-trow > label { grid-column: 1 / -1; }
+  .hy-t .hy-row .hy-seg { grid-column: 1 / -1; }
+}
+
+/* ================= VISUAL ================= */
+:root[data-mode="visual"] {
+  & .hy-v { margin: 40px 0 0; }
+  & .hy-vctl { display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: end; }
+  & .hy-vctl .v-ctl { grid-template-columns: minmax(0, 1fr); }
+  & .hy-vseg { flex-wrap: wrap; }
+  & .hy-vgrid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 24px 48px; margin-top: 32px; align-items: start; }
+  & .hy-vplot, & .hy-vside { min-width: 0; }
+  & .hy-vname { display: grid; grid-template-rows: 40px 26px; gap: 2px; margin-bottom: 10px; }
+  & .hy-nm { display: block; font: 400 32px/40px var(--v-serif); color: var(--v-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  & .hy-vsrc { display: block; height: 30px; line-height: 30px; overflow: hidden; white-space: nowrap; }
+  & .hy-vstage { position: relative; aspect-ratio: 800 / 480; background: var(--v-ink1); }
+  & .hy-vstage svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  & .hy-loop .gr { stroke: var(--v-line); stroke-width: 1; }
+  & .hy-loop .ax { stroke: var(--v-text3); stroke-width: 1.2; }
+  & .hy-loop .fr { fill: none; stroke: var(--v-line2); stroke-width: 1; }
+  & .hy-loop .psb { fill: color-mix(in srgb, var(--v-text) 6%, transparent); }
+  & .hy-loop .tl { font: 400 15px/1 var(--v-ui); fill: var(--v-text3); font-variant-numeric: tabular-nums; }
+  & .hy-loop .ul { font: italic 400 18px/1 var(--v-serif); fill: var(--v-text2); }
+  & .hy-loop .hy-band { stroke-linejoin: round; }
+  & .hy-loop .hy-band.o { fill: color-mix(in srgb, var(--v-text) 5%, transparent); stroke: var(--v-text3); stroke-width: 1.1; }
+  & .hy-loop .hy-band.s { fill: color-mix(in srgb, var(--v-text) 22%, transparent); stroke: var(--v-text); stroke-width: 2; }
+  & .hy-loop .hy-band.alt { fill: none; stroke: var(--v-text2); stroke-width: 1.6; stroke-dasharray: 6 5; }
+  & .hy-loop .ctr { fill: color-mix(in srgb, var(--v-text) 7%, transparent); stroke: var(--v-text3); stroke-width: 1; stroke-dasharray: 3 4; }
+  & .hy-loop .chev { fill: none; stroke: var(--v-text); stroke-width: 2.2; }
+  & .hy-loop .ein { fill: color-mix(in srgb, var(--v-text) 34%, transparent); }
+  & .hy-loop .eia { stroke: var(--v-text); stroke-width: 3.5; }
+  & .hy-loop .mkl { stroke: var(--v-text2); stroke-width: 1.5; }
+  & .hy-loop .eih { fill: var(--v-text); }
+  & .hy-loop .eio { fill: var(--v-ink0); stroke: var(--v-text); stroke-width: 2.5; }
+  & .hy-loop .eil { font: 500 17px/1 var(--v-ui); fill: var(--v-text); paint-order: stroke; stroke: var(--v-ink1); stroke-width: 5px; stroke-linejoin: round; }
+  & .hy-loop .sb { font-size: 0.72em; }
+  & .hy-loop .mk { fill: var(--v-ink1); stroke: var(--v-text); stroke-width: 1.8; }
+  & .hy-leg { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 14px; font: 400 14px/24px var(--v-ui); color: var(--v-text2); }
+  & .hy-leg .sw { display: inline-block; width: 22px; height: 12px; margin-right: 8px; vertical-align: -1px; }
+  & .hy-leg .sw.s { background: color-mix(in srgb, var(--v-text) 22%, transparent); border: 2px solid var(--v-text); }
+  & .hy-leg .sw.o { background: color-mix(in srgb, var(--v-text) 5%, transparent); border: 1px solid var(--v-text3); }
+  & .hy-leg .sw.alt { height: 0; border-top: 2px dashed var(--v-text2); vertical-align: 4px; }
+  & .hy-leg .sw.ar { height: 0; border-top: 3px solid var(--v-text); vertical-align: 4px; position: relative; }
+  & .hy-leg .sw.mk { width: 11px; height: 11px; border: 2px solid var(--v-text); transform: rotate(45deg); }
+  & .hy-vside { display: flex; flex-direction: column; gap: 16px; }
+  & .hy-vv { display: grid; gap: 2px; }
+  & .hy-vk { font: 500 15px/22px var(--v-ui); color: var(--v-text2); }
+  & .hy-big { display: block; height: 52px; font: 400 46px/52px var(--v-serif); font-variant-numeric: lining-nums tabular-nums; white-space: pre; overflow: hidden; color: var(--v-text); }
+  & .hy-valt { display: block; height: 22px; font: 400 15px/22px var(--v-ui); color: var(--v-text3); white-space: pre; overflow: hidden; }
+  & .hy-wstage { position: relative; aspect-ratio: 360 / 300; background: var(--v-ink1); }
+  & .hy-wstage svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+  & .hy-waf .ln { fill: color-mix(in srgb, var(--v-ln) 18%, transparent); stroke: var(--v-ln); stroke-width: 1.2; }
+  & .hy-waf .au { fill: var(--v-au); }
+  & .hy-waf .ps { stroke: var(--v-text2); stroke-width: 2; }
+  & .hy-waf .psh { fill: var(--v-text2); }
+  & .hy-waf .wr { fill: none; stroke: var(--v-text3); stroke-width: 1.5; }
+  & .hy-waf .pl { font: 500 16px/1 var(--v-ui); fill: var(--v-text2); }
+  & .hy-waf .dm { stroke: var(--v-text3); stroke-width: 1.2; }
+  & .hy-waf .dl { font: 500 15px/1 var(--v-ui); fill: var(--v-text); font-variant-numeric: tabular-nums; }
+  & .hy-waf .zl { font: italic 400 17px/1 var(--v-serif); fill: var(--v-text2); }
+  & .hy-waf .ecl { font: 400 15px/1 var(--v-ui); fill: var(--v-text2); }
+  & .hy-waf .sb { font-size: 0.72em; }
+  & .hy-hud dd { width: 19ch; justify-self: end; }
+  &[data-fx="on"] .hy-tog { transition: none; }
+  @media (max-width: 1000px) {
+    & .hy-vgrid { grid-template-columns: minmax(0, 1fr); }
+    & .hy-vside { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px 32px; align-items: start; }
+    & .hy-vside .hy-hud { grid-column: 1 / -1; }
+  }
+  @media (max-width: 640px) {
+    & .hy-vside { display: flex; align-items: stretch; }
+    & .hy-nm { font-size: 24px; }
+    & .hy-loop .tl { font-size: 28px; }
+    & .hy-loop .ul { font-size: 28px; }
+    & .hy-loop .eil { font-size: 28px; }
+    & .hy-hud dd { width: auto; justify-self: stretch; }
+  }
+}

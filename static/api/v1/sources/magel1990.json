@@ -1,0 +1,39 @@
+{
+  "citation": "G. A. Magel, M. M. Fejer, R. L. Byer, \"Quasi-phase-matched second-harmonic generation of blue light in periodically poled LiNbO3\", Applied Physics Letters 56, 108-110, (1990) doi:10.1063/1.103276",
+  "link": "https://doi.org/10.1063/1.103276",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "G. A. Magel"
+      },
+      {
+        "literal": "M. M. Fejer"
+      },
+      {
+        "literal": "R. L. Byer"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.103276",
+    "id": "magel1990",
+    "issue": "2",
+    "issued": "1990-01-08",
+    "page": "108-110",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Quasi-phase-matched second-harmonic generation of blue light in periodically poled LiNbO3",
+    "type": "article-journal",
+    "volume": "56"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "citation": "K. Malecka, \"Article on Jan Czochralski (ACADEMIA, Polish Academy of Sciences magazine)\", ACADEMIA (2013)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "K. Malecka"
+      }
+    ],
+    "container_title": "ACADEMIA",
+    "id": "malecka2013",
+    "issue": "4(40)",
+    "issued": "2013",
+    "read": "PDF text read; source of the 1916 anecdote wording",
+    "title": "Article on Jan Czochralski (ACADEMIA, Polish Academy of Sciences magazine)",
+    "type": "webpage"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "citation": "J. R. Carruthers, G. E. Peterson, M. Grasso, et al., \"Nonstoichiometry and Crystal Growth of Lithium Niobate\", Journal of Applied Physics 42, 1846-1851, (1971) doi:10.1063/1.1660455",
+  "link": "https://doi.org/10.1063/1.1660455",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Carruthers",
+        "given": "J. R."
+      },
+      {
+        "family": "Peterson",
+        "given": "G. E."
+      },
+      {
+        "family": "Grasso",
+        "given": "M."
+      },
+      {
+        "family": "Bridenbaugh",
+        "given": "P. M."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1660455",
+    "id": "carruthers1971",
+    "issue": "5",
+    "issued": "1971-04-01",
+    "page": "1846-1851",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Nonstoichiometry and Crystal Growth of Lithium Niobate",
+    "type": "article-journal",
+    "volume": "42"
+  }
+}

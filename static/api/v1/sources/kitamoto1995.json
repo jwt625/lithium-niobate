@@ -1,0 +1,48 @@
+{
+  "citation": "Ayako Kitamoto, Takashi Kondo, Ichiro Shoji, et al., \"Absolute Measurement of Second-Order Nonlinear Optical Coefficient of LiNbO3 by Parametric Processes\", Optical Review 2, 280-284, (1995) doi:10.1007/s10043-995-0280-y",
+  "link": "https://doi.org/10.1007/s10043-995-0280-y",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Kitamoto",
+        "given": "Ayako"
+      },
+      {
+        "family": "Kondo",
+        "given": "Takashi"
+      },
+      {
+        "family": "Shoji",
+        "given": "Ichiro"
+      },
+      {
+        "family": "Ito",
+        "given": "Ryoichi"
+      }
+    ],
+    "container_title": "Optical Review",
+    "doi": "10.1007/s10043-995-0280-y",
+    "id": "kitamoto1995",
+    "issued": "1995-08",
+    "page": "280-284",
+    "read": "abstract only; DOI from Crossref 2026-10-25",
+    "title": "Absolute Measurement of Second-Order Nonlinear Optical Coefficient of LiNbO3 by Parametric Processes",
+    "type": "article-journal",
+    "volume": "2"
+  }
+}

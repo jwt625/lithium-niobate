@@ -1,0 +1,193 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Coercive field of lithium niobate (LiNbO3): 4 provenance-tagged value(s) from 1 source(s) for variant(s) cln, mgo1-sln, mgo5-cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/coercive-field.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/coercive-field.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Coercive field"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Coercive field",
+    "url": "https://lithium-niobate.com/api/v1/properties/coercive-field.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_c (cln)",
+        "unitText": "kV/mm",
+        "value": 21
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_c (mgo1-sln)",
+        "unitText": "kV/mm",
+        "value": 2.5
+      },
+      {
+        "@type": "PropertyValue",
+        "maxValue": 6.8,
+        "measurementTechnique": "see source",
+        "minValue": 6.0,
+        "name": "E_c (mgo5-cln)",
+        "unitText": "kV/mm"
+      },
+      {
+        "@type": "PropertyValue",
+        "maxValue": 6.5,
+        "measurementTechnique": "see source",
+        "minValue": 6.0,
+        "name": "E_c (sln)",
+        "unitText": "kV/mm"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 4,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "coercive-field"
+  },
+  "records": [
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "coercive-field/cln/volk2008",
+      "kind": "scalar",
+      "name": "Coercive field",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185 (210 kV/cm, literature average); p. 118 (210-220 kV/cm)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_c",
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "value": 21,
+      "variant": "cln"
+    },
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "coercive-field/mgo1-sln/volk2008",
+      "kind": "scalar",
+      "name": "Coercive field",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185 (25 kV/cm)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_c",
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "value": 2.5,
+      "variant": "mgo1-sln"
+    },
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "coercive-field/mgo5-cln/volk2008",
+      "kind": "scalar",
+      "max": 6.8,
+      "min": 6.0,
+      "name": "Coercive field",
+      "notes": "Individual reports in the text (p. 184): switching at 4.45 kV/mm (0.5 mm wafer, Kuroda et al.); poling with 2.5 kV/mm pulses (4.8% MgO, 0.3 mm, Mizuuchi et al.).",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185 (60-68 kV/cm, table average)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_c",
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "variant": "mgo5-cln"
+    },
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "coercive-field/sln/volk2008",
+      "kind": "scalar",
+      "max": 6.5,
+      "min": 6.0,
+      "name": "Coercive field",
+      "notes": "Conflicts within volk2008: p. 118 gives about 21-25 kV/cm (2.1-2.5 kV/mm) for near-stoichiometric crystals, citing gopalan1998.",
+      "property": "coercive-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185 (60-65 kV/cm)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_c",
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "variant": "sln"
+    }
+  ]
+}

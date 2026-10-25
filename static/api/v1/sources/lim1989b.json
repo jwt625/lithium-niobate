@@ -1,0 +1,42 @@
+{
+  "citation": "E.J. Lim, M.M. Fejer, R.L. Byer, et al., \"Blue light generation by frequency doubling in periodically poled lithium niobate channel waveguide\", Electronics Letters 25, 731-732, (1989) doi:10.1049/el:19890495",
+  "link": "https://doi.org/10.1049/el:19890495",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "E.J. Lim"
+      },
+      {
+        "literal": "M.M. Fejer"
+      },
+      {
+        "literal": "R.L. Byer"
+      },
+      {
+        "literal": "W.J. Kozlovsky"
+      }
+    ],
+    "container_title": "Electronics Letters",
+    "doi": "10.1049/el:19890495",
+    "id": "lim1989b",
+    "issue": "11",
+    "issued": "1989-05-25",
+    "page": "731-732",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Blue light generation by frequency doubling in periodically poled lithium niobate channel waveguide",
+    "type": "article-journal",
+    "volume": "25"
+  }
+}

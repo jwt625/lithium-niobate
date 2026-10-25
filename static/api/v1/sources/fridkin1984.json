@@ -1,0 +1,33 @@
+{
+  "citation": "V. M. Fridkin, \"Review of recent work on the bulk photovoltaic effect in ferro and piezoelectrics\", Ferroelectrics 53, 169-187, (1984) doi:10.1080/00150198408245047",
+  "link": "https://doi.org/10.1080/00150198408245047",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "V. M. Fridkin"
+      }
+    ],
+    "container_title": "Ferroelectrics",
+    "doi": "10.1080/00150198408245047",
+    "id": "fridkin1984",
+    "issue": "1",
+    "issued": "1984-04",
+    "page": "169-187",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Review of recent work on the bulk photovoltaic effect in ferro and piezoelectrics",
+    "type": "article-journal",
+    "volume": "53"
+  }
+}

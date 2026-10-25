@@ -1,0 +1,62 @@
+{
+ "note": "Subsets of public atlas files, copied for the chapter 08 charts. Upstream has no LICENSE file (data license pending, author question 8); facts are shown with attribution and locators.",
+ "extractor": "src/lib/figures/industry/atlas-extract.ts",
+ "inputs": [
+  {
+   "repo": "https://github.com/jwt625/eo-modulator-atlas",
+   "commit": "eb97f961165a331599e8191c62e15b5a52ba1d51",
+   "commit_date": "2026-10-20",
+   "file": "data/devices.csv",
+   "sha256": "0dd95c55abdf711b9511e561c5efa60db657f23553690dd211421f4036b987f7",
+   "bytes": 772730,
+   "rows": 519,
+   "fetched": "2026-10-25"
+  },
+  {
+   "repo": "https://github.com/jwt625/eo-modulator-atlas",
+   "commit": "eb97f961165a331599e8191c62e15b5a52ba1d51",
+   "commit_date": "2026-10-20",
+   "file": "data/papers.csv",
+   "sha256": "62d5ddf8325cd88f0a4995c62021cefafd9683e72b820ea6044e10585dad1b67",
+   "bytes": 416422,
+   "rows": 233,
+   "fetched": "2026-10-25"
+  },
+  {
+   "repo": "https://github.com/jwt625/photonics-atlas",
+   "commit": "26aa34093fde4b588cc92f5bf250ef58f74044a9",
+   "commit_date": "2026-10-23",
+   "file": "data/supply/product_usage.csv",
+   "sha256": "241e1c65b1058c8aeffc715d7fed14b6208806438ce2b8eefcfc0dc99abe1790",
+   "bytes": 521352,
+   "rows": 1996,
+   "fetched": "2026-10-25"
+  }
+ ],
+ "outputs": [
+  {
+   "file": "atlas-ln.json",
+   "sha256": "7fb2f2b24bd0e8d852aa76b51e078fe64abbe86434f8c4c42193613f2d1cbcf8",
+   "from": [
+    "data/devices.csv",
+    "data/papers.csv"
+   ],
+   "rows": {
+    "devices": 519,
+    "papers": 233
+   },
+   "derived": "platform (chart-specs 1.2), vpil_best / vpil_source (1.3, as atlas scripts/build_views.py), bw_q / vpil_q / length_q from qualifiers (1.4), year from papers.csv; notes cut to 240 characters, modulation_format to 120"
+  },
+  {
+   "file": "photonics-atlas-lnoi.json",
+   "sha256": "6a13651ea9d7563aacdc5308c1d150a8c3807b20d6792962eff69846915ef283",
+   "from": [
+    "data/supply/product_usage.csv"
+   ],
+   "rows": {
+    "usage": 44
+   },
+   "filter": "category_id = A2.1 (LNOI)"
+  }
+ ]
+}

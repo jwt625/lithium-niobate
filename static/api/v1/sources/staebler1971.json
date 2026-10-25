@@ -1,0 +1,38 @@
+{
+  "citation": "Juan J. Amodei, David L. Staebler, \"HOLOGRAPHIC PATTERN FIXING IN ELECTRO-OPTIC CRYSTALS\", Applied Physics Letters 18, 540-542, (1971) doi:10.1063/1.1653530",
+  "link": "https://doi.org/10.1063/1.1653530",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Amodei",
+        "given": "Juan J."
+      },
+      {
+        "family": "Staebler",
+        "given": "David L."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1653530",
+    "id": "staebler1971",
+    "issue": "12",
+    "issued": "1971-06-15",
+    "page": "540-542",
+    "read": "bibliographic record only (Crossref)",
+    "title": "HOLOGRAPHIC PATTERN FIXING IN ELECTRO-OPTIC CRYSTALS",
+    "type": "article-journal",
+    "volume": "18"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "citation": "Alexandre Parriaux, Kamal Hammani, Guy Millot, \"Electro-optic frequency combs\", Advances in Optics and Photonics 12, 223, (2020) doi:10.1364/aop.382052",
+  "link": "https://doi.org/10.1364/aop.382052",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Parriaux",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Hammani",
+        "given": "Kamal"
+      },
+      {
+        "family": "Millot",
+        "given": "Guy"
+      }
+    ],
+    "container_title": "Advances in Optics and Photonics",
+    "doi": "10.1364/aop.382052",
+    "id": "parriaux2020",
+    "issue": "1",
+    "issued": "2020-03-16",
+    "page": "223",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Electro-optic frequency combs",
+    "type": "article-journal",
+    "volume": "12"
+  }
+}

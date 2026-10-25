@@ -1,0 +1,44 @@
+{
+  "alternatives": [
+    "piezo-strain-d/unspecified/weis1985-smithwelsh1971",
+    "piezo-strain-d/unspecified/weis1985-warner1967",
+    "piezo-strain-d/unspecified/weis1985-yamada1967"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "piezo-strain-d",
+    "variant": "unspecified"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "d15": {
+      "max": 74,
+      "min": 68,
+      "n_records": 3
+    },
+    "d22": {
+      "max": 21,
+      "min": 20.8,
+      "n_records": 3
+    },
+    "d31": {
+      "max": -0.85,
+      "min": -1.0,
+      "n_records": 3
+    },
+    "d33": {
+      "max": 16,
+      "min": 6.0,
+      "n_records": 3
+    }
+  }
+}

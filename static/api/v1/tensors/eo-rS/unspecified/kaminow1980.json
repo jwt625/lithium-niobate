@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "eo-rS",
+    "variant": "unspecified"
+  },
+  "record": {
+    "conditions": {
+      "mechanical_boundary": "S",
+      "wavelength_nm": 633
+    },
+    "frame": {
+      "convention": "IRE-1949",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -3.4,
+          7.7
+        ],
+        [
+          -3.4,
+          0.0,
+          0.0
+        ],
+        [
+          18.2,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -3.4,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          3.4,
+          7.7
+        ],
+        [
+          0.0,
+          18.2,
+          0.0
+        ]
+      ],
+      [
+        [
+          18.2,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          18.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          28.8
+        ]
+      ]
+    ],
+    "id": "eo-rS/unspecified/kaminow1980",
+    "independent": {
+      "r13": {
+        "original_reference": "Turner, as cited in Kaminow et al. 1980",
+        "value": 7.7
+      },
+      "r22": {
+        "original_reference": "Turner, as cited in Kaminow et al. 1980",
+        "value": 3.4
+      },
+      "r33": {
+        "original_reference": "Turner, as cited in Kaminow et al. 1980",
+        "value": 28.8
+      },
+      "r51": {
+        "original_reference": "Kaminow et al. 1980",
+        "value": 18.2
+      }
+    },
+    "kind": "tensor",
+    "name": "Linear electro-optic (Pockels) coefficients, clamped (constant strain)",
+    "notes": "weis1985 calls the 1980 values probably the most accurate (fringing-field corrected). r51^S = 18.2 is 35% below the 28 of Turner 1966 and cti1999: shown as a spread, not blended. Kaminow 1980 itself not read.",
+    "provenance": {
+      "locator": "weis1985 Table 4, p. 199",
+      "source_id": "kaminow1980",
+      "status": "P-comp",
+      "transcribed": "2026-10-25",
+      "via": "weis1985"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "r^S",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "-r22",
+          "r13"
+        ],
+        [
+          "0",
+          "r22",
+          "r13"
+        ],
+        [
+          "0",
+          "0",
+          "r33"
+        ],
+        [
+          "0",
+          "r51",
+          "0"
+        ],
+        [
+          "r51",
+          "0",
+          "0"
+        ],
+        [
+          "-r22",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "r12 = -r22",
+        "r23 = r13",
+        "r42 = r51",
+        "r61 = -r22"
+      ]
+    },
+    "tensor": "eo-rS",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "variant": "unspecified",
+    "variant_note": "composition not stated in weis1985",
+    "voigt": [
+      [
+        0.0,
+        -3.4,
+        7.7
+      ],
+      [
+        0.0,
+        3.4,
+        7.7
+      ],
+      [
+        0.0,
+        0.0,
+        28.8
+      ],
+      [
+        0.0,
+        18.2,
+        0.0
+      ],
+      [
+        18.2,
+        0.0,
+        0.0
+      ],
+      [
+        -3.4,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "r_ijk = r_Ik, I = V(ij) (impermeability change d(eta)_ij = r_ijk E_k)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

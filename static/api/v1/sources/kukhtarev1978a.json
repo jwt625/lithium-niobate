@@ -1,0 +1,45 @@
+{
+  "citation": "N. V. Kukhtarev, V. B. Markov, S. G. Odulov, et al., \"Holographic storage in electrooptic crystals. i. steady state\", Ferroelectrics 22, 949-960, (1978) doi:10.1080/00150197908239450",
+  "link": "https://doi.org/10.1080/00150197908239450",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "N. V. Kukhtarev"
+      },
+      {
+        "literal": "V. B. Markov"
+      },
+      {
+        "literal": "S. G. Odulov"
+      },
+      {
+        "literal": "M. S. Soskin"
+      },
+      {
+        "literal": "V. L. Vinetskii"
+      }
+    ],
+    "container_title": "Ferroelectrics",
+    "doi": "10.1080/00150197908239450",
+    "id": "kukhtarev1978a",
+    "issue": "1",
+    "issued": "1978-01",
+    "page": "949-960",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Holographic storage in electrooptic crystals. i. steady state",
+    "type": "article-journal",
+    "volume": "22"
+  }
+}

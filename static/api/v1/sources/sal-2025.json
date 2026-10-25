@@ -1,0 +1,24 @@
+{
+  "citation": "\"SAL Unveils First 8-Inch TFLN Wafer for Scalable Integrated Photonics\", (2025) https://silicon-austria-labs.com/en/wp-json/wp/v2/posts/4124",
+  "link": "https://silicon-austria-labs.com/en/wp-json/wp/v2/posts/4124",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "sal-2025",
+    "issued": "2025-09-25",
+    "read": "Read via the site's post API",
+    "title": "SAL Unveils First 8-Inch TFLN Wafer for Scalable Integrated Photonics",
+    "type": "webpage",
+    "url": "https://silicon-austria-labs.com/en/wp-json/wp/v2/posts/4124"
+  }
+}

@@ -1,0 +1,50 @@
+/* Chapter 2.1 page styles (scoped under .lt; VISUAL under :root[data-mode="visual"]). */
+.lt .c21-eye { padding: 10px; display: grid; place-items: center; }
+.lt .c21-stage { position: relative; width: 100%; max-width: 384px; aspect-ratio: 1; background: #000; }
+.lt .c21-stage canvas { position: absolute; inset: 4%; width: 92%; height: 92%; display: block; clip-path: circle(50%); }
+.lt .c21-stage svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.lt #c21-ov .rc { fill: none; stroke: #6d6c68; stroke-width: 0.3; }
+.lt #c21-ov .rx { stroke: #6d6c68; stroke-width: 0.15; }
+.lt #c21-ov .rt { stroke: #8d8c86; stroke-width: 0.25; }
+.lt #c21-ov .rl { font: 400 2.6px var(--mono); fill: #8d8c86; }
+.lt #c21-ov .rg { stroke: #e6e5e0; stroke-width: 0.35; }
+.lt #c21-ov .oa { stroke: #e6e5e0; stroke-width: 0.4; fill: none; }
+.lt .c21-side { min-width: 0; }
+.lt .c21-side .seg button { padding: 4px 7px; }
+.lt table.ro col.cv { width: 13ch; }
+.lt .c21-ro td.v { width: 13ch; }
+.lt #c21-src-h { flex: none; overflow: hidden; display: inline-block; width: 25ch; text-align: right; white-space: nowrap; }
+.lt #c21-set-h { display: inline-block; width: 42ch; white-space: nowrap; overflow: hidden; }
+@media (max-width: 420px) { .lt #c21-set-h { width: 100%; font-size: 10.5px; } }
+.lt .e21-ascii { line-height: 12px; font-size: 10.5px; height: calc(27 * 12px + 16px); }
+@media (max-width: 560px) { .lt .e21-ascii { font-size: 8px; line-height: 9px; height: calc(27 * 9px + 16px); padding: 8px 4px; } }
+.lt .d21-flag { white-space: pre; display: inline-block; overflow: hidden; width: 32ch; text-align: right; }
+.lt .d21-flag.bad { color: var(--fg); background: var(--acc-dim); }
+.lt table.d21-ro col.c1 { width: auto; } .lt table.d21-ro col.c2 { width: 6ch; } .lt table.d21-ro col.c3 { width: 9ch; } .lt table.d21-ro col.c4 { width: 13ch; } .lt table.d21-ro col.c5 { width: 15ch; }
+.lt table.d21-ro td:first-child { text-overflow: ellipsis; }
+.lt table.e21-ro col.cv { width: 20ch; }
+.lt table.d21-sp td:first-child { white-space: normal; }
+@media (max-width: 560px) { .lt #d21 .ph { flex-wrap: wrap; } .lt .d21-flag { width: 100%; text-align: left; } .lt table.d21-ro col.c5 { width: 13ch; } }
+.lt table.d21-ro { min-width: 340px; }
+.lt table.d21-ro td.nt { color: var(--fg3); }
+.lt .sw { display: inline-block; width: 18px; height: 0; border-top: 1.4px solid var(--fg); vertical-align: 3px; margin-right: 6px; }
+.lt .sw.s2 { border-top-style: dashed; } .lt .sw.s3 { border-top: 1.4px dotted var(--fg2); } .lt .sw.s4 { border-top: 1.4px dashed var(--fg2); }
+.lt .lp .vw { fill: var(--fg2); } .lt .lp .vw-out { opacity: 0.6; } .lt .lp .htl { stroke: var(--fg3); stroke-width: 1; }
+.lt .lp .s1b { fill: var(--fg); } .lt .lp .s2b { fill: var(--fg2); } .lt .lp .s3b { fill: var(--fg3); } .lt .lp .s4b { fill: var(--fg3); }
+.lt .lp .dimc { opacity: 0.35; }
+.lt .lp .anom { stroke-dasharray: 1 3; }
+:root[data-mode="visual"] {
+  & .lt .v-c21 { margin: 32px 0 8px; }
+  & .lt .v-c21-set { margin-top: 24px; }
+  & .lt #v-c21-set-h { display: inline-block; width: 40ch; white-space: nowrap; overflow: hidden; }
+  @media (max-width: 520px) { & .lt #v-c21-set-h { width: 100%; font-size: 13px; } }
+  & .lt .v-c21-set .v-seg { flex-wrap: wrap; }
+  & .lt #v-e21-stage { max-width: 640px; }
+  & .lt .v-ell-lab span.k { color: var(--v-text); } & .lt .v-ell-lab span.s { color: var(--v-au); }
+  & .lt .lp .s1b { fill: var(--v-text); } & .lt .lp .s2b { fill: var(--v-text2); } & .lt .lp .s3b { fill: var(--v-au); } & .lt .lp .s4b { fill: var(--v-ir1550); }
+  & .lt .lp .vw-out { opacity: 0.35; } & .lt .lp .htl { stroke: var(--v-line2); }
+  & .lt .v-flag { height: 30px; font: 500 18px/30px var(--v-ui); color: var(--v-text2); white-space: pre; }
+  & .lt .v-flag.bad { color: var(--v-l633); }
+  & .lt .sw { width: 20px; border-top-width: 3px; border-top-color: var(--v-text); } & .lt .sw.s2 { border-top: 3px dashed var(--v-text2); } & .lt .sw.s3 { border-top: 3px solid var(--v-au); } & .lt .sw.s4 { border-top: 3px dashed var(--v-ir1550); }
+  & .lt #v-d21-rows dt { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}

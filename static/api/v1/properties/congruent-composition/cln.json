@@ -1,0 +1,72 @@
+{
+  "alternatives": [
+    {
+      "category": "structure",
+      "id": "congruent-composition/cln/cti1999",
+      "kind": "scalar",
+      "name": "Congruent composition",
+      "property": "congruent-composition",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.01
+      },
+      "unit": {
+        "display": "mol% Li2O",
+        "ucum": "%"
+      },
+      "value": 48.38,
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "congruent-composition",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "default": true,
+      "id": "congruent-composition/cln/volk2008",
+      "kind": "scalar",
+      "name": "Congruent composition",
+      "notes": "volk2008 also gives [Li]/[Nb] = 0.94 (p. 9) and R = 0.4845 (p. 5); its UV-edge formula uses 48.38 mol% (p. 142).",
+      "property": "congruent-composition",
+      "provenance": {
+        "locator": "pp. 4-5, 9",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "mol% Li2O",
+        "ucum": "%"
+      },
+      "value": 48.45,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 48.45,
+    "min": 48.38,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "%"
+  }
+}

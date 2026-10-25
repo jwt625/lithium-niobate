@@ -1,0 +1,33 @@
+{
+  "citation": "Rose, \"Ueber ein zweites im Tantalit (Columbit) von Baiern enthaltenes neues Metall\", Annalen der Physik 145, 115-141, (1846) doi:10.1002/andp.18461450911",
+  "link": "https://doi.org/10.1002/andp.18461450911",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Rose"
+      }
+    ],
+    "container_title": "Annalen der Physik",
+    "doi": "10.1002/andp.18461450911",
+    "id": "rose1846",
+    "issue": "9",
+    "issued": "1846-01",
+    "page": "115-141",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Ueber ein zweites im Tantalit (Columbit) von Baiern enthaltenes neues Metall",
+    "type": "article-journal",
+    "volume": "145"
+  }
+}

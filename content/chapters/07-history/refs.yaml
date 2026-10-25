@@ -1,0 +1,3072 @@
+# References, chapter 07 History. Lane C07, 2026-10-25.
+#
+# Two blocks:
+#   refs_web: sources without a DOI (archival scans, company and institutional pages, trade
+#             press, standards, catalogs, local research notes). 'verified' says what was read.
+#   refs:     DOI sources, generated from Crossref REST API records retrieved 2026-10-25
+#             (no mailto or other personal parameter). Bibliographic fields are Crossref's;
+#             'issued' is published-print, else issued.
+# status: V = record or page read and it confirms the item; P = publication confirmed, the
+#   specific claim rests on a secondary source; S = secondary only (trade press, snippet,
+#   catalog, retrospective).
+# Paper bodies were mostly not read. Where an abstract was read (Crossref, OpenAlex,
+#   publisher page), events.yaml notes say so.
+
+refs_web:
+
+- id: arfwedson1818
+  type: archival-scan
+  authors: [Johan August Arfwedson]
+  title: "Undersokning af nagra vid Uto jernmalmsbrott forekommande fossilier, och af ett deri funnet eget eldfast Alkali"
+  container: "Afhandlingar i Fysik, Kemi och Mineralogi"
+  volume: "6"
+  pages: "145-172 (Berzelius addendum 173-176)"
+  issued: "1818"
+  url: "https://archive.org/details/bub_gb_71QrAAAAcAAJ"
+  verified: "Scan read by research lane (title page, contents, pp. 145, 153), 2026-10-25"
+  status: V
+
+- id: berzelius1818
+  type: archival-scan
+  authors: [Jons Jacob Berzelius]
+  title: "Letter to C. L. Berthollet announcing a new alkali (dated 1818-02-09)"
+  container: "Annales de Chimie et de Physique"
+  volume: "7"
+  pages: "199-201"
+  issued: "1818"
+  url: "https://archive.org/details/s3id13207740"
+  verified: "Scan read by research lane, 2026-10-25; volume title page reads 1817"
+  status: V
+
+- id: rose1844bericht
+  type: archival-scan
+  authors: [Heinrich Rose]
+  title: "Ueber die Zusammensetzung der Tantalite (session of 1844-10-31)"
+  container: "Bericht uber die zur Bekanntmachung geeigneten Verhandlungen der Koniglich Preussischen Akademie der Wissenschaften zu Berlin, 1844"
+  pages: "361-364"
+  issued: "1844"
+  url: "https://archive.org/details/BerichtUberDieZurBekanntmachung1844"
+  verified: "Scan read by research lane, 2026-10-25"
+  status: V
+
+- id: rose1846bericht
+  type: archival-scan
+  authors: [Heinrich Rose]
+  title: "Ueber ein neues, im Tantalit (Columbit) von Baiern enthaltenes Metall (session of 1846-07-16)"
+  container: "Bericht ... Akademie der Wissenschaften zu Berlin, 1846"
+  pages: "229-230"
+  issued: "1846"
+  url: "https://archive.org/details/BerichtUberDieZurBekanntmachung1846"
+  verified: "Scan read by research lane, 2026-10-25"
+  status: V
+
+- id: marignac1866
+  type: archival-scan
+  authors: [Jean Charles Galissard de Marignac]
+  title: "Recherches sur les combinaisons du niobium"
+  container: "Annales de Chimie et de Physique, 4e serie"
+  volume: "8"
+  pages: "5-75"
+  issued: "1866"
+  url: "https://archive.org/details/s696id13664940"
+  verified: "Scan read by research lane (pp. 5-8, 45-46, 49-50), 2026-10-25"
+  status: V
+
+- id: ekeberg1802
+  type: article
+  authors: [Anders Gustaf Ekeberg]
+  title: "Paper naming tantalum (as cited)"
+  container: "Kongl. Vetenskaps Academiens Nya Handlingar"
+  pages: "68"
+  issued: "1802"
+  verified: "Not seen. Cited by Wollaston 1809 (footnote) and Rose 1844 (p. 318, via Crell's Annalen 1803)"
+  status: P
+
+- id: zachariasen1928
+  type: thesis
+  authors: [W. H. Zachariasen]
+  title: "Untersuchungen uber die Kristallstruktur von Sesquioxyden und Verbindungen ABO3"
+  container: "Skrifter utgitt av det Norske Videnskaps-Akademi i Oslo, I. Mat.-Naturv. Klasse 1928, No. 4"
+  pages: "165 pp."
+  issued: "1928"
+  verified: "Scan not seen. Catalogs (Crystallography Open Database entries; National Library of Belarus record, series imprint 1929) and citing papers (matthias1949, abrahams1966a, bartasyte2017)"
+  status: P
+
+- id: fedulov1965
+  type: article
+  authors: [S. A. Fedulov, et al.]
+  title: "Czochralski growth of LiNbO3, LiTaO3 and NaNbO3 single crystals (title as cited; variants conflict)"
+  container: "Kristallografiya"
+  volume: "10"
+  pages: "268"
+  issued: "1965"
+  verified: "Not seen. Present in Crossref-deposited reference lists of nassau1966a, nassau1966b, abrahams1966a, smolenskii1966"
+  status: P
+
+- id: harris1969
+  type: article
+  authors: [S. E. Harris]
+  title: "Tunable optical parametric oscillators"
+  container: "Proceedings of the IEEE"
+  volume: "57"
+  pages: "2096-2113"
+  issued: "1969"
+  doi: "10.1109/PROC.1969.7495"
+  url: "https://doi.org/10.1109/PROC.1969.7495"
+  verified: "Crossref bibliographic query 2026-10-25; text read by research lane ('first tunable optical parametric oscillator')"
+  status: V
+
+- id: belllabsrecord1965
+  type: translation
+  authors: []
+  title: "Chinese translation of a Bell Laboratories Record item on the tunable parametric oscillator, Bell Lab. Rec. 43(7), 310-311 (1965)"
+  issued: "1965"
+  url: "https://www.researching.cn/ArticlePdf/m00002/1965/2/10/1965-10-0031.pdf"
+  verified: "PDF read by research lane; scan partly garbled"
+  status: S
+
+- id: whitevoltmer1965preprint
+  type: report
+  authors: [R. M. White, F. W. Voltmer]
+  title: "Direct piezoelectric coupling to surface elastic waves (ERL Technical Memorandum M-132)"
+  container: "Electronics Research Laboratory, University of California, Berkeley"
+  issued: "1965-10-12"
+  url: "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1965/ERL-m-132.pdf"
+  verified: "Full text read by research lane, 2026-10-25"
+  status: V
+
+- id: kadota2011
+  type: article
+  authors: [Michio Kadota]
+  title: "Surface acoustic wave devices (in Japanese)"
+  container: "Journal of the Acoustical Society of Japan"
+  volume: "67"
+  issue: "10"
+  pages: "494-495"
+  issued: "2011"
+  url: "https://acoustics.jp/cms/wp_asj/wp-content/uploads/2019/03/6710onkochishin.pdf"
+  verified: "Full text read by research lane; practitioner retrospective"
+  status: S
+
+- id: nobelapi-ashkin
+  type: database
+  title: "Nobel Prize API laureate record: Arthur Ashkin"
+  url: "https://api.nobelprize.org/2.1/laureates?name=Ashkin"
+  verified: "Read by research lane, 2026-10-25"
+  status: V
+
+- id: vanderkrogt-nb
+  type: web
+  title: "Elementymology and Elements Multidict: Niobium"
+  url: "https://www.vanderkrogt.net/elements/element.php?num=41"
+  verified: "Read by research lane, 2026-10-25"
+  status: S
+
+- id: malecka2013
+  type: article
+  authors: [K. Malecka]
+  title: "Article on Jan Czochralski (ACADEMIA, Polish Academy of Sciences magazine)"
+  container: "ACADEMIA"
+  issue: "4(40)"
+  issued: "2013"
+  verified: "PDF text read by research lane; source of the 1916 anecdote wording"
+  status: S
+
+- id: shinetsu-history
+  type: web
+  title: "Shin-Etsu Chemical corporate history"
+  url: "https://www.shinetsu.co.jp/jp/company/history/"
+  verified: "Read by research lane, 2026-10-25"
+  status: V
+
+- id: smm-2014
+  type: disclosure
+  title: "Sumitomo Metal Mining TSE disclosure on LT/LN substrate expansion"
+  issued: "2014-12-18"
+  url: "https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf"
+  verified: "Search snippet only; PDF returned 403/404"
+  status: S
+
+- id: eenews-2020-soitec
+  type: trade-press
+  title: "Qualcomm adopts Soitec POI wafers for SAW filters"
+  container: "eeNews Europe"
+  issued: "2020-07-07"
+  url: "https://www.eenewseurope.com/en/qualcomm-adopts-soitec-poi-wafers-for-saw-filters/"
+  verified: "Read (R09 S11)"
+  status: S
+
+- id: murata-2022
+  type: press-release
+  title: "Murata completes acquisition of Resonant"
+  issued: "2022-03-29"
+  url: "https://corporate.murata.com/newsroom/news/company/general/2022/0329"
+  verified: "Read by research lane, 2026-10-25"
+  status: V
+
+- id: soc-history
+  type: web
+  title: "Sumitomo Osaka Cement company history"
+  url: "https://www.soc.co.jp/company/history/"
+  verified: "Read by research lane, 2026-10-25"
+  status: V
+
+- id: nikkan-2016
+  type: trade-press
+  title: "Sumitomo Osaka Cement to add LN modulator line in Guangdong (Nikkan Kogyo Shimbun 00410032)"
+  issued: "2016-12-13"
+  url: "https://www.nikkan.co.jp/articles/view/00410032"
+  verified: "Archived copy read (headline and lead)"
+  status: S
+
+- id: fujitsu-2009
+  type: press-release
+  title: "Fujitsu Introduces World's First DP-QPSK LN Modulator for 100Gbps Optical Networks"
+  issued: "2009-09-14"
+  url: "https://web.archive.org/web/20210620162454/https://www.fujitsu.com/jp/group/foc/en/resources/news/press-releases/2009/0914.html"
+  verified: "Archived copy read in full"
+  status: V
+
+- id: fujitsu-2021a
+  type: press-release
+  title: "Fujitsu Optical Components Ships One Millionth Coherent Lithium-Niobate Modulator"
+  issued: "2021-03-31"
+  url: "https://web.archive.org/web/20230812112018/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20210331.html"
+  verified: "Archived copy read in full"
+  status: V
+
+- id: fujitsu-2021b
+  type: press-release
+  title: "Commercialization of compact thin-film LN modulator: Successful Establishment of Highly Reliable Technology"
+  issued: "2021-10-22"
+  url: "https://web.archive.org/web/20240225003522/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20211022.html"
+  verified: "Archived copy read in full"
+  status: V
+
+- id: oxide-history
+  type: web
+  title: "Oxide Corporation company history"
+  url: "https://www.opt-oxide.com/company/history/"
+  verified: "Read by research lane"
+  status: V
+
+- id: gh-ln-wafers
+  type: web
+  title: "Gooch & Housego, LN wafers"
+  url: "https://gandh.com/product-categories/ln-wafers"
+  verified: "Read by research lane"
+  status: V
+
+- id: opticsorg-crystaltech
+  type: directory
+  title: "optics.org buyers guide: Crystal Technology, Inc."
+  url: "https://optics.org/buyers-guide/crystal-technology-inc"
+  verified: "Read by research lane"
+  status: V
+
+- id: gh-history
+  type: web
+  title: "Gooch & Housego, our history"
+  url: "https://gandh.com/our-history"
+  verified: "Read by research lane; 2011 entry; RNS reprint of 2011-04-01 announcement also read"
+  status: V
+
+- id: lightwave-1995
+  type: trade-press
+  title: "Business purchase (Uniphase acquires United Technologies Photonics)"
+  container: "Lightwave"
+  issued: "1995-07-01"
+  url: "https://www.lightwaveonline.com/business/market-research/article/16662114/business-purchase"
+  verified: "Read by research lane"
+  status: S
+
+- id: lfw-1995
+  type: trade-press
+  authors: [F. J. Leonberger, S. W. Merritt, P. G. Suchoski]
+  title: "Optical modulators find wider use in CATV and telecommunications"
+  container: "Laser Focus World"
+  issued: "1995-07-01"
+  url: "https://www.laserfocusworld.com/optics/article/16553605/optical-modulators-find-wider-use-in-catv-and-telecommunications"
+  verified: "Read by research lane; vendor authors"
+  status: S
+
+- id: lightwave-1997
+  type: trade-press
+  authors: [J. Lin, P. Sanders]
+  title: "OC-192 lithium-niobate modulators spark fiber-optic network capacity"
+  container: "Lightwave"
+  issued: "1997-02-01"
+  url: "https://www.lightwaveonline.com/optical-tech/electronics/article/16652774/oc192-lithiumniobate-modulators-spark-fiberoptic-network-capacity"
+  verified: "Read by research lane"
+  status: S
+
+- id: eospace-mgmt
+  type: web
+  title: "EOSPACE technical management"
+  url: "https://www.eospace.com/technicalmanagement"
+  verified: "Read by research lane"
+  status: V
+
+- id: lightwave-1998
+  type: trade-press
+  title: "Lithium niobate modulators (Lucent X2600)"
+  container: "Lightwave"
+  issued: "1998-05-01"
+  url: "https://www.lightwaveonline.com/optical-tech/electronics/article/16656084/lithium-niobate-modulators"
+  verified: "Read by research lane"
+  status: S
+
+- id: rfb-jdsu
+  type: web
+  title: "JDS Uniphase Corporation (company history)"
+  container: "referenceforbusiness.com"
+  url: "https://www.referenceforbusiness.com/history2/11/JDS-Uniphase-Corporation.html"
+  verified: "Read by research lane"
+  status: S
+
+- id: compoundsemi-2000
+  type: trade-press
+  title: "Corning to acquire Pirelli's optical components and devices business for $3.6 billion"
+  container: "Compound Semiconductor"
+  issued: "2000"
+  url: "https://compoundsemiconductor.net/article/80769/Corning_to_Acquire_Pirellis_Optical_Components_and_Devices_Business_For_36_Billion"
+  verified: "Read by research lane"
+  status: S
+
+- id: lightwave-2003
+  type: trade-press
+  title: "Codeon Corp. and Quantum Photonics merge to form Covega Corp."
+  container: "Lightwave"
+  issued: "2003"
+  url: "https://lightwaveonline.com/business/article/16656427/codeon-corp-and-quantum-photonics-merge-to-form-covega-corp"
+  verified: "Read by research lane"
+  status: S
+
+- id: photonicsonline-2015
+  type: trade-press
+  title: "iXblue completes integration of iXFiber and Photline"
+  container: "Photonics Online"
+  issued: "2015-02-04"
+  url: "https://www.photonicsonline.com/doc/ixblue-completes-integration-of-ixfiber-and-photline-0001"
+  verified: "Read by research lane"
+  status: S
+
+- id: lightwave-2019
+  type: trade-press
+  title: "Lumentum to sell certain lithium niobate-based product lines to AFR"
+  container: "Lightwave"
+  issued: "2019-12-02"
+  url: "https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr"
+  verified: "Read by research lane"
+  status: S
+
+- id: electronicsonline-2009
+  type: trade-press
+  title: "MgO-doped PPLN chips for green conversion (Crystal Technology product news)"
+  container: "electronicsonline.net.au"
+  issued: "2009-09-17"
+  verified: "Per R07; URL not recorded"
+  status: S
+
+- id: nanoln-about
+  type: web
+  title: "About NanoLN"
+  url: "https://www.nanoln.com/ABOUT_NANOLN.html"
+  verified: "Read (R07, R09 S6)"
+  status: V
+
+- id: liobate-company
+  type: web
+  title: "Liobate company page"
+  url: "https://liobate.com/company"
+  verified: "Read by research lane"
+  status: V
+
+- id: cordis-elena
+  type: database
+  title: "CORDIS project 101016138: ELENA"
+  url: "https://cordis.europa.eu/project/id/101016138"
+  verified: "Read by research lane"
+  status: V
+
+- id: luxtelligence-about
+  type: web
+  title: "Luxtelligence, about"
+  url: "https://luxtelligence.ai/about"
+  verified: "Read by research lane"
+  status: V
+
+- id: opticsorg-2024
+  type: trade-press
+  title: "Lithium niobate in vogue as thin-film developers raise cash"
+  container: "optics.org"
+  issued: "2024-09-24"
+  url: "https://optics.org/news/lithium-niobate-in-vogue-as-thin-film-developers-raise-cash"
+  verified: "Read by research lane"
+  status: S
+
+- id: csem-2025
+  type: press-release
+  title: "TFLN photonic foundry emerges from CSEM spin-off"
+  issued: "2025-05-13"
+  url: "https://www.csem.ch/en/press/tfln-photonic-foundry-emerges-from-csem-spin-off/"
+  verified: "Read by research lane"
+  status: V
+
+- id: csem-2026
+  type: press-release
+  title: "CCRAFT photonic chips: Switzerland scaling"
+  issued: "2026-07-02"
+  url: "https://www.csem.ch/en/press/ccraft-photonic-chips-switzerland-scaling/"
+  verified: "Read (R09 S16)"
+  status: V
+
+- id: opticsorg-2025
+  type: trade-press
+  title: "Laser 2025: CCRAFT and Lightium push thin-film lithium niobate PICs"
+  container: "optics.org"
+  issued: "2025-06-25"
+  url: "https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics"
+  verified: "Read (R09 S13)"
+  status: S
+
+- id: sal-2025
+  type: press-release
+  title: "SAL Unveils First 8-Inch TFLN Wafer for Scalable Integrated Photonics"
+  issued: "2025-09-25"
+  url: "https://silicon-austria-labs.com/en/wp-json/wp/v2/posts/4124"
+  verified: "Read via the site's post API by research lane"
+  status: V
+
+- id: imec-2026
+  type: web
+  title: "A double world-first: integrating lithium niobate and lithium tantalate modulators on silicon photonics through micro-transfer printing"
+  issued: "2026-03-26"
+  url: "https://imec-int.com/en/articles/double-world-first-integrating-lithium-niobate-and-lithium-tantalate-modulators-silicon"
+  verified: "Read by research lane"
+  status: V
+
+- id: bw-2026-umc
+  type: press-release
+  title: "HyperLight, UMC, and Wavetek Announce Strategic Partnership for High-Volume Foundry Production of TFLN Chiplet Platform"
+  issued: "2026-03-11"
+  url: "https://web.archive.org/web/20260311212337/https://www.businesswire.com/news/home/20260311544174/en/"
+  verified: "Archived copy read by research lane"
+  status: V
+
+- id: bwchina-2026
+  type: press-release
+  title: "HyperLight 1.6T-DR8 TFLN reference transceiver (Business Wire China)"
+  issued: "2026-03-17"
+  url: "https://www.businesswirechina.com/en/news/62386.html"
+  verified: "Read (R09 S20)"
+  status: V
+
+- id: summit-2026
+  type: press-release
+  title: "HyperLight announces $80 million Series C to accelerate TFLN deployment for AI infrastructure"
+  issued: "2026-06-18"
+  url: "https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure"
+  verified: "Read (R09 S18)"
+  status: V
+
+- id: xfab-2026
+  type: press-release
+  title: "Ligentec and X-FAB expand integrated photonics offering with SOI and thin-film lithium niobate volume scaling"
+  issued: "2026-01-19"
+  url: "https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling"
+  verified: "Read (R09 S28)"
+  status: V
+
+- id: lightwave-2024
+  type: trade-press
+  title: "HyperLight secures $37M in new funding"
+  container: "Lightwave"
+  issued: "2024-09-24"
+  url: "https://lightwaveonline.com/home/article/55142234/hyperlight-secures-37m-in-new-funding"
+  verified: "Read (R09 S21)"
+  status: S
+
+- id: tqi-2024
+  type: trade-press
+  title: "Q.ANT photonic NPU launch (The Quantum Insider)"
+  issued: "2024-11-20"
+  verified: "Per R07; URL not recorded in R07"
+  status: S
+
+- id: afr-2025
+  type: press-release
+  title: "AFR at OFC 2025: TFLN coherent driver modulators in volume shipment"
+  issued: "2025-04-07"
+  url: "https://www.fiber-resources.com/medias/140.html"
+  verified: "Read (R09 S31)"
+  status: V
+
+- id: cls-2025
+  type: trade-press
+  title: "TDG Holding: 8-inch LN/LT wafers in mass production (Cailian Press)"
+  issued: "2025-04-28"
+  url: "https://www.cls.cn/detail/2358012"
+  verified: "Read by research lane"
+  status: S
+
+- id: tdg-ir-2026
+  type: disclosure
+  title: "TDG Holding (600330) investor relations activity record"
+  issued: "2026-06-03"
+  url: "https://pdf.dfcfw.com/pdf/H22_AN202606041823249221_1.pdf"
+  verified: "Read (R09 S5)"
+  status: V
+
+- id: sina-2024
+  type: trade-press
+  title: "Yicai report on Anpai Optoelectronics and Jiufengshan Laboratory (via Sina)"
+  issued: "2024-08-27"
+  url: "https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html"
+  verified: "Read by research lane"
+  status: S
+
+- id: c114-2025
+  type: trade-press
+  title: "CHIPX first 6-inch TFLN wafer (C114)"
+  issued: "2025-06-09"
+  url: "https://m.c114.com.cn/w5285-1290717.html"
+  verified: "Read by research lane"
+  status: S
+
+- id: gbt46611
+  type: standard
+  title: "GB/T 46611-2025 Lithium niobate single-crystal thin film for electro-optic modulator"
+  issued: "2025-10-31"
+  url: "https://std.samr.gov.cn/gb/search/gbDetailed?id=42BA7D06A44DE936E06397BE0A0ACDC9"
+  verified: "Detail page read by research lane"
+  status: V
+
+- id: einnews-2026
+  type: press-release
+  title: "Genuine Optics unveils 3.2T OSFP module with 450 Gb/s lanes at ECOC 2026"
+  issued: "2026-09"
+  url: "https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026"
+  verified: "Search snippet only (403)"
+  status: S
+
+- id: lightwave-2022
+  type: trade-press
+  title: "Eoptolink demos 800G OSFP DR8 optical transceiver featuring thin-film lithium niobate modulator"
+  container: "Lightwave"
+  issued: "2022"
+  url: "https://www.lightwaveonline.com/optical-tech/transmission/article/14235578/eoptolink-demos-800g-osfp-dr8-optical-transceiver-featuring-thin-film-lithium-niobate-modulator"
+  verified: "Search snippet only (R09 S40)"
+  status: S
+
+- id: bw-2023
+  type: press-release
+  title: "HyperLight announces thin-film lithium niobate transmitter chips supporting energy-efficient 1.6 Tbps transceiver modules"
+  issued: "2023-03-07"
+  url: "https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules"
+  verified: "Search snippet only (R09 S22)"
+  status: S
+
+- id: lightwave-2021
+  type: trade-press
+  title: "HyperLight item ('a startup founded out of Harvard in 2018')"
+  container: "Lightwave"
+  issued: "2021-09-13"
+  verified: "Per R07; URL not recorded"
+  status: S
+
+- id: opticsorg-2026
+  type: trade-press
+  title: "HyperLight-UMC-Wavetek report with CEO quote"
+  container: "optics.org"
+  issued: "2026-03-12"
+  verified: "Per R07 and research lane; URL not recorded"
+  status: S
+
+- id: picmag-2025
+  type: trade-press
+  title: "EU project announces Europe's first commercial supplier of LNOI wafers"
+  container: "PIC Magazine"
+  issued: "2025-06-23"
+  url: "https://picmagazine.net/article/121970/EU_project_announces_Europe%E2%80%99s_first_commercial_supplier_of_LNOI_wafers"
+  verified: "Read (R09 S12)"
+  status: S
+
+- id: pmc8617696
+  type: review
+  title: "2021 review cited by R07 for the Reisman liquidus maximum (PMC8617696)"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8617696/"
+  verified: "Per R07; not re-read"
+  status: S
+
+- id: us6540827
+  type: patent
+  authors: [M. Levy, R. M. Osgood, A. Radojevic]
+  title: "US 6540827 B1 (crystal ion slicing of single-crystal films)"
+  issued: "1998-02-17 (priority)"
+  url: "https://patents.google.com/patent/US6540827B1/en"
+  verified: "Read by research lane"
+  status: V
+
+- id: R02
+  type: research-note
+  title: "R02: Author's blog corpus on LN (literature notes 2018; OFS reading stream 2024-2026)"
+  url: "research/R02-blog-corpus.md"
+  status: P
+
+- id: R04
+  type: research-note
+  title: "R04: LN/TFLN industry and technology trends from the author's atlases (incl. OFC 2026 corpus)"
+  url: "research/R04-atlas-industry-trends.md"
+  status: P
+
+- id: R07
+  type: research-note
+  title: "R07: History of lithium niobate, 1928 to 2026"
+  url: "research/R07-history.md"
+  status: P
+
+- id: R09
+  type: research-note
+  title: "R09: LN industry, market, and supply chain"
+  url: "research/R09-industry-market.md"
+  status: P
+
+- id: exail-2022
+  type: press-release
+  title: "ECA Group and iXblue join forces and become Exail"
+  issued: "2022-10-18"
+  url: "https://www.exail.com/eca-group-and-ixblue-join-forces-and-become-exail/"
+  verified: "Search summary only (research lane, 2026-10-25)"
+  status: S
+
+- id: bjnews-2020
+  type: trade-press
+  title: "Obituary report for Feng Duan (Beijing News, citing Nanjing University)"
+  issued: "2020-12"
+  url: "https://www.bjnews.com.cn/detail/160810570415610.html"
+  verified: "Read by research lane: born 1923-07-23 Suzhou, died 2020-12-15 Nanjing"
+  status: S
+
+- id: ifeng-2026
+  type: trade-press
+  title: "Dazhong News report on NANOLN milestones (via ifeng.com)"
+  issued: "2026-07-20"
+  url: "https://news.ifeng.com/c/8uujt7GTuWu"
+  verified: "Read by research lane; company claims (2014 films, 2015 'world first' 3-inch, 2020 4-inch, 2023 8-inch)"
+  status: S
+
+- id: kuzminov-catalog
+  type: catalog
+  authors: [Yu. S. Kuz'minov, A. M. Prokhorov]
+  title: "Kuz'minov monographs: Niobat i tantalat litiya (Nauka 1975); Elektroopticheskii i nelineinoopticheskii kristall niobata litiya (Nauka 1987); Physics and Chemistry of Crystalline Lithium Niobate (Adam Hilger 1990, with Prokhorov); Lithium Niobate Crystals (Cambridge International Science Publishing 1999)"
+  verified: "Catalog records only (Open Library; NIMS library), research lane 2026-10-25"
+  status: S
+
+refs:
+- id: rose1844
+  type: journal-article
+  authors:
+  - Heinrich Rose
+  title: Ueber die Zusammensetzung der Tantalite und ein im Tantalite von Baiern enthaltenes neues Metall
+  container: Annalen der Physik
+  volume: '139'
+  issue: '10'
+  pages: 317-341
+  issued: 1844-01
+  doi: 10.1002/andp.18441391006
+  url: https://doi.org/10.1002/andp.18441391006
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: rose1846
+  type: journal-article
+  authors:
+  - Rose
+  title: Ueber ein zweites im Tantalit (Columbit) von Baiern enthaltenes neues Metall
+  container: Annalen der Physik
+  volume: '145'
+  issue: '9'
+  pages: 115-141
+  issued: 1846-01
+  doi: 10.1002/andp.18461450911
+  url: https://doi.org/10.1002/andp.18461450911
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: hatchett1802
+  type: journal-article
+  authors: []
+  title: III. An analysis of a mineral substance from North America, containing a metal hitherto unknown
+  container: Philosophical Transactions of the Royal Society of London
+  volume: '92'
+  pages: 49-66
+  issued: '1802-12-31'
+  doi: 10.1098/rstl.1802.0005
+  url: https://doi.org/10.1098/rstl.1802.0005
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wollaston1809
+  type: journal-article
+  authors: []
+  title: XV. On the identity of Columbium and Tantalum
+  container: Philosophical Transactions of the Royal Society of London
+  volume: '99'
+  pages: 246-252
+  issued: '1809-12-31'
+  doi: 10.1098/rstl.1809.0017
+  url: https://doi.org/10.1098/rstl.1809.0017
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: weeks1932
+  type: journal-article
+  authors:
+  - Mary Elvira Weeks
+  title: 'The discovery of the elements. IX. Three alkali metals: Potassium, sodium, and lithium'
+  container: Journal of Chemical Education
+  volume: '9'
+  issue: '6'
+  pages: '1035'
+  issued: 1932-06
+  doi: 10.1021/ed009p1035
+  url: https://doi.org/10.1021/ed009p1035
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: czochralski1918
+  type: journal-article
+  authors:
+  - J. Czochralski
+  title: Ein neues Verfahren zur Messung der Kristallisationsgeschwindigkeit der Metalle
+  container: "Zeitschrift f\xFCr Physikalische Chemie"
+  volume: 92U
+  issue: '1'
+  pages: 219-221
+  issued: '1918-11-01'
+  doi: 10.1515/zpch-1918-9212
+  url: https://doi.org/10.1515/zpch-1918-9212
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: matthias1949
+  type: journal-article
+  authors:
+  - B. T. Matthias
+  - J. P. Remeika
+  title: Ferroelectricity in the Ilmenite Structure
+  container: Physical Review
+  volume: '76'
+  issue: '12'
+  pages: 1886-1887
+  issued: '1949-12-15'
+  doi: 10.1103/physrev.76.1886.2
+  url: https://doi.org/10.1103/physrev.76.1886.2
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: reisman1958
+  type: journal-article
+  authors:
+  - Arnold Reisman
+  - Frederic Holtzberg
+  title: Heterogeneous Equilibria in the Systems Li2O-, Ag2O-Nb2O5 and Oxide-Models
+  container: Journal of the American Chemical Society
+  volume: '80'
+  issue: '24'
+  pages: 6503-6507
+  issued: 1958-12
+  doi: 10.1021/ja01557a010
+  url: https://doi.org/10.1021/ja01557a010
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: armstrong1962
+  type: journal-article
+  authors:
+  - J. A. Armstrong
+  - N. Bloembergen
+  - J. Ducuing
+  - P. S. Pershan
+  title: Interactions between Light Waves in a Nonlinear Dielectric
+  container: Physical Review
+  volume: '127'
+  issue: '6'
+  pages: 1918-1939
+  issued: '1962-09-15'
+  doi: 10.1103/physrev.127.1918
+  url: https://doi.org/10.1103/physrev.127.1918
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: peterson1964
+  type: journal-article
+  authors:
+  - G. E. Peterson
+  - A. A. Ballman
+  - P. V. Lenzo
+  - P. M. Bridenbaugh
+  title: ELECTRO-OPTIC PROPERTIES OF LiNbO3
+  container: Applied Physics Letters
+  volume: '5'
+  issue: '3'
+  pages: 62-64
+  issued: '1964-08-01'
+  doi: 10.1063/1.1754053
+  url: https://doi.org/10.1063/1.1754053
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: boyd1964
+  type: journal-article
+  authors:
+  - G. D. Boyd
+  - Robert C. Miller
+  - K. Nassau
+  - W. L. Bond
+  - A. Savage
+  title: 'LiNbO3: AN EFFICIENT PHASE MATCHABLE NONLINEAR OPTICAL MATERIAL'
+  container: Applied Physics Letters
+  volume: '5'
+  issue: '11'
+  pages: 234-236
+  issued: '1964-12-01'
+  doi: 10.1063/1.1723604
+  url: https://doi.org/10.1063/1.1723604
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: ballman1965
+  type: journal-article
+  authors:
+  - ALBERT A. BALLMAN
+  title: Growth of Piezoelectric and Ferroelectric Materials by the CzochraIski Technique
+  container: Journal of the American Ceramic Society
+  volume: '48'
+  issue: '2'
+  pages: 112-113
+  issued: 1965-02
+  doi: 10.1111/j.1151-2916.1965.tb11814.x
+  url: https://doi.org/10.1111/j.1151-2916.1965.tb11814.x
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: miller1965
+  type: journal-article
+  authors:
+  - Robert C. Miller
+  - G. D. Boyd
+  - A. Savage
+  title: NONLINEAR OPTICAL INTERACTIONS IN LiNbO3 WITHOUT DOUBLE REFRACTION
+  container: Applied Physics Letters
+  volume: '6'
+  issue: '4'
+  pages: 77-79
+  issued: '1965-02-15'
+  doi: 10.1063/1.1754174
+  url: https://doi.org/10.1063/1.1754174
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: nassau1965
+  type: journal-article
+  authors:
+  - K. Nassau
+  - H. J. Levinstein
+  - G. M. Loiacono
+  title: THE DOMAIN STRUCTURE AND ETCHING OF FERROELECTRIC LITHIUM NIOBATE
+  container: Applied Physics Letters
+  volume: '6'
+  issue: '11'
+  pages: 228-229
+  issued: '1965-06-01'
+  doi: 10.1063/1.1754147
+  url: https://doi.org/10.1063/1.1754147
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: giordmaine1965
+  type: journal-article
+  authors:
+  - J. A. Giordmaine
+  - Robert C. Miller
+  title: Tunable Coherent Parametric Oscillation in LiNbO3 at Optical Frequencies
+  container: Physical Review Letters
+  volume: '14'
+  issue: '24'
+  pages: 973-976
+  issued: '1965-06-14'
+  doi: 10.1103/physrevlett.14.973
+  url: https://doi.org/10.1103/physrevlett.14.973
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: spencer1965
+  type: journal-article
+  authors:
+  - E. G. Spencer
+  - P. V. Lenzo
+  - K. Nassau
+  title: ELASTIC WAVE PROPAGATION IN LITHIUM NIOBATE
+  container: Applied Physics Letters
+  volume: '7'
+  issue: '3'
+  pages: 67-69
+  issued: '1965-08-01'
+  doi: 10.1063/1.1754303
+  url: https://doi.org/10.1063/1.1754303
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: white1965
+  type: journal-article
+  authors:
+  - R. M. White
+  - F. W. Voltmer
+  title: DIRECT PIEZOELECTRIC COUPLING TO SURFACE ELASTIC WAVES
+  container: Applied Physics Letters
+  volume: '7'
+  issue: '12'
+  pages: 314-316
+  issued: '1965-12-15'
+  doi: 10.1063/1.1754276
+  url: https://doi.org/10.1063/1.1754276
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kaminow1966
+  type: journal-article
+  authors:
+  - I.P. Kaminow
+  - E.H. Turner
+  title: Electrooptic light modulators
+  container: Proceedings of the IEEE
+  volume: '54'
+  issue: '10'
+  pages: 1374-1390
+  issued: '1966'
+  doi: 10.1109/proc.1966.5124
+  url: https://doi.org/10.1109/proc.1966.5124
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: lenzo1966
+  type: journal-article
+  authors:
+  - P. V. Lenzo
+  - E. G. Spencer
+  - K. Nassau
+  title: Electro-Optic Coefficients in Single-Domain Ferroelectric Lithium Niobate
+  container: Journal of the Optical Society of America
+  volume: '56'
+  issue: '5'
+  pages: '633'
+  issued: '1966-05-01'
+  doi: 10.1364/josa.56.000633
+  url: https://doi.org/10.1364/josa.56.000633
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: nassau1966a
+  type: journal-article
+  authors:
+  - K. Nassau
+  - H.J. Levinstein
+  - G.M. Loiacono
+  title: Ferroelectric lithium niobate. 1. Growth, domain structure, dislocations and etching
+  container: Journal of Physics and Chemistry of Solids
+  volume: '27'
+  issue: 6-7
+  pages: 983-988
+  issued: 1966-06
+  doi: 10.1016/0022-3697(66)90070-9
+  url: https://doi.org/10.1016/0022-3697(66)90070-9
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: nassau1966b
+  type: journal-article
+  authors:
+  - K. Nassau
+  - H.J. Levinstein
+  - G.M. Loiacono
+  title: Ferroelectric lithium niobate. 2. Preparation of single domain crystals
+  container: Journal of Physics and Chemistry of Solids
+  volume: '27'
+  issue: 6-7
+  pages: 989-996
+  issued: 1966-06
+  doi: 10.1016/0022-3697(66)90071-0
+  url: https://doi.org/10.1016/0022-3697(66)90071-0
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: abrahams1966a
+  type: journal-article
+  authors:
+  - S.C. Abrahams
+  - J.M. Reddy
+  - J.L. Bernstein
+  title: "Ferroelectric lithium niobate. 3. Single crystal X-ray diffraction study at 24\xB0C"
+  container: Journal of Physics and Chemistry of Solids
+  volume: '27'
+  issue: 6-7
+  pages: 997-1012
+  issued: 1966-06
+  doi: 10.1016/0022-3697(66)90072-2
+  url: https://doi.org/10.1016/0022-3697(66)90072-2
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: abrahams1966b
+  type: journal-article
+  authors:
+  - S.C. Abrahams
+  - W.C. Hamilton
+  - J.M. Reddy
+  title: "Ferroelectric lithium niobate. 4. Single crystal neutron diffraction study at 24\xB0C"
+  container: Journal of Physics and Chemistry of Solids
+  volume: '27'
+  issue: 6-7
+  pages: 1013-1018
+  issued: 1966-06
+  doi: 10.1016/0022-3697(66)90073-4
+  url: https://doi.org/10.1016/0022-3697(66)90073-4
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: abrahams1966c
+  type: journal-article
+  authors:
+  - S.C. Abrahams
+  - H.J. Levinstein
+  - J.M. Reddy
+  title: "Ferroelectric lithium niobate. 5. Polycrystal X-ray diffraction study between 24\xB0 and 1200\xB0C"
+  container: Journal of Physics and Chemistry of Solids
+  volume: '27'
+  issue: 6-7
+  pages: 1019-1026
+  issued: 1966-06
+  doi: 10.1016/0022-3697(66)90074-6
+  url: https://doi.org/10.1016/0022-3697(66)90074-6
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: smolenskii1966
+  type: journal-article
+  authors:
+  - G. A. Smolenskii
+  - N. N. Krainik
+  - N. P. Khuchua
+  - V. V. Zhdanova
+  - I. E. Mylnikova
+  title: The Curie Temperature of LiNbO3
+  container: physica status solidi (b)
+  volume: '13'
+  issue: '2'
+  pages: 309-314
+  issued: 1966-01
+  doi: 10.1002/pssb.19660130202
+  url: https://doi.org/10.1002/pssb.19660130202
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: ashkin1966
+  type: journal-article
+  authors:
+  - A. Ashkin
+  - G. D. Boyd
+  - J. M. Dziedzic
+  - R. G. Smith
+  - A. A. Ballman
+  - J. J. Levinstein
+  - K. Nassau
+  title: OPTICALLY-INDUCED REFRACTIVE INDEX INHOMOGENEITIES IN LiNbO3 AND LiTaO3
+  container: Applied Physics Letters
+  volume: '9'
+  issue: '1'
+  pages: 72-74
+  issued: '1966-07-01'
+  doi: 10.1063/1.1754607
+  url: https://doi.org/10.1063/1.1754607
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: levinstein1967
+  type: journal-article
+  authors:
+  - H. J. Levinstein
+  - A. A. Ballman
+  - R. T. Denton
+  - A. Ashkin
+  - J. M. Dziedzic
+  title: Reduction of the Susceptibility to Optically Induced Index Inhomogeneities in LiTaO3 and LiNbO3
+  container: Journal of Applied Physics
+  volume: '38'
+  issue: '8'
+  pages: 3101-3102
+  issued: '1967-07-01'
+  doi: 10.1063/1.1710070
+  url: https://doi.org/10.1063/1.1710070
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: lerner1968
+  type: journal-article
+  authors:
+  - P. Lerner
+  - C. Legras
+  - J.P. Dumas
+  title: "Stoechiom\xE9trie des monocristaux de m\xE9taniobate de lithium"
+  container: Journal of Crystal Growth
+  volume: 3-4
+  pages: 231-235
+  issued: 1968-01
+  doi: 10.1016/0022-0248(68)90139-5
+  url: https://doi.org/10.1016/0022-0248(68)90139-5
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: chen1968
+  type: journal-article
+  authors:
+  - F. S. Chen
+  - J. T. LaMacchia
+  - D. B. Fraser
+  title: HOLOGRAPHIC STORAGE IN LITHIUM NIOBATE
+  container: Applied Physics Letters
+  volume: '13'
+  issue: '7'
+  pages: 223-225
+  issued: '1968-10-01'
+  doi: 10.1063/1.1652580
+  url: https://doi.org/10.1063/1.1652580
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: chen1969
+  type: journal-article
+  authors:
+  - F. S. Chen
+  title: Optically Induced Change of Refractive Indices in LiNbO3 and LiTaO3
+  container: Journal of Applied Physics
+  volume: '40'
+  issue: '8'
+  pages: 3389-3396
+  issued: '1969-07-01'
+  doi: 10.1063/1.1658195
+  url: https://doi.org/10.1063/1.1658195
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: carruthers1971
+  type: journal-article
+  authors:
+  - J. R. Carruthers
+  - G. E. Peterson
+  - M. Grasso
+  - P. M. Bridenbaugh
+  title: Nonstoichiometry and Crystal Growth of Lithium Niobate
+  container: Journal of Applied Physics
+  volume: '42'
+  issue: '5'
+  pages: 1846-1851
+  issued: '1971-04-01'
+  doi: 10.1063/1.1660455
+  url: https://doi.org/10.1063/1.1660455
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: amodei1971b
+  type: journal-article
+  authors:
+  - Juan J. Amodei
+  - David L. Staebler
+  title: HOLOGRAPHIC PATTERN FIXING IN ELECTRO-OPTIC CRYSTALS
+  container: Applied Physics Letters
+  volume: '18'
+  issue: '12'
+  pages: 540-542
+  issued: '1971-06-15'
+  doi: 10.1063/1.1653530
+  url: https://doi.org/10.1063/1.1653530
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: peterson1971
+  type: journal-article
+  authors:
+  - G. E. Peterson
+  - A. M. Glass
+  - T. J. Negran
+  title: Control of the Susceptibility of Lithium Niobate to Laser-Induced Refractive Index Changes
+  container: Applied Physics Letters
+  volume: '19'
+  issue: '5'
+  pages: 130-132
+  issued: '1971-09-01'
+  doi: 10.1063/1.1653854
+  url: https://doi.org/10.1063/1.1653854
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: amodei1972
+  type: journal-article
+  authors:
+  - J. J. Amodei
+  - W. Phillips
+  - D. L. Staebler
+  title: Improved Electrooptic Materials and Fixing Techniques for Holographic Recording
+  container: Applied Optics
+  volume: '11'
+  issue: '2'
+  pages: '390'
+  issued: '1972-02-01'
+  doi: 10.1364/ao.11.000390
+  url: https://doi.org/10.1364/ao.11.000390
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kaminow1973
+  type: journal-article
+  authors:
+  - I.P. Kaminow
+  - J.R. Carruthers
+  - E.H. Turner
+  - L.W. Stulz
+  title: Thin-film LiNbO3 electro-optic light modulator
+  container: Applied Physics Letters
+  volume: '22'
+  issue: '10'
+  pages: 540-542
+  issued: '1973-05-15'
+  doi: 10.1063/1.1654500
+  url: https://doi.org/10.1063/1.1654500
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: carruthers1974
+  type: journal-article
+  authors:
+  - J. R. Carruthers
+  - I. P. Kaminow
+  - L. W. Stulz
+  title: Diffusion Kinetics and Optical Waveguiding Properties of Outdiffused Layers in Lithium Niobate and Lithium Tantalate
+  container: Applied Optics
+  volume: '13'
+  issue: '10'
+  pages: '2333'
+  issued: '1974-10-01'
+  doi: 10.1364/ao.13.002333
+  url: https://doi.org/10.1364/ao.13.002333
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: glass1974
+  type: journal-article
+  authors:
+  - A. M. Glass
+  - D. von der Linde
+  - T. J. Negran
+  title: High-voltage bulk photovoltaic effect and the photorefractive process in LiNbO3
+  container: Applied Physics Letters
+  volume: '25'
+  issue: '4'
+  pages: 233-235
+  issued: '1974-08-15'
+  doi: 10.1063/1.1655453
+  url: https://doi.org/10.1063/1.1655453
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kurz1974
+  type: journal-article
+  authors:
+  - H. Kurz
+  title: Wavelength dependence of the photorefractive process in doped linbo3
+  container: Ferroelectrics
+  volume: '8'
+  issue: '1'
+  pages: 437-439
+  issued: 1974-01
+  doi: 10.1080/00150197408234119
+  url: https://doi.org/10.1080/00150197408234119
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: schmidt1974
+  type: journal-article
+  authors:
+  - R. V. Schmidt
+  - I. P. Kaminow
+  title: Metal-diffused optical waveguides in LiNbO3
+  container: Applied Physics Letters
+  volume: '25'
+  issue: '8'
+  pages: 458-460
+  issued: '1974-10-15'
+  doi: 10.1063/1.1655547
+  url: https://doi.org/10.1063/1.1655547
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: tien1974
+  type: journal-article
+  authors:
+  - P. K. Tien
+  - S. Riva-Sanseverino
+  - A. A. Ballman
+  title: Light beam scanning and deflection in epitaxial LiNbO3 electro-optic waveguides
+  container: Applied Physics Letters
+  volume: '25'
+  issue: '10'
+  pages: 563-565
+  issued: '1974-11-15'
+  doi: 10.1063/1.1655311
+  url: https://doi.org/10.1063/1.1655311
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: yamanouchi1972
+  type: journal-article
+  authors:
+  - Kazuhiko Yamanouchi
+  - Kimio Shibayama
+  title: Propagation and Amplification of Rayleigh Waves and Piezoelectric Leaky Surface Waves in LiNbO3
+  container: Journal of Applied Physics
+  volume: '43'
+  issue: '3'
+  pages: 856-862
+  issued: '1972-03-01'
+  doi: 10.1063/1.1661294
+  url: https://doi.org/10.1063/1.1661294
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: shibayama1976
+  type: journal-article
+  authors:
+  - K. Shibayama
+  - K. Yamanouchi
+  - H. Sato
+  - T. Meguro
+  title: Optimum cut for rotated Y-cut LiNbO3crystal used as the substrate of acoustic-surface-wave filters
+  container: Proceedings of the IEEE
+  volume: '64'
+  issue: '5'
+  pages: 595-597
+  issued: '1976'
+  doi: 10.1109/proc.1976.10181
+  url: https://doi.org/10.1109/proc.1976.10181
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kukhtarev1977
+  type: journal-article
+  authors:
+  - N. Kukhtarev
+  - V. Markov
+  - S. Odulov
+  title: Transient energy transfer during hologram formation in LiNbO3 in external electric field
+  container: Optics Communications
+  volume: '23'
+  issue: '3'
+  pages: 338-343
+  issued: 1977-12
+  doi: 10.1016/0030-4018(77)90376-5
+  url: https://doi.org/10.1016/0030-4018(77)90376-5
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kukhtarev1978a
+  type: journal-article
+  authors:
+  - N. V. Kukhtarev
+  - V. B. Markov
+  - S. G. Odulov
+  - M. S. Soskin
+  - V. L. Vinetskii
+  title: Holographic storage in electrooptic crystals. i. steady state
+  container: Ferroelectrics
+  volume: '22'
+  issue: '1'
+  pages: 949-960
+  issued: 1978-01
+  doi: 10.1080/00150197908239450
+  url: https://doi.org/10.1080/00150197908239450
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kukhtarev1978b
+  type: journal-article
+  authors:
+  - N. V. Kukhtarev
+  - V. B. Markov
+  - S. G. Odulov
+  - M. S. Soskin
+  - V. L. Vinetskii
+  title: "holographic storage in electrooptic crystals. II. beam coupling\u2014light amplification"
+  container: Ferroelectrics
+  volume: '22'
+  issue: '1'
+  pages: 961-964
+  issued: 1978-01
+  doi: 10.1080/00150197908239451
+  url: https://doi.org/10.1080/00150197908239451
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: fridkin1977
+  type: journal-article
+  authors:
+  - V. M. Fridkin
+  title: The possible mechanism for the bulk photovoltaic effect and optical damage in ferroelectrics
+  container: Applied Physics
+  volume: '13'
+  issue: '4'
+  pages: 357-359
+  issued: 1977-08
+  doi: 10.1007/bf00882610
+  url: https://doi.org/10.1007/bf00882610
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: belinicher1980
+  type: journal-article
+  authors:
+  - V I Belinicher
+  - B I Sturman
+  title: The photogalvanic effect in media lacking a center of symmetry
+  container: Soviet Physics Uspekhi
+  volume: '23'
+  issue: '3'
+  pages: 199-223
+  issued: '1980-03-31'
+  doi: 10.1070/pu1980v023n03abeh004703
+  url: https://doi.org/10.1070/pu1980v023n03abeh004703
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: iqec1980
+  type: journal-article
+  authors: []
+  title: Eleventh International Quantum Electronics Conference
+  container: Journal of the Optical Society of America
+  volume: '70'
+  issue: '6'
+  pages: '577'
+  issued: '1980-06-01'
+  doi: 10.1364/josa.70.000577
+  url: https://doi.org/10.1364/josa.70.000577
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: feng1980
+  type: journal-article
+  authors:
+  - Duan Feng
+  - Nai-Ben Ming
+  - Jing-Fen Hong
+  - Yong-Shun Yang
+  - Jin-Song Zhu
+  - Zhen Yang
+  - Ye-Ning Wang
+  title: Enhancement of second-harmonic generation in LiNbO3 crystals with periodic laminar ferroelectric domains
+  container: Applied Physics Letters
+  volume: '37'
+  issue: '7'
+  pages: 607-609
+  issued: '1980-10-01'
+  doi: 10.1063/1.92035
+  url: https://doi.org/10.1063/1.92035
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: zhong1983
+  type: journal-article
+  authors:
+  - Zhong Ji-guo
+  - Xu Guan-feng
+  - Wang Ting-fu
+  - Zhang Chun-yu
+  - "L\xFC Yu-cai"
+  - "L\xFC Chang-qing"
+  - Chen Jia-rong
+  - "\u897F\u5357\u6280\u672F\u7269\u7406\u7814\u7A76\u6240,\u6210\u90FD"
+  title: THE GROWTH AND THE FREQUENCY DOUBLING CHARACTERS OF HEAVILY DOPED Mg:LiNbO3 CRYSTALS
+  container: Acta Physica Sinica
+  volume: '32'
+  issue: '6'
+  pages: '795'
+  issued: '1983'
+  doi: 10.7498/aps.32.795
+  url: https://doi.org/10.7498/aps.32.795
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: xue1983
+  type: journal-article
+  authors:
+  - XUE YING-HUA
+  - MIN NAI-BEN
+  - ZHU JIN-SONG
+  - FENG DUAN
+  - "\u5357\u4EAC\u5927\u5B66\u7269\u7406\u7CFB"
+  title: THE SECOND HARMONIC GENERATION IN LiNbO3 CRYSTALS WITH PERIODIC LAMINAR FERROELECTRIC DOMAINS
+  container: Acta Physica Sinica
+  volume: '32'
+  issue: '12'
+  pages: '1515'
+  issued: '1983'
+  doi: 10.7498/aps.32.1515
+  url: https://doi.org/10.7498/aps.32.1515
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: alferness1982
+  type: journal-article
+  authors:
+  - R.C. Alferness
+  title: Waveguide Electrooptic Modulators
+  container: IEEE Transactions on Microwave Theory and Techniques
+  volume: '30'
+  issue: '8'
+  pages: 1121-1137
+  issued: 1982-08
+  doi: 10.1109/tmtt.1982.1131213
+  url: https://doi.org/10.1109/tmtt.1982.1131213
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: jackel1982
+  type: journal-article
+  authors:
+  - J. L. Jackel
+  - C. E. Rice
+  - J. J. Veselka
+  title: Proton exchange for high-index waveguides in LiNbO3
+  container: Applied Physics Letters
+  volume: '41'
+  issue: '7'
+  pages: 607-608
+  issued: '1982-10-01'
+  doi: 10.1063/1.93615
+  url: https://doi.org/10.1063/1.93615
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: bryan1984
+  type: journal-article
+  authors:
+  - D. A. Bryan
+  - Robert Gerson
+  - H. E. Tomaschke
+  title: Increased optical damage resistance in lithium niobate
+  container: Applied Physics Letters
+  volume: '44'
+  issue: '9'
+  pages: 847-849
+  issued: '1984-05-01'
+  doi: 10.1063/1.94946
+  url: https://doi.org/10.1063/1.94946
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: weis1985
+  type: journal-article
+  authors:
+  - R. S. Weis
+  - T. K. Gaylord
+  title: 'Lithium niobate: Summary of physical properties and crystal structure'
+  container: Applied Physics A Solids and Surfaces
+  volume: '37'
+  issue: '4'
+  pages: 191-203
+  issued: 1985-08
+  doi: 10.1007/bf00614817
+  url: https://doi.org/10.1007/bf00614817
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: becker1988
+  type: journal-article
+  authors:
+  - R.A. Becker
+  title: Optical-Guided-Wave Modulators
+  container: MRS Bulletin
+  volume: '13'
+  issue: '8'
+  pages: 21-23
+  issued: 1988-08
+  doi: 10.1557/s0883769400064630
+  url: https://doi.org/10.1557/s0883769400064630
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: lim1989a
+  type: journal-article
+  authors:
+  - E.J. Lim
+  - M.M. Fejer
+  - R.L. Byer
+  title: Second-harmonic generation of green light in periodically poled planar lithium niobate waveguide
+  container: Electronics Letters
+  volume: '25'
+  issue: '3'
+  pages: 174-174
+  issued: '1989-02-02'
+  doi: 10.1049/el:19890127
+  url: https://doi.org/10.1049/el:19890127
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: lim1989b
+  type: journal-article
+  authors:
+  - E.J. Lim
+  - M.M. Fejer
+  - R.L. Byer
+  - W.J. Kozlovsky
+  title: Blue light generation by frequency doubling in periodically poled lithium niobate channel waveguide
+  container: Electronics Letters
+  volume: '25'
+  issue: '11'
+  pages: 731-732
+  issued: '1989-05-25'
+  doi: 10.1049/el:19890495
+  url: https://doi.org/10.1049/el:19890495
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: magel1990
+  type: journal-article
+  authors:
+  - G. A. Magel
+  - M. M. Fejer
+  - R. L. Byer
+  title: Quasi-phase-matched second-harmonic generation of blue light in periodically poled LiNbO3
+  container: Applied Physics Letters
+  volume: '56'
+  issue: '2'
+  pages: 108-110
+  issued: '1990-01-08'
+  doi: 10.1063/1.103276
+  url: https://doi.org/10.1063/1.103276
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: fujiwara1989a
+  type: journal-article
+  authors:
+  - T. Fujiwara
+  - S. Sato
+  - H. Mori
+  title: Wavelength dependence of photorefractive effect in Ti-indiffused LiNbO3 waveguides
+  container: Applied Physics Letters
+  volume: '54'
+  issue: '11'
+  pages: 975-977
+  issued: '1989-03-13'
+  doi: 10.1063/1.101421
+  url: https://doi.org/10.1063/1.101421
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: volk1990
+  type: journal-article
+  authors:
+  - T. R. Volk
+  - V. I. Pryalkin
+  - N. M. Rubinina
+  title: Optical-damage-resistant LiNbO_3:Zn crystal
+  container: Optics Letters
+  volume: '15'
+  issue: '18'
+  pages: '996'
+  issued: '1990-09-15'
+  doi: 10.1364/ol.15.000996
+  url: https://doi.org/10.1364/ol.15.000996
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: brinkmann1991
+  type: journal-article
+  authors:
+  - R. Brinkmann
+  - W. Sohler
+  - H. Suche
+  title: Continuous-wave erbium-diffused LiNbO 3 waveguide laser
+  container: Electronics Letters
+  volume: '27'
+  issue: '5'
+  pages: 415-417
+  issued: '1991-02-28'
+  doi: 10.1049/el:19910263
+  url: https://doi.org/10.1049/el:19910263
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: seino1992
+  type: proceedings-article
+  authors:
+  - M. Seino
+  - T. Nakazawa
+  - Y. Kubota
+  - M. Doi
+  - T. Yamane
+  - H. Hakogi
+  title: A low DC-drift Ti:LiNbO3 modulator assured over 15 years
+  container: Digest of Conference on Optical Fiber Communication
+  pages: PD3
+  issued: '1992'
+  doi: 10.1364/ofc.1992.pd3
+  url: https://doi.org/10.1364/ofc.1992.pd3
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kitamura1992
+  type: journal-article
+  authors:
+  - K. Kitamura
+  - J.K. Yamamoto
+  - N. Iyi
+  - S. Kirnura
+  - T. Hayashi
+  title: Stoichiometric LiNbO3 single crystal growth by double crucible Czochralski method using automatic powder supply system
+  container: Journal of Crystal Growth
+  volume: '116'
+  issue: 3-4
+  pages: 327-332
+  issued: 1992-02
+  doi: 10.1016/0022-0248(92)90640-5
+  url: https://doi.org/10.1016/0022-0248(92)90640-5
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: fejer1992
+  type: journal-article
+  authors:
+  - M.M. Fejer
+  - G.A. Magel
+  - D.H. Jundt
+  - R.L. Byer
+  title: 'Quasi-phase-matched second harmonic generation: tuning and tolerances'
+  container: IEEE Journal of Quantum Electronics
+  volume: '28'
+  issue: '11'
+  pages: 2631-2654
+  issued: '1992'
+  doi: 10.1109/3.161322
+  url: https://doi.org/10.1109/3.161322
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: yamada1993
+  type: journal-article
+  authors:
+  - M. Yamada
+  - N. Nada
+  - M. Saitoh
+  - K. Watanabe
+  title: First-order quasi-phase matched LiNbO3 waveguide periodically poled by applying an external field for efficient blue second-harmonic generation
+  container: Applied Physics Letters
+  volume: '62'
+  issue: '5'
+  pages: 435-436
+  issued: '1993-02-01'
+  doi: 10.1063/1.108925
+  url: https://doi.org/10.1063/1.108925
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: nagata1993
+  type: journal-article
+  authors:
+  - Hirotoshi Nagata
+  - Kazumasa Kiuchi
+  title: Temperature dependence of dc drift of Ti:LiNbO3 optical modulators with sputter deposited SiO2 buffer layer
+  container: Journal of Applied Physics
+  volume: '73'
+  issue: '9'
+  pages: 4162-4164
+  issued: '1993-05-01'
+  doi: 10.1063/1.352849
+  url: https://doi.org/10.1063/1.352849
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: mok1993
+  type: journal-article
+  authors:
+  - Fai H. Mok
+  title: Angle-multiplexed storage of 5000 holograms in lithium niobate
+  container: Optics Letters
+  volume: '18'
+  issue: '11'
+  pages: '915'
+  issued: '1993-06-01'
+  doi: 10.1364/ol.18.000915
+  url: https://doi.org/10.1364/ol.18.000915
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: volk1994
+  type: journal-article
+  authors:
+  - T. Volk
+  - N. Rubinina
+  - "M. W\xF6hlecke"
+  title: Optical-damage-resistant impurities in lithium niobate
+  container: Journal of the Optical Society of America B
+  volume: '11'
+  issue: '9'
+  pages: '1681'
+  issued: '1994-09-01'
+  doi: 10.1364/josab.11.001681
+  url: https://doi.org/10.1364/josab.11.001681
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: myers1995a
+  type: journal-article
+  authors:
+  - L. E. Myers
+  - W. R. Bosenberg
+  - G. D. Miller
+  - R. C. Eckardt
+  - M. M. Fejer
+  - R. L. Byer
+  title: "Quasi-phase-matched 1064-\u03BCm-pumped optical parametric oscillator in bulk periodically poled LiNbO_3"
+  container: Optics Letters
+  volume: '20'
+  issue: '1'
+  pages: '52'
+  issued: '1995-01-01'
+  doi: 10.1364/ol.20.000052
+  url: https://doi.org/10.1364/ol.20.000052
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: myers1995b
+  type: journal-article
+  authors:
+  - L. E. Myers
+  - R. C. Eckardt
+  - M. M. Fejer
+  - R. L. Byer
+  - W. R. Bosenberg
+  - J. W. Pierce
+  title: Quasi-phase-matched optical parametric oscillators in bulk periodically poled LiNbO_3
+  container: Journal of the Optical Society of America B
+  volume: '12'
+  issue: '11'
+  pages: '2102'
+  issued: '1995-11-01'
+  doi: 10.1364/josab.12.002102
+  url: https://doi.org/10.1364/josab.12.002102
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: bruel1995
+  type: journal-article
+  authors:
+  - M. Bruel
+  title: Silicon on insulator material technology
+  container: Electronics Letters
+  volume: '31'
+  issue: '14'
+  pages: 1201-1202
+  issued: '1995-07-06'
+  doi: 10.1049/el:19950805
+  url: https://doi.org/10.1049/el:19950805
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: jundt1997
+  type: journal-article
+  authors:
+  - Dieter H. Jundt
+  title: Temperature-dependent Sellmeier equation for the index of refraction, n_e, in congruent lithium niobate
+  container: Optics Letters
+  volume: '22'
+  issue: '20'
+  pages: '1553'
+  issued: '1997-10-15'
+  doi: 10.1364/ol.22.001553
+  url: https://doi.org/10.1364/ol.22.001553
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: zhu1997
+  type: journal-article
+  authors:
+  - Shi-ning Zhu
+  - Yong-yuan Zhu
+  - Nai-ben Ming
+  title: Quasi-Phase-Matched Third-Harmonic Generation in a Quasi-Periodic Optical Superlattice
+  container: Science
+  volume: '278'
+  issue: '5339'
+  pages: 843-846
+  issued: '1997-10-31'
+  doi: 10.1126/science.278.5339.843
+  url: https://doi.org/10.1126/science.278.5339.843
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: levy1998
+  type: journal-article
+  authors:
+  - M. Levy
+  - R. M. Osgood
+  - R. Liu
+  - L. E. Cross
+  - G. S. Cargill
+  - A. Kumar
+  - H. Bakhru
+  title: Fabrication of single-crystal lithium niobate films by crystal ion slicing
+  container: Applied Physics Letters
+  volume: '73'
+  issue: '16'
+  pages: 2293-2295
+  issued: '1998-10-19'
+  doi: 10.1063/1.121801
+  url: https://doi.org/10.1063/1.121801
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wooten2000
+  type: journal-article
+  authors:
+  - E.L. Wooten
+  - K.M. Kissa
+  - A. Yi-Yan
+  - E.J. Murphy
+  - D.A. Lafaw
+  - P.F. Hallemeier
+  - D. Maack
+  - D.V. Attanasio
+  - D.J. Fritz
+  - G.J. McBrien
+  - D.E. Bossi
+  title: A review of lithium niobate modulators for fiber-optic communications systems
+  container: IEEE Journal of Selected Topics in Quantum Electronics
+  volume: '6'
+  issue: '1'
+  pages: 69-82
+  issued: 2000-01
+  doi: 10.1109/2944.826874
+  url: https://doi.org/10.1109/2944.826874
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: nishida2003
+  type: journal-article
+  authors:
+  - Y. Nishida
+  - H. Miyazawa
+  - M. Asobe
+  - O. Tadanaga
+  - H. Suzuki
+  title: Direct-bonded QPM-LN ridge waveguide with high damage resistance at room temperature
+  container: Electronics Letters
+  volume: '39'
+  issue: '7'
+  pages: 609-611
+  issued: '2003-04-03'
+  doi: 10.1049/el:20030402
+  url: https://doi.org/10.1049/el:20030402
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: rabiei2004
+  type: journal-article
+  authors:
+  - Payam Rabiei
+  - Peter Gunter
+  title: Optical and electro-optical properties of submicrometer lithium niobate slab waveguides prepared by crystal ion slicing and wafer bonding
+  container: Applied Physics Letters
+  volume: '85'
+  issue: '20'
+  pages: 4603-4605
+  issued: '2004-11-15'
+  doi: 10.1063/1.1819527
+  url: https://doi.org/10.1063/1.1819527
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: guarino2007
+  type: journal-article
+  authors:
+  - Andrea Guarino
+  - Gorazd Poberaj
+  - Daniele Rezzonico
+  - Riccardo Degl'Innocenti
+  - "Peter G\xFCnter"
+  title: "Electro\u2013optically tunable microring resonators in lithium niobate"
+  container: Nature Photonics
+  volume: '1'
+  issue: '7'
+  pages: 407-410
+  issued: 2007-07
+  doi: 10.1038/nphoton.2007.93
+  url: https://doi.org/10.1038/nphoton.2007.93
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: volk2009
+  type: book
+  authors:
+  - Tatyana Volk
+  - "Manfred W\xF6hlecke"
+  title: Lithium Niobate
+  container: Springer Series in Materials Science
+  issued: '2009'
+  doi: 10.1007/978-3-540-70766-0
+  url: https://doi.org/10.1007/978-3-540-70766-0
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: hu2009
+  type: journal-article
+  authors:
+  - H. Hu
+  - R. Ricken
+  - W. Sohler
+  title: Lithium niobate photonic wires
+  container: Optics Express
+  volume: '17'
+  issue: '26'
+  pages: '24261'
+  issued: '2009-12-21'
+  doi: 10.1364/oe.17.024261
+  url: https://doi.org/10.1364/oe.17.024261
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: poberaj2012
+  type: journal-article
+  authors:
+  - G. Poberaj
+  - H. Hu
+  - W. Sohler
+  - "P. G\xFCnter"
+  title: "Lithium niobate on insulator (LNOI) for micro\u2010photonic devices"
+  container: Laser & Photonics Reviews
+  volume: '6'
+  issue: '4'
+  pages: 488-503
+  issued: '2012-07-16'
+  doi: 10.1002/lpor.201100035
+  url: https://doi.org/10.1002/lpor.201100035
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2014
+  type: journal-article
+  authors:
+  - Cheng Wang
+  - Michael J. Burek
+  - Zin Lin
+  - Haig A. Atikian
+  - Vivek Venkataraman
+  - I-Chun Huang
+  - Peter Stark
+  - "Marko Lon\u010Dar"
+  title: Integrated high quality factor lithium niobate microdisk resonators
+  container: Optics Express
+  volume: '22'
+  issue: '25'
+  pages: '30924'
+  issued: '2014-12-15'
+  doi: 10.1364/oe.22.030924
+  url: https://doi.org/10.1364/oe.22.030924
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: chang2017
+  type: journal-article
+  authors:
+  - Lin Chang
+  - Martin H. P. Pfeiffer
+  - Nicolas Volet
+  - Michael Zervas
+  - Jon D. Peters
+  - Costanza L. Manganelli
+  - Eric J. Stanton
+  - Yifei Li
+  - Tobias J. Kippenberg
+  - John E. Bowers
+  title: Heterogeneous integration of lithium niobate and silicon nitride waveguides for wafer-scale photonic integrated circuits on silicon
+  container: Optics Letters
+  volume: '42'
+  issue: '4'
+  pages: '803'
+  issued: '2017-02-15'
+  doi: 10.1364/ol.42.000803
+  url: https://doi.org/10.1364/ol.42.000803
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: zhang2017
+  type: journal-article
+  authors:
+  - Mian Zhang
+  - Cheng Wang
+  - Rebecca Cheng
+  - Amirhassan Shams-Ansari
+  - "Marko Lon\u010Dar"
+  title: Monolithic ultra-high-Q lithium niobate microring resonator
+  container: Optica
+  volume: '4'
+  issue: '12'
+  pages: '1536'
+  issued: '2017-12-20'
+  doi: 10.1364/optica.4.001536
+  url: https://doi.org/10.1364/optica.4.001536
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2018a
+  type: journal-article
+  authors:
+  - Cheng Wang
+  - Mian Zhang
+  - Brian Stern
+  - Michal Lipson
+  - "Marko Lon\u010Dar"
+  title: Nanophotonic lithium niobate electro-optic modulators
+  container: Optics Express
+  volume: '26'
+  issue: '2'
+  pages: '1547'
+  issued: '2018-01-22'
+  doi: 10.1364/oe.26.001547
+  url: https://doi.org/10.1364/oe.26.001547
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: weigel2018
+  type: journal-article
+  authors:
+  - Peter O. Weigel
+  - Jie Zhao
+  - Kelvin Fang
+  - Hasan Al-Rubaye
+  - Douglas Trotter
+  - Dana Hood
+  - John Mudrick
+  - Christina Dallo
+  - Andrew T. Pomerene
+  - Andrew L. Starbuck
+  - Christopher T. DeRose
+  - Anthony L. Lentine
+  - Gabriel Rebeiz
+  - Shayan Mookherjea
+  title: Bonded thin film lithium niobate modulator on a silicon photonics platform exceeding 100 GHz 3-dB electrical modulation bandwidth
+  container: Optics Express
+  volume: '26'
+  issue: '18'
+  pages: '23728'
+  issued: '2018-09-03'
+  doi: 10.1364/oe.26.023728
+  url: https://doi.org/10.1364/oe.26.023728
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2018b
+  type: journal-article
+  authors:
+  - Cheng Wang
+  - Mian Zhang
+  - Xi Chen
+  - Maxime Bertrand
+  - Amirhassan Shams-Ansari
+  - Sethumadhavan Chandrasekhar
+  - Peter Winzer
+  - "Marko Lon\u010Dar"
+  title: Integrated lithium niobate electro-optic modulators operating at CMOS-compatible voltages
+  container: Nature
+  volume: '562'
+  issue: '7725'
+  pages: 101-104
+  issued: 2018-10
+  doi: 10.1038/s41586-018-0551-y
+  url: https://doi.org/10.1038/s41586-018-0551-y
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2018c
+  type: journal-article
+  authors:
+  - Cheng Wang
+  - Carsten Langrock
+  - Alireza Marandi
+  - Marc Jankowski
+  - Mian Zhang
+  - Boris Desiatov
+  - Martin M. Fejer
+  - "Marko Lon\u010Dar"
+  title: Ultrahigh-efficiency wavelength conversion in nanophotonic periodically poled lithium niobate waveguides
+  container: Optica
+  volume: '5'
+  issue: '11'
+  pages: '1438'
+  issued: '2018-11-20'
+  doi: 10.1364/optica.5.001438
+  url: https://doi.org/10.1364/optica.5.001438
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2019
+  type: journal-article
+  authors:
+  - Cheng Wang
+  - Mian Zhang
+  - Mengjie Yu
+  - Rongrong Zhu
+  - Han Hu
+  - Marko Loncar
+  title: Monolithic lithium niobate photonic circuits for Kerr frequency comb generation and modulation
+  container: Nature Communications
+  volume: '10'
+  issue: '1'
+  pages: '978'
+  issued: '2019-02-28'
+  doi: 10.1038/s41467-019-08969-6
+  url: https://doi.org/10.1038/s41467-019-08969-6
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: zhang2019
+  type: journal-article
+  authors:
+  - Mian Zhang
+  - Brandon Buscaino
+  - Cheng Wang
+  - Amirhassan Shams-Ansari
+  - Christian Reimer
+  - Rongrong Zhu
+  - Joseph M. Kahn
+  - "Marko Lon\u010Dar"
+  title: Broadband electro-optic frequency comb generation in a lithium niobate microring resonator
+  container: Nature
+  volume: '568'
+  issue: '7752'
+  pages: 373-377
+  issued: 2019-04
+  doi: 10.1038/s41586-019-1008-7
+  url: https://doi.org/10.1038/s41586-019-1008-7
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: he2019
+  type: journal-article
+  authors:
+  - Mingbo He
+  - Mengyue Xu
+  - Yuxuan Ren
+  - Jian Jian
+  - Ziliang Ruan
+  - Yongsheng Xu
+  - Shengqian Gao
+  - Shihao Sun
+  - Xueqin Wen
+  - Lidan Zhou
+  - Lin Liu
+  - Changjian Guo
+  - Hui Chen
+  - Siyuan Yu
+  - Liu Liu
+  - Xinlun Cai
+  title: "High-performance hybrid silicon and lithium niobate Mach\u2013Zehnder modulators for 100 Gbit s\u22121 and beyond"
+  container: Nature Photonics
+  volume: '13'
+  issue: '5'
+  pages: 359-364
+  issued: 2019-05
+  doi: 10.1038/s41566-019-0378-6
+  url: https://doi.org/10.1038/s41566-019-0378-6
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: lu2019
+  type: journal-article
+  authors:
+  - Juanjuan Lu
+  - Joshua B. Surya
+  - Xianwen Liu
+  - Alexander W. Bruch
+  - Zheng Gong
+  - Yuntao Xu
+  - Hong X. Tang
+  title: Periodically poled thin-film lithium niobate microring resonators with a second-harmonic generation efficiency of 250,000%/W
+  container: Optica
+  volume: '6'
+  issue: '12'
+  pages: '1455'
+  issued: '2019-12-20'
+  doi: 10.1364/optica.6.001455
+  url: https://doi.org/10.1364/optica.6.001455
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: jankowski2020
+  type: journal-article
+  authors:
+  - Marc Jankowski
+  - Carsten Langrock
+  - Boris Desiatov
+  - Alireza Marandi
+  - Cheng Wang
+  - Mian Zhang
+  - Christopher R. Phillips
+  - "Marko Lon\u010Dar"
+  - M. M. Fejer
+  title: Ultrabroadband nonlinear optics in nanophotonic periodically poled lithium niobate waveguides
+  container: Optica
+  volume: '7'
+  issue: '1'
+  pages: '40'
+  issued: '2020-01-20'
+  doi: 10.1364/optica.7.000040
+  url: https://doi.org/10.1364/optica.7.000040
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: luke2020
+  type: journal-article
+  authors:
+  - Kevin Luke
+  - Prashanta Kharel
+  - Christian Reimer
+  - Lingyan He
+  - Marko Loncar
+  - Mian Zhang
+  title: Wafer-scale low-loss lithium niobate photonic integrated circuits
+  container: Optics Express
+  volume: '28'
+  issue: '17'
+  pages: '24452'
+  issued: '2020-08-17'
+  doi: 10.1364/oe.401959
+  url: https://doi.org/10.1364/oe.401959
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kharel2021
+  type: journal-article
+  authors:
+  - Prashanta Kharel
+  - Christian Reimer
+  - Kevin Luke
+  - Lingyan He
+  - Mian Zhang
+  title: "Breaking voltage\u2013bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes"
+  container: Optica
+  volume: '8'
+  issue: '3'
+  pages: '357'
+  issued: '2021-03-20'
+  doi: 10.1364/optica.416155
+  url: https://doi.org/10.1364/optica.416155
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: zhu2021
+  type: journal-article
+  authors:
+  - Di Zhu
+  - Linbo Shao
+  - Mengjie Yu
+  - Rebecca Cheng
+  - Boris Desiatov
+  - C. J. Xin
+  - Yaowen Hu
+  - Jeffrey Holzgrafe
+  - Soumya Ghosh
+  - Amirhassan Shams-Ansari
+  - Eric Puma
+  - Neil Sinclair
+  - Christian Reimer
+  - Mian Zhang
+  - "Marko Lon\u010Dar"
+  title: Integrated photonics on thin-film lithium niobate
+  container: Advances in Optics and Photonics
+  volume: '13'
+  issue: '2'
+  pages: '242'
+  issued: '2021-06-30'
+  doi: 10.1364/aop.411024
+  url: https://doi.org/10.1364/aop.411024
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: hu2021
+  type: journal-article
+  authors:
+  - Yaowen Hu
+  - Mengjie Yu
+  - Di Zhu
+  - Neil Sinclair
+  - Amirhassan Shams-Ansari
+  - Linbo Shao
+  - Jeffrey Holzgrafe
+  - Eric Puma
+  - Mian Zhang
+  - "Marko Lon\u010Dar"
+  title: On-chip electro-optic frequency shifters and beam splitters
+  container: Nature
+  volume: '599'
+  issue: '7886'
+  pages: 587-593
+  issued: '2021-11-25'
+  doi: 10.1038/s41586-021-03999-x
+  url: https://doi.org/10.1038/s41586-021-03999-x
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: xu2022
+  type: journal-article
+  authors:
+  - Mengyue Xu
+  - Yuntao Zhu
+  - "Fabio Pittal\xE0"
+  - Jin Tang
+  - Mingbo He
+  - Wing Chau Ng
+  - Jingyi Wang
+  - Ziliang Ruan
+  - Xuefeng Tang
+  - Maxim Kuschnerov
+  - Liu Liu
+  - Siyuan Yu
+  - Bofang Zheng
+  - Xinlun Cai
+  title: Dual-polarization thin-film lithium niobate in-phase quadrature modulators for terabit-per-second transmission
+  container: Optica
+  volume: '9'
+  issue: '1'
+  pages: '61'
+  issued: '2022-01-20'
+  doi: 10.1364/optica.449691
+  url: https://doi.org/10.1364/optica.449691
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2022
+  type: journal-article
+  authors:
+  - Xuanhao Wang
+  - Chenglin Shang
+  - An Pan
+  - Xingran Cheng
+  - Tao Gui
+  - Shuai Yuan
+  - Chengcheng Gui
+  - Keshuang Zheng
+  - Peijie Zhang
+  - Xiaolu Song
+  - Yanbo Li
+  - Liangchuan Li
+  - Cheng Zeng
+  - Jinsong Xia
+  title: Thin-film lithium niobate dual-polarization IQ modulator on a silicon substrate for single-carrier 1.6 Tb/s transmission
+  container: APL Photonics
+  volume: '7'
+  issue: '7'
+  pages: '076101'
+  issued: '2022-07-01'
+  doi: 10.1063/5.0097296
+  url: https://doi.org/10.1063/5.0097296
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: boes2023
+  type: journal-article
+  authors:
+  - Andreas Boes
+  - Lin Chang
+  - Carsten Langrock
+  - Mengjie Yu
+  - Mian Zhang
+  - Qiang Lin
+  - "Marko Lon\u010Dar"
+  - Martin Fejer
+  - John Bowers
+  - Arnan Mitchell
+  title: 'Lithium niobate photonics: Unlocking the electromagnetic spectrum'
+  container: Science
+  volume: '379'
+  issue: '6627'
+  pages: eabj4396
+  issued: '2023-01-06'
+  doi: 10.1126/science.abj4396
+  url: https://doi.org/10.1126/science.abj4396
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: snigirev2023
+  type: journal-article
+  authors:
+  - Viacheslav Snigirev
+  - Annina Riedhauser
+  - Grigory Lihachev
+  - Mikhail Churaev
+  - Johann Riemensberger
+  - Rui Ning Wang
+  - Anat Siddharth
+  - Guanhao Huang
+  - "Charles M\xF6hl"
+  - Youri Popoff
+  - Ute Drechsler
+  - Daniele Caimi
+  - "Simon H\xF6nl"
+  - Junqiu Liu
+  - Paul Seidler
+  - Tobias J. Kippenberg
+  title: Ultrafast tunable lasers using lithium niobate integrated photonics
+  container: Nature
+  volume: '615'
+  issue: '7952'
+  pages: 411-417
+  issued: '2023-03-16'
+  doi: 10.1038/s41586-023-05724-2
+  url: https://doi.org/10.1038/s41586-023-05724-2
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2024
+  type: journal-article
+  authors:
+  - Chengli Wang
+  - Zihan Li
+  - Johann Riemensberger
+  - Grigory Lihachev
+  - Mikhail Churaev
+  - Wil Kao
+  - Xinru Ji
+  - Junyin Zhang
+  - Terence Blesin
+  - Alisa Davydova
+  - Yang Chen
+  - Kai Huang
+  - Xi Wang
+  - Xin Ou
+  - Tobias J. Kippenberg
+  title: Lithium tantalate photonic integrated circuits for volume manufacturing
+  container: Nature
+  volume: '629'
+  issue: '8013'
+  pages: 784-790
+  issued: '2024-05-23'
+  doi: 10.1038/s41586-024-07369-1
+  url: https://doi.org/10.1038/s41586-024-07369-1
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: liu2025
+  type: journal-article
+  authors:
+  - Yang Liu
+  - Zihan Zhou
+  - Peiqi Zhou
+  - Changqing Wang
+  - Qiansheng Wang
+  - Ye Liu
+  - Dong Wang
+  - Daigao Chen
+  - Lei Wang
+  - Xi Xiao
+  title: Volume manufacturing of thin-film lithium niobate modulators with bandwidth > 110 GHz based on 4-inch wafer with a quartz handle
+  container: 'Light: Advanced Manufacturing'
+  volume: '6'
+  issue: '3'
+  pages: '1'
+  issued: '2025'
+  doi: 10.37188/lam.2025.047
+  url: https://doi.org/10.37188/lam.2025.047
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: declercq2025
+  type: proceedings-article
+  authors:
+  - Jakob Declercq
+  - Shengpu Niu
+  - Margot Niels
+  - Amir Shahin
+  - Joris van Kerrebrouck
+  - Maximilien Billet
+  - Mathias Berclano
+  - Joris Lambrech
+  - Bart Moeneclaey
+  - Tom Vanackere
+  - Ewoud Vissers
+  - Conor Coughlan
+  - Gunther Roelkens
+  - Arno Moerman
+  - Olivier Caytan
+  - Sam Lemey
+  - Maumita Chakrabarti
+  - Hakim Kobbi
+  - Minkyu Kim
+  - Didit Yudistra
+  - Roger Loo
+  - Swetanshu Bipul
+  - Filippo Ferraro
+  - Yoojin Ban
+  - Peter De Heyn
+  - Guy Torfs
+  - Johan Bauwelinck
+  - Dimitrios Velenis
+  - Peter Ossieur
+  - Philippe Absil
+  - Bart Kuyken
+  - Joris van Campenhout
+  - Nishant Singh
+  - Cedric Bruynsteen
+  - Xin Yin
+  title: 320 Gb/s Unamplified Transmission Using 1 00 GHz Ge PD and TFLN MZM on a Foundry-Compatible SiPh Platform Co-Packaged with Traveling-Wave Drivers and TIAs
+  container: 2025 European Conference on Optical Communications (ECOC)
+  pages: 1-4
+  issued: '2025-09-28'
+  doi: 10.1109/ecoc66593.2025.11263113
+  url: https://doi.org/10.1109/ecoc66593.2025.11263113
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: niels2026
+  type: journal-article
+  authors:
+  - Margot Niels
+  - Tom Vanackere
+  - Ewoud Vissers
+  - Tingting Zhai
+  - Patrick Nenezic
+  - Jakob Declercq
+  - "C\xE9dric Bruynsteen"
+  - Shengpu Niu
+  - Arno Moerman
+  - Olivier Caytan
+  - Nishant Singh
+  - Sam Lemey
+  - Xin Yin
+  - Sofie Janssen
+  - Peter Verheyen
+  - Neha Singh
+  - Dieter Bode
+  - Martin Davi
+  - Filippo Ferraro
+  - Philippe Absil
+  - Sadhishkumar Balakrishnan
+  - Joris Van Campenhout
+  - "G\xFCnther Roelkens"
+  - Bart Kuyken
+  - Maximilien Billet
+  title: A high-speed heterogeneous lithium tantalate silicon photonics platform
+  container: Nature Photonics
+  volume: '20'
+  issue: '2'
+  pages: 225-231
+  issued: 2026-02
+  doi: 10.1038/s41566-025-01832-9
+  url: https://doi.org/10.1038/s41566-025-01832-9
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: starnault2026
+  type: journal-article
+  authors:
+  - Charles St-Arnault
+  - Charles Laperle
+  - Derek M. Kita
+  - Christian Reimer
+  - David V. Plant
+  title: Integrated electro-optic circulator on thin-film lithium niobate for bidirectional optical fibre transmission
+  container: Nature Photonics
+  issued: '2026-09-11'
+  doi: 10.1038/s41566-026-02008-9
+  url: https://doi.org/10.1038/s41566-026-02008-9
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: nassau1960
+  type: journal-article
+  authors:
+  - K. Nassau
+  - L. G. Van Uitert
+  title: Preparation of Large Calcium-Tungstate Crystals Containing Paramagnetic Ions for Maser Applications
+  container: Journal of Applied Physics
+  volume: '31'
+  issue: '8'
+  pages: 1508-1508
+  issued: '1960-08-01'
+  doi: 10.1063/1.1735881
+  url: https://doi.org/10.1063/1.1735881
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: tomaszewski2002
+  type: journal-article
+  authors:
+  - "Pawe\u0142 E. Tomaszewski"
+  title: "Jan Czochralski\u2014father of the Czochralski method"
+  container: Journal of Crystal Growth
+  volume: '236'
+  issue: 1-3
+  pages: 1-4
+  issued: 2002-03
+  doi: 10.1016/s0022-0248(01)02195-9
+  url: https://doi.org/10.1016/s0022-0248(01)02195-9
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: furukawa2000
+  type: journal-article
+  authors:
+  - Y. Furukawa
+  - K. Kitamura
+  - S. Takekawa
+  - A. Miyamoto
+  - M. Terao
+  - N. Suda
+  title: Photorefraction in LiNbO3 as a function of [Li]/[Nb] and MgO concentrations
+  container: Applied Physics Letters
+  volume: '77'
+  issue: '16'
+  pages: 2494-2496
+  issued: '2000-10-16'
+  doi: 10.1063/1.1318721
+  url: https://doi.org/10.1063/1.1318721
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: fridkin1979
+  type: book
+  authors:
+  - Vladimir M. Fridkin
+  title: Photoferroelectrics
+  container: Springer Series in Solid-State Sciences
+  issued: '1979'
+  doi: 10.1007/978-3-642-81351-1
+  url: https://doi.org/10.1007/978-3-642-81351-1
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: uecker2014
+  type: journal-article
+  authors:
+  - Reinhard Uecker
+  title: The historical development of the Czochralski method
+  container: Journal of Crystal Growth
+  volume: '401'
+  pages: 7-24
+  issued: 2014-09
+  doi: 10.1016/j.jcrysgro.2013.11.095
+  url: https://doi.org/10.1016/j.jcrysgro.2013.11.095
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: nassau1984
+  type: proceedings-article
+  authors:
+  - Kurt Nassau
+  title: 'Early History Of Lithium Niobate: Personal Reminiscences'
+  container: SPIE Proceedings
+  volume: '0460'
+  pages: '2'
+  issued: '1984-09-26'
+  doi: 10.1117/12.939449
+  url: https://doi.org/10.1117/12.939449
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: zheng2016
+  type: journal-article
+  authors:
+  - Dahuai Zheng
+  - Yongfa Kong
+  - Shiguo Liu
+  - Muling Chen
+  - Shaolin Chen
+  - Ling Zhang
+  - Romano Rupp
+  - Jingjun Xu
+  title: The simultaneous enhancement of photorefraction and optical damage resistance in MgO and Bi2O3 co-doped LiNbO3 crystals
+  container: Scientific Reports
+  volume: '6'
+  issue: '1'
+  pages: '20308'
+  issued: '2016-02-03'
+  doi: 10.1038/srep20308
+  url: https://doi.org/10.1038/srep20308
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: wang2026
+  type: journal-article
+  authors:
+  - Zhenyu Wang
+  - Changjiang Wan
+  - Jianfeng Xiong
+  - Sizhe Wang
+  - Xu Li
+  - Guo Tang
+  - Ji Liu
+  - Wenzhao Sun
+  title: 'On-chip nonlinear photonics: Advances and challenges in integrated PPLN optical parametric oscillators'
+  container: Applied Physics Reviews
+  volume: '13'
+  issue: '3'
+  pages: '031312'
+  issued: '2026-09-01'
+  doi: 10.1063/5.0315274
+  url: https://doi.org/10.1063/5.0315274
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: luh1987
+  type: journal-article
+  authors:
+  - Y.S. Luh
+  - M.M. Fejer
+  - R.L. Byer
+  - R.S. Feigelson
+  title: Stoichiometric LiNbO3 single-crystal fibers for nonlinear optical applications
+  container: Journal of Crystal Growth
+  volume: '85'
+  issue: 1-2
+  pages: 264-269
+  issued: 1987-11
+  doi: 10.1016/0022-0248(87)90233-8
+  url: https://doi.org/10.1016/0022-0248(87)90233-8
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: hartung2008
+  type: journal-article
+  authors:
+  - Holger Hartung
+  - Ernst-Berhard Kley
+  - "Andreas T\xFCnnermann"
+  - Thomas Gischkat
+  - Frank Schrempel
+  - Werner Wesch
+  title: Fabrication of ridge waveguides in zinc-substituted lithium niobate by means of ion-beam enhanced etching
+  container: Optics Letters
+  volume: '33'
+  issue: '20'
+  pages: '2320'
+  issued: '2008-10-15'
+  doi: 10.1364/ol.33.002320
+  url: https://doi.org/10.1364/ol.33.002320
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: kashiwazaki2021
+  type: journal-article
+  authors:
+  - Takahiro Kashiwazaki
+  - Taichi Yamashima
+  - Naoto Takanashi
+  - Asuka Inoue
+  - Takeshi Umeki
+  - Akira Furusawa
+  title: Fabrication of low-loss quasi-single-mode PPLN waveguide and its application to a modularized broadband high-level squeezer
+  container: Applied Physics Letters
+  volume: '119'
+  issue: '25'
+  pages: '251104'
+  issued: '2021-12-20'
+  doi: 10.1063/5.0063118
+  url: https://doi.org/10.1063/5.0063118
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: fujiwara1989b
+  type: journal-article
+  authors:
+  - Takumi Fujiwara
+  - Akira Terashima
+  - Hiroshi Mori
+  title: Photorefractive effect in Ti-diffused channel waveguides using LiNbO3 substrates with reduced optical absorption
+  container: Applied Physics Letters
+  volume: '55'
+  issue: '26'
+  pages: 2718-2720
+  issued: '1989-12-25'
+  doi: 10.1063/1.102369
+  url: https://doi.org/10.1063/1.102369
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: raynercanham2008
+  type: journal-article
+  authors:
+  - Geoff Rayner-Canham
+  - Zheng Zheng
+  title: 'Naming elements after scientists: an account of a controversy'
+  container: Foundations of Chemistry
+  volume: '10'
+  issue: '1'
+  pages: 13-18
+  issued: 2008-04
+  doi: 10.1007/s10698-007-9042-1
+  url: https://doi.org/10.1007/s10698-007-9042-1
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: franken1963
+  type: journal-article
+  authors:
+  - P. A. Franken
+  - J. F. Ward
+  title: Optical Harmonics and Nonlinear Phenomena
+  container: Reviews of Modern Physics
+  volume: '35'
+  issue: '1'
+  pages: 23-39
+  issued: '1963-01-01'
+  doi: 10.1103/revmodphys.35.23
+  url: https://doi.org/10.1103/revmodphys.35.23
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: amodei1971a
+  type: proceedings-article
+  authors:
+  - J. Amodei
+  - W. Phillips
+  - D.L. Staebler
+  title: Holographic storage performance of iron-doped LiNbO3
+  container: 1971 International Electron Devices Meeting
+  pages: 112-114
+  issued: '1971'
+  doi: 10.1109/iedm.1971.188425
+  url: https://doi.org/10.1109/iedm.1971.188425
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: pijolat2008
+  type: proceedings-article
+  authors:
+  - M. Pijolat
+  - A. Reinhardt
+  - E. Defay
+  - C. Deguet
+  - D. Mercier
+  - M. Aid
+  - J.S. Moulet
+  - B. Ghyselen
+  - D. Gachon
+  - S. Ballandras
+  title: "Large Qxf product for HBAR using Smart Cut \u2122 transfer of LiNbO3 thin layers onto LiNbO3 substrate"
+  container: 2008 IEEE Ultrasonics Symposium
+  pages: 201-204
+  issued: 2008-11
+  doi: 10.1109/ultsym.2008.0049
+  url: https://doi.org/10.1109/ultsym.2008.0049
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: moulet2008
+  type: proceedings-article
+  authors:
+  - J.-S. Moulet
+  - M. Pijolat
+  - J. Dechamp
+  - F. Mazen
+  - A. Tauzin
+  - F. Rieutord
+  - A. Reinhardt
+  - E. Defay
+  - C. Deguet
+  - B. Ghyselen
+  - L. Clavelier
+  - M. Aid
+  - S. Ballandras
+  - C. Mazure
+  title: "High piezoelectric properties in LiNbO3 transferred layer by the Smart Cut\u2122 technology for ultra wide band BAW filter applications"
+  container: 2008 IEEE International Electron Devices Meeting
+  pages: 1-4
+  issued: 2008-12
+  doi: 10.1109/iedm.2008.4796785
+  url: https://doi.org/10.1109/iedm.2008.4796785
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: pijolat2009
+  type: journal-article
+  authors:
+  - M. Pijolat
+  - S. Loubriat
+  - S. Queste
+  - D. Mercier
+  - A. Reinhardt
+  - "E. Defa\xFF"
+  - C. Deguet
+  - L. Clavelier
+  - H. Moriceau
+  - "M. A\xEFd"
+  - S. Ballandras
+  title: Large electromechanical coupling factor film bulk acoustic resonator with X-cut LiNbO3 layer transfer
+  container: Applied Physics Letters
+  volume: '95'
+  issue: '18'
+  pages: '182106'
+  issued: '2009-11-02'
+  doi: 10.1063/1.3258496
+  url: https://doi.org/10.1063/1.3258496
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: deguet2010
+  type: journal-article
+  authors:
+  - Chrystel Deguet
+  - Mathieu Pijolat
+  - Nicolas Blanc
+  - Bruno Imbert
+  - Sebastien Loubriat
+  - Emmanuel Defay
+  - Thibault Ricart
+  - Laurent Clavelier
+  - Jean Sebastien Moulet
+  - Bruno Ghyselen
+  - Fabrice Letertre
+  - Sylvain Ballandras
+  title: LiNbO3 Single Crystal Layer Transfer Techniques for High Performances RF Filters
+  container: ECS Transactions
+  volume: '33'
+  issue: '4'
+  pages: 225-232
+  issued: '2010-10-01'
+  doi: 10.1149/1.3483511
+  url: https://doi.org/10.1149/1.3483511
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: volk1992
+  type: journal-article
+  authors:
+  - T. R. Volk
+  - N. M. Rubinina
+  title: 'A new optical damage resistant impurity in lithium niobate crystals: Indium'
+  container: Ferroelectrics Letters Section
+  volume: '14'
+  issue: 1-2
+  pages: 37-43
+  issued: 1992-05
+  doi: 10.1080/07315179208203341
+  url: https://doi.org/10.1080/07315179208203341
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: bartasyte2017
+  type: journal-article
+  authors:
+  - Ausrine Bartasyte
+  - Samuel Margueron
+  - Thomas Baron
+  - Stefania Oliveri
+  - Pascal Boulet
+  title: "Toward High\u2010Quality Epitaxial LiNbO 3 and LiTaO 3 Thin Films for Acoustic and Optical Applications"
+  container: Advanced Materials Interfaces
+  volume: '4'
+  issue: '8'
+  pages: '1600998'
+  issued: 2017-04
+  doi: 10.1002/admi.201600998
+  url: https://doi.org/10.1002/admi.201600998
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: sturman2021
+  type: reference-book
+  authors:
+  - Boris I. Sturman
+  - Vladimir M. Fridkin
+  title: The Photovoltaic and Photorefractive Effects in Noncentrosymmetric Materials
+  issued: '2021-03-10'
+  doi: 10.1201/9780203743416
+  url: https://doi.org/10.1201/9780203743416
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: brinkmann1990
+  type: proceedings-article
+  authors:
+  - R. Brinkmann
+  - Ch. Buchal
+  - St. Mohr
+  - W. Sohler
+  - H. Suche
+  title: Annealed Erbium-implanted single-mode LiNbO3 waveguides
+  container: Integrated Photonics Research
+  pages: PD1
+  issued: '1990'
+  doi: 10.1364/ipr.1990.pd1
+  url: https://doi.org/10.1364/ipr.1990.pd1
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: desiatov2019
+  type: journal-article
+  authors:
+  - Boris Desiatov
+  - Amirhassan Shams-Ansari
+  - Mian Zhang
+  - Cheng Wang
+  - "Marko Lon\u010Dar"
+  title: Ultra-low-loss integrated visible photonics using thin-film lithium niobate
+  container: Optica
+  volume: '6'
+  issue: '3'
+  pages: '380'
+  issued: '2019-03-20'
+  doi: 10.1364/optica.6.000380
+  url: https://doi.org/10.1364/optica.6.000380
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: fridkin1984
+  type: journal-article
+  authors:
+  - V. M. Fridkin
+  title: Review of recent work on the bulk photovoltaic effect in ferro and piezoelectrics
+  container: Ferroelectrics
+  volume: '53'
+  issue: '1'
+  pages: 169-187
+  issued: 1984-04
+  doi: 10.1080/00150198408245047
+  url: https://doi.org/10.1080/00150198408245047
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: fridkin1978
+  type: journal-article
+  authors:
+  - Vladimir M Fridkin
+  - B N Popov
+  title: Anomalous photovoltaic effect in ferroelectrics
+  container: Soviet Physics Uspekhi
+  volume: '21'
+  issue: '12'
+  pages: 981-991
+  issued: '1978-12-31'
+  doi: 10.1070/pu1978v021n12abeh005722
+  url: https://doi.org/10.1070/pu1978v021n12abeh005722
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: tomaszewski2004
+  type: journal-article
+  authors:
+  - "Pawe\u0142 E. Tomaszewski"
+  - Robert W. Cahn
+  title: Jan Czochralski and His Method of Pulling Crystals
+  container: MRS Bulletin
+  volume: '29'
+  issue: '5'
+  pages: 348-349
+  issued: 2004-05
+  doi: 10.1557/mrs2004.105
+  url: https://doi.org/10.1557/mrs2004.105
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: lallier1989
+  type: journal-article
+  authors: [E. Lallier, J.P. Pocholle, M. Papuchon, C. Grezes-Besset, E. Pelletier, M. de Micheli, M.J. Li, Q. He, D.B. Ostrowsky]
+  title: Laser oscillation of single-mode channel waveguide in Nd:MgO:LiNbO3
+  container: Electronics Letters
+  volume: '25'
+  issue: '22'
+  pages: 1491-1492
+  issued: 1989-10-26
+  doi: 10.1049/el:19891000
+  url: https://doi.org/10.1049/el:19891000
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V
+- id: zelmon1997
+  type: journal-article
+  authors: [David E. Zelmon, David L. Small, Dieter Jundt]
+  title: Infrared corrected Sellmeier coefficients for congruently grown lithium niobate and 5 mol% magnesium oxide-doped lithium niobate
+  container: Journal of the Optical Society of America B
+  volume: '14'
+  issue: '12'
+  pages: '3319'
+  issued: 1997-12-01
+  doi: 10.1364/JOSAB.14.003319
+  url: https://doi.org/10.1364/JOSAB.14.003319
+  verified: Crossref REST API record, retrieved 2026-10-25
+  status: V

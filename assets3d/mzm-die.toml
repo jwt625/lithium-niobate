@@ -1,0 +1,50 @@
+# TFLN MZM die (scene src/lib/scenes/mzm-die.ts) from eo-modulator-atlas sims/li2026aa/config.yaml (device li2026aa-d),
+# pinned atlas commit eb97f961165a331599e8191c62e15b5a52ba1d51 (chapter 06 chart-specs). Read-only source.
+# Atlas provenance classes map as: paper_exact -> reported; project_inference -> template (with the atlas note);
+# a value computed from reported ones -> derived. Lengths in um unless stated.
+
+[meta]
+id = "mzm"
+date = "2026-10-25"
+scene_unit = "um"
+atlas_sim = "sims/li2026aa/config.yaml"
+
+[cross_section]
+ln_film = { value = 0.30, unit = "um", status = "reported", source = "li2026aa", locator = "p.2; p.7 Methods (300 nm film)", analog = false }
+etch_depth = { value = 0.18, unit = "um", status = "reported", source = "li2026aa", locator = "p.2; p.7 Methods (180 nm etch)", analog = false }
+slab = { value = 0.12, unit = "um", status = "derived", formula = "ln_film - etch_depth" }
+rib_top_width = { value = 3.5, unit = "um", status = "reported", source = "li2026aa", locator = "p.3 (W = 3.5 um)", analog = false }
+sidewall_angle = { value = 60, unit = "deg", status = "reported", source = "li2026aa", locator = "p.2 (sidewall angle 60 deg)", analog = false, note = "reference direction not stated; taken from horizontal (atlas project_inference)" }
+rib_bottom_width = { value = 3.70785, unit = "um", status = "derived", formula = "rib_top_width + 2 etch_depth / tan(sidewall_angle)" }
+box = { value = 4.7, unit = "um", status = "reported", source = "li2026aa", locator = "p.2 (4.7 um thermally grown SiO2)", analog = false }
+cladding = { value = 2.0, unit = "um", status = "reported", source = "li2026aa", locator = "p.3; p.8 Methods (2 um PECVD cladding)", analog = false, note = "reference surface not stated; drawn 2 um above the rib top over the whole section (atlas project_inference)" }
+si_handle = { value = 500, unit = "um", status = "template", note = "thickness not stated in li2026aa; atlas nominal 500 um (project_inference)" }
+au_thickness = { value = 1.0, unit = "um", status = "reported", source = "li2026aa", locator = "p.3 (H = 1 um Au); p.8 Methods", analog = false }
+au_base = { value = 0.12, unit = "um", status = "template", note = "Au on the LN slab level (atlas electrode_vertical_position, project_inference from the process order)" }
+signal_width = { value = 25, unit = "um", status = "reported", source = "li2026aa", locator = "p.3 (WS = 25 um)", analog = false }
+gap = { value = 6, unit = "um", status = "reported", source = "li2026aa", locator = "p.3 (G = 6 um)", analog = false }
+ground_width = { value = 150, unit = "um", status = "reported", source = "li2026aa", locator = "p.3 (WG = 150 um)", analog = false }
+waveguide_offset = { value = 15.5, unit = "um", status = "template", note = "waveguide centred in each 6 um gap, 15.5 um from the signal centre (atlas waveguide_position, project_inference; not stated in the paper)" }
+arm_separation = { value = 31, unit = "um", status = "derived", formula = "2 waveguide_offset" }
+
+[line]
+electrode_length = { value = 9, unit = "mm", status = "reported", source = "li2026aa", locator = "p.5 (modulator length 9 mm); p.3 Fig. 1(b)", analog = false }
+vpi = { value = 2.90, unit = "V", status = "reported", source = "li2026aa", locator = "p.5 Fig. 3(b), 1550 nm (atlas devices.csv li2026aa-d vpi_dc_v)", analog = false }
+vpil = { value = 2.61, unit = "V cm", status = "reported", source = "li2026aa", locator = "atlas devices.csv li2026aa-d vpil_dc_vcm (Vpi x 9 mm)", analog = false }
+ng_opt = { value = 2.13, unit = "", status = "reported", source = "li2026aa", locator = "Fig. 2(g), authors' simulated design value", analog = false, note = "simulation output in the paper, not a measurement" }
+n_rf = { value = 2.13, unit = "", status = "reported", source = "li2026aa", locator = "Fig. 2(g), plateau at 50 GHz, authors' simulated design value", analog = false, note = "simulation output in the paper, not a measurement" }
+wavelength = { value = 1550, unit = "nm", status = "reported", source = "li2026aa", locator = "p.5 Fig. 3(b)", analog = false }
+
+[layout]
+# The paper's die layout outside the 9 mm CPW (splitters, bends, pads, die outline) is not in the atlas config: all template.
+splitter = { value = "Y-branch", unit = "", status = "template", note = "splitter type not in the atlas config; drawn as a Y-branch" }
+bend_length = { value = 600, unit = "um", status = "template", note = "S-bend from 0 to 31 um separation; length not sourced" }
+io_length = { value = 900, unit = "um", status = "template", note = "straight input and output waveguide to the die edge; not sourced" }
+die_width = { value = 900, unit = "um", status = "template", note = "die outline not sourced; leaves margin outside the 337 um CPW" }
+lateral_exaggeration = { value = { core = 24, outer = 3, core_half_width = 40 }, unit = "x", status = "template", note = "illustrative top view: piecewise lateral map, x24 within 40 um of the signal centre (arms, gaps, signal) and x3 beyond (grounds, die margin), so the 6 um gaps and the 3.5 um ribs read on a 12 mm die; true scale = 1" }
+vertical_exaggeration = { value = { box = 30, ln = 30, au = 15 }, unit = "x", status = "template", note = "illustrative top view thickens the thin layers; Si handle drawn at true thickness" }
+section_vertical_exaggeration = { value = 4, unit = "x", status = "template", note = "illustrative cross-section inset; true scale = 1" }
+section_window_x = { value = [-40, 9], unit = "um", status = "template", note = "inset window around both arms (arm centres at -31 and 0 um in atlas coordinates)" }
+section_window_y = { value = [-2.0, 2.6], unit = "um", status = "template", note = "inset window from inside the BOX to above the cladding" }
+top_colour = { value = "thin-film colour of the slab (120 nm) and rib (300 nm) LN on 4.7 um SiO2 on Si, normal incidence", unit = "", status = "derived", source = "zelmon1997", locator = "src/lib/scenes/optics/thinfilm.ts (Zelmon 1997, Malitson 1965, Green 2008)", analog = false, note = "top view drawn without the 2 um cladding" }
+optical_mode = { value = "eo-overlap-li2026aa.json optEx", unit = "", status = "derived", source = "li2026aa", locator = "static/data/eo-overlap-li2026aa.json (atlas engine, vector solver, 1550 nm TE)", analog = false }

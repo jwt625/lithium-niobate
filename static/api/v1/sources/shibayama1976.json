@@ -1,0 +1,46 @@
+{
+  "citation": "K. Shibayama, K. Yamanouchi, H. Sato, et al., \"Optimum cut for rotated Y-cut LiNbO3crystal used as the substrate of acoustic-surface-wave filters\", Proceedings of the IEEE 64, 595-597, (1976) doi:10.1109/proc.1976.10181",
+  "link": "https://doi.org/10.1109/proc.1976.10181",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Shibayama",
+        "given": "K."
+      },
+      {
+        "family": "Yamanouchi",
+        "given": "K."
+      },
+      {
+        "family": "Sato",
+        "given": "H."
+      },
+      {
+        "family": "Meguro",
+        "given": "T."
+      }
+    ],
+    "container_title": "Proceedings of the IEEE",
+    "doi": "10.1109/proc.1976.10181",
+    "id": "shibayama1976",
+    "issue": "5",
+    "issued": "1976",
+    "page": "595-597",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Optimum cut for rotated Y-cut LiNbO3crystal used as the substrate of acoustic-surface-wave filters",
+    "type": "article-journal",
+    "volume": "64"
+  }
+}

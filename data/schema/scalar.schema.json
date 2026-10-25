@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lithium-niobate.com/api/v1/schema/scalar.schema.json",
+  "title": "Scalar property record",
+  "description": "One value of one property for one variant from one source, with conditions and provenance. The id is property/variant/source_id[-qualifier].",
+  "type": "object",
+  "required": ["id", "kind", "property", "name", "variant", "unit", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][A-Za-z0-9.-]*/[a-z0-9.-]+/[a-z0-9.-]+$"},
+    "kind": {"const": "scalar"},
+    "property": {"type": "string", "pattern": "^[a-z0-9][A-Za-z0-9.-]*$", "description": "Property slug; may contain S/T or E/D boundary suffixes in upper case."},
+    "name": {"type": "string"},
+    "symbol": {"type": "string"},
+    "category": {"enum": ["structure", "ferroelectric", "thermal", "optical", "dielectric", "acoustic", "electrical", "photorefractive"]},
+    "tensor_component": {"type": "string", "description": "Component label when the scalar is a tensor component (e.g. 'alpha_33')."},
+    "value": {"type": "number"},
+    "min": {"type": "number"},
+    "max": {"type": "number"},
+    "value_text": {"type": "string", "description": "Verbatim value when it is not a single number (e.g. a formula)."},
+    "uncertainty": {"$ref": "common.schema.json#/$defs/uncertainty"},
+    "unit": {"$ref": "common.schema.json#/$defs/unit"},
+    "variant": {"$ref": "common.schema.json#/$defs/id"},
+    "variant_note": {"type": "string"},
+    "conditions": {"$ref": "common.schema.json#/$defs/conditions"},
+    "frame": {"$ref": "common.schema.json#/$defs/frame"},
+    "provenance": {"$ref": "common.schema.json#/$defs/provenance"},
+    "default": {"type": "boolean", "description": "Recommended record for this property and variant."},
+    "notes": {"type": "string"},
+    "public": {"type": "boolean", "description": "Generated: false when status is U."}
+  },
+  "anyOf": [
+    {"required": ["value"]},
+    {"required": ["min", "max"]},
+    {"required": ["value_text"]}
+  ]
+}

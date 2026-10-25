@@ -1,0 +1,34 @@
+{
+  "citation": "K. K. Wong, \"Properties of Lithium Niobate (EMIS Datareviews Series No. 28)\" (2002)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "editor": [
+      {
+        "family": "Wong",
+        "given": "K. K."
+      }
+    ],
+    "id": "wong2002",
+    "isbn": "978-0-85296-799-7",
+    "issued": "2002",
+    "notes": "No DOI. 1st edition: EMIS Datareview No. 5 (1989), ISBN 0-85296-482-X.",
+    "publisher": "INSPEC/IEE",
+    "read": "not read",
+    "title": "Properties of Lithium Niobate (EMIS Datareviews Series No. 28)",
+    "type": "book"
+  }
+}

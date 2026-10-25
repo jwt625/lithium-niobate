@@ -1,0 +1,48 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "specific-heat",
+    "variant": "sln"
+  },
+  "recommended": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "specific-heat/sln/volk2008",
+      "kind": "scalar",
+      "name": "Specific heat capacity",
+      "property": "specific-heat",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nakamura et al., J. Cryst. Growth 290, 144 (2006)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c_p",
+      "unit": {
+        "display": "J/(kg K)",
+        "qudt": "http://qudt.org/vocab/unit/J-PER-KiloGM-K",
+        "ucum": "J/(kg.K)"
+      },
+      "value": 651,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

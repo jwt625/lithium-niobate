@@ -1,0 +1,160 @@
+/* FIG-01-04 Defect and polaron gallery (prefix dg-) and 1.5 page tables. TECH first, VISUAL under :root[data-mode="visual"]. */
+
+/* ---------- TECH ---------- */
+.dg-t { margin: 14px 0 0; }
+.dg-t .dg-tg { display: grid; grid-template-columns: minmax(0, 1fr) calc(50ch + 18px); gap: 12px; padding: 8px; align-items: start; }
+@media (max-width: 1000px) { .dg-t .dg-tg { grid-template-columns: minmax(0, 1fr); } }
+.dg-t .dg-tab td { vertical-align: middle; }
+.dg-t .dg-tab td.no { width: 1%; }
+.dg-t .dg-tab td.h { white-space: nowrap; }
+.dg-t .dg-tab td.h .nm, .dg-t .dg-tab td.h .lo { display: block; font: 400 10.5px/14px var(--mono); color: var(--fg3); }
+.dg-t .dg-tab td.h .lo { font-family: var(--sans); color: var(--fg2); }
+.dg-t .dg-tab td.pm { width: 1%; text-align: center; font-family: var(--mono); color: var(--fg); visibility: hidden; }
+.dg-t.pump .dg-tab td.pm { visibility: visible; }
+.dg-t .dg-tab tr { cursor: pointer; }
+.dg-t .dg-tab tr.hv td { background: var(--acc-dim); }
+.dg-t .dg-tab tr.on td { background: var(--acc-dim); color: var(--fg); }
+.dg-t .dg-tab tr.on td.no { background: var(--fg); color: var(--bg); }
+.dg-t .dg-tab sup, .dg-t .dg-tab sub { line-height: 0; }
+.dg-pick { background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; cursor: pointer; text-align: left; }
+.dg-t .dg-pick { color: var(--fg); border-bottom: 1px dotted var(--fg3); }
+.dg-t .dg-pick:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
+.dg-t .dg-ts { min-width: 0; }
+.dg-t .dg-ax { height: calc(22 * 13px); width: 50ch; max-width: 100%; }
+.dg-t .dg-ax .hi { color: var(--fg); font-weight: 500; }
+.dg-t .dg-rohead { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; font: 400 10px/16px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg3); width: calc(48ch + 18px); max-width: 100%; }
+.dg-t .dg-ro { margin: 2px 0 0; padding: 4px 8px; width: calc(48ch + 18px); max-width: 100%; height: calc(3 * 15px + 10px); box-sizing: border-box; border: 1px solid var(--rule2); font: 400 11px/15px var(--mono); color: var(--fg); white-space: pre; overflow: hidden; font-variant-ligatures: none; font-variant-numeric: tabular-nums; }
+.dg-t .dg-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding: 6px 8px; border-top: 1px solid var(--rule); }
+.dg-t .dg-key { font: 400 10.5px/16px var(--mono); color: var(--fg3); }
+.dg-t .pf b { font-family: var(--mono); font-weight: 500; color: var(--fg); }
+table.dg-ft td:first-child { width: auto; }
+table.dg-ft th:first-child { white-space: nowrap; }
+table.dg-kvt td.kvc { font-family: var(--mono); white-space: nowrap; color: var(--fg); }
+table.cx-t td.nw { white-space: nowrap; }
+
+/* ---------- VISUAL ---------- */
+:root[data-mode="visual"] {
+  & .dg-v { --dg-o: #e5664f; margin: 40px 0 0; }
+  &[data-theme="light"] .dg-v { --dg-o: #c2402c; }
+  &[data-theme="light"] .dg-v .dg-strip rect.vis { opacity: 0.8; }
+  &[data-theme="light"] .dg-v .dg-strip svg.red rect.vis { opacity: 0.5; }
+  & .dg-v .dg-vhead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; margin-bottom: 18px; }
+  & .dg-v .dg-legend { display: flex; flex-wrap: wrap; gap: 6px 20px; font: 400 14px/22px var(--v-ui); color: var(--v-text3); }
+  & .dg-v .dg-legend .k { display: inline-block; width: 22px; height: 10px; margin-right: 8px; vertical-align: 0; }
+  & .dg-v .dg-legend .k.vis { opacity: 0.8; }
+  & .dg-v .dg-legend .k.ir { background: repeating-linear-gradient(45deg, var(--v-ir1550) 0 2px, transparent 2px 5px); border: 1px dashed var(--v-ir1550); }
+  & .dg-v .dg-legend .k.mk { width: 10px; height: 10px; transform: rotate(45deg); background: var(--v-text2); margin-right: 10px; }
+
+  & .dg-v .dg-strip { position: relative; height: 214px; background: var(--v-ink1); border: 1px solid var(--v-line); overflow: hidden; touch-action: pan-y; }
+  & .dg-v .dg-strip svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+  & .dg-v .dg-strip .irh { stroke: var(--v-ir1550); stroke-width: 1.4; stroke-dasharray: 3 2; }
+  & .dg-v .dg-strip .uvh { stroke: var(--v-text3); stroke-width: 1; opacity: 0.6; }
+  & .dg-v .dg-strip rect.vis { opacity: 0.55; transition: opacity 240ms var(--v-ease); }
+  & .dg-v .dg-strip svg.red rect.vis { opacity: 0.3; }
+  & .dg-v .dg-strip .frame { fill: none; stroke: var(--v-line2); stroke-width: 1; }
+  & .dg-v .dg-strip text { font: 500 12px/1 var(--v-ui); fill: var(--v-text3); font-variant-numeric: tabular-nums; }
+  & .dg-v .dg-strip .tk { stroke: var(--v-text3); stroke-width: 1; }
+  & .dg-v .dg-strip text.ax { font-style: italic; }
+  & .dg-v .dg-strip .redchip { opacity: 0; transition: opacity 240ms var(--v-ease); }
+  & .dg-v .dg-strip svg.red .redchip { opacity: 1; filter: drop-shadow(0 0 6px currentColor); }
+  & .dg-v .dg-strip .pump { display: none; }
+  & .dg-v.pump .dg-strip .pump { display: inline; }
+  & .dg-v .dg-strip .pump line { stroke-width: 2; }
+  & .dg-v .dg-strip .mk .st { stroke-width: 1.5; opacity: 0.75; }
+  & .dg-v .dg-strip .mk .hd { stroke: var(--v-ink1); stroke-width: 1.5; }
+  & .dg-v .dg-strip .mk .ring { fill: none; stroke: none; }
+  & .dg-v.pump .dg-strip .mk.np .ring { stroke: var(--v-text); stroke-width: 1.5; stroke-dasharray: 3 3; }
+  & .dg-v .dg-strip .mk .lb { font: 500 14px/1 var(--v-ui); fill: var(--v-text2); }
+  & .dg-v .dg-strip .mk.hv .st { opacity: 1; stroke-width: 2; }
+  & .dg-v .dg-strip .mk.hv .lb { fill: var(--v-text); }
+  & .dg-v .dg-strip .mk.on .st { opacity: 1; stroke-width: 3; }
+  & .dg-v .dg-strip .mk.on .lb { fill: var(--v-text); font-weight: 650; }
+  & .dg-v .dg-strip .trail { opacity: 0; }
+  & .dg-v.cold .dg-strip .trail { opacity: 1; }
+  & .dg-v .dg-strip .trail line { stroke: var(--v-text3); stroke-width: 1.2; stroke-dasharray: 4 3; }
+  & .dg-v .dg-strip .trail path { fill: var(--v-text3); }
+
+  & .dg-v .dg-joy { display: grid; grid-template-rows: 22px 22px; margin-top: 10px; font: 400 15px/22px var(--v-ui); color: var(--v-text2); }
+  & .dg-v .dg-joy > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  & .dg-v .dg-joy .sw { display: inline-block; width: 14px; height: 14px; margin-right: 10px; vertical-align: -2px; }
+  & .dg-v .dg-hud { display: grid; grid-template-rows: repeat(3, 24px); margin: 12px 0 28px; padding: 12px 18px; border-left: 2px solid var(--v-l532); background: var(--v-ink1); font: 400 15px/24px var(--v-ui); color: var(--v-text2); }
+  & .dg-v .dg-hud > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
+  & .dg-v .dg-hud b { font: 500 19px/24px var(--v-serif); color: var(--v-text); margin-right: 8px; }
+  & .dg-v .dg-hud .bd { color: var(--v-text); margin-left: 8px; }
+  & .dg-v .dg-hud .kn { color: var(--v-text3); margin-left: 6px; }
+  & .dg-v .dg-hud sup, & .dg-v .dg-hud sub { line-height: 0; }
+
+  & .dg-v .dg-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  & .dg-v .dg-card { position: relative; display: flex; flex-direction: column; min-width: 0; padding: 18px 20px 16px; background: var(--v-ink1); border: 1px solid var(--v-line); outline: 2px solid transparent; outline-offset: -2px; transition: outline-color 120ms var(--v-ease); }
+  & .dg-v .dg-card.hv { outline-color: var(--v-line2); }
+  & .dg-v .dg-card.on { outline-color: var(--v-l532); }
+  & .dg-v .dg-card header { display: flex; justify-content: space-between; align-items: center; height: 20px; font: 500 13px/20px var(--v-ui); color: var(--v-text3); }
+  & .dg-v .dg-card .dg-pt { visibility: hidden; color: var(--v-l532); }
+  & .dg-v.pump .dg-card .dg-pt { visibility: visible; }
+  & .dg-v .dg-card .dg-pick { display: flex; flex-direction: column; gap: 2px; margin-top: 6px; }
+  & .dg-v .dg-card .dg-pick::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+  & .dg-v .dg-card .dg-pick:focus-visible { outline: none; }
+  & .dg-v .dg-card .dg-pick:focus-visible::after { outline: 3px solid var(--v-l532); outline-offset: 3px; }
+  & .dg-v .dg-card .sym { font: 400 30px/36px var(--v-serif); color: var(--v-text); white-space: nowrap; }
+  & .dg-v .dg-card .sym sup, & .dg-v .dg-card .sym sub { font-size: 0.6em; line-height: 0; }
+  & .dg-v .dg-card .nm { font: 500 15px/22px var(--v-ui); color: var(--v-text2); }
+  & .dg-v .dg-card .vig { aspect-ratio: 240 / 150; margin: 10px 0 8px; border-top: 1px solid var(--v-line); border-bottom: 1px solid var(--v-line); }
+  & .dg-v .dg-card .vig svg { width: 100%; height: 100%; display: block; overflow: visible; }
+  & .dg-v .dg-card .val { font: 400 22px/30px var(--v-serif); color: var(--v-text); font-variant-numeric: lining-nums tabular-nums; }
+  & .dg-v .dg-card .val .none { font: 400 15px/30px var(--v-ui); color: var(--v-text3); }
+  & .dg-v .dg-card .val sup { font-size: 0.6em; line-height: 0; }
+  & .dg-v .dg-card p { margin: 6px 0 0; font: 400 14px/21px var(--v-ui); color: var(--v-text2); }
+  & .dg-v .dg-card p.life { color: var(--v-text3); }
+  & .dg-v .dg-card p.kv span { color: var(--v-text3); }
+  & .dg-v .dg-card p sup, & .dg-v .dg-card p sub { line-height: 0; }
+  & .dg-v .dg-card footer { position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: auto; padding-top: 14px; font: 400 13px/18px var(--v-ui); color: var(--v-text3); }
+  & .dg-v .dg-card :is(.b, .term) { position: relative; z-index: 2; }
+  @media (max-width: 1100px) { & .dg-v .dg-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px) {
+    & .dg-v .dg-cards { grid-template-columns: minmax(0, 1fr); }
+    & .dg-v .dg-joy { grid-template-rows: 44px 44px; }
+    & .dg-v .dg-joy > span { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    & .dg-v .dg-hud { grid-template-rows: 48px 48px 24px; padding: 10px 14px; }
+    & .dg-v .dg-hud > span { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+    & .dg-v .dg-hud > span.l3 { -webkit-line-clamp: 1; white-space: nowrap; display: block; }
+  }
+
+  /* vignettes */
+  & .dg-v .vig .of.Li { fill: color-mix(in srgb, var(--v-au) 10%, transparent); }
+  & .dg-v .vig .of.Nb { fill: color-mix(in srgb, var(--nb) 10%, transparent); }
+  & .dg-v .vig .oe { stroke-width: 1.2; }
+  & .dg-v .vig .oe.Li { stroke: var(--v-au); }
+  & .dg-v .vig .oe.Nb { stroke: var(--nb); }
+  & .dg-v .vig .oe.bk { stroke-dasharray: 3 3; opacity: 0.55; }
+  & .dg-v .vig .ox { fill: var(--dg-o); }
+  & .dg-v .vig .ion.Nb { fill: var(--nb); }
+  & .dg-v .vig .ion.Li { fill: var(--v-au); }
+  & .dg-v .vig .vac { fill: none; stroke: var(--v-text2); stroke-width: 1.4; stroke-dasharray: 3 2.5; }
+  & .dg-v .vig .e0 { stop-color: var(--v-text); stop-opacity: 0.7; }
+  & .dg-v .vig .e1 { stop-color: var(--v-text); stop-opacity: 0.28; }
+  & .dg-v .vig .e2 { stop-color: var(--v-text); stop-opacity: 0; }
+  & .dg-v .vig text { font: 500 10.5px/1 var(--v-ui); fill: var(--v-text3); }
+  & .dg-v .vig text.vl { font-size: 10.5px; }
+  & .dg-v .vig .cax line { stroke: var(--v-text3); stroke-width: 1; }
+  & .dg-v .vig .cax path { fill: var(--v-text3); }
+  & .dg-v .vig .cax text { font-style: italic; }
+  & .dg-v .vig .hole { fill: none; stroke: var(--v-text); stroke-width: 1.2; stroke-dasharray: 2 2; }
+  & .dg-v .vig .hyd { fill: var(--v-text); }
+  & .dg-v .vig .bond { stroke: var(--v-text2); stroke-width: 1.6; }
+  & .dg-v .vig .str path { fill: none; stroke: var(--v-text3); stroke-width: 1; }
+  & .dg-v .vig .inset .ib { fill: none; stroke: var(--v-line); }
+  & .dg-v .vig .inset .fw { stroke: var(--v-ir1550); stroke-width: 1.6; }
+  & .dg-v .vig .inset .m { stroke: var(--v-ir1550); stroke-width: 1.5; stroke-dasharray: 3 2; }
+  & .dg-v .vig .inset .m.s { stroke-dasharray: 1 2; }
+  & .dg-v .vig .inset .it { font-size: 8.5px; }
+  & .dg-v .vig .inset .ia { stroke: var(--v-text3); stroke-width: 0.8; }
+  & .dg-v .vig .pair { opacity: 1; }
+  & .dg-v .vig .split { opacity: 0; }
+  & .dg-v.cold .vig .pair { opacity: 0; }
+  & .dg-v.cold .vig .split { opacity: 1; }
+}
+:root[data-mode="visual"][data-fx="on"] {
+  & .dg-v .dg-strip .mk { transition: transform 600ms var(--v-ease); }
+  & .dg-v .dg-strip .trail { transition: opacity 240ms var(--v-ease) 360ms; }
+  & .dg-v .vig :is(.pair, .split) { transition: opacity 600ms var(--v-ease); }
+}

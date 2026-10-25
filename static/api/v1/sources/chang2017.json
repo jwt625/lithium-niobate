@@ -1,0 +1,60 @@
+{
+  "citation": "Lin Chang, Martin H. P. Pfeiffer, Nicolas Volet, et al., \"Heterogeneous integration of lithium niobate and silicon nitride waveguides for wafer-scale photonic integrated circuits on silicon\", Optics Letters 42, 803, (2017) doi:10.1364/ol.42.000803",
+  "link": "https://doi.org/10.1364/ol.42.000803",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Lin Chang"
+      },
+      {
+        "literal": "Martin H. P. Pfeiffer"
+      },
+      {
+        "literal": "Nicolas Volet"
+      },
+      {
+        "literal": "Michael Zervas"
+      },
+      {
+        "literal": "Jon D. Peters"
+      },
+      {
+        "literal": "Costanza L. Manganelli"
+      },
+      {
+        "literal": "Eric J. Stanton"
+      },
+      {
+        "literal": "Yifei Li"
+      },
+      {
+        "literal": "Tobias J. Kippenberg"
+      },
+      {
+        "literal": "John E. Bowers"
+      }
+    ],
+    "container_title": "Optics Letters",
+    "doi": "10.1364/ol.42.000803",
+    "id": "chang2017",
+    "issue": "4",
+    "issued": "2017-02-15",
+    "page": "803",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Heterogeneous integration of lithium niobate and silicon nitride waveguides for wafer-scale photonic integrated circuits on silicon",
+    "type": "article-journal",
+    "volume": "42"
+  }
+}

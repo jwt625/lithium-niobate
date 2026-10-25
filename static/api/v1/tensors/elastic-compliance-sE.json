@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "All public records of this tensor across variants; spread is per component over all records (compare variant, conditions and frame before use).",
+    "tensor": "elastic-compliance-sE"
+  },
+  "records": [
+    "elastic-compliance-sE/cln/kushibiki1999",
+    "elastic-compliance-sE/unspecified/weis1985-smithwelsh1971",
+    "elastic-compliance-sE/unspecified/weis1985-warner1967"
+  ],
+  "spread": {
+    "s11": {
+      "max": 5.85352,
+      "min": 5.78,
+      "n_records": 3
+    },
+    "s12": {
+      "max": -1.01,
+      "min": -1.18173,
+      "n_records": 3
+    },
+    "s13": {
+      "max": -1.35637,
+      "min": -1.47,
+      "n_records": 3
+    },
+    "s14": {
+      "max": -0.920402,
+      "min": -1.02,
+      "n_records": 3
+    },
+    "s33": {
+      "max": 5.05782,
+      "min": 5.02,
+      "n_records": 3
+    },
+    "s44": {
+      "max": 17.1,
+      "min": 16.9493,
+      "n_records": 3
+    }
+  }
+}

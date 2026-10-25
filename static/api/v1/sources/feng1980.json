@@ -1,0 +1,58 @@
+{
+  "citation": "Duan Feng, Nai-Ben Ming, Jing-Fen Hong, et al., \"Enhancement of second-harmonic generation in LiNbO3 crystals with periodic laminar ferroelectric domains\", Applied Physics Letters 37, 607-609, (1980) doi:10.1063/1.92035",
+  "link": "https://doi.org/10.1063/1.92035",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Feng",
+        "given": "Duan"
+      },
+      {
+        "family": "Ming",
+        "given": "Nai-Ben"
+      },
+      {
+        "family": "Hong",
+        "given": "Jing-Fen"
+      },
+      {
+        "family": "Yang",
+        "given": "Yong-Shun"
+      },
+      {
+        "family": "Zhu",
+        "given": "Jin-Song"
+      },
+      {
+        "family": "Yang",
+        "given": "Zhen"
+      },
+      {
+        "family": "Wang",
+        "given": "Ye-Ning"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.92035",
+    "id": "feng1980",
+    "issue": "7",
+    "issued": "1980-10-01",
+    "page": "607-609",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Enhancement of second-harmonic generation in LiNbO3 crystals with periodic laminar ferroelectric domains",
+    "type": "article-journal",
+    "volume": "37"
+  }
+}

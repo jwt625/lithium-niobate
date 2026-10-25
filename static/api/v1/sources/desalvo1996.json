@@ -1,0 +1,50 @@
+{
+  "citation": "R. DeSalvo, A.A. Said, D.J. Hagan, et al., \"Infrared to ultraviolet measurements of two-photon absorption and n/sub 2/ in wide bandgap solids\", IEEE Journal of Quantum Electronics 32, 1324-1333, (1996) doi:10.1109/3.511545",
+  "link": "https://doi.org/10.1109/3.511545",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "DeSalvo",
+        "given": "R."
+      },
+      {
+        "family": "Said",
+        "given": "A.A."
+      },
+      {
+        "family": "Hagan",
+        "given": "D.J."
+      },
+      {
+        "family": "Van Stryland",
+        "given": "E.W."
+      },
+      {
+        "family": "Sheik-Bahae",
+        "given": "M."
+      }
+    ],
+    "container_title": "IEEE Journal of Quantum Electronics",
+    "doi": "10.1109/3.511545",
+    "id": "desalvo1996",
+    "issue": "8",
+    "issued": "1996",
+    "page": "1324-1333",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Infrared to ultraviolet measurements of two-photon absorption and n/sub 2/ in wide bandgap solids",
+    "type": "article-journal",
+    "volume": "32"
+  }
+}

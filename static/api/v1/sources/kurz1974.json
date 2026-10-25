@@ -1,0 +1,33 @@
+{
+  "citation": "H. Kurz, \"Wavelength dependence of the photorefractive process in doped linbo3\", Ferroelectrics 8, 437-439, (1974) doi:10.1080/00150197408234119",
+  "link": "https://doi.org/10.1080/00150197408234119",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "H. Kurz"
+      }
+    ],
+    "container_title": "Ferroelectrics",
+    "doi": "10.1080/00150197408234119",
+    "id": "kurz1974",
+    "issue": "1",
+    "issued": "1974-01",
+    "page": "437-439",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Wavelength dependence of the photorefractive process in doped linbo3",
+    "type": "article-journal",
+    "volume": "8"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "citation": "Chengli Wang, Zihan Li, Johann Riemensberger, et al., \"Lithium tantalate photonic integrated circuits for volume manufacturing\", Nature 629, 784-790, (2024) doi:10.1038/s41586-024-07369-1",
+  "link": "https://doi.org/10.1038/s41586-024-07369-1",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Chengli"
+      },
+      {
+        "family": "Li",
+        "given": "Zihan"
+      },
+      {
+        "family": "Riemensberger",
+        "given": "Johann"
+      },
+      {
+        "family": "Lihachev",
+        "given": "Grigory"
+      },
+      {
+        "family": "Churaev",
+        "given": "Mikhail"
+      },
+      {
+        "family": "Kao",
+        "given": "Wil"
+      },
+      {
+        "family": "Ji",
+        "given": "Xinru"
+      },
+      {
+        "family": "Zhang",
+        "given": "Junyin"
+      },
+      {
+        "family": "Blesin",
+        "given": "Terence"
+      },
+      {
+        "family": "Davydova",
+        "given": "Alisa"
+      }
+    ],
+    "author_note": "et al.",
+    "container_title": "Nature",
+    "doi": "10.1038/s41586-024-07369-1",
+    "id": "wang2024",
+    "issue": "8013",
+    "issued": "2024-05-08",
+    "page": "784-790",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Lithium tantalate photonic integrated circuits for volume manufacturing",
+    "type": "article-journal",
+    "volume": "629"
+  }
+}

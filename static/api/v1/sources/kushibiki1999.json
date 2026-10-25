@@ -1,0 +1,48 @@
+{
+  "citation": "J. Kushibiki, I. Takanaga, M. Arakawa, et al., \"Accurate measurements of the acoustical physical constants of LiNbO3 and LiTaO3 single crystals\", IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control 46, 1315, (1999) doi:10.1109/58.796136",
+  "link": "https://doi.org/10.1109/58.796136",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Tohoku University repository copy.",
+      "oa_status": "green"
+    },
+    "author": [
+      {
+        "family": "Kushibiki",
+        "given": "J."
+      },
+      {
+        "family": "Takanaga",
+        "given": "I."
+      },
+      {
+        "family": "Arakawa",
+        "given": "M."
+      },
+      {
+        "family": "Sannomiya",
+        "given": "T."
+      }
+    ],
+    "container_title": "IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control",
+    "doi": "10.1109/58.796136",
+    "id": "kushibiki1999",
+    "issued": "1999",
+    "page": "1315",
+    "read": "full text, re-checked",
+    "title": "Accurate measurements of the acoustical physical constants of LiNbO3 and LiTaO3 single crystals",
+    "type": "article-journal",
+    "volume": "46"
+  }
+}

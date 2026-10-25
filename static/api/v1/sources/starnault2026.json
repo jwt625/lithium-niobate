@@ -1,0 +1,42 @@
+{
+  "citation": "Charles St-Arnault, Charles Laperle, Derek M. Kita, et al., \"Integrated electro-optic circulator on thin-film lithium niobate for bidirectional optical fibre transmission\", Nature Photonics, (2026) doi:10.1038/s41566-026-02008-9",
+  "link": "https://doi.org/10.1038/s41566-026-02008-9",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Charles St-Arnault"
+      },
+      {
+        "literal": "Charles Laperle"
+      },
+      {
+        "literal": "Derek M. Kita"
+      },
+      {
+        "literal": "Christian Reimer"
+      },
+      {
+        "literal": "David V. Plant"
+      }
+    ],
+    "container_title": "Nature Photonics",
+    "doi": "10.1038/s41566-026-02008-9",
+    "id": "starnault2026",
+    "issued": "2026-09-11",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Integrated electro-optic circulator on thin-film lithium niobate for bidirectional optical fibre transmission",
+    "type": "article-journal"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "citation": "I. P. Kaminow, E. H. Turner, R. L. Barns, et al., \"Crystallographic and electro-optic properties of cleaved LiNbO3\", Journal of Applied Physics 51, 4379-4384, (1980) doi:10.1063/1.328301",
+  "link": "https://doi.org/10.1063/1.328301",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Kaminow",
+        "given": "I. P."
+      },
+      {
+        "family": "Turner",
+        "given": "E. H."
+      },
+      {
+        "family": "Barns",
+        "given": "R. L."
+      },
+      {
+        "family": "Bernstein",
+        "given": "J. L."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.328301",
+    "id": "kaminow1980",
+    "issued": "1980-08-01",
+    "page": "4379-4384",
+    "read": "not read; values via weis1985 Table 4 ( 44, 46, 48, 50); DOI from Crossref 2026-10-25",
+    "title": "Crystallographic and electro-optic properties of cleaved LiNbO3",
+    "type": "article-journal",
+    "volume": "51"
+  }
+}

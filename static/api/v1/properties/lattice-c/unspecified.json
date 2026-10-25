@@ -1,0 +1,101 @@
+{
+  "alternatives": [
+    {
+      "category": "structure",
+      "conditions": {
+        "method": "single-crystal neutron diffraction",
+        "temperature_C": 24
+      },
+      "id": "lattice-c/unspecified/cod-abrahams1966-pt4",
+      "kind": "scalar",
+      "name": "Lattice constant c (hexagonal setting)",
+      "property": "lattice-c",
+      "provenance": {
+        "locator": "COD 1541936",
+        "original_reference": "Abrahams, Hamilton, Reddy, J. Phys. Chem. Solids 27, 1013 (1966), part 4, DOI 10.1016/0022-3697(66)90073-4",
+        "source_id": "cod",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 13.8631,
+      "variant": "unspecified",
+      "variant_note": "1966 crystal, composition not stated"
+    },
+    {
+      "category": "structure",
+      "id": "lattice-c/unspecified/cod-ohgaki1992",
+      "kind": "scalar",
+      "name": "Lattice constant c (hexagonal setting)",
+      "property": "lattice-c",
+      "provenance": {
+        "locator": "COD 1544665",
+        "source_id": "ohgaki1992",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 13.8653,
+      "variant": "unspecified"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "lattice-c",
+    "variant": "unspecified"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "conditions": {
+        "method": "synchrotron X-ray diffraction",
+        "temperature_text": "293 K (COD CIF)"
+      },
+      "default": true,
+      "id": "lattice-c/unspecified/hsu1997",
+      "kind": "scalar",
+      "name": "Lattice constant c (hexagonal setting)",
+      "property": "lattice-c",
+      "provenance": {
+        "locator": "COD 2101845",
+        "source_id": "hsu1997",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 13.863,
+      "variant": "unspecified"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 13.8653,
+    "min": 13.863,
+    "n_records": 3,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "Ao"
+  }
+}

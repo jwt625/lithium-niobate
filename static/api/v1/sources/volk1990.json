@@ -1,0 +1,39 @@
+{
+  "citation": "T. R. Volk, V. I. Pryalkin, N. M. Rubinina, \"Optical-damage-resistant LiNbO_3:Zn crystal\", Optics Letters 15, 996, (1990) doi:10.1364/ol.15.000996",
+  "link": "https://doi.org/10.1364/ol.15.000996",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "T. R. Volk"
+      },
+      {
+        "literal": "V. I. Pryalkin"
+      },
+      {
+        "literal": "N. M. Rubinina"
+      }
+    ],
+    "container_title": "Optics Letters",
+    "doi": "10.1364/ol.15.000996",
+    "id": "volk1990",
+    "issue": "18",
+    "issued": "1990-09-15",
+    "page": "996",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Optical-damage-resistant LiNbO_3:Zn crystal",
+    "type": "article-journal",
+    "volume": "15"
+  }
+}

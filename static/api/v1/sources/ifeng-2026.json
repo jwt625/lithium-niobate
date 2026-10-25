@@ -1,0 +1,24 @@
+{
+  "citation": "\"Dazhong News report on NANOLN milestones (via ifeng.com)\", (2026) https://news.ifeng.com/c/8uujt7GTuWu",
+  "link": "https://news.ifeng.com/c/8uujt7GTuWu",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "ifeng-2026",
+    "issued": "2026-07-20",
+    "read": "Read; company claims (2014 films, 2015 'world first' 3-inch, 2020 4-inch, 2023 8-inch)",
+    "title": "Dazhong News report on NANOLN milestones (via ifeng.com)",
+    "type": "webpage",
+    "url": "https://news.ifeng.com/c/8uujt7GTuWu"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "citation": "David E. Zelmon, David L. Small, Dieter Jundt, \"Infrared corrected Sellmeier coefficients for congruently grown lithium niobate and 5 mol% magnesium oxide-doped lithium niobate\", Journal of the Optical Society of America B 14, 3319, (1997) doi:10.1364/JOSAB.14.003319",
+  "link": "https://doi.org/10.1364/JOSAB.14.003319",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Erratum: Optica open-access license.",
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Zelmon",
+        "given": "David E."
+      },
+      {
+        "family": "Small",
+        "given": "David L."
+      },
+      {
+        "family": "Jundt",
+        "given": "Dieter"
+      }
+    ],
+    "container_title": "Journal of the Optical Society of America B",
+    "doi": "10.1364/JOSAB.14.003319",
+    "errata": [
+      {
+        "citation": "Erratum, J. Opt. Soc. Am. B 43(11), 2788 (2026)",
+        "content": "The headings for the ordinary and extraordinary index for 5 mol.% doped lithium niobate are switched.",
+        "doi": "10.1364/JOSAB.616304",
+        "issued": "2026-10-22",
+        "read": "Crossref abstract"
+      }
+    ],
+    "id": "zelmon1997",
+    "issued": "1997-12-01",
+    "notes": "The MgO5 o/e swap was also noted in print by gayer2008 (p. 348).",
+    "page": "3319",
+    "read": "coefficients via refractiveindex.info (CC0) transcription, re-checked; paper not read",
+    "title": "Infrared corrected Sellmeier coefficients for congruently grown lithium niobate and 5 mol% magnesium oxide-doped lithium niobate",
+    "type": "article-journal",
+    "volume": "14"
+  }
+}

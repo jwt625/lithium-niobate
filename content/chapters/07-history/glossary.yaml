@@ -1,0 +1,249 @@
+# Glossary, chapter 07 History. Lane C07, 2026-10-25.
+# Definitions state facts used in the chapter; numbers carry their source id (refs.yaml).
+# 'chapters' points to where the term carries weight (h01..h10, H1..H4 hero stories).
+
+terms:
+
+- term: "LN"
+  expansion: "lithium niobate, LiNbO3"
+  definition: "Ferroelectric oxide crystal, space group R3c; ferroelectricity reported in 1949 (matthias1949)."
+  chapters: [h01]
+
+- term: "LT"
+  expansion: "lithium tantalate, LiTaO3"
+  definition: "Isomorphous sibling of LN; reported ferroelectric with LN in 1949 (matthias1949); main substrate for phone SAW filters by qualitative industry evidence (R09)."
+  chapters: [h01, h04, h10]
+
+- term: "columbium"
+  definition: "Name given by Hatchett (1801) to the element now called niobium (hatchett1802)."
+  chapters: [h01]
+
+- term: "pelopium"
+  definition: "Name Rose gave in 1846 to a supposed second new metal in Bavarian tantalite, after Pelops; shown to be niobium (rose1846, marignac1866)."
+  chapters: [h01]
+
+- term: "ilmenite"
+  definition: "FeTiO3 structure type, centrosymmetric (as noted by matthias1949). LN was first described as ilmenite-type; its ferroelectric structure is R3c (abrahams1966a)."
+  chapters: [h01]
+
+- term: "ferroelectric"
+  definition: "Having a spontaneous electric polarization that an applied field can reverse."
+  chapters: [h01, h02]
+
+- term: "Curie temperature (Tc)"
+  definition: "Temperature above which the spontaneous polarization vanishes; measured for LN by Smolenskii et al. in 1966 (smolenskii1966). Value: see chapter 01 data."
+  chapters: [h02]
+
+- term: "congruent composition"
+  definition: "Melt composition that freezes to a crystal of the same composition; 48.6 mol% Li2O for LN (carruthers1971)."
+  chapters: [h01, h06]
+
+- term: "CLN, SLN"
+  expansion: "congruent LN; stoichiometric (or near-stoichiometric) LN"
+  definition: "CLN is grown at the congruent composition and is Li-deficient; SLN approaches [Li]/[Nb] = 1, grown by double-crucible Czochralski (kitamura1992) or made by vapor transport equilibration (luh1987)."
+  chapters: [h06]
+
+- term: "Czochralski growth"
+  definition: "Pulling a crystal from its melt on a seed; published in 1917 as a method to measure crystallization speed of metals (czochralski1918); applied to LN in 1965 (ballman1965, fedulov1965)."
+  chapters: [h01, h02]
+
+- term: "single-domain (poled) crystal"
+  definition: "Crystal whose spontaneous polarization points one way throughout, prepared by applying a field near the Curie temperature (nassau1966b)."
+  chapters: [h02]
+
+- term: "phase matching"
+  definition: "Condition that interacting waves keep a fixed phase relation, e.g. k(2 omega) = 2 k(omega) for SHG; met in LN by birefringence and temperature (boyd1964, miller1965) or by QPM."
+  chapters: [h02, H4]
+
+- term: "noncritical phase matching"
+  definition: "Phase matching with beams along a principal axis (90 degrees), so walk-off vanishes; tuned by temperature (miller1965)."
+  chapters: [h02]
+
+- term: "SHG"
+  expansion: "second-harmonic generation"
+  definition: "Conversion of light at frequency omega to 2 omega in a crystal without inversion symmetry."
+  chapters: [h02, h06, H4]
+
+- term: "OPO"
+  expansion: "optical parametric oscillator"
+  definition: "Resonator in which a pump photon splits into signal and idler photons, 1/lambda_p = 1/lambda_s + 1/lambda_i; first tunable OPO in LN, 1965 (giordmaine1965, harris1969)."
+  chapters: [h02, H2]
+
+- term: "QPM"
+  expansion: "quasi-phase matching"
+  definition: "Reversing the sign of the nonlinear coefficient every coherence length so converted light keeps growing; proposed 1962 (armstrong1962); first-order period Lambda = 2 l_c = 2 pi / Delta k."
+  chapters: [h06, H4]
+
+- term: "coherence length (l_c)"
+  definition: "Distance pi / Delta k over which harmonic light builds before the phase mismatch reverses its growth."
+  chapters: [H4]
+
+- term: "PPLN"
+  expansion: "periodically poled lithium niobate"
+  definition: "LN with a periodic domain pattern for QPM, today written by electric-field poling (yamada1993)."
+  chapters: [h06, H4]
+
+- term: "electric-field poling"
+  definition: "Reversing ferroelectric domains by applying a field above the coercive field through patterned electrodes; first-order QPM LN made this way at room temperature in 1993 (yamada1993)."
+  chapters: [h06, H4]
+
+- term: "optical damage"
+  definition: "Original (1966) name for light-induced refractive-index change in LN (ashkin1966); now the photorefractive effect."
+  chapters: [h03, H1]
+
+- term: "photorefractive effect"
+  definition: "Index change produced when light-excited charges move and are trapped, creating a space-charge field that acts through the electro-optic effect (chen1969); in LN driven mainly by the bulk photovoltaic current (glass1974)."
+  chapters: [h03, H1]
+
+- term: "BPVE"
+  expansion: "bulk photovoltaic effect"
+  definition: "Steady photocurrent in a uniform noncentrosymmetric crystal under illumination; saturation voltages above 1000 V in doped LN (glass1974)."
+  chapters: [h03]
+
+- term: "Kukhtarev equations"
+  definition: "Band-transport rate equations for photorefractive recording (kukhtarev1978a)."
+  chapters: [h03]
+
+- term: "hologram fixing"
+  definition: "Making a recorded index grating survive readout by heating so ions compensate the electronic grating; about 30 min at 100 C in LN (amodei1971b)."
+  chapters: [h03, H1]
+
+- term: "Fe:LN"
+  expansion: "iron-doped lithium niobate"
+  definition: "LN with iron added; iron impurities identified as the origin of optical damage (peterson1971); used as a holographic medium (mok1993)."
+  chapters: [h03]
+
+- term: "MgO:LN"
+  expansion: "magnesium-oxide-doped lithium niobate"
+  definition: "LN doped with MgO; damage resistance rises sharply at or above 4.5 at.% MgO through a hundredfold rise in photoconductivity (bryan1984); threshold 4.6 mol% Mg per zheng2016 citing iqec1980 (P)."
+  chapters: [h06]
+
+- term: "SAW"
+  expansion: "surface acoustic wave"
+  definition: "Elastic wave confined near a crystal surface; used in RF and IF filters."
+  chapters: [h04]
+
+- term: "IDT"
+  expansion: "interdigital transducer"
+  definition: "Interleaved comb electrodes that launch and detect SAWs; synchronous frequency f0 = v / p; invented 1965 on quartz (white1965)."
+  chapters: [h04]
+
+- term: "128 Y-X cut"
+  definition: "LN plate rotated 127.86 degrees about X from Y, waves along X; suppresses a spurious shear wave (shibayama1976)."
+  chapters: [h04]
+
+- term: "K^2"
+  expansion: "electromechanical coupling coefficient"
+  definition: "Fraction of energy converted between electrical and acoustic form; 0.113 for the leaky SAW on 64 degree Y-cut LN (yamanouchi1972)."
+  chapters: [h04]
+
+- term: "XBAR"
+  expansion: "laterally excited bulk acoustic resonator"
+  definition: "Resonator on a thin piezoelectric single-crystal membrane; developer Resonant acquired by Murata in 2022 (murata-2022)."
+  chapters: [h04]
+
+- term: "POI"
+  expansion: "piezoelectric on insulator"
+  definition: "Engineered wafer with a thin LT or LN layer on oxide on silicon, made by layer transfer (eenews-2020-soitec)."
+  chapters: [h04]
+
+- term: "Li2O out-diffusion"
+  definition: "Loss of lithium oxide from the LN surface at high temperature; raises n_e and formed the 1973 'thin-film' guide (kaminow1973, carruthers1974)."
+  chapters: [h05, H3]
+
+- term: "Ti:LN"
+  expansion: "titanium-indiffused lithium niobate waveguide"
+  definition: "Waveguide made by diffusing Ti stripes into LN; single-mode guides within about 1 um of the surface (schmidt1974)."
+  chapters: [h05, h07]
+
+- term: "proton exchange (PE), APE"
+  expansion: "proton exchange; annealed proton exchange"
+  definition: "Replacing Li+ with H+ in an acid melt; step index increase 0.12 for extraordinary polarization (jackel1982). APE adds an anneal."
+  chapters: [h05]
+
+- term: "MZM"
+  expansion: "Mach-Zehnder modulator"
+  definition: "Interferometer whose arm phases are shifted electro-optically; in push-pull, T = cos^2(pi V / (2 V_pi)) with V from the transmission maximum."
+  chapters: [h07, h09]
+
+- term: "V_pi, V_pi L"
+  expansion: "half-wave voltage; voltage-length product"
+  definition: "Voltage for a pi phase difference; V_pi L normalizes by electrode length (units V cm)."
+  chapters: [h09, H3]
+
+- term: "DC drift"
+  definition: "Slow change of a modulator's bias point under applied DC voltage, from charge redistribution; a 15-year assurance reported in 1992 (seino1992)."
+  chapters: [h07]
+
+- term: "DP-QPSK"
+  expansion: "dual-polarization quadrature phase-shift keying"
+  definition: "Coherent format carrying 2 bits per symbol in each of two polarizations; an LN modulator for it, described by Fujitsu as a world first, announced in 2009 (fujitsu-2009)."
+  chapters: [h07]
+
+- term: "CDM, HB-CDM"
+  expansion: "coherent driver modulator; high-bandwidth CDM"
+  definition: "Packaged coherent IQ modulator with integrated RF driver."
+  chapters: [h09, h10]
+
+- term: "Smart Cut"
+  definition: "Layer transfer by hydrogen implantation, bonding and thermal splitting (bruel1995)."
+  chapters: [h08]
+
+- term: "CIS"
+  expansion: "crystal ion slicing"
+  definition: "Implanting ions to create a buried damaged layer and separating a single-crystal film; for LN first in 1998 (levy1998)."
+  chapters: [h08, H3]
+
+- term: "LNOI"
+  expansion: "lithium niobate on insulator"
+  definition: "Sub-micrometer LN film bonded on a low-index layer (usually SiO2) on a handle wafer; 680 nm films with r33 = 31 pm/V by 2004 (rabiei2004); name used in a 2012 review (poberaj2012)."
+  chapters: [h08, h09]
+
+- term: "TFLN, TFLT"
+  expansion: "thin-film lithium niobate; thin-film lithium tantalate"
+  definition: "Photonic platforms on LNOI or LTOI wafers; TFLT PICs for volume manufacturing reported in 2024 (wang2024)."
+  chapters: [h09, h10]
+
+- term: "PIC"
+  expansion: "photonic integrated circuit"
+  definition: "Multiple optical components fabricated on one chip."
+  chapters: [h09, h10]
+
+- term: "Q (quality factor)"
+  definition: "Resonance frequency divided by linewidth; 1e7 for the 2017 TFLN microring (zhang2017)."
+  chapters: [h09]
+
+- term: "DUV lithography"
+  expansion: "deep-ultraviolet lithography"
+  definition: "Optical lithography at 248 or 193 nm used in CMOS fabs; applied to 4- and 6-inch TFLN wafers in 2020 (luke2020)."
+  chapters: [h09, h10]
+
+- term: "MPW, PDK"
+  expansion: "multi-project wafer; process design kit"
+  definition: "Shared wafer runs among customers; the design rules and component library for a process (luxtelligence-about, csem-2025)."
+  chapters: [h09, h10]
+
+- term: "IM/DD, PAM-4"
+  expansion: "intensity modulation with direct detection; 4-level pulse amplitude modulation"
+  definition: "Data-center link format; PAM-4 carries 2 bits per symbol."
+  chapters: [h10]
+
+- term: "GBd"
+  expansion: "gigabaud"
+  definition: "1e9 symbols per second."
+  chapters: [h09, h10]
+
+- term: "OSFP, DR8"
+  expansion: "Octal Small Form-factor Pluggable; 8-lane, 500 m single-mode interface"
+  definition: "Pluggable transceiver form factor; DR8 uses eight parallel fiber lanes."
+  chapters: [h10]
+
+- term: "OFC, ECOC"
+  expansion: "Optical Fiber Communication Conference; European Conference on Optical Communication"
+  definition: "Main annual optical-networking conferences."
+  chapters: [h10]
+
+- term: "IQEC"
+  expansion: "International Quantum Electronics Conference"
+  definition: "Conference where the 1980 MgO:LN abstract appeared (iqec1980)."
+  chapters: [h06]

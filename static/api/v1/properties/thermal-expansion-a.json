@@ -1,0 +1,154 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Thermal expansion coefficient perpendicular to c of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-a.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-a.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Thermal expansion coefficient perpendicular to c"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Thermal expansion coefficient perpendicular to c",
+    "url": "https://lithium-niobate.com/api/v1/properties/thermal-expansion-a.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "alpha_11 (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 1.41e-05
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "alpha_11 (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/PER-K",
+        "unitText": "/K",
+        "value": 1.41e-05
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 3,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "thermal-expansion-a"
+  },
+  "records": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_C": 25
+      },
+      "id": "thermal-expansion-a/cln/cti1999",
+      "kind": "scalar",
+      "name": "Thermal expansion coefficient perpendicular to c",
+      "property": "thermal-expansion-a",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_11",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 1.5e-05,
+      "variant": "cln"
+    },
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_C": null,
+        "temperature_text": "300 K"
+      },
+      "default": true,
+      "id": "thermal-expansion-a/cln/volk2008",
+      "kind": "scalar",
+      "name": "Thermal expansion coefficient perpendicular to c",
+      "property": "thermal-expansion-a",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005; Gallagher et al., Ferroelectrics 75, 71 (1987)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_11",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 1.41e-05,
+      "variant": "cln"
+    },
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_text": "300 K"
+      },
+      "default": true,
+      "id": "thermal-expansion-a/sln/volk2008",
+      "kind": "scalar",
+      "name": "Thermal expansion coefficient perpendicular to c",
+      "property": "thermal-expansion-a",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_11",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 1.41e-05,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ]
+}

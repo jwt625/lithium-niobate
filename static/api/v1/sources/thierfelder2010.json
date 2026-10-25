@@ -1,0 +1,47 @@
+{
+  "citation": "C. Thierfelder, S. Sanna, Arno Schindlmayr, et al., \"Do we know the band gap of lithium niobate?\", physica status solidi (c) 7, 362, (2010) doi:10.1002/pssc.200982473",
+  "link": "https://doi.org/10.1002/pssc.200982473",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Thierfelder",
+        "given": "C."
+      },
+      {
+        "family": "Sanna",
+        "given": "S."
+      },
+      {
+        "family": "Schindlmayr",
+        "given": "Arno"
+      },
+      {
+        "family": "Schmidt",
+        "given": "W. G."
+      }
+    ],
+    "container_title": "physica status solidi (c)",
+    "doi": "10.1002/pssc.200982473",
+    "id": "thierfelder2010",
+    "issued": "2010",
+    "page": "362",
+    "read": "abstract only",
+    "title": "Do we know the band gap of lithium niobate?",
+    "type": "article-journal",
+    "volume": "7"
+  }
+}

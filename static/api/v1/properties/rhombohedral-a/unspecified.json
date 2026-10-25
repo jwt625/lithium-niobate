@@ -1,0 +1,74 @@
+{
+  "alternatives": [
+    {
+      "category": "structure",
+      "id": "rhombohedral-a/unspecified/hsu1997",
+      "kind": "scalar",
+      "name": "Rhombohedral cell edge a_R",
+      "property": "rhombohedral-a",
+      "provenance": {
+        "locator": "COD 2101845",
+        "source_id": "hsu1997",
+        "status": "P-db",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "a_R",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.002
+      },
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 5.493,
+      "variant": "unspecified"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "rhombohedral-a",
+    "variant": "unspecified"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "default": true,
+      "id": "rhombohedral-a/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Rhombohedral cell edge a_R",
+      "property": "rhombohedral-a",
+      "provenance": {
+        "locator": "p. 194, Eq. (1)",
+        "source_id": "weis1985",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "a_R",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 5.494,
+      "variant": "unspecified"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 5.494,
+    "min": 5.493,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "Ao"
+  }
+}

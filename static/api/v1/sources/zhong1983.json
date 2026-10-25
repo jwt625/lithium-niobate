@@ -1,0 +1,54 @@
+{
+  "citation": "Zhong Ji-guo, Xu Guan-feng, Wang Ting-fu, et al., \"THE GROWTH AND THE FREQUENCY DOUBLING CHARACTERS OF HEAVILY DOPED Mg:LiNbO3 CRYSTALS\", Acta Physica Sinica 32, 795, (1983) doi:10.7498/aps.32.795",
+  "link": "https://doi.org/10.7498/aps.32.795",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Zhong Ji-guo"
+      },
+      {
+        "literal": "Xu Guan-feng"
+      },
+      {
+        "literal": "Wang Ting-fu"
+      },
+      {
+        "literal": "Zhang Chun-yu"
+      },
+      {
+        "literal": "Lü Yu-cai"
+      },
+      {
+        "literal": "Lü Chang-qing"
+      },
+      {
+        "literal": "Chen Jia-rong"
+      },
+      {
+        "literal": "西南技术物理研究所,成都"
+      }
+    ],
+    "container_title": "Acta Physica Sinica",
+    "doi": "10.7498/aps.32.795",
+    "id": "zhong1983",
+    "issue": "6",
+    "issued": "1983",
+    "page": "795",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "THE GROWTH AND THE FREQUENCY DOUBLING CHARACTERS OF HEAVILY DOPED Mg:LiNbO3 CRYSTALS",
+    "type": "article-journal",
+    "volume": "32"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "citation": "Peter O. Weigel, Jie Zhao, Kelvin Fang, et al., \"Bonded thin film lithium niobate modulator on a silicon photonics platform exceeding 100 GHz 3-dB electrical modulation bandwidth\", Optics Express 26, 23728, (2018) doi:10.1364/oe.26.023728",
+  "link": "https://doi.org/10.1364/oe.26.023728",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Peter O. Weigel"
+      },
+      {
+        "literal": "Jie Zhao"
+      },
+      {
+        "literal": "Kelvin Fang"
+      },
+      {
+        "literal": "Hasan Al-Rubaye"
+      },
+      {
+        "literal": "Douglas Trotter"
+      },
+      {
+        "literal": "Dana Hood"
+      },
+      {
+        "literal": "John Mudrick"
+      },
+      {
+        "literal": "Christina Dallo"
+      },
+      {
+        "literal": "Andrew T. Pomerene"
+      },
+      {
+        "literal": "Andrew L. Starbuck"
+      },
+      {
+        "literal": "Christopher T. DeRose"
+      },
+      {
+        "literal": "Anthony L. Lentine"
+      },
+      {
+        "literal": "Gabriel Rebeiz"
+      },
+      {
+        "literal": "Shayan Mookherjea"
+      }
+    ],
+    "container_title": "Optics Express",
+    "doi": "10.1364/oe.26.023728",
+    "id": "weigel2018",
+    "issue": "18",
+    "issued": "2018-09-03",
+    "page": "23728",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Bonded thin film lithium niobate modulator on a silicon photonics platform exceeding 100 GHz 3-dB electrical modulation bandwidth",
+    "type": "article-journal",
+    "volume": "26"
+  }
+}

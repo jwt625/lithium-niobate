@@ -1,0 +1,38 @@
+{
+  "citation": "J. A. Giordmaine, Robert C. Miller, \"Tunable Coherent Parametric Oscillation in LiNb O 3 at Optical Frequencies\", Physical Review Letters 14, 973-976, (1965) doi:10.1103/physrevlett.14.973",
+  "link": "https://doi.org/10.1103/physrevlett.14.973",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Giordmaine",
+        "given": "J. A."
+      },
+      {
+        "family": "Miller",
+        "given": "Robert C."
+      }
+    ],
+    "container_title": "Physical Review Letters",
+    "doi": "10.1103/physrevlett.14.973",
+    "id": "giordmaine1965",
+    "issue": "24",
+    "issued": "1965-06-14",
+    "page": "973-976",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Tunable Coherent Parametric Oscillation in LiNb O 3 at Optical Frequencies",
+    "type": "article-journal",
+    "volume": "14"
+  }
+}

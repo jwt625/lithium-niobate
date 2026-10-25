@@ -1,0 +1,185 @@
+/* Chapter 2.2 page styles. Uses the shared tokens of styles.css only. Sharp corners throughout. */
+
+.ch-title { margin: 4px 0 0; }
+.depth { position: sticky; top: 0; z-index: 15; background: var(--bg); }
+:root[data-mode="visual"] .depth a.on { background: var(--acc); color: #06110a; }
+.lay { margin-top: 22px; }
+.lay .body { min-width: 0; }
+.tx { font: 400 13px/20px var(--sans); max-width: 92ch; margin: 0 0 8px; }
+.tx b { font-weight: 600; }
+.h3 { margin: 18px 0 6px; }
+.fine { margin: 6px 0 0; }
+.lk { color: var(--link); border-bottom: 1px solid var(--rule2); }
+
+/* equations */
+.eq { display: flex; align-items: center; gap: 12px; }
+.eq math { flex: 1 0 auto; }
+.eqn { flex: none; font: 400 11px var(--mono); color: var(--fg3); }
+
+/* two-column blocks */
+.duo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 14px; align-items: start; }
+@media (max-width: 1100px) { .duo { grid-template-columns: minmax(0, 1fr); } }
+.panel .ph { text-transform: none; letter-spacing: 0.02em; }
+.panel .pf { display: block; line-height: 1.5; }
+table.coef th, table.map th, table.ntab th, table.kv th, table.rt-mx th { text-transform: none; letter-spacing: 0.04em; }
+.panel .ctl { grid-template-columns: 130px minmax(0, 1fr) 96px; }
+@media (max-width: 520px) { .panel .ctl { grid-template-columns: 1fr 80px; } }
+
+/* key-value tables */
+table.kv { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+table.kv td { border-top: 1px solid var(--rule); padding: 4px 8px; vertical-align: middle; color: var(--fg2); }
+table.kv td.v { color: var(--fg); text-align: right; white-space: nowrap; }
+table.kv td.u { color: var(--fg3); width: 1%; white-space: nowrap; }
+table.kv td.s { text-align: right; width: 1%; white-space: nowrap; }
+table.kv th { text-align: left; font-weight: 400; padding: 6px 8px 4px; }
+.panel table.kv tr:first-child td { border-top-color: var(--rule2); }
+
+/* MZM plot */
+.mzm-plot { padding: 6px 4px 0; }
+.mzm-plot svg { width: 100%; height: auto; display: block; touch-action: none; cursor: ew-resize; }
+#mzm-svg .gl { stroke: var(--rule); stroke-width: 1; }
+#mzm-svg .vpi { stroke: var(--rule2); stroke-width: 1; stroke-dasharray: 2 3; }
+#mzm-svg .tk { font: 10px var(--mono); fill: var(--fg3); }
+#mzm-svg .meas { fill: none; stroke: var(--fg); stroke-width: 1.5; }
+#mzm-svg .eng { fill: none; stroke: var(--fg3); stroke-width: 1.2; stroke-dasharray: 4 3; }
+#mzm-svg .cur { stroke: var(--fg2); stroke-width: 1; }
+#mzm-svg .pt { fill: var(--fg); }
+#mzm-svg .hit { fill: transparent; }
+:root[data-mode="visual"] #mzm-svg .meas { stroke: var(--acc); }
+:root[data-mode="visual"] #mzm-svg .pt { fill: var(--acc); }
+:root[data-mode="visual"] #mzm-svg .eng { stroke: var(--gold); }
+
+/* r tensor explorer */
+.rt-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 8px 10px; border-bottom: 1px solid var(--rule); }
+.rt-ctl .lbl { margin-left: 4px; }
+.rt-ctl .seg button { padding: 3px 9px; font-size: 11px; }
+.seg button { font: inherit; }
+.rt-grid { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; padding: 10px; align-items: start; }
+@media (max-width: 900px) { .rt-grid { grid-template-columns: minmax(0, 1fr); } }
+.rt-res { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 12px; align-items: start; }
+@media (max-width: 1100px) { .rt-res { grid-template-columns: minmax(0, 1fr); } }
+table.rt-mx { font-size: 12px; border-left: 0; border-right: 0; }
+table.rt-mx th { font-weight: 400; font-size: 10.5px; color: var(--fg3); padding: 3px 10px; text-align: center; }
+table.rt-mx th.ri { text-align: left; white-space: nowrap; }
+table.rt-mx th.col { color: var(--fg); }
+table.rt-mx td { min-width: 56px; padding: 4px 10px; border: 1px solid var(--rule); }
+table.rt-mx td.z { color: var(--fg3); }
+table.rt-mx td.nz { color: var(--fg2); }
+table.rt-mx td.col { background: var(--acc-dim); }
+table.rt-mx td.on { color: var(--bg); background: var(--fg); }
+table.rt-mx td.rot { color: var(--fg); outline: 1px solid var(--fg); outline-offset: -3px; }
+table.rt-mx td.oth { color: var(--fg); outline: 1px dashed var(--fg3); outline-offset: -3px; }
+:root[data-mode="visual"] table.rt-mx td.on { background: var(--acc); color: #06110a; }
+:root[data-mode="visual"] table.rt-mx td.rot { outline-color: var(--gold); color: var(--gold); }
+.etag { font-size: 9.5px; color: var(--fg3); white-space: nowrap; }
+.kh { font: 400 10px/14px var(--mono); letter-spacing: 0.04em; color: var(--fg3); text-align: left; padding: 6px 8px 4px; }
+.key { display: inline-block; padding: 0 5px; margin-left: 6px; font-size: 10px; line-height: 15px; }
+.key.on { color: var(--bg); background: var(--fg); }
+.key.rot { outline: 1px solid var(--fg); outline-offset: -1px; color: var(--fg); }
+.key.oth { outline: 1px dashed var(--fg3); outline-offset: -1px; color: var(--fg2); }
+:root[data-mode="visual"] .key.on { background: var(--acc); color: #06110a; }
+:root[data-mode="visual"] .key.rot { outline-color: var(--gold); color: var(--gold); }
+
+table.coef tr.sel td { background: var(--acc-dim); color: var(--fg); }
+table.coef td:first-child, table.map td:first-child { width: auto; }
+table.idx th.r { text-align: right; }
+
+/* L3 figures */
+.figgrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; margin-top: 16px; }
+.figgrid .wide { grid-column: 1 / -1; }
+@media (max-width: 900px) { .figgrid { grid-template-columns: minmax(0, 1fr); } }
+.fig .ph { align-items: center; }
+.fig .ph .seg button { padding: 1px 7px; font-size: 10.5px; }
+.fig > canvas { cursor: crosshair; touch-action: none; }
+.fig > canvas:focus-visible { outline: 1px solid var(--acc); outline-offset: -1px; }
+.fig .cb { display: grid; grid-template-columns: auto minmax(60px, 260px) auto minmax(0, 1fr); align-items: center; gap: 8px; }
+.fig .cb canvas { grid-column: 2; grid-row: 1; width: 100%; height: 8px; image-rendering: pixelated; }
+.fig .cb .lo { grid-column: 1; grid-row: 1; }
+.fig .cb .hi { grid-column: 3; grid-row: 1; }
+.fig .cb .u { grid-column: 4; grid-row: 1; text-align: right; color: var(--fg2); }
+#ro { display: flex; flex-wrap: wrap; gap: 2px 16px; border-bottom: 1px solid var(--rule); min-height: 30px; }
+#ro span { white-space: nowrap; }
+.readout.pad { padding: 5px 8px; border-top: 1px solid var(--rule); }
+
+.l3b { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+@media (max-width: 1100px) { .l3b { grid-template-columns: minmax(0, 1fr); } }
+#fd-svg { width: 100%; display: block; }
+#fd-svg .dpb { fill: var(--acc-dim); }
+#fd-svg .dpb.b2 { fill: var(--bg3); }
+#fd-svg .gl { stroke: var(--rule); }
+#fd-svg .ax { stroke: var(--fg3); }
+#fd-svg .frame { fill: none; stroke: var(--rule2); }
+#fd-svg .tk { font: 10px var(--mono); fill: var(--fg3); }
+#fd-svg .dpbar { fill: var(--fg2); }
+#fd-svg .dpbar:hover { fill: var(--fg); }
+#fd-svg .r33 { fill: none; stroke: var(--fg); stroke-width: 1; }
+:root[data-mode="visual"] #fd-svg .dpbar { fill: #3b78b8; }
+:root[data-mode="visual"] #fd-svg .dpbar:hover { fill: #6aaed6; }
+:root[data-mode="visual"] #fd-svg .r33 { stroke: var(--acc); }
+
+.ntabw { overflow-x: auto; min-width: 0; }
+table.ntab { font-size: 11.5px; }
+table.ntab td:first-child { white-space: normal; font-family: var(--mono); font-size: 11.5px; }
+table.ntab td { padding: 3px 7px; }
+table.ntab td:first-child { width: auto; color: var(--fg2); }
+table.ntab td.num { color: var(--fg); white-space: nowrap; }
+table.ntab tr.grp th { padding-top: 10px; color: var(--fg2); border-bottom: 1px solid var(--rule2); }
+table.ntab td:nth-child(3) { color: var(--fg3); white-space: nowrap; }
+
+footer .keys .b { margin: 0 4px 0 10px; }
+footer .keys .b:first-child { margin-left: 0; }
+footer p { margin: 0 0 8px; }
+
+/* narrow screens */
+.rt-grid > *, .rt-res > *, .duo > *, .figgrid > * { min-width: 0; }
+@media (max-width: 560px) {
+  table.kv td { padding: 4px 5px; }
+  table.kv td:first-child { overflow-wrap: anywhere; }
+  .depth { width: auto; }
+}
+.lay .sh { flex-wrap: wrap; }
+.lay .sh .meta { white-space: normal; text-align: right; }
+
+/* layout stability: fixed columns, fixed value slots, no line-height jumps from sup/sub */
+table.kv { table-layout: fixed; }
+table.kv col.cv { width: 112px; }
+table.kv col.cu { width: 52px; }
+table.kv col.cs { width: 76px; }
+table.kv col.cn { width: 176px; }
+table.kv td { white-space: normal; }
+table.kv td.v, table.kv td.n, table.kv td.s, table.kv td.u { white-space: nowrap; overflow: hidden; }
+table.kv td.v { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+table.kv td.n { text-align: right; }
+#rt-rot { margin-top: 8px; }
+.vec { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.kv sup, table.kv sub, .readout sup, .readout sub, .fv sup, .fig .cb sup { line-height: 0; }
+.fv { display: inline-block; min-width: 11.5ch; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.fv.w6 { min-width: 6ch; } .fv.w7 { min-width: 7ch; } .fv.w9 { min-width: 9ch; } .fv.w14 { min-width: 14ch; }
+.fv.l { text-align: left; }
+#ro, #fd-ro { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+#ro > span { white-space: nowrap; }
+.fig .cb .lo, .fig .cb .hi { min-width: 10ch; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fig .cb .lo { text-align: right; }
+.panel .ctl output { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 560px) { table.kv col.cv { width: 96px; } table.kv col.cs { width: 70px; } table.kv col.cn { width: 118px; } }
+table.kv td { height: 27px; line-height: 16px; }
+#ro { line-height: 18px; }
+#rt .ph { flex-wrap: wrap; }
+#rt .ph > span { white-space: nowrap; }
+#rt-set-h { min-width: 44ch; text-align: right; }
+@media (max-width: 560px) { #rt-set-h { text-align: left; } }
+
+/* reserved slots for data that arrives with the FEM json */
+.ps { display: inline-block; font-family: var(--mono); font-size: 0.92em; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+table.ntab { table-layout: fixed; }
+table.ntab col.cv { width: 128px; }
+table.ntab col.cu { width: 84px; }
+table.ntab col.cs { width: 150px; }
+table.ntab td { height: 25px; line-height: 16px; }
+table.ntab td.num { overflow: hidden; }
+table.ntab sup, table.ntab sub, .tx sup, .tx sub, .fine sup, .fine sub, .sh .meta sup { line-height: 0; }
+.fig .cb { min-height: 20px; }
+#fd-svg { height: 260px; }
+@media (max-width: 560px) { table.ntab col.cv { width: 104px; } table.ntab col.cu { width: 70px; } table.ntab col.cs { width: 92px; } }
+/* narrow screens: colorbar unit on its own row (the 4-track row overflowed the 390 px viewport) */
+@media (max-width: 520px) { .fig .cb { grid-template-columns: auto minmax(60px, 1fr) auto; } .fig .cb .u { grid-column: 1 / -1; grid-row: 2; text-align: left; } }

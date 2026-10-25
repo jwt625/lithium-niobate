@@ -1,0 +1,24 @@
+{
+  "citation": "\"HyperLight announces thin-film lithium niobate transmitter chips supporting energy-efficient 1.6 Tbps transceiver modules\", (2023) https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules",
+  "link": "https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "bw-2023",
+    "issued": "2023-03-07",
+    "read": "Search snippet only",
+    "title": "HyperLight announces thin-film lithium niobate transmitter chips supporting energy-efficient 1.6 Tbps transceiver modules",
+    "type": "webpage",
+    "url": "https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "citation": "J. Hirohashi, V. Pasiskevicius, S. Wang, et al., \"Picosecond blue-light-induced infrared absorption in single-domain and periodically poled ferroelectrics\", Journal of Applied Physics 101, 033105, (2007) doi:10.1063/1.2434007",
+  "link": "https://doi.org/10.1063/1.2434007",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "article_number": "033105",
+    "author": [
+      {
+        "family": "Hirohashi",
+        "given": "J."
+      },
+      {
+        "family": "Pasiskevicius",
+        "given": "V."
+      },
+      {
+        "family": "Wang",
+        "given": "S."
+      },
+      {
+        "family": "Laurell",
+        "given": "F."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.2434007",
+    "id": "hirohashi2007",
+    "issue": "3",
+    "issued": "2007-02-01",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Picosecond blue-light-induced infrared absorption in single-domain and periodically poled ferroelectrics",
+    "type": "article-journal",
+    "volume": "101"
+  }
+}

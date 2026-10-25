@@ -1,0 +1,330 @@
+# Scalar property records: ferroelectric and phase-transition properties. Schema: data/schema/scalar.schema.json.
+# Sources: research notes R06 sec. 2.1 and R14 sec. 2.1. Disagreeing sources are kept as separate records (spread), not blended.
+
+- id: curie-temperature/cln/volk2008
+  kind: scalar
+  property: curie-temperature
+  name: Curie temperature
+  symbol: T_C
+  category: ferroelectric
+  value: 1140
+  unit: {ucum: "Cel", display: "C"}
+  variant: cln
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nikogosyan 2005", research_note: "R14 row 16", transcribed: "2026-10-25"}
+  default: true
+
+- id: curie-temperature/cln/cti1999
+  kind: scalar
+  property: curie-temperature
+  name: Curie temperature
+  symbol: T_C
+  category: ferroelectric
+  value: 1142.3
+  uncertainty: {type: stated, value: 0.7}
+  unit: {ucum: "Cel", display: "C"}
+  variant: cln
+  variant_note: "48.38 mol% Li2O"
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.1; R14 row 17a", transcribed: "2026-10-25"}
+  notes: "Agrees within 1 C with the Bordui composition fit at 48.38 mol% (1143.2 C, computed in R14 row 17a)."
+
+- id: curie-temperature/sln/volk2008
+  kind: scalar
+  property: curie-temperature
+  name: Curie temperature
+  symbol: T_C
+  category: ferroelectric
+  value: 1206
+  unit: {ucum: "Cel", display: "C"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Chen et al., Opt. Commun. 188, 359 (2001)", research_note: "R14 row 16", transcribed: "2026-10-25"}
+  default: true
+
+- id: curie-temperature/sln/wong2002
+  kind: scalar
+  property: curie-temperature
+  name: Curie temperature
+  symbol: T_C
+  category: ferroelectric
+  value: 1213
+  unit: {ucum: "Cel", display: "C"}
+  variant: sln
+  provenance: {source_id: wong2002, status: S, research_note: "R06 sec. 2.1; R14 rows 16, 17a", transcribed: "2026-10-25"}
+  notes: "Quoted from wong2002 by a secondary web page (de.wikipedia); wong2002 not read. Lies 7 C above volk2008 and above both composition fits at 50.0 mol% (1202.3 and 1206.5 C, R14 row 17a)."
+
+- id: curie-temperature/unspecified/weis1985
+  kind: scalar
+  property: curie-temperature
+  name: Curie temperature
+  symbol: T_C
+  category: ferroelectric
+  value: 1165
+  unit: {ucum: "Cel", display: "C"}
+  variant: unspecified
+  variant_note: "Warner et al. 1967 sample"
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Warner, Onoe, Coquin, JASA 42, 1223 (1967)", research_note: "R14 row 14", transcribed: "2026-10-25"}
+  notes: "weis1985 p. 192 text says 'below 1210 C' without a reference (R14 row 15)."
+
+- id: curie-temperature/unspecified/boysen1994
+  kind: scalar
+  property: curie-temperature
+  name: Curie temperature
+  symbol: T_C
+  category: ferroelectric
+  value: 1430
+  uncertainty: {type: approximate}
+  unit: {ucum: "K", display: "K"}
+  variant: unspecified
+  conditions: {method: "neutron powder diffraction"}
+  provenance: {source_id: boysen1994, status: P(abs), research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+  notes: "Abstract gives 'about 1430 K' (about 1157 C); composition not seen."
+
+- id: curie-temperature-vs-composition/unspecified/volk2008-iyi1992
+  kind: scalar
+  property: curie-temperature-vs-composition
+  name: Curie temperature vs crystal composition (linear fit)
+  category: ferroelectric
+  value_text: "T_C = 39.26 c - 760.67 (T_C in C, c in mol% Li2O)"
+  unit: {ucum: "Cel", display: "C"}
+  variant: unspecified
+  conditions: {method: "DTA / dielectric"}
+  provenance: {source_id: volk2008, locator: "Eq. (6.2), p. 140", status: P-comp, original_reference: "Iyi et al., J. Solid State Chem. 101, 340 (1992)", research_note: "R14 row 17", transcribed: "2026-10-25"}
+  default: true
+  notes: "Gives 1138.7 / 1141.5 / 1202.3 C at 48.38 / 48.45 / 50.0 mol% (computed, R14 row 17a)."
+
+- id: curie-temperature-vs-composition/unspecified/volk2008-bordui1992
+  kind: scalar
+  property: curie-temperature-vs-composition
+  name: Curie temperature vs crystal composition (linear fit)
+  category: ferroelectric
+  value_text: "T_C = 39.064 c - 746.73 (T_C in C, c in mol% Li2O)"
+  unit: {ucum: "Cel", display: "C"}
+  variant: unspecified
+  provenance: {source_id: volk2008, locator: "Eq. (6.3), p. 140", status: P-comp, original_reference: "Bordui et al., J. Appl. Phys. 71, 875 (1992)", research_note: "R14 row 17", transcribed: "2026-10-25"}
+  notes: "Gives 1143.2 / 1145.9 / 1206.5 C at 48.38 / 48.45 / 50.0 mol% (computed, R14 row 17a)."
+
+- id: melting-point/cln/volk2008
+  kind: scalar
+  property: melting-point
+  name: Melting point
+  symbol: T_m
+  category: ferroelectric
+  value: 1255
+  unit: {ucum: "Cel", display: "C"}
+  variant: cln
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nikogosyan 2005", research_note: "R14 row 13", transcribed: "2026-10-25"}
+  default: true
+  notes: "Inside the 1240-1275 C range quoted across vendors and handbooks (R06 sec. 2.1)."
+
+- id: melting-point/sln/volk2008
+  kind: scalar
+  property: melting-point
+  name: Melting point
+  symbol: T_m
+  category: ferroelectric
+  value_text: "< 1200"
+  unit: {ucum: "Cel", display: "C"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nikogosyan 2005", research_note: "R14 row 13", transcribed: "2026-10-25"}
+  default: true
+
+- id: melting-point/cln/cti1999
+  kind: scalar
+  property: melting-point
+  name: Melting point
+  symbol: T_m
+  category: ferroelectric
+  value: 1250
+  uncertainty: {type: approximate}
+  unit: {ucum: "Cel", display: "C"}
+  variant: cln
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: spontaneous-polarization/cln/volk2008
+  kind: scalar
+  property: spontaneous-polarization
+  name: Spontaneous polarization
+  symbol: P_s
+  category: ferroelectric
+  value: 71
+  unit: {ucum: "uC/cm2", display: "uC/cm^2"}
+  variant: cln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3 (refs. [22], [24])", status: P-comp, research_note: "R14 row 12", transcribed: "2026-10-25"}
+  notes: "Mismatch with gopalan1998 (80 +- 5). volk2008 ref. [24] (APL 73, 3073) is a LiTaO3 paper per Crossref (R14 N1)."
+
+- id: spontaneous-polarization/sln/volk2008
+  kind: scalar
+  property: spontaneous-polarization
+  name: Spontaneous polarization
+  symbol: P_s
+  category: ferroelectric
+  value: 62
+  unit: {ucum: "uC/cm2", display: "uC/cm^2"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3 (refs. [22], [24])", status: U, research_note: "R14 row 12; P01 2026-10-25", transcribed: "2026-10-25"}
+  notes: "Printed in volk2008 Table 1.1, but the cited original (ref. [24], APL 73, 3073) is a LiTaO3 paper per Crossref: no LN source on record, so the value is unverified and excluded from default endpoints."
+
+- id: spontaneous-polarization/cln/gopalan1998
+  kind: scalar
+  property: spontaneous-polarization
+  name: Spontaneous polarization
+  symbol: P_s
+  category: ferroelectric
+  value: 80
+  uncertainty: {type: stated, value: 5}
+  unit: {ucum: "uC/cm2", display: "uC/cm^2"}
+  variant: cln
+  variant_note: "abstract gives the value for CLN and near-SLN alike"
+  provenance: {source_id: gopalan1998, locator: "abstract", status: P(abs), research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+  notes: "Abstract: insensitive to stoichiometry and H content."
+
+- id: coercive-field/cln/volk2008
+  kind: scalar
+  property: coercive-field
+  name: Coercive field
+  symbol: E_c
+  category: ferroelectric
+  value: 21
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: cln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 7.1, p. 185 (210 kV/cm, literature average); p. 118 (210-220 kV/cm)", status: P-comp, research_note: "R14 row 18", transcribed: "2026-10-25"}
+  default: true
+
+- id: coercive-field/sln/volk2008
+  kind: scalar
+  property: coercive-field
+  name: Coercive field
+  symbol: E_c
+  category: ferroelectric
+  min: 6.0
+  max: 6.5
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: sln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 7.1, p. 185 (60-65 kV/cm)", status: P-comp, research_note: "R14 row 19", transcribed: "2026-10-25"}
+  default: true
+  notes: "Conflicts within volk2008: p. 118 gives about 21-25 kV/cm (2.1-2.5 kV/mm) for near-stoichiometric crystals, citing gopalan1998."
+
+- id: coercive-field/mgo5-cln/volk2008
+  kind: scalar
+  property: coercive-field
+  name: Coercive field
+  symbol: E_c
+  category: ferroelectric
+  min: 6.0
+  max: 6.8
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: mgo5-cln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 7.1, p. 185 (60-68 kV/cm, table average)", status: P-comp, research_note: "R14 row 20", transcribed: "2026-10-25"}
+  default: true
+  notes: "Individual reports in the text (p. 184): switching at 4.45 kV/mm (0.5 mm wafer, Kuroda et al.); poling with 2.5 kV/mm pulses (4.8% MgO, 0.3 mm, Mizuuchi et al.)."
+
+- id: coercive-field/mgo1-sln/volk2008
+  kind: scalar
+  property: coercive-field
+  name: Coercive field
+  symbol: E_c
+  category: ferroelectric
+  value: 2.5
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: mgo1-sln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 7.1, p. 185 (25 kV/cm)", status: P-comp, research_note: "R14 row 21", transcribed: "2026-10-25"}
+  default: true
+
+- id: coercive-field/sln/note-r06-claim
+  kind: scalar
+  property: coercive-field
+  name: Coercive field
+  symbol: E_c
+  category: ferroelectric
+  min: 4
+  max: 5
+  uncertainty: {type: approximate}
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: sln
+  provenance: {source_id: note-r06, locator: "sec. 2.1", status: U, original_reference: "claimed: Kitamura, Furukawa et al. (not checked)", research_note: "R06 sec. 2.1; R14 row 19", transcribed: "2026-10-25"}
+  notes: "Unverified claim; R14 found 6.0-6.5 kV/mm in volk2008 Table 7.1."
+
+- id: coercive-field/mgo5-cln/note-r06-claim
+  kind: scalar
+  property: coercive-field
+  name: Coercive field
+  symbol: E_c
+  category: ferroelectric
+  min: 4
+  max: 5
+  uncertainty: {type: approximate}
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: mgo5-cln
+  provenance: {source_id: note-r06, locator: "sec. 2.1", status: U, original_reference: "claimed: Kitamura, Furukawa et al. (not checked)", research_note: "R06 sec. 2.1; R14 row 20", transcribed: "2026-10-25"}
+  notes: "Unverified claim; R14 found a 6.0-6.8 kV/mm table average and individual reports of 2.5-4.45 kV/mm in volk2008."
+
+- id: coercive-field-ratio-cln-sln/cln/gopalan1998
+  kind: scalar
+  property: coercive-field-ratio-cln-sln
+  name: Coercive field ratio E_c(CLN)/E_c(SLN)
+  category: ferroelectric
+  min: 4
+  max: 5
+  uncertainty: {type: approximate}
+  unit: {ucum: "1", display: "-"}
+  variant: cln
+  variant_note: "CLN (C = 0.484) vs near-SLN (C = 0.498)"
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: gopalan1998, locator: "abstract", status: P(abs), research_note: "R06 sec. 2.1; R14 row 22", transcribed: "2026-10-25"}
+
+- id: coercive-field-ratio-cln-sln/cln/volk2008
+  kind: scalar
+  property: coercive-field-ratio-cln-sln
+  name: Coercive field ratio E_c(CLN)/E_c(SLN)
+  category: ferroelectric
+  min: 3.2
+  max: 3.5
+  unit: {ucum: "1", display: "-"}
+  variant: cln
+  provenance: {source_id: volk2008, locator: "Table 7.1, p. 185; p. 184 ('factor of three', ref. Chen et al. 2001)", status: C, derivation: "ratio of the volk2008 Table 7.1 CLN and SLN values (R14 row 22); p. 184 states a factor of three (ref. Chen et al. 2001)", research_note: "R14 row 22", transcribed: "2026-10-25"}
+  notes: "Differs from gopalan1998 (4-5); the sources measured different crystals."
+
+- id: internal-field/cln/gopalan1998
+  kind: scalar
+  property: internal-field
+  name: Internal field
+  symbol: E_int
+  category: ferroelectric
+  value: 2.5
+  uncertainty: {type: approximate}
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: cln
+  provenance: {source_id: gopalan1998, locator: "abstract", status: P(abs), research_note: "R06 sec. 2.1; R14 row 23", transcribed: "2026-10-25"}
+  default: true
+  notes: "Abstract: the internal field vanishes in SLN."
+
+- id: internal-field/cln/volk2008
+  kind: scalar
+  property: internal-field
+  name: Internal field
+  symbol: E_int
+  category: ferroelectric
+  value_text: "printed '2-33' kV/cm (likely a misprinted range)"
+  unit: {ucum: "kV/cm", display: "kV/cm"}
+  variant: cln
+  provenance: {source_id: volk2008, locator: "Table 7.1, p. 185", status: P-comp, research_note: "R14 row 23", transcribed: "2026-10-25"}
+
+- id: internal-field/mgo5-cln/volk2008
+  kind: scalar
+  property: internal-field
+  name: Internal field
+  symbol: E_int
+  category: ferroelectric
+  value: 0.5
+  unit: {ucum: "kV/mm", display: "kV/mm"}
+  variant: mgo5-cln
+  provenance: {source_id: volk2008, locator: "Table 7.1, p. 185 (5 kV/cm)", status: P-comp, research_note: "R14 row 23", transcribed: "2026-10-25"}
+  default: true

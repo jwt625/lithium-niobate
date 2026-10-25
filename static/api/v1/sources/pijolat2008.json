@@ -1,0 +1,58 @@
+{
+  "citation": "M. Pijolat, A. Reinhardt, E. Defay, et al., \"Large Qxf product for HBAR using Smart Cut ™ transfer of LiNbO3 thin layers onto LiNbO3 substrate\", 2008 IEEE Ultrasonics Symposium, 201-204, (2008) doi:10.1109/ultsym.2008.0049",
+  "link": "https://doi.org/10.1109/ultsym.2008.0049",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "M. Pijolat"
+      },
+      {
+        "literal": "A. Reinhardt"
+      },
+      {
+        "literal": "E. Defay"
+      },
+      {
+        "literal": "C. Deguet"
+      },
+      {
+        "literal": "D. Mercier"
+      },
+      {
+        "literal": "M. Aid"
+      },
+      {
+        "literal": "J.S. Moulet"
+      },
+      {
+        "literal": "B. Ghyselen"
+      },
+      {
+        "literal": "D. Gachon"
+      },
+      {
+        "literal": "S. Ballandras"
+      }
+    ],
+    "container_title": "2008 IEEE Ultrasonics Symposium",
+    "doi": "10.1109/ultsym.2008.0049",
+    "id": "pijolat2008",
+    "issued": "2008-11",
+    "page": "201-204",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Large Qxf product for HBAR using Smart Cut ™ transfer of LiNbO3 thin layers onto LiNbO3 substrate",
+    "type": "paper-conference"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "alternatives": [
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "id": "coercive-field-ratio-cln-sln/cln/gopalan1998",
+      "kind": "scalar",
+      "max": 5,
+      "min": 4,
+      "name": "Coercive field ratio E_c(CLN)/E_c(SLN)",
+      "property": "coercive-field-ratio-cln-sln",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "gopalan1998",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "-",
+        "ucum": "1"
+      },
+      "variant": "cln",
+      "variant_note": "CLN (C = 0.484) vs near-SLN (C = 0.498)"
+    },
+    {
+      "category": "ferroelectric",
+      "id": "coercive-field-ratio-cln-sln/cln/volk2008",
+      "kind": "scalar",
+      "max": 3.5,
+      "min": 3.2,
+      "name": "Coercive field ratio E_c(CLN)/E_c(SLN)",
+      "notes": "Differs from gopalan1998 (4-5); the sources measured different crystals.",
+      "property": "coercive-field-ratio-cln-sln",
+      "provenance": {
+        "derivation": "ratio of the volk2008 Table 7.1 CLN and SLN values; p. 184 states a factor of three (ref. Chen et al. 2001)",
+        "locator": "Table 7.1, p. 185; p. 184 ('factor of three', ref. Chen et al. 2001)",
+        "source_id": "volk2008",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "-",
+        "ucum": "1"
+      },
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "coercive-field-ratio-cln-sln",
+    "variant": "cln"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": {
+    "max": 5,
+    "min": 3.2,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "1"
+  }
+}

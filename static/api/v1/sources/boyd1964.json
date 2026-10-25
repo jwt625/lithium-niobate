@@ -1,0 +1,50 @@
+{
+  "citation": "G. D. Boyd, Robert C. Miller, K. Nassau, et al., \"LiNbO3: AN EFFICIENT PHASE MATCHABLE NONLINEAR OPTICAL MATERIAL\", Applied Physics Letters 5, 234-236, (1964) doi:10.1063/1.1723604",
+  "link": "https://doi.org/10.1063/1.1723604",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Boyd",
+        "given": "G. D."
+      },
+      {
+        "family": "Miller",
+        "given": "Robert C."
+      },
+      {
+        "family": "Nassau",
+        "given": "K."
+      },
+      {
+        "family": "Bond",
+        "given": "W. L."
+      },
+      {
+        "family": "Savage",
+        "given": "A."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1723604",
+    "id": "boyd1964",
+    "issue": "11",
+    "issued": "1964-12-01",
+    "page": "234-236",
+    "read": "bibliographic record only (Crossref)",
+    "title": "LiNbO3: AN EFFICIENT PHASE MATCHABLE NONLINEAR OPTICAL MATERIAL",
+    "type": "article-journal",
+    "volume": "5"
+  }
+}

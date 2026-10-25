@@ -1,0 +1,36 @@
+{
+  "citation": "Vladimir M Fridkin, B N Popov, \"Anomalous photovoltaic effect in ferroelectrics\", Soviet Physics Uspekhi 21, 981-991, (1978) doi:10.1070/pu1978v021n12abeh005722",
+  "link": "https://doi.org/10.1070/pu1978v021n12abeh005722",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Vladimir M Fridkin"
+      },
+      {
+        "literal": "B N Popov"
+      }
+    ],
+    "container_title": "Soviet Physics Uspekhi",
+    "doi": "10.1070/pu1978v021n12abeh005722",
+    "id": "fridkin1978",
+    "issue": "12",
+    "issued": "1978-12-31",
+    "page": "981-991",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Anomalous photovoltaic effect in ferroelectrics",
+    "type": "article-journal",
+    "volume": "21"
+  }
+}

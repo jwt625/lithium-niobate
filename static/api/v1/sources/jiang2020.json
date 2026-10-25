@@ -1,0 +1,62 @@
+{
+  "citation": "Wentao Jiang, Christopher J. Sarabalis, Yanni D. Dahmani, et al., \"Efficient bidirectional piezo-optomechanical transduction between microwave and optical frequency\", Nature Communications 11, 1166, (2020) doi:10.1038/s41467-020-14863-3",
+  "link": "https://doi.org/10.1038/s41467-020-14863-3",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "article_number": "1166",
+    "author": [
+      {
+        "family": "Jiang",
+        "given": "Wentao"
+      },
+      {
+        "family": "Sarabalis",
+        "given": "Christopher J."
+      },
+      {
+        "family": "Dahmani",
+        "given": "Yanni D."
+      },
+      {
+        "family": "Patel",
+        "given": "Rishi N."
+      },
+      {
+        "family": "Mayor",
+        "given": "Felix M."
+      },
+      {
+        "family": "McKenna",
+        "given": "Timothy P."
+      },
+      {
+        "family": "Van Laer",
+        "given": "Raphaël"
+      },
+      {
+        "family": "Safavi-Naeini",
+        "given": "Amir H."
+      }
+    ],
+    "container_title": "Nature Communications",
+    "doi": "10.1038/s41467-020-14863-3",
+    "id": "jiang2020",
+    "issue": "1",
+    "issued": "2020-03-03",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Efficient bidirectional piezo-optomechanical transduction between microwave and optical frequency",
+    "type": "article-journal",
+    "volume": "11"
+  }
+}

@@ -1,0 +1,70 @@
+# Gayer, Sacks, Galun, Arie 2008 temperature-dependent Sellmeier models. Schema: data/schema/dispersion.schema.json.
+# All 30 coefficients read in the primary Table 1 (R14 row 36, status P); erratum (2009) replaces Fig. 3 only.
+# Caveat (R14 row 36c): dn/dT computed from these coefficients is anomalous (MgO5 n_e about 7x the Jundt CLN value at 1550 nm);
+# the anomaly is in the published coefficients. Use for n(lambda) near the reference temperature, not for absolute dn/dT.
+
+- id: gayer2008-mgo5-e
+  name: Gayer 2008, 5 mol% MgO:congruent LiNbO3, extraordinary
+  variant: mgo5-cln
+  axis: e
+  formula: &gform
+    form: gayer-2008
+    latex: "n^2 = a_1 + b_1 f + \\frac{a_2 + b_2 f}{\\lambda^2 - (a_3 + b_3 f)^2} + \\frac{a_4 + b_4 f}{\\lambda^2 - a_5^2} - a_6 \\lambda^2,\\quad f = (T - 24.5)(T + 570.82)"
+    expression: "n^2 = a1 + b1 f + (a2 + b2 f)/(L^2 - (a3 + b3 f)^2) + (a4 + b4 f)/(L^2 - a5^2) - a6 L^2; f = (T - 24.5)(T + 570.82), T in C, L in um"
+  coefficients: {a1: 5.756, a2: 0.0983, a3: 0.2020, a4: 189.32, a5: 12.52, a6: 1.32e-2, b1: 2.860e-6, b2: 4.700e-8, b3: 6.113e-8, b4: 1.516e-4}
+  lambda_unit: um
+  valid_lambda_um: [0.5, 4.0]
+  valid_T_C: [20, 200]
+  temperature_dependent: true
+  reference_T_C: 24.5
+  errata: &gerrata
+    - {citation: "Erratum, Appl. Phys. B 94, 367 (2009)", doi: 10.1007/s00340-008-3316-8, issued: "2009", effect: "Replaces Fig. 3 (dispersion plot) only; Table 1 coefficients unchanged (R14 row 36a).", applied: true}
+  check_values:
+    - {lambda_nm: 1550, T_C: 24.5, n: 2.1306, tolerance: 0.00006, source: "R06 sec. 2.4 (computed from these coefficients)"}
+    - {lambda_nm: 1550, T_C: 21, n: 2.1299, tolerance: 0.0015, source: "zelmon1997 corrected MgO5 n_e (R06 sec. 2.4); independent model"}
+  provenance: {source_id: gayer2008, locator: "Table 1, p. 345; validity p. 348", status: P, research_note: "R14 row 36", transcribed: "2026-10-25"}
+  caveats: &gcaveats
+    - "dn/dT from these coefficients is anomalous (R14 row 36c: 2.65e-4 /K for MgO5 n_e at 1550 nm vs 3.75e-5 /K from Jundt CLN). Do not use for absolute dn/dT."
+    - "Wavelength validity from the refractiveindex.info entries (R06 sec. 2.3); temperature validity from the paper (R14 row 36)."
+  default: false
+
+- id: gayer2008-mgo5-o
+  name: Gayer 2008, 5 mol% MgO:congruent LiNbO3, ordinary
+  variant: mgo5-cln
+  axis: o
+  formula: *gform
+  coefficients: {a1: 5.653, a2: 0.1185, a3: 0.2091, a4: 89.61, a5: 10.85, a6: 1.97e-2, b1: 7.941e-7, b2: 3.134e-8, b3: -4.641e-9, b4: -2.188e-6}
+  lambda_unit: um
+  valid_lambda_um: [0.5, 1.62]
+  valid_T_C: [20, 100]
+  temperature_dependent: true
+  reference_T_C: 24.5
+  errata: *gerrata
+  check_values:
+    - {lambda_nm: 1550, T_C: 24.5, n: 2.2088, tolerance: 0.00006, source: "R06 sec. 2.4 (computed from these coefficients)"}
+    - {lambda_nm: 1550, T_C: 21, n: 2.2082, tolerance: 0.0015, source: "zelmon1997 corrected MgO5 n_o (R06 sec. 2.4); independent model"}
+  provenance: {source_id: gayer2008, locator: "Table 1, p. 345; validity p. 348", status: P, research_note: "R14 row 36", transcribed: "2026-10-25"}
+  caveats:
+    - "n_o is reliable only to 1620 nm and about 20-100 C (gayer2008 p. 348, R14 row 36); refractiveindex.info lists 0.5-1.7 um."
+    - "dn/dT from these coefficients: 1.11e-4 /K at 1550 nm (R14 row 36c); do not use for absolute dn/dT."
+  default: false
+
+- id: gayer2008-mgo1-sln-e
+  name: Gayer 2008, 1 mol% MgO:stoichiometric LiNbO3, extraordinary
+  variant: mgo1-sln
+  axis: e
+  formula: *gform
+  coefficients: {a1: 5.078, a2: 0.0964, a3: 0.2065, a4: 61.16, a5: 10.55, a6: 1.59e-2, b1: 4.677e-7, b2: 7.822e-8, b3: -2.653e-8, b4: 1.096e-4}
+  lambda_unit: um
+  valid_lambda_um: [0.5, 4.0]
+  valid_T_C: [20, 200]
+  temperature_dependent: true
+  reference_T_C: 24.5
+  errata: *gerrata
+  check_values:
+    - {lambda_nm: 1550, T_C: 24.5, n: 2.1258, tolerance: 0.00006, source: "computed from these coefficients (scripts/build_data.py regression value, 2026-10-25)"}
+  provenance: {source_id: gayer2008, locator: "Table 1, p. 345; Table 1 caption: 1% MgO doped stoichiometric LiNbO3", status: P, research_note: "R14 rows 36, 36b", transcribed: "2026-10-25"}
+  caveats:
+    - "dn/dT from these coefficients: -7.1e-5 /K at 1550 nm (negative; R14 row 36c); do not use for absolute dn/dT."
+    - "The refractiveindex.info comment calling this material congruent is wrong; the paper labels it SLN (R14 row 36b)."
+  default: true

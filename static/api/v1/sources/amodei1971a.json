@@ -1,0 +1,37 @@
+{
+  "citation": "J. Amodei, W. Phillips, D.L. Staebler, \"Holographic storage performance of iron-doped LiNbO3\", 1971 International Electron Devices Meeting, 112-114, (1971) doi:10.1109/iedm.1971.188425",
+  "link": "https://doi.org/10.1109/iedm.1971.188425",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "J. Amodei"
+      },
+      {
+        "literal": "W. Phillips"
+      },
+      {
+        "literal": "D.L. Staebler"
+      }
+    ],
+    "container_title": "1971 International Electron Devices Meeting",
+    "doi": "10.1109/iedm.1971.188425",
+    "id": "amodei1971a",
+    "issued": "1971",
+    "page": "112-114",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Holographic storage performance of iron-doped LiNbO3",
+    "type": "paper-conference"
+  }
+}

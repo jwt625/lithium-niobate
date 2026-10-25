@@ -1,0 +1,47 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "lattice-a",
+    "variant": "sln"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "lattice-a/sln/volk2008",
+      "kind": "scalar",
+      "name": "Lattice constant a (hexagonal setting)",
+      "property": "lattice-a",
+      "provenance": {
+        "locator": "Table 1.1, p. 3 (514.7 pm)",
+        "original_reference": "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "a",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 5.147,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

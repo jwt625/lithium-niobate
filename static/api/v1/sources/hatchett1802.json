@@ -1,0 +1,28 @@
+{
+  "citation": "\"III. An analysis of a mineral substance from North America, containing a metal hitherto unknown\", Philosophical Transactions of the Royal Society of London 92, 49-66, (1802) doi:10.1098/rstl.1802.0005",
+  "link": "https://doi.org/10.1098/rstl.1802.0005",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Philosophical Transactions of the Royal Society of London",
+    "doi": "10.1098/rstl.1802.0005",
+    "id": "hatchett1802",
+    "issued": "1802-12-31",
+    "notes": "Crossref metadata prints 'bitberto' (OCR of 'hitherto'); title corrected from the printed page.",
+    "page": "49-66",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "III. An analysis of a mineral substance from North America, containing a metal hitherto unknown",
+    "type": "article-journal",
+    "volume": "92"
+  }
+}

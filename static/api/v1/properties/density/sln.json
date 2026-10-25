@@ -1,0 +1,46 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "density",
+    "variant": "sln"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "default": true,
+      "id": "density/sln/volk2008",
+      "kind": "scalar",
+      "name": "Density",
+      "notes": "SLN is lighter than CLN in the same compilation (4635 vs 4647 kg/m^3).",
+      "property": "density",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Takanaga, Hirohashi, Kushibiki, Jpn. J. Appl. Phys. 38, 3201 (1999)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4635,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

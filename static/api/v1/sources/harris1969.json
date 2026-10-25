@@ -1,0 +1,32 @@
+{
+  "citation": "S. E. Harris, \"Tunable optical parametric oscillators\", Proceedings of the IEEE 57, 2096-2113, (1969) doi:10.1109/PROC.1969.7495",
+  "link": "https://doi.org/10.1109/PROC.1969.7495",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "S. E. Harris"
+      }
+    ],
+    "container_title": "Proceedings of the IEEE",
+    "doi": "10.1109/PROC.1969.7495",
+    "id": "harris1969",
+    "issued": "1969",
+    "page": "2096-2113",
+    "read": "Crossref bibliographic query 2026-10-25; text read ('first tunable optical parametric oscillator')",
+    "title": "Tunable optical parametric oscillators",
+    "type": "webpage",
+    "volume": "57"
+  }
+}

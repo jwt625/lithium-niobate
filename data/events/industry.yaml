@@ -1,0 +1,1193 @@
+- id: 2009-epcos-crystal-technology-ppln-chips
+  kind: industry
+  date: '2009'
+  date_precision: year
+  title: Crystal Technology, Inc. (EPCOS) launched PPLN chips (2009 EPCOS item) (background)
+  grade: C
+  organizations:
+  - Crystal Technology, Inc.
+  - EPCOS AG
+  citations:
+  - text: EPCOS AG Form 20-F FY2006 (snippet)
+    url: https://www.sec.gov/Archives/edgar/data/0001095409/000119312507061492/d20f.htm
+    source_ref: R09 S44
+    accessed: '2026-10-24'
+  tags:
+  - background
+  - product
+  - ppln
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.6
+  notes: Snippet only.
+- id: 2014-12-sumitomo-metal-mining-lt-ln-substrate-expansion
+  kind: industry
+  date: 2014-12
+  date_precision: month
+  date_note: Expansion period Dec 2014 to Sep 2016; TSE disclosure dated 2014-12.
+  title: 'Sumitomo Metal Mining: about JPY 3.5 bn LT/LN substrate expansion for smartphone SAW filters, Dec 2014 to Sep 2016, at subsidiary Sumiko Kunitomi Denshi (background)'
+  grade: C
+  organizations:
+  - Sumitomo Metal Mining Co., Ltd.
+  - Sumiko Kunitomi Denshi
+  citations:
+  - text: Sumitomo Metal Mining TSE disclosure, 2014-12 (403; snippet)
+    url: https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf
+    source_ref: R09 S73
+    accessed: '2026-10-24'
+  tags:
+  - background
+  - wafer
+  - capacity
+  - bulk-ln
+  - rf-filter
+  - japan
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.2
+  notes: Disclosure PDF returned 403; only the snippet was read.
+- id: 2016-12-sumitomo-osaka-cement-guangdong-ln-modulator-line
+  kind: industry
+  date: 2016-12
+  date_precision: month
+  date_note: Date of the Nikkan Kogyo report.
+  title: 'Sumitomo Osaka Cement: LN modulator line at its Guangdong plant (Nikkan Kogyo 2016-12) (background)'
+  grade: C
+  organizations:
+  - Sumitomo Osaka Cement Co., Ltd.
+  citations:
+  - text: Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)
+    url: https://www.nikkan.co.jp/articles/view/00410032
+    source_ref: R09 S36
+    accessed: '2026-10-24'
+  - text: Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)
+    url: https://www.nikkan.co.jp/articles/view/00442372
+    source_ref: R09 S36
+    accessed: '2026-10-24'
+  tags:
+  - background
+  - bulk-ln
+  - modulator
+  - japan
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.5
+  notes: Snippet only. R09 lists two Nikkan Kogyo URLs (2016-12 and 2017-09) under S36 without mapping; both given. Present TFLN status N/A.
+- id: 2017-09-sumitomo-osaka-cement-100g-ln-modulator-china
+  kind: industry
+  date: 2017-09
+  date_precision: month
+  title: 'Sumitomo Osaka Cement: 100G LN modulator production in China from 2017-09 (background)'
+  grade: C
+  organizations:
+  - Sumitomo Osaka Cement Co., Ltd.
+  citations:
+  - text: Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)
+    url: https://www.nikkan.co.jp/articles/view/00410032
+    source_ref: R09 S36
+    accessed: '2026-10-24'
+  - text: Nikkan Kogyo Shimbun, 2016-12 and 2017-09 (snippets)
+    url: https://www.nikkan.co.jp/articles/view/00442372
+    source_ref: R09 S36
+    accessed: '2026-10-24'
+  tags:
+  - background
+  - bulk-ln
+  - modulator
+  - japan
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.5
+  notes: Snippet only. R09 lists two Nikkan Kogyo URLs (2016-12 and 2017-09) under S36 without mapping; both given.
+- id: 2019-11-28-afr-lumentum-ln-modulator-line
+  kind: industry
+  date: '2019-11-28'
+  date_precision: day
+  title: AFR signs to buy Lumentum's LN modulator line and fab (San Donato Milanese), US$17 M (background)
+  grade: C
+  organizations:
+  - Advanced Fiber Resources (Zhuhai) Ltd. (AFR)
+  - Lumentum Holdings Inc.
+  citations:
+  - text: AFR (acquisition), 2019-12 (snippet)
+    url: https://www.fiber-resources.com/afr-acquired-assets-of-lumentum-ln-high-speed-modulator-product-line_n22
+    source_ref: R09 S33
+    accessed: '2026-10-24'
+  - text: Lightwave (Lumentum sale), 2019-12 (snippet)
+    url: https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr
+    source_ref: R09 S33
+    accessed: '2026-10-24'
+  tags:
+  - background
+  - acquisition
+  - bulk-ln
+  - modulator
+  - europe
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: US$17 M is the AFR figure; Lumentum did not disclose the price (R09 sec. 1.5). Lumentum exited LN modulators in 2019 and shifted to InP PICs; no TFLN product found (R09 sec. 1.5, sec. 6). Snippet-only sources.
+- id: 2020-07-07-soitec-qualcomm-poi
+  kind: industry
+  date: '2020-07-07'
+  date_precision: day
+  title: Soitec to make POI wafers in volume for Qualcomm RF filters (background)
+  grade: T
+  organizations:
+  - Soitec SA
+  - Qualcomm
+  citations:
+  - text: eeNews Europe, 2020-07-07
+    url: https://www.eenewseurope.com/en/qualcomm-adopts-soitec-poi-wafers-for-saw-filters/
+    source_ref: R09 S11
+    accessed: '2026-10-24'
+  tags:
+  - background
+  - wafer
+  - rf-filter
+  - poi
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 'POI: 300 nm to 1 um LT on buried oxide on high-resistivity Si (R09 sec. 1.3).'
+- id: 2021-fujitsu-foc-1-millionth-coherent-ln-modulator
+  kind: industry
+  date: '2021-03-31'
+  date_precision: day
+  date_note: Release dated 2021-03-31; the milestone was reached at the end of 2021-02 (C07 correction C10).
+  title: 'Fujitsu Optical Components ships its one millionth coherent lithium-niobate modulator'
+  grade: F
+  organizations:
+  - Fujitsu Optical Components Ltd. (FOC)
+  citations:
+  - text: Fujitsu Optical Components press release, 2021-03-31 (archived copy, read in full by lane C07)
+    url: https://web.archive.org/web/20230812112018/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20210331.html
+    source_ref: C07 fujitsu-2021a
+    accessed: '2026-10-25'
+  - text: Fujitsu Optical Components product and press index (now redirects; snippet)
+    url: https://www.fujitsu.com/jp/group/foc/en/products/devices/cdm/indexgig5.html
+    source_ref: R09 S34
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - milestone
+  - bulk-ln
+  - modulator
+  - japan
+  access_date: '2026-10-25'
+  research_note: R09 sec. 1.5; C07 open-questions C10
+  notes: 'R09 left the year unresolved (2021 or 2024) from a snippet; lane C07 read the archived 2021-03-31 release in full.'
+- id: 2022-03-eoptolink-800g-dr8-hyperlight-tfln
+  kind: industry
+  date: 2022-03
+  date_precision: month
+  date_note: OFC 2022; R09 gives month only.
+  title: Eoptolink 800G DR8 with a HyperLight TFLN modulator at OFC 2022 (background)
+  grade: C
+  organizations:
+  - Eoptolink Technology Inc., Ltd.
+  - HyperLight Corporation
+  citations:
+  - text: Lightwave (Eoptolink 800G TFLN), 2022 (snippet)
+    url: https://www.lightwaveonline.com/optical-tech/transmission/article/14235578/eoptolink-demos-800g-osfp-dr8-optical-transceiver-featuring-thin-film-lithium-niobate-modulator
+    source_ref: R09 S40
+    accessed: '2026-10-24'
+  tags:
+  - background
+  - product
+  - tfln
+  - modulator
+  - conference
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Snippet only. Before the 2023-2026 window (R09 sec. 1.5).
+- id: 2022-03-28-murata-completes-resonant-acquisition
+  kind: industry
+  date: '2022-03-28'
+  date_precision: day
+  date_note: 2022-03-28 US time (R09 sec. 1.7); Murata release S46 dated 2022-03-29.
+  title: Murata completes acquisition of Resonant (XBAR on thin LN)
+  grade: F
+  organizations:
+  - Murata Manufacturing
+  - Resonant Inc.
+  citations:
+  - text: Murata news, 2022-03-29
+    url: https://corporate.murata.com/newsroom/news/company/general/2022/0329
+    source_ref: R09 S46
+    accessed: '2026-10-24'
+  tags:
+  - acquisition
+  - rf-filter
+  - xbar
+  - japan
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Completion date is US time. Price about US$4.50/share, about US$300 M per SEC/secondary sources (R09 sec. 1.7, graded C, S47).
+- id: 2022-08-17-thorlabs-ln27s-fc-discontinued
+  kind: industry
+  date: '2022-08-17'
+  date_precision: day
+  title: 'Thorlabs: LN27S-FC discontinued 2022-08-17'
+  grade: C
+  organizations:
+  - Thorlabs, Inc.
+  citations:
+  - text: Thorlabs datasheets (snippets)
+    url: https://www.thorlabs.us/catalogpages/obsolete/2022/LN86S-FC.pdf
+    source_ref: R09 S38
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - discontinued
+  - bulk-ln
+  - modulator
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.5
+  notes: Snippet only. Example of several obsolete Thorlabs Ti-indiffused LN modulator part numbers (R09 sec. 1.5).
+- id: 2022-12-chipx-pilot-line-construction-begins
+  kind: industry
+  date: 2022-12
+  date_precision: month
+  title: 'CHIPX 6" TFLN pilot line: construction began'
+  grade: T
+  organizations:
+  - CHIPX (Wuxi Photonic Chip Research Institute, Shanghai Jiao Tong University)
+  citations:
+  - text: C114, 2025-06-09 (CHIPX)
+    url: https://m.c114.com.cn/w5285-1290717.html
+    source_ref: R09 S29
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - 150mm
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.4
+  notes: Source text partly garbled; dates need recheck (R09 sec. 1.4).
+- id: 2023-jingzheng-8-inch-ln-film
+  kind: industry
+  date: '2023'
+  date_precision: year
+  title: 'Jingzheng: 8-inch 300-900 nm LN film developed'
+  grade: LG/C
+  organizations:
+  - Jinan Jingzheng Electronics Co., Ltd. (NANOLN)
+  citations:
+  - text: Securities Star via 10jqka, 2026-10-03 (AI-assisted disclaimer)
+    url: https://stock.10jqka.com.cn/20261003/c680435922.shtml
+    source_ref: R09 S9
+    accessed: '2026-10-24'
+  - text: 36Kr PitchHub, Jingzheng project page (snippet)
+    url: https://pitchhub.36kr.com/project/1678490981790729
+    source_ref: R09 S75
+    accessed: '2026-10-24'
+  tags:
+  - wafer
+  - lnoi
+  - 200mm
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.3
+  notes: Secondary claim (R09 sec. 1.3 row graded LG/C); not verified against a primary source.
+- id: 2023-03-07-hyperlight-tfln-tx-pics
+  kind: industry
+  date: '2023-03-07'
+  date_precision: day
+  title: HyperLight announces TFLN Tx PICs for 1.6T coherent and 200 G/lane IMDD
+  grade: C
+  organizations:
+  - HyperLight Corporation
+  citations:
+  - text: Business Wire (HyperLight TFLN Tx), 2023-03-07 (snippet)
+    url: https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules
+    source_ref: R09 S22
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - tfln
+  - modulator
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Snippet only. Targets 200 G/lane IMDD (800G-DR4 OSFP) and 1.6 Tb/s per wavelength coherent (R09 sec. 1.5).
+- id: 2023-09-anpai-8-inch-tfln-line-wuhan
+  kind: industry
+  date: 2023-09
+  date_precision: month
+  title: Anpai Optoelectronics completes an 8-inch TFLN line in Wuhan (reporter claim)
+  grade: T
+  organizations:
+  - Anpai Optoelectronics
+  - Jiufengshan Laboratory
+  citations:
+  - text: Yicai via Sina, 2024-08-27 (Anpai, Jiufengshan)
+    url: https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html
+    source_ref: R09 S30
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - 200mm
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Reporter claim, not independently verified. Yicai (2024-08-27) calls it the "world's first 8-inch TFLN line", about CNY 60 M (R09 sec. 1.4); all "first" claims are treated as vendor claims (R09 sec. 7).
+- id: 2024-jingzheng-funding-several-hundred-million-cny
+  kind: industry
+  date: '2024'
+  date_precision: year
+  date_note: End-2024; R09 gives no month or day.
+  title: 'Jingzheng: funding of "several hundred million CNY" at end-2024'
+  grade: T
+  organizations:
+  - Jinan Jingzheng Electronics Co., Ltd. (NANOLN)
+  citations:
+  - text: Economic Herald via 10jqka, 2026-06-29
+    url: https://stock.10jqka.com.cn/20260629/c677805800.shtml
+    source_ref: R09 S7
+    accessed: '2026-10-24'
+  - text: Shanghai Securities News, 2026-06-17
+    url: https://paper.cnstock.com/html/2026-06/17/content_2232363.htm
+    source_ref: R09 S8
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - wafer
+  - lnoi
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.3
+  notes: Investors include Huawei Hubble and Yuanhe Yida (R09 sec. 1.3).
+- id: 2024-lightium-innosuisse-grant
+  kind: industry
+  date: '2024'
+  date_precision: year
+  title: 'Lightium: CHF 2.67 M Innosuisse grant in 2024'
+  grade: T/V
+  organizations:
+  - Lightium AG
+  - Innosuisse
+  citations:
+  - text: eeNews Europe, 2024-09-20 (Lightium)
+    url: https://www.eenewseurope.com/en/swiss-photonic-foundry-lightium-raises-seed-funding/
+    source_ref: R09 S24
+    accessed: '2026-10-24'
+  - text: optics.org, 2025-06-25
+    url: https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics
+    source_ref: R09 S13
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - foundry
+  - tfln
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.4
+  notes: R09 grades the whole Lightium row T/V; the V refers to Lightium's claim to be "first to design and manufacture TFLN chips at industrial scale". R09 does not say which of S24/S13 reports the grant.
+- id: 2024-03-jiufengshan-first-8-inch-si-photonic-tfln-wafer
+  kind: industry
+  date: 2024-03
+  date_precision: month
+  title: 'Jiufengshan Lab: first 8-inch Si-photonic TFLN wafer (reporter claim)'
+  grade: T
+  organizations:
+  - Jiufengshan Laboratory
+  - Anpai Optoelectronics
+  citations:
+  - text: Yicai via Sina, 2024-08-27 (Anpai, Jiufengshan)
+    url: https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html
+    source_ref: R09 S30
+    accessed: '2026-10-24'
+  tags:
+  - wafer
+  - tfln
+  - 200mm
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Reporter claim, not independently verified (R09 sec. 1.4).
+- id: 2024-05-nature-lt-pics-epfl-simit
+  kind: industry
+  date: 2024-05
+  date_precision: month
+  title: 'Nature paper on LT PICs for volume manufacturing (EPFL/SIMIT): start of TFLT'
+  grade: F
+  organizations:
+  - EPFL
+  - SIMIT
+  citations:
+  - text: Nature 629, 784-790 (2024), DOI 10.1038/s41586-024-07369-1 (RePEc abstract)
+    url: https://ideas.repec.org/a/nat/nature/v629y2024i8013d10.1038_s41586-024-07369-1.html
+    source_ref: R09 S55
+    accessed: '2026-10-24'
+    doi: 10.1038/s41586-024-07369-1
+  tags:
+  - tflt
+  - publication
+  - europe
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 'R09 sec. 1.9 grades this F (abstract): only the abstract was read. Nature 629, 784-790. Reports 5.6 dB/m loss with a DUV stepper; argues LT wafers are cheaper because LT is already high-volume for 5G RF filters.'
+- id: 2024-09-chipx-6-inch-tfln-pilot-line-operational
+  kind: industry
+  date: 2024-09
+  date_precision: month
+  title: CHIPX 6-inch TFLN pilot line goes into operation (per c114; text partly garbled)
+  grade: T
+  organizations:
+  - CHIPX (Wuxi Photonic Chip Research Institute, Shanghai Jiao Tong University)
+  citations:
+  - text: C114, 2025-06-09 (CHIPX)
+    url: https://m.c114.com.cn/w5285-1290717.html
+    source_ref: R09 S29
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - 150mm
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Source text partly garbled; dates need recheck (R09 sec. 1.4).
+- id: 2024-09-20-lightium-seed
+  kind: industry
+  date: '2024-09-20'
+  date_precision: day
+  title: Lightium US$7 M seed reported
+  grade: T
+  organizations:
+  - Lightium AG
+  - Vsquared Ventures
+  - Lakestar
+  citations:
+  - text: eeNews Europe, 2024-09-20 (Lightium)
+    url: https://www.eenewseurope.com/en/swiss-photonic-foundry-lightium-raises-seed-funding/
+    source_ref: R09 S24
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - foundry
+  - tfln
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Investors Vsquared Ventures and Lakestar (R09 sec. 1.4).
+- id: 2024-09-24-hyperlight-series-b
+  kind: industry
+  date: '2024-09-24'
+  date_precision: day
+  title: HyperLight US$37 M Series B led by Summit Partners
+  grade: T
+  organizations:
+  - HyperLight Corporation
+  - Summit Partners
+  citations:
+  - text: Lightwave, 2024-09-24
+    url: https://lightwaveonline.com/home/article/55142234/hyperlight-secures-37m-in-new-funding
+    source_ref: R09 S21
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - tfln
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+- id: 2024-11-13-qci-first-tfln-foundry-order
+  kind: industry
+  date: '2024-11-13'
+  date_precision: day
+  title: QCi announces first TFLN foundry order
+  grade: T
+  organizations:
+  - Quantum Computing Inc. (QCi)
+  citations:
+  - text: Lightwave, 2024-11-18 (QCi)
+    url: https://www.lightwaveonline.com/business/article/55243823/quantum-computing-inc-receives-first-tfln-foundry-order
+    source_ref: R09 S26
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 'Customer: an Asian research institute (R09 sec. 1.4). Lightwave report S26 dated 2024-11-18.'
+- id: 2025-jingzheng-national-standard-ln-thin-film
+  kind: industry
+  date: '2025'
+  date_precision: year
+  title: 'Jingzheng: led the 2025 national standard for LN thin-film substrates for EO modulators'
+  grade: LG/C
+  organizations:
+  - Jinan Jingzheng Electronics Co., Ltd. (NANOLN)
+  citations:
+  - text: Securities Star via 10jqka, 2026-10-03 (AI-assisted disclaimer)
+    url: https://stock.10jqka.com.cn/20261003/c680435922.shtml
+    source_ref: R09 S9
+    accessed: '2026-10-24'
+  - text: 36Kr PitchHub, Jingzheng project page (snippet)
+    url: https://pitchhub.36kr.com/project/1678490981790729
+    source_ref: R09 S75
+    accessed: '2026-10-24'
+  tags:
+  - standard
+  - wafer
+  - lnoi
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.3
+  notes: Secondary claim (R09 sec. 1.3 row graded LG/C); not verified against a primary source.
+- id: 2025-01-qci-orders-foundry-completed
+  kind: industry
+  date: 2025-01
+  date_precision: month
+  date_note: R09 date cell 2025-01; foundry completion stated as Q1 2025.
+  title: QCi orders three to five; foundry completed in Q1 2025
+  grade: C
+  organizations:
+  - Quantum Computing Inc. (QCi)
+  citations:
+  - text: QCi Q1 2025 results via finanzen.net (snippet)
+    url: https://www.finanzen.net/nachricht/aktien/quantum-computing-inc-reports-first-quarter-2025-financial-results-14488766
+    source_ref: R09 S27
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Snippet only. Five orders by Q1 2025. QCi claims capacity for ">US$180 M sellable product in first full year" (vendor claim, R09 sec. 1.4, sec. 7).
+- id: 2025-02-20-liobate-series-a-ii
+  kind: industry
+  date: '2025-02-20'
+  date_precision: day
+  title: Liobate Series A-II (aggregator)
+  grade: C
+  organizations:
+  - Liobate Technologies
+  citations:
+  - text: CB Insights, Liobate financials (aggregator)
+    url: https://www.cbinsights.com/company/nio-optoelectronics/financials
+    source_ref: R09 S71
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - tfln
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Aggregator listing (CB Insights). Whether Liobate is the same firm as Jiangsu Niobao is unclear (R09 sec. 1.5, sec. 9).
+- id: 2025-02-26-psiquantum-omega-bto
+  kind: industry
+  date: '2025-02-26'
+  date_precision: day
+  title: 'PsiQuantum Omega: BTO switches, not LN'
+  grade: C
+  organizations:
+  - PsiQuantum Corp.
+  - GlobalFoundries
+  citations:
+  - text: The Quantum Insider, 2025-02-26 (snippet)
+    url: https://thequantuminsider.com/2025/02/26/psiquantum-announces-omega-a-manufacturable-photonic-quantum-computing-chipset/
+    source_ref: R09 S54
+    accessed: '2026-10-24'
+  tags:
+  - not-ln
+  - quantum
+  - competing-material
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 'Not LN: barium titanate (BTO) switches on SiN, made at GlobalFoundries (R09 sec. 1.8, sec. 6). Listed as a competing EO material note.'
+- id: 2025-04-07-afr-ofc-2025-tfln-cdm-volume
+  kind: industry
+  date: '2025-04-07'
+  date_precision: day
+  title: 'AFR at OFC 2025: TFLN 130 GBd CDM in volume shipment, 400 G/lane TFLN chip debut'
+  grade: F/V
+  organizations:
+  - Advanced Fiber Resources (Zhuhai) Ltd. (AFR)
+  citations:
+  - text: AFR news, 2025-04-07 (OFC 2025)
+    url: https://www.fiber-resources.com/medias/140.html
+    source_ref: R09 S31
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - tfln
+  - modulator
+  - conference
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Vendor claim. Release states TFLN 96/130 GBd CDM and AM70 "reached volume shipment" and a 400 Gb/s/lane PAM-4 TFLN chip debut (R09 sec. 1.5).
+- id: 2025-05-13-ccraft-csem-spin-off
+  kind: industry
+  date: '2025-05-13'
+  date_precision: day
+  title: CCRAFT spun out of CSEM. Targets 12 M chips/yr by 2030
+  grade: T/V
+  organizations:
+  - CCRAFT SA
+  - CSEM SA
+  citations:
+  - text: optics.org, 2025-05-13
+    url: https://optics.org/news/csem-spins-off-lithium-niobate-photonic-integrated-circuit-foundry
+    source_ref: R09 S14
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 12 M chips/yr is a vendor claim (R09 sec. 7). CCRAFT incorporated 2025-04 (R09 sec. 1.4).
+- id: 2025-06-05-advr-joins-hawthorn-photonics
+  kind: industry
+  date: '2025-06-05'
+  date_precision: day
+  title: AdvR joins Hawthorn Photonics (Covesion's group)
+  grade: F
+  organizations:
+  - AdvR, Inc.
+  - Hawthorn Photonics
+  - Covesion Ltd.
+  citations:
+  - text: Optica corporate member news, 2025-06-05
+    url: https://www.optica.org/about/newsroom/corporate_member_news/2025/advr_joins_covesion_in_strategic_expansion
+    source_ref: R09 S41
+    accessed: '2026-10-24'
+  tags:
+  - corporate
+  - ppln
+  - us
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+- id: 2025-06-09-chipx-first-6-inch-tfln-wafer
+  kind: industry
+  date: '2025-06-09'
+  date_precision: day
+  title: CHIPX reports its first 6-inch TFLN wafer
+  grade: T
+  organizations:
+  - CHIPX (Wuxi Photonic Chip Research Institute, Shanghai Jiao Tong University)
+  citations:
+  - text: C114, 2025-06-09 (CHIPX)
+    url: https://m.c114.com.cn/w5285-1290717.html
+    source_ref: R09 S29
+    accessed: '2026-10-24'
+  tags:
+  - wafer
+  - foundry
+  - tfln
+  - 150mm
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 'Source text partly garbled; dates need recheck. Reported devices: about 110 GHz, 3.5 dB IL, 0.2 dB/cm, 1.9 V cm (R09 sec. 1.4).'
+- id: 2025-06-23-elena-first-europe-made-lnoi
+  kind: industry
+  date: '2025-06-23'
+  date_precision: day
+  title: 'ELENA: first Europe-made commercial LNOI (150 mm)'
+  grade: T
+  organizations:
+  - ELENA consortium
+  - CSEM SA
+  - CEA-Leti
+  - Soitec SA
+  - VPIphotonics
+  - ETH Zurich
+  - Vanguard Automation
+  - Thales
+  - III-V Lab
+  - Rosenberger
+  - L-up
+  citations:
+  - text: PIC Magazine, 2025-06-23 (ELENA)
+    url: https://picmagazine.net/article/121970/EU_project_announces_Europe’s_first_commercial_supplier_of_LNOI_wafers
+    source_ref: R09 S12
+    accessed: '2026-10-24'
+  tags:
+  - wafer
+  - lnoi
+  - 150mm
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: '"First" is the consortium''s claim (R09 sec. 1.3 grades the row T/V). EU H2020, EUR 5 M, 42 months, ended 2025-06. States the prior supply chain "depended on a single commercial supplier outside the EU"; R09 speculation (S): probably NANOLN, not named by the source.'
+- id: 2025-06-25-soitec-lnoi-for-ccraft
+  kind: industry
+  date: '2025-06-25'
+  date_precision: day
+  title: Soitec to supply 150 mm LNOI to CCRAFT. 200 mm wafer shown
+  grade: T
+  organizations:
+  - Soitec SA
+  - CCRAFT SA
+  citations:
+  - text: optics.org, 2025-06-25
+    url: https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics
+    source_ref: R09 S13
+    accessed: '2026-10-24'
+  tags:
+  - wafer
+  - lnoi
+  - 150mm
+  - 200mm
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Europe-made LNOI; a processed 200 mm wafer was shown (R09 sec. 1.3).
+- id: 2025-07-22-qant-series-a
+  kind: industry
+  date: '2025-07-22'
+  date_precision: day
+  title: Q.ANT EUR 62 M Series A
+  grade: T
+  organizations:
+  - Q.ANT GmbH
+  - Cherry Ventures
+  - UVC Partners
+  - imec.xpand
+  - TRUMPF
+  citations:
+  - text: Evertiq, 2025-07-22 (Q.ANT)
+    url: https://evertiq.com/news/2025-07-22-qant-raises-62m-to-advance-computing-with-photonic-processing
+    source_ref: R09 S51
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - photonic-computing
+  - tfln
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Co-led by Cherry Ventures, UVC Partners, imec.xpand; TRUMPF participated (R09 sec. 1.8). Performance claims (up to 30x energy efficiency) are vendor claims.
+- id: 2025-07-30-xanadu-hyperlight-tfln-loss
+  kind: industry
+  date: '2025-07-30'
+  date_precision: day
+  title: 'Xanadu + HyperLight: <2 dB/m, about 20 mdB switch'
+  grade: T/V
+  organizations:
+  - Xanadu Quantum Technologies
+  - HyperLight Corporation
+  citations:
+  - text: The Quantum Insider, 2025-07-30
+    url: https://thequantuminsider.com/2025/07/30/xanadu-and-hyperlight-unveil-advances-in-photonic-chips-setting-new-quantum-computing-benchmarks/
+    source_ref: R09 S53
+    accessed: '2026-10-24'
+  tags:
+  - quantum
+  - tfln
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Performance figures are vendor claims. Made in a high-volume fab. Xanadu is not a foundry; it uses HyperLight TFLN and partner foundries (R09 sec. 1.8, sec. 6).
+- id: 2025-10-01-afr-ecoc-2025-400g-lane
+  kind: industry
+  date: '2025-10-01'
+  date_precision: day
+  title: 'AFR at ECOC 2025: 400 G/lane chip for 1.6T/3.2T'
+  grade: F/V
+  organizations:
+  - Advanced Fiber Resources (Zhuhai) Ltd. (AFR)
+  citations:
+  - text: AFR news, 2025-10-01 (ECOC 2025)
+    url: https://www.fiber-resources.com/medias/143.html
+    source_ref: R09 S32
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - tfln
+  - modulator
+  - conference
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Vendor claim. Also 130 GBd CDM under 3.5 W and a 40 GHz TFLN IQ modulator for FMCW LiDAR (R09 sec. 1.5).
+- id: 2025-10-30-qant-series-a-expanded
+  kind: industry
+  date: '2025-10-30'
+  date_precision: day
+  title: Q.ANT Series A expanded to US$80 M
+  grade: C
+  organizations:
+  - Q.ANT GmbH
+  - Duquesne Family Office
+  citations:
+  - text: The Quantum Insider, 2025-10-30 (snippet)
+    url: https://thequantuminsider.com/2025/10/30/duquesne-family-office-invests-in-q-ant-to-drive-sustainable-photonic-ai-infrastructure/
+    source_ref: R09 S52
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - photonic-computing
+  - tfln
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Snippet only. Expansion with Duquesne Family Office (R09 sec. 1.8).
+- id: 2025-12-30-tdg-holding-wafer-capacity-plan
+  kind: industry
+  date: '2025-12-30'
+  date_precision: day
+  title: 'TDG Holding filing: target of 2.10 M piezo + bonded wafers/yr by 2029-12'
+  grade: F (as reported)
+  organizations:
+  - TDG Holding Co., Ltd.
+  - Qinghe Jingyuan
+  citations:
+  - text: TDG Holding (600330), Investor Relations Activity Record, 2026-06-03
+    url: https://pdf.dfcfw.com/pdf/H22_AN202606041823249221_1.pdf
+    source_ref: R09 S5
+    accessed: '2026-10-24'
+  tags:
+  - wafer
+  - capacity
+  - bulk-ln
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 'R09 grade: F (as reported in S5); the filing itself was not read, the plan is as reported in the 2026-06-03 IR record. Plan: 1.68 M piezoelectric plus 0.42 M heterogeneous (bonded) wafers. The roadmap is a vendor claim (R09 sec. 1.2, sec. 7). R09 estimate (E, sec. 1.1, sec. 4), not part of the event: a 2.1 M 6-inch-equivalent wafers/yr scenario would need about 54 t Nb, about 0.05% of world mine output (about 0.1-0.25% with growth and kerf losses). English name Qinghe Jingyuan is a transliteration (R09 sec. 9).'
+- id: 2026-jingzheng-nanjing-venture-capital-investment
+  kind: industry
+  date: '2026'
+  date_precision: year
+  title: 'Jingzheng: strategic investment from Nanjing Venture Capital Group (2026)'
+  grade: T
+  organizations:
+  - Jinan Jingzheng Electronics Co., Ltd. (NANOLN)
+  - Nanjing Venture Capital Group
+  citations:
+  - text: Economic Herald via 10jqka, 2026-06-29
+    url: https://stock.10jqka.com.cn/20260629/c677805800.shtml
+    source_ref: R09 S7
+    accessed: '2026-10-24'
+  - text: Shanghai Securities News, 2026-06-17
+    url: https://paper.cnstock.com/html/2026-06/17/content_2232363.htm
+    source_ref: R09 S8
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - wafer
+  - lnoi
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.3
+  notes: R09 gives year only.
+- id: 2026-01-19-ligentec-x-fab-tfln-200mm
+  kind: industry
+  date: '2026-01-19'
+  date_precision: day
+  title: 'Ligentec + X-FAB: 200 mm TFLN-on-SiN / TFLN-on-SOI scaling'
+  grade: F
+  organizations:
+  - Ligentec SA
+  - X-FAB Silicon Foundries
+  citations:
+  - text: X-FAB news, 2026-01-19
+    url: https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling
+    source_ref: R09 S28
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - 200mm
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Announced, not yet in production; investment described as future scaling with no dates (R09 sec. 1.4, sec. 6).
+- id: 2026-03-11-hyperlight-umc-wavetek-volume-foundry
+  kind: industry
+  date: '2026-03-11'
+  date_precision: day
+  date_alt:
+  - date: '2026-03-12'
+    note: UMC press release date (Taiwan); 2026-03-11 is the Business Wire (US) date.
+  title: 'HyperLight + UMC + Wavetek: volume foundry on 6" and 8"'
+  grade: T/C
+  organizations:
+  - HyperLight Corporation
+  - United Microelectronics Corporation (UMC)
+  - Wavetek
+  citations:
+  - text: UMC press release, 2026-03-12 (403; content via search snippet, TrendForce, iConnect007)
+    url: https://www.umc.com/en/News/press_release/Content/corporate/20260312
+    source_ref: R09 S19
+    accessed: '2026-10-24'
+  tags:
+  - foundry
+  - tfln
+  - 150mm
+  - 200mm
+  - us
+  - taiwan
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 'Dual date: Business Wire (US) 2026-03-11, UMC (Taiwan) 2026-03-12 (R09 sec. 1.4). The UMC release and Business Wire US page returned 403; content read via search snippet, TrendForce, iConnect007 (R09 sec. 9). Wavetek had earlier brought TFLN into a customer-qualified 6" CMOS line; UMC adds 8".'
+- id: 2026-03-16-ofc-2026-hyperlight-1.6t-dr8
+  kind: industry
+  date: '2026-03-16'
+  date_precision: day
+  date_alt:
+  - date: '2026-03-18'
+    note: R09 date cell "2026-03-16/18" (OFC 2026); Business Wire China release S20 dated 2026-03-17.
+  title: 'OFC 2026: HyperLight 1.6T-DR8 TFLN reference module at 20 W, with TFC'
+  grade: F/V
+  organizations:
+  - HyperLight Corporation
+  - Suzhou TFC Optical Communication Co., Ltd.
+  citations:
+  - text: Business Wire China (HyperLight 1.6T-DR8), 2026-03-17
+    url: https://www.businesswirechina.com/en/news/62386.html
+    source_ref: R09 S20
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - tfln
+  - transceiver
+  - conference
+  - us
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: '20 W fully retimed, about 20% below alternatives, one CW laser instead of 2-4: vendor claims (R09 sec. 1.5, sec. 7). TFC provided engineering support.'
+- id: 2026-04-jingzheng-shandong-hi-speed-investment
+  kind: industry
+  date: 2026-04
+  date_precision: month
+  title: 'Jingzheng: strategic investment from Shandong Hi-Speed fund'
+  grade: T
+  organizations:
+  - Jinan Jingzheng Electronics Co., Ltd. (NANOLN)
+  - Shandong Hi-Speed
+  citations:
+  - text: Economic Herald via 10jqka, 2026-06-29
+    url: https://stock.10jqka.com.cn/20260629/c677805800.shtml
+    source_ref: R09 S7
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - wafer
+  - lnoi
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+- id: 2026-06-hyperlight-200g-lane-available-400g-sampling
+  kind: industry
+  date: 2026-06
+  date_precision: month
+  title: 'HyperLight: 200 G/lane products available, 400 G/lane sampling'
+  grade: C/V
+  organizations:
+  - HyperLight Corporation
+  citations:
+  - text: Summit Partners (HyperLight Series C), 2026-06-18
+    url: https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure
+    source_ref: R09 S18
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - tfln
+  - modulator
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.5
+  notes: Vendor claim. R09 grades the HyperLight row "C / V" with sources S22, S20, S18 and does not map items to sources; this 2026-06 item is attributed to S18 (2026-06-18) by date.
+- id: 2026-06-03-tdg-holding-ir-ln-modulators-3.2t
+  kind: industry
+  date: '2026-06-03'
+  date_precision: day
+  title: 'TDG Holding IR: expects LN modulators to be mainstream for 3.2T+'
+  grade: F (statement)
+  organizations:
+  - TDG Holding Co., Ltd.
+  citations:
+  - text: TDG Holding (600330), Investor Relations Activity Record, 2026-06-03
+    url: https://pdf.dfcfw.com/pdf/H22_AN202606041823249221_1.pdf
+    source_ref: R09 S5
+    accessed: '2026-10-24'
+  tags:
+  - statement
+  - bulk-ln
+  - wafer
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Statement attributed "per industry research"; the company states it does not make optical modules. The same IR record claims 8-inch LN in mass production (R09 sec. 1.2).
+- id: 2026-06-17-shanghai-securities-news-ln-financings
+  kind: industry
+  date: '2026-06-17'
+  date_precision: day
+  title: 'Shanghai Securities News: Niobao Series C in progress. Nanzhi Xincai Pre-A >CNY 100 M. Xili round led by Lenovo Capital. Jingzheng preparing IPO'
+  grade: T
+  organizations:
+  - Jiangsu Niobao Optoelectronics Technology Co., Ltd.
+  - Nanzhi Xincai Technology Co., Ltd.
+  - Xili Photonics
+  - Lenovo Capital
+  - Jinan Jingzheng Electronics Co., Ltd. (NANOLN)
+  citations:
+  - text: Shanghai Securities News, 2026-06-17
+    url: https://paper.cnstock.com/html/2026-06/17/content_2232363.htm
+    source_ref: R09 S8
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - tfln
+  - lnoi
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: English names (Niobao, Xili) are transliterations or uncertain mappings (R09 sec. 9). Nanzhi Xincai phase-1 line "near full load" (vendor claim, R09 sec. 1.2).
+- id: 2026-06-18-hyperlight-series-c
+  kind: industry
+  date: '2026-06-18'
+  date_precision: day
+  title: HyperLight US$80 M Series C led by MediaTek. Investors include UMC Capital, Jabil, Foxconn, EDBI, CDIB-TEN, QIA
+  grade: F
+  organizations:
+  - HyperLight Corporation
+  - MediaTek
+  - UMC Capital
+  - Jabil
+  - Foxconn
+  - EDBI
+  - CDIB-TEN
+  - QIA
+  citations:
+  - text: Summit Partners (HyperLight Series C), 2026-06-18
+    url: https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure
+    source_ref: R09 S18
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - tfln
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+- id: 2026-07-02-ccraft-raises-7.8m
+  kind: industry
+  date: '2026-07-02'
+  date_precision: day
+  date_alt:
+  - date: '2026-07-06'
+    note: 'R09 date cell "2026-07-02/06": CSEM press S16 dated 2026-07-02, Evertiq S15 dated 2026-07-06.'
+  title: CCRAFT raises US$7.8 M (QBIT Capital lead). Target 2,000 wafers/month by 2030
+  grade: F/T
+  organizations:
+  - CCRAFT SA
+  - QBIT Capital
+  citations:
+  - text: CSEM press, 2026-07-02
+    url: https://www.csem.ch/en/press/ccraft-photonic-chips-switzerland-scaling/
+    source_ref: R09 S16
+    accessed: '2026-10-24'
+  - text: Evertiq, 2026-07-06
+    url: https://evertiq.com/news/2026-07-06-ccraft-raises-78-million-to-scale-photonic-chip-manufacturing
+    source_ref: R09 S15
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - foundry
+  - tfln
+  - europe
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: 2,000 wafers/month by 2030 is a vendor claim (R09 sec. 7).
+- id: 2026-08-01-hengtong-blog-3.2t-pluggables
+  kind: industry
+  date: '2026-08-01'
+  date_precision: day
+  title: 'Vendor blog: interoperable 3.2T pluggables "not yet a purchasable commodity". TFLN modulators commercially available'
+  grade: C
+  organizations:
+  - Hengtong
+  citations:
+  - text: Hengtong blog, 2026-08-01 (snippet)
+    url: https://www.hengtongglobal.com/info/tfln-3-2t-optics-fiber-cabling-103603656.html
+    source_ref: R09 S66
+    accessed: '2026-10-24'
+  tags:
+  - statement
+  - tfln
+  - transceiver
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Vendor blog, snippet only.
+- id: 2026-09-genuine-optics-3.2t-osfp-tfln-ecoc
+  kind: industry
+  date: 2026-09
+  date_precision: month
+  date_note: ECOC 2026, Malaga (R09 date cell "2026-09 (ECOC, Malaga)").
+  title: Genuine Optics 3.2T OSFP on TFLN, 450 Gb/s/lane (press release via snippet)
+  grade: C/V
+  organizations:
+  - Genuine Optics
+  citations:
+  - text: EIN Presswire, Genuine Optics, 2026-09 (403; snippet)
+    url: https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026
+    source_ref: R09 S67
+    accessed: '2026-10-24'
+  tags:
+  - product
+  - tfln
+  - transceiver
+  - conference
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Press release page returned 403; release text not verified (R09 sec. 9). Up to 450 Gb/s/lane (R09 sec. 1.5).
+- id: 2026-09-venturetech-alliance-hyperlight-series-c
+  kind: industry
+  date: 2026-09
+  date_precision: month
+  date_note: About 2026-09-09 (R09 date cell "2026-09 (about 09-09)").
+  title: VentureTech Alliance added to HyperLight Series C
+  grade: C
+  organizations:
+  - VentureTech Alliance
+  - HyperLight Corporation
+  citations:
+  - text: Pulse 2.0 (VentureTech Alliance joins Series C), 2026-09 (snippet)
+    url: https://pulse2.com/hyperlight-adds-venturetech-alliance-to-series-c-to-expand-tfln-semiconductor-ecosystem/
+    source_ref: R09 S23
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - tfln
+  - us
+  access_date: '2026-10-24'
+  research_note: R09 sec. 3
+  notes: Snippet only.
+- id: 2026-09-xili-photonics-pre-a
+  kind: industry
+  date: 2026-09
+  date_precision: month
+  date_note: R09 gives 2026-09; S77 dated 2026-09-18.
+  title: 'Xili Photonics: Pre-A led by Futeng Capital'
+  grade: C
+  organizations:
+  - Xili Photonics
+  - Futeng Capital
+  citations:
+  - text: ChinaVenture, Xili Photonics Pre-A, 2026-09-18 (snippet)
+    url: https://m.chinaventure.com.cn/news/113-20260918-393335.html
+    source_ref: R09 S77
+    accessed: '2026-10-24'
+  tags:
+  - funding
+  - tfln
+  - china
+  access_date: '2026-10-24'
+  research_note: R09 sec. 1.4
+  notes: R09 grades the Xili row T/C (S8, S77); this item rests on S77 alone, a snippet, so it is graded C here. English name Xili is a transliteration (R09 sec. 9).

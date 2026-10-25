@@ -1,0 +1,74 @@
+{
+  "citation": "E.L. Wooten, K.M. Kissa, A. Yi-Yan, et al., \"A review of lithium niobate modulators for fiber-optic communications systems\", IEEE Journal of Selected Topics in Quantum Electronics 6, 69-82, (2000) doi:10.1109/2944.826874",
+  "link": "https://doi.org/10.1109/2944.826874",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Wooten",
+        "given": "E.L."
+      },
+      {
+        "family": "Kissa",
+        "given": "K.M."
+      },
+      {
+        "family": "Yi-Yan",
+        "given": "A."
+      },
+      {
+        "family": "Murphy",
+        "given": "E.J."
+      },
+      {
+        "family": "Lafaw",
+        "given": "D.A."
+      },
+      {
+        "family": "Hallemeier",
+        "given": "P.F."
+      },
+      {
+        "family": "Maack",
+        "given": "D."
+      },
+      {
+        "family": "Attanasio",
+        "given": "D.V."
+      },
+      {
+        "family": "Fritz",
+        "given": "D.J."
+      },
+      {
+        "family": "McBrien",
+        "given": "G.J."
+      },
+      {
+        "family": "Bossi",
+        "given": "D.E."
+      }
+    ],
+    "container_title": "IEEE Journal of Selected Topics in Quantum Electronics",
+    "doi": "10.1109/2944.826874",
+    "id": "wooten2000",
+    "issue": "1",
+    "issued": "2000-01",
+    "page": "69-82",
+    "read": "bibliographic record only (Crossref)",
+    "title": "A review of lithium niobate modulators for fiber-optic communications systems",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

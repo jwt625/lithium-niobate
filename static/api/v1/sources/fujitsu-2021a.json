@@ -1,0 +1,24 @@
+{
+  "citation": "\"Fujitsu Optical Components Ships One Millionth Coherent Lithium-Niobate Modulator\", (2021) https://web.archive.org/web/20230812112018/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20210331.html",
+  "link": "https://web.archive.org/web/20230812112018/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20210331.html",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "fujitsu-2021a",
+    "issued": "2021-03-31",
+    "read": "Archived copy read in full",
+    "title": "Fujitsu Optical Components Ships One Millionth Coherent Lithium-Niobate Modulator",
+    "type": "webpage",
+    "url": "https://web.archive.org/web/20230812112018/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20210331.html"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "citation": "Boris Desiatov, Amirhassan Shams-Ansari, Mian Zhang, et al., \"Ultra-low-loss integrated visible photonics using thin-film lithium niobate\", Optica 6, 380, (2019) doi:10.1364/optica.6.000380",
+  "link": "https://doi.org/10.1364/optica.6.000380",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Boris Desiatov"
+      },
+      {
+        "literal": "Amirhassan Shams-Ansari"
+      },
+      {
+        "literal": "Mian Zhang"
+      },
+      {
+        "literal": "Cheng Wang"
+      },
+      {
+        "literal": "Marko Lončar"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.6.000380",
+    "id": "desiatov2019",
+    "issue": "3",
+    "issued": "2019-03-20",
+    "page": "380",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Ultra-low-loss integrated visible photonics using thin-film lithium niobate",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "alternatives": [
+    "eo-rT/cln/cti1999"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "eo-rT",
+    "variant": "cln"
+  },
+  "recommended": {
+    "conditions": {
+      "mechanical_boundary": "T",
+      "wavelength_nm": 633
+    },
+    "default": true,
+    "frame": {
+      "convention": "IRE-1949",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -6.81,
+          10.0
+        ],
+        [
+          -6.81,
+          0.0,
+          0.0
+        ],
+        [
+          32.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -6.81,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.81,
+          10.0
+        ],
+        [
+          0.0,
+          32.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          32.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          32.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          32.2
+        ]
+      ]
+    ],
+    "id": "eo-rT/cln/weis1985",
+    "independent": {
+      "r13": {
+        "notes": "sign explicitly positive in weis1985; Smakula & Claspy 1967 give 10.9",
+        "original_reference": "Zook, Chen, Otto, APL 11, 159 (1967)",
+        "value": 10.0
+      },
+      "r22": {
+        "notes": "Lenzo et al. 1966 and Smakula 1967 give 6.7",
+        "original_reference": "Zook, Chen, Otto, APL 11, 159 (1967)",
+        "value": 6.81
+      },
+      "r33": {
+        "notes": "Smakula & Claspy 1967 give 34.0",
+        "original_reference": "Zook, Chen, Otto, APL 11, 159 (1967)",
+        "value": 32.2
+      },
+      "r51": {
+        "original_reference": "Bernal et al. 1966",
+        "value": 32
+      }
+    },
+    "kind": "tensor",
+    "name": "Linear electro-optic (Pockels) coefficients, unclamped (constant stress)",
+    "notes": "No 1550 nm EO values were found in any source read ( gap 4). Free (T) coefficients vary within +-5% with melt composition (Turner, Nash, Bridenbaugh 1970, via weis1985 p. 199); r22 varies with composition with a minimum near 48.9 mol% (volk2008 p. 150).",
+    "provenance": {
+      "locator": "Table 4, p. 199",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "r^T",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "-r22",
+          "r13"
+        ],
+        [
+          "0",
+          "r22",
+          "r13"
+        ],
+        [
+          "0",
+          "0",
+          "r33"
+        ],
+        [
+          "0",
+          "r51",
+          "0"
+        ],
+        [
+          "r51",
+          "0",
+          "0"
+        ],
+        [
+          "-r22",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "r12 = -r22",
+        "r23 = r13",
+        "r42 = r51",
+        "r61 = -r22"
+      ]
+    },
+    "tensor": "eo-rT",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "variant": "cln",
+    "variant_note": "composition not stated in weis1985; volk2008 Table 1.2 lists the same values for CLN",
+    "voigt": [
+      [
+        0.0,
+        -6.81,
+        10.0
+      ],
+      [
+        0.0,
+        6.81,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        32.2
+      ],
+      [
+        0.0,
+        32.0,
+        0.0
+      ],
+      [
+        32.0,
+        0.0,
+        0.0
+      ],
+      [
+        -6.81,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "r_ijk = r_Ik, I = V(ij) (impermeability change d(eta)_ij = r_ijk E_k)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  },
+  "recommended_note": null,
+  "spread": {
+    "r13": {
+      "max": 10,
+      "min": 10,
+      "n_records": 2
+    },
+    "r22": {
+      "max": 7,
+      "min": 6.81,
+      "n_records": 2
+    },
+    "r33": {
+      "max": 33,
+      "min": 32.2,
+      "n_records": 2
+    },
+    "r51": {
+      "max": 33,
+      "min": 32,
+      "n_records": 2
+    }
+  }
+}

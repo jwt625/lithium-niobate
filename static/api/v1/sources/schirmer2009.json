@@ -1,0 +1,46 @@
+{
+  "citation": "O F Schirmer, M Imlau, C Merschjann, et al., \"Electron small polarons and bipolarons in LiNbO3\", Journal of Physics: Condensed Matter 21, 123201, (2009) doi:10.1088/0953-8984/21/12/123201",
+  "link": "https://doi.org/10.1088/0953-8984/21/12/123201",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Schirmer",
+        "given": "O F"
+      },
+      {
+        "family": "Imlau",
+        "given": "M"
+      },
+      {
+        "family": "Merschjann",
+        "given": "C"
+      },
+      {
+        "family": "Schoke",
+        "given": "B"
+      }
+    ],
+    "container_title": "Journal of Physics: Condensed Matter",
+    "doi": "10.1088/0953-8984/21/12/123201",
+    "id": "schirmer2009",
+    "issue": "12",
+    "issued": "2009-03-03",
+    "page": "123201",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Electron small polarons and bipolarons in LiNbO3",
+    "type": "article-journal",
+    "volume": "21"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "citation": "K. Kitamura, J.K. Yamamoto, N. Iyi, et al., \"Stoichiometric LiNbO3 single crystal growth by double crucible Czochralski method using automatic powder supply system\", Journal of Crystal Growth 116, 327-332, (1992) doi:10.1016/0022-0248(92)90640-5",
+  "link": "https://doi.org/10.1016/0022-0248(92)90640-5",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Kitamura",
+        "given": "K."
+      },
+      {
+        "family": "Yamamoto",
+        "given": "J.K."
+      },
+      {
+        "family": "Iyi",
+        "given": "N."
+      },
+      {
+        "family": "Kirnura",
+        "given": "S."
+      },
+      {
+        "family": "Hayashi",
+        "given": "T."
+      }
+    ],
+    "container_title": "Journal of Crystal Growth",
+    "doi": "10.1016/0022-0248(92)90640-5",
+    "id": "kitamura1992",
+    "issue": "3-4",
+    "issued": "1992-02",
+    "page": "327-332",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Stoichiometric LiNbO3 single crystal growth by double crucible Czochralski method using automatic powder supply system",
+    "type": "article-journal",
+    "volume": "116"
+  }
+}

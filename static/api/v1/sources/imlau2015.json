@@ -1,0 +1,42 @@
+{
+  "citation": "Mirco Imlau, Holger Badorreck, Christoph Merschjann, \"Optical nonlinearities of small polarons in lithium niobate\", Applied Physics Reviews 2, 040606, (2015) doi:10.1063/1.4931396",
+  "link": "https://doi.org/10.1063/1.4931396",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Imlau",
+        "given": "Mirco"
+      },
+      {
+        "family": "Badorreck",
+        "given": "Holger"
+      },
+      {
+        "family": "Merschjann",
+        "given": "Christoph"
+      }
+    ],
+    "container_title": "Applied Physics Reviews",
+    "doi": "10.1063/1.4931396",
+    "id": "imlau2015",
+    "issue": "4",
+    "issued": "2015-12",
+    "page": "040606",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Optical nonlinearities of small polarons in lithium niobate",
+    "type": "article-journal",
+    "volume": "2"
+  }
+}

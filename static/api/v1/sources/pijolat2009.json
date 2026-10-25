@@ -1,0 +1,63 @@
+{
+  "citation": "M. Pijolat, S. Loubriat, S. Queste, et al., \"Large electromechanical coupling factor film bulk acoustic resonator with X-cut LiNbO3 layer transfer\", Applied Physics Letters 95, 182106, (2009) doi:10.1063/1.3258496",
+  "link": "https://doi.org/10.1063/1.3258496",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "M. Pijolat"
+      },
+      {
+        "literal": "S. Loubriat"
+      },
+      {
+        "literal": "S. Queste"
+      },
+      {
+        "literal": "D. Mercier"
+      },
+      {
+        "literal": "A. Reinhardt"
+      },
+      {
+        "literal": "E. Defaÿ"
+      },
+      {
+        "literal": "C. Deguet"
+      },
+      {
+        "literal": "L. Clavelier"
+      },
+      {
+        "literal": "H. Moriceau"
+      },
+      {
+        "literal": "M. Aïd"
+      },
+      {
+        "literal": "S. Ballandras"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.3258496",
+    "id": "pijolat2009",
+    "issue": "18",
+    "issued": "2009-11-02",
+    "page": "182106",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Large electromechanical coupling factor film bulk acoustic resonator with X-cut LiNbO3 layer transfer",
+    "type": "article-journal",
+    "volume": "95"
+  }
+}

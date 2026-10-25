@@ -1,0 +1,42 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "oh-stretch-band",
+    "variant": "mgo5-cln"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "default": true,
+      "id": "oh-stretch-band/mgo5-cln/bryan1984",
+      "kind": "scalar",
+      "name": "OH stretch absorption band",
+      "property": "oh-stretch-band",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "bryan1984",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "um",
+        "ucum": "um"
+      },
+      "value": 2.83,
+      "variant": "mgo5-cln",
+      "variant_note": "MgO >= 4.5 at.%"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

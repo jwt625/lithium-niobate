@@ -1,0 +1,884 @@
+[
+{
+"key": "FIG-01-01",
+"title": "Unit cell of LiNbO3",
+"q": "What does the LiNbO3 lattice look like, and how do the hexagonal and rhombohedral cells, the octahedral columns (Nb, empty, Li along +c) and the cleavage plane sit in it?",
+"inputs": "cell setting: hexagonal, rhombohedral, both; layers: Nb octahedra, Li octahedra, empty sites, bonds, axes, cleavage plane (01-12), column highlight; supercell n × n × 1 (n = 1, 2); pick an atom or site",
+"outputs": "atom and octahedron geometry; picked species and Wyckoff site; fractional and Cartesian coordinates (Å); nearest-neighbour bond lengths (Å); lattice constants a, c (Å); rhombohedral a_R (Å) and α (°)",
+"model": "Static geometry from the room-temperature structure (a = 5.148 Å, c = 13.863 Å) expanded by its symmetry operations; the hexagonal-to-rhombohedral conversion gives a_R = 5.494 Å, α = 55.87°, and the (01-12) cleavage plane lies at 32.75° to c.",
+"src": "Hsu et al. 1997; Abrahams et al. 1966; Weis & Gaylord 1985; Volk & Wöhlecke 2009"
+},
+{
+"key": "FIG-01-02",
+"title": "Polarization reversal in one cell",
+"q": "Which atoms move when the polarization reverses, by how much, and why is a single cell not how real crystals switch?",
+"inputs": "flip parameter s −1 to +1; reference frame: O fixed, Nb fixed, centre of mass; applied field E (kV/mm)",
+"outputs": "Nb, Li and O displacements along c (Å); polarization direction; double-well energy (mRy per 10-atom cell)",
+"model": "Li, Nb and a small O twist are interpolated linearly between the up structure (s = +1) and its inversion about the NbO6 centroid; s = 0 is the centrosymmetric R-3c reference. The inset well U = U0 (s² − 1)² − kEs is a display shape scaled to the reported 18.3 mRy (2858 K) depth.",
+"src": "Hsu et al. 1997; Weis & Gaylord 1985; Inbar & Cohen 1996; Volk & Wöhlecke 2009"
+},
+{
+"key": "FIG-01-03",
+"title": "Composition from congruent to stoichiometric",
+"q": "What changes, and by how much, as the Li2O content goes from congruent (about 48.4 mol%) to stoichiometric (50 mol%)?",
+"inputs": "Li2O content 48.0 to 50.0 mol% (step 0.01); defect model: Li-site vacancy, Nb-site vacancy",
+"outputs": "[Li]/[Nb] ratio; Nb_Li antisite and V_Li vacancy fractions (%); Curie temperature Tc band (°C); UV absorption edge λ_20, λ_15 (nm); coercive and internal field anchors (kV/mm); melting point (°C)",
+"model": "R1 = c/(100 − c) and antisite parameter x = (1 − 2R2)/(5 − 4R2) with R2 = c/100, placed per the chosen defect model; Tc from the Iyi and Bordui fits and the UV edge from its calibrated fit (48.0 to 50.0 mol% only); Ec and Eint shown only at sourced anchors.",
+"src": "Volk & Wöhlecke 2009; Iyi et al. 1992; Bordui et al. 1992; Kovács et al. 1997; Gopalan et al. 1998; Carruthers et al. 1971; Weis & Gaylord 1985"
+},
+{
+"key": "FIG-01-04",
+"title": "Defect and polaron centres",
+"q": "Which intrinsic and hydrogen-related centres exist in LiNbO3, where are they in the lattice, and what light do they absorb?",
+"inputs": "centre: Nb_Li, V_Li, V_Nb, bound polaron, free polaron, bipolaron, O⁻ hole polaron, OH⁻; pump 532 nm: on, off; illuminate below 80 K: on, off",
+"outputs": "lattice site; absorption peak (eV, nm); OH⁻ stretch line (cm⁻¹); lifetime ranges where sourced; EPR g factors",
+"model": "Catalogue, no simulation: bound polaron Nb_Li⁴⁺ at 1.6 eV, free polaron Nb_Nb⁴⁺ 0.95 eV, bipolaron 2.5 eV, O⁻ hole polaron near 500 nm, OH⁻ at 3482/3467 cm⁻¹ (CLN) and 3466 cm⁻¹ (SLN). Peaks are markers; widths drawn only where sourced (OH⁻ FWHM 32 cm⁻¹).",
+"src": "Volk & Wöhlecke 2009; Herth et al. 2005; Furukawa et al. 2001"
+},
+{
+"key": "FIG-01-05",
+"title": "MgO and other dopant thresholds",
+"q": "What happens at the damage-resistance threshold of Mg (and Zn, In, Sc, Hf, Zr), and why is it lower in Li-rich crystal?",
+"inputs": "dopant: MgO, ZnO, In2O3, Sc2O3, HfO2, ZrO2; host: congruent, melt [Li]/[Nb] = 1.2, near-stoichiometric; concentration 0 to 9 mol% (step 0.1)",
+"outputs": "sourced threshold concentrations (mol%); OH⁻ absorption band below and above threshold (cm⁻¹); Mg site occupancy",
+"model": "Browser of sourced thresholds, no interpolation (nearest lower sourced state shown). In congruent host the MgO threshold is 4.5 to 5 mol% and the OH⁻ line moves from 3484 to 3534 cm⁻¹; Mg sites follow one proposed scheme; the two concentration bases differ by about 2×.",
+"src": "Volk & Wöhlecke 2009; Bryan et al. 1984; Furukawa et al. 2000; Zhong et al. 1980; Iyi et al. 1995"
+},
+{
+"key": "FIG-01-06",
+"title": "Symmetry constraints of point group 3m",
+"q": "How does point group 3m decide which components of each property tensor are zero, equal, or tied, and what appears when an applied field lowers the symmetry?",
+"inputs": "property: pyroelectric (rank 1), permittivity (2), piezoelectric d (3), electro-optic r (3), elastic c (4), photoelastic p (4); operations: C3, C3², mirror yz, mirror at +60°, mirror at −60°; applied field: none, x, y, z",
+"outputs": "Voigt matrix with each component zero, independent or related; number of independent components; residual point group (3m, m, 1)",
+"model": "Neumann's principle: a generic tensor is averaged over the selected operations and contracted with Voigt factors, and linear relations are found numerically. Full 3m leaves 4 independent d (d16 = −2 d22) and 6 c (c66 = (c11 − c12)/2); a field along y leaves m, along x leaves 1.",
+"src": "Weis & Gaylord 1985; Nye 1985; IEEE Std 176-1987"
+},
+{
+"key": "FIG-01-07",
+"title": "Identifying the +z face",
+"q": "How is the sign of the polar axis defined and found on a real crystal?",
+"inputs": "test: compress along c, cool, etch in acid",
+"outputs": "sign of charge on the +c face; cooling charge per kelvin (C/K per cm², range); compression charge (C)",
+"model": "Sign rules from the standards: compression along c makes the +c face negative, cooling makes it positive, and acid etches the −c face much faster. Optional charges Q = p3 A ΔT with |p3| 4 to 9.5 × 10⁻⁵ C/(m² K), and Q = d33 F.",
+"src": "Weis & Gaylord 1985; Volk & Wöhlecke 2009; IEEE Std 176-1987; IRE 1949"
+},
+{
+"key": "FIG-01-08",
+"title": "Hysteresis loops by crystal composition",
+"q": "How do coercive field, internal field and spontaneous polarization differ between congruent, near-stoichiometric and Mg-doped crystals?",
+"inputs": "crystal: CLN, SLN, CLN:5% MgO, SLN:1% MgO, near-SLN:2% MgO; wafer thickness 0.1 to 1 mm",
+"outputs": "polarization versus field loop (C/m², kV/mm); coercive field Ec (kV/mm); internal field Eint (kV/mm); spontaneous polarization Ps (C/m²); poling voltage (kV)",
+"model": "Loops built from sourced anchors only: Ps band 0.71 to 0.80 C/m², forward switching at Ec and reverse at Ec − 2Eint (loop shifted by Eint); the tanh loop shape is a display template. Poling voltage V = Ec t.",
+"src": "Volk & Wöhlecke 2009; Gopalan et al. 1998; Chen et al. 2001; Chen et al. 2003"
+},
+{
+"key": "FIG-01-09",
+"title": "Periodic poling with comb electrodes",
+"q": "How does a field pulse through comb electrodes turn a single-domain crystal into a periodically poled one, and what does the switching current record?",
+"inputs": "field pulse (voltage, duration); electrode period and duty (template presets); hold at Ec/2 after the pulse: on, off",
+"outputs": "domain map (top view and cross-section); switched area fraction X(t); switching current I(t); integrated charge (µC/cm²); duty cycle; KAI exponent n",
+"model": "Stochastic cellular automaton on a triangular lattice: nucleation at the +z electrode edge rising with E − Ec, sideways growth along six Y-wall directions; all rates are templates. I = 2Ps dA/dt + C dV/dt with Ps = 0.71 C/m²; X(t) is fitted with the KAI model.",
+"src": "Volk & Wöhlecke 2009; Yamada et al. 1993; Myers et al. 1995; Gopalan et al. 1999; Lee et al. 2011; Shur 2006"
+},
+{
+"key": "FIG-01-10",
+"title": "Domain wall across length scales",
+"q": "How wide is a domain wall, and on what length scales do its strain, birefringence, and (when charged) conduction live?",
+"inputs": "length scale 10 µm to 0.1 nm (log); wall tilt θ 0 to 5°",
+"outputs": "wall feature at the current scale and its width (µm, nm); bound charge σ_b (C/m²); sheet electron density (e/cm²)",
+"model": "Sourced widths per scale: X-ray shear strain up to 10 µm, birefringence within 2 µm, PFM 65 to 150 nm (probe-limited), ideal 1 to 2 lattice units (about 0.5 to 1.0 nm), TEM bound 0.28 nm (LiTaO3). Tilt gives σ_b = 2Ps sin θ; one measured conduction point at θ ≈ 1°.",
+"src": "Gopalan et al. 2007; Volk & Wöhlecke 2009; Werner et al. 2017; Schröder et al. 2012"
+},
+{
+"key": "F3.1",
+"title": "Longitudinal piezoelectric surface",
+"q": "Which way do you press LN to get the most charge, and why does the answer have threefold symmetry?",
+"inputs": "press direction θ 0 to 180°, φ 0 to 360°; data set: Kushibiki 1999, Smith & Welsh 1971",
+"outputs": "longitudinal coefficient d_L (pC/N, signed); face charge density at 1 MPa (µC/m²); displacement per volt along the press direction (pm/V)",
+"model": "d = e s^E and d_L(n) = d_ijk n_i n_j n_k = d33 cos³θ + (d31 + d15) cos θ sin²θ − d22 sin³θ sin 3φ, so the sign flips every 60° around the equator; d_L is 20.30 pC/N along Y, 8.69 along Z, and |d_L| peaks at 38.80 pC/N at θ = 118.9°.",
+"src": "Kushibiki et al. 1999; Smith & Welsh 1971; Weis & Gaylord 1985"
+},
+{
+"key": "F3.2",
+"title": "Piezoelectric constitutive forms and Voigt factors",
+"q": "How do e, d, g, h and the stiff/compliant, clamped/free constants convert into each other, and where do factors of 2 come from?",
+"inputs": "given form: e, d, g, h; Voigt view: IEEE engineering strain, full tensor index; matrix cell selection",
+"outputs": "piezoelectric matrices e, d (pC/N), g (V m/N), h (V/m); stiffness c^E, c^D (GPa); compliance s^E, s^D; permittivity ε^S, ε^T; full-tensor components and factor (1, 2 or 4) for a selected cell",
+"model": "IEEE 176 relations between the four piezoelectric forms with the Voigt maps, so c66 = (c11 − c12)/2 but s66 = 2(s11 − s12), and d16 = −2 d22. Computed ε^T 83.34 / 28.48 against measured 83.3 / 28.5.",
+"src": "IEEE Std 176-1987; Kushibiki et al. 1999; Graham 1976"
+},
+{
+"key": "F3.3",
+"title": "Bulk acoustic slowness surfaces",
+"q": "How fast does sound travel in each direction of LN, and how much does piezoelectricity stiffen it?",
+"inputs": "piezoelectric stiffening: on, off; view: XY, YZ, XZ plane or 3D; mode: slow shear, fast shear, quasi-longitudinal; data set",
+"outputs": "phase velocity (m/s); slowness (s/m); group velocity (m/s); power-flow angle (°); polarization vector; stiffening increment (m/s)",
+"model": "Christoffel equation with piezoelectric stiffening, group velocity from its solution; velocities span 3474.0 to 7356.9 m/s. Stiffening lifts the Z-longitudinal velocity from 7102 to 7329 m/s (measured 7328.20) and leaves the Y-shear polarized along X unchanged.",
+"src": "IEEE Std 176-1987; Jaeken & Cottenier 2016; Kushibiki et al. 1999"
+},
+{
+"key": "F3.4",
+"title": "SAW velocity and coupling versus cut angle",
+"q": "Why are 128° Y-X, 41° Y-X and 64° Y-X the standard LN SAW cuts?",
+"inputs": "rotated Y-cut angle θ 0 to 180° (step 0.5°), X propagation; data set: Kushibiki 1999, Ogi 2002, Warner 1967; branch: Rayleigh, leaky SAW",
+"outputs": "free and metallized surface velocity (m/s); coupling k² (%); leaky-SAW loss, open and shorted (dB per wavelength); slow and fast shear thresholds (m/s)",
+"model": "Partial-wave SAW solver for Rayleigh (real v) and leaky (complex v) waves on open and shorted surfaces, k² = 2(v_free − v_met)/v_free. Rayleigh k² peaks at 5.42% at 129°, where the leaky wave has faded; near 60 to 70° the leaky wave reaches 9 to 11%.",
+"src": "Campbell & Jones 1968; Ingebrigtsen 1969; Kushibiki et al. 1999; Ogi et al. 2002; Warner et al. 1967"
+},
+{
+"key": "F3.5",
+"title": "Surface acoustic wave depth profile",
+"q": "What does a surface wave look like inside the crystal, and how is a leaky wave different?",
+"inputs": "cut: Y-Z, 128° Y-X, 64° Y-X (leaky), X-Z, X-Y; surface: open, shorted; wave phase 0 to 360°",
+"outputs": "normalized u1, u2, u3 and potential φ versus depth (wavelengths); surface particle orbit and its sense; energy within 1 wavelength (%); power-flow angle (°); wavelength at 1 GHz (µm)",
+"model": "Eigenvector of the partial-wave SAW solution: four partial waves give displacement and potential versus depth from 0 to −3λ, matched at the surface to a vacuum potential decaying as exp(−k x3).",
+"src": "Campbell & Jones 1968; Kushibiki et al. 1999"
+},
+{
+"key": "F3.6",
+"title": "Interdigital transducer frequency response",
+"q": "How does a comb of electrodes pick one frequency out of a radio signal?",
+"inputs": "cut and surface (velocity from the cut-angle sweep); electrode period p 0.5 to 20 µm; finger pairs N 1 to 200; metallization ratio (display only)",
+"outputs": "centre frequency f0 (MHz, GHz); finger width (µm); null-to-null fractional bandwidth (%); array-factor response |H(f)|² (dB)",
+"model": "f0 = v/p; array factor H = sin X/(N sin(X/N)) with X = Nπ(f − f0)/f0, conductance shape (sin X/X)², null-to-null bandwidth 2f0/N. Absolute conductance is not modelled; a measured TFLN point (1.9 mS, 3.36 MHz at 1.85 GHz) is a marker.",
+"src": "Kushibiki et al. 1999; Jiang et al. 2020"
+},
+{
+"key": "F3.7",
+"title": "Bragg acousto-optic diffraction",
+"q": "How does a sound wave diffract light, and what sets the angle and the frequency shift?",
+"inputs": "optical wavelength λ0 400 to 1700 nm; RF frequency 10 MHz to 5 GHz (log); acoustic mode: X-longitudinal 6544.6 m/s, Z-shear 3590.4 m/s, 128° Y-X SAW 3978.4 m/s; optical polarization: o, e",
+"outputs": "acoustic wavelength Λ (µm); Bragg angle, internal and external (°); optical frequency shift (GHz); wavevector diagram; figures of merit M1, M2, M4",
+"model": "Λ = v/f and sin θ_B = λ0/(2nΛ) inside the crystal, external angle by Snell's law, n from the Zelmon Sellmeier; the diffracted order is shifted by +f. At 1550 nm and 1 GHz on X-longitudinal, Λ = 6.545 µm and θ_B,ext = 6.80°. Efficiency is not modelled.",
+"src": "Weis & Gaylord 1985; Zelmon et al. 1997; Kushibiki et al. 1999"
+},
+{
+"key": "F3.8",
+"title": "Photoelastic response and the p14 sign pitfall",
+"q": "Which in-plane direction on an X-cut or Y-cut film gives the largest strain-optic response, and what happens if the p14/p41 signs are paired with the wrong frame?",
+"inputs": "cut: X, Y, Z; in-plane angle φ 0 to 180°; data set: Avakyants 1976 (Set B), Andrushchak 2009, Krupych 2014, Coquin 1971; flip p14 and p41 signs: on, off",
+"outputs": "longitudinal photoelastic coefficient p′_bbbb(φ) (dimensionless); its maximum and angle (°); frame of the data set",
+"model": "p′_bbbb = p_ijkl b_i b_j b_k b_l from the Voigt p (no factors). Flipping p14, p41 moves the X-cut optimum from about 45° to about 135° at unchanged size (Andrushchak: +0.304) and leaves Y-cut unchanged; on Z-cut p′_bbbb = p11 for all φ.",
+"src": "Avakyants et al. 1976; Andrushchak et al. 2009; Krupych et al. 2014; Coquin 1971; Weis & Gaylord 1985"
+},
+{
+"key": "F3.9",
+"title": "Microwave-to-optical transduction efficiency",
+"q": "Where is the energy lost when a microwave signal is turned into light through a phonon?",
+"inputs": "intracavity photon number n_c 10² to 10⁵ (log); detuning: red, blue; C0 and η_m within one decade of the reported values",
+"outputs": "total efficiency η_total; cooperativity C; internal gain; efficiency per stage (microwave, IDT and waveguide, optomechanical, chip, fiber)",
+"model": "η_total = η_oc η_o η_m 4C/(1 ∓ C)² with C = C0 n_c (upper sign red, lower blue detuning), using reported η_oc = 0.652, η_o = 0.66, η_m = 9.9 × 10⁻⁴, C0 = 1.2 × 10⁻⁵. The blue side diverges at C = 1; the red side peaks at η_e = 4.24 × 10⁻⁴.",
+"src": "Jiang et al. 2020"
+},
+{
+"key": "F3.10",
+"title": "Optically heralded microwave photon addition",
+"q": "How can detecting one optical photon add exactly one photon to a microwave resonator?",
+"inputs": "protocol step (5 steps); data panel (published source-data files); heralded or unconditional, where the data provide both",
+"outputs": "published measured curves (units as in the source data); CW efficiency (%); heralding rate (Hz); thermal microwave photon number; thermal occupation at 2 GHz versus temperature",
+"model": "Step-through of the protocol: a blue-detuned pulse makes a photon-phonon pair, an optical click heralds it, and the phonon is swapped into the microwave resonator by piezoelectric coupling. Plots are rebuilt from the open source data (5% CW efficiency, 15 Hz heralding, < 2 thermal photons).",
+"src": "Jiang et al. 2023"
+},
+{
+"key": "F3.11",
+"title": "Nanobender actuator displacement scaling",
+"q": "How can a piezoelectric crystal whose bulk coefficient is about 0.01 nm/V move a photonic cavity by tens of nm per volt?",
+"inputs": "aspect ratio R = L/w 1 to 100 (log); voltage U 0 to 4 V; actuator: plate, transverse extension, bender",
+"outputs": "displacement per volt for each actuator (nm/V, order of magnitude); reported optical tuning slope (nm/V) and span (nm)",
+"model": "Scaling law with prefactor 0.01 nm/V: plate Δ ~ U, transverse extension Δ ~ R U, bender Δ ≈ ½ d (dE/dz) L² ~ R² U, with R = L/w. Reported tuning: about 5 nm/V small-signal slope below 0.5 V and 1520 to 1560 nm within 4 V.",
+"src": "Jiang et al. 2020"
+},
+{
+"key": "F2-01",
+"title": "Conoscope of a z-cut plate under transverse field",
+"q": "What does a z-cut LN plate look like between crossed polarizers, and what does a transverse field do to it?",
+"inputs": "plate thickness 0.2 to 2.0 mm; source 632.8 nm or white light; field E 0 to 5 kV/mm; field direction x or y; numerical aperture 0.55 (fixed)",
+"outputs": "conoscopic intensity pattern; induced Δn; optic-axis tilt in air (deg); state (uniaxial or biaxial); first dark-ring angle (deg)",
+"model": "Jones calculus per pixel with exact Snell angles per eigenwave: Γ = (2πd/λ)(n_o cos θ_o − n_e(θ_e) cos θ_e), I = sin²(2ψ) sin²(Γ/2), ψ from the field-perturbed impermeability; white light integrated against CIE 1931 2° color-matching functions.",
+"src": "Zelmon et al. 1997; Turner 1966; Born & Wolf 2019"
+},
+{
+"key": "F2-02",
+"title": "Refractive index, dispersion and dn/dT of LN",
+"q": "What are n_o, n_e and n_g of LN at any wavelength and temperature, how much do the published models disagree, and what do the errata change?",
+"inputs": "wavelength 0.4 to 5.0 µm (log axis); temperature 20 to 250 °C (models outside validity greyed out); material: congruent LN, 5 mol% MgO, 1% MgO stoichiometric LN; quantity: n, n_g, n_e − n_o, dn/dT; 5 mol% MgO table: as printed in 1997 or corrected",
+"outputs": "n_o, n_e per model; group index n_g; birefringence n_e − n_o; dn/dT (1/K); maximum model spread at the cursor",
+"model": "Sellmeier models (Zelmon, Jundt, Gayer) each within its validity window; n_g and group-velocity dispersion by finite differences, dn/dT by central difference over ±1 K; the 1997 5 mol% MgO table has its o/e headings swapped, which the erratum corrects.",
+"src": "Zelmon et al. 1997; Jundt 1997; Gayer et al. 2008; Nelson & Mikulyak 1974; Weis & Gaylord 1985"
+},
+{
+"key": "F2-03",
+"title": "Index ellipsoid, walk-off and field deformation",
+"q": "Which index does a wave see for a given direction and polarization, and how does a field reshape the ellipsoid?",
+"inputs": "propagation polar angle θ 0 to 90°; azimuth φ; wavelength; field state: field direction x, y or z, optical polarization x, y or z, r-coefficient set, E = 1 V/µm",
+"outputs": "n_o; extraordinary index n(θ); walk-off angle ρ (deg); index along polarization; first-order δn; principal indices; largest principal-axis tilt (deg)",
+"model": "Impermeability B = B0 + ΔB with ΔB_I = r_Ij E_j, exact 3 × 3 symmetric eigen-decomposition; the ellipsoid section normal to k gives the two eigen-indices, 1/n_e(θ)² = cos²θ/n_o² + sin²θ/n_e², and the Poynting vector walks off from k by ρ.",
+"src": "Weis & Gaylord 1985; Turner 1966; Kaminow et al. 1980; Zook et al. 1967; Lenzo et al. 1966; Bernal et al. 1966; Zelmon et al. 1997"
+},
+{
+"key": "F2-04",
+"title": "Mach-Zehnder modulator transfer and bulk Δn",
+"q": "How much does a volt change the index, and what does that do to a real modulator?",
+"inputs": "drive voltage −6 to +6 V; bulk calculator: wavelength, field E_z",
+"outputs": "transmission T (linear, dB); phase (units of π); |Δn_eff| per arm, measured-derived and computed",
+"model": "Δn_e = −½ n_e³ r33 E_z and Δφ = (2π/λ) Δn_e L; T = cos²(πV/(2V_π)) with the measured V_π of 2.90 V at 1550 nm, compared with a dashed curve from the FEM-computed V_π L over 0.9 cm.",
+"src": "Li et al. 2026; Zelmon et al. 1997; Jiang 2026"
+},
+{
+"key": "F2-05",
+"title": "Electro-optic overlap in a TFLN rib modulator",
+"q": "Where in the cross-section does the phase shift come from, and why does the textbook formula overestimate V_π L by 20%?",
+"inputs": "integrand: total or r33 only; hover position",
+"outputs": "|E_x|² map; electrode field e_x map; overlap integrand map; depth profile; position x, y (µm); region; integrand value; dn_eff/dV (1/V); region split (%); Γ; V_π L (V cm)",
+"model": "Power-normalized perturbation dn_eff/dV = −(n_e⁴ r33/(2 n_eff)) ∫_LN e_x |E_x|² dA / ∫|E_x|² dA, integrated on exported FEM fields; the textbook V_π L = λg/(2 n_e³ r33 Γ) carries n_e³ instead of n_e⁴/n_eff, a factor n_e/n_eff = 1.208 here.",
+"src": "Li et al. 2026; Jiang 2026"
+},
+{
+"key": "F2-06",
+"title": "Nonlinear d-tensor by cut and polarization",
+"q": "Which nonlinear coefficient does a given cut and polarization use, and why does birefringent phase matching give up d33?",
+"inputs": "cut x, y or z; in-plane propagation direction; input polarization TE/TM (o/e for bulk); coefficient set: symbolic or numeric",
+"outputs": "nonlinear polarization vector P_NL/(2ε0) in units of d E²; active coefficient; coefficient value (pm/V) for a numeric set",
+"model": "P_i(2ω) = 2ε0 Σ d_il [E_x², E_y², E_z², 2E_yE_z, 2E_xE_z, 2E_xE_y]_l with the 3m Kleinman-symmetric d (d15 = d24 = d31); input fields projected onto crystal axes, output projected on the chosen mode. o-polarized inputs never reach d33.",
+"src": "Volk & Wöhlecke 2009; Zhu et al. 2021; Shoji et al. 1997; Kitamoto et al. 1995; Kleinman 1962"
+},
+{
+"key": "F2-07",
+"title": "Phase-matching calculator",
+"q": "What period or angle phase-matches a process, how tolerant is it, and where does an OPO tune?",
+"inputs": "process: SHG, SFG, DFG, OPO; wavelengths; temperature; dispersion model; QPM order m and duty D; length L; mode: bulk or waveguide",
+"outputs": "QPM period Λ (µm); coherence length L_c (µm); type-I BPM angle θ_pm (deg); walk-off ρ (deg); FWHM acceptance in λ (nm) and T (K); tuning dλ/dT (nm/K); GVM (fs/mm); OPO signal and idler vs period and temperature",
+"model": "Δk = k3 − k1 − k2 − 2πm/Λ with bulk Sellmeier indices; type-I BPM angle from the extraordinary index n_e(θ); acceptance FWHM = 2.783/(L |dΔk/dq|); OPO signal/idler by bisection on Δk = 0 at fixed period. Thermal expansion of the period is not included.",
+"src": "Zelmon et al. 1997; Jundt 1997; Gayer et al. 2008; Fejer et al. 1992"
+},
+{
+"key": "F2-08",
+"title": "Second-harmonic growth along the crystal",
+"q": "Why does second-harmonic power oscillate without poling, grow as L² with it, and saturate at high pump?",
+"inputs": "poling: none, QPM, QPM with duty error; pump power 1 mW to 10 W (log); length 0.1 to 50 mm; normalized efficiency η_norm (%/W/cm²); loss",
+"outputs": "SH power P_2ω(z) (W); conversion (%); η_norm (%/W/cm²); efficiency for the chosen length (%/W); absolute conversion (%)",
+"model": "Coupled-mode equations dA_ω/dz = −iκ A_2ω A_ω* e^(−iΔkz), dA_2ω/dz = −iκ A_ω² e^(+iΔkz), κ² = η_norm, integrated by RK4 with poling d(z) = ±d_eff; undepleted L² and depleted tanh² limits overlaid.",
+"src": "Armstrong et al. 1962; Boyd 2008; Wang et al. 2018"
+},
+{
+"key": "F2-09",
+"title": "SHG efficiency records and normalizations",
+"q": "What do %/W/cm², %/W and absolute % each measure, and how do reported devices compare when the normalization is respected?",
+"inputs": "series filter: waveguide, ring, DFG; log axis toggle; converter: η_norm (%/W/cm²), length L, ring Q",
+"outputs": "reported efficiency by year (%/W/cm², %/W or absolute %); SH wavelength; platform; date; converted efficiency (%/W)",
+"model": "Records plotted by year with each normalization on its own panel; converter %/W = η_norm L²; ring efficiency 16 g²/(ħω κ_a² κ_b), which scales as Q³ at fixed g.",
+"src": "Yamada et al. 1993; Wang et al. 2018; Zhao et al. 2020; Rao et al. 2019; Li et al. 2024; Park et al. 2022; Mishra et al. 2021; Lu et al. 2019; Lu et al. 2020"
+},
+{
+"key": "F2-10",
+"title": "Parametric gain and OPO threshold",
+"q": "How much gain does a pump give, and how much pump does a resonator need to oscillate?",
+"inputs": "OPA: η_norm (%/W/cm²), pump peak power, length, Δk; OPO: intrinsic Q at pump and signal, coupling ratios, g/2π, pump power",
+"outputs": "gain per length (dB/cm); total gain G (dB); threshold P_th (W); signal plus idler output P_s+i (W); conversion efficiency (%)",
+"model": "Gain Γ = √(η_norm P_p), G_dB/L = 8.686 Γ, G = cosh²(ΓL) at Δk = 0; threshold P_th = ħω_p κ_p² κ_s κ_i/(16 g² κ_p,ex), above it the pump clamps and P_s+i ∝ √(P/P_th) − 1, efficiency peaking at 4 P_th.",
+"src": "Ledezma et al. 2022; Jankowski et al. 2022; Lu et al. 2021; McKenna et al. 2022; Gao et al. 2021; Ledezma et al. 2023; Roy et al. 2023; Hwang et al. 2023; Hwang et al. 2026; Stokowski et al. 2024"
+},
+{
+"key": "F2-11",
+"title": "Kerr versus cascaded χ⁽²⁾ phase",
+"q": "When does a phase-mismatched χ⁽²⁾ process out-pull the intrinsic Kerr effect, and with which sign?",
+"inputs": "phase mismatch Δk (signed, via period detuning or directly); power P; length L; η_norm; effective area A_eff; n2 source: DeSalvo 1996 or Zhu 2021",
+"outputs": "Kerr phase φ_Kerr (rad); cascaded phase φ_casc (rad); ratio; z-averaged SH power fraction; sign (focusing or defocusing)",
+"model": "Cascaded phase Δφ_NL = −η_norm P L/Δk against γ_Kerr = 2π n2/(λ A_eff); Δk > 0 gives a negative (defocusing) phase; full RK4 coupled-mode integration where |Δk| L is small and the formula fails.",
+"src": "DeSalvo et al. 1996; Zhu et al. 2021; DeSalvo et al. 1992"
+},
+{
+"key": "F2-12",
+"title": "Kerr soliton comb in a detuning scan",
+"q": "How do soliton steps form in a detuning scan, and what sets the comb span?",
+"inputs": "normalized pump f; detuning scan range and rate; normalized dispersion d2; photorefractive term on or off",
+"outputs": "intracavity power vs detuning; spectrum (dB, log); intracavity waveform; soliton number; detuning ζ; span at −40 dB (lines)",
+"model": "Lugiato-Lefever equation dψ/dt = −(1 + iζ)ψ + i|ψ|²ψ + i(d2/2)∂²ψ/∂θ² + f solved by split-step Fourier (512 modes default, 2048 expert); all parameters are display values, not material constants, with the conversion from Q, FSR, D2, γ and P_in printed.",
+"src": "Lugiato & Lefever 1987; Herr et al. 2014; Chembo & Menyuk 2013"
+},
+{
+"key": "F2-13",
+"title": "Resonant electro-optic comb",
+"q": "How do drive voltage and finesse set the width of an electro-optic comb?",
+"inputs": "modulation depth β = V_p/V_π,rt; intrinsic Q and coupling (or round-trip amplitude r); FSR; D2 (expert); line-counting threshold (dB)",
+"outputs": "finesse F; β (rad); envelope slope (dB/line); lines above −60 dB; span (nm); line power spectrum (dB)",
+"model": "Steady state E(t) = t_c E_in/(1 − r e^(iβ cos Ωt)) sampled on 4096 points and Fourier transformed; asymptotic slope 8.686 asinh(|ln r|/β) dB/line, 27.29/(βF) at high finesse; dispersion and detuning via coupled-mode equations over the sidebands.",
+"src": "Zhang et al. 2019; Hu et al. 2022; Zhang et al. 2023; Yu et al. 2022; Zhang et al. 2025"
+},
+{
+"key": "F2-14",
+"title": "Coupled-ring electro-optic frequency shifter",
+"q": "How does a microwave move light between two frequency bins of a photonic molecule?",
+"inputs": "ring coupling μ (supermode splitting 2μ); microwave frequency; drive voltage (coupling G); intrinsic and external Q",
+"outputs": "frequency shift (GHz); conversion efficiency (%); G/κ; residual carrier (dB); efficiency vs G",
+"model": "Two-mode coupled-mode theory in the supermode basis: |s_b,out/s_in|² = κ_a,ex κ_b,ex G²/(κ_a κ_b/4 + G²)², reaching 1 at G = κ/2 with no intrinsic loss; time-domain view shows Rabi-like transfer for pulsed input.",
+"src": "Hu et al. 2021"
+},
+{
+"key": "F2-15",
+"title": "TFLN rib waveguide modes and ring anisotropy",
+"q": "How do film thickness, etch depth, width and cut set the mode, where do TE and TM hybridize, and how does an x-cut ring see a rotating crystal?",
+"inputs": "film thickness 300 to 900 nm; etch fraction 0.2 to 1.0; width 0.6 to 3.0 µm; sidewall 60, 70 or 80°; wavelength 0.775, 1.064 or 1.55 µm; cut x or z; polarization TE or TM; ring tab: propagation angle φ",
+"outputs": "effective index n_eff; group index n_g; effective area A_eff (µm²); LN power fraction; TE and TM hybrid fractions; interpolation error; ring index n(φ)",
+"model": "Interpolated lattice of precomputed full-vector FEM mode solutions, with held-out solves giving the interpolation error; ring tab uses the bulk approximation 1/n(φ)² = cos²φ/n_o² + sin²φ/n_e², spanning n_e to n_o, mode confinement ignored.",
+"src": "Jiang 2026; Li et al. 2026; Zelmon et al. 1997; Kaushalram et al. 2020; Tan et al. 2024"
+},
+{
+"key": "F2-16",
+"title": "Propagation loss and Q of TFLN devices",
+"q": "How do Q and dB/m convert, and how close are TFLN devices to the material floor?",
+"inputs": "intrinsic Q_i; group index n_g; wavelength; log axis toggle",
+"outputs": "loss α (dB/m, 1/m); intrinsic Q_i; reported loss by year (dB/m); material and absorption floors (dB/m)",
+"model": "α = 2π n_g/(Q_i λ), α_dB = 4.343 α; records plotted by year against the estimated material limit of annealed ion-sliced film and the lower bound of the bulk absorption range.",
+"src": "Zhang et al. 2017; Luke et al. 2020; Zhu et al. 2024; Gao et al. 2022; Gao et al. 2021; Desiatov et al. 2019; Shams-Ansari et al. 2022; Leidinger et al. 2015; Schwesyg 2011"
+},
+{
+"key": "fig-04-01",
+"title": "Photorefractive write and erase",
+"q": "How large an index scar does a beam write, how fast, and how long does it last after the light goes off?",
+"inputs": "intensity 1e-2 to 1e6 W/cm²; exposure time 0.1 to 1e4 s; crystal: LiNbO3:Fe, congruent undoped, 5 mol% MgO, near-stoichiometric; dark conductivity 1e-16 to 1e-14 S/m; lights off",
+"outputs": "space-charge field |E| (V/m) versus time 1e-3 to 1e7 s; saturation field (V/m); Δn_e; relaxation time under light and in the dark (s); index profile across the beam",
+"model": "Reduced band transport: σ_ph = κI, E_sat = k_G α I/(σ_ph + σ_d); the field builds as E_sat(1 − exp(−t/τ)), τ = εε₀/(σ_ph + σ_d), and decays in the dark with τ = εε₀/σ_d; Δn_e = −½ n_e³ r33 E. α and κ are model parameters, no data.",
+"src": "Volk & Wöhlecke 2009; Weis & Gaylord 1985; Bryan et al. 1984; Chen 1969"
+},
+{
+"key": "fig-04-02",
+"title": "Photovoltaic versus diffusion gratings",
+"q": "Why is a photovoltaic grating in phase with the light while a diffusion grating is shifted by a quarter period?",
+"inputs": "grating period 0.2 to 20 µm; modulation 0 to 0.95; photovoltaic weight 0 to 1× the Fe:LN Glass constant; temperature 77 to 400 K",
+"outputs": "intensity I(z); charge density ρ(z); space-charge field E_sc(z) (V/m); Δn(z); phase shift between I and Δn (deg); diffusion field amplitude (V/m)",
+"model": "1D transport over two fringe periods with photovoltaic current k_G α I, diffusion and drift σE, plus Gauss law and continuity, stepped implicitly to steady state; closed form E_dif = (k_B T/e) K m sin Kz/(1 + m cos Kz) overlaid.",
+"src": "Volk & Wöhlecke 2009; Weis & Gaylord 1985"
+},
+{
+"key": "fig-04-03",
+"title": "MgO and stoichiometry damage thresholds",
+"q": "How much MgO removes photorefractive damage, and how does stoichiometry change it?",
+"inputs": "y axis log or linear; series: CLN, NSLN",
+"outputs": "photorefractive damage threshold intensity (kW/cm²) versus MgO concentration (mol%); GRIIRA and MgO threshold markers (mol%, at.%)",
+"model": "Data, no model: seven points (cw green, beam distortion after 10 min), lower bounds > 8000 kW/cm² drawn as arrows, dashed guides not fits; markers at GRIIRA thresholds about 5 % (CLN) and 1.5 % (NSLN), ≥ 4.5 at.% MgO and > 0.78 mol% (near-stoichiometric).",
+"src": "Volk & Wöhlecke 2009; Furukawa et al. 2001; Bryan et al. 1984; Furukawa et al. 2000"
+},
+{
+"key": "fig-04-04",
+"title": "Ring sweep: thermal versus photorefractive",
+"q": "Why does a TFLN ring's resonance deform into a triangle in one sweep direction, and how does photorefraction fight it?",
+"inputs": "pump power 0.01 to 100 mW; sweep direction: increasing or decreasing wavelength; sweep speed 1e-3 to 1e3 nm/s; photorefraction on/off; photorefractive strength; cladding: SiO2-clad, air-clad; dn_e/dT 3.34e-5 or 3.75e-5 /K",
+"outputs": "transmission versus laser wavelength for both sweep directions; detuning; cavity temperature rise (K) and space-charge field (V/m) versus time; thermal and photorefractive shifts (pm)",
+"model": "Coupled-mode amplitude da/dt = (iΔ − κ_tot/2)a + √κ_ex s_in; Δ shifts with cavity temperature and with an opposite-sign photorefractive term, each relaxing with its own time constant, τ_pr = εε₀/(σ_d + κI). Q, n_g, Γ and thermal and PR parameters are model parameters, no data.",
+"src": "Carmon et al. 2004; Lin et al. 2021; Xu et al. 2021; Moretti et al. 2005; Jundt 1997"
+},
+{
+"key": "fig-04-05",
+"title": "Polaron bands and green-induced IR absorption",
+"q": "Where does green-induced infrared absorption come from, and how does it cut second-harmonic output?",
+"inputs": "green intensity 0 to 10 kW/cm²; MgO 0 to 6 %; crystal: CLN, NSLN; IR power",
+"outputs": "polaron absorption spectrum versus photon energy 0.3 to 3.5 eV; band center (eV, nm); HWHM (eV); polaron population, IR absorption, temperature rise and relative SHG (model values)",
+"model": "Bands drawn as Gaussians in photon energy at tabulated centers and HWHM, O⁻ as a marker. Toy chain (model parameters, no data): dN/dt = g I_g(1 − N/N_max) − N/τ_p, α_IR = σN, ΔT ∝ α_IR P_IR L, SHG_rel = sinc²(Δk(ΔT)L/2); N_max → 0 at the MgO threshold (5 % CLN, 1.5 % NSLN).",
+"src": "Schwesyg 2011; Volk & Wöhlecke 2009; Furukawa et al. 2001"
+},
+{
+"key": "fig-04-06",
+"title": "Optical damage intensity ladder",
+"q": "At what intensity does each kind of damage start?",
+"inputs": "regime filter: cw, pulsed; crystal highlight: CLN, MgO:CLN, NSLN, Fe:LN",
+"outputs": "threshold intensities on a log axis 1e-2 to 1e10 W/cm²; damage fluence on a separate axis 1e-1 to 1e2 J/cm²; vendor thresholds (MW/cm²) in a separate row",
+"model": "Data, no model: each sourced threshold placed by regime and definition, from photorefraction in Fe:LN at 10 mW/cm² to nanosecond breakdown in the GW/cm² range; fluence is never converted to intensity. Vendor 100-300 MW/cm² values are not a material constant.",
+"src": "Volk & Wöhlecke 2009; Furukawa et al. 1991"
+},
+{
+"key": "fig-04-07",
+"title": "Pyroelectric charge on a heated wafer",
+"q": "How much charge and voltage does a temperature change put on a lithium niobate wafer or film, and does it matter next to the thermo-optic shift?",
+"inputs": "temperature step −50 to +200 K; cut: z-cut, x-cut; thickness: 0.5 mm wafer, 1 mm wafer, 600 nm film; |p3|: 4.0e-5, 6.4e-5, 8.3e-5, 9.5e-5 C/(m² K) or spread band; screening conductivity 1e-16 to 1e-6 S/m",
+"outputs": "bound surface charge (µC/cm²); unscreened field (V/m); voltage (kV); Δn_e; coercive field reference (kV/mm); screened field versus time",
+"model": "σ_b = p3 ΔT, E = −p3 ΔT/(ε33 ε₀) for an isolated unscreened plate, V = E d, Δn_e = −½ n_e³ r33 E, compared with (dn_e/dT) ΔT; screening E0 exp(−t/τ), τ = εε₀/σ. Linear in ΔT with the 25 °C coefficient; cooling makes the +c face positive.",
+"src": "Savage 1966; Popescu et al. 2013; Bartholomäus et al. 1994; Crystal Technology Inc. 1999; Weis & Gaylord 1985; Volk & Wöhlecke 2009"
+},
+{
+"key": "fig-04-08",
+"title": "Layered RC model of modulator bias drift",
+"q": "Why does the bias point of a modulator walk, which way, and on what time scale?",
+"inputs": "preset: bulk-like, TFLN clad, TFLN air-clad; per-layer ε_r and conductivity 1e-18 to 1e-4 S/m; interface conductance on/off; temperature 77 to 400 K; waveform: step or square wave, period 1e-3 to 1e4 s",
+"outputs": "LN layer voltage V_LN(t) (V) over 1e-6 to 1e6 s; relaxation time (s); bias point on the MZM transfer curve; |V_LN/V| versus frequency 1 mHz to 1 MHz; drift sign",
+"model": "Cladding, LN and buried oxide in series, each C = ε_r ε₀/t and G = σ/t per unit area; V_LN moves from capacitive to resistive division, τ = (C1+C2)/(G1+G2) for two layers; bias φ = φ0 + πV_LN/V_π, T = cos²(φ/2); σ scaled by an Arrhenius factor (E_a a model parameter).",
+"src": "Li et al. 2026; Holzgrafe et al. 2024; Volk & Wöhlecke 2009"
+},
+{
+"key": "fig-04-09",
+"title": "Thermo-optic and thermal lens calculator",
+"q": "How much do the indices move with temperature, how strong is the thermal lens, and how far does a ring resonance shift per kelvin?",
+"inputs": "wavelength 0.4 to 5 µm; temperature 20 to 200 °C; polarization o/e; power 0.1 to 100 W; beam radius 10 to 1000 µm; absorption 1e-4 to 1e-1 cm⁻¹; length 1 to 50 mm; thermal conductivity 3.92 (CLN) or 5.97 (near-SLN) W/(m K); Γ 0.5 to 1; n_g 2.0 to 2.4",
+"outputs": "dn_o/dT and dn_e/dT (1/K) versus wavelength; thermal lens focal length (mm) with f ≫ L validity flag; ring resonance shift (pm/K)",
+"model": "dn_e/dT from the Jundt temperature-dependent Sellmeier; dn_o/dT from the Crystal Technology Sellmeier and the Moretti 632 nm formula; thermal lens f = πw²K_th/(αPL dn/dT); ring shift λΓ(dn/dT)/n_g. Gayer 2008 MgO:LN coefficients are excluded from dn/dT.",
+"src": "Jundt 1997; Crystal Technology Inc. 1999; Moretti et al. 2005; Schwesyg 2011; Volk & Wöhlecke 2009"
+},
+{
+"key": "fig-04-10",
+"title": "Lithium out-diffusion depth profile",
+"q": "What does losing lithium at the surface do to the index and the Curie temperature, and why does the depleted skin guide light?",
+"inputs": "surface Li2O deficit 0 to 1.5 mol%; depth scale √(Dt) 0.1 to 20 µm; wavelength: 632.8 or 1064 nm",
+"outputs": "Li2O deficit (mol%) versus depth; Δn_e and Δn_o from bulk versus depth; Curie temperature (°C) versus depth; guiding flags for e and o light",
+"model": "Deficit Δc(z) = Δc_s erfc(z/(2√(Dt))) with D and Δc_s as model parameters; indices from the Schlarb generalized Sellmeier (valid 400 to 1200 nm); Curie temperature T_c = 39.064c − 746.73 (Bordui fit, Iyi alternate); a skin guides when n(surface) > n(bulk).",
+"src": "Volk & Wöhlecke 2009"
+},
+{
+"key": "fig-04-11",
+"title": "Lithium niobate fabrication pitfalls",
+"q": "What goes wrong in lithium niobate fabrication, why, and what fixes were used?",
+"inputs": "card: hotplate bake, 4 K cooldown, e-beam discharge layer, a-Si hard mask under ion milling, HF etch of −c and +c faces, z-cut interferometer drift; pyroelectric coefficient shared with the heated-wafer figure",
+"outputs": "per card: cause, mechanism, fix and status; unscreened bake voltage (kV) as a range over the pyroelectric coefficient spread",
+"model": "Practitioner notes paired with mechanism sources; the hotplate card computes V = |p3| ΔT d/(ε33 ε₀) for a 25 to 120 °C bake on a 0.5 mm z-cut wafer (7.5 to 17.8 kV unscreened); the cooldown card shows no number because p3 below room temperature is not in held sources.",
+"src": "Jiang 2025; Jiang 2024; Jiang 2018; Bulmer et al. 1986; Volk & Wöhlecke 2009; Savage 1966; Popescu et al. 2013"
+},
+{
+"key": "fig-04-12",
+"title": "Bias drift mitigations since 1981",
+"q": "What has been tried against bias drift since 1981, and what stability did each report?",
+"inputs": "platform: bulk Ti:LN, TFLN, TFLT; mitigation class: buffer/cladding, interface and anneal, surface treatment, material swap, temperature, heterogeneous, reset protocol, thermal bias",
+"outputs": "timeline 1980 to 2026 with one marker per reported result, grouped by mitigation class and shaped by platform; reported stability metric as text",
+"model": "Data, no model: rows from the chapter's drift table with year, platform, mitigation class and the metric as reported (e.g. < 0.3 % in 8 h, drift-free 12 h, < 1 dB over 46 h); metrics are not comparable, so there is no y axis.",
+"src": "Yamada & Minakata 1981; Gee et al. 1985; Bulmer et al. 1986; Nagata et al. 1996; Holzgrafe et al. 2024; Li et al. 2026; Yeh et al. 2026; Shi et al. 2025; Powell et al. 2024; Al Sayem et al. 2026; Lomonte et al. 2021; Warner et al. 2025"
+},
+{
+"key": "F05-01",
+"title": "Process flow of a thin-film LN modulator",
+"q": "What happens, in order and to scale, between a powder charge and a fibered thin-film LN modulator, and which numbers are known?",
+"inputs": "device route: ridge with DUV and SiO2 mask, or strip with DUV and DLC mask; process step 1 to 30; playback speed 0.5x to 4x, reverse, scrub; scale: illustrative or true scale",
+"outputs": "cross-section, die, wafer and boule views per step; process time (s, min, h); temperature (°C); film thickness (nm); implant energy (keV); fluence (cm⁻²); etch rate (nm/min); per-step parameters with provenance grade",
+"model": "Thirty-step charge-to-chip sequence with per-step models: pull length L = v·t, Gaussian He implant profile centred at 0.68 µm, Preston CMP dz/dt = Kp·P·v, etch depth = R·t with sidewall tan α_LN = S·tan α_mask; true scale is 600 nm LN on 4.7 µm SiO2 on 500 µm Si.",
+"src": "Luke et al. 2020; Li et al. 2023; Kharel et al. 2021; Guarino et al. 2007"
+},
+{
+"key": "F05-02",
+"title": "Czochralski boule growth and Curie temperature",
+"q": "How fast does a 150 mm boule grow, and why is the melt not LiNbO3 of formula composition?",
+"inputs": "growth time 0 to 110 h; pull rate 1 to 2 mm/h; rotation 5 to 10 rpm; crystal composition 48 to 50 mol% Li2O",
+"outputs": "boule body length (mm); growth time (h); pull time (h); body mass (kg); Curie temperature Tc (°C) vs composition (mol% Li2O)",
+"model": "Body length L = v·t for a 153 mm × 110 mm boule (55 to 110 h pull, 9.4 kg body). Tc(c) from two linear fits, 39.064c − 746.73 (Bordui) and 39.26c − 760.67 (Iyi), against the congruent 48.45 mol% and the 1255 °C melting point.",
+"src": "Bordui et al. 1992; Iyi et al. 1992"
+},
+{
+"key": "F05-03",
+"title": "Wafer cuts and crystal axes",
+"q": "Which crystal axis is normal to an x-, y-, z-, or 128° Y-X cut wafer, and which electro-optic coefficient does a TE mode use on each?",
+"inputs": "cut: x, y, z or 128° Y-X; cut angle θ swept continuously from Y to 128° Y-X",
+"outputs": "wafer-normal unit vector; in-plane axes; Euler angles (deg); electro-optic coefficient engaged for TE and TM with in-plane or vertical field",
+"model": "Crystal axes are rotated into wafer axes in the IEEE 176-1987 frame, with one stated Euler convention; the engaged r coefficient follows from the rotated electro-optic tensor. Flat positions are vendor-specific and drawn as illustrative.",
+"src": "IEEE Std 176-1987"
+},
+{
+"key": "F05-04",
+"title": "Ti indiffusion and proton-exchange depth",
+"q": "How deep do Ti and proton-exchange waveguides form for a given temperature and time?",
+"inputs": "temperature 200 to 250 °C; exchange time (h, log toggle); rate convention: d²/t or D; polarization: TE or TM",
+"outputs": "proton-exchange depth d (µm) vs time; extraordinary index step; Ti recipe points (Ti thickness nm, temperature °C, time h)",
+"model": "Proton exchange d² = r(T)·t with r = 1.37 µm²/h at 249 °C and 0.37 µm²/h at 217 °C (x-cut); Arrhenius interpolation gives Eₐ = 0.90 eV, valid only from 217 to 249 °C. Only nₑ rises (+0.12); Ti is shown as recipe points, with no diffusion curve.",
+"src": "Jackel et al. 1982; Luo et al. 2019; Chung et al. 2017"
+},
+{
+"key": "F05-05",
+"title": "Ion-slicing implant depth and thermal steps",
+"q": "How does implant energy set film thickness, and what are the thermal steps from implant to split?",
+"inputs": "implant energy (keV)",
+"outputs": "projected range Rp (µm) vs implant energy; process temperature (°C) per step from implant to split and anneal",
+"model": "Range is shown only at reported points (He⁺ 195 keV gives a 0.68 µm peak; 680 nm film); no Rp(E) curve without a stored SRIM calculation. Thermal steps: implant at 100 °C, room-temperature bond, < 200 °C strengthening, about 230 °C split, 520 °C O2 anneal.",
+"src": "Guarino et al. 2007; Rabiei & Günter 2004; Wang et al. 2022; You et al. 2019; Shams-Ansari et al. 2022"
+},
+{
+"key": "F05-06",
+"title": "CMP thinning and film uniformity",
+"q": "How much is polished off after the split, and how uniform is a 600 nm film across a 100 mm wafer?",
+"inputs": "polishing pressure P; pad velocity v",
+"outputs": "film thickness h (nm); thickness standard deviation σ (nm); removal target (nm); film thickness map; film interference colour",
+"model": "Preston removal dz/dt = Kp·P·v, with Kp a display value, not a material constant; target removal 0.68 − 0.60 µm = 80 nm. Map is illustrative with the reported σ of 5.9 nm (8 mm edge exclusion, 4-inch wafer); colour from thin-film interference with LN dispersion.",
+"src": "Preston 1927; Luke et al. 2020"
+},
+{
+"key": "F05-07",
+"title": "E-beam versus DUV stepper write time",
+"q": "Why did wafer-scale TFLN need optical steppers?",
+"inputs": "pattern-area fraction; EBL preset: 7600 µC/cm² at 100 nA, 1900 µC/cm² × 4 passes at 8 nA, 300 µC/cm² at 2 nA; wafer diameter 100 or 150 mm",
+"outputs": "EBL write time (h/cm², h per wafer); DUV exposure time per wafer (min); exposure field count",
+"model": "EBL time t = D·A/I, giving 21.1 h/cm² at 7600 µC/cm² and 100 nA over the full area, against under 1 min per wafer for DUV. 22 × 22 mm fields tiled inside an 8 mm edge exclusion give 6 fields on 100 mm and 21 on 150 mm.",
+"src": "Kaufmann et al. 2023; Jiang & Lin 2016; Luke et al. 2020"
+},
+{
+"key": "F05-08",
+"title": "Ar etch sidewall angle and redeposition",
+"q": "What sets the sidewall angle of an Ar-etched LN waveguide, and when does redeposition stop?",
+"inputs": "etch selectivity S = R_LN/R_mask, 1 to 3; mask sidewall angle (deg, default 85°); SC-1 clean on or off",
+"outputs": "model LN sidewall angle (deg, upper bound); nearest measured sidewall angle (deg); redeposition regime map vs DC bias (100 to 800 V) and pressure (0.3 to 15 mTorr)",
+"model": "Mask-edge recession gives tan α_LN = S·tan α_mask (S = 3 for DLC, 1 for SiO2), compared with measured about 60° (SiO2), about 75° (Cr) and 80° (DLC). The regime map plots reported redeposition-free points (5 to 7 mTorr at 600 V, about 11 mTorr at 400 V) with no fitted surface.",
+"src": "Li et al. 2023; Kaufmann et al. 2023; Krasnokutska et al. 2018"
+},
+{
+"key": "F05-09",
+"title": "Propagation loss and Q by fabrication route",
+"q": "Which fabrication routes produced the lowest loss, and when?",
+"inputs": "log axis toggle; route marker legend",
+"outputs": "propagation loss (dB/m) vs year; intrinsic Q; fabrication route; source and status per point",
+"model": "Best reported loss per route (EBL with Ar etch, DUV with Ar etch, DUV with DLC mask, PLACE, CMP from bulk) vs year; Q converted to loss at 1550 nm with the stated group index. Material limit about 0.2 dB/m, reached by annealing from 1.5 dB/m.",
+"src": "Zhang et al. 2017; Zhu et al. 2024; Luke et al. 2020; Li et al. 2023; Kaufmann et al. 2023; Gao et al. 2022; Shams-Ansari et al. 2022"
+},
+{
+"key": "F05-10",
+"title": "Periodic poling of a thin film",
+"q": "How does a comb electrode on an x-cut film flip domains, and what limits the period?",
+"inputs": "poling period presets 4.38, 5.51, 0.747, 0.6 µm; threshold field (default 21 kV/mm, marks at 28.2 kV/mm and 3 Ec); voltage pulse",
+"outputs": "electric field vs depth (kV/mm); peak field (kV/mm); duty cycle D; poled depth fraction; effective nonlinear coefficient d_eff",
+"model": "Electrostatics of coplanar comb electrodes on LN/SiO2/Si; domains grow where |E| exceeds the threshold. d_eff = (2/π)·d33·sin(πD) × depth overlap; nucleation and wall-motion kinetics are illustrative (no thin-film parameters sourced).",
+"src": "Chen et al. 2024; Zhao et al. 2020; Nagy & Reano 2020"
+},
+{
+"key": "F05-11",
+"title": "Value chain and niobium mass per wafer",
+"q": "Where do the atoms in a modulator come from, and how much niobium does a wafer hold?",
+"inputs": "wafer: 76.2 mm × 0.5 mm, 100 mm × 0.35 mm, 150 mm × 0.5 mm, 200 mm × 0.5 mm",
+"outputs": "LN mass per wafer (g); Nb mass per wafer (g); world Nb mine production (t/yr); world Li production (t/yr)",
+"model": "Wafer mass = volume × 4647 kg/m³ (flats ignored); Nb is 62.84 wt% of LiNbO3, so a 200 mm wafer holds 45.9 g Nb against 112,000 t of world output. Chain: pyrochlore and brine or spodumene, Nb2O5, Li2CO3, boule, wafer, LNOI, foundry, chip, module.",
+"src": "USGS 2026"
+},
+{
+"key": "F7.0",
+"title": "Chronology of lithium niobate, 1801 to 2026",
+"q": "When did each dated event in the history of lithium niobate happen, and how well is each one sourced?",
+"inputs": "chapter period: all or one of ten; status: V, P, S, derived; region: USSR, Japan, Europe, China, Ti:LN; sort by date ascending or descending",
+"outputs": "event date and date precision; title; people; institution; DOI or URL; status grade; event counts by status; per-year event strip 1801 to 2026",
+"model": "Chronology of 162 dated events, each with date precision, people, institution, citation and a status grade (V confirmed by the record itself, P via a secondary link, S secondary only, derived from cited data); counts recompute from the filtered set.",
+"src": ""
+},
+{
+"key": "F7.1",
+"title": "Family tree of element names",
+"q": "How are the names tantalum, niobium and lithium related, and where was each one coined?",
+"inputs": "select a node: Tantalus, Niobe, Pelops, Ta, Nb, Li, LiNbO3, LiTaO3",
+"outputs": "coining sentence (original language and English gloss); author; year; page; source status",
+"model": "Tree of mythic and chemical relations: Tantalus to his children Niobe and Pelops, the elements Ta and Nb named after them, Li from Greek lithos, and the compounds LiNbO3 and LiTaO3; each name links to the page where it was coined.",
+"src": "Rose 1844; Rose 1846; Arfwedson 1818; Hatchett 1802; Ekeberg 1802"
+},
+{
+"key": "F7.2",
+"title": "Czochralski boule pulling",
+"q": "How is a crystal boule pulled from a melt on a rotating seed?",
+"inputs": "pull rate (display range); crystal rotation on or off",
+"outputs": "animated boule growing from a seed out of the melt (illustration, no material data)",
+"model": "Schematic Czochralski growth: a seed drawn up from the melt grows into a boule. Growth rates and diameters are not sourced in this chapter, so the pull rate is a display value, not a material constant.",
+"src": ""
+},
+{
+"key": "F7.2b",
+"title": "OPO tuning, 1965 and 1995",
+"q": "What signal and idler wavelengths did the 1965 and 1995 LN optical parametric oscillators reach, and how does a computed tuning curve compare?",
+"inputs": "mode: 1965 (0.529 µm pump, birefringent phase matching) or 1995 (1.064 µm pump, quasi-phase matching); crystal temperature; QPM period 26 to 32 µm (1995, model extension)",
+"outputs": "signal wavelength (µm); idler wavelength (µm); computed tuning curve; reported tuning bands (µm)",
+"model": "Signal and idler from energy conservation and phase matching with LN Sellmeier dispersion, compared with reported bands: 0.97 to 1.15 µm (1965, not an energy-conjugate pair), 1.66 to 2.95 µm at 31 µm period and 1.4 to 4 µm overall (1995).",
+"src": "Bell Laboratories Record 1965; Myers et al. 1995"
+},
+{
+"key": "F7.3",
+"title": "Holographic write, fix and erase",
+"q": "How did reading, thermal fixing and MgO doping change a hologram written in LN?",
+"inputs": "532 nm brush drawn on the plate; read (1968); fix (1971); MgO (1980); reset; diffraction preview on or off",
+"outputs": "refractive-index map (phase image); diffraction preview",
+"model": "One-trap rate equation for the photorefractive index change, with the decay time a display value. Reading erases, fixing stops decay, MgO raises photoconductivity a hundredfold so the trace is weaker and fades faster; Δn about 10⁻³ is quoted, not simulated.",
+"src": "Chen et al. 1968; Chen 1969; Amodei & Staebler 1971; Bryan et al. 1984"
+},
+{
+"key": "F7.4",
+"title": "Surface acoustic wave on a 128° Y-X plate",
+"q": "How does the IDT finger period set the centre frequency of a surface acoustic wave on quartz versus LN?",
+"inputs": "IDT finger period p; substrate: quartz or LN",
+"outputs": "centre frequency f0 (Hz); SAW velocity v_SAW (m/s); electromechanical coupling K²",
+"model": "Centre frequency f0 = v_SAW / p, with SAW velocity and coupling taken from the material-property data with their source grades; the 1965 White and Voltmer device is labelled as quartz.",
+"src": "White & Voltmer 1965"
+},
+{
+"key": "F7.5",
+"title": "Waveguide index profiles by diffusion",
+"q": "What index profile and guided mode do Li2O out-diffusion, Ti in-diffusion and proton exchange produce for a given time and temperature?",
+"inputs": "process: Li2O out-diffusion (1973), Ti in-diffusion (1974), proton exchange (1982); diffusion time; temperature; Δn axis linear or log",
+"outputs": "index change Δn vs depth (0 to 20 µm); fundamental mode intensity",
+"model": "Model diffusion profiles between sourced anchors: a 12 µm single-mode out-diffused guide, about 1 µm Ti confinement, and a Δnₑ = 0.12 proton-exchange step with diffusion constants 1.37 and 0.37 µm²/h.",
+"src": "Carruthers et al. 1974; Schmidt & Kaminow 1974; Jackel et al. 1982"
+},
+{
+"key": "F7.5b",
+"title": "Bulk versus thin-film waveguide, 1973 and 2018",
+"q": "How do a 1973 bulk LN waveguide and a 2018 thin-film rib compare in size, drive voltage and bandwidth?",
+"inputs": "field of view 50 to 1 µm",
+"outputs": "guide size (µm); half-wave voltage Vπ (V); 3 dB bandwidth (GHz)",
+"model": "Same-scale cross-sections of a graded diffused skin in bulk LN and a sub-micrometre rib on SiO2 on Si: guide 12 µm vs 0.68 µm, Vπ about 24 V (derived from 0.13 rad/V) vs 1.4 V, bandwidth 3.2 GHz vs N/A.",
+"src": "Kaminow et al. 1973; Carruthers et al. 1974; Rabiei & Günter 2004; Wang et al. 2018"
+},
+{
+"key": "F7.6",
+"title": "Quasi-phase-matching stripes, 1962 to 2018",
+"q": "How did periodic domain reversal evolve from proposal to nanophotonic PPLN, and why does it make second-harmonic power grow?",
+"inputs": "year 1962 to 2018 (snaps at 1962, 1980, 1990, 1993, 2018); fundamental wavelength; log axis toggle",
+"outputs": "domain pattern; phasor sum of SH contributions; SH power vs number of domains; first-order QPM period (µm)",
+"model": "Each coherence length adds one SH phasor; with domain reversal the sum grows and power scales as N², without it the sum stays bounded and oscillates. First-order period from Sellmeier dispersion, about 6.8 µm at 1064 nm and 18.99 µm at 1550 nm.",
+"src": "Armstrong et al. 1962; Feng et al. 1980; Magel et al. 1990; Yamada et al. 1993; Wang et al. 2018"
+},
+{
+"key": "F7.7",
+"title": "Modulator bit rate by decade",
+"q": "What line rates did dated sources state for LN modulators from 1997 to 2022?",
+"inputs": "",
+"outputs": "line rate (Gb/s, log) vs year 1985 to 2025; source status per point",
+"model": "Step chart of rates stated in dated sources only, with no interpolation or trend: 10 Gb/s (1997), 20 Gb/s (1998), 40 Gb/s (2000), 100 Gb/s (2009, vendor), 1960 Gb/s single-wavelength net (2022, research).",
+"src": "Lin & Sanders 1997; Lightwave 1998; Wooten et al. 2000; Fujitsu 2009; Xu et al. 2022"
+},
+{
+"key": "F7.8",
+"title": "Crystal ion slicing",
+"q": "How does crystal ion slicing lift a thin LN film off a bulk crystal?",
+"inputs": "implant energy (illustrative scale)",
+"outputs": "implant depth (µm); final film thickness (µm, nm)",
+"model": "Three steps on one cross-section: implant, bond, split and polish. The depth scale is illustrative except the sourced pair 3.8 MeV to about 10 µm; sourced films are 9 µm (1998) and 680 nm (2004).",
+"src": "Levy et al. 1998; Levy, Osgood & Radojevic, US 6540827; Rabiei & Günter 2004"
+},
+{
+"key": "F7.9",
+"title": "Modulator VπL versus bandwidth, before and after 2018",
+"q": "How did thin-film LN modulators change the trade-off between VπL and bandwidth relative to bulk Ti:LN?",
+"inputs": "publication-date cutoff (year slider, rule at 2018-10); log axes toggle",
+"outputs": "VπL (V·cm); 3 dB bandwidth (GHz); device and source per point",
+"model": "Scatter of modulator devices from the electro-optic modulator compilation, bulk Ti:LN and thin-film LN by marker shape, filtered by publication date.",
+"src": "Wang et al. 2018"
+},
+{
+"key": "F7.10",
+"title": "Dated news since 2023",
+"q": "What has happened in LN photonics since 2023, by date, kind and source grade?",
+"inputs": "kind: paper, foundry, funding, product, standard; region",
+"outputs": "event date; title; status grade; kind; source link; vendor-claim tag",
+"model": "Newest-first list of dated events from the chronology, with vendor claims tagged separately from independently confirmed results.",
+"src": ""
+},
+{
+"key": "F7.D",
+"title": "Priority disputes",
+"q": "Who did it first in each of twelve contested priority claims in LN history?",
+"inputs": "expand a dispute",
+"outputs": "question; competing dated claims with status grades; verdict",
+"model": "Twelve disputes from the history text, each laid out as dated competing claims with their evidence grades; the side with stronger evidence is labelled, not visually weighted.",
+"src": ""
+},
+{
+"key": "F7.P",
+"title": "People in lithium niobate history",
+"q": "Who are the people named in the history of lithium niobate?",
+"inputs": "",
+"outputs": "one cell per person: portrait where licensed, otherwise initials",
+"model": "Grid from the history's people table; portraits only where the image licence allows (Rose, Berzelius, Hatchett, Czochralski, Ashkin), and no generated portraits.",
+"src": ""
+},
+{
+"key": "F6.01",
+"title": "Device families and the LN effects they use",
+"q": "Which LN effect does each device family use, and how mature is it?",
+"inputs": "effect column (hover highlights the families that use it); device family (click opens its section)",
+"outputs": "11 × 6 grid of device families against effects: Pockels, χ⁽²⁾, χ⁽³⁾, piezoelectric, acousto-optic, heterogeneous gain/absorption; maturity tag: commercial, sampling or in development, research",
+"model": "No physics: a lookup of 11 device families against six physical effects. A commercial or sampling tag appears only where a dated company statement exists; otherwise the family is tagged research.",
+"src": "Exail; AFR 2025; Summit Partners 2026; Murata 2026; Optica 2025; The Quantum Insider 2025; Aghaee Rad et al. 2025"
+},
+{
+"key": "F6.02",
+"title": "Mach-Zehnder transfer curve and eye diagram",
+"q": "How does a voltage on a Mach-Zehnder become bits, and what do Vπ and bandwidth do to the eye?",
+"inputs": "Vπ: 2.0 V template or an atlas device; bias phase φB −π to π; drive Vpp 0.1 to 2 Vπ; symbol rate 10 to 250 GBd; format NRZ or PAM4",
+"outputs": "transfer T(V) with operating point and swing; optical eye; Vπ (V); bias (deg); Vpp/Vπ; static extinction ratio (dB); eye height (normalized)",
+"model": "T = ½(1 + cos(πV/Vπ + φB)). A pseudo-random bit sequence drive, band-limited at the 3 dB bandwidth, passes through T(V) and is folded over two symbol periods to form the eye.",
+"src": "eo-modulator-atlas 2026"
+},
+{
+"key": "F6.03",
+"title": "Modulator VπL and implied overlap",
+"q": "What sets VπL, and what mode-field overlap do measured devices imply?",
+"inputs": "electrode gap 1 to 15 µm; overlap Γ 0.1 to 1.0; wavelength 0.4 to 4 µm; r33: 30.8 pm/V (Turner 1966) or 28.8 pm/V (Kaminow 1980)",
+"outputs": "VπL (V·cm); n_e; Γ; implied overlap Γ_implied vs electrode gap (µm) for 71 x-cut TFLN push-pull MZM rows",
+"model": "Push-pull lateral-gap model VπL = λg / (2 n_e³ r33 Γ), with n_e from the congruent LN Sellmeier at 21 °C and the clamped 633 nm r33. Inverting it with each device's reported VπL gives Γ_implied; Γ > 1 marks devices outside the model.",
+"src": "Weis & Gaylord 1985 (Turner 1966; Kaminow 1980); Zelmon et al. 1997; eo-modulator-atlas 2026"
+},
+{
+"key": "F6.04",
+"title": "Traveling-wave electro-optic response",
+"q": "How do velocity mismatch, RF loss, and impedance mismatch set the bandwidth of a traveling-wave modulator?",
+"inputs": "electrode length 0.5 to 40 mm; RF index 1.8 to 4.5; optical group index 2.0 to 4.5; RF loss 0 to 15 dB/cm at 67 GHz; loss exponent 0.5 (skin effect) or 1.0 (dielectric); Z0 20 to 80 Ω; load 20 to 80 Ω or = Z0; source 50 Ω; atlas device presets",
+"outputs": "EO S21 (dB) vs frequency 0 to 300 GHz; f3dB (GHz); |nRF − ng|; total RF loss at f3dB (dB); velocity-limited and loss-limited frequencies (GHz)",
+"model": "Overlap of a lossy RF wave, α ∝ f^k, with the co-propagating optical wave, including source and load reflections. Single-effect limits: f_vel = 0.443c / (L|nRF − ng|) and the frequency where total RF loss reaches 6.4 dB.",
+"src": "Chung et al. 1991; eo-modulator-atlas 2026"
+},
+{
+"key": "F6.05",
+"title": "VπL versus 3 dB bandwidth by platform",
+"q": "Which devices are both efficient and fast, on which platform, and when?",
+"inputs": "year 2017 to 2026; platform toggles; all bands; all VπL conventions (hollow markers); design rows (crosses)",
+"outputs": "VπL (V·cm, log 0.01 to 200) vs 3 dB bandwidth (GHz, log 0.5 to 400); bandwidth lower bounds as right-pointing arrows",
+"model": "Data plot of published telecom push-pull MZM and IQ device rows. VπL is the reported DC value, else Vπ × length, else the RF value, never converted between conventions; no frontier fit is drawn.",
+"src": "eo-modulator-atlas 2026"
+},
+{
+"key": "F6.06",
+"title": "Modulator footprint and wavelength scaling",
+"q": "How long must a modulator be for a given drive voltage, and how much easier is modulation at shorter wavelengths?",
+"inputs": "view: footprint or wavelength; electrode gap and overlap Γ for the model curve (template, shared with the VπL calculator)",
+"outputs": "footprint: Vπ (V, log 0.1 to 30) vs electrode length (mm, log 0.01 to 50) with iso-VπL lines 0.1 to 10 V·cm; wavelength: VπL (V·cm, log 0.03 to 30) vs wavelength (nm, log 300 to 5000)",
+"model": "Atlas push-pull device rows; iso lines Vπ (V) = 10 VπL (V·cm) / L (mm). The wavelength view (TFLN, TFLT) overlays VπL(λ) = λg / (2 n_e(λ)³ r33 Γ).",
+"src": "eo-modulator-atlas 2026; Zelmon et al. 1997; Weis & Gaylord 1985"
+},
+{
+"key": "F6.07",
+"title": "Ring modulator transmission and linewidth",
+"q": "Why do resonant modulators trade speed for efficiency?",
+"inputs": "loaded Q 2×10³ to 2×10⁵ (log); tuning 1 to 30 pm/V (template); voltage −5 to 5 V; laser detuning (linewidths)",
+"outputs": "transmission vs wavelength offset (pm); loaded Q; linewidth (GHz); photon lifetime (ps); resonance shift (pm); transmission at the laser; atlas 3 dB bandwidth (GHz) vs loaded Q",
+"model": "All-pass ring T = (a² − 2ar cos φ + r²) / (1 − 2ar cos φ + (ar)²), resonance shifted by tuning × V. Linewidth ν0/Q_L and photon lifetime Q_L/(2πν0) set the speed limit.",
+"src": "Wang et al. 2018; eo-modulator-atlas 2026"
+},
+{
+"key": "F6.08",
+"title": "Second-harmonic conversion in a PPLN waveguide",
+"q": "How much of a pump does a TFLN PPLN waveguide convert, and when does it saturate?",
+"inputs": "normalized efficiency 100 to 10,000 %/W/cm² (log); length 1 to 30 mm; pump power 0.1 to 1000 mW (log); pump wavelength 1.40 to 1.70 µm",
+"outputs": "second-harmonic power vs pump power (mW, log-log), undepleted and depleted; ηL² (%/W); P2 (mW); conversion (%); bulk QPM period (µm); phase-mismatch sinc² vs pump wavelength",
+"model": "Undepleted P2 = ηL²P1²; depleted, lossless and phase matched P2 = P1 tanh²(√(ηP1) L). QPM period Λ = λ1 / (2(n2 − n1)) from bulk Sellmeier indices or a template effective-index offset.",
+"src": "Wang et al. 2018; Chen et al. 2024; Li et al. 2024"
+},
+{
+"key": "F6.09",
+"title": "Optical parametric oscillator threshold",
+"q": "Why does a parametric oscillator switch on abruptly, and how low can its threshold go on a chip?",
+"inputs": "intrinsic Q 10⁵ to 10⁸ (log); coupling regime; nonlinear coupling g (template); pump power 1 µW to 10 mW (log)",
+"outputs": "signal power vs pump power (log-log); threshold power (µW); reported device thresholds (µW)",
+"model": "Coupled-mode model of a doubly or triply resonant OPO: output is exactly zero below threshold (classical, no spontaneous emission) and follows the steady-state solution above. Threshold scales as 1/Q² (doubly resonant, equal Q, critical coupling).",
+"src": "Lu et al. 2021; Gao et al. 2021; McKenna et al. 2022"
+},
+{
+"key": "F6.10",
+"title": "Resonant electro-optic frequency comb",
+"q": "How does a microwave drive on a low-loss ring make hundreds of evenly spaced lines?",
+"inputs": "modulation index β = πV/Vπ, 0 to π; intrinsic Q (log); drive frequency = free spectral range, 10 GHz (template); dispersion on or off",
+"outputs": "comb line power (dB) vs frequency offset; lines above −60 dB; span (nm)",
+"model": "Steady state of a ring modulated at its free spectral range, from a coupled-mode recursion of sideband amplitudes with round-trip loss, detuning and dispersion; on a dB axis the comb envelope is triangular.",
+"src": "Zhang et al. 2019"
+},
+{
+"key": "F6.11",
+"title": "Microwave-to-optical transducer efficiency by year",
+"q": "How far have LN microwave-to-optical transducers come, and at what temperature?",
+"inputs": "total efficiency only (toggle); log scale (default on)",
+"outputs": "conversion efficiency (log, 6.6×10⁻⁶ to 8.7%) vs year; mechanism; temperature class (cryogenic or room); efficiency definition (total, internal, on-chip)",
+"model": "Data plot of 8 reported transducers (cavity EO, piezo-optomechanical, bulk LN EO). Total, internal and on-chip efficiencies are tagged separately and never merged.",
+"src": "Holzgrafe et al. 2020; McKenna et al. 2020; Jiang et al. 2020; Xu et al. 2021; Sahu et al. 2022; Jiang et al. 2023; Weaver et al. 2024; Warner et al. 2025"
+},
+{
+"key": "F6.12",
+"title": "IDT pitch and surface acoustic wavelength",
+"q": "How does a voltage on comb electrodes make a sound wave that modulates light?",
+"inputs": "frequency 0.5 to 6 GHz; crystal cut (values from the crystal chapter)",
+"outputs": "acoustic wavelength (µm); IDT finger period (µm); top view of fingers and wave crests crossing a waveguide",
+"model": "λ_ac = v/f; a single-electrode IDT period equals λ_ac (two fingers per period). v is the SAW velocity of the chosen cut, or a template display value, not a material constant. The photoelastic index-change sign is qualitative.",
+"src": ""
+},
+{
+"key": "F8.01",
+"title": "Rock-to-chip value chain",
+"q": "Where does an LN chip come from, step by step, and who does each step?",
+"inputs": "node selection (10 nodes, ore to system)",
+"outputs": "directed flow: ore (Nb, Li) → Nb2O5, Li2CO3 → crystal → bulk wafer → thin-film wafer → foundry → chip → module → system; node cards with 2 to 4 graded facts; Nb per 6-inch wafer (g)",
+"model": "No physics: a graded fact map; each fact carries an evidence grade (F fact, V vendor claim, T trade press, E estimate) and a source. Nb in a 150 mm × 0.5 mm wafer is an estimate (25.8 g).",
+"src": "USGS 2026; Sumitomo Metal Mining; Shin-Etsu Chemical; TDG Holding 2026; NanoLN; Soitec; X-FAB 2026; AFR 2025; Murata 2026; Business Wire China 2026; Kushibiki et al. 1999"
+},
+{
+"key": "F8.02",
+"title": "Companies by supply-chain stage and region",
+"q": "Who grows crystals, makes thin-film wafers, runs foundries, and builds devices, by region?",
+"inputs": "stage (hover highlights companies in several stages); company tag (opens its fact card)",
+"outputs": "matrix of stage (crystal, thin-film wafer, foundry, device, PPLN, quantum/computing) by region (US, EU/CH, CN, JP, TW, UK, CA); company tags with evidence grade; dated facts",
+"model": "No physics: companies with dated facts graded F (fact), V (vendor claim) or T (trade press), from pages opened and read; snippet-only (C) entries are excluded.",
+"src": "Sumitomo Metal Mining; Shin-Etsu Chemical; TDG Holding 2026; NanoLN; Soitec; X-FAB 2026; Summit Partners 2026; AFR 2025; Murata 2026; Exail; optics.org 2025"
+},
+{
+"key": "F8.03",
+"title": "LN wafer sizes and milestones",
+"q": "How large have LN wafers become, and who said so?",
+"inputs": "product filter: bulk or thin film",
+"outputs": "to-scale wafer outlines 76.2, 100, 150, 200 mm (300 mm dashed, low grade); 12 dated, graded milestones; gross die count of a 5 × 1 mm die on 150 and 200 mm wafers",
+"model": "Milestones placed on their wafer size by date. Area ratio (200/150)² = 1.778; die count is a derived gross-die estimate with a 3 mm edge exclusion (template).",
+"src": "Luke et al. 2020; Liu et al. 2025; Zhang et al. 2026; optics.org 2025; C114 2025; Yicai 2024; X-FAB 2026; UMC 2026; TDG Holding 2026; NanoLN"
+},
+{
+"key": "F8.04",
+"title": "Research and product lane rates by year",
+"q": "How fast are LN transmitters in research, and what is shipping?",
+"inputs": "hover on a product milestone (highlights the research points behind it)",
+"outputs": "yearly maximum symbol rate (GBd), TFLN and TFLT, 2017 to 2026; graded product milestones: 200 G/lane available, 400 G/lane sampling, 130 GBd coherent driver modulator volume shipment, 1.6T reference transceiver",
+"model": "Research panel: highest atlas symbol rate per year. Product panel: dated milestones graded F, V or T. PAM4 at about 200 GBd carries 400 Gb/s gross.",
+"src": "eo-modulator-atlas 2026; AFR 2025; Business Wire China 2026; Summit Partners 2026"
+},
+{
+"key": "F8.05",
+"title": "LN versus other modulator platforms",
+"q": "How does LN compare with other electro-optic platforms in the atlas sample?",
+"inputs": "tab: VπL vs bandwidth, symbol and line rate, papers per year, wafer suppliers, integration mode, footprint; year 2017 to 2026; metric: symbol, line or net rate; IM/DD or coherent; exclude OFC 2026 papers",
+"outputs": "VπL (V·cm) vs 3 dB bandwidth (GHz); yearly maximum symbol rate (GBd), line and net rate (Gb/s); papers per year by platform; wafer-supplier shares (papers); papers per year by integration mode; electrode length (mm)",
+"model": "Counts, maxima and medians over the atlas sample at a pinned commit (233 papers, 486 device rows); bounds drawn as arrows, VπL in push-pull convention only. A curated sample, not a census.",
+"src": "eo-modulator-atlas 2026; photonics-atlas 2026"
+},
+{
+"key": "F8.06",
+"title": "LN and LT papers at OFC 2026",
+"q": "What did LN and LT look like at OFC 2026?",
+"inputs": "theme filter: 400G/lane IM/DD; manufacturing (200 mm, wafer scale); co-design with electronics; beyond C band; TFLT",
+"outputs": "15 papers: code, short title, affiliations, abstract claim, DOI; postdeadline marker (Th4A.2, Th4A.5, Th4A.6, Th4B.2)",
+"model": "No physics: a table of 15 OFC 2026 papers with the authors' abstract claims and Crossref-verified DOIs, tagged by five themes.",
+"src": "OFC 2026 proceedings (15 papers)"
+},
+{
+"key": "F8.07",
+"title": "Published market forecasts by publisher",
+"q": "What do published market forecasts say, and how much do they disagree?",
+"inputs": "base year only (toggle)",
+"outputs": "one bar per publisher from base value to forecast value (US$, log 10 M to 10 B) with base and forecast years; min-max bracket per product definition; China-only value in CNY",
+"model": "No model: teaser-page figures plotted as published, grouped by definition (TFLN modulator, TFLN devices, bulk LN crystal, China only), all low grade; no sum, average, consensus or currency conversion; the GII outlier sits apart.",
+"src": "Valuates Reports 2025; 24marketreports 2025; Intel Market Research 2026; QYResearch; Astute Analytica 2025; Dataintelo; Zhiyan Consulting 2025; GII"
+},
+{
+"key": "F8.08",
+"title": "Where people meet LN",
+"q": "Where does a non-specialist meet LN?",
+"inputs": "",
+"outputs": "10 cards: object, hook, caveat, evidence grade, source",
+"model": "No physics: ten everyday uses of LN, each with an always-visible caveat and its grade. Most SAW filters use LT, and BAW filters use AlN, not LN.",
+"src": "Microwave Journal 2018; Soitec; Sumitomo Metal Mining; Business Wire China 2026; Exail; Laser Focus World 2010; The Quantum Insider 2025; Evertiq 2025; Korth Kristalle; USGS 2026"
+},
+{
+"key": "F8.09",
+"title": "LN industry events, 2020 to 2026",
+"q": "What happened in the LN industry, when, and how sure are we?",
+"inputs": "evidence grade (C rows hidden by default); region; stage",
+"outputs": "dated event marks with grade glyphs on a 2020 to 2026 time axis; event table: date, event, entities, region, source, access date, grade",
+"model": "No physics: 25 dated events graded F (fact), V (vendor claim) or T (trade press), each with source URL and access date; snippet-only (C) events appear only by toggle.",
+"src": "eeNews Europe 2020; Murata 2022; Wang et al. 2024; Lightwave 2024; AFR 2025; optics.org 2025; PIC Magazine 2025; X-FAB 2026; Murata 2026; UMC 2026; Business Wire China 2026; Summit Partners 2026; CSEM 2026; TDG Holding 2026"
+},
+{
+"key": "F8.10",
+"title": "LN and competing modulator platforms",
+"q": "What are LN's competing modulator platforms, and what does each do better?",
+"inputs": "",
+"outputs": "per platform (TFLN, TFLT, silicon photonics, InP, barium titanate, polymer): median VπL (V·cm); median 3 dB bandwidth (GHz) with lower-bound share; median electrode length (mm); row counts",
+"model": "Medians over telecom MZM and IQ device rows in the atlas sample; VπL in push-pull convention only (silicon photonics has none); medians that include lower bounds print as ≥.",
+"src": "eo-modulator-atlas 2026; Wang et al. 2024; The Quantum Insider 2025"
+},
+{
+"key": "F8.11",
+"title": "Niobium per wafer calculator",
+"q": "How much niobium does an LN wafer contain, and how much of world supply would an industry need?",
+"inputs": "wafer diameter 76.2 to 300 mm (3, 4, 6, 8, 12 inch presets); thickness 0.25 to 1.0 mm (template); wafers per year 10³ to 10⁷ (log); loss factor 1 to 5 (template)",
+"outputs": "LN mass per wafer (g); Nb mass per wafer (g); Nb per year (t); share of world mine output (%)",
+"model": "m_LN = ρπ(D/2)²t with ρ = 4,642.8 kg/m³; m_Nb = m_LN × M_Nb/M_LiNbO3 (62.8%); share = N × m_Nb × loss factor / 112,000 t world mine production (2025e). Outputs are estimates.",
+"src": "Kushibiki et al. 1999; USGS 2026; TDG Holding 2026"
+}
+]

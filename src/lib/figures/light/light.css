@@ -1,0 +1,135 @@
+/* Chapter 02 (Light) shared page styles. Every rule is scoped under .lt (set on each section of the chapter's pages), so
+   the stylesheet, which SvelteKit keeps after client-side navigation, cannot leak into other chapters. TECH rules first,
+   VISUAL rules under :root[data-mode="visual"]. Sharp corners; fixed boxes; colors in VISUAL only from optics. */
+
+/* ---------- layout ---------- */
+.lt .lt-duo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 14px; align-items: start; }
+.lt .lt-duo > * { min-width: 0; }
+@media (max-width: 1100px) { .lt .lt-duo { grid-template-columns: minmax(0, 1fr); } }
+.lt .lt-fig { margin-top: 14px; }
+.lt .lt-split { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 0; align-items: stretch; }
+.lt .lt-split > * { min-width: 0; }
+.lt .lt-split > * + * { border-left: 1px solid var(--rule2); }
+@media (max-width: 900px) { .lt .lt-split { grid-template-columns: minmax(0, 1fr); } .lt .lt-split > * + * { border-left: 0; border-top: 1px solid var(--rule2); } }
+
+/* ---------- TECH plots ---------- */
+.lt svg.lp { width: 100%; height: auto; display: block; overflow: visible; }
+.lt .lp .fr { fill: none; stroke: var(--rule2); stroke-width: 1; }
+.lt .lp .gl { stroke: var(--rule); stroke-width: 1; }
+.lt .lp .ax { stroke: var(--fg3); stroke-width: 1; }
+.lt .lp .tk { font: 400 11px var(--mono); fill: var(--fg3); }
+.lt .lp .al { font: 400 11px var(--mono); fill: var(--fg2); }
+.lt .lp .lg { font: 400 11px var(--mono); fill: var(--fg2); }
+.lt .lp path, .lt .lp polyline { fill: none; }
+.lt .lp .s1 { stroke: var(--fg); stroke-width: 1.4; }
+.lt .lp .s2 { stroke: var(--fg); stroke-width: 1.2; stroke-dasharray: 6 3; }
+.lt .lp .s3 { stroke: var(--fg2); stroke-width: 1.2; stroke-dasharray: 2 2; }
+.lt .lp .s4 { stroke: var(--fg2); stroke-width: 1.2; stroke-dasharray: 8 2 2 2; }
+.lt .lp .s5 { stroke: var(--fg3); stroke-width: 1.2; }
+.lt .lp .s6 { stroke: var(--fg3); stroke-width: 1.2; stroke-dasharray: 1 3; }
+.lt .lp .cur { stroke: var(--fg2); stroke-width: 1; stroke-dasharray: 3 3; }
+.lt .lp .mk { fill: var(--fg); stroke: none; }
+.lt .lp .mko { fill: var(--bg); stroke: var(--fg); stroke-width: 1.2; }
+.lt .lp .hatch { fill: url(#lt-hatch); }
+.lt .lp .bnd, .lt .lp rect.band { fill: var(--acc-dim); stroke: none; height: auto; margin: 0; background: none; }
+.lt .lp .bad { fill: var(--fg); }
+.lt .lp text.v { font: 400 11px var(--mono); fill: var(--fg); }
+.lt .lp .hit { fill: transparent; stroke: none; }
+.lt .plotbox { padding: 8px 10px 4px; }
+.lt .panel .pf > span { white-space: normal; }
+.lt .panel .pf > * + * { margin-left: 12px; }
+.lt .lgd { display: flex; flex-wrap: wrap; gap: 2px 14px; padding: 3px 8px; border-top: 1px solid var(--rule); font: 400 10.5px/16px var(--mono); color: var(--fg2); }
+.lt .lgd .k { display: inline-block; width: 22px; height: 0; border-top: 1.4px solid var(--fg); vertical-align: 3px; margin-right: 6px; }
+.lt .lgd .k.s2 { border-top-style: dashed; } .lt .lgd .k.s3 { border-top: 1.2px dotted var(--fg2); } .lt .lgd .k.s5 { border-top-color: var(--fg3); }
+
+/* fixed-format readout table (two columns of label / value pairs) */
+.lt table.ro { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 11.5px; }
+.lt table.ro td { border-top: 1px solid var(--rule); padding: 3px 8px; height: 25px; line-height: 16px; white-space: nowrap; overflow: hidden; color: var(--fg2); }
+.lt table.ro td.v { font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--fg); text-align: right; white-space: pre; }
+.lt table.ro td.s { text-align: right; }
+.lt table.ro sup, .lt table.ro sub { line-height: 0; }
+.lt .panel .ctl.seg2 { grid-template-columns: 130px minmax(0, 1fr); }
+@media (max-width: 520px) { .lt .panel .ctl.seg2 { grid-template-columns: minmax(0, 1fr); } }
+.lt .panel .ctl .seg { flex-wrap: wrap; }
+.lt .ascii { margin: 0; padding: 8px 10px; font: 400 11px/13px var(--mono); color: var(--fg2); white-space: pre; overflow: hidden; }
+
+/* status of a value with a dash slot (invalid or out of range): same width as a number */
+.lt .na { color: var(--fg3); }
+
+/* ---------- reference list, section navigation ---------- */
+.lt table.refs { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 17px; }
+.lt table.refs td { padding: 3px 12px 3px 0; vertical-align: top; color: var(--fg2); border-top: 1px solid var(--rule); }
+.lt table.refs td.c { color: var(--fg); white-space: nowrap; width: 1%; }
+.lt table.refs td.d { white-space: nowrap; width: 1%; font-family: var(--mono); font-size: 11px; }
+@media (max-width: 760px) {
+  .lt table.refs, .lt table.refs tbody, .lt table.refs tr, .lt table.refs td { display: block; width: auto; }
+  .lt table.refs tr { border-top: 1px solid var(--rule); padding: 4px 0; }
+  .lt table.refs td { border: 0; padding: 0; white-space: normal; }
+  .lt table.refs td.d { overflow-wrap: anywhere; }
+}
+.lt .pn { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 18px; }
+.lt .pn > a, .lt .pn > span { display: block; border: 1px solid var(--rule2); padding: 6px 10px; font-size: 12px; color: var(--fg); min-height: 34px; }
+.lt .pn > a:hover { background: var(--fg); color: var(--bg); }
+.lt .pn .nx { text-align: right; }
+.lt .pn .n { font-family: var(--mono); color: var(--fg3); margin-right: 6px; }
+.lt .pn a:hover .n { color: var(--bg); }
+
+/* tables of values with badges */
+.lt table.idx td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--fg); white-space: nowrap; text-align: right; }
+.lt table.idx td.u { color: var(--fg3); }
+.lt table.idx td.b0 { white-space: nowrap; }
+
+/* ---------- VISUAL ---------- */
+/* 775 nm (SHG of 1550 nm), low luminance: declared value (the runtime spectral fit returns green beyond about 700 nm) */
+:root[data-mode="visual"] { --lt-l775: #8a1020; }
+:root[data-mode="visual"][data-theme="light"] { --lt-l775: #6a0815; }
+:root[data-mode="visual"] {
+  & .lt .lp .fr { stroke: var(--v-line); }
+  & .lt .lp .gl { stroke: var(--v-line); }
+  & .lt .lp .ax { stroke: var(--v-text3); }
+  & .lt .lp .tk { font: 500 13px var(--v-ui); fill: var(--v-text3); font-variant-numeric: tabular-nums; }
+  & .lt .lp .al, & .lt .lp .lg { font: 500 13px var(--v-ui); fill: var(--v-text2); }
+  & .lt .lp text.v { font: 500 13px var(--v-ui); fill: var(--v-text); }
+  & .lt .lp .s1 { stroke: var(--v-text); stroke-width: 2.2; }
+  & .lt .lp .s2 { stroke: var(--v-text2); stroke-width: 2; stroke-dasharray: 8 5; }
+  & .lt .lp .s3 { stroke: var(--v-au); stroke-width: 2; stroke-dasharray: none; }
+  & .lt .lp .s4 { stroke: var(--v-ir1550); stroke-width: 2; stroke-dasharray: 6 4; }
+  & .lt .lp .s5 { stroke: var(--v-l532); stroke-width: 2.2; }
+  & .lt .lp .s6 { stroke: var(--v-text3); stroke-width: 1.5; stroke-dasharray: 2 4; }
+  & .lt .lp .cur { stroke: var(--v-text2); stroke-width: 1.5; }
+  & .lt .lp .mk { fill: var(--v-text); }
+  & .lt .lp .mko { fill: var(--v-ink0); stroke: var(--v-text); stroke-width: 2; }
+  & .lt .lp .bnd, & .lt .lp rect.band { fill: var(--v-l532-dim); }
+  & .lt .plotbox { padding: 16px 16px 8px; }
+  & .lt .lgd { padding: 8px 16px; font: 500 13px/20px var(--v-ui); color: var(--v-text2); border-top-color: var(--v-line); }
+  & .lt table.ro { font: 400 14px/21px var(--v-ui); }
+  & .lt table.ro td { padding: 6px 16px; height: 34px; border-top-color: var(--v-line); color: var(--v-text2); }
+  & .lt table.ro td.v { font-family: var(--v-ui); color: var(--v-text); }
+  & .lt .ascii { font: 400 13px/15px var(--v-code); }
+  & .lt table.refs { font: 400 14px/22px var(--v-ui); }
+  & .lt table.refs td { padding: 8px 14px 8px 0; border-top-color: var(--v-line); color: var(--v-text2); }
+  @media (max-width: 760px) { & .lt table.refs td { padding: 0; } & .lt table.refs tr { padding: 10px 0; border-top: 1px solid var(--v-line); } }
+  & .lt table.refs td.c { color: var(--v-text); font-family: var(--v-serif); font-size: 17px; }
+  & .lt table.refs td.d { font-family: var(--v-ui); font-size: 13px; }
+  & .lt table.refs a { color: var(--v-l532); }
+  & .lt .pn { gap: 16px; margin-top: 40px; }
+  & .lt .pn > a, & .lt .pn > span { padding: 16px 20px; min-height: 76px; border: 1px solid var(--v-line); background: var(--v-ink1); font: 400 22px/30px var(--v-serif); color: var(--v-text); }
+  & .lt .pn > a:hover { background: var(--v-ink1); border-color: var(--v-l532); box-shadow: inset 0 0 0 1px var(--v-l532); color: var(--v-text); }
+  & .lt .pn .n { display: block; font: 500 13px/18px var(--v-ui); color: var(--v-text3); margin: 0 0 4px; }
+  & .lt .pn a:hover .n { color: var(--v-l532); }
+  & .lt table.idx td.num { font-family: var(--v-ui); color: var(--v-text); }
+
+  /* VISUAL instrument: illustration + side column of controls and readouts */
+  & .lt .v-inst { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 40px; align-items: start; margin: 32px 0 8px; }
+  & .lt .v-inst > * { min-width: 0; }
+  & .lt .v-inst.wide { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  & .lt .v-stage { position: relative; background: var(--v-ink1); border: 1px solid var(--v-line); }
+  & .lt .v-stage svg { width: 100%; height: auto; display: block; overflow: visible; }
+  & .lt .v-stage svg text { font-family: var(--v-ui); font-variant-numeric: tabular-nums; }
+  & .lt .v-side { display: grid; gap: 22px; align-content: start; }
+  & .lt .v-side .v-seg { flex-wrap: wrap; }
+  & .lt .v-ctls { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px 32px; margin-top: 24px; }
+  & .lt .v-ctls > * { min-width: 0; }
+  @media (max-width: 1100px) { & .lt .v-inst { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 640px) { & .lt .v-ctls { grid-template-columns: minmax(0, 1fr); } }
+}

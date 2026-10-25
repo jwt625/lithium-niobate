@@ -1,0 +1,32 @@
+{
+  "citation": "Reinhard Uecker, \"The historical development of the Czochralski method\", Journal of Crystal Growth 401, 7-24, (2014) doi:10.1016/j.jcrysgro.2013.11.095",
+  "link": "https://doi.org/10.1016/j.jcrysgro.2013.11.095",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Reinhard Uecker"
+      }
+    ],
+    "container_title": "Journal of Crystal Growth",
+    "doi": "10.1016/j.jcrysgro.2013.11.095",
+    "id": "uecker2014",
+    "issued": "2014-09",
+    "page": "7-24",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "The historical development of the Czochralski method",
+    "type": "article-journal",
+    "volume": "401"
+  }
+}

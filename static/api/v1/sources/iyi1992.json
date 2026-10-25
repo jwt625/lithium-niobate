@@ -1,0 +1,58 @@
+{
+  "citation": "N. Iyi, K. Kitamura, F. Izumi, et al., \"Comparative study of defect structures in lithium niobate with different compositions\", Journal of Solid State Chemistry 101, 340-352, (1992) doi:10.1016/0022-4596(92)90189-3",
+  "link": "https://doi.org/10.1016/0022-4596(92)90189-3",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Iyi",
+        "given": "N."
+      },
+      {
+        "family": "Kitamura",
+        "given": "K."
+      },
+      {
+        "family": "Izumi",
+        "given": "F."
+      },
+      {
+        "family": "Yamamoto",
+        "given": "J.K."
+      },
+      {
+        "family": "Hayashi",
+        "given": "T."
+      },
+      {
+        "family": "Asano",
+        "given": "H."
+      },
+      {
+        "family": "Kimura",
+        "given": "S."
+      }
+    ],
+    "container_title": "Journal of Solid State Chemistry",
+    "doi": "10.1016/0022-4596(92)90189-3",
+    "id": "iyi1992",
+    "issue": "2",
+    "issued": "1992-12",
+    "page": "340-352",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Comparative study of defect structures in lithium niobate with different compositions",
+    "type": "article-journal",
+    "volume": "101"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "citation": "Jintian Lin, Fang Bo, Ya Cheng, et al., \"Advances in on-chip photonic devices based on lithium niobate on insulator\", Photonics Research 8, 1910, (2020) doi:10.1364/prj.395305",
+  "link": "https://doi.org/10.1364/prj.395305",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Lin",
+        "given": "Jintian"
+      },
+      {
+        "family": "Bo",
+        "given": "Fang"
+      },
+      {
+        "family": "Cheng",
+        "given": "Ya"
+      },
+      {
+        "family": "Xu",
+        "given": "Jingjun"
+      }
+    ],
+    "container_title": "Photonics Research",
+    "doi": "10.1364/prj.395305",
+    "id": "lin2020",
+    "issue": "12",
+    "issued": "2020-11-30",
+    "page": "1910",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Advances in on-chip photonic devices based on lithium niobate on insulator",
+    "type": "article-journal",
+    "volume": "8"
+  }
+}

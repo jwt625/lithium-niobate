@@ -1,0 +1,24 @@
+{
+  "citation": "\"Fujitsu Introduces World's First DP-QPSK LN Modulator for 100Gbps Optical Networks\", (2009) https://web.archive.org/web/20210620162454/https://www.fujitsu.com/jp/group/foc/en/resources/news/press-releases/2009/0914.html",
+  "link": "https://web.archive.org/web/20210620162454/https://www.fujitsu.com/jp/group/foc/en/resources/news/press-releases/2009/0914.html",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "fujitsu-2009",
+    "issued": "2009-09-14",
+    "read": "Archived copy read in full",
+    "title": "Fujitsu Introduces World's First DP-QPSK LN Modulator for 100Gbps Optical Networks",
+    "type": "webpage",
+    "url": "https://web.archive.org/web/20210620162454/https://www.fujitsu.com/jp/group/foc/en/resources/news/press-releases/2009/0914.html"
+  }
+}

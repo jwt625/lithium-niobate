@@ -1,0 +1,268 @@
+{
+  "$defs": {
+    "arxiv": {
+      "pattern": "^([0-9]{4}\\.[0-9]{4,5}|[a-z-]+/[0-9]{7})(v[0-9]+)?$",
+      "type": "string"
+    },
+    "conditions": {
+      "additionalProperties": false,
+      "properties": {
+        "electrical_boundary": {
+          "description": "E: constant field. D: constant displacement.",
+          "enum": [
+            "E",
+            "D",
+            null
+          ]
+        },
+        "frequency_text": {
+          "type": "string"
+        },
+        "mechanical_boundary": {
+          "description": "S: constant strain (clamped). T: constant stress (free).",
+          "enum": [
+            "S",
+            "T",
+            null
+          ]
+        },
+        "method": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "temperature_C": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "temperature_text": {
+          "type": "string"
+        },
+        "wavelength_nm": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "datePrecision": {
+      "enum": [
+        "year",
+        "month",
+        "day"
+      ]
+    },
+    "doi": {
+      "description": "Bare DOI, without the https://doi.org/ prefix.",
+      "pattern": "^10\\.[0-9]{4,9}/\\S+$",
+      "type": "string"
+    },
+    "frame": {
+      "additionalProperties": false,
+      "properties": {
+        "convention": {
+          "enum": [
+            "IEEE-176-1987",
+            "IRE-1949",
+            "unstated"
+          ]
+        },
+        "handedness": {
+          "enum": [
+            "right",
+            "left",
+            "unstated"
+          ]
+        },
+        "setting": {
+          "type": "string"
+        },
+        "x": {
+          "type": "string"
+        },
+        "y": {
+          "type": "string"
+        },
+        "z": {
+          "type": "string"
+        },
+        "z_sign_definition": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "setting",
+        "x",
+        "z",
+        "handedness",
+        "convention",
+        "z_sign_definition"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "description": "Lowercase slug identifier.",
+      "pattern": "^[a-z0-9][a-z0-9.-]*$",
+      "type": "string"
+    },
+    "isoDate": {
+      "description": "ISO 8601 calendar date at year, month or day precision (YYYY, YYYY-MM, YYYY-MM-DD).",
+      "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+      "type": "string"
+    },
+    "license": {
+      "additionalProperties": false,
+      "properties": {
+        "license": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "oa_status": {
+          "enum": [
+            "gold",
+            "green",
+            "bronze",
+            "hybrid",
+            "diamond",
+            "closed",
+            "cc0",
+            "free",
+            "preprint",
+            "unknown"
+          ]
+        }
+      },
+      "type": "object"
+    },
+    "propertyStatus": {
+      "description": "P: primary source read at the locator. P(abs): only the abstract read. P-comp: read in a compilation that names the original measurement (original not read). P-db: CC0 database transcription of a primary source. S: secondary. V: vendor datasheet. C: computed from listed inputs. U: unverified, never shown in default endpoints.",
+      "enum": [
+        "P",
+        "P(abs)",
+        "P-comp",
+        "P-db",
+        "S",
+        "V",
+        "C",
+        "U"
+      ]
+    },
+    "provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "derivation": {
+          "description": "For status C: formula and inputs.",
+          "type": "string"
+        },
+        "locator": {
+          "description": "Table, equation, page or section in the source.",
+          "type": "string"
+        },
+        "original_reference": {
+          "description": "Measurement reference as given by the compilation.",
+          "type": "string"
+        },
+        "source_id": {
+          "$ref": "#/$defs/id",
+          "description": "Key into sources.json."
+        },
+        "status": {
+          "$ref": "#/$defs/propertyStatus"
+        },
+        "transcribed": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "via": {
+          "$ref": "#/$defs/id",
+          "description": "Compilation or secondary source the value was read in (P-comp, S)."
+        }
+      },
+      "required": [
+        "source_id",
+        "status"
+      ],
+      "type": "object"
+    },
+    "quantity": {
+      "additionalProperties": false,
+      "properties": {
+        "max": {
+          "type": "number"
+        },
+        "min": {
+          "type": "number"
+        },
+        "text": {
+          "description": "Verbatim qualitative value when no number applies.",
+          "type": "string"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/uncertainty"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "uncertainty": {
+      "additionalProperties": false,
+      "properties": {
+        "note": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "stated",
+            "range",
+            "approximate",
+            "none"
+          ]
+        },
+        "value": {
+          "description": "Symmetric stated uncertainty (same unit as the value).",
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "unit": {
+      "additionalProperties": false,
+      "properties": {
+        "display": {
+          "type": "string"
+        },
+        "qudt": {
+          "$ref": "#/$defs/url"
+        },
+        "ucum": {
+          "description": "UCUM case-sensitive code.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ucum",
+        "display"
+      ],
+      "type": "object"
+    },
+    "url": {
+      "pattern": "^https?://\\S+$",
+      "type": "string"
+    }
+  },
+  "$id": "https://lithium-niobate.com/api/v1/schema/common.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Definitions shared by every lithium-niobate.com data schema.",
+  "title": "Shared definitions"
+}

@@ -1,0 +1,48 @@
+{
+  "citation": "Bohdan Mytsyk, Nataliya Demyanyshyn, Anatoliy Andrushchak, et al., \"Photoelastic Properties of Trigonal Crystals\", Crystals 11, 1095, (2021) doi:10.3390/cryst11091095",
+  "link": "https://doi.org/10.3390/cryst11091095",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "gold"
+    },
+    "article_number": "1095",
+    "author": [
+      {
+        "family": "Mytsyk",
+        "given": "Bohdan"
+      },
+      {
+        "family": "Demyanyshyn",
+        "given": "Nataliya"
+      },
+      {
+        "family": "Andrushchak",
+        "given": "Anatoliy"
+      },
+      {
+        "family": "Buryy",
+        "given": "Oleh"
+      }
+    ],
+    "container_title": "Crystals",
+    "doi": "10.3390/cryst11091095",
+    "id": "mytsyk2021",
+    "issued": "2021",
+    "notes": "Uses S14 > 0 (c14 < 0), a non-standard frame for LN (inference).",
+    "read": "abstract and Table 6",
+    "title": "Photoelastic Properties of Trigonal Crystals",
+    "type": "article-journal",
+    "volume": "11"
+  }
+}

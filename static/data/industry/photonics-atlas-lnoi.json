@@ -1,0 +1,450 @@
+{
+ "source": {
+  "repo": "https://github.com/jwt625/photonics-atlas",
+  "commit": "26aa34093fde4b588cc92f5bf250ef58f74044a9",
+  "commit_date": "2026-10-23",
+  "fetched": "2026-10-25"
+ },
+ "usage": [
+  {
+   "usage_id": "use_eo_boynton2020_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:boynton2020",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#boynton2020/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_chen2023_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:chen2023",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#chen2023/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_chen2023a_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:chen2023a",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#chen2023a/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_chen2024_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:chen2024",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#chen2024/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_chen2025_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:chen2025",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#chen2025/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_churaev2023_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:churaev2023",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#churaev2023/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_feng2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:feng2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#feng2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_hou2024_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:hou2024",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#hou2024/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_kharel2021_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:kharel2021",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#kharel2021/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-01"
+  },
+  {
+   "usage_id": "use_eo_larocque2024_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:larocque2024",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#larocque2024/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_li2020_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:li2020",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#li2020/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_li2022b_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:li2022b",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#li2022b/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_li2026aa_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:li2026aa",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#li2026aa/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-04"
+  },
+  {
+   "usage_id": "use_eo_liu2021_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:liu2021",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#liu2021/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_liu2023_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:liu2023",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#liu2023/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_liu2025c_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:liu2025c",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#liu2025c/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_liu2026d_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:liu2026d",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#liu2026d/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_mao2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:mao2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#mao2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_nelan2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:nelan2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#nelan2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_nelan2022a_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:nelan2022a",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#nelan2022a/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_pan2021_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:pan2021",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#pan2021/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_rahman2025_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:rahman2025",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#rahman2025/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-04"
+  },
+  {
+   "usage_id": "use_eo_renaud2023_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:renaud2023",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#renaud2023/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-01"
+  },
+  {
+   "usage_id": "use_eo_shamsansari2021_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:shamsansari2021",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#shamsansari2021/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_shen2024_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:shen2024",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#shen2024/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_shen2025_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:shen2025",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#shen2025/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_valdez2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:valdez2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#valdez2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-01"
+  },
+  {
+   "usage_id": "use_eo_valdez2023a_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:valdez2023a",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#valdez2023a/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-04"
+  },
+  {
+   "usage_id": "use_eo_wang2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:wang2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#wang2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_wang2022a_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:wang2022a",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#wang2022a/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_weigel2018_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:weigel2018",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#weigel2018/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-01"
+  },
+  {
+   "usage_id": "use_eo_wu2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:wu2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#wu2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-07"
+  },
+  {
+   "usage_id": "use_eo_wu2025_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:wu2025",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#wu2025/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_xie2024_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:xie2024",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#xie2024/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-07"
+  },
+  {
+   "usage_id": "use_eo_xu2020_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:xu2020",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#xu2020/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_xue2026_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:xue2026",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#xue2026/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_yang2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:yang2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#yang2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-05"
+  },
+  {
+   "usage_id": "use_eo_yu2024_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:yu2024",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#yu2024/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_zhang2022_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:zhang2022",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#zhang2022/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_zhang2023_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:zhang2023",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#zhang2023/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-02"
+  },
+  {
+   "usage_id": "use_eo_zhang2024_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:zhang2024",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#zhang2024/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-07"
+  },
+  {
+   "usage_id": "use_eo_zhang2026b_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "eo:zhang2026b",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "eo-atlas:papers.csv#zhang2026b/wafer_supplier",
+   "basis": "stated",
+   "verified_on": "2026-10-04"
+  },
+  {
+   "usage_id": "use_lit_li2025_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "lit:li2025",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "p.3",
+   "basis": "stated",
+   "verified_on": "2026-10-23"
+  },
+  {
+   "usage_id": "use_lit_zhang2023a_jinan_jingzheng_electronics_wafer_supply",
+   "source_id": "lit:zhang2023a",
+   "org_id": "org_jinan_jingzheng_electronics",
+   "category_id": "A2.1",
+   "role": "wafer_supply",
+   "locator": "p.2",
+   "basis": "stated",
+   "verified_on": "2026-10-23"
+  }
+ ]
+}

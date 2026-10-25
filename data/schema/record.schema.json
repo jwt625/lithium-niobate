@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lithium-niobate.com/api/v1/schema/record.schema.json",
+  "title": "Device performance record",
+  "description": "A provisional device-performance data point or record (R08 sec. 2): metric, conditions, numeric values with UCUM units, platform, first author, venue, date, DOI/arXiv/URL, and a verification flag. 'Highest found' means highest found in the cited pass, not an absolute record.",
+  "type": "object",
+  "required": ["id", "category", "metric", "value_text", "platform", "date", "date_precision", "verification", "provisional"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "category": {"enum": ["loss-q", "modulator", "symbol-rate", "shg", "opa-opo", "quantum", "eo-comb", "kerr", "transduction", "acousto-optics", "wafer-foundry", "heterogeneous", "tflt", "thermo-optic"]},
+    "metric": {"type": "string"},
+    "value_text": {"type": "string", "description": "Conditions and values as stated in the research note."},
+    "values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["quantity", "value", "unit"],
+        "additionalProperties": false,
+        "properties": {
+          "quantity": {"type": "string"},
+          "value": {"type": "number"},
+          "unit": {"type": "string", "description": "UCUM code ('1' for dimensionless)."},
+          "qualifier": {"enum": ["=", "<", ">", "<=", ">=", "~"]},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "platform": {"type": "string"},
+    "first_author": {"type": "string"},
+    "venue": {"type": "string"},
+    "date": {"$ref": "common.schema.json#/$defs/isoDate"},
+    "date_precision": {"$ref": "common.schema.json#/$defs/datePrecision"},
+    "doi": {"$ref": "common.schema.json#/$defs/doi"},
+    "arxiv": {"$ref": "common.schema.json#/$defs/arxiv"},
+    "url": {"$ref": "common.schema.json#/$defs/url"},
+    "verification": {"enum": ["Y", "Y(arXiv)", "Y(conf)", "Y(preprint)", "title", "partial", "press", "unverified", "simulation"], "description": "Y: DOI resolves and the number is in the published abstract or official page. Y(arXiv), Y(conf), Y(preprint): number from that version. title: only metadata confirmed. partial: some numbers confirmed. press: press release only. unverified and simulation rows are excluded from records.json."},
+    "highest_found": {"type": "boolean"},
+    "provisional": {"type": "boolean"},
+    "as_of": {"$ref": "common.schema.json#/$defs/isoDate"},
+    "research_note": {"type": "string"},
+    "notes": {"type": "string"},
+    "public": {"type": "boolean"}
+  },
+  "anyOf": [
+    {"required": ["doi"]},
+    {"required": ["arxiv"]},
+    {"required": ["url"]}
+  ]
+}

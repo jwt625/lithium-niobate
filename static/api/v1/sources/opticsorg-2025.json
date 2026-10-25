@@ -1,0 +1,25 @@
+{
+  "citation": "\"Laser 2025: CCRAFT and Lightium push thin-film lithium niobate PICs\", optics.org, (2025) https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics",
+  "link": "https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "optics.org",
+    "id": "opticsorg-2025",
+    "issued": "2025-06-25",
+    "read": "Read",
+    "title": "Laser 2025: CCRAFT and Lightium push thin-film lithium niobate PICs",
+    "type": "webpage",
+    "url": "https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics"
+  }
+}

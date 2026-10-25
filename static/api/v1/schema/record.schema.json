@@ -1,0 +1,156 @@
+{
+  "$id": "https://lithium-niobate.com/api/v1/schema/record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "anyOf": [
+    {
+      "required": [
+        "doi"
+      ]
+    },
+    {
+      "required": [
+        "arxiv"
+      ]
+    },
+    {
+      "required": [
+        "url"
+      ]
+    }
+  ],
+  "description": "A provisional device-performance data point or record: metric, conditions, numeric values with UCUM units, platform, first author, venue, date, DOI/arXiv/URL, and a verification flag. 'Highest found' means highest found in the cited pass, not an absolute record.",
+  "properties": {
+    "arxiv": {
+      "$ref": "common.schema.json#/$defs/arxiv"
+    },
+    "as_of": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "category": {
+      "enum": [
+        "loss-q",
+        "modulator",
+        "symbol-rate",
+        "shg",
+        "opa-opo",
+        "quantum",
+        "eo-comb",
+        "kerr",
+        "transduction",
+        "acousto-optics",
+        "wafer-foundry",
+        "heterogeneous",
+        "tflt",
+        "thermo-optic"
+      ]
+    },
+    "date": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "date_precision": {
+      "$ref": "common.schema.json#/$defs/datePrecision"
+    },
+    "doi": {
+      "$ref": "common.schema.json#/$defs/doi"
+    },
+    "first_author": {
+      "type": "string"
+    },
+    "highest_found": {
+      "type": "boolean"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "provisional": {
+      "type": "boolean"
+    },
+    "public": {
+      "type": "boolean"
+    },
+    "url": {
+      "$ref": "common.schema.json#/$defs/url"
+    },
+    "value_text": {
+      "description": "Conditions and values as stated in the research note.",
+      "type": "string"
+    },
+    "values": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "note": {
+            "type": "string"
+          },
+          "qualifier": {
+            "enum": [
+              "=",
+              "<",
+              ">",
+              "<=",
+              ">=",
+              "~"
+            ]
+          },
+          "quantity": {
+            "type": "string"
+          },
+          "unit": {
+            "description": "UCUM code ('1' for dimensionless).",
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "quantity",
+          "value",
+          "unit"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "verification": {
+      "description": "Y: DOI resolves and the number is in the published abstract or official page. Y(arXiv), Y(conf), Y(preprint): number from that version. title: only metadata confirmed. partial: some numbers confirmed. press: press release only. unverified and simulation rows are excluded from records.json.",
+      "enum": [
+        "Y",
+        "Y(arXiv)",
+        "Y(conf)",
+        "Y(preprint)",
+        "title",
+        "partial",
+        "press",
+        "unverified",
+        "simulation"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "category",
+    "metric",
+    "value_text",
+    "platform",
+    "date",
+    "date_precision",
+    "verification",
+    "provisional"
+  ],
+  "title": "Device performance record",
+  "type": "object"
+}

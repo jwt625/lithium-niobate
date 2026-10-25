@@ -1,0 +1,38 @@
+{
+  "citation": "Payam Rabiei, Peter Gunter, \"Optical and electro-optical properties of submicrometer lithium niobate slab waveguides prepared by crystal ion slicing and wafer bonding\", Applied Physics Letters 85, 4603-4605, (2004) doi:10.1063/1.1819527",
+  "link": "https://doi.org/10.1063/1.1819527",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Rabiei",
+        "given": "Payam"
+      },
+      {
+        "family": "Gunter",
+        "given": "Peter"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1819527",
+    "id": "rabiei2004",
+    "issue": "20",
+    "issued": "2004-11-15",
+    "page": "4603-4605",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Optical and electro-optical properties of submicrometer lithium niobate slab waveguides prepared by crystal ion slicing and wafer bonding",
+    "type": "article-journal",
+    "volume": "85"
+  }
+}

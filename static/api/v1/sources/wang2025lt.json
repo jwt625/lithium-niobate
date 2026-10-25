@@ -1,0 +1,60 @@
+{
+  "citation": "Haohua Wang, Ao Cui, Bin Chen, et al., \"Thin-Film Lithium Tantalate Modulator Operating at High Optical Power\", ACS Photonics 12, 5345-5351, (2025) doi:10.1021/acsphotonics.5c00159",
+  "link": "https://doi.org/10.1021/acsphotonics.5c00159",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Haohua"
+      },
+      {
+        "family": "Cui",
+        "given": "Ao"
+      },
+      {
+        "family": "Chen",
+        "given": "Bin"
+      },
+      {
+        "family": "Ruan",
+        "given": "Ziliang"
+      },
+      {
+        "family": "Guo",
+        "given": "Changjian"
+      },
+      {
+        "family": "Chen",
+        "given": "Kaixuan"
+      },
+      {
+        "family": "Liu",
+        "given": "Liu"
+      }
+    ],
+    "container_title": "ACS Photonics",
+    "doi": "10.1021/acsphotonics.5c00159",
+    "id": "wang2025lt",
+    "issue": "10",
+    "issued": "2025-06-26",
+    "page": "5345-5351",
+    "read": "full text (author-held copy), introduction; 2026-10-25",
+    "title": "Thin-Film Lithium Tantalate Modulator Operating at High Optical Power",
+    "type": "article-journal",
+    "volume": "12"
+  }
+}

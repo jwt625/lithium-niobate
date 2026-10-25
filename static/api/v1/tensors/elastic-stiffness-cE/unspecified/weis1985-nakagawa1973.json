@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "elastic-stiffness-cE",
+    "variant": "unspecified"
+  },
+  "record": {
+    "conditions": {
+      "electrical_boundary": "E"
+    },
+    "frame": {
+      "convention": "IRE-1949",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"
+    },
+    "full": [
+      [
+        [
+          [
+            200.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            54.0,
+            8.0
+          ],
+          [
+            0.0,
+            8.0,
+            60.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            73.0,
+            8.0
+          ],
+          [
+            73.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            8.0,
+            60.0
+          ],
+          [
+            8.0,
+            0.0,
+            0.0
+          ],
+          [
+            60.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            73.0,
+            8.0
+          ],
+          [
+            73.0,
+            0.0,
+            0.0
+          ],
+          [
+            8.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            54.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            200.0,
+            -8.0
+          ],
+          [
+            0.0,
+            -8.0,
+            60.0
+          ]
+        ],
+        [
+          [
+            8.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -8.0,
+            60.0
+          ],
+          [
+            0.0,
+            60.0,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            8.0,
+            60.0
+          ],
+          [
+            8.0,
+            0.0,
+            0.0
+          ],
+          [
+            60.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            8.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -8.0,
+            60.0
+          ],
+          [
+            0.0,
+            60.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            60.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            60.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            243.0
+          ]
+        ]
+      ]
+    ],
+    "id": "elastic-stiffness-cE/unspecified/weis1985-nakagawa1973",
+    "independent": {
+      "c11": {
+        "value": 200
+      },
+      "c12": {
+        "value": 54
+      },
+      "c13": {
+        "value": 60
+      },
+      "c14": {
+        "value": 8
+      },
+      "c33": {
+        "value": 243
+      },
+      "c44": {
+        "value": 60
+      }
+    },
+    "kind": "tensor",
+    "name": "Elastic stiffness at constant electric field",
+    "provenance": {
+      "locator": "Table 6, p. 200",
+      "original_reference": "Nakagawa et al. 1973",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 4,
+    "scale": 1,
+    "symbol": "c^E",
+    "symmetry_form": {
+      "form": [
+        [
+          "c11",
+          "c12",
+          "c13",
+          "c14",
+          "0",
+          "0"
+        ],
+        [
+          "c12",
+          "c11",
+          "c13",
+          "-c14",
+          "0",
+          "0"
+        ],
+        [
+          "c13",
+          "c13",
+          "c33",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "c14",
+          "-c14",
+          "0",
+          "c44",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "c44",
+          "c14"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "c14",
+          "(c11-c12)/2"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "c22 = c11",
+        "c23 = c13",
+        "c24 = -c14",
+        "c55 = c44",
+        "c56 = c14",
+        "c66 = (c11 - c12)/2"
+      ]
+    },
+    "tensor": "elastic-stiffness-cE",
+    "unit": {
+      "display": "GPa",
+      "qudt": "http://qudt.org/vocab/unit/GigaPA",
+      "ucum": "GPa"
+    },
+    "variant": "unspecified",
+    "voigt": [
+      [
+        200.0,
+        54.0,
+        60.0,
+        8.0,
+        0.0,
+        0.0
+      ],
+      [
+        54.0,
+        200.0,
+        60.0,
+        -8.0,
+        0.0,
+        0.0
+      ],
+      [
+        60.0,
+        60.0,
+        243.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        8.0,
+        -8.0,
+        0.0,
+        60.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        60.0,
+        8.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        8.0,
+        73.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "C_ijkl = c_IJ, I = V(ij), J = V(kl)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

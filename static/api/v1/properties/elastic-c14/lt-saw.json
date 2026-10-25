@@ -1,0 +1,47 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "elastic-c14",
+    "variant": "lt-saw"
+  },
+  "recommended": [
+    {
+      "category": "acoustic",
+      "conditions": {
+        "electrical_boundary": "E"
+      },
+      "default": true,
+      "id": "elastic-c14/lt-saw/kushibiki1999",
+      "kind": "scalar",
+      "name": "Elastic stiffness component c14 (constant E)",
+      "notes": "In the same table and convention LiNbO3 has c14 = +7.83 GPa: the c14 sign differs between LN and LT.",
+      "property": "elastic-c14",
+      "provenance": {
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c14^E",
+      "tensor_component": "c14",
+      "unit": {
+        "display": "GPa",
+        "qudt": "http://qudt.org/vocab/unit/GigaPA",
+        "ucum": "GPa"
+      },
+      "value": -10.75,
+      "variant": "lt-saw"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

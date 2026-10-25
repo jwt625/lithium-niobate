@@ -1,0 +1,32 @@
+{
+  "citation": "Jean Charles Galissard de Marignac, \"Recherches sur les combinaisons du niobium\", Annales de Chimie et de Physique, 4e serie 8, 5-75, (1866) https://archive.org/details/s696id13664940",
+  "link": "https://archive.org/details/s696id13664940",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Jean Charles Galissard de Marignac"
+      }
+    ],
+    "container_title": "Annales de Chimie et de Physique, 4e serie",
+    "id": "marignac1866",
+    "issued": "1866",
+    "page": "5-75",
+    "read": "Scan read (pp. 5-8, 45-46, 49-50), 2026-10-25",
+    "title": "Recherches sur les combinaisons du niobium",
+    "type": "webpage",
+    "url": "https://archive.org/details/s696id13664940",
+    "volume": "8"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "citation": "Haowei Jiang, Rui Luo, Hanxiao Liang, et al., \"Fast response of photorefraction in lithium niobate microresonators\", Optics Letters 42, 3267, (2017) doi:10.1364/ol.42.003267",
+  "link": "https://doi.org/10.1364/ol.42.003267",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Jiang",
+        "given": "Haowei"
+      },
+      {
+        "family": "Luo",
+        "given": "Rui"
+      },
+      {
+        "family": "Liang",
+        "given": "Hanxiao"
+      },
+      {
+        "family": "Chen",
+        "given": "Xianfeng"
+      },
+      {
+        "family": "Chen",
+        "given": "Yuping"
+      },
+      {
+        "family": "Lin",
+        "given": "Qiang"
+      }
+    ],
+    "container_title": "Optics Letters",
+    "doi": "10.1364/ol.42.003267",
+    "id": "jiang2017",
+    "issue": "17",
+    "issued": "2017-08-17",
+    "page": "3267",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Fast response of photorefraction in lithium niobate microresonators",
+    "type": "article-journal",
+    "volume": "42"
+  }
+}

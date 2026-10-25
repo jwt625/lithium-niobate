@@ -1,0 +1,43 @@
+{
+  "citation": "A. W. Warner, M. Onoe, G. A. Coquin, \"Determination of elastic and piezoelectric constants for crystals in class (3m)\", Journal of the Acoustical Society of America 42, 1223, (1967) doi:10.1121/1.1910709",
+  "link": "https://doi.org/10.1121/1.1910709",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Warner",
+        "given": "A. W."
+      },
+      {
+        "family": "Onoe",
+        "given": "M."
+      },
+      {
+        "family": "Coquin",
+        "given": "G. A."
+      }
+    ],
+    "container_title": "Journal of the Acoustical Society of America",
+    "doi": "10.1121/1.1910709",
+    "id": "warner1967",
+    "issued": "1967",
+    "page": "1223",
+    "read": "not read; values via weis1985 (P-comp) and ogi2002",
+    "title": "Determination of elastic and piezoelectric constants for crystals in class (3m)",
+    "type": "article-journal",
+    "volume": "42"
+  }
+}

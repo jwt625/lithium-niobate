@@ -1,0 +1,32 @@
+{
+  "citation": "Kurt Nassau, \"Early History Of Lithium Niobate: Personal Reminiscences\", SPIE Proceedings 0460, 2, (1984) doi:10.1117/12.939449",
+  "link": "https://doi.org/10.1117/12.939449",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Kurt Nassau"
+      }
+    ],
+    "container_title": "SPIE Proceedings",
+    "doi": "10.1117/12.939449",
+    "id": "nassau1984",
+    "issued": "1984-09-26",
+    "page": "2",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Early History Of Lithium Niobate: Personal Reminiscences",
+    "type": "paper-conference",
+    "volume": "0460"
+  }
+}

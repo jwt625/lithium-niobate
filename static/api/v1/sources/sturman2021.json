@@ -1,0 +1,32 @@
+{
+  "citation": "Boris I. Sturman, Vladimir M. Fridkin, \"The Photovoltaic and Photorefractive Effects in Noncentrosymmetric Materials\", (2021) doi:10.1201/9780203743416",
+  "link": "https://doi.org/10.1201/9780203743416",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Boris I. Sturman"
+      },
+      {
+        "literal": "Vladimir M. Fridkin"
+      }
+    ],
+    "doi": "10.1201/9780203743416",
+    "id": "sturman2021",
+    "issued": "2021-03-10",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "The Photovoltaic and Photorefractive Effects in Noncentrosymmetric Materials",
+    "type": "book"
+  }
+}

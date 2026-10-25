@@ -1,0 +1,24 @@
+{
+  "citation": "\"A double world-first: integrating lithium niobate and lithium tantalate modulators on silicon photonics through micro-transfer printing\", (2026) https://imec-int.com/en/articles/double-world-first-integrating-lithium-niobate-and-lithium-tantalate-modulators-silicon",
+  "link": "https://imec-int.com/en/articles/double-world-first-integrating-lithium-niobate-and-lithium-tantalate-modulators-silicon",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "imec-2026",
+    "issued": "2026-03-26",
+    "read": "Read",
+    "title": "A double world-first: integrating lithium niobate and lithium tantalate modulators on silicon photonics through micro-transfer printing",
+    "type": "webpage",
+    "url": "https://imec-int.com/en/articles/double-world-first-integrating-lithium-niobate-and-lithium-tantalate-modulators-silicon"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "absorption-coefficient",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "conditions": {
+        "method": "o and e polarization, 390-3800 nm"
+      },
+      "default": true,
+      "id": "absorption-coefficient/cln/leidinger2015",
+      "kind": "scalar",
+      "max": 2,
+      "min": 0.0001,
+      "name": "Absorption coefficient in the transparent range",
+      "notes": "Range over 390-3800 nm ('< 1.0e-4 to 2 cm^-1'); the value at 1550 nm is in the paper and was not read. 1.0e-4 cm^-1 = 0.043 dB/m.",
+      "property": "absorption-coefficient",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "leidinger2015",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha",
+      "unit": {
+        "display": "cm^-1",
+        "ucum": "/cm"
+      },
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

@@ -1,0 +1,91 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Electro-optic coefficient r22, unclamped of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/eo-r22-T.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/eo-r22-T.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Electro-optic coefficient r22, unclamped"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Electro-optic coefficient r22, unclamped",
+    "url": "https://lithium-niobate.com/api/v1/properties/eo-r22-T.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "name": "Electro-optic coefficient r22, unclamped",
+        "unitText": "pm/V"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "eo-r22-T"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "mechanical_boundary": "T"
+      },
+      "id": "eo-r22-T/cln/volk2008-yonekura2007",
+      "kind": "scalar",
+      "name": "Electro-optic coefficient r22, unclamped",
+      "notes": "Labelled 'constant stress (clamped)' in the source, which contradicts itself (constant stress = unclamped, T); the magnitude fits T values. CLN:5%Mg 6.2 and near-SLN:1.8%Mg 6.97 pm/V in the same report.",
+      "property": "eo-r22-T",
+      "provenance": {
+        "locator": "p. 150",
+        "original_reference": "Yonekura et al., Opt. Rev. 14, 194 (2007)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "r22^T",
+      "tensor_component": "r22",
+      "unit": {
+        "display": "pm/V",
+        "ucum": "pm/V"
+      },
+      "value": 6.54,
+      "variant": "cln"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "citation": "Y. Nishida, H. Miyazawa, M. Asobe, et al., \"Direct-bonded QPM-LN ridge waveguide with high damage resistance at room temperature\", Electronics Letters 39, 609-611, (2003) doi:10.1049/el:20030402",
+  "link": "https://doi.org/10.1049/el:20030402",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Y. Nishida"
+      },
+      {
+        "literal": "H. Miyazawa"
+      },
+      {
+        "literal": "M. Asobe"
+      },
+      {
+        "literal": "O. Tadanaga"
+      },
+      {
+        "literal": "H. Suzuki"
+      }
+    ],
+    "container_title": "Electronics Letters",
+    "doi": "10.1049/el:20030402",
+    "id": "nishida2003",
+    "issue": "7",
+    "issued": "2003-04-03",
+    "page": "609-611",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Direct-bonded QPM-LN ridge waveguide with high damage resistance at room temperature",
+    "type": "article-journal",
+    "volume": "39"
+  }
+}

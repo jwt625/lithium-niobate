@@ -1,0 +1,46 @@
+{
+  "citation": "G. Poberaj, H. Hu, W. Sohler, et al., \"Lithium niobate on insulator (LNOI) for micro‐photonic devices\", Laser & Photonics Reviews 6, 488-503, (2012) doi:10.1002/lpor.201100035",
+  "link": "https://doi.org/10.1002/lpor.201100035",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Poberaj",
+        "given": "G."
+      },
+      {
+        "family": "Hu",
+        "given": "H."
+      },
+      {
+        "family": "Sohler",
+        "given": "W."
+      },
+      {
+        "family": "Günter",
+        "given": "P."
+      }
+    ],
+    "container_title": "Laser & Photonics Reviews",
+    "doi": "10.1002/lpor.201100035",
+    "id": "poberaj2012",
+    "issue": "4",
+    "issued": "2012-02-15",
+    "page": "488-503",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Lithium niobate on insulator (LNOI) for micro‐photonic devices",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

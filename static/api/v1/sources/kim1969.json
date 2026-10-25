@@ -1,0 +1,39 @@
+{
+  "citation": "Y. S. Kim, R. T. Smith, \"Thermal expansion of lithium tantalate and lithium niobate single crystals\", Journal of Applied Physics 40, 4637, (1969) doi:10.1063/1.1657244",
+  "link": "https://doi.org/10.1063/1.1657244",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Kim",
+        "given": "Y. S."
+      },
+      {
+        "family": "Smith",
+        "given": "R. T."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1657244",
+    "id": "kim1969",
+    "issued": "1969",
+    "page": "4637",
+    "read": "abstract only",
+    "title": "Thermal expansion of lithium tantalate and lithium niobate single crystals",
+    "type": "article-journal",
+    "volume": "40"
+  }
+}

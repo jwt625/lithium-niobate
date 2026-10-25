@@ -1,0 +1,54 @@
+{
+  "citation": "V. Plessky, S. Yandrapalli, P.J. Turner, et al., \"5 GHz laterally‐excited bulk‐wave resonators (XBARs) based on thin platelets of lithium niobate\", Electronics Letters 55, 98-100, (2019) doi:10.1049/el.2018.7297",
+  "link": "https://doi.org/10.1049/el.2018.7297",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Plessky",
+        "given": "V."
+      },
+      {
+        "family": "Yandrapalli",
+        "given": "S."
+      },
+      {
+        "family": "Turner",
+        "given": "P.J."
+      },
+      {
+        "family": "Villanueva",
+        "given": "L.G."
+      },
+      {
+        "family": "Koskela",
+        "given": "J."
+      },
+      {
+        "family": "Hammond",
+        "given": "R.B."
+      }
+    ],
+    "container_title": "Electronics Letters",
+    "doi": "10.1049/el.2018.7297",
+    "id": "plessky2019",
+    "issue": "2",
+    "issued": "2019-01",
+    "page": "98-100",
+    "read": "bibliographic record only (Crossref)",
+    "title": "5 GHz laterally‐excited bulk‐wave resonators (XBARs) based on thin platelets of lithium niobate",
+    "type": "article-journal",
+    "volume": "55"
+  }
+}

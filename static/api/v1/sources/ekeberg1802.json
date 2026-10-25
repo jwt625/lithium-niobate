@@ -1,0 +1,30 @@
+{
+  "citation": "Anders Gustaf Ekeberg, \"Paper naming tantalum (as cited)\", Kongl. Vetenskaps Academiens Nya Handlingar, 68 (1802)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Anders Gustaf Ekeberg"
+      }
+    ],
+    "container_title": "Kongl. Vetenskaps Academiens Nya Handlingar",
+    "id": "ekeberg1802",
+    "issued": "1802",
+    "page": "68",
+    "read": "Not seen. Cited by Wollaston 1809 (footnote) and Rose 1844 (p. 318, via Crell's Annalen 1803)",
+    "title": "Paper naming tantalum (as cited)",
+    "type": "webpage"
+  }
+}

@@ -1,0 +1,40 @@
+# Process viewer core (src/lib/scenes/process/): wafer-scale bodies, tools and the illustrative z-map.
+# Step parameters come from content/chapters/05-making/process-flow.yaml (copied into the generated file by
+# assets3d/build_scene_data.py); this file holds only what the YAML does not: body sizes it cites elsewhere and
+# display templates. Same field vocabulary as crystal.toml. Lengths in mm unless stated.
+
+[meta]
+id = "process"
+date = "2026-10-25"
+scene_unit = "mm"
+flow = "content/chapters/05-making/process-flow.yaml"
+steps_ridge_duv = ["s07_handle", "s08_implant", "s09_bond", "s10_split", "s11_cmp", "s12_recovery_anneal", "s13r_hardmask", "s14r_coat", "s15r_expose"]
+steps_strip_dlc = ["s07_handle", "s08_implant", "s09_bond", "s10_split", "s11_cmp", "s12_recovery_anneal", "s13s_hardmask", "s14s_expose"]
+
+[bodies]
+wafer_diameter = { value = 100, unit = "mm", status = "reported", source = "luke2020", locator = "4-inch x-cut LNOI (process-flow.yaml scales: wafer)", analog = false }
+donor_thickness = { value = 500, unit = "um", status = "reported", source = "R09:S3", locator = "process-flow.yaml s05 wafer_thickness_donor (SAW wafer spec as donor proxy)", analog = true }
+edge_exclusion = { value = 8, unit = "mm", status = "reported", source = "luke2020", locator = "Sec. III (process-flow.yaml s11 edge_exclusion)", analog = true }
+reticle_field = { value = [22, 22], unit = "mm", status = "reported", source = "luke2020", locator = "Sec. III (process-flow.yaml s15r reticle_field)", analog = false }
+
+[tools]
+# Tools are drawn as their most involved part only (R13 E7); no tool dimension is sourced.
+implant_beam_diameter = { value = 12, unit = "mm", status = "template", note = "scanned beam spot drawn 12 mm; beam size not sourced" }
+cmp_pad_diameter = { value = 260, unit = "mm", status = "template", note = "platen pad drawn 2.6x the wafer; not sourced" }
+cmp_head_diameter = { value = 116, unit = "mm", status = "template", note = "carrier head with retaining ring drawn slightly larger than the wafer; not sourced" }
+oven_tube_diameter = { value = 150, unit = "mm", status = "template", note = "tube furnace drawn around the wafer; not sourced" }
+chuck_thickness = { value = 8, unit = "mm", status = "template", note = "bonder chucks drawn 8 mm thick; not sourced" }
+lens_diameter = { value = 60, unit = "mm", status = "template", note = "stepper projection-lens bottom element drawn 60 mm; not sourced" }
+
+[zmap]
+# Frozen illustrative heights in scene mm (wafer 100 mm wide); true scale uses the real thicknesses.
+si = { value = 4.0, unit = "mm (display)", status = "template", note = "Si handle 500 um drawn 4 mm" }
+oxide = { value = 1.4, unit = "mm (display)", status = "template", note = "4.7 um thermal SiO2 drawn 1.4 mm" }
+donor = { value = 4.0, unit = "mm (display)", status = "template", note = "500 um LN donor drawn 4 mm" }
+film = { value = 1.2, unit = "mm (display)", status = "template", note = "LN film at the split depth (0.68 um) drawn 1.2 mm; thins in proportion during CMP (constant-aspect rule, R13)" }
+hardmask = { value = 0.9, unit = "mm (display)", status = "template", note = "SiO2 or DLC hard mask drawn 0.9 mm" }
+resist = { value = 0.8, unit = "mm (display)", status = "template", note = "ARC plus resist drawn 0.8 mm" }
+
+[timing]
+step_duration = { value = 6, unit = "s at 1x", status = "template", note = "equal playback duration per step (figures.md F05-01 E2); real process time shown in the HUD, never used for playback" }
+phases = { value = [0.2, 0.8], unit = "t", status = "template", note = "approach t < 0.2, ops 0.2-0.8, retract > 0.8" }

@@ -1,0 +1,54 @@
+{
+  "citation": "Cheng Wang, Mian Zhang, Mengjie Yu, et al., \"Monolithic lithium niobate photonic circuits for Kerr frequency comb generation and modulation\", Nature Communications 10, 978, (2019) doi:10.1038/s41467-019-08969-6",
+  "link": "https://doi.org/10.1038/s41467-019-08969-6",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "article_number": "978",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Cheng"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Yu",
+        "given": "Mengjie"
+      },
+      {
+        "family": "Zhu",
+        "given": "Rongrong"
+      },
+      {
+        "family": "Hu",
+        "given": "Han"
+      },
+      {
+        "family": "Loncar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Nature Communications",
+    "doi": "10.1038/s41467-019-08969-6",
+    "id": "wang2019",
+    "issue": "1",
+    "issued": "2019-02-28",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Monolithic lithium niobate photonic circuits for Kerr frequency comb generation and modulation",
+    "type": "article-journal",
+    "volume": "10"
+  }
+}

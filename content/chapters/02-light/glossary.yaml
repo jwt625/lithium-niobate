@@ -1,0 +1,328 @@
+# Chapter 02 Light: glossary
+# short = L1 popup line; def = precise definition; symbol/unit where applicable; see = related ids; src = refs.yaml id when the definition rests on one.
+- id: birefringence
+  term: birefringence
+  short: Two refractive indices for two polarizations travelling in the same direction.
+  def: "Difference between the eigen-indices of the two polarization eigenmodes for one propagation direction. For LN along a direction perpendicular to c it equals n_e - n_o (negative)."
+  symbol: "Delta n"
+  see: [uniaxial, ordinary-index, extraordinary-index]
+- id: uniaxial
+  term: uniaxial crystal
+  short: A crystal with one optic axis; LN is uniaxial along c.
+  def: "Crystal whose dielectric tensor has two equal principal values (n_o, n_o, n_e). Negative uniaxial: n_e < n_o (LN)."
+  see: [optic-axis, index-ellipsoid]
+- id: ordinary-index
+  term: ordinary index
+  short: Index for light polarized perpendicular to c.
+  def: "Principal index n_o for polarization perpendicular to the optic axis; independent of propagation direction."
+  symbol: "n_o"
+  src: zelmon1997
+- id: extraordinary-index
+  term: extraordinary index
+  short: Index for light polarized along c.
+  def: "Principal index n_e for polarization along the optic axis; a wave at angle theta to c sees n_e(theta), 1/n_e(theta)^2 = cos^2(theta)/n_o^2 + sin^2(theta)/n_e^2."
+  symbol: "n_e"
+  src: zelmon1997
+- id: optic-axis
+  term: optic axis
+  short: Direction in which both polarizations see the same index.
+  def: "Propagation direction with zero birefringence. Uniaxial crystals have one (along c in LN); a transverse field makes LN biaxial with two optic axes tilted from c."
+  see: [conoscopy, melatope]
+- id: index-ellipsoid
+  term: index ellipsoid (indicatrix)
+  short: A surface whose cross-sections give the indices a wave can see.
+  def: "Surface sum_ij (1/n^2)_ij x_i x_j = 1. The section through the origin normal to the wave vector is an ellipse whose semi-axes are the two eigen-indices and whose axes are the eigen-polarizations."
+  see: [impermeability]
+  src: bornwolf
+- id: impermeability
+  term: optical impermeability
+  short: The inverse dielectric tensor, the quantity the Pockels effect changes linearly.
+  def: "B = eps_r^-1 = (1/n^2)_ij. Electro-optic effect: Delta B_I = r_Ij E_j (contracted index I)."
+  symbol: "(1/n^2)_ij"
+- id: walk-off
+  term: walk-off
+  short: The energy of an extraordinary wave drifts sideways from its wave vector.
+  def: "Angle rho between Poynting vector and wave vector for an extraordinary wave: tan(rho) = (n_e(theta)^2/2)(1/n_e^2 - 1/n_o^2) sin(2 theta). In LN at 1550 nm at most 1.938 deg (theta = 44.03 deg)."
+  symbol: "rho"
+  unit: deg
+- id: conoscopy
+  term: conoscopy
+  short: Viewing a crystal plate in a cone of light between crossed polarizers.
+  def: "Each point of the observed figure corresponds to one propagation direction through the plate; the figure shows isogyres (polarization extinction) and isochromes (constant retardation)."
+  see: [isogyre, isochrome, melatope]
+  src: bornwolf
+- id: isogyre
+  term: isogyre
+  short: Dark brush where an eigen-polarization lines up with the polarizer.
+  def: "Locus of directions whose eigen-polarization azimuth is 0 or 90 deg to the polarizer; forms the dark cross of a uniaxial interference figure."
+- id: isochrome
+  term: isochrome
+  short: Ring of equal retardation.
+  def: "Locus of directions with equal phase retardation Gamma; dark between crossed polarizers in monochromatic light where Gamma = 2 pi m."
+- id: melatope
+  term: melatope
+  short: Point in a conoscopic figure where an optic axis emerges.
+  def: "Center of the isochrome system; one in a uniaxial figure, two in a biaxial figure."
+- id: retardation
+  term: retardation
+  short: Phase lag between the two polarizations after a plate.
+  def: "Gamma = (2 pi d / lambda)(n_1 cos theta_1 - n_2 cos theta_2) for eigenwaves 1 and 2 through a plate of thickness d."
+  symbol: "Gamma"
+  unit: rad
+- id: sellmeier
+  term: Sellmeier equation
+  short: Fitted formula for refractive index vs wavelength.
+  def: "Empirical dispersion model, here n^2 - 1 = sum_i B_i lambda^2/(lambda^2 - C_i) (Zelmon) or temperature-dependent extensions (Jundt, Gayer). Valid only inside its fitted wavelength and temperature window."
+  src: zelmon1997
+- id: group-index
+  term: group index
+  short: Index that sets the speed of a pulse.
+  def: "n_g = n - lambda dn/dlambda; sets group velocity c/n_g, ring free spectral range FSR = c/(n_g L_rt) and Q-to-loss conversion."
+  symbol: "n_g"
+- id: thermo-optic
+  term: thermo-optic coefficient
+  short: Index change per kelvin.
+  def: "dn/dT at fixed wavelength. For CLN at 1550 nm dn_e/dT is about 3.75e-5 /K (from Jundt's model); dn_o/dT is about ten times smaller."
+  unit: "1/K"
+  src: jundt1997
+- id: cln
+  term: CLN, congruent LN
+  short: LN grown at the composition where melt and crystal match; Li-deficient.
+  def: "Congruent lithium niobate, about 48.4 to 48.5 mol% Li2O. Standard wafer material. Contrast SLN (near-stoichiometric, about 50 mol%) and MgO-doped LN."
+  src: volk2008
+- id: mgo-ln
+  term: MgO:LN
+  short: LN doped with magnesium oxide to resist optical damage.
+  def: "Typically 5 mol% MgO in congruent LN (MgO5) or about 1 mol% in SLN; changes n_e noticeably and needs its own Sellmeier model (Zelmon MgO5 corrected, Gayer)."
+  see: [sellmeier]
+- id: pockels
+  term: Pockels effect (linear electro-optic effect)
+  short: Refractive index changes in proportion to an applied electric field.
+  def: "Delta(1/n^2)_I = r_Ij E_j. For field and polarization along c: Delta n_e = -(1/2) n_e^3 r33 E_z."
+  see: [r-tensor, impermeability]
+- id: r-tensor
+  term: electro-optic tensor
+  short: The table of coefficients r_Ij linking field to index change.
+  def: "Third-rank tensor in contracted 6 x 3 form. Point group 3m has four independent coefficients: r13, r22, r33, r51 (r42 = r51)."
+  unit: "pm/V"
+  src: weis1985
+- id: clamped-free
+  term: clamped (S) and free (T) coefficients
+  short: Coefficients measured above or below the acoustic resonances.
+  def: "Clamped (constant strain, S): field frequency above mechanical resonances. Free (constant stress, T): includes the indirect contribution through converse piezoelectric strain and photoelasticity, r^T = r^S + p d."
+  src: weis1985
+- id: voigt
+  term: contracted (Voigt) index
+  short: Shorthand that maps index pairs to 1..6.
+  def: "1 = xx, 2 = yy, 3 = zz, 4 = yz, 5 = xz, 6 = xy. Factor conventions for strain-like quantities differ between sources (convention of 2s); see chapter 03."
+- id: vpi
+  term: half-wave voltage
+  short: Voltage that shifts the optical phase by pi.
+  def: "V_pi; for an MZM, the voltage between transmission maximum and minimum. Push-pull halves V_pi relative to single-arm drive for the same electrodes."
+  symbol: "V_pi"
+  unit: V
+- id: vpil
+  term: V_pi L
+  short: Half-wave voltage times electrode length; a modulator's efficiency figure.
+  def: "Product of V_pi and active length; comparable between devices only with the same convention (push-pull vs single arm, DC vs RF, wavelength)."
+  unit: "V cm"
+- id: push-pull
+  term: push-pull
+  short: The two MZM arms see opposite fields.
+  def: "Drive configuration in which the phase changes in the two arms have opposite sign, as in a G-S-G line with one arm per gap."
+- id: overlap
+  term: EO overlap factor
+  short: Fraction of the ideal field-mode coupling a real electrode achieves.
+  def: "Gamma = (g/V) integral_LN E^RF |E|^2 dA / integral |E|^2 dA. Power-normalized perturbation theory replaces n_e^3 by n_e^4/n_eff, which matters when n_eff is well below n_e."
+  symbol: "Gamma"
+- id: chi2
+  term: second-order susceptibility
+  short: The material response quadratic in the optical field.
+  def: "chi(2); in the d convention chi(2) = 2d. Nonzero only in non-centrosymmetric crystals such as LN."
+  see: [d-tensor]
+- id: d-tensor
+  term: nonlinear coefficient tensor
+  short: Coefficients d_il that set how strongly light mixes.
+  def: "Contracted 3 x 6 tensor; in 3m with Kleinman symmetry the independent coefficients are d33, d31, d22. P_i(2 omega) = 2 eps0 sum_l d_il (E E)_l."
+  unit: "pm/V"
+  src: boyd2008
+- id: kleinman
+  term: Kleinman symmetry
+  short: Permutation symmetry of d far from absorption.
+  def: "For non-dispersive (far from resonance) response, d_ijk is symmetric under all index permutations; in 3m this gives d15 = d24 = d31."
+  src: kleinman1962
+- id: miller-rule
+  term: Miller's rule
+  short: Rule of thumb scaling d with linear susceptibilities.
+  def: "chi(2)(omega3; omega1, omega2) proportional to chi(1)(omega1) chi(1)(omega2) chi(1)(omega3) with a material-weakly-dependent constant."
+  src: miller1964
+- id: shg
+  term: second-harmonic generation
+  short: Two photons merge into one at twice the frequency.
+  def: "Degenerate sum-frequency generation omega + omega -> 2 omega."
+  see: [sfg, phase-matching]
+- id: sfg
+  term: sum-frequency generation
+  short: Two photons merge into one at the sum frequency.
+  def: "omega1 + omega2 -> omega3 = omega1 + omega2."
+- id: dfg
+  term: difference-frequency generation
+  short: A pump and a signal produce light at their difference frequency.
+  def: "omega3 - omega1 -> omega2; physically the same interaction as parametric amplification of omega1."
+- id: phase-matching
+  term: phase matching
+  short: Keeping the generated wave in step with the driving polarization.
+  def: "Condition Delta k = k3 - k1 - k2 (- 2 pi m / Lambda for QPM) = 0; with Delta k != 0 the generated power oscillates with period 2 L_c in z."
+  src: armstrong1962
+- id: coherence-length
+  term: coherence length
+  short: Distance after which generated light starts converting back.
+  def: "L_c = pi / |Delta k|. Bulk CLN, 1550 nm SHG, e-e-e: 9.495 um."
+  symbol: "L_c"
+  unit: um
+- id: bpm
+  term: birefringent phase matching
+  short: Using the two indices of a birefringent crystal to cancel dispersion.
+  def: "Choosing polarizations and propagation angle so that Delta k = 0; in LN type I (o + o -> e) uses d31 and d22 only, never d33."
+- id: qpm
+  term: quasi-phase matching
+  short: Flipping the crystal's polarity periodically to keep conversion growing.
+  def: "Periodic sign reversal of d with period Lambda supplies the grating vector 2 pi m / Lambda; first order, 50% duty: d_eff = (2/pi) d33."
+  src: fejer1992
+- id: ppln
+  term: PPLN
+  short: Periodically poled lithium niobate.
+  def: "LN with ferroelectric domains reversed in a periodic pattern by electric-field poling, used for QPM. Bulk 1550 nm SHG period 18.99 um (CLN, 21 C); TFLN periods of a few um."
+  see: [qpm]
+  src: yamada1993
+- id: duty-cycle
+  term: duty cycle
+  short: Fraction of each poling period with one domain orientation.
+  def: "D; d_eff for order m scales as sin(m pi D)."
+  src: fejer1992
+- id: eta-norm
+  term: normalized conversion efficiency
+  short: SHG efficiency per watt and per length squared.
+  def: "eta_norm = P_2w/(P_w^2 L^2) in the undepleted, phase-matched, lossless limit; unit %/W/cm^2. Theory: 8 pi^2 d_eff^2/(eps0 c n_w^2 n_2w lambda_w^2 A_eff)."
+  unit: "%/W/cm^2"
+- id: a-eff
+  term: effective area
+  short: Cross-section that sets nonlinear intensity in a waveguide.
+  def: "Area defined by the nonlinear overlap of the interacting modes; its definition (with or without n_eff, which field components) must be stated with every value."
+  unit: "um^2"
+- id: acceptance-bandwidth
+  term: acceptance bandwidth
+  short: Range of wavelength, temperature or angle over which phase matching holds.
+  def: "Full width at half maximum of sinc^2(Delta k L/2) in the chosen parameter q: 2.783/(L |d Delta k/dq|)."
+- id: gvm
+  term: group-velocity mismatch
+  short: Pulses at two wavelengths travel at different speeds.
+  def: "Difference of inverse group velocities, (n_g2 - n_g1)/c; bulk CLN e-polarized 1550/775 nm: 302 fs/mm."
+  unit: "fs/mm"
+- id: opa
+  term: optical parametric amplification
+  short: A pump amplifies a signal and creates an idler.
+  def: "Three-wave mixing omega_p -> omega_s + omega_i with gain; degenerate phase-sensitive amplitude gain coefficient Gamma = sqrt(eta_norm P_p) in the normalization of this chapter."
+- id: opo
+  term: optical parametric oscillator
+  short: Parametric gain inside a resonator, oscillating above threshold.
+  def: "Device in which parametric gain exceeds round-trip loss for signal and/or idler. SRO: one wave resonant; DRO: signal and idler resonant; triply resonant: pump as well."
+  src: giordmaine1965
+- id: opo-threshold
+  term: OPO threshold
+  short: Pump power at which the OPO starts oscillating.
+  def: "For a resonator with energy decay rates kappa_j and coupling g: P_th = hbar omega_p kappa_p^2 kappa_s kappa_i/(16 g^2 kappa_p,ex) (all resonant, zero detuning, H = hbar g(a_p^dagger a_s a_i + h.c.))."
+- id: kerr
+  term: optical Kerr effect
+  short: Index rises with light intensity.
+  def: "n = n_0 + n2 I. LN: n2 = 9.33e-20 m^2/W at 1064 nm (Z-scan, 30 ps, e-pol)."
+  symbol: "n2"
+  unit: "m^2/W"
+  src: desalvo1996
+- id: gamma-nl
+  term: nonlinear parameter
+  short: Kerr phase per watt per metre in a waveguide.
+  def: "gamma = 2 pi n2/(lambda A_eff); nonlinear phase gamma P L."
+  unit: "1/(W m)"
+- id: cascaded-chi2
+  term: cascaded chi(2)
+  short: A mismatched chi(2) process that acts like a Kerr effect of chosen sign.
+  def: "For |Delta k| L >> 1, up- and down-conversion produce a fundamental phase -eta_norm P L/Delta k; negative (defocusing) for Delta k = k_2w - 2k_w - 2 pi/Lambda > 0."
+  src: desalvo1992
+- id: kerr-comb
+  term: Kerr frequency comb
+  short: Equally spaced laser lines generated by four-wave mixing in a ring.
+  def: "Comb formed by cascaded four-wave mixing in a high-Q resonator pumped by a CW laser; a dissipative Kerr soliton is its mode-locked state."
+  src: kippenberg2018
+- id: lle
+  term: Lugiato-Lefever equation
+  short: The equation that models Kerr combs in a ring.
+  def: "Driven, damped nonlinear Schrodinger equation for the intracavity field: d psi/dt = -(1 + i zeta) psi + i |psi|^2 psi + i (d2/2) d^2 psi/d theta^2 + f."
+  src: lugiato1987
+- id: soliton-step
+  term: soliton step
+  short: Plateau in intracavity power as solitons form during a laser scan.
+  def: "Discrete step in transmitted or intracavity power during a red-detuning scan, one per change in soliton number."
+  src: herr2014
+- id: raman
+  term: stimulated Raman scattering
+  short: Light scattering from lattice vibrations that can steal comb power.
+  def: "Inelastic scattering with gain at the phonon frequency offset; strong in LN and a competitor to soliton formation in TFLN rings."
+  src: gong2020
+- id: eo-comb
+  term: electro-optic frequency comb
+  short: Comb made by driving a phase modulator, often inside a ring.
+  def: "Lines spaced by the microwave drive frequency; in a resonator driven at its FSR the amplitude envelope decays as exp(-pi |k|/(beta F))."
+  src: zhang2019
+- id: fsr
+  term: free spectral range
+  short: Frequency spacing between adjacent ring resonances.
+  def: "FSR = c/(n_g L_rt) for round-trip length L_rt."
+  unit: Hz
+- id: finesse
+  term: finesse
+  short: Resonance spacing divided by resonance width.
+  def: "F = FSR / linewidth = pi sqrt(r)/(1 - r) for round-trip amplitude transmission r."
+- id: frequency-shifter
+  term: electro-optic frequency shifter
+  short: Device that moves light to a new frequency with a microwave drive.
+  def: "In TFLN, two coupled rings (photonic molecule) with supermode splitting 2 mu driven at Omega = 2 mu transfer light between supermodes, shifting it by Omega."
+  src: hu2021
+- id: photonic-molecule
+  term: photonic molecule
+  short: Two coupled resonators with split supermodes.
+  def: "Coupled optical resonators whose normal modes (symmetric, antisymmetric) are split by twice the coupling rate."
+- id: lnoi
+  term: LNOI, TFLN
+  short: Thin-film lithium niobate on insulator.
+  def: "Sub-micrometre single-crystal LN film bonded on a silica layer (or other insulator), patterned into waveguides by etching."
+- id: x-cut
+  term: x-cut
+  short: Wafer whose surface normal is the crystal x axis; c lies in the plane.
+  def: "Film normal along crystal x; TE modes propagating along y are polarized along c and use r33 and d33 with in-plane electrodes."
+- id: z-cut
+  term: z-cut
+  short: Wafer whose surface normal is the c axis.
+  def: "Film normal along crystal z; TM modes use r33 and d33 with vertical fields; TE modes see n_o in every in-plane direction."
+- id: rib-waveguide
+  term: rib waveguide
+  short: Partially etched film forming a ridge on a thin slab.
+  def: "Waveguide with film thickness t, etch depth e (slab t - e), top width w and sidewall angle; the slab carries part of the mode and of the electro-optic effect."
+- id: te-tm
+  term: TE, TM (quasi-)modes
+  short: Modes polarized mainly in the plane or normal to the film.
+  def: "Quasi-TE: dominant electric field parallel to the film; quasi-TM: dominant field normal to it. In high-contrast anisotropic guides both carry all three field components."
+- id: mode-hybridization
+  term: mode hybridization
+  short: TE and TM modes mix where their indices would cross.
+  def: "Anticrossing of TE- and TM-like modes caused by broken symmetry (slanted sidewalls, asymmetric slab, rotated crystal axes), producing hybrid polarization states."
+  src: kaushalram2020
+- id: intrinsic-q
+  term: intrinsic Q
+  short: Quality factor set by the resonator's own loss.
+  def: "Q_i = omega/kappa_0; converts to propagation loss alpha = 2 pi n_g/(Q_i lambda)."
+- id: propagation-loss
+  term: propagation loss
+  short: Power lost per unit length in a waveguide.
+  def: "alpha in 1/m or dB/m (alpha_dB = 4.343 alpha). Mechanisms: scattering, absorption, bend radiation, substrate leakage, metal absorption."
+  unit: "dB/m"

@@ -1,0 +1,149 @@
+/* Chapter 2.7 Waveguides in TFLN: page styles. Every rule under .lt; VISUAL rules under :root[data-mode="visual"].
+   Fixed boxes: every SVG has a fixed viewBox at width 100%; the no-data frame reserves the final plot size. */
+
+/* ---------- TECH ---------- */
+.lt .f27-xs svg, .lt .f27-polar-w svg { display: block; width: 100%; height: auto; }
+.lt .f27-xs .plotbox { padding: 10px 10px 6px; }
+.lt .f27-polar-w { max-width: 420px; margin: 0 auto; padding: 10px 10px 4px; }
+.lt .f27-side { display: flex; flex-direction: column; min-width: 0; }
+.lt .f27-side .ctl:first-child { border-top: 0; }
+.lt table.ro td .b { vertical-align: 0; }
+.lt .f27-vt td.k { width: 46%; }
+.lt .f27-vt td.s { width: 1%; }
+
+/* cross-section, TECH line drawing */
+.lt svg.f27x .xs-si { fill: var(--rule); stroke: var(--fg3); stroke-width: 1; }
+.lt svg.f27x .xs-box, .lt svg.f27x .xs-clad { fill: none; stroke: var(--rule2); stroke-width: 1; }
+.lt svg.f27x .xs-ln { fill: var(--fg3); fill-opacity: 0.55; stroke: var(--fg); stroke-width: 1; }
+.lt svg.f27x .xs-au { fill: var(--fg2); fill-opacity: 0.22; stroke: var(--fg); stroke-width: 1; }
+.lt svg.f27x .xs-brk { fill: none; stroke: var(--fg3); stroke-width: 1; }
+.lt svg.f27x .xs-dm { fill: none; stroke: var(--fg2); stroke-width: 1; }
+.lt svg.f27x .xs-ld { fill: none; stroke: var(--fg3); stroke-width: 1; stroke-dasharray: 2 2; }
+.lt svg.f27x .xs-ar { fill: var(--fg2); }
+.lt svg.f27x .xs-dmt, .lt svg.f27x .xs-dmt { font: 400 13px var(--mono); fill: var(--fg); }
+.lt svg.f27x .xs-lb { font: 400 13px var(--mono); fill: var(--fg3); }
+
+/* mode lattice */
+.lt .lp .fl { fill: none; stroke: var(--fg3); stroke-opacity: 0.35; stroke-width: 7; stroke-linecap: butt; stroke-linejoin: round; }
+.lt .lp .oor { stroke: none; }
+.lt .lp .hpl { stroke: var(--rule2); stroke-width: 1; }
+.lt .lgd .k.f27-kfl { border-top: 6px solid color-mix(in srgb, var(--fg3) 35%, transparent); vertical-align: 1px; }
+.lt table.ro.f27-mro td.v { white-space: pre; }
+.lt table.idx.f27-held { min-width: 900px; margin-top: 0; border-left: 0; border-right: 0; }
+.lt table.idx.f27-held th { font-size: 10px; }
+.lt .f27-lat .pf { line-height: 1.5; }
+/* reserved, inactive mode-lattice frame */
+.lt .f27-off { opacity: 0.45; }
+.lt .f27-off input, .lt .f27-off button { cursor: not-allowed; }
+.lt .nodata.f27-nd { display: flex; align-items: center; justify-content: center; text-align: center; aspect-ratio: 600 / 330; margin: 10px; padding: 18px 24px; line-height: 1.6; }
+.lt .f27-lat table.ro td.v { color: var(--fg3); }
+
+/* converter text inputs */
+.lt input.f27-num { width: 100%; box-sizing: border-box; height: 22px; padding: 0 6px; border: 1px solid var(--rule2); border-radius: 0; background: var(--bg); color: var(--fg); font: 400 12px var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
+.lt input.f27-num:focus-visible { outline: 1px solid var(--fg); outline-offset: 1px; }
+.lt input.f27-num[aria-invalid="true"] { border-style: dashed; color: var(--fg3); }
+.lt .f27-logb { font: 400 10.5px/16px var(--mono); padding: 0 6px; border: 1px solid var(--rule2); background: none; color: var(--fg2); cursor: pointer; border-radius: 0; }
+.lt .f27-logb.on { background: var(--fg); color: var(--bg); }
+.lt .f27-gap { padding: 5px 8px; border-top: 1px solid var(--rule); font: 400 11.5px/18px var(--mono); color: var(--fg2); }
+.lt .f27-gap b { font-weight: 400; color: var(--fg); }
+.lt table.idx td.lp0 { white-space: nowrap; }
+.lt table.idx.f27-tab th, .lt table.idx.f27-tab td { vertical-align: top; }
+.lt table.idx.f27-tab { min-width: 600px; }
+.lt table.idx.f27-tab.f27-rec { min-width: 820px; }
+@media (max-width: 520px) {
+  .lt #f27-lsvg .tk, .lt #f27-lsvg .al { font-size: 15px; }
+  .lt #f27-lsvg .lg, .lt #f27-lsvg text.v { font-size: 14px; }
+}
+.lt .eq math { max-width: 100%; overflow-x: auto; }
+.lt .panel.lt-fig { margin-bottom: 16px; }
+.lt .lgd .k.s6 { border-top: 1.2px dotted var(--fg3); }
+.lt .lgd .k.f27-kc { border-top: 1px dashed var(--fg2); }
+.lt .nodata.f27-nd > span { display: block; max-width: 62ch; }
+
+/* ---------- VISUAL ---------- */
+:root[data-mode="visual"] {
+  & .lt .f27-stage-x svg, & .lt .f27-stage-w svg, & .lt .f27-stage-s svg { display: block; width: 100%; height: auto; }
+  & .lt .f27-stage-w { max-width: 560px; justify-self: center; width: 100%; padding: 16px; box-sizing: border-box; }
+  & .lt .f27-stage-x, & .lt .f27-stage-s { padding: 16px; }
+
+  /* cross-section */
+  & .lt .vx-brk { fill: none; stroke: var(--v-text3); stroke-width: 1.5; }
+  & .lt .vx-c { fill: none; stroke: var(--v-text); stroke-width: 2.5; }
+  & .lt .vx-ch { fill: var(--v-text); }
+  & .lt .vx-cl { font: 500 16px var(--v-ui); fill: var(--v-text); }
+  & .lt .vx-lead { fill: none; stroke: var(--v-text3); stroke-width: 1; }
+  & .lt .vx-dm { fill: none; stroke: var(--v-text2); stroke-width: 1.5; }
+  & .lt .vx-dmt { font: 500 16px var(--v-ui); fill: var(--v-text); }
+  & .lt .vx-lb { font: 500 16px var(--v-ui); fill: var(--v-text2); }
+  & .lt .vx-lb.au { fill: var(--v-ink0); font-weight: 600; }
+  & .lt .vx-lb.si { fill: var(--v-ink0); }
+  & .lt .vx-lb.ln { fill: var(--v-ln); }
+
+  /* ring on the wafer */
+  & .lt .f27-stage-w .wf { fill: var(--v-ink2); stroke: var(--v-line2); stroke-width: 2; }
+  & .lt .f27-stage-w .rg { fill: none; stroke: var(--v-line2); stroke-width: 1; }
+  & .lt .f27-stage-w .axc, & .lt .f27-stage-w .axy { stroke: var(--v-text2); stroke-width: 2; }
+  & .lt .f27-stage-w .axch, & .lt .f27-stage-w .axyh { fill: var(--v-text2); }
+  & .lt .f27-stage-w .axc { stroke: var(--v-text); } & .lt .f27-stage-w .axch { fill: var(--v-text); }
+  & .lt .f27-stage-w .axl { font: 500 17px var(--v-ui); fill: var(--v-text); }
+  & .lt .f27-stage-w .dotn { fill: none; stroke: var(--v-text2); stroke-width: 1.5; }
+  & .lt .f27-stage-w .dotc { fill: var(--v-text2); }
+  & .lt .f27-stage-w .pr { fill: var(--v-l532); stroke: var(--v-ink0); stroke-width: 2; }
+  & .lt .f27-stage-w .dir { fill: none; stroke: var(--v-text2); stroke-width: 1.5; }
+  & .lt .f27-stage-w .dirh { fill: var(--v-text2); }
+  & .lt .f27-stage-w .pl { font: 500 15px var(--v-ui); fill: var(--v-text2); }
+  & .lt .f27-stage-w .lgf { fill: none; stroke: var(--v-line2); }
+  & .lt .f27-stage-w .lgt { font: 500 15px var(--v-ui); fill: var(--v-text2); font-variant-numeric: tabular-nums; }
+
+  /* staircase */
+  & .lt .vs-gl { stroke: var(--v-line); stroke-width: 1; }
+  & .lt .vs-tk { font: 500 14px var(--v-ui); fill: var(--v-text3); font-variant-numeric: tabular-nums; }
+  & .lt .vs-al { font: 500 14px var(--v-ui); fill: var(--v-text2); }
+  & .lt .vs-floor { fill: var(--v-ln); fill-opacity: 0.55; }
+  & .lt .vs-floorg { fill: var(--v-ln); fill-opacity: 0.35; }
+  & .lt .vs-fl { font: 500 15px var(--v-ui); fill: var(--v-ln); }
+  & .lt .vs-bulk { stroke: var(--v-text3); stroke-width: 1.5; stroke-dasharray: 6 5; }
+  & .lt .vs-bl { font: 500 14px var(--v-ui); fill: var(--v-text3); }
+  & .lt .vs-stair { fill: none; stroke: var(--v-line2); stroke-width: 2; }
+  & .lt .vs-rim { fill: var(--v-ink1); stroke: var(--v-ln); stroke-width: 5; }
+  & .lt .vs-rim.qb { stroke-dasharray: 4 3; }
+  & .lt .vs-rimg { fill: none; stroke: var(--v-ln); stroke-width: 8; }
+  & .lt .vs-yr { font: 500 14px var(--v-ui); fill: var(--v-text2); font-variant-numeric: tabular-nums; }
+  & .lt .vs-v { font: 600 13px var(--v-ui); fill: var(--v-text); font-variant-numeric: tabular-nums; }
+  & .lt .vs-cur { stroke: var(--v-l532); stroke-width: 2; }
+  & .lt .vs-curh { fill: var(--v-l532); }
+  & .lt .vs-cl { font: 600 15px var(--v-ui); fill: var(--v-l532); font-variant-numeric: tabular-nums; }
+
+  /* mode lattice instrument */
+  & .lt .f27-stage-m { padding: 16px; }
+  & .lt .f27-stage-m svg { display: block; width: 100%; height: auto; }
+  & .lt .vx-clad { fill: var(--v-sio2); }
+  & .lt .vx-box { fill: var(--v-sio2); }
+  & .lt .vx-ln { fill: var(--v-ln); }
+  & .lt .lp .fl { stroke: var(--v-line2); stroke-opacity: 0.8; stroke-width: 9; }
+  & .lt .lp .hpl { stroke: var(--v-line2); }
+  & .lt .lp .vm { fill: var(--v-ink1); stroke: var(--v-text2); stroke-width: 2.5; }
+  & .lt .lp .vm.on { fill: var(--v-l532); stroke: var(--v-ink0); stroke-width: 2; filter: drop-shadow(0 0 6px var(--v-l532)); }
+  & .lt .f27-src { margin-top: 12px; }
+  & .lt table.idx.f27-held th { font-size: 13px; }
+  /* no-data frame and inactive controls */
+  & .lt .nodata.f27-nd { aspect-ratio: 760 / 470; margin: 0; padding: 32px 40px; font: 400 19px/30px var(--v-serif); }
+  & .lt .f27-off { opacity: 0.42; }
+  & .lt .f27-off .v-seg button { cursor: not-allowed; }
+  & .lt .f27-off input[type="range"]::-webkit-slider-runnable-track { background: var(--v-line2); }
+  & .lt .f27-off input[type="range"]::-moz-range-track { background: var(--v-line2); }
+  & .lt .v-side > .f27-tog { justify-self: start; }
+  & .lt .v-hud.f27-hud3 { grid-template-columns: minmax(0, 1fr) auto auto; gap: 6px 10px; }
+  & .lt .v-hud.f27-hud3 dt { white-space: normal; }
+  & .lt .v-hud.f27-hud3 dd.s { text-align: left; }
+  & .lt .vs-id { font: 500 12px var(--v-ui); fill: var(--v-text3); }
+
+  /* converter inputs */
+  & .lt .v-ctl.f27-qrow { grid-template-areas: "lab tx" "in in"; }
+  & .lt .v-ctl.f27-qrow > input.f27-num { grid-area: tx; }
+  & .lt input.f27-num { width: var(--w, 9ch); height: 40px; padding: 0 10px; border: 2px solid var(--v-line2); background: var(--v-ink1); color: var(--v-text); font: 500 22px var(--v-ui); font-variant-numeric: tabular-nums lining-nums; }
+  & .lt input.f27-num:focus-visible { outline: 3px solid var(--v-l532); outline-offset: 3px; }
+  & .lt input.f27-num[aria-invalid="true"] { border-style: dashed; color: var(--v-text3); }
+  & .lt .f27-gapv { font: 400 18px/28px var(--v-serif); color: var(--v-text2); margin: 0; }
+  & .lt .f27-gapv b { font: 600 22px var(--v-ui); color: var(--v-ln); font-variant-numeric: tabular-nums; }
+}

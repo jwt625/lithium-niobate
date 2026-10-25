@@ -1,0 +1,50 @@
+{
+  "citation": "Mian Zhang, Cheng Wang, Prashanta Kharel, et al., \"Integrated lithium niobate electro-optic modulators: when performance meets scalability\", Optica 8, 652, (2021) doi:10.1364/optica.415762",
+  "link": "https://doi.org/10.1364/optica.415762",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Wang",
+        "given": "Cheng"
+      },
+      {
+        "family": "Kharel",
+        "given": "Prashanta"
+      },
+      {
+        "family": "Zhu",
+        "given": "Di"
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.415762",
+    "id": "zhang2021",
+    "issue": "5",
+    "issued": "2021-05-07",
+    "page": "652",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Integrated lithium niobate electro-optic modulators: when performance meets scalability",
+    "type": "article-journal",
+    "volume": "8"
+  }
+}

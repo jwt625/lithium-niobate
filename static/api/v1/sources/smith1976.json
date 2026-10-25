@@ -1,0 +1,51 @@
+{
+  "citation": "D.S. Smith, H.D. Riccius, R.P. Edwin, \"Refractive indices of lithium niobate\", Optics Communications 17, 332, (1976) doi:10.1016/0030-4018(76)90273-X",
+  "link": "https://doi.org/10.1016/0030-4018(76)90273-X",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Smith",
+        "given": "D.S."
+      },
+      {
+        "family": "Riccius",
+        "given": "H.D."
+      },
+      {
+        "family": "Edwin",
+        "given": "R.P."
+      }
+    ],
+    "container_title": "Optics Communications",
+    "doi": "10.1016/0030-4018(76)90273-X",
+    "errata": [
+      {
+        "citation": "Errata, Opt. Commun. 20, 188 (1977)",
+        "content": "Not read.",
+        "doi": "10.1016/0030-4018(77)90191-2",
+        "issued": "1977"
+      }
+    ],
+    "id": "smith1976",
+    "issued": "1976",
+    "page": "332",
+    "read": "not read",
+    "title": "Refractive indices of lithium niobate",
+    "type": "article-journal",
+    "volume": "17"
+  }
+}

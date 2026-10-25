@@ -1,185 +1,237 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-mode="tech" data-theme="dark" data-fx="off">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pockels Effect (mockup)</title>
-<meta name="description" content="Sample chapter page of the lithium-niobate.com mockup: the Pockels effect, with an explorable, sidenotes, and a deeper layer.">
+<title>Pockels Effect</title>
+<meta name="description" content="Chapter 2.2: the Pockels effect in lithium niobate in three depth layers, from delta n = -(1/2) n^3 r E to the power-normalized EO overlap of a real TFLN modulator cross-section.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,400&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="chapter.css">
+<link rel="stylesheet" href="visual.css">
 </head>
 <body>
 <canvas id="pr-trace" aria-hidden="true"></canvas>
 
-<header class="topbar">
-  <div class="wrap row">
-    <a class="brand" href="index.html" aria-label="lithium niobate home">
-      <canvas id="logo" aria-hidden="true"></canvas>
-      <span class="name">lithium niobate</span><span class="formula">LiNbO<sub>3</sub></span>
-    </a>
-    <nav class="nav" aria-label="Chapters">
-      <a href="index.html#doors">Crystal</a><a class="on" href="chapter.html">Light</a><a href="index.html#doors">Sound</a><a href="index.html#doors">Quirks</a>
-      <a href="index.html#doors">Making</a><a href="index.html#doors">Devices</a><a href="index.html#history">History</a><a href="index.html#industry">Industry</a>
-      <a href="index.html#lab">Lab</a><a href="index.html#data">Data</a>
-    </nav>
+<header class="mast">
+  <div class="row">
+    <a class="brand" href="index.html" aria-label="lithium niobate, landing page"><canvas id="logo" aria-hidden="true"></canvas><b>lithium niobate</b><span>LiNbO<sub>3</sub></span></a>
     <div class="tools">
-      <div class="seg" data-units role="group" aria-label="Wavelength units"><button data-u="nm">nm</button><button data-u="THz">THz</button><button data-u="eV">eV</button></div>
-      <button class="iconbtn" id="motion-btn" aria-label="Toggle motion"></button>
-      <button class="iconbtn" id="theme-btn" aria-label="Toggle theme"></button>
+      <div class="seg mode" role="group" aria-label="Display mode"><button type="button" data-m="tech" title="Monochrome, static">TECH</button><button type="button" data-m="visual" title="Color and effects">VISUAL</button></div>
+      <button type="button" class="iconbtn" id="theme-btn" aria-label="Toggle light or dark theme"></button>
     </div>
   </div>
+  <div class="band" data-pop="qpm" data-pop-visual="v-qpm" data-qpm="1.55" aria-label="Poled-domain band"><span class="qpm-lab"></span></div>
+  <nav class="nav" aria-label="Chapters">
+    <span aria-disabled="true" title="Not built"><span class="n">01</span>Crystal</span>
+    <a href="chapter.html" class="on" aria-current="page"><span class="n">02</span>Light</a>
+    <span aria-disabled="true" title="Not built"><span class="n">03</span>Sound</span>
+    <span aria-disabled="true" title="Not built"><span class="n">04</span>Quirks</span>
+    <span aria-disabled="true" title="Not built"><span class="n">05</span>Making</span>
+    <span aria-disabled="true" title="Not built"><span class="n">06</span>Devices</span>
+    <span aria-disabled="true" title="Not built"><span class="n">07</span>History</span>
+    <span aria-disabled="true" title="Not built"><span class="n">08</span>Industry</span>
+  </nav>
 </header>
 
 <div class="spine" aria-hidden="true"><span class="axislabel">c</span></div>
 
-<main class="wrap">
-  <div class="crumbs"><a href="index.html">lithium niobate</a> / <a href="index.html#doors">02 Light</a> / 2.2</div>
+<main>
+  <div class="crumbs"><a href="index.html">lithium niobate</a> / 02 Light / 2.2</div>
+  <h1 class="biref ch-title">2.2 The Pockels effect</h1>
+  <nav class="depth" id="depth" aria-label="Depth">
+    <a href="#l1">L1 Phenomenon</a><a href="#l2">L2 The r tensor</a><a href="#l3">L3 Evaluating the overlap</a>
+  </nav>
 
-  <div class="chapter">
-    <article>
-      <section id="s1" data-spine="Steering light with voltage">
-        <div class="eyebrow" style="margin-top:18px">Chapter 2.2</div>
-        <h1 class="biref" style="font-size:52px">The Pockels effect</h1>
-        <div class="meta"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert in "Go deeper"</span><span class="badge">last verified 2026-10-25</span><span class="badge">4 references</span></div>
+  <!-- ================= L1 ================= -->
+  <section class="lay" id="l1" data-pair="l1" data-spine="L1 Phenomenon">
+    <div class="sh"><h2 class="biref">L1 Phenomenon</h2><span class="meta">bulk; MZM li2026aa</span></div>
+    <div class="body">
+      <p class="tx">A field <i>E</i> changes the optical impermeability 1/<i>n</i><sup>2</sup> of a non-centrosymmetric crystal linearly. With field and optical polarization both along the polar axis <i>c</i> (= <i>z</i>), the extraordinary index shifts by</p>
+      <div class="eq"><math display="block"><mrow><mi>&Delta;</mi><msub><mi>n</mi><mi>e</mi></msub><mo>=</mo><mo>&minus;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msubsup><mi>n</mi><mi>e</mi><mn>3</mn></msubsup><msub><mi>r</mi><mn>33</mn></msub><msub><mi>E</mi><mi>z</mi></msub><mo>,</mo><mspace width="1.2em"/><mi>&Delta;</mi><mi>&phi;</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>&pi;</mi></mrow><mi>&lambda;</mi></mfrac><mi>&Delta;</mi><msub><mi>n</mi><mi>e</mi></msub><mi>L</mi></mrow></math><span class="eqn">(1)</span></div>
+      <p class="tx">Sign: a positive <i>r</i><sub>33</sub><i>E</i><sub><i>z</i></sub> lowers <i>n</i><sub>e</sub>. A phase shift of &pi; needs <i>E</i>&middot;<i>L</i> = &lambda; / (<i>n</i><sub>e</sub><sup>3</sup> <i>r</i><sub>33</sub>) for a uniform field that fills the mode.</p>
 
-        <p class="lede">Light slows down inside a crystal. In lithium niobate, how much it slows down depends on the voltage you apply. Change the voltage, and you change the light.</p>
-
-        <p>Split a beam into two paths, run one of them past a pair of electrodes, and bring the paths back together. When the two beams arrive in step, they add up and the light comes out. Shift one by half a wavelength and they cancel: the light goes dark. That switch is a
-          <span class="term" data-pop="mzi">Mach-Zehnder modulator</span>, and lithium niobate versions of it have carried fiber-optic traffic for decades.</p>
-      </section>
-
-      <div class="explorable facet" style="--cut:14px" id="mzi-x">
-        <div class="vis">
-          <svg viewBox="0 0 640 200" aria-label="Mach-Zehnder modulator schematic with live output">
-            <path d="M20 100h110l40-46h300l40 46h110" fill="none" stroke="var(--text-2)" stroke-width="2"/>
-            <path d="M130 100l40 46h300l40-46" fill="none" stroke="var(--text-2)" stroke-width="2"/>
-            <rect x="200" y="30" width="240" height="10" fill="var(--gold)"/>
-            <rect x="200" y="68" width="240" height="10" fill="var(--gold)" opacity=".85"/>
-            <rect x="200" y="160" width="240" height="10" fill="var(--gold)"/>
-            <g id="wave-top"></g><g id="wave-bot"></g>
-            <rect id="out-bar" x="600" y="70" width="22" height="60" fill="var(--shg)"/>
-            <rect x="600" y="70" width="22" height="60" fill="none" stroke="var(--line-2)"/>
-            <text x="20" y="88" font-family="IBM Plex Mono" font-size="11" fill="var(--muted)">in</text>
-            <text x="582" y="150" font-family="IBM Plex Mono" font-size="11" fill="var(--muted)">out</text>
-          </svg>
+      <div class="v-mzm-wrap" data-variant="visual" data-pair="mzm">
+      <div class="v-mzm">
+        <div class="v-mzm-art" id="v-mzm-art"></div>
+        <div class="v-mzm-side">
+          <div class="v-plot" id="v-mzm-curve"></div>
+          <div class="v-ctl" style="--w:8ch"><label for="v-v">Drive voltage V</label><output id="v-v-o" for="v-v"></output><input class="v-range" id="v-v" type="range" min="-6" max="6" step="0.01" value="0"></div>
+          <dl class="v-hud"><dt>Phase per arm</dt><dd id="v-ph"></dd><dt>V / V<sub>&pi;</sub></dt><dd id="v-vr"></dd><dt>Transmission T</dt><dd id="v-t"></dd></dl>
         </div>
-        <div class="controls">
-          <div class="ctl"><label for="mv">Voltage on the electrodes</label><input id="mv" type="range" min="0" max="4" step="0.01" value="0" aria-valuetext="0 volts"><output id="mvo">0.00 V</output></div>
-          <div class="small">Half-wave voltage V<sub>&pi;</sub> = 2.0 V <span class="badge template">template</span> (illustrative; real devices: see the Modulator Designer).</div>
+      </div>
+      <div class="v-prov">
+        <span>V<sub>&pi;</sub> 2.90 V at 1550 nm <span class="b r" data-pop="li2026aa">reported</span></span>
+        <span>dashed: engine FEM, V<sub>&pi;</sub>L 2.697 V&middot;cm over 0.9 cm <span class="b d" data-pop="engine">engine</span></span>
+        <span>light: 1550 nm, <span class="term" data-pop="v-false">false color</span></span>
+      </div>
+      </div>
+
+      <div class="duo">
+        <div class="panel" id="calc">
+          <div class="ph"><span>Bulk: field and polarization along c</span><span id="calc-lam-h"></span></div>
+          <div class="ctl"><label for="c-lam">Wavelength &lambda;</label><input id="c-lam" type="range" min="0.40" max="5.00" step="0.01" value="1.55"><output id="c-lam-o"></output></div>
+          <div class="ctl"><label for="c-e">Field E<sub>z</sub></label><input id="c-e" type="range" min="-10" max="10" step="0.1" value="1"><output id="c-e-o"></output></div>
+          <table class="kv" id="calc-out"></table>
+          <div class="pf">r<sub>33</sub> is held at its 633 nm clamped value; no 1550 nm EO coefficients exist in the sources held. n<sub>e</sub>(&lambda;): Zelmon et al. 1997 Sellmeier, valid 0.4 to 5.0 &micro;m.</div>
+        </div>
+
+        <div class="panel" id="mzm" data-variant="tech" data-pair="mzm">
+          <div class="ph"><span>MZM li2026aa: T(V)</span><span><span class="b r" data-pop="li2026aa">reported V<sub>&pi;</sub> 2.90 V</span></span></div>
+          <div class="mzm-plot"><svg id="mzm-svg" viewBox="0 0 520 210" role="img" aria-label="Transmission versus drive voltage"></svg></div>
+          <div class="ctl"><label for="mzm-v">Drive voltage V</label><input id="mzm-v" type="range" min="-6" max="6" step="0.01" value="0"><output id="mzm-v-o"></output></div>
+          <table class="kv" id="mzm-out"></table>
+          <div class="pf">9 mm x-cut TFLN on silicon, G-S-G coplanar line, one waveguide per gap: the two arms see opposite fields (push-pull). T = cos<sup>2</sup>(&pi;V / 2V<sub>&pi;</sub>), zero bias phase. Dashed: engine FEM, same cross-section (L3).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= L2 ================= -->
+  <section class="lay" id="l2" data-pair="l2" data-spine="L2 The r tensor">
+    <div class="sh"><h2 class="biref">L2 The r tensor</h2><span class="meta">point group 3m</span></div>
+    <div class="body">
+      <p class="tx">Index ellipsoid and its first-order perturbation, contracted index <i>I</i>: 1 = <i>xx</i>, 2 = <i>yy</i>, 3 = <i>zz</i>, 4 = <i>yz</i>, 5 = <i>xz</i>, 6 = <i>xy</i>; <i>j</i> runs over the field components.</p>
+      <div class="eq"><math display="block"><mrow><munder><mo>&sum;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></munder><msub><mrow><mo>(</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mi>j</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="1.4em"/><mi>&Delta;</mi><msub><mrow><mo>(</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow><mi>I</mi></msub><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><msub><mi>r</mi><mrow><mi>I</mi><mi>j</mi></mrow></msub><msub><mi>E</mi><mi>j</mi></msub><mo>,</mo><mspace width="1.4em"/><mi>&delta;</mi><msub><mi>n</mi><mi>k</mi></msub><mo>=</mo><mo>&minus;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msubsup><mi>n</mi><mi>k</mi><mn>3</mn></msubsup><mi>&Delta;</mi><msub><mrow><mo>(</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow><mrow><mi>k</mi><mi>k</mi></mrow></msub></mrow></math><span class="eqn">(2)</span></div>
+      <p class="tx">Point group 3m, <i>x</i> perpendicular to a mirror plane, <i>z</i> along <i>c</i>: four independent coefficients. The last relation holds for polarization along a principal axis <i>k</i>; off-diagonal terms (<i>I</i> = 4, 5, 6) rotate the principal axes instead.</p>
+
+      <div class="panel" id="rt" data-variant="tech" data-pair="rt">
+        <div class="ph"><span>r<sub>Ij</sub> at E = 1 V/&micro;m, &lambda; = <span data-lam="1.55"></span></span><span id="rt-set-h"></span></div>
+        <div class="rt-ctl">
+          <span class="lbl">Field</span><div class="seg" id="rt-e" role="group" aria-label="Field direction"><button data-v="0">E<sub>x</sub></button><button data-v="1">E<sub>y</sub></button><button data-v="2">E<sub>z</sub></button></div>
+          <span class="lbl">Polarization</span><div class="seg" id="rt-p" role="group" aria-label="Optical polarization"><button data-v="0">x</button><button data-v="1">y</button><button data-v="2">z</button></div>
+          <span class="lbl">Set</span><div class="seg" id="rt-s" role="group" aria-label="Coefficient set"><button data-v="turner">S Turner</button><button data-v="kaminow">S Kaminow</button><button data-v="free">T Zook/Bernal</button></div>
+        </div>
+        <div class="rt-grid">
+          <div class="scrollx"><table class="mx rt-mx" id="rt-mx" aria-label="3m Pockels matrix"></table></div>
+          <div class="rt-res">
+            <table class="kv" id="rt-vec"></table>
+            <div><table class="kv" id="rt-dn"></table><table class="kv" id="rt-rot"></table></div>
+          </div>
+        </div>
+        <div class="pf">Highlight: <span class="key on">diagonal entry for the chosen polarization</span> <span class="key rot">off-diagonal: axis rotation</span> <span class="key oth">diagonal entry for another polarization</span></div>
+      </div>
+
+      <div class="v-ell" id="v-ell" data-variant="visual" data-pair="rt">
+        <div class="v-ell-stage v-frame" id="v-ell-stage" tabindex="0" role="img" aria-label="Index ellipsoid of LN at 1550 nm under a 1 V per micrometer field; drag or arrow keys to orbit"><div class="v-ell-lab" aria-hidden="true"></div></div>
+        <div class="v-ell-side">
+          <div class="v-ctl"><span class="v-lab">Field, 1 V/&micro;m along</span><div class="v-seg" id="v-rt-e" role="group" aria-label="Field direction"><button type="button" data-v="0">E<sub>x</sub></button><button type="button" data-v="1">E<sub>y</sub></button><button type="button" data-v="2">E<sub>z</sub></button></div></div>
+          <div class="v-ctl"><span class="v-lab">Optical polarization, 1550 nm</span><div class="v-seg" id="v-rt-p" role="group" aria-label="Optical polarization"><button type="button" data-v="0">x</button><button type="button" data-v="1">y</button><button type="button" data-v="2">z</button></div></div>
+          <div class="v-ctl"><span class="v-lab">Coefficient set</span><div class="v-seg" id="v-rt-s" role="group" aria-label="Coefficient set"><button type="button" data-v="turner">S Turner</button><button type="button" data-v="kaminow">S Kaminow</button><button type="button" data-v="free">T Zook/Bernal</button></div></div>
+          <dl class="v-hud">
+            <dt>Index along the polarization</dt><dd id="v-ell-n"></dd>
+            <dt>&delta;n first order</dt><dd id="v-ell-dn"></dd>
+            <dt>Principal indices</dt><dd id="v-ell-st"></dd>
+            <dt>Largest principal-axis tilt</dt><dd id="v-ell-tilt"></dd>
+          </dl>
+          <p class="v-cap">Drawn: &Delta;(1/n<sup>2</sup>) &times;500 before the eigen-decomposition; semi-axis 1 + 10 (n<sub>i</sub>/n&#772; &minus; 1); wireframe at E = 0. Numbers: exact, unscaled. <span class="b d" data-pop="v-ell">derived</span></p>
         </div>
       </div>
 
-      <p>At <span class="live" id="lv">0.00 V</span>,&nbsp;<span class="live" id="lt">100%</span> of the light comes out. The crystal did nothing but change its refractive index by a few parts per million. No moving parts, no free electrons to push around: the
-        <span class="term" data-pop="speed">response is effectively instantaneous</span>, which is why these modulators reach well beyond 100 GHz.</p>
+      <h3 class="h3">Coefficients (pm/V)</h3>
+      <div class="scrollx">
+        <table class="idx coef" id="coef">
+          <thead><tr><th>Set</th><th>Condition</th><th class="r">r<sub>13</sub></th><th class="r">r<sub>22</sub></th><th class="r">r<sub>33</sub></th><th class="r">r<sub>51</sub></th><th class="r">Status</th></tr></thead>
+          <tbody>
+            <tr data-set="turner"><td class="h">Turner 1966</td><td>clamped (S)</td><td class="r num">8.6</td><td class="r num">3.4</td><td class="r num">30.8</td><td class="r num">28</td><td class="r"><span class="b pc" data-pop="wg85">P-comp</span></td></tr>
+            <tr data-set="kaminow"><td class="h">Kaminow et al. 1980</td><td>clamped (S); preferred by Weis &amp; Gaylord</td><td class="r num">7.7</td><td class="r num">3.4</td><td class="r num">28.8</td><td class="r num">18.2</td><td class="r"><span class="b pc" data-pop="wg85">P-comp</span></td></tr>
+            <tr data-set="free"><td class="h">Zook et al. 1967</td><td>free (T)</td><td class="r num">10.0</td><td class="r num">6.81</td><td class="r num">32.2</td><td class="r dim">&ndash;</td><td class="r"><span class="b pc" data-pop="wg85">P-comp</span></td></tr>
+            <tr><td class="h">Lenzo 1966</td><td>free (T)</td><td class="r dim">&ndash;</td><td class="r num">6.7</td><td class="r dim">&ndash;</td><td class="r dim">&ndash;</td><td class="r"><span class="b pc" data-pop="wg85">P-comp</span></td></tr>
+            <tr data-set="free"><td class="h">Bernal 1966</td><td>free (T)</td><td class="r dim">&ndash;</td><td class="r dim">&ndash;</td><td class="r dim">&ndash;</td><td class="r num">32</td><td class="r"><span class="b pc" data-pop="wg85">P-comp</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">Clamped (S): strain fixed, above the acoustic resonances. Free (T): includes the piezoelectric-photoelastic contribution, below them. No 1550 nm values in the sources held. The L3 engine run uses the Turner 1966 set. Click a row to load it above.</p>
 
-      <section id="s2" data-spine="Why lithium niobate">
-        <h2 class="biref" style="margin-top:34px">Why this crystal</h2>
-        <p>Many crystals show the effect. Lithium niobate combines a large electro-optic coefficient with transparency from the visible to the mid-infrared, a mature growth industry, and, since 2017, thin films that squeeze light into waveguides a fraction of a micrometer tall
-          <span class="cite" data-pop="ref-zhang">[1]</span><span class="cite" data-pop="ref-wang">[2]</span>.</p>
-        <p>Its biggest coefficient, r<sub>33</sub>, works when the field and the light's polarization both lie along the crystal's polar c axis. That single fact decides how every modulator is cut and laid out. The
-          <span class="term" data-pop="cuts">x-cut</span> wafer, with c in the plane, is the standard choice.</p>
-      </section>
+      <h3 class="h3">Device mapping</h3>
+      <div class="scrollx">
+        <table class="idx map">
+          <thead><tr><th>Cut</th><th>Propagation</th><th>Optical field</th><th>Static field</th><th>Coefficient</th><th>Index change</th></tr></thead>
+          <tbody>
+            <tr><td class="h">x-cut</td><td>y (in plane)</td><td>TE, lateral = z</td><td>in-plane, lateral = z</td><td class="h">r<sub>33</sub></td><td>&minus;&frac12; n<sub>e</sub><sup>3</sup> r<sub>33</sub> E</td></tr>
+            <tr><td class="h">z-cut</td><td>in plane</td><td>TM, vertical = z</td><td>vertical = z</td><td class="h">r<sub>33</sub></td><td>&minus;&frac12; n<sub>e</sub><sup>3</sup> r<sub>33</sub> E</td></tr>
+            <tr><td class="h">z-cut plate</td><td>z (along c)</td><td>any, in xy</td><td>in-plane, x or y</td><td class="h">r<sub>22</sub></td><td>birefringence n<sub>o</sub><sup>3</sup> r<sub>22</sub> E; axes at 45&deg; for E<sub>x</sub>, along x, y for E<sub>y</sub></td></tr>
+            <tr><td class="h">li2026aa</td><td>y</td><td>TE</td><td>lateral, 6 &micro;m gap</td><td class="h">r<sub>33</sub> <span class="dim" id="map-r33"></span></td><td><a class="lk" href="#l3">L3</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">The z-cut plate row is the conoscope on the landing page: E &perp; c makes the uniaxial crystal biaxial.</p>
+    </div>
+  </section>
 
-      <details class="deeper" id="s3" data-spine="Go deeper">
-        <summary>Go deeper: the electro-optic tensor, clamping, and sign conventions</summary>
-        <div class="inner">
-          <p>The field <i>E</i> perturbs the optical impermeability (the index ellipsoid) linearly:</p>
-          <p style="text-align:center">
-            <math display="block"><mrow><mi>&Delta;</mi><msub><mrow><mo>(</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow><mi>i</mi></msub><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>E</mi><mi>j</mi></msub><mo>,</mo><mspace width="1em"/><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>&hellip;</mo><mo>,</mo><mn>6</mn></mrow></math>
-          </p>
-          <p>Point group 3m leaves four independent coefficients (frame: x perpendicular to the mirror plane, z along the polar c axis):</p>
-          <table class="matrix" aria-label="Electro-optic tensor form for point group 3m">
-            <tr><td class="z">0</td><td>-r<sub>22</sub></td><td>r<sub>13</sub></td></tr>
-            <tr><td class="z">0</td><td>r<sub>22</sub></td><td>r<sub>13</sub></td></tr>
-            <tr><td class="z">0</td><td class="z">0</td><td>r<sub>33</sub></td></tr>
-            <tr><td class="z">0</td><td>r<sub>51</sub></td><td class="z">0</td></tr>
-            <tr><td>r<sub>51</sub></td><td class="z">0</td><td class="z">0</td></tr>
-            <tr><td>-r<sub>22</sub></td><td class="z">0</td><td class="z">0</td></tr>
-          </table>
-          <p>Values depend on whether the crystal can deform (unclamped, T, below acoustic resonances) or not (clamped, S, high frequency):</p>
-          <table class="t">
-            <tr><th>Source</th><th>Condition</th><th>r<sub>13</sub></th><th>r<sub>22</sub></th><th>r<sub>33</sub></th><th>r<sub>51</sub></th><th>Status</th></tr>
-            <tr><td>Rauber 1978 via Veit et al.</td><td>unclamped (T)</td><td class="num">10.0</td><td class="num">6.8</td><td class="num">32.2</td><td class="num">32.6</td><td><span class="badge s">S</span></td></tr>
-            <tr><td>Rauber 1978 via Veit et al.</td><td>clamped (S)</td><td class="num">8.6</td><td class="num">3.4</td><td class="num">30.8</td><td class="num">28</td><td><span class="badge s">S</span></td></tr>
-            <tr><td>Kaminow et al. 1980, preferred in Weis &amp; Gaylord 1985</td><td>clamped (S)</td><td class="num">7.7</td><td class="num">3.4</td><td class="num">28.8</td><td class="num">18.2</td><td><span class="badge p">P-comp</span></td></tr>
-            <tr><td>Vendor sheet (1999)</td><td>clamped (S), 633 nm</td><td class="num">9</td><td class="num">3</td><td class="num">31</td><td class="num">28</td><td><span class="badge v">V</span></td></tr>
-          </table>
-          <p class="small">Units pm/V. The commonly used clamped r<sub>51</sub> = 28 differs from the compilation's preferred 18.2 by 35%; the 1980 original is still to be read (research note R14). r<sub>13</sub> carries a <span class="term" data-pop="r13">reported sign discrepancy</span> between two handbooks.</p>
+  <!-- ================= L3 ================= -->
+  <section class="lay" id="l3" data-pair="l3" data-spine="L3 Evaluating the overlap">
+    <div class="sh"><h2 class="biref">L3 Evaluating the overlap</h2><span class="meta">FEM: eo-modulator-atlas engine, vector solver, sims/li2026aa/config.yaml, exported <span id="l3-date"></span> <span class="b d" data-pop="engine">engine</span></span></div>
+    <div class="body">
+      <p class="tx">First-order perturbation of a guided mode normalized to power <i>P</i>, with <i>&Delta;&epsilon;</i> = &minus;<i>&epsilon;</i> <i>&Delta;</i>(<i>&epsilon;</i><sup>&minus;1</sup>) <i>&epsilon;</i>:</p>
+      <div class="eq"><math display="block"><mrow><mi>&Delta;</mi><mi>&beta;</mi><mo>=</mo><mfrac><mrow><mi>&omega;</mi><msub><mi>&epsilon;</mi><mn>0</mn></msub></mrow><mrow><mn>4</mn><mi>P</mi></mrow></mfrac><mo>&int;</mo><msup><mi mathvariant="bold">E</mi><mo>*</mo></msup><mo>&middot;</mo><mi>&Delta;</mi><mi>&epsilon;</mi><mo>&middot;</mo><mi mathvariant="bold">E</mi><mspace width="0.2em"/><mi>d</mi><mi>A</mi><mo>,</mo><mspace width="1.4em"/><mi>P</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&int;</mo><mi>Re</mi><mo>(</mo><mi mathvariant="bold">E</mi><mo>&times;</mo><msup><mi mathvariant="bold">H</mi><mo>*</mo></msup><mo>)</mo><mo>&middot;</mo><mover><mi>z</mi><mo>^</mo></mover><mspace width="0.2em"/><mi>d</mi><mi>A</mi></mrow></math><span class="eqn">(3)</span></div>
+      <p class="tx">x-cut TE, <b>E</b> &asymp; <i>E<sub>x</sub></i> along <i>c</i>: <i>&Delta;&epsilon;<sub>xx</sub></i> = &minus;<i>n</i><sub>e</sub><sup>4</sup> <i>r</i><sub>33</sub> <i>E</i><sub><i>x</i></sub><sup>RF</sup>, and <i>H<sub>y</sub></i> = <i>n</i><sub>eff</sub> <i>E<sub>x</sub></i> / <i>Z</i><sub>0</sub> makes <i>P</i> = (<i>n</i><sub>eff</sub> / 2<i>Z</i><sub>0</sub>) &int;|<i>E<sub>x</sub></i>|<sup>2</sup> d<i>A</i>. With <i>e<sub>x</sub></i> the static field per terminal volt:</p>
+      <div class="eq"><math display="block"><mrow><mfrac><mrow><mi>d</mi><msub><mi>n</mi><mi>eff</mi></msub></mrow><mrow><mi>d</mi><mi>V</mi></mrow></mfrac><mo>=</mo><mo>&minus;</mo><mfrac><mrow><msubsup><mi>n</mi><mi>e</mi><mn>4</mn></msubsup><msub><mi>r</mi><mn>33</mn></msub></mrow><mrow><mn>2</mn><msub><mi>n</mi><mi>eff</mi></msub></mrow></mfrac><mfrac><mrow><msub><mo>&int;</mo><mi>LN</mi></msub><msub><mi>e</mi><mi>x</mi></msub><msup><mrow><mo>|</mo><msub><mi>E</mi><mi>x</mi></msub><mo>|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>A</mi></mrow><mrow><mo>&int;</mo><msup><mrow><mo>|</mo><msub><mi>E</mi><mi>x</mi></msub><mo>|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>A</mi></mrow></mfrac></mrow></math><span class="eqn">(4)</span></div>
+      <p class="tx">Conventional overlap with gap <i>g</i>, and the push-pull half-wave product it implies (engine: V<sub>&pi;</sub>L = &lambda; / 2|d<i>n</i><sub>A</sub> &minus; d<i>n</i><sub>B</sub>|):</p>
+      <div class="eq"><math display="block"><mrow><mi>&Gamma;</mi><mo>=</mo><mfrac><mi>g</mi><mi>V</mi></mfrac><mfrac><mrow><msub><mo>&int;</mo><mi>LN</mi></msub><msubsup><mi>E</mi><mi>x</mi><mi>RF</mi></msubsup><msup><mrow><mo>|</mo><mi mathvariant="bold">E</mi><mo>|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>A</mi></mrow><mrow><mo>&int;</mo><msup><mrow><mo>|</mo><mi mathvariant="bold">E</mi><mo>|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>A</mi></mrow></mfrac><mo>,</mo><mspace width="1em"/><mi>&Delta;</mi><mi>n</mi><mo>=</mo><mo>&minus;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msubsup><mi>n</mi><mi>e</mi><mn>3</mn></msubsup><msub><mi>r</mi><mn>33</mn></msub><mi>&Gamma;</mi><mfrac><mi>V</mi><mi>g</mi></mfrac><mo>,</mo><mspace width="1em"/><msub><mi>V</mi><mi>&pi;</mi></msub><mi>L</mi><mo>=</mo><mfrac><mrow><mi>&lambda;</mi><mi>g</mi></mrow><mrow><mn>2</mn><msubsup><mi>n</mi><mi>e</mi><mn>3</mn></msubsup><msub><mi>r</mi><mn>33</mn></msub><mi>&Gamma;</mi></mrow></mfrac><mo>=</mo><mfrac><mi>&lambda;</mi><mrow><mn>2</mn><msubsup><mi>n</mi><mi>e</mi><mn>3</mn></msubsup><msub><mi>r</mi><mn>33</mn></msub><mover><mi>E</mi><mo>&#xAF;</mo></mover></mrow></mfrac></mrow></math><span class="eqn">(5)</span></div>
+      <p class="tx" id="l3-why"></p>
+
+      <div class="figgrid" id="figs">
+        <div class="fig" id="fa"><div class="ph"><span>(a) |E<sub>x</sub>|<sup>2</sup> / max, optical, P = 1 W</span><span class="dim" id="fa-pk"></span></div><canvas tabindex="0" aria-label="Optical intensity map; arrow keys move the probe"></canvas><div class="cb"><canvas></canvas><span class="lo">&ndash;</span><span class="u">|E<sub>x</sub>|<sup>2</sup> / |E<sub>x</sub>|<sup>2</sup><sub>max</sub></span><span class="hi">&ndash;</span></div></div>
+        <div class="fig" id="fb"><div class="ph"><span>(b) e<sub>x</sub>, static field per terminal volt</span><span class="dim" id="fb-pk"></span></div><canvas tabindex="0" aria-label="Static field map; arrow keys move the probe"></canvas><div class="cb"><canvas></canvas><span class="lo">&ndash;</span><span class="u">(V/&micro;m)/V</span><span class="hi">&ndash;</span></div></div>
+        <div class="fig wide" id="fc"><div class="ph"><span>(c) integrand d n<sub>eff</sub>/dV per area, signed, LN only</span><span class="seg" id="fc-t" role="group" aria-label="Integrand"><button data-v="integrand">total</button><button data-v="integrand_r33">r<sub>33</sub> only</button></span></div><canvas tabindex="0" aria-label="Integrand map; arrow keys move the probe"></canvas><div class="cb"><canvas></canvas><span class="lo">&ndash;</span><span class="u">1/(V &micro;m<sup>2</sup>)</span><span class="hi">&ndash;</span></div></div>
+      </div>
+      <div class="readout" id="ro" aria-live="polite"></div>
+
+      <div class="duo l3b">
+        <div class="fig" id="fd"><div class="ph"><span>(d) &int; integrand dx vs y</span><span class="dim">bars: total; line: r<sub>33</sub></span></div><svg id="fd-svg" role="img" aria-label="Depth profile of the integrand"></svg><div class="readout pad" id="fd-ro"></div><div class="readout pad" id="fd-sum"></div></div>
+        <div class="ntabw">
+          <table class="idx ntab" id="ntab"><colgroup><col><col class="cv"><col class="cu"><col class="cs"></colgroup><thead><tr><th>Quantity</th><th class="r">Value</th><th>Unit</th><th class="r">Source</th></tr></thead><tbody></tbody></table>
         </div>
-      </details>
-
-      <section id="s4" data-spine="References">
-        <h3>References</h3>
-        <ol class="refs">
-          <li>M. Zhang et al., Optica 4, 1536 (2017). <a href="https://doi.org/10.1364/OPTICA.4.001536">doi:10.1364/OPTICA.4.001536</a></li>
-          <li>C. Wang et al., Nature 562, 101 (2018). <a href="https://doi.org/10.1038/s41586-018-0551-y">doi:10.1038/s41586-018-0551-y</a></li>
-          <li>G. E. Peterson et al., Appl. Phys. Lett. 5, 62 (1964). <a href="https://doi.org/10.1063/1.1754053">doi:10.1063/1.1754053</a></li>
-          <li>D. E. Zelmon, D. L. Small, D. Jundt, JOSA B 14, 3319 (1997). <a href="https://doi.org/10.1364/JOSAB.14.003319">doi:10.1364/JOSAB.14.003319</a></li>
-        </ol>
-      </section>
-    </article>
-
-    <aside class="sidecol" aria-label="Sidenotes">
-      <div class="sidenote" style="top:250px"><b>Half a wavelength.</b> For telecom light at <span data-lam="1.55"></span>, that is about 0.78 &micro;m of optical path, made by an index change of order 10<sup>-5</sup> to 10<sup>-4</sup> over a few millimeters.</div>
-      <div class="sidenote" style="top:760px"><b>Where to see it.</b> The hero on the landing page applies the same effect to a whole cone of light: a field across the c axis makes the crystal biaxial.</div>
-      <div class="sidenote" style="top:1180px"><b>Clamped or not?</b> At low frequency the crystal also deforms (piezoelectric strain) and the strain changes the index again (photoelastic effect). Above the acoustic resonances that path freezes out: r<sub>22</sub> and r<sub>51</sub> drop the most.</div>
-    </aside>
-  </div>
+      </div>
+      <p class="fine" id="l3-grid-note"></p>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="wrap grid">
-    <div class="wafer"><div class="small" style="margin-bottom:8px">Site map (you are on the highlighted die)</div><svg viewBox="0 0 240 250" data-here="Light"></svg></div>
-    <div class="fine"><p style="margin-top:0"><b style="color:var(--text)">Mockup, 2026-10-25.</b> Sample chapter page: lay text first, one explorable, hover previews, sidenotes, and a collapsed expert layer. Values carry source status badges; the template V<sub>&pi;</sub> is marked as such.</p></div>
-    <div class="bias"><div>Modulator bias point</div><div class="meter" title="Click to re-lock" data-pop="drift"><span class="pt"></span></div><div class="state"></div></div>
+  <div class="grid">
+    <div class="wafer"><h3>Site map</h3><svg data-here="Light" role="img" aria-label="Site map as a wafer map; each die is a page"></svg></div>
+    <div>
+      <h3>Status key</h3>
+      <div class="key">
+        <span><span class="b pc">P-comp</span></span><span>read in a compilation that cites the original; original not read</span>
+        <span><span class="b pc">P-db</span></span><span>CC0 database transcription of a primary source</span>
+        <span><span class="b r">reported</span></span><span>as reported by the authors</span>
+        <span><span class="b d">engine</span></span><span>computed by the eo-modulator-atlas FEM engine</span>
+        <span><span class="b d">derived</span></span><span>computed in the page from the listed inputs</span>
+      </div>
+    </div>
+    <div>
+      <h3>License</h3>
+      <p class="fine">Code GPL-3.0. Data CC BY 4.0.<br>Source: <a class="u" href="https://github.com/jwt625/lithium-niobate">github.com/jwt625/lithium-niobate</a></p>
+    </div>
+    <div>
+      <h3>FEM data</h3>
+      <p class="fine">eo-modulator-atlas engine (GPL-3.0-or-later), <a class="u" href="https://github.com/jwt625/eo-modulator-atlas">github.com/jwt625/eo-modulator-atlas</a>; export: scripts/export_eo_overlap.mjs</p>
+    </div>
   </div>
+  <div class="imprint"><span>lithium-niobate.com</span><span><span class="tag">Mockup</span> <span class="tag">2026-10-25</span></span></div>
 </footer>
 
 <script src="ln.js"></script>
 <script>
 window.POPS = {
-  mzi: { h: "Mach-Zehnder modulator", body: "An interferometer: split, phase-shift one or both arms with the Pockels effect, recombine. Output follows cos<sup>2</sup>(&pi;V / 2V<sub>&pi;</sub>) for a push-pull device biased at maximum transmission.", more: ["Modulator Designer (F3)", "index.html#lab"] },
-  speed: { h: "How fast?", body: "The electronic Pockels response is far faster than any electrical drive; practical limits come from the electrodes: RF loss, velocity mismatch, impedance. Thin-film LN modulators with measured 3-dB EO bandwidths of 170 GHz have been reported.", badges: [["reported", "reported"]], src: "Records table: research note R08 sec. 2 (provisional, 2026-10-24)." },
-  cuts: { h: "x-cut, z-cut", body: "The wafer is named by the crystal axis normal to its surface. In x-cut, the polar c axis lies in the plane, so in-plane electrodes and TE-polarized light both use r<sub>33</sub>.", more: ["Tensor & Convention Explorer (F4)", "index.html#lab"] },
-  r13: { h: "The r<sub>13</sub> sign", body: "The author's 2018 notes recorded one sign difference in r<sub>13</sub> between the Wong and Weis &amp; Gaylord tables. All accessible tables list r<sub>13</sub> positive in the stated frame. Flagged until checked against both primaries.", badges: [["u", "U: unresolved"]], src: "Research notes R02, R06; verification R14." },
-  "ref-zhang": { h: "Zhang et al. 2017", body: "Monolithic ultra-high-Q lithium niobate microring resonator. Showed that etched thin-film LN can be very low loss.", src: "Optica 4, 1536 (2017), <a href='https://doi.org/10.1364/OPTICA.4.001536'>doi:10.1364/OPTICA.4.001536</a>" },
-  "ref-wang": { h: "Wang et al. 2018", body: "Integrated lithium niobate electro-optic modulators operating at CMOS-compatible voltages.", src: "Nature 562, 101 (2018), <a href='https://doi.org/10.1038/s41586-018-0551-y'>doi:10.1038/s41586-018-0551-y</a>" },
-  drift: { h: "Bias drift", body: "A DC bias on a thin-film LN modulator is slowly screened by mobile charge in the film, cladding, and interfaces, so the operating point drifts and needs a control loop. Click to re-lock.", src: "Research note R08 sec. 3." },
+  "v-qpm": { h: "Poled domains, to scale", body: "Alternating &plusmn;z ferroelectric domains drawn at 2 px per &micro;m, 50% duty cycle. First-order QPM period for e-e-e SHG 1550 &rarr; 775 nm in bulk congruent LN at 21 &deg;C, &Lambda; = &lambda; / (2 (n<sub>e</sub>(&lambda;/2) &minus; n<sub>e</sub>(&lambda;))); the landing page draws the 1064 &rarr; 532 nm period at the same scale.", badges: [["pc", "P-db inputs"], ["d", "derived"]], src: "n<sub>e</sub>: Zelmon et al. 1997." },
+  "v-false": { h: "False color", body: "1550 nm light is invisible. These pages draw it in a declared false color (magenta), always dashed. Visible wavelengths use computed spectral colors (CIE 1931 2&deg; color-matching functions, Wyman, Sloan, Shirley 2013 fit)." },
+  "v-ell": { h: "Index ellipsoid drawing", body: "Impermeability B = B<sub>0</sub> + &Delta;B with &Delta;B<sub>I</sub> = r<sub>Ij</sub>E<sub>j</sub>, E = 1 V/&micro;m, n<sub>o</sub>, n<sub>e</sub> at 1550 nm. The field term is about 10<sup>&minus;5</sup> of B<sub>0</sub>, so the drawing uses B<sub>0</sub> + 500 &Delta;B, and each semi-axis 1 + 10 (n<sub>i</sub>/n&#772; &minus; 1) with n&#772; = (2n<sub>o</sub> + n<sub>e</sub>)/3. Readouts use the exact eigen-decomposition of the unscaled B (eo.js).", badges: [["d", "derived"]] },
+  qpm: { h: "Poled domains", body: "Alternating &plusmn;z ferroelectric domains, drawn not to scale. First-order QPM period for e-e-e SHG 1064 &rarr; 532 nm in bulk congruent LN at 21 &deg;C: <span class='v' id='p-qpm'></span>, &Lambda; = &lambda; / (2 (n<sub>e</sub>(&lambda;/2) &minus; n<sub>e</sub>(&lambda;))).", badges: [["pc", "P-db inputs"], ["d", "derived"]], src: "n<sub>e</sub>: Zelmon et al. 1997." },
+  wg85: { h: "Weis &amp; Gaylord 1985", body: "R. S. Weis, T. K. Gaylord, Lithium niobate: summary of physical properties and crystal structure, Appl. Phys. A 37, 191 (1985). Compiles the r tensor measurements of Turner, Kaminow et al., Zook et al., Lenzo and Bernal; the values here are read in that compilation, not in the originals.", badges: [["pc", "P-comp"]], src: "<a href='https://doi.org/10.1007/BF00614817'>doi:10.1007/BF00614817</a>" },
+  zelmon: { h: "Zelmon et al. 1997", body: "Sellmeier fit for congruent LN at 21 C, 0.4 to 5.0 &micro;m: n<sup>2</sup> &minus; 1 = &sum; B<sub>i</sub>&lambda;<sup>2</sup> / (&lambda;<sup>2</sup> &minus; C<sub>i</sub>). Coefficients via refractiveindex.info (CC0).", badges: [["pc", "P-db"]], src: "JOSA B 14, 3319 (1997), <a href='https://doi.org/10.1364/JOSAB.14.003319'>doi:10.1364/JOSAB.14.003319</a>" },
+  li2026aa: { h: "li2026aa-d", body: "Li 2026: 9 mm x-cut TFLN MZM on silicon (300 nm film, 180 nm etch, 3.5 &micro;m top width, 6 &micro;m signal-ground gap, 1 &micro;m Au), plain G-S-G coplanar line, push-pull arms. Measured V<sub>&pi;</sub> = 2.90 V at 1550 nm, V<sub>&pi;</sub>L = 2.61 V cm.", badges: [["r", "reported"]], src: "eo-modulator-atlas devices.csv row li2026aa-d; paper p.5 Fig. 3(b)." },
+  engine: { h: "eo-modulator-atlas engine", body: "2D FEM: electrostatics (E = &minus;&nabla;&phi; per terminal volt), vector optical mode at 1550 nm normalized to 1 W, first-order Pockels perturbation with the full 3m tensor. Conventions: x lateral, y film normal, z propagation; x-cut with propagation along crystal y, so lab x = crystal c. Exported on a 0.03 &micro;m grid (241 &times; 81 nodes) for these figures.", badges: [["d", "engine"]], src: "github.com/jwt625/eo-modulator-atlas, engine/src/eo-overlap.mjs, engine/src/postproc/eo-analysis.mjs (GPL-3.0-or-later)." },
 };
 </script>
 <script src="app.js"></script>
-<script>
-(() => {
-  const VPI = 2.0; // template value, illustrative
-  const mv = document.getElementById("mv");
-  const top = document.getElementById("wave-top"), bot = document.getElementById("wave-bot");
-  function wave(y0, phase, color) {
-    let d = "";
-    for (let x = 200; x <= 440; x += 3) {
-      const y = y0 + 6 * Math.sin((x - 200) / 9 + phase * ((x - 200) / 240));
-      d += (x === 200 ? "M" : "L") + x + " " + y.toFixed(1);
-    }
-    return `<path d="${d}" fill="none" stroke="${color}" stroke-width="1.4" opacity=".9"/>`;
-  }
-  function upd() {
-    const V = +mv.value;
-    const dphi = Math.PI * V / VPI; // push-pull: total phase difference
-    const T = Math.cos(dphi / 2) ** 2;
-    top.innerHTML = wave(54, dphi / 2, "var(--ir)");
-    bot.innerHTML = wave(146, -dphi / 2, "var(--ir)");
-    const h = 60 * T;
-    const bar = document.getElementById("out-bar");
-    bar.setAttribute("y", 130 - h); bar.setAttribute("height", h);
-    document.getElementById("mvo").textContent = `${V.toFixed(2)} V`;
-    document.getElementById("lv").textContent = `${V.toFixed(2)} V`;
-    document.getElementById("lt").textContent = `${(100 * T).toFixed(0)}%`;
-    mv.setAttribute("aria-valuetext", `${V.toFixed(2)} volts, ${(100 * T).toFixed(0)} percent transmitted`);
-  }
-  mv.addEventListener("input", upd);
-  upd();
-})();
-</script>
+<script src="eo.js"></script>
+<script src="visual.js"></script>
 </body>
 </html>

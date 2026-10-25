@@ -1,0 +1,42 @@
+{
+  "citation": "J. L. Jackel, C. E. Rice, J. J. Veselka, \"Proton exchange for high-index waveguides in LiNbO3\", Applied Physics Letters 41, 607-608, (1982) doi:10.1063/1.93615",
+  "link": "https://doi.org/10.1063/1.93615",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Jackel",
+        "given": "J. L."
+      },
+      {
+        "family": "Rice",
+        "given": "C. E."
+      },
+      {
+        "family": "Veselka",
+        "given": "J. J."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.93615",
+    "id": "jackel1982",
+    "issue": "7",
+    "issued": "1982-10-01",
+    "page": "607-608",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Proton exchange for high-index waveguides in LiNbO3",
+    "type": "article-journal",
+    "volume": "41"
+  }
+}

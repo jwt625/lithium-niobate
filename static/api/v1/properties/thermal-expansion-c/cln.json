@@ -1,0 +1,79 @@
+{
+  "alternatives": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_C": 25
+      },
+      "id": "thermal-expansion-c/cln/cti1999",
+      "kind": "scalar",
+      "name": "Thermal expansion coefficient parallel to c",
+      "property": "thermal-expansion-c",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_33",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 7.5e-06,
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "thermal-expansion-c",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_text": "300 K"
+      },
+      "default": true,
+      "id": "thermal-expansion-c/cln/volk2008",
+      "kind": "scalar",
+      "name": "Thermal expansion coefficient parallel to c",
+      "notes": "alpha_c in circulating sources spans about 4-7.5 ppm/K; kim1969 (primary) not read. weis1985 p. 195 notes that c contracts from 600 to 1000 C.",
+      "property": "thermal-expansion-c",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005; Gallagher et al., Ferroelectrics 75, 71 (1987)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "alpha_33",
+      "unit": {
+        "display": "1/K",
+        "qudt": "http://qudt.org/vocab/unit/PER-K",
+        "ucum": "/K"
+      },
+      "value": 4.1e-06,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 7.5e-06,
+    "min": 4.1e-06,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "/K"
+  }
+}

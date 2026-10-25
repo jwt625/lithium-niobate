@@ -1,0 +1,46 @@
+{
+  "citation": "J. A. Armstrong, N. Bloembergen, J. Ducuing, et al., \"Interactions between Light Waves in a Nonlinear Dielectric\", Physical Review 127, 1918-1939, (1962) doi:10.1103/physrev.127.1918",
+  "link": "https://doi.org/10.1103/physrev.127.1918",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Armstrong",
+        "given": "J. A."
+      },
+      {
+        "family": "Bloembergen",
+        "given": "N."
+      },
+      {
+        "family": "Ducuing",
+        "given": "J."
+      },
+      {
+        "family": "Pershan",
+        "given": "P. S."
+      }
+    ],
+    "container_title": "Physical Review",
+    "doi": "10.1103/physrev.127.1918",
+    "id": "armstrong1962",
+    "issue": "6",
+    "issued": "1962-09-15",
+    "page": "1918-1939",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Interactions between Light Waves in a Nonlinear Dielectric",
+    "type": "article-journal",
+    "volume": "127"
+  }
+}

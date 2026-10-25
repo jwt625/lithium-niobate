@@ -1,0 +1,50 @@
+{
+  "citation": "Prashanta Kharel, Christian Reimer, Kevin Luke, et al., \"Breaking voltage–bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes\", Optica 8, 357, (2021) doi:10.1364/optica.416155",
+  "link": "https://doi.org/10.1364/optica.416155",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Kharel",
+        "given": "Prashanta"
+      },
+      {
+        "family": "Reimer",
+        "given": "Christian"
+      },
+      {
+        "family": "Luke",
+        "given": "Kevin"
+      },
+      {
+        "family": "He",
+        "given": "Lingyan"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.416155",
+    "id": "kharel2021",
+    "issue": "3",
+    "issued": "2021-03-09",
+    "page": "357",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Breaking voltage–bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes",
+    "type": "article-journal",
+    "volume": "8"
+  }
+}

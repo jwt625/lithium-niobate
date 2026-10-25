@@ -1,0 +1,39 @@
+{
+  "citation": "P. V. Lenzo, E. G. Spencer, K. Nassau, \"Electro-Optic Coefficients in Single-Domain Ferroelectric Lithium Niobate\", Journal of the Optical Society of America 56, 633, (1966) doi:10.1364/josa.56.000633",
+  "link": "https://doi.org/10.1364/josa.56.000633",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "P. V. Lenzo"
+      },
+      {
+        "literal": "E. G. Spencer"
+      },
+      {
+        "literal": "K. Nassau"
+      }
+    ],
+    "container_title": "Journal of the Optical Society of America",
+    "doi": "10.1364/josa.56.000633",
+    "id": "lenzo1966",
+    "issue": "5",
+    "issued": "1966-05-01",
+    "page": "633",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Electro-Optic Coefficients in Single-Domain Ferroelectric Lithium Niobate",
+    "type": "article-journal",
+    "volume": "56"
+  }
+}

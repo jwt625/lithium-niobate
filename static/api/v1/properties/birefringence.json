@@ -1,0 +1,275 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1364/JOSAB.14.003319"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Birefringence n_e - n_o of lithium niobate (LiNbO3): 6 provenance-tagged value(s) from 1 source(s) for variant(s) cln, mgo5-cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/birefringence.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/birefringence.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Birefringence n_e - n_o"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Birefringence n_e - n_o",
+    "url": "https://lithium-niobate.com/api/v1/properties/birefringence.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0766
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0736
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0842
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0815
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0782
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "n_e - n_o (mgo5-cln)",
+        "unitCode": "http://qudt.org/vocab/unit/UNITLESS",
+        "unitText": "1",
+        "value": -0.0897
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 6,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "birefringence"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1064.0
+      },
+      "default": true,
+      "id": "birefringence/cln/zelmon1997-1064nm",
+      "kind": "scalar",
+      "name": "Birefringence n_e - n_o",
+      "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+      "property": "birefringence",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-cln-e minus zelmon1997-cln-o at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e - n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": -0.0766,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1550.0
+      },
+      "default": true,
+      "id": "birefringence/cln/zelmon1997-1550nm",
+      "kind": "scalar",
+      "name": "Birefringence n_e - n_o",
+      "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+      "property": "birefringence",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-cln-e minus zelmon1997-cln-o at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e - n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": -0.0736,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 632.8
+      },
+      "default": true,
+      "id": "birefringence/cln/zelmon1997-632.8nm",
+      "kind": "scalar",
+      "name": "Birefringence n_e - n_o",
+      "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+      "property": "birefringence",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-cln-e minus zelmon1997-cln-o at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e - n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": -0.0842,
+      "variant": "cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1064.0
+      },
+      "default": true,
+      "id": "birefringence/mgo5-cln/zelmon1997-1064nm",
+      "kind": "scalar",
+      "name": "Birefringence n_e - n_o",
+      "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+      "property": "birefringence",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-mgo5-e minus zelmon1997-mgo5-o at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e - n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": -0.0815,
+      "variant": "mgo5-cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 1550.0
+      },
+      "default": true,
+      "id": "birefringence/mgo5-cln/zelmon1997-1550nm",
+      "kind": "scalar",
+      "name": "Birefringence n_e - n_o",
+      "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+      "property": "birefringence",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-mgo5-e minus zelmon1997-mgo5-o at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e - n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": -0.0782,
+      "variant": "mgo5-cln"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_C": 21,
+        "wavelength_nm": 632.8
+      },
+      "default": true,
+      "id": "birefringence/mgo5-cln/zelmon1997-632.8nm",
+      "kind": "scalar",
+      "name": "Birefringence n_e - n_o",
+      "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+      "property": "birefringence",
+      "provenance": {
+        "derivation": "evaluated from dispersion model zelmon1997-mgo5-e minus zelmon1997-mgo5-o at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+        "source_id": "zelmon1997",
+        "status": "C",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "n_e - n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": -0.0897,
+      "variant": "mgo5-cln"
+    }
+  ]
+}

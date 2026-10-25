@@ -1,0 +1,51 @@
+{
+  "citation": "Ichiro Shoji, Takashi Kondo, Ayako Kitamoto, et al., \"Absolute scale of second-order nonlinear-optical coefficients\", Journal of the Optical Society of America B 14, 2268, (1997) doi:10.1364/JOSAB.14.002268",
+  "link": "https://doi.org/10.1364/JOSAB.14.002268",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Shoji",
+        "given": "Ichiro"
+      },
+      {
+        "family": "Kondo",
+        "given": "Takashi"
+      },
+      {
+        "family": "Kitamoto",
+        "given": "Ayako"
+      },
+      {
+        "family": "Shirane",
+        "given": "Masayuki"
+      },
+      {
+        "family": "Ito",
+        "given": "Ryoichi"
+      }
+    ],
+    "container_title": "Journal of the Optical Society of America B",
+    "doi": "10.1364/JOSAB.14.002268",
+    "id": "shoji1997",
+    "issued": "1997",
+    "page": "2268",
+    "read": "abstract only",
+    "title": "Absolute scale of second-order nonlinear-optical coefficients",
+    "type": "article-journal",
+    "volume": "14"
+  }
+}

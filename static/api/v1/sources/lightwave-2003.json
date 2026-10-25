@@ -1,0 +1,25 @@
+{
+  "citation": "\"Codeon Corp. and Quantum Photonics merge to form Covega Corp.\", Lightwave, (2003) https://lightwaveonline.com/business/article/16656427/codeon-corp-and-quantum-photonics-merge-to-form-covega-corp",
+  "link": "https://lightwaveonline.com/business/article/16656427/codeon-corp-and-quantum-photonics-merge-to-form-covega-corp",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Lightwave",
+    "id": "lightwave-2003",
+    "issued": "2003",
+    "read": "Read",
+    "title": "Codeon Corp. and Quantum Photonics merge to form Covega Corp.",
+    "type": "webpage",
+    "url": "https://lightwaveonline.com/business/article/16656427/codeon-corp-and-quantum-photonics-merge-to-form-covega-corp"
+  }
+}

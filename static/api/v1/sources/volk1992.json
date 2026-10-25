@@ -1,0 +1,36 @@
+{
+  "citation": "T. R. Volk, N. M. Rubinina, \"A new optical damage resistant impurity in lithium niobate crystals: Indium\", Ferroelectrics Letters Section 14, 37-43, (1992) doi:10.1080/07315179208203341",
+  "link": "https://doi.org/10.1080/07315179208203341",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "T. R. Volk"
+      },
+      {
+        "literal": "N. M. Rubinina"
+      }
+    ],
+    "container_title": "Ferroelectrics Letters Section",
+    "doi": "10.1080/07315179208203341",
+    "id": "volk1992",
+    "issue": "1-2",
+    "issued": "1992-05",
+    "page": "37-43",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "A new optical damage resistant impurity in lithium niobate crystals: Indium",
+    "type": "article-journal",
+    "volume": "14"
+  }
+}

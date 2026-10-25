@@ -1,0 +1,116 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "refractive-index-o",
+    "variant": "lt-unspecified"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "room temperature",
+        "wavelength_nm": 1000
+      },
+      "default": true,
+      "id": "refractive-index-o/lt-unspecified/bond1965-1000nm",
+      "kind": "scalar",
+      "name": "Ordinary refractive index",
+      "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+      "property": "refractive-index-o",
+      "provenance": {
+        "locator": "refractiveindex.info LiTaO3/Bond-o tabulated data",
+        "source_id": "bond1965",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1391,
+      "variant": "lt-unspecified",
+      "variant_note": "1965 bulk crystal"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "room temperature",
+        "wavelength_nm": 1600
+      },
+      "default": true,
+      "id": "refractive-index-o/lt-unspecified/bond1965-1600nm",
+      "kind": "scalar",
+      "name": "Ordinary refractive index",
+      "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+      "property": "refractive-index-o",
+      "provenance": {
+        "locator": "refractiveindex.info LiTaO3/Bond-o tabulated data",
+        "source_id": "bond1965",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1174,
+      "variant": "lt-unspecified",
+      "variant_note": "1965 bulk crystal"
+    },
+    {
+      "category": "optical",
+      "conditions": {
+        "temperature_text": "room temperature",
+        "wavelength_nm": 600
+      },
+      "default": true,
+      "id": "refractive-index-o/lt-unspecified/bond1965-600nm",
+      "kind": "scalar",
+      "name": "Ordinary refractive index",
+      "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+      "property": "refractive-index-o",
+      "provenance": {
+        "locator": "refractiveindex.info LiTaO3/Bond-o tabulated data",
+        "source_id": "bond1965",
+        "status": "P-db",
+        "transcribed": "2026-10-25",
+        "via": "rii"
+      },
+      "public": true,
+      "symbol": "n_o",
+      "unit": {
+        "display": "-",
+        "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+        "ucum": "1"
+      },
+      "value": 2.1834,
+      "variant": "lt-unspecified",
+      "variant_note": "1965 bulk crystal"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 2.1834,
+    "min": 2.1174,
+    "n_records": 3,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "1"
+  }
+}

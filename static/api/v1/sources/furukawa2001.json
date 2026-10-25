@@ -1,0 +1,54 @@
+{
+  "citation": "Y. Furukawa, K. Kitamura, A. Alexandrovski, et al., \"Green-induced infrared absorption in MgO doped LiNbO3\", Applied Physics Letters 78, 1970-1972, (2001) doi:10.1063/1.1359137",
+  "link": "https://doi.org/10.1063/1.1359137",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Furukawa",
+        "given": "Y."
+      },
+      {
+        "family": "Kitamura",
+        "given": "K."
+      },
+      {
+        "family": "Alexandrovski",
+        "given": "A."
+      },
+      {
+        "family": "Route",
+        "given": "R. K."
+      },
+      {
+        "family": "Fejer",
+        "given": "M. M."
+      },
+      {
+        "family": "Foulon",
+        "given": "G."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1359137",
+    "id": "furukawa2001",
+    "issue": "14",
+    "issued": "2001-04-02",
+    "page": "1970-1972",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Green-induced infrared absorption in MgO doped LiNbO3",
+    "type": "article-journal",
+    "volume": "78"
+  }
+}

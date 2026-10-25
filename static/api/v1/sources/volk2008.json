@@ -1,0 +1,39 @@
+{
+  "citation": "Tatyana Volk, Manfred Wöhlecke, \"Lithium Niobate: Defects, Photorefraction and Ferroelectric Switching\", Springer Series in Materials Science 115, (2009) doi:10.1007/978-3-540-70766-0",
+  "link": "https://doi.org/10.1007/978-3-540-70766-0",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Volk",
+        "given": "Tatyana"
+      },
+      {
+        "family": "Wöhlecke",
+        "given": "Manfred"
+      }
+    ],
+    "container_title": "Springer Series in Materials Science 115",
+    "doi": "10.1007/978-3-540-70766-0",
+    "id": "volk2008",
+    "issued": "2009",
+    "notes": "Compilation. Crossref print year 2009 (chapters dated 2008). Table 1.1 described as order of magnitude, >10% scatter (p. 3). Internal inconsistencies listed. Crossref issued date is 2009; the 2008 year is not verified. The id keeps the 2008 form for stability.",
+    "publisher": "Springer",
+    "read": "Ch. 1 (Tables 1.1, 1.2), Sec. 3.2.1, Ch. 6 (Sec. 6.1, 6.2, Table 6.1, 6.4), Sec. 7.2 (Table 7.1); locators are printed pages",
+    "title": "Lithium Niobate: Defects, Photorefraction and Ferroelectric Switching",
+    "type": "book"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "citation": "M. Jazbinšek, M. Zgonik, \"Material tensor parameters of LiNbO3 relevant for electro- and elasto-optics\", Applied Physics B 74, 407, (2002) doi:10.1007/s003400200818",
+  "link": "https://doi.org/10.1007/s003400200818",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Jazbinšek",
+        "given": "M."
+      },
+      {
+        "family": "Zgonik",
+        "given": "M."
+      }
+    ],
+    "container_title": "Applied Physics B",
+    "doi": "10.1007/s003400200818",
+    "id": "jazbinsek2002",
+    "issued": "2002",
+    "page": "407",
+    "read": "not read",
+    "title": "Material tensor parameters of LiNbO3 relevant for electro- and elasto-optics",
+    "type": "article-journal",
+    "volume": "74"
+  }
+}

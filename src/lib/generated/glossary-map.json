@@ -1,0 +1,2795 @@
+[
+  {
+    "chapter": "01-crystal",
+    "id": "r3c",
+    "match": "new",
+    "page_key": "t:r3c",
+    "term": "R3c"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "r-3c",
+    "match": "new",
+    "page_key": "t:r-3c",
+    "term": "R-3c"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "point-group-3m",
+    "match": "canonical",
+    "page_key": "t:point-group-3m",
+    "term": "point group 3m"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "hexagonal-setting",
+    "match": "new",
+    "page_key": "t:hexagonal-setting",
+    "term": "hexagonal setting"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "rhombohedral-setting",
+    "match": "new",
+    "page_key": "t:rhombohedral-setting",
+    "term": "rhombohedral setting"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "orthohexagonal-crystal-physics-frame",
+    "match": "new",
+    "page_key": "t:orthohexagonal-crystal-physics-frame",
+    "term": "orthohexagonal (crystal-physics) frame"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "oxygen-octahedron",
+    "match": "new",
+    "page_key": "t:oxygen-octahedron",
+    "term": "oxygen octahedron"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "empty-octahedral-site",
+    "match": "new",
+    "page_key": "t:empty-octahedral-site",
+    "term": "empty octahedral site"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "spontaneous-polarization",
+    "match": "canonical",
+    "page_key": "t:spontaneous-polarization-ps",
+    "term": "spontaneous polarization (Ps)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "ferroelectric",
+    "match": "canonical",
+    "page_key": "t:ferroelectric",
+    "term": "ferroelectric"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "paraelectric-phase",
+    "match": "new",
+    "page_key": "t:paraelectric-phase",
+    "term": "paraelectric phase"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "curie-temperature",
+    "match": "canonical",
+    "page_key": "t:curie-temperature-tc",
+    "term": "Curie temperature (Tc)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "displacive-vs-order-disorder-transition",
+    "match": "new",
+    "page_key": "t:displacive-vs-order-disorder-transition",
+    "term": "displacive vs order-disorder transition"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "congruent-melting-composition",
+    "match": "new",
+    "page_key": "t:congruent-melting-composition",
+    "term": "congruent melting composition"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "congruent",
+    "match": "canonical",
+    "page_key": "t:cln",
+    "term": "CLN"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "sln-nsln",
+    "match": "new",
+    "page_key": "t:sln-nsln",
+    "term": "SLN, NSLN"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "r1-r2",
+    "match": "new",
+    "page_key": "t:r1-r2",
+    "term": "R1, R2"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "vte",
+    "match": "canonical",
+    "page_key": "t:vapor-transport-equilibration-vte",
+    "term": "vapor transport equilibration (VTE)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "double-crucible-czochralski-dccz",
+    "match": "new",
+    "page_key": "t:double-crucible-czochralski-dccz",
+    "term": "double-crucible Czochralski (DCCZ)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "top-seeded-solution-growth-tssg",
+    "match": "new",
+    "page_key": "t:top-seeded-solution-growth-tssg",
+    "term": "top-seeded solution growth (TSSG)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "nb-antisite-nb-li",
+    "match": "new",
+    "page_key": "t:nb-antisite-nb-li",
+    "term": "Nb antisite (Nb_Li)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "li-vacancy",
+    "match": "canonical",
+    "page_key": "t:li-vacancy-v-li",
+    "term": "Li vacancy (V_Li)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "li-site-vacancy-model",
+    "match": "new",
+    "page_key": "t:li-site-vacancy-model",
+    "term": "Li-site vacancy model"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "nb-site-vacancy-model",
+    "match": "new",
+    "page_key": "t:nb-site-vacancy-model",
+    "term": "Nb-site vacancy model"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "kroeger-vink-notation",
+    "match": "new",
+    "page_key": "t:kroeger-vink-notation",
+    "term": "Kroeger-Vink notation"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "polaron",
+    "match": "canonical",
+    "page_key": "t:small-polaron",
+    "term": "small polaron"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "polaron",
+    "match": "canonical",
+    "page_key": "t:bound-polaron-nb-li4plus",
+    "term": "bound polaron (Nb_Li^4+)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "polaron",
+    "match": "canonical",
+    "page_key": "t:free-polaron-nb-nb4plus",
+    "term": "free polaron (Nb_Nb^4+)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "polaron",
+    "match": "canonical",
+    "page_key": "t:bipolaron",
+    "term": "bipolaron"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "hole-polaron-o",
+    "match": "new",
+    "page_key": "t:hole-polaron-o",
+    "term": "hole polaron (O^-)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "oh-stretch-band",
+    "match": "new",
+    "page_key": "t:oh-stretch-band",
+    "term": "OH stretch band"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "optical-damage-resistant-ion",
+    "match": "new",
+    "page_key": "t:optical-damage-resistant-ion",
+    "term": "optical-damage-resistant ion"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "threshold-concentration",
+    "match": "new",
+    "page_key": "t:threshold-concentration",
+    "term": "threshold concentration"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "griira",
+    "match": "canonical",
+    "page_key": "t:griira",
+    "term": "GRIIRA"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "neumann-s-principle",
+    "match": "new",
+    "page_key": "t:neumann-s-principle",
+    "term": "Neumann's principle"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "voigt-notation",
+    "match": "canonical",
+    "page_key": "t:voigt-notation",
+    "term": "Voigt notation"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "plus-z-face",
+    "match": "canonical",
+    "page_key": "t:plus-z-plus-c-face",
+    "term": "+z (+c) face"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "glide-plane",
+    "match": "new",
+    "page_key": "t:glide-plane",
+    "term": "glide plane"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "ferroelectric-domain",
+    "match": "canonical",
+    "page_key": "t:domain",
+    "term": "domain"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "180-deg-domain-wall",
+    "match": "new",
+    "page_key": "t:180-deg-domain-wall",
+    "term": "180 deg domain wall"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "y-wall",
+    "match": "new",
+    "page_key": "t:y-wall",
+    "term": "Y-wall"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "internal-field",
+    "match": "canonical",
+    "page_key": "t:internal-field-eint",
+    "term": "internal field (Eint)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "coercive-field",
+    "match": "canonical",
+    "page_key": "t:coercive-field-ec",
+    "term": "coercive field (Ec)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "forward-and-reverse-poling",
+    "match": "new",
+    "page_key": "t:forward-and-reverse-poling",
+    "term": "forward and reverse poling"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "unipolarity",
+    "match": "new",
+    "page_key": "t:unipolarity",
+    "term": "unipolarity"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "backswitching",
+    "match": "new",
+    "page_key": "t:backswitching",
+    "term": "backswitching"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "domain-merging",
+    "match": "new",
+    "page_key": "t:domain-merging",
+    "term": "domain merging"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "duty-cycle",
+    "match": "new",
+    "page_key": "t:duty-cycle",
+    "term": "duty cycle"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "ppln",
+    "match": "canonical",
+    "page_key": "t:periodic-poling-ppln",
+    "term": "periodic poling (PPLN)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "qpm",
+    "match": "canonical",
+    "page_key": "t:quasi-phase-matching-qpm",
+    "term": "quasi-phase-matching (QPM)"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "miller-savage-method",
+    "match": "new",
+    "page_key": "t:miller-savage-method",
+    "term": "Miller-Savage method"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "charged-domain-wall",
+    "match": "new",
+    "page_key": "t:charged-domain-wall",
+    "term": "charged domain wall"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "domain-wall-conduction",
+    "match": "new",
+    "page_key": "t:domain-wall-conduction",
+    "term": "domain-wall conduction"
+  },
+  {
+    "chapter": "01-crystal",
+    "id": "kolmogorov-avrami-ishibashi-kai-model",
+    "match": "new",
+    "page_key": "t:kolmogorov-avrami-ishibashi-kai-model",
+    "term": "Kolmogorov-Avrami-Ishibashi (KAI) model"
+  },
+  {
+    "chapter": "02-light",
+    "id": "birefringence",
+    "match": "canonical",
+    "page_key": "gl:birefringence",
+    "term": "birefringence"
+  },
+  {
+    "chapter": "02-light",
+    "id": "uniaxial-crystal",
+    "match": "new",
+    "page_key": "gl:uniaxial",
+    "term": "uniaxial crystal"
+  },
+  {
+    "chapter": "02-light",
+    "id": "ordinary-index",
+    "match": "canonical",
+    "page_key": "gl:ordinary-index",
+    "term": "ordinary index"
+  },
+  {
+    "chapter": "02-light",
+    "id": "extraordinary-index",
+    "match": "canonical",
+    "page_key": "gl:extraordinary-index",
+    "term": "extraordinary index"
+  },
+  {
+    "chapter": "02-light",
+    "id": "optic-axis",
+    "match": "canonical",
+    "page_key": "gl:optic-axis",
+    "term": "optic axis"
+  },
+  {
+    "chapter": "02-light",
+    "id": "index-ellipsoid",
+    "match": "canonical",
+    "page_key": "gl:index-ellipsoid",
+    "term": "index ellipsoid (indicatrix)"
+  },
+  {
+    "chapter": "02-light",
+    "id": "optical-impermeability",
+    "match": "new",
+    "page_key": "gl:impermeability",
+    "term": "optical impermeability"
+  },
+  {
+    "chapter": "02-light",
+    "id": "walk-off",
+    "match": "canonical",
+    "page_key": "gl:walk-off",
+    "term": "walk-off"
+  },
+  {
+    "chapter": "02-light",
+    "id": "conoscopy",
+    "match": "new",
+    "page_key": "gl:conoscopy",
+    "term": "conoscopy"
+  },
+  {
+    "chapter": "02-light",
+    "id": "isogyre",
+    "match": "new",
+    "page_key": "gl:isogyre",
+    "term": "isogyre"
+  },
+  {
+    "chapter": "02-light",
+    "id": "isochrome",
+    "match": "new",
+    "page_key": "gl:isochrome",
+    "term": "isochrome"
+  },
+  {
+    "chapter": "02-light",
+    "id": "melatope",
+    "match": "new",
+    "page_key": "gl:melatope",
+    "term": "melatope"
+  },
+  {
+    "chapter": "02-light",
+    "id": "retardation",
+    "match": "new",
+    "page_key": "gl:retardation",
+    "term": "retardation"
+  },
+  {
+    "chapter": "02-light",
+    "id": "sellmeier-equation",
+    "match": "canonical",
+    "page_key": "gl:sellmeier",
+    "term": "Sellmeier equation"
+  },
+  {
+    "chapter": "02-light",
+    "id": "group-index",
+    "match": "canonical",
+    "page_key": "gl:group-index",
+    "term": "group index"
+  },
+  {
+    "chapter": "02-light",
+    "id": "thermo-optic-coefficient",
+    "match": "canonical",
+    "page_key": "gl:thermo-optic",
+    "term": "thermo-optic coefficient"
+  },
+  {
+    "chapter": "02-light",
+    "id": "cln-congruent-ln",
+    "match": "new",
+    "page_key": "gl:cln",
+    "term": "CLN, congruent LN"
+  },
+  {
+    "chapter": "02-light",
+    "id": "mgo-doping",
+    "match": "canonical",
+    "page_key": "gl:mgo-ln",
+    "term": "MgO:LN"
+  },
+  {
+    "chapter": "02-light",
+    "id": "pockels-effect",
+    "match": "canonical",
+    "page_key": "gl:pockels",
+    "term": "Pockels effect (linear electro-optic effect)"
+  },
+  {
+    "chapter": "02-light",
+    "id": "electro-optic-tensor",
+    "match": "new",
+    "page_key": "gl:r-tensor",
+    "term": "electro-optic tensor"
+  },
+  {
+    "chapter": "02-light",
+    "id": "clamped-s-and-free-t-coefficients",
+    "match": "new",
+    "page_key": "gl:clamped-free",
+    "term": "clamped (S) and free (T) coefficients"
+  },
+  {
+    "chapter": "02-light",
+    "id": "contracted-voigt-index",
+    "match": "new",
+    "page_key": "gl:voigt",
+    "term": "contracted (Voigt) index"
+  },
+  {
+    "chapter": "02-light",
+    "id": "vpi",
+    "match": "canonical",
+    "page_key": "gl:vpi",
+    "term": "half-wave voltage"
+  },
+  {
+    "chapter": "02-light",
+    "id": "v-pi-l",
+    "match": "new",
+    "page_key": "gl:vpil",
+    "term": "V_pi L"
+  },
+  {
+    "chapter": "02-light",
+    "id": "push-pull",
+    "match": "canonical",
+    "page_key": "gl:push-pull",
+    "term": "push-pull"
+  },
+  {
+    "chapter": "02-light",
+    "id": "eo-overlap-factor",
+    "match": "new",
+    "page_key": "gl:overlap",
+    "term": "EO overlap factor"
+  },
+  {
+    "chapter": "02-light",
+    "id": "second-order-susceptibility",
+    "match": "canonical",
+    "page_key": "gl:chi2",
+    "term": "second-order susceptibility"
+  },
+  {
+    "chapter": "02-light",
+    "id": "nonlinear-coefficient-tensor",
+    "match": "new",
+    "page_key": "gl:d-tensor",
+    "term": "nonlinear coefficient tensor"
+  },
+  {
+    "chapter": "02-light",
+    "id": "kleinman-symmetry",
+    "match": "canonical",
+    "page_key": "gl:kleinman",
+    "term": "Kleinman symmetry"
+  },
+  {
+    "chapter": "02-light",
+    "id": "millers-rule",
+    "match": "canonical",
+    "page_key": "gl:miller-rule",
+    "term": "Miller's rule"
+  },
+  {
+    "chapter": "02-light",
+    "id": "shg",
+    "match": "canonical",
+    "page_key": "gl:shg",
+    "term": "second-harmonic generation"
+  },
+  {
+    "chapter": "02-light",
+    "id": "sfg",
+    "match": "canonical",
+    "page_key": "gl:sfg",
+    "term": "sum-frequency generation"
+  },
+  {
+    "chapter": "02-light",
+    "id": "dfg",
+    "match": "canonical",
+    "page_key": "gl:dfg",
+    "term": "difference-frequency generation"
+  },
+  {
+    "chapter": "02-light",
+    "id": "phase-matching",
+    "match": "canonical",
+    "page_key": "gl:phase-matching",
+    "term": "phase matching"
+  },
+  {
+    "chapter": "02-light",
+    "id": "coherence-length",
+    "match": "canonical",
+    "page_key": "gl:coherence-length",
+    "term": "coherence length"
+  },
+  {
+    "chapter": "02-light",
+    "id": "birefringent-phase-matching",
+    "match": "canonical",
+    "page_key": "gl:bpm",
+    "term": "birefringent phase matching"
+  },
+  {
+    "chapter": "02-light",
+    "id": "qpm",
+    "match": "canonical",
+    "page_key": "gl:qpm",
+    "term": "quasi-phase matching"
+  },
+  {
+    "chapter": "02-light",
+    "id": "ppln",
+    "match": "canonical",
+    "page_key": "gl:ppln",
+    "term": "PPLN"
+  },
+  {
+    "chapter": "02-light",
+    "id": "duty-cycle",
+    "match": "chapter",
+    "page_key": "gl:duty-cycle",
+    "term": "duty cycle"
+  },
+  {
+    "chapter": "02-light",
+    "id": "normalized-conversion-efficiency",
+    "match": "new",
+    "page_key": "gl:eta-norm",
+    "term": "normalized conversion efficiency"
+  },
+  {
+    "chapter": "02-light",
+    "id": "effective-area",
+    "match": "new",
+    "page_key": "gl:a-eff",
+    "term": "effective area"
+  },
+  {
+    "chapter": "02-light",
+    "id": "acceptance-bandwidth",
+    "match": "new",
+    "page_key": "gl:acceptance-bandwidth",
+    "term": "acceptance bandwidth"
+  },
+  {
+    "chapter": "02-light",
+    "id": "group-velocity-mismatch",
+    "match": "new",
+    "page_key": "gl:gvm",
+    "term": "group-velocity mismatch"
+  },
+  {
+    "chapter": "02-light",
+    "id": "opa",
+    "match": "canonical",
+    "page_key": "gl:opa",
+    "term": "optical parametric amplification"
+  },
+  {
+    "chapter": "02-light",
+    "id": "opo",
+    "match": "canonical",
+    "page_key": "gl:opo",
+    "term": "optical parametric oscillator"
+  },
+  {
+    "chapter": "02-light",
+    "id": "opo-threshold",
+    "match": "new",
+    "page_key": "gl:opo-threshold",
+    "term": "OPO threshold"
+  },
+  {
+    "chapter": "02-light",
+    "id": "kerr-effect",
+    "match": "canonical",
+    "page_key": "gl:kerr",
+    "term": "optical Kerr effect"
+  },
+  {
+    "chapter": "02-light",
+    "id": "nonlinear-parameter",
+    "match": "new",
+    "page_key": "gl:gamma-nl",
+    "term": "nonlinear parameter"
+  },
+  {
+    "chapter": "02-light",
+    "id": "cascaded-chi-2",
+    "match": "new",
+    "page_key": "gl:cascaded-chi2",
+    "term": "cascaded chi(2)"
+  },
+  {
+    "chapter": "02-light",
+    "id": "kerr-frequency-comb",
+    "match": "new",
+    "page_key": "gl:kerr-comb",
+    "term": "Kerr frequency comb"
+  },
+  {
+    "chapter": "02-light",
+    "id": "lugiato-lefever-equation",
+    "match": "new",
+    "page_key": "gl:lle",
+    "term": "Lugiato-Lefever equation"
+  },
+  {
+    "chapter": "02-light",
+    "id": "soliton-step",
+    "match": "new",
+    "page_key": "gl:soliton-step",
+    "term": "soliton step"
+  },
+  {
+    "chapter": "02-light",
+    "id": "stimulated-raman-scattering",
+    "match": "new",
+    "page_key": "gl:raman",
+    "term": "stimulated Raman scattering"
+  },
+  {
+    "chapter": "02-light",
+    "id": "eo-comb",
+    "match": "canonical",
+    "page_key": "gl:eo-comb",
+    "term": "electro-optic frequency comb"
+  },
+  {
+    "chapter": "02-light",
+    "id": "free-spectral-range",
+    "match": "new",
+    "page_key": "gl:fsr",
+    "term": "free spectral range"
+  },
+  {
+    "chapter": "02-light",
+    "id": "finesse",
+    "match": "new",
+    "page_key": "gl:finesse",
+    "term": "finesse"
+  },
+  {
+    "chapter": "02-light",
+    "id": "electro-optic-frequency-shifter",
+    "match": "new",
+    "page_key": "gl:frequency-shifter",
+    "term": "electro-optic frequency shifter"
+  },
+  {
+    "chapter": "02-light",
+    "id": "photonic-molecule",
+    "match": "new",
+    "page_key": "gl:photonic-molecule",
+    "term": "photonic molecule"
+  },
+  {
+    "chapter": "02-light",
+    "id": "lnoi-tfln",
+    "match": "new",
+    "page_key": "gl:lnoi",
+    "term": "LNOI, TFLN"
+  },
+  {
+    "chapter": "02-light",
+    "id": "x-cut",
+    "match": "canonical",
+    "page_key": "gl:x-cut",
+    "term": "x-cut"
+  },
+  {
+    "chapter": "02-light",
+    "id": "z-cut",
+    "match": "canonical",
+    "page_key": "gl:z-cut",
+    "term": "z-cut"
+  },
+  {
+    "chapter": "02-light",
+    "id": "rib-waveguide",
+    "match": "new",
+    "page_key": "gl:rib-waveguide",
+    "term": "rib waveguide"
+  },
+  {
+    "chapter": "02-light",
+    "id": "te-tm-quasi-modes",
+    "match": "new",
+    "page_key": "gl:te-tm",
+    "term": "TE, TM (quasi-)modes"
+  },
+  {
+    "chapter": "02-light",
+    "id": "mode-hybridization",
+    "match": "new",
+    "page_key": "gl:mode-hybridization",
+    "term": "mode hybridization"
+  },
+  {
+    "chapter": "02-light",
+    "id": "q-factor",
+    "match": "canonical",
+    "page_key": "gl:intrinsic-q",
+    "term": "intrinsic Q"
+  },
+  {
+    "chapter": "02-light",
+    "id": "propagation-loss",
+    "match": "canonical",
+    "page_key": "gl:propagation-loss",
+    "term": "propagation loss"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "piezoelectric-effect",
+    "match": "canonical",
+    "page_key": "sg:piezoelectric-effect",
+    "term": "piezoelectric effect"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "constitutive-equations",
+    "match": "new",
+    "page_key": "sg:constitutive-equations",
+    "term": "constitutive equations"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "e-coefficient",
+    "match": "new",
+    "page_key": "sg:e-coefficient",
+    "term": "e coefficient"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "d-coefficient",
+    "match": "new",
+    "page_key": "sg:d-coefficient",
+    "term": "d coefficient"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "g-coefficient",
+    "match": "new",
+    "page_key": "sg:g-coefficient",
+    "term": "g coefficient"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "h-coefficient",
+    "match": "new",
+    "page_key": "sg:h-coefficient",
+    "term": "h coefficient"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "constant-e-constant-d",
+    "match": "new",
+    "page_key": "sg:constant-e-constant-d",
+    "term": "constant E, constant D"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "clamped-and-free-s-and-t",
+    "match": "new",
+    "page_key": "sg:clamped-and-free-s-and-t",
+    "term": "clamped and free (S and T)"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "voigt-notation",
+    "match": "canonical",
+    "page_key": "sg:voigt-notation",
+    "term": "Voigt notation"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "convention-of-2s",
+    "match": "new",
+    "page_key": "sg:convention-of-2s",
+    "term": "convention of 2s"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "ieee-176",
+    "match": "canonical",
+    "page_key": "sg:ieee-std-176-1987",
+    "term": "IEEE Std 176-1987"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "sign-frame",
+    "match": "new",
+    "page_key": "sg:sign-frame",
+    "term": "sign frame"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "electromechanical-coupling-factor",
+    "match": "new",
+    "page_key": "sg:electromechanical-coupling-factor",
+    "term": "electromechanical coupling factor"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "christoffel-equation",
+    "match": "canonical",
+    "page_key": "sg:christoffel-equation",
+    "term": "Christoffel equation"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "piezoelectric-stiffening",
+    "match": "new",
+    "page_key": "sg:piezoelectric-stiffening",
+    "term": "piezoelectric stiffening"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "slowness-surface",
+    "match": "new",
+    "page_key": "sg:slowness-surface",
+    "term": "slowness surface"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "saw",
+    "match": "canonical",
+    "page_key": "sg:surface-acoustic-wave",
+    "term": "surface acoustic wave"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "saw",
+    "match": "canonical",
+    "page_key": "sg:rayleigh-wave",
+    "term": "Rayleigh wave"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "leaky-saw",
+    "match": "new",
+    "page_key": "sg:leaky-saw",
+    "term": "leaky SAW"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "sagittal-plane",
+    "match": "new",
+    "page_key": "sg:sagittal-plane",
+    "term": "sagittal plane"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "partial-wave-method",
+    "match": "new",
+    "page_key": "sg:partial-wave-method",
+    "term": "partial-wave method"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "y-cut",
+    "match": "canonical",
+    "page_key": "sg:rotated-y-cut",
+    "term": "rotated Y cut"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "idt",
+    "match": "canonical",
+    "page_key": "sg:interdigital-transducer",
+    "term": "interdigital transducer"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "metallization-ratio",
+    "match": "new",
+    "page_key": "sg:metallization-ratio",
+    "term": "metallization ratio"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "temperature-coefficient-of-frequency",
+    "match": "new",
+    "page_key": "sg:temperature-coefficient-of-frequency",
+    "term": "temperature coefficient of frequency"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "poi",
+    "match": "new",
+    "page_key": "sg:poi",
+    "term": "POI"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "xbar",
+    "match": "canonical",
+    "page_key": "sg:xbar",
+    "term": "XBAR"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "love-wave",
+    "match": "new",
+    "page_key": "sg:love-wave",
+    "term": "Love wave"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "lamb-wave",
+    "match": "new",
+    "page_key": "sg:lamb-wave",
+    "term": "Lamb wave"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "sh0-mode",
+    "match": "new",
+    "page_key": "sg:sh0-mode",
+    "term": "SH0 mode"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "phononic-index-guiding",
+    "match": "new",
+    "page_key": "sg:phononic-index-guiding",
+    "term": "phononic index guiding"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "photoelastic-effect",
+    "match": "canonical",
+    "page_key": "sg:photoelastic-effect",
+    "term": "photoelastic effect"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "rotational-photoelastic-contribution",
+    "match": "new",
+    "page_key": "sg:rotational-photoelastic-contribution",
+    "term": "rotational photoelastic contribution"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "indirect-photoelastic-effect",
+    "match": "new",
+    "page_key": "sg:indirect-photoelastic-effect",
+    "term": "indirect photoelastic effect"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "acousto-optic-figure-of-merit",
+    "match": "new",
+    "page_key": "sg:acousto-optic-figure-of-merit",
+    "term": "acousto-optic figure of merit"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "bragg-diffraction",
+    "match": "new",
+    "page_key": "sg:bragg-diffraction",
+    "term": "Bragg diffraction"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "piezo-optomechanics",
+    "match": "canonical",
+    "page_key": "sg:optomechanical-crystal",
+    "term": "optomechanical crystal"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "vacuum-optomechanical-coupling-rate",
+    "match": "new",
+    "page_key": "sg:vacuum-optomechanical-coupling-rate",
+    "term": "vacuum optomechanical coupling rate"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "cooperativity",
+    "match": "new",
+    "page_key": "sg:cooperativity",
+    "term": "cooperativity"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "piezo-optomechanics",
+    "match": "canonical",
+    "page_key": "sg:piezo-optomechanical-transduction",
+    "term": "piezo-optomechanical transduction"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "nanobender",
+    "match": "new",
+    "page_key": "sg:nanobender",
+    "term": "nanobender"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "heralded-microwave-photon",
+    "match": "new",
+    "page_key": "sg:heralded-microwave-photon",
+    "term": "heralded microwave photon"
+  },
+  {
+    "chapter": "03-sound",
+    "id": "ln-on-sapphire",
+    "match": "new",
+    "page_key": "sg:ln-on-sapphire",
+    "term": "LN on sapphire"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "photorefraction",
+    "match": "canonical",
+    "page_key": "q:photorefractive-effect",
+    "term": "photorefractive effect"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "photorefraction",
+    "match": "canonical",
+    "page_key": "q:optical-damage",
+    "term": "optical damage"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "photorefractive-damage",
+    "match": "new",
+    "page_key": "q:photorefractive-damage",
+    "term": "photorefractive damage"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "bulk-photovoltaic-effect",
+    "match": "canonical",
+    "page_key": "q:bulk-photovoltaic-effect",
+    "term": "bulk photovoltaic effect"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "glass-constant",
+    "match": "new",
+    "page_key": "q:glass-constant",
+    "term": "Glass constant"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "photovoltaic-tensor",
+    "match": "new",
+    "page_key": "q:photovoltaic-tensor",
+    "term": "photovoltaic tensor"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "space-charge-field",
+    "match": "canonical",
+    "page_key": "q:space-charge-field",
+    "term": "space-charge field"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "dielectric-relaxation-time",
+    "match": "new",
+    "page_key": "q:dielectric-relaxation-time",
+    "term": "dielectric relaxation time"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "dark-conductivity",
+    "match": "canonical",
+    "page_key": "q:dark-conductivity",
+    "term": "dark conductivity"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "photoconductivity",
+    "match": "canonical",
+    "page_key": "q:photoconductivity",
+    "term": "photoconductivity"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "diffusion-field",
+    "match": "new",
+    "page_key": "q:diffusion-field",
+    "term": "diffusion field"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "kukhtarev-model",
+    "match": "new",
+    "page_key": "q:kukhtarev-model",
+    "term": "Kukhtarev model"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "two-center-model",
+    "match": "new",
+    "page_key": "q:two-center-model",
+    "term": "two-center model"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "nb-antisite-nb-li",
+    "match": "chapter",
+    "page_key": "q:nb-antisite",
+    "term": "Nb antisite"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "polaron",
+    "match": "canonical",
+    "page_key": "q:small-polaron",
+    "term": "small polaron"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "bound-small-polaron",
+    "match": "new",
+    "page_key": "q:bound-small-polaron",
+    "term": "bound small polaron"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "free-small-polaron",
+    "match": "new",
+    "page_key": "q:free-small-polaron",
+    "term": "free small polaron"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "polaron",
+    "match": "canonical",
+    "page_key": "q:bipolaron",
+    "term": "bipolaron"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "hole-polaron-o",
+    "match": "chapter",
+    "page_key": "q:hole-polaron",
+    "term": "hole polaron"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "griira",
+    "match": "canonical",
+    "page_key": "q:griira",
+    "term": "GRIIRA"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "bliira",
+    "match": "canonical",
+    "page_key": "q:bliira",
+    "term": "BLIIRA"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "dark-trace",
+    "match": "new",
+    "page_key": "q:dark-trace",
+    "term": "dark trace"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "optical-damage-resistant-ion",
+    "match": "chapter",
+    "page_key": "q:optical-damage-resistant-ion",
+    "term": "optical-damage-resistant ion"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "threshold-concentration",
+    "match": "chapter",
+    "page_key": "q:threshold-concentration",
+    "term": "threshold concentration"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "congruent",
+    "match": "canonical",
+    "page_key": "q:congruent-lithium-niobate",
+    "term": "congruent lithium niobate"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "near-stoichiometric-lithium-niobate",
+    "match": "new",
+    "page_key": "q:near-stoichiometric-lithium-niobate",
+    "term": "near-stoichiometric lithium niobate"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "vte",
+    "match": "canonical",
+    "page_key": "q:vapor-transport-equilibration",
+    "term": "vapor transport equilibration"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "laser-induced-damage",
+    "match": "new",
+    "page_key": "q:laser-induced-damage",
+    "term": "laser-induced damage"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "pyroelectric-coefficient",
+    "match": "new",
+    "page_key": "q:pyroelectric-coefficient",
+    "term": "pyroelectric coefficient"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "spontaneous-polarization",
+    "match": "canonical",
+    "page_key": "q:spontaneous-polarization",
+    "term": "spontaneous polarization"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "plus-z-face",
+    "match": "canonical",
+    "page_key": "q:c-face-z-face",
+    "term": "+c face (+z face)"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "pyroelectric-field",
+    "match": "new",
+    "page_key": "q:pyroelectric-field",
+    "term": "pyroelectric field"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "dc-bias-drift",
+    "match": "canonical",
+    "page_key": "q:dc-drift",
+    "term": "DC drift"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "dc-bias-drift",
+    "match": "canonical",
+    "page_key": "q:eo-relaxation",
+    "term": "EO relaxation"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "maxwell-wagner-relaxation",
+    "match": "new",
+    "page_key": "q:maxwell-wagner-relaxation",
+    "term": "Maxwell-Wagner relaxation"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "quadrature",
+    "match": "new",
+    "page_key": "q:quadrature",
+    "term": "quadrature"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "eo-hysteresis",
+    "match": "new",
+    "page_key": "q:eo-hysteresis",
+    "term": "EO hysteresis"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "ito-buffer",
+    "match": "new",
+    "page_key": "q:ito-buffer",
+    "term": "ITO buffer"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "tflt",
+    "match": "canonical",
+    "page_key": "q:tflt",
+    "term": "TFLT"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "thermo-optic-coefficient",
+    "match": "canonical",
+    "page_key": "q:thermo-optic-coefficient",
+    "term": "thermo-optic coefficient"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "thermal-triangle",
+    "match": "new",
+    "page_key": "q:thermal-triangle",
+    "term": "thermal triangle"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "thermal-lens",
+    "match": "new",
+    "page_key": "q:thermal-lens",
+    "term": "thermal lens"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "li-out-diffusion",
+    "match": "canonical",
+    "page_key": "q:li-out-diffusion",
+    "term": "Li out-diffusion"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "ti-indiffusion",
+    "match": "canonical",
+    "page_key": "q:ti-indiffusion",
+    "term": "Ti indiffusion"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "domain-inversion-layer",
+    "match": "new",
+    "page_key": "q:domain-inversion-layer",
+    "term": "domain inversion layer"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "discharge-layer",
+    "match": "new",
+    "page_key": "q:discharge-layer",
+    "term": "discharge layer"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "snspd",
+    "match": "new",
+    "page_key": "q:snspd",
+    "term": "SNSPD"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "pam4",
+    "match": "new",
+    "page_key": "q:pam4",
+    "term": "PAM4"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "cte",
+    "match": "new",
+    "page_key": "q:cte",
+    "term": "CTE"
+  },
+  {
+    "chapter": "04-quirks",
+    "id": "idt",
+    "match": "canonical",
+    "page_key": "q:idt",
+    "term": "IDT"
+  },
+  {
+    "chapter": "05-making",
+    "id": "czochralski-growth",
+    "match": "canonical",
+    "page_key": "gl:czochralski-growth",
+    "term": "Czochralski growth"
+  },
+  {
+    "chapter": "05-making",
+    "id": "congruent",
+    "match": "canonical",
+    "page_key": "gl:congruent-composition",
+    "term": "Congruent composition"
+  },
+  {
+    "chapter": "05-making",
+    "id": "near-stoichiometric-lithium-niobate",
+    "match": "chapter",
+    "page_key": "gl:near-stoichiometric-lithium-niobate",
+    "term": "Near-stoichiometric lithium niobate"
+  },
+  {
+    "chapter": "05-making",
+    "id": "vte",
+    "match": "canonical",
+    "page_key": "gl:vapour-transport-equilibration",
+    "term": "Vapour transport equilibration"
+  },
+  {
+    "chapter": "05-making",
+    "id": "double-crucible-czochralski-dccz",
+    "match": "chapter",
+    "page_key": "gl:double-crucible-czochralski",
+    "term": "Double-crucible Czochralski"
+  },
+  {
+    "chapter": "05-making",
+    "id": "mgo-doping",
+    "match": "canonical",
+    "page_key": "gl:mgo-doping",
+    "term": "MgO doping"
+  },
+  {
+    "chapter": "05-making",
+    "id": "single-domain-poling-boule",
+    "match": "new",
+    "page_key": "gl:single-domain-poling",
+    "term": "Single-domain poling (boule)"
+  },
+  {
+    "chapter": "05-making",
+    "id": "x-cut-y-cut-z-cut",
+    "match": "new",
+    "page_key": "gl:x-cut",
+    "term": "x-cut, y-cut, z-cut"
+  },
+  {
+    "chapter": "05-making",
+    "id": "128-y-x-cut",
+    "match": "canonical",
+    "page_key": "gl:128-deg-y-x-cut",
+    "term": "128 deg Y-X cut"
+  },
+  {
+    "chapter": "05-making",
+    "id": "wafer-flat",
+    "match": "new",
+    "page_key": "gl:wafer-flat",
+    "term": "Wafer flat"
+  },
+  {
+    "chapter": "05-making",
+    "id": "ti-indiffusion",
+    "match": "canonical",
+    "page_key": "gl:titanium-indiffusion",
+    "term": "Titanium indiffusion"
+  },
+  {
+    "chapter": "05-making",
+    "id": "proton-exchange",
+    "match": "canonical",
+    "page_key": "gl:proton-exchange",
+    "term": "Proton exchange"
+  },
+  {
+    "chapter": "05-making",
+    "id": "lnoi",
+    "match": "canonical",
+    "page_key": "gl:lithium-niobate-on-insulator",
+    "term": "Lithium niobate on insulator"
+  },
+  {
+    "chapter": "05-making",
+    "id": "tfln",
+    "match": "canonical",
+    "page_key": "gl:thin-film-lithium-niobate",
+    "term": "Thin-film lithium niobate"
+  },
+  {
+    "chapter": "05-making",
+    "id": "ion-slicing",
+    "match": "canonical",
+    "page_key": "gl:crystal-ion-slicing",
+    "term": "Crystal ion slicing"
+  },
+  {
+    "chapter": "05-making",
+    "id": "ion-slicing",
+    "match": "canonical",
+    "page_key": "gl:smart-cut",
+    "term": "Smart Cut"
+  },
+  {
+    "chapter": "05-making",
+    "id": "projected-range",
+    "match": "new",
+    "page_key": "gl:projected-range",
+    "term": "Projected range"
+  },
+  {
+    "chapter": "05-making",
+    "id": "fluence",
+    "match": "new",
+    "page_key": "gl:fluence",
+    "term": "Fluence"
+  },
+  {
+    "chapter": "05-making",
+    "id": "plasma-activated-direct-bonding",
+    "match": "new",
+    "page_key": "gl:plasma-activated-direct-bonding",
+    "term": "Plasma-activated direct bonding"
+  },
+  {
+    "chapter": "05-making",
+    "id": "bcb",
+    "match": "new",
+    "page_key": "gl:bcb",
+    "term": "BCB"
+  },
+  {
+    "chapter": "05-making",
+    "id": "splitting-anneal",
+    "match": "new",
+    "page_key": "gl:splitting-anneal",
+    "term": "Splitting anneal"
+  },
+  {
+    "chapter": "05-making",
+    "id": "cmp",
+    "match": "canonical",
+    "page_key": "gl:chemical-mechanical-polishing",
+    "term": "Chemical mechanical polishing"
+  },
+  {
+    "chapter": "05-making",
+    "id": "preston-equation",
+    "match": "new",
+    "page_key": "gl:preston-equation",
+    "term": "Preston equation"
+  },
+  {
+    "chapter": "05-making",
+    "id": "place",
+    "match": "new",
+    "page_key": "gl:place",
+    "term": "PLACE"
+  },
+  {
+    "chapter": "05-making",
+    "id": "electron-beam-lithography",
+    "match": "new",
+    "page_key": "gl:electron-beam-lithography",
+    "term": "Electron-beam lithography"
+  },
+  {
+    "chapter": "05-making",
+    "id": "hsq",
+    "match": "new",
+    "page_key": "gl:hsq",
+    "term": "HSQ"
+  },
+  {
+    "chapter": "05-making",
+    "id": "duv-lithography",
+    "match": "canonical",
+    "page_key": "gl:duv-stepper",
+    "term": "DUV stepper"
+  },
+  {
+    "chapter": "05-making",
+    "id": "hard-mask",
+    "match": "new",
+    "page_key": "gl:hard-mask",
+    "term": "Hard mask"
+  },
+  {
+    "chapter": "05-making",
+    "id": "diamond-like-carbon",
+    "match": "new",
+    "page_key": "gl:diamond-like-carbon",
+    "term": "Diamond-like carbon"
+  },
+  {
+    "chapter": "05-making",
+    "id": "argon-ion-milling-ion-beam-etching",
+    "match": "new",
+    "page_key": "gl:argon-ion-milling",
+    "term": "Argon ion milling / ion beam etching"
+  },
+  {
+    "chapter": "05-making",
+    "id": "icp-rie",
+    "match": "new",
+    "page_key": "gl:icp-rie",
+    "term": "ICP-RIE"
+  },
+  {
+    "chapter": "05-making",
+    "id": "redeposition",
+    "match": "new",
+    "page_key": "gl:redeposition",
+    "term": "Redeposition"
+  },
+  {
+    "chapter": "05-making",
+    "id": "etch-selectivity",
+    "match": "new",
+    "page_key": "gl:etch-selectivity",
+    "term": "Etch selectivity"
+  },
+  {
+    "chapter": "05-making",
+    "id": "sidewall-angle",
+    "match": "new",
+    "page_key": "gl:sidewall-angle",
+    "term": "Sidewall angle"
+  },
+  {
+    "chapter": "05-making",
+    "id": "pecvd",
+    "match": "new",
+    "page_key": "gl:pecvd",
+    "term": "PECVD"
+  },
+  {
+    "chapter": "05-making",
+    "id": "icpcvd",
+    "match": "new",
+    "page_key": "gl:icpcvd",
+    "term": "ICPCVD"
+  },
+  {
+    "chapter": "05-making",
+    "id": "lift-off",
+    "match": "new",
+    "page_key": "gl:lift-off",
+    "term": "Lift-off"
+  },
+  {
+    "chapter": "05-making",
+    "id": "ppln",
+    "match": "canonical",
+    "page_key": "gl:periodic-poling",
+    "term": "Periodic poling"
+  },
+  {
+    "chapter": "05-making",
+    "id": "coercive-field",
+    "match": "canonical",
+    "page_key": "gl:coercive-field",
+    "term": "Coercive field"
+  },
+  {
+    "chapter": "05-making",
+    "id": "duty-cycle",
+    "match": "chapter",
+    "page_key": "gl:duty-cycle",
+    "term": "Duty cycle (poling)"
+  },
+  {
+    "chapter": "05-making",
+    "id": "edge-exclusion",
+    "match": "new",
+    "page_key": "gl:edge-exclusion",
+    "term": "Edge exclusion"
+  },
+  {
+    "chapter": "05-making",
+    "id": "inverse-taper-edge-coupler",
+    "match": "new",
+    "page_key": "gl:inverse-taper-edge-coupler",
+    "term": "Inverse taper edge coupler"
+  },
+  {
+    "chapter": "05-making",
+    "id": "photonic-wire-bonding",
+    "match": "new",
+    "page_key": "gl:photonic-wire-bonding",
+    "term": "Photonic wire bonding"
+  },
+  {
+    "chapter": "05-making",
+    "id": "analog-provenance",
+    "match": "new",
+    "page_key": "gl:analog",
+    "term": "Analog (provenance)"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "tfln",
+    "match": "canonical",
+    "page_key": null,
+    "term": "TFLN"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "lnoi",
+    "match": "canonical",
+    "page_key": null,
+    "term": "LNOI"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "tflt",
+    "match": "canonical",
+    "page_key": null,
+    "term": "TFLT"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "x-cut",
+    "match": "canonical",
+    "page_key": null,
+    "term": "x-cut"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "mzm",
+    "match": "canonical",
+    "page_key": null,
+    "term": "MZM"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "iq-modulator",
+    "match": "new",
+    "page_key": null,
+    "term": "IQ modulator"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "push-pull",
+    "match": "canonical",
+    "page_key": null,
+    "term": "push-pull"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "vpi",
+    "match": "canonical",
+    "page_key": null,
+    "term": "V_pi"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "v-pi-l",
+    "match": "chapter",
+    "page_key": null,
+    "term": "V_pi L"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "vpi-convention",
+    "match": "new",
+    "page_key": null,
+    "term": "Vpi convention"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "overlap-factor",
+    "match": "canonical",
+    "page_key": null,
+    "term": "overlap factor"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "traveling-wave-electrode",
+    "match": "canonical",
+    "page_key": null,
+    "term": "TWE"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "cpw",
+    "match": "new",
+    "page_key": null,
+    "term": "CPW"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "gsg-gssg",
+    "match": "new",
+    "page_key": null,
+    "term": "GSG / GSSG"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "capacitively-loaded-electrode",
+    "match": "new",
+    "page_key": null,
+    "term": "capacitively loaded electrode"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "slow-wave-electrode",
+    "match": "new",
+    "page_key": null,
+    "term": "slow-wave electrode"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "slow-light",
+    "match": "new",
+    "page_key": null,
+    "term": "slow light"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "n-rf",
+    "match": "new",
+    "page_key": null,
+    "term": "n_RF"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "n-g",
+    "match": "new",
+    "page_key": null,
+    "term": "n_g"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "velocity-matching",
+    "match": "canonical",
+    "page_key": null,
+    "term": "velocity matching"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "z0",
+    "match": "new",
+    "page_key": null,
+    "term": "Z0"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "rf-loss",
+    "match": "new",
+    "page_key": null,
+    "term": "RF loss"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "eo-s21",
+    "match": "new",
+    "page_key": null,
+    "term": "EO S21"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "eo-bandwidth",
+    "match": "canonical",
+    "page_key": null,
+    "term": "3 dB EO bandwidth"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "extinction-ratio",
+    "match": "new",
+    "page_key": null,
+    "term": "extinction ratio"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "insertion-loss",
+    "match": "new",
+    "page_key": null,
+    "term": "insertion loss"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "ring-modulator",
+    "match": "new",
+    "page_key": null,
+    "term": "ring modulator"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "q-factor",
+    "match": "canonical",
+    "page_key": null,
+    "term": "loaded Q"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "photon-lifetime",
+    "match": "new",
+    "page_key": null,
+    "term": "photon lifetime"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "phc",
+    "match": "new",
+    "page_key": null,
+    "term": "PhC"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "nrz-pam4",
+    "match": "new",
+    "page_key": null,
+    "term": "NRZ / PAM4"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "gbd",
+    "match": "new",
+    "page_key": null,
+    "term": "GBd"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "line-rate-net-rate",
+    "match": "new",
+    "page_key": null,
+    "term": "line rate / net rate"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "dac",
+    "match": "new",
+    "page_key": null,
+    "term": "DAC"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "ppln",
+    "match": "canonical",
+    "page_key": null,
+    "term": "PPLN"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "qpm",
+    "match": "canonical",
+    "page_key": null,
+    "term": "QPM"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "shg-sfg-dfg",
+    "match": "new",
+    "page_key": null,
+    "term": "SHG / SFG / DFG"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "normalized-conversion-efficiency",
+    "match": "chapter",
+    "page_key": null,
+    "term": "normalized conversion efficiency"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "opa",
+    "match": "canonical",
+    "page_key": null,
+    "term": "OPA"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "opo",
+    "match": "canonical",
+    "page_key": null,
+    "term": "OPO"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "eo-comb",
+    "match": "canonical",
+    "page_key": null,
+    "term": "EO comb"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "kerr-soliton",
+    "match": "new",
+    "page_key": null,
+    "term": "Kerr soliton"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "electro-optic-frequency-shifter",
+    "match": "chapter",
+    "page_key": null,
+    "term": "EO frequency shifter"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "squeezed-light",
+    "match": "new",
+    "page_key": null,
+    "term": "squeezed light"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "car",
+    "match": "new",
+    "page_key": null,
+    "term": "CAR"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "g2-0",
+    "match": "new",
+    "page_key": null,
+    "term": "g2(0)"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "qfc",
+    "match": "new",
+    "page_key": null,
+    "term": "QFC"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "microwave-optical-transducer",
+    "match": "new",
+    "page_key": null,
+    "term": "microwave-optical transducer"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "piezo-optomechanics",
+    "match": "canonical",
+    "page_key": null,
+    "term": "piezo-optomechanics"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "ao-modulator",
+    "match": "new",
+    "page_key": null,
+    "term": "AO modulator"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "idt",
+    "match": "canonical",
+    "page_key": null,
+    "term": "IDT"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "saw",
+    "match": "canonical",
+    "page_key": null,
+    "term": "SAW"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "baw",
+    "match": "canonical",
+    "page_key": null,
+    "term": "BAW"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "poi",
+    "match": "chapter",
+    "page_key": null,
+    "term": "POI"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "xbar",
+    "match": "canonical",
+    "page_key": null,
+    "term": "XBAR"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "mutc-photodiode",
+    "match": "new",
+    "page_key": null,
+    "term": "MUTC photodiode"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "er-lnoi",
+    "match": "new",
+    "page_key": null,
+    "term": "Er:LNOI"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "self-injection-locking",
+    "match": "new",
+    "page_key": null,
+    "term": "self-injection locking"
+  },
+  {
+    "chapter": "06-devices",
+    "id": "dc-bias-drift",
+    "match": "canonical",
+    "page_key": null,
+    "term": "DC drift"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ln",
+    "match": "new",
+    "page_key": null,
+    "term": "LN"
+  },
+  {
+    "chapter": "07-history",
+    "id": "lt",
+    "match": "new",
+    "page_key": null,
+    "term": "LT"
+  },
+  {
+    "chapter": "07-history",
+    "id": "columbium",
+    "match": "new",
+    "page_key": null,
+    "term": "columbium"
+  },
+  {
+    "chapter": "07-history",
+    "id": "pelopium",
+    "match": "new",
+    "page_key": null,
+    "term": "pelopium"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ilmenite",
+    "match": "new",
+    "page_key": null,
+    "term": "ilmenite"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ferroelectric",
+    "match": "canonical",
+    "page_key": null,
+    "term": "ferroelectric"
+  },
+  {
+    "chapter": "07-history",
+    "id": "curie-temperature",
+    "match": "canonical",
+    "page_key": null,
+    "term": "Curie temperature (Tc)"
+  },
+  {
+    "chapter": "07-history",
+    "id": "congruent",
+    "match": "canonical",
+    "page_key": null,
+    "term": "congruent composition"
+  },
+  {
+    "chapter": "07-history",
+    "id": "cln-sln",
+    "match": "new",
+    "page_key": null,
+    "term": "CLN, SLN"
+  },
+  {
+    "chapter": "07-history",
+    "id": "czochralski-growth",
+    "match": "canonical",
+    "page_key": null,
+    "term": "Czochralski growth"
+  },
+  {
+    "chapter": "07-history",
+    "id": "single-domain-poled-crystal",
+    "match": "new",
+    "page_key": null,
+    "term": "single-domain (poled) crystal"
+  },
+  {
+    "chapter": "07-history",
+    "id": "phase-matching",
+    "match": "canonical",
+    "page_key": null,
+    "term": "phase matching"
+  },
+  {
+    "chapter": "07-history",
+    "id": "birefringent-phase-matching",
+    "match": "canonical",
+    "page_key": null,
+    "term": "noncritical phase matching"
+  },
+  {
+    "chapter": "07-history",
+    "id": "shg",
+    "match": "canonical",
+    "page_key": null,
+    "term": "SHG"
+  },
+  {
+    "chapter": "07-history",
+    "id": "opo",
+    "match": "canonical",
+    "page_key": null,
+    "term": "OPO"
+  },
+  {
+    "chapter": "07-history",
+    "id": "qpm",
+    "match": "canonical",
+    "page_key": null,
+    "term": "QPM"
+  },
+  {
+    "chapter": "07-history",
+    "id": "coherence-length",
+    "match": "canonical",
+    "page_key": null,
+    "term": "coherence length (l_c)"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ppln",
+    "match": "canonical",
+    "page_key": null,
+    "term": "PPLN"
+  },
+  {
+    "chapter": "07-history",
+    "id": "poling",
+    "match": "canonical",
+    "page_key": null,
+    "term": "electric-field poling"
+  },
+  {
+    "chapter": "07-history",
+    "id": "photorefraction",
+    "match": "canonical",
+    "page_key": null,
+    "term": "optical damage"
+  },
+  {
+    "chapter": "07-history",
+    "id": "photorefraction",
+    "match": "canonical",
+    "page_key": null,
+    "term": "photorefractive effect"
+  },
+  {
+    "chapter": "07-history",
+    "id": "bulk-photovoltaic-effect",
+    "match": "canonical",
+    "page_key": null,
+    "term": "BPVE"
+  },
+  {
+    "chapter": "07-history",
+    "id": "kukhtarev-equations",
+    "match": "new",
+    "page_key": null,
+    "term": "Kukhtarev equations"
+  },
+  {
+    "chapter": "07-history",
+    "id": "hologram-fixing",
+    "match": "canonical",
+    "page_key": null,
+    "term": "hologram fixing"
+  },
+  {
+    "chapter": "07-history",
+    "id": "fe-doping",
+    "match": "canonical",
+    "page_key": null,
+    "term": "Fe:LN"
+  },
+  {
+    "chapter": "07-history",
+    "id": "mgo-doping",
+    "match": "canonical",
+    "page_key": null,
+    "term": "MgO:LN"
+  },
+  {
+    "chapter": "07-history",
+    "id": "saw",
+    "match": "canonical",
+    "page_key": null,
+    "term": "SAW"
+  },
+  {
+    "chapter": "07-history",
+    "id": "idt",
+    "match": "canonical",
+    "page_key": null,
+    "term": "IDT"
+  },
+  {
+    "chapter": "07-history",
+    "id": "128-y-x-cut",
+    "match": "canonical",
+    "page_key": null,
+    "term": "128 Y-X cut"
+  },
+  {
+    "chapter": "07-history",
+    "id": "electromechanical-coupling",
+    "match": "canonical",
+    "page_key": null,
+    "term": "K^2"
+  },
+  {
+    "chapter": "07-history",
+    "id": "xbar",
+    "match": "canonical",
+    "page_key": null,
+    "term": "XBAR"
+  },
+  {
+    "chapter": "07-history",
+    "id": "poi",
+    "match": "chapter",
+    "page_key": null,
+    "term": "POI"
+  },
+  {
+    "chapter": "07-history",
+    "id": "li-out-diffusion",
+    "match": "canonical",
+    "page_key": null,
+    "term": "Li2O out-diffusion"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ti-indiffusion",
+    "match": "canonical",
+    "page_key": null,
+    "term": "Ti:LN"
+  },
+  {
+    "chapter": "07-history",
+    "id": "proton-exchange",
+    "match": "canonical",
+    "page_key": null,
+    "term": "proton exchange (PE), APE"
+  },
+  {
+    "chapter": "07-history",
+    "id": "mzm",
+    "match": "canonical",
+    "page_key": null,
+    "term": "MZM"
+  },
+  {
+    "chapter": "07-history",
+    "id": "v-pi-v-pi-l",
+    "match": "new",
+    "page_key": null,
+    "term": "V_pi, V_pi L"
+  },
+  {
+    "chapter": "07-history",
+    "id": "dc-bias-drift",
+    "match": "canonical",
+    "page_key": null,
+    "term": "DC drift"
+  },
+  {
+    "chapter": "07-history",
+    "id": "dp-qpsk",
+    "match": "new",
+    "page_key": null,
+    "term": "DP-QPSK"
+  },
+  {
+    "chapter": "07-history",
+    "id": "cdm-hb-cdm",
+    "match": "new",
+    "page_key": null,
+    "term": "CDM, HB-CDM"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ion-slicing",
+    "match": "canonical",
+    "page_key": null,
+    "term": "Smart Cut"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ion-slicing",
+    "match": "canonical",
+    "page_key": null,
+    "term": "CIS"
+  },
+  {
+    "chapter": "07-history",
+    "id": "lnoi",
+    "match": "canonical",
+    "page_key": null,
+    "term": "LNOI"
+  },
+  {
+    "chapter": "07-history",
+    "id": "tfln-tflt",
+    "match": "new",
+    "page_key": null,
+    "term": "TFLN, TFLT"
+  },
+  {
+    "chapter": "07-history",
+    "id": "pic",
+    "match": "new",
+    "page_key": null,
+    "term": "PIC"
+  },
+  {
+    "chapter": "07-history",
+    "id": "q-factor",
+    "match": "canonical",
+    "page_key": null,
+    "term": "Q (quality factor)"
+  },
+  {
+    "chapter": "07-history",
+    "id": "duv-lithography",
+    "match": "canonical",
+    "page_key": null,
+    "term": "DUV lithography"
+  },
+  {
+    "chapter": "07-history",
+    "id": "mpw-pdk",
+    "match": "new",
+    "page_key": null,
+    "term": "MPW, PDK"
+  },
+  {
+    "chapter": "07-history",
+    "id": "im-dd-pam-4",
+    "match": "new",
+    "page_key": null,
+    "term": "IM/DD, PAM-4"
+  },
+  {
+    "chapter": "07-history",
+    "id": "gbd",
+    "match": "chapter",
+    "page_key": null,
+    "term": "GBd"
+  },
+  {
+    "chapter": "07-history",
+    "id": "osfp-dr8",
+    "match": "new",
+    "page_key": null,
+    "term": "OSFP, DR8"
+  },
+  {
+    "chapter": "07-history",
+    "id": "ofc-ecoc",
+    "match": "new",
+    "page_key": null,
+    "term": "OFC, ECOC"
+  },
+  {
+    "chapter": "07-history",
+    "id": "iqec",
+    "match": "new",
+    "page_key": null,
+    "term": "IQEC"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "pyrochlore",
+    "match": "new",
+    "page_key": "g8:pyrochlore",
+    "term": "pyrochlore"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "ferroniobium",
+    "match": "new",
+    "page_key": "g8:ferroniobium",
+    "term": "ferroniobium"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "nb2o5",
+    "match": "new",
+    "page_key": "g8:nb2o5",
+    "term": "Nb2O5"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "li2co3",
+    "match": "new",
+    "page_key": "g8:li2co3",
+    "term": "Li2CO3"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "czochralski-growth",
+    "match": "canonical",
+    "page_key": "g8:czochralski-growth",
+    "term": "Czochralski growth"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "congruent-ln",
+    "match": "new",
+    "page_key": "g8:congruent-ln",
+    "term": "congruent LN"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "saw-grade-optical-grade",
+    "match": "new",
+    "page_key": "g8:saw-grade-optical-grade",
+    "term": "SAW grade / optical grade"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "ion-slicing",
+    "match": "canonical",
+    "page_key": "g8:ion-slicing",
+    "term": "ion slicing"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "lnoi-ltoi",
+    "match": "new",
+    "page_key": "g8:lnoi-ltoi",
+    "term": "LNOI / LTOI"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "poi",
+    "match": "chapter",
+    "page_key": "g8:poi",
+    "term": "POI"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "foundry",
+    "match": "new",
+    "page_key": "g8:foundry",
+    "term": "foundry"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "mpw",
+    "match": "new",
+    "page_key": "g8:mpw",
+    "term": "MPW"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "pdk",
+    "match": "new",
+    "page_key": "g8:pdk",
+    "term": "PDK"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "cdm",
+    "match": "new",
+    "page_key": "g8:cdm",
+    "term": "CDM"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "tosa",
+    "match": "new",
+    "page_key": "g8:tosa",
+    "term": "TOSA"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "per-lane-rate",
+    "match": "new",
+    "page_key": "g8:per-lane-rate",
+    "term": "per-lane rate"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "1-6t-3-2t",
+    "match": "new",
+    "page_key": "g8:1-6t-3-2t",
+    "term": "1.6T / 3.2T"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "im-dd",
+    "match": "new",
+    "page_key": "g8:im-dd",
+    "term": "IM/DD"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "coherent",
+    "match": "new",
+    "page_key": "g8:coherent",
+    "term": "coherent"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "cpo-npo-lpo",
+    "match": "new",
+    "page_key": "g8:cpo-npo-lpo",
+    "term": "CPO / NPO / LPO"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "beol",
+    "match": "new",
+    "page_key": "g8:beol",
+    "term": "BEOL"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "eic",
+    "match": "new",
+    "page_key": "g8:eic",
+    "term": "EIC"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "ctle",
+    "match": "new",
+    "page_key": "g8:ctle",
+    "term": "CTLE"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "ofc-ecoc",
+    "match": "chapter",
+    "page_key": "g8:ofc-ecoc",
+    "term": "OFC / ECOC"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "postdeadline-paper",
+    "match": "new",
+    "page_key": "g8:postdeadline-paper",
+    "term": "postdeadline paper"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "evidence-grade",
+    "match": "new",
+    "page_key": "g8:evidence-grade",
+    "term": "evidence grade"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "cagr",
+    "match": "new",
+    "page_key": "g8:cagr",
+    "term": "CAGR"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "market-teaser",
+    "match": "new",
+    "page_key": "g8:market-teaser",
+    "term": "market teaser"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "atlas-sample",
+    "match": "new",
+    "page_key": "g8:atlas-sample",
+    "term": "atlas sample"
+  },
+  {
+    "chapter": "08-industry",
+    "id": "fog",
+    "match": "new",
+    "page_key": "g8:fog",
+    "term": "FOG"
+  }
+]

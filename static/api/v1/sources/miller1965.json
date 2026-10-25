@@ -1,0 +1,42 @@
+{
+  "citation": "Robert C. Miller, G. D. Boyd, A. Savage, \"NONLINEAR OPTICAL INTERACTIONS IN LiNbO3 WITHOUT DOUBLE REFRACTION\", Applied Physics Letters 6, 77-79, (1965) doi:10.1063/1.1754174",
+  "link": "https://doi.org/10.1063/1.1754174",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Miller",
+        "given": "Robert C."
+      },
+      {
+        "family": "Boyd",
+        "given": "G. D."
+      },
+      {
+        "family": "Savage",
+        "given": "A."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754174",
+    "id": "miller1965",
+    "issue": "4",
+    "issued": "1965-02-15",
+    "page": "77-79",
+    "read": "bibliographic record only (Crossref)",
+    "title": "NONLINEAR OPTICAL INTERACTIONS IN LiNbO3 WITHOUT DOUBLE REFRACTION",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

@@ -1,0 +1,336 @@
+# glossary.yaml: chapter 06 Devices
+# Fields: term, expansion (if an abbreviation), definition (one or two sentences, no claims beyond the definition),
+# level (L1 lay / L2 quantitative / L3 measurement), see (manuscript section).
+# As of 2026-10-25.
+
+- term: TFLN
+  expansion: thin-film lithium niobate
+  definition: A single-crystal LN layer, typically a few hundred nanometers thick, bonded on an insulator (usually SiO2 on Si or quartz), in which waveguides are etched or loaded.
+  level: L1
+  see: "6.0"
+
+- term: LNOI
+  expansion: lithium niobate on insulator
+  definition: The wafer product behind TFLN; an LN film on a buried oxide on a handle wafer, made by ion slicing and bonding.
+  level: L1
+  see: "6.0"
+
+- term: TFLT
+  expansion: thin-film lithium tantalate
+  definition: The LT counterpart of TFLN, made from LTOI (lithium tantalate on insulator) wafers.
+  level: L1
+  see: "6.11"
+
+- term: x-cut
+  definition: A wafer whose surface is normal to the crystal x axis, so the z (optic) axis lies in the plane; in-plane electrodes then apply E_z to a TE mode and use r33.
+  level: L2
+  see: "6.1"
+
+- term: MZM
+  expansion: Mach-Zehnder modulator
+  definition: An interferometer that splits light into two arms, changes the phase in one or both by the Pockels effect, and recombines them so the output intensity follows the phase difference.
+  level: L1
+  see: "6.1"
+
+- term: IQ modulator
+  expansion: in-phase / quadrature modulator
+  definition: Two MZMs nested in an outer interferometer with a 90-degree phase offset, used to write amplitude and phase (QAM) onto light.
+  level: L2
+  see: "6.1"
+
+- term: push-pull
+  definition: Drive in which the two MZM arms see opposite fields; for the same electrodes it halves the voltage needed compared with driving one arm.
+  level: L2
+  see: "6.1"
+
+- term: V_pi
+  expansion: half-wave voltage
+  definition: The voltage that changes the interferometer phase by pi, moving an MZM output from maximum to minimum transmission.
+  level: L1
+  see: "6.1"
+
+- term: V_pi L
+  expansion: half-wave voltage-length product
+  definition: V_pi times the electrode length; a length-independent efficiency figure in V cm, valid only within one Vpi convention and one wavelength.
+  level: L2
+  see: "6.1"
+
+- term: Vpi convention
+  definition: The definition behind a quoted V_pi (per-arm phase shifter, push-pull MZM, differential V+ minus V-, single arm); conventions differ by factors of 2 and are never converted on this site.
+  level: L3
+  see: "6.1"
+
+- term: overlap factor
+  expansion: Gamma
+  definition: The normalized overlap between the applied electric field and the optical mode intensity that enters V_pi L = lambda g / (2 n_e^3 r33 Gamma).
+  level: L2
+  see: "6.1"
+
+- term: TWE
+  expansion: traveling-wave electrode
+  definition: An electrode built as a transmission line so the microwave travels along it with the light, instead of charging as a lumped capacitor.
+  level: L2
+  see: "6.2"
+
+- term: CPW
+  expansion: coplanar waveguide
+  definition: A transmission line with a signal conductor between two ground conductors on one surface.
+  level: L2
+  see: "6.2"
+
+- term: GSG / GSSG
+  expansion: ground-signal-ground / ground-signal-signal-ground
+  definition: Electrode layouts for single-ended (GSG) or differential (GSSG) traveling-wave drive.
+  level: L2
+  see: "6.2"
+
+- term: capacitively loaded electrode
+  expansion: CL-TWE, T-rail electrode
+  definition: A traveling-wave electrode with small T-shaped segments that reach toward the waveguide from wide rails, keeping the field gap small while the current flows in low-loss rails.
+  level: L2
+  see: "6.1"
+
+- term: slow-wave electrode
+  definition: A periodically loaded electrode that lowers the microwave phase velocity (raises n_RF) to match a high optical group index.
+  level: L2
+  see: "6.2"
+
+- term: slow light
+  definition: Propagation with a large optical group index in a structured waveguide; it raises the phase shift per unit index change and per unit length.
+  level: L2
+  see: "6.2"
+
+- term: n_RF
+  expansion: microwave (RF) effective index
+  definition: c divided by the microwave phase velocity on the electrode line; atlas column `n_rf`.
+  level: L2
+  see: "6.2"
+
+- term: n_g
+  expansion: optical group index
+  definition: c divided by the optical group velocity in the waveguide; atlas column `ng_opt`.
+  level: L2
+  see: "6.2"
+
+- term: velocity matching
+  definition: Making n_RF equal to n_g so that light and microwave stay in step along the electrode; the mismatch-only bandwidth obeys f_3dB L = 0.443 c / |n_RF - n_g|.
+  level: L2
+  see: "6.2"
+
+- term: Z0
+  expansion: characteristic impedance
+  definition: The ratio of voltage to current of a wave on the line, sqrt(L'/C') for a quasi-TEM line; mismatch to the 50 ohm source and load reduces and ripples the response.
+  level: L2
+  see: "6.2"
+
+- term: RF loss
+  definition: Attenuation of the microwave on the electrode, in dB/cm at a stated frequency (atlas `rf_loss_db_per_cm` at `rf_loss_freq_ghz`); conductor loss scales about as sqrt(f).
+  level: L2
+  see: "6.2"
+
+- term: EO S21
+  expansion: electro-optic small-signal transmission
+  definition: The modulator's measured response, optical modulation amplitude per unit RF drive, versus frequency, usually in dB relative to a low-frequency reference.
+  level: L3
+  see: "6.1"
+
+- term: 3 dB EO bandwidth
+  definition: The frequency at which 20 log10 of the EO response falls 3 dB below its stated reference; values stated as 'over X GHz' are lower bounds set by the instrument.
+  level: L2
+  see: "6.1"
+
+- term: extinction ratio
+  definition: Ratio of maximum to minimum output power of a modulator, in dB, static (DC sweep) or dynamic (eye).
+  level: L2
+  see: "6.1"
+
+- term: insertion loss
+  definition: Optical power lost through a device, either on chip with couplers removed or fiber to fiber with couplers included; the two are not comparable.
+  level: L2
+  see: "6.1"
+
+- term: ring modulator
+  definition: A ring resonator whose resonance wavelength is shifted by the Pockels effect; efficient and compact, but its speed is limited by the photon lifetime.
+  level: L1
+  see: "6.1"
+
+- term: loaded Q
+  expansion: Q_L
+  definition: Resonance frequency divided by the full linewidth of a coupled resonator, including coupling loss; atlas column `q_loaded`.
+  level: L2
+  see: "6.1"
+
+- term: photon lifetime
+  definition: tau = Q_L / omega_0, the decay time of energy stored in a resonator; it sets the scale of a resonant modulator's bandwidth.
+  level: L2
+  see: "6.1"
+
+- term: PhC
+  expansion: photonic crystal
+  definition: A periodically patterned waveguide or cavity that confines light by a photonic band gap; used for compact, high-Q EO modulators.
+  level: L2
+  see: "6.1"
+
+- term: NRZ / PAM4
+  expansion: non-return-to-zero / four-level pulse-amplitude modulation
+  definition: Intensity formats carrying 1 bit (NRZ) or 2 bits (PAM4) per symbol.
+  level: L1
+  see: "6.1"
+
+- term: GBd
+  expansion: gigabaud
+  definition: Symbol rate in 1e9 symbols per second; bit rate = symbol rate x bits per symbol.
+  level: L1
+  see: "6.3"
+
+- term: line rate / net rate
+  definition: Line rate counts all transmitted bits; net rate subtracts forward-error-correction and other overhead.
+  level: L2
+  see: "6.3"
+
+- term: DAC
+  expansion: digital-to-analog converter
+  definition: The electronic circuit that generates the multilevel drive waveform; its bandwidth often limits symbol rate in modulator experiments.
+  level: L2
+  see: "6.12"
+
+- term: PPLN
+  expansion: periodically poled lithium niobate
+  definition: LN whose spontaneous polarization is inverted in a periodic pattern to quasi-phase-match a nonlinear process.
+  level: L1
+  see: "6.4"
+
+- term: QPM
+  expansion: quasi-phase matching
+  definition: Resetting the phase of a nonlinear interaction each coherence length by flipping the sign of the nonlinearity, so the generated wave keeps growing.
+  level: L2
+  see: "6.4"
+
+- term: SHG / SFG / DFG
+  expansion: second-harmonic / sum-frequency / difference-frequency generation
+  definition: chi(2) processes that produce light at 2 omega, omega1 + omega2, or omega1 - omega2.
+  level: L1
+  see: "6.4"
+
+- term: normalized conversion efficiency
+  definition: SHG efficiency in the low-conversion limit divided by pump power and length squared, in %/W/cm^2; resonant devices quote %/W instead.
+  level: L2
+  see: "6.4"
+
+- term: OPA
+  expansion: optical parametric amplifier
+  definition: chi(2) gain for a signal (and generated idler) driven by a pump at higher frequency.
+  level: L1
+  see: "6.5"
+
+- term: OPO
+  expansion: optical parametric oscillator
+  definition: An OPA inside a resonator; it oscillates when parametric gain exceeds round-trip loss, at the threshold pump power.
+  level: L1
+  see: "6.5"
+
+- term: EO comb
+  expansion: electro-optic frequency comb
+  definition: Evenly spaced optical lines generated by phase modulation, often in a resonator driven at its free spectral range.
+  level: L1
+  see: "6.6"
+
+- term: Kerr soliton
+  definition: A stable pulse circulating in a chi(3) microresonator whose spectrum is a frequency comb.
+  level: L2
+  see: "6.6"
+
+- term: EO frequency shifter
+  definition: A device that moves light to a new optical frequency by a microwave-driven transition, e.g. between the supermodes of coupled rings.
+  level: L2
+  see: "6.6"
+
+- term: squeezed light
+  definition: Light whose noise in one quadrature is below the vacuum (shot-noise) level; quoted in dB, measured or loss-corrected (inferred).
+  level: L2
+  see: "6.7"
+
+- term: CAR
+  expansion: coincidence-to-accidental ratio
+  definition: Ratio of true photon-pair coincidences to accidental coincidences; a pair-source quality figure.
+  level: L2
+  see: "6.7"
+
+- term: g2(0)
+  expansion: heralded second-order correlation at zero delay
+  definition: Measures multi-photon contamination of a heralded single photon; 0 is ideal.
+  level: L3
+  see: "6.7"
+
+- term: QFC
+  expansion: quantum frequency conversion
+  definition: Changing the frequency of single photons by SFG or DFG while preserving their quantum state.
+  level: L2
+  see: "6.7"
+
+- term: microwave-optical transducer
+  definition: A device that converts microwave photons (e.g. from a superconducting qubit) to optical photons and back, via the Pockels effect or a mechanical intermediary.
+  level: L1
+  see: "6.7"
+
+- term: piezo-optomechanics
+  definition: Coupling microwave fields to mechanical modes by piezoelectricity and mechanical modes to light by photoelastic and moving-boundary effects.
+  level: L2
+  see: "6.7"
+
+- term: AO modulator
+  expansion: acousto-optic modulator
+  definition: A modulator in which an acoustic wave, launched piezoelectrically, changes the refractive index and modulates or frequency-shifts light.
+  level: L1
+  see: "6.8"
+
+- term: IDT
+  expansion: interdigital transducer
+  definition: Interleaved comb electrodes on a piezoelectric surface that launch and detect acoustic waves; finger pitch sets the acoustic wavelength.
+  level: L1
+  see: "6.8"
+
+- term: SAW
+  expansion: surface acoustic wave
+  definition: An acoustic wave confined near a crystal surface; SAW filters on LT and LN select radio bands in phones.
+  level: L1
+  see: "6.9"
+
+- term: BAW
+  expansion: bulk acoustic wave
+  definition: Acoustic resonance through the thickness of a film; commercial BAW filters use aluminum nitride, not LN.
+  level: L1
+  see: "6.9"
+
+- term: POI
+  expansion: piezoelectric-on-insulator
+  definition: A thin LT or LN film bonded on oxide on a silicon handle (Soitec Connect POI), used for SAW filters.
+  level: L2
+  see: "6.9"
+
+- term: XBAR
+  expansion: laterally excited bulk-wave resonator
+  definition: A resonator in a thin LN platelet excited by lateral fields from narrow electrodes; resonance set mainly by platelet thickness.
+  level: L2
+  see: "6.9"
+
+- term: MUTC photodiode
+  expansion: modified uni-traveling-carrier photodiode
+  definition: A III-V photodiode design in which only electrons transit the depletion region, enabling high bandwidth.
+  level: L3
+  see: "6.10"
+
+- term: Er:LNOI
+  definition: Erbium-doped LNOI; provides optical gain near 1530 nm when pumped near 980 or 1480 nm.
+  level: L2
+  see: "6.10"
+
+- term: self-injection locking
+  definition: Narrowing a laser's linewidth by feeding back light from a high-Q resonator.
+  level: L3
+  see: "6.10"
+
+- term: DC drift
+  definition: Slow change of a modulator's bias point under a static voltage, caused by charge redistribution in LN, cladding, and interfaces (chapter 04).
+  level: L2
+  see: "6.11"

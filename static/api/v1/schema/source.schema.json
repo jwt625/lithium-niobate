@@ -1,0 +1,140 @@
+{
+  "$id": "https://lithium-niobate.com/api/v1/schema/source.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Bibliographic source (CSL-JSON-like fields) with DOI, open-access and license notes, and how it was read.",
+  "properties": {
+    "access": {
+      "$ref": "common.schema.json#/$defs/license"
+    },
+    "accessed": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "article_number": {
+      "type": "string"
+    },
+    "arxiv": {
+      "$ref": "common.schema.json#/$defs/arxiv"
+    },
+    "author": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "family": {
+            "type": "string"
+          },
+          "given": {
+            "type": "string"
+          },
+          "literal": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "author_note": {
+      "description": "E.g. 'et al.' when the list is truncated.",
+      "type": "string"
+    },
+    "container_title": {
+      "type": "string"
+    },
+    "doi": {
+      "$ref": "common.schema.json#/$defs/doi"
+    },
+    "editor": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "errata": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "citation": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "doi": {
+            "$ref": "common.schema.json#/$defs/doi"
+          },
+          "issued": {
+            "$ref": "common.schema.json#/$defs/isoDate"
+          },
+          "read": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "citation"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "isbn": {
+      "type": "string"
+    },
+    "issue": {
+      "type": "string"
+    },
+    "issued": {
+      "$ref": "common.schema.json#/$defs/isoDate"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "read": {
+      "description": "How this project read the source (e.g. 'full text', 'abstract only', 'via refractiveindex.info', 'not read; cited via weis1985').",
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "article-journal",
+        "book",
+        "chapter",
+        "paper-conference",
+        "thesis",
+        "report",
+        "standard",
+        "dataset",
+        "webpage",
+        "patent",
+        "preprint",
+        "datasheet"
+      ]
+    },
+    "url": {
+      "$ref": "common.schema.json#/$defs/url"
+    },
+    "volume": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "issued",
+    "read"
+  ],
+  "title": "Source",
+  "type": "object"
+}

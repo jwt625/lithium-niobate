@@ -1,0 +1,25 @@
+{
+  "citation": "\"Lithium niobate in vogue as thin-film developers raise cash\", optics.org, (2024) https://optics.org/news/lithium-niobate-in-vogue-as-thin-film-developers-raise-cash",
+  "link": "https://optics.org/news/lithium-niobate-in-vogue-as-thin-film-developers-raise-cash",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "optics.org",
+    "id": "opticsorg-2024",
+    "issued": "2024-09-24",
+    "read": "Read",
+    "title": "Lithium niobate in vogue as thin-film developers raise cash",
+    "type": "webpage",
+    "url": "https://optics.org/news/lithium-niobate-in-vogue-as-thin-film-developers-raise-cash"
+  }
+}

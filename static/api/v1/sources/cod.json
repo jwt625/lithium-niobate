@@ -1,0 +1,32 @@
+{
+  "citation": "Crystallography Open Database, \"Crystallography Open Database\", (2026) https://www.crystallography.net/cod/",
+  "link": "https://www.crystallography.net/cod/",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "license": "CC0 1.0",
+      "oa_status": "cc0"
+    },
+    "author": [
+      {
+        "literal": "Crystallography Open Database"
+      }
+    ],
+    "id": "cod",
+    "issued": "2026",
+    "read": "CIFs 1541936, 1541937, 1544665, 2101845, 2101175-2101185, 2300665-2300667, 2311704",
+    "title": "Crystallography Open Database",
+    "type": "dataset",
+    "url": "https://www.crystallography.net/cod/"
+  }
+}

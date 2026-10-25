@@ -1,0 +1,74 @@
+{
+  "citation": "Linbo Shao, Mengjie Yu, Smarak Maity, et al., \"Microwave-to-optical conversion using lithium niobate thin-film acoustic resonators\", Optica 6, 1498, (2019) doi:10.1364/optica.6.001498",
+  "link": "https://doi.org/10.1364/optica.6.001498",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Shao",
+        "given": "Linbo"
+      },
+      {
+        "family": "Yu",
+        "given": "Mengjie"
+      },
+      {
+        "family": "Maity",
+        "given": "Smarak"
+      },
+      {
+        "family": "Sinclair",
+        "given": "Neil"
+      },
+      {
+        "family": "Zheng",
+        "given": "Lu"
+      },
+      {
+        "family": "Chia",
+        "given": "Cleaven"
+      },
+      {
+        "family": "Shams-Ansari",
+        "given": "Amirhassan"
+      },
+      {
+        "family": "Wang",
+        "given": "Cheng"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Lai",
+        "given": "Keji"
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.6.001498",
+    "id": "shao2019",
+    "issue": "12",
+    "issued": "2019-12-02",
+    "page": "1498",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Microwave-to-optical conversion using lithium niobate thin-film acoustic resonators",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

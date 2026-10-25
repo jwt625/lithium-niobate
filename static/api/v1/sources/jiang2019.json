@@ -1,0 +1,69 @@
+{
+  "citation": "Wentao Jiang, Rishi N. Patel, Felix M. Mayor, et al., \"Lithium niobate piezo-optomechanical crystals\", Optica 6, 845, (2019) doi:10.1364/OPTICA.6.000845",
+  "link": "https://doi.org/10.1364/OPTICA.6.000845",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "license": "Optica Open Access License v1",
+      "oa_status": "gold"
+    },
+    "arxiv": "1903.00957",
+    "author": [
+      {
+        "family": "Jiang",
+        "given": "Wentao"
+      },
+      {
+        "family": "Patel",
+        "given": "Rishi N."
+      },
+      {
+        "family": "Mayor",
+        "given": "Felix M."
+      },
+      {
+        "family": "McKenna",
+        "given": "Timothy P."
+      },
+      {
+        "family": "Arrangoiz-Arriola",
+        "given": "Patricio"
+      },
+      {
+        "family": "Sarabalis",
+        "given": "Christopher J."
+      },
+      {
+        "family": "Witmer",
+        "given": "Jeremy D."
+      },
+      {
+        "family": "Van Laer",
+        "given": "Raphaël"
+      },
+      {
+        "family": "Safavi-Naeini",
+        "given": "Amir H."
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/OPTICA.6.000845",
+    "id": "jiang2019",
+    "issued": "2019",
+    "page": "845",
+    "read": "arXiv supplement Eq. 65",
+    "title": "Lithium niobate piezo-optomechanical crystals",
+    "type": "article-journal",
+    "volume": "6"
+  }
+}

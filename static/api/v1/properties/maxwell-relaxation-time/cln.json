@@ -1,0 +1,44 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "maxwell-relaxation-time",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "electrical",
+      "default": true,
+      "id": "maxwell-relaxation-time/cln/volk2008",
+      "kind": "scalar",
+      "max": 500,
+      "min": 5,
+      "name": "Maxwell relaxation time (dark)",
+      "notes": "Internally inconsistent with volk2008's own sigma_d: tau = eps eps0 / sigma gives 0.3-29 days (eps = 28) or 0.9-86 days (eps = 84) (computed).",
+      "property": "maxwell-relaxation-time",
+      "provenance": {
+        "locator": "p. 159",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "tau_M",
+      "unit": {
+        "display": "days",
+        "ucum": "d"
+      },
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

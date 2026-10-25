@@ -1,0 +1,87 @@
+{
+  "alternatives": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "id": "pyroelectric-p3/unspecified/schwesyg2011",
+      "kind": "scalar",
+      "name": "Pyroelectric coefficient",
+      "property": "pyroelectric-p3",
+      "provenance": {
+        "locator": "Eq. (2.17)",
+        "original_reference": "Bartholomaus, Buse, Deuper, Kratzig, phys. stat. sol. (a) 142, 55 (1994)",
+        "source_id": "schwesyg2011",
+        "status": "S",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "p_3",
+      "unit": {
+        "display": "C/(m^2 K)",
+        "ucum": "C/(m2.K)"
+      },
+      "value": -6.4e-05,
+      "variant": "unspecified",
+      "variant_note": "'crystals of different compositions'"
+    },
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "frame": {
+        "convention": "IRE-1949",
+        "handedness": "right",
+        "setting": "crystal-physics",
+        "x": "a axis, perpendicular to a mirror plane",
+        "y": "in a mirror plane",
+        "z": "polar c axis",
+        "z_sign_definition": "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"
+      },
+      "id": "pyroelectric-p3/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Pyroelectric coefficient",
+      "notes": "p3 < 0 means that on cooling the +c face becomes more positive (weis1985 p. 196). Magnitudes across sources span 4-9.5e-5 C/(m^2 K).",
+      "property": "pyroelectric-p3",
+      "provenance": {
+        "locator": "Eq. (2), p. 196",
+        "original_reference": "Savage, J. Appl. Phys. 37, 3071 (1966)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "p_3",
+      "unit": {
+        "display": "C/(m^2 K)",
+        "ucum": "C/(m2.K)"
+      },
+      "value": -4e-05,
+      "variant": "unspecified"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "pyroelectric-p3",
+    "variant": "unspecified"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": {
+    "max": -4e-05,
+    "min": -6.4e-05,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "C/(m2.K)"
+  }
+}

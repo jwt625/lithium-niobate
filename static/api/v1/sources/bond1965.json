@@ -1,0 +1,37 @@
+{
+  "citation": "W. L. Bond, \"Measurement of the Refractive Indices of Several Crystals\", Journal of Applied Physics 36, 1674-1677, (1965) doi:10.1063/1.1703106",
+  "link": "https://doi.org/10.1063/1.1703106",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Bond",
+        "given": "W. L."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1703106",
+    "id": "bond1965",
+    "issue": "5",
+    "issued": "1965-05-01",
+    "page": "1674-1677",
+    "read": "tabulated LiTaO3 n_o, n_e via refractiveindex.info (CC0) entries LiTaO3/Bond-o and Bond-e, fetched 2026-10-25; paper not read",
+    "title": "Measurement of the Refractive Indices of Several Crystals",
+    "type": "article-journal",
+    "volume": "36"
+  }
+}

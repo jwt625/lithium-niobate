@@ -1,0 +1,33 @@
+{
+  "citation": "J. R. M.-L. Schwesyg, \"Interaction of light with impurities in lithium niobate crystals\" (2011)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author": [
+      {
+        "family": "Schwesyg",
+        "given": "J. R. M.-L."
+      }
+    ],
+    "id": "schwesyg2011",
+    "issued": "2011",
+    "notes": "Dr. rer. nat. dissertation. No DOI.",
+    "publisher": "Universitat Bonn",
+    "read": "Ch. 2-3 (selected)",
+    "title": "Interaction of light with impurities in lithium niobate crystals",
+    "type": "thesis"
+  }
+}

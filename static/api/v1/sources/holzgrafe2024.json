@@ -1,0 +1,58 @@
+{
+  "citation": "Jeffrey Holzgrafe, Eric Puma, Rebecca Cheng, et al., \"Relaxation of the electro-optic response in thin-film lithium niobate modulators\", Optics Express 32, 3619, (2024) doi:10.1364/oe.507536",
+  "link": "https://doi.org/10.1364/oe.507536",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Holzgrafe",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Puma",
+        "given": "Eric"
+      },
+      {
+        "family": "Cheng",
+        "given": "Rebecca"
+      },
+      {
+        "family": "Warner",
+        "given": "Hana"
+      },
+      {
+        "family": "Shams-Ansari",
+        "given": "Amirhassan"
+      },
+      {
+        "family": "Shankar",
+        "given": "Raji"
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Optics Express",
+    "doi": "10.1364/oe.507536",
+    "id": "holzgrafe2024",
+    "issue": "3",
+    "issued": "2024-01-19",
+    "page": "3619",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Relaxation of the electro-optic response in thin-film lithium niobate modulators",
+    "type": "article-journal",
+    "volume": "32"
+  }
+}

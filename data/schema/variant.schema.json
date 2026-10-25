@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lithium-niobate.com/api/v1/schema/variant.schema.json",
+  "title": "Material variant",
+  "description": "Composition variant of LiNbO3 (congruent, stoichiometric, doped, unspecified).",
+  "type": "object",
+  "required": ["id", "name", "description"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "name": {"type": "string"},
+    "material": {"enum": ["LiNbO3", "LiTaO3"], "description": "Host crystal; LiTaO3 variants are comparison materials."},
+    "description": {"type": "string"},
+    "Li2O_mol_pct": {"type": ["string", "null"], "description": "Typical Li2O content (text, may be a range)."},
+    "dopant": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "element": {"type": "string"},
+        "compound": {"type": "string"},
+        "mol_pct": {"type": "number"}
+      }
+    },
+    "default": {"type": "boolean", "description": "True for the variant used when none is specified (CLN)."}
+  }
+}

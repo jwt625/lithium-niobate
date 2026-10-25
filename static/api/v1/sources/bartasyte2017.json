@@ -1,0 +1,45 @@
+{
+  "citation": "Ausrine Bartasyte, Samuel Margueron, Thomas Baron, et al., \"Toward High‐Quality Epitaxial LiNbO 3 and LiTaO 3 Thin Films for Acoustic and Optical Applications\", Advanced Materials Interfaces 4, 1600998, (2017) doi:10.1002/admi.201600998",
+  "link": "https://doi.org/10.1002/admi.201600998",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Ausrine Bartasyte"
+      },
+      {
+        "literal": "Samuel Margueron"
+      },
+      {
+        "literal": "Thomas Baron"
+      },
+      {
+        "literal": "Stefania Oliveri"
+      },
+      {
+        "literal": "Pascal Boulet"
+      }
+    ],
+    "container_title": "Advanced Materials Interfaces",
+    "doi": "10.1002/admi.201600998",
+    "id": "bartasyte2017",
+    "issue": "8",
+    "issued": "2017-04",
+    "page": "1600998",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Toward High‐Quality Epitaxial LiNbO 3 and LiTaO 3 Thin Films for Acoustic and Optical Applications",
+    "type": "article-journal",
+    "volume": "4"
+  }
+}

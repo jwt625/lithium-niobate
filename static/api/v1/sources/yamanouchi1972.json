@@ -1,0 +1,36 @@
+{
+  "citation": "Kazuhiko Yamanouchi, Kimio Shibayama, \"Propagation and Amplification of Rayleigh Waves and Piezoelectric Leaky Surface Waves in LiNbO3\", Journal of Applied Physics 43, 856-862, (1972) doi:10.1063/1.1661294",
+  "link": "https://doi.org/10.1063/1.1661294",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Kazuhiko Yamanouchi"
+      },
+      {
+        "literal": "Kimio Shibayama"
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1661294",
+    "id": "yamanouchi1972",
+    "issue": "3",
+    "issued": "1972-03-01",
+    "page": "856-862",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Propagation and Amplification of Rayleigh Waves and Piezoelectric Leaky Surface Waves in LiNbO3",
+    "type": "article-journal",
+    "volume": "43"
+  }
+}

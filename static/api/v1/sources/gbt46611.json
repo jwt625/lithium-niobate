@@ -1,0 +1,24 @@
+{
+  "citation": "\"GB/T 46611-2025 Lithium niobate single-crystal thin film for electro-optic modulator\", (2025) https://std.samr.gov.cn/gb/search/gbDetailed?id=42BA7D06A44DE936E06397BE0A0ACDC9",
+  "link": "https://std.samr.gov.cn/gb/search/gbDetailed?id=42BA7D06A44DE936E06397BE0A0ACDC9",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "gbt46611",
+    "issued": "2025-10-31",
+    "read": "Detail page read",
+    "title": "GB/T 46611-2025 Lithium niobate single-crystal thin film for electro-optic modulator",
+    "type": "standard",
+    "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=42BA7D06A44DE936E06397BE0A0ACDC9"
+  }
+}

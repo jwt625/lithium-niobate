@@ -1,0 +1,74 @@
+{
+  "alternatives": [
+    {
+      "category": "structure",
+      "conditions": {
+        "temperature_C": 30
+      },
+      "id": "density/unspecified/ogi2002",
+      "kind": "scalar",
+      "name": "Density",
+      "notes": "ogi2002 also quotes a handbook value of 4633 kg/m^3.",
+      "property": "density",
+      "provenance": {
+        "source_id": "ogi2002",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4636,
+      "variant": "unspecified"
+    },
+    {
+      "category": "structure",
+      "id": "density/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Density",
+      "notes": "Used in a cell-volume calculation without a measurement reference; weis1985 p. 201 uses 4.7e3 kg/m^3 in acousto-optic figures of merit.",
+      "property": "density",
+      "provenance": {
+        "locator": "p. 194",
+        "source_id": "weis1985",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4628,
+      "variant": "unspecified"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "density",
+    "variant": "unspecified"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": {
+    "max": 4636,
+    "min": 4628,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "kg/m3"
+  }
+}

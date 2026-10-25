@@ -1,0 +1,25 @@
+{
+  "citation": "\"Business purchase (Uniphase acquires United Technologies Photonics)\", Lightwave, (1995) https://www.lightwaveonline.com/business/market-research/article/16662114/business-purchase",
+  "link": "https://www.lightwaveonline.com/business/market-research/article/16662114/business-purchase",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Lightwave",
+    "id": "lightwave-1995",
+    "issued": "1995-07-01",
+    "read": "Read",
+    "title": "Business purchase (Uniphase acquires United Technologies Photonics)",
+    "type": "webpage",
+    "url": "https://www.lightwaveonline.com/business/market-research/article/16662114/business-purchase"
+  }
+}

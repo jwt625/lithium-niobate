@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 7,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "variants": [
+    {
+      "Li2O_mol_pct": "about 48.4-48.5 (48.38 in cti1999; 48.45 in volk2008)",
+      "default": true,
+      "description": "Congruently melting composition, the standard commercial crystal.",
+      "dopant": null,
+      "id": "cln",
+      "material": "LiNbO3",
+      "name": "Congruent LiNbO3 (CLN)"
+    },
+    {
+      "Li2O_mol_pct": null,
+      "description": "Lithium tantalate, the 3m sibling crystal of LiNbO3; commercial SAW-grade crystal as measured in kushibiki1999 (composition not recorded in the research notes).",
+      "dopant": null,
+      "id": "lt-saw",
+      "material": "LiTaO3",
+      "name": "LiTaO3, SAW-grade (comparison material)"
+    },
+    {
+      "Li2O_mol_pct": null,
+      "description": "Lithium tantalate where the source does not state the composition (bulk 1965 crystal, or thin film).",
+      "dopant": null,
+      "id": "lt-unspecified",
+      "material": "LiTaO3",
+      "name": "LiTaO3, composition not stated (comparison material)"
+    },
+    {
+      "Li2O_mol_pct": "about 50",
+      "description": "Stoichiometric LiNbO3 doped with 1 mol% MgO, as labelled in gayer2008 Table 1.",
+      "dopant": {
+        "compound": "MgO",
+        "element": "Mg",
+        "mol_pct": 1
+      },
+      "id": "mgo1-sln",
+      "name": "1 mol% MgO-doped stoichiometric LiNbO3 (MgO1-SLN)"
+    },
+    {
+      "Li2O_mol_pct": "congruent melt",
+      "description": "Congruent LiNbO3 doped with 5 mol% MgO, above the photorefractive threshold (>= 4.5 at.% MgO, bryan1984).",
+      "dopant": {
+        "compound": "MgO",
+        "element": "Mg",
+        "mol_pct": 5
+      },
+      "id": "mgo5-cln",
+      "name": "5 mol% MgO-doped congruent LiNbO3 (MgO5)"
+    },
+    {
+      "Li2O_mol_pct": "about 49.7-50",
+      "description": "Li2O content close to 50 mol%; values labelled near-SLN in volk2008 are stored here.",
+      "dopant": null,
+      "id": "sln",
+      "name": "Stoichiometric or near-stoichiometric LiNbO3 (SLN)"
+    },
+    {
+      "Li2O_mol_pct": null,
+      "description": "The source does not state the composition (for example 1960s crystals or density used in a cell-volume calculation).",
+      "dopant": null,
+      "id": "unspecified",
+      "name": "Composition not stated"
+    }
+  ]
+}

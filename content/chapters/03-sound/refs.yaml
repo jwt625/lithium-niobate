@@ -1,0 +1,780 @@
+# Chapter 03 Sound: references
+# Bibliographic fields (authors, title, container, volume, issue, pages/article, issued) were taken from
+# api.crossref.org/works/{doi} on 2026-10-25 (plain User-Agent, no mailto or personal parameter), unless
+# biblio_check says otherwise. Zenodo record from zenodo.org/api/records/7903643 on 2026-10-25.
+# content_read states how far the content was read; it limits the status a value from that source may carry:
+#   full / selected pages            -> P (value originates there) or P-comp (compilation of other measurements)
+#   abstract                         -> reported (number in the abstract)
+#   arXiv full text (v1)             -> reported (device papers)
+#   title / bibliographic only       -> no numbers taken from it
+#   not read                         -> any number from it is S (via a named secondary) or U
+# Status codes used in manuscript.md: P, P-comp, P-db, S, V, U, reported, derived, template (DevLog-004 rule 3).
+# Web sources: grade P = company page or release about its own products/actions; S = trade press; V = vendor performance claim.
+# "derived (calc)" = computed by lane C03 on 2026-10-25 from kushibiki1999 (or the named set); see id c03-calc.
+
+# ---------- standards, constants, compilations ----------
+- id: ieee176
+  type: standard
+  authors: ["IEEE"]
+  title: "IEEE Standard on Piezoelectricity (IEEE Std 176-1987)"
+  container: "IEEE"
+  issued: 1988
+  doi: 10.1109/IEEESTD.1988.79638
+  biblio_check: crossref 2026-10-25 (record carries title only)
+  content_read: "selected pages: Sec. 2.4-2.6 (Eqs. 17-26, 37-45, Table 2), Sec. 3.2.5, Table 3, Table 5, Sec. 3.6, Sec. 4.2-4.3 (Eqs. 46-67), Sec. 5.4 (Eqs. 124-125, Table 10); author-held copy, not redistributed"
+  used_for: "constitutive equations, four forms and their relations, Voigt factor rules, +Z/+X/+Y rules for 3m, cut notation (YXl), stiffened Christoffel equation, coupling factor definitions, Y-cut 3m thickness modes"
+  notes: "Reprinted in IEEE TUFFC 43, 717 (1996), DOI 10.1109/TUFFC.1996.535477 (per R06; not re-checked here)."
+- id: kushibiki1999
+  type: journal-article
+  authors: ["J. Kushibiki", "I. Takanaga", "M. Arakawa", "T. Sannomiya"]
+  title: "Accurate measurements of the acoustical physical constants of LiNbO3 and LiTaO3 single crystals"
+  container: "IEEE Transactions on Ultrasonics, Ferroelectrics and Frequency Control"
+  volume: "46"
+  issue: "5"
+  pages: "1315-1323"
+  issued: 1999-09
+  doi: 10.1109/58.796136
+  biblio_check: crossref 2026-10-25
+  content_read: "full via R06 (green OA copy; Tables II, IV, V re-checked by the R06 coordinator)"
+  used_for: "default c^E, e, eps^S, eps^T, density, measured bulk velocities (SAW-grade CLN)"
+  notes: "LiTaO3 constants are in the same paper but not yet entered in the site data (open-questions Q4)."
+- id: ogi2002
+  type: journal-article
+  authors: ["H. Ogi", "Y. Kawasaki", "M. Hirao", "H. Ledbetter"]
+  title: "Acoustic spectroscopy of lithium niobate: Elastic and piezoelectric coefficients"
+  container: "Journal of Applied Physics"
+  volume: "92"
+  issue: "5"
+  pages: "2451-2456"
+  issued: 2002-09-01
+  doi: 10.1063/1.1497702
+  biblio_check: crossref 2026-10-25
+  content_read: "full via R06 (green OA copy, personal use only; values re-checked)"
+  used_for: "alternate c^E, e at 30 C (RUS); constant-set comparison"
+- id: weis1985
+  type: journal-article
+  authors: ["R. S. Weis", "T. K. Gaylord"]
+  title: "Lithium niobate: Summary of physical properties and crystal structure"
+  container: "Applied Physics A Solids and Surfaces"
+  volume: "37"
+  issue: "4"
+  pages: "191-203"
+  issued: 1985-08
+  doi: 10.1007/BF00614817
+  biblio_check: crossref 2026-10-25
+  content_read: "full (R14); pp. 198-201 re-read by C03 (Tables 3, 5, 6, 7; Eqs. 13, 16-20); p. 201 figure-of-merit paragraph checked against a page render"
+  used_for: "d sets (Table 3), s and c sets with temperature coefficients (Tables 5-6), photoelastic sets with signs (Table 7), p tensor form (Eq. 19), indirect photoelastic offsets, AO figures of merit (Eq. 20), hydrostatic d_h"
+  notes: "Compilation (P-comp). Prints M3 = '1.01 x 10^-16 m s^2 kg', inconsistent with its own M1, M2, M4 (derived M3 = 1.01e-10 m s^2/kg). Uses the IRE 1949 axis standard; same +Z, +Y as IEEE 1987 for LN (R14 row 79)."
+- id: volk2008
+  type: book
+  authors: ["T. Volk", "M. Wohlecke"]
+  title: "Lithium Niobate: Defects, Photorefraction and Ferroelectric Switching"
+  container: "Springer Series in Materials Science"
+  issued: 2009
+  doi: 10.1007/978-3-540-70766-0
+  biblio_check: "R06/R14 (crossref there)"
+  content_read: "selected chapters (R14)"
+  used_for: "density CLN vs near-SLN (Table 1.1), +Z/+Y sign rule (p. 2)"
+- id: warner1967
+  type: journal-article
+  authors: ["A. W. Warner", "M. Onoe", "G. A. Coquin"]
+  title: "Determination of Elastic and Piezoelectric Constants for Crystals in Class (3m)"
+  container: "The Journal of the Acoustical Society of America"
+  volume: "42"
+  issue: "6"
+  pages: "1223-1231"
+  issued: 1967-12-01
+  doi: 10.1121/1.1910709
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; c and d via weis1985 (P-comp), e via ogi2002/kushibiki1999 comparison tables (S, R06)"
+  used_for: "alternate constant set for the SAW sensitivity table"
+- id: smithwelsh1971
+  type: journal-article
+  authors: ["R. T. Smith", "F. S. Welsh"]
+  title: "Temperature Dependence of the Elastic, Piezoelectric, and Dielectric Constants of Lithium Tantalate and Lithium Niobate"
+  container: "Journal of Applied Physics"
+  volume: "42"
+  issue: "6"
+  pages: "2219-2230"
+  issued: 1971-05-01
+  doi: 10.1063/1.1660528
+  biblio_check: crossref 2026-10-25 (full title re-fetched)
+  content_read: "not read; values via weis1985 (P-comp)"
+  used_for: "d, c, s and their temperature coefficients"
+- id: graham1976
+  type: journal-article
+  authors: ["R. A. Graham"]
+  title: "Pressure dependence of the piezoelectric polarization of LiNbO3 and LiTaO3"
+  container: "Ferroelectrics"
+  volume: "10"
+  issue: "1"
+  pages: "65-69"
+  issued: 1976-01
+  doi: 10.1080/00150197608241952
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; d_h = 6.31 +- 0.014 pC/N via weis1985 p. 198 (P-comp)"
+  used_for: "hydrostatic constraint on d33"
+- id: andrushchak2009
+  type: journal-article
+  authors: ["A. S. Andrushchak", "B. G. Mytsyk", "H. P. Laba", "O. V. Yurkevych", "I. M. Solskii", "A. V. Kityk", "B. Sahraoui"]
+  title: "Complete sets of elastic constants and photoelastic coefficients of pure and MgO-doped lithium niobate crystals at room temperature"
+  container: "Journal of Applied Physics"
+  volume: "106"
+  issue: "7"
+  pages: "073510"
+  issued: 2009-10-01
+  doi: 10.1063/1.3238507
+  biblio_check: crossref 2026-10-25 (full title re-fetched)
+  content_read: "not read; p set via sarabalis2020 Table I and mytsyk2021 Table 6 (S)"
+  used_for: "photoelastic set (S); F3.8"
+- id: avakyants1976
+  type: journal-article
+  authors: ["L. P. Avakyants", "D. F. Kiselev", "N. N. Shchitkov"]
+  container: "Soviet Physics - Solid State"
+  volume: "18"
+  pages: "899"
+  issued: 1976
+  doi: null
+  biblio_check: "citation as printed in weis1985 ref. [52] and R14 row 69; no DOI found"
+  content_read: "not read; signed set via weis1985 Table 7 (P-comp)"
+  used_for: "photoelastic Set B with signs; the frame of its p14/p41 signs is open (open-questions Q1)"
+- id: coquin-pinnow1971
+  type: book-chapter
+  authors: ["G. A. Coquin"]
+  container: "cited in D. A. Pinnow, Handbook of Lasers (CRC)"
+  issued: 1971
+  doi: null
+  biblio_check: "citation as printed in weis1985 ref. [58]"
+  content_read: "not read; values via weis1985 Table 7 (P-comp)"
+  used_for: "photoelastic set (Coquin)"
+- id: krupych2014
+  type: journal-article
+  authors: ["O. Krupych", "V. Savaryn", "R. Vlokh"]
+  title: "Precise determination of full matrix of piezo-optic coefficients with a four-point bending technique: the example of lithium niobate crystals"
+  container: "Applied Optics"
+  volume: "53"
+  issue: "10"
+  pages: "B1"
+  issued: 2014-02-03
+  doi: 10.1364/AO.53.0000B1
+  biblio_check: crossref 2026-10-25 (full title re-fetched)
+  content_read: "not read; p set via mys2015 (S)"
+  used_for: "photoelastic set with c14 > 0 and p14, p41 > 0 (S)"
+- id: mys2015
+  type: preprint
+  authors: ["O. Mys", "et al."]
+  container: "Applied Optics 54, 8176 (2015); arXiv:1508.01075"
+  issued: 2015
+  doi: null
+  biblio_check: "R06 register (not re-checked here)"
+  content_read: "via R06 subagent"
+  used_for: "carrier of the Krupych 2014 set (S)"
+- id: mytsyk2021
+  type: journal-article
+  authors: ["B. Mytsyk", "N. Demyanyshyn", "A. Andrushchak", "O. Buryy"]
+  title: "Photoelastic Properties of Trigonal Crystals"
+  container: "Crystals"
+  volume: "11"
+  issue: "9"
+  pages: "1095"
+  issued: 2021-09-08
+  doi: 10.3390/cryst11091095
+  license: CC BY 4.0
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract and tables via R06 (S/P)"
+  used_for: "sign-convention statement (S14 > 0 frame); Andrushchak set (Table 6)"
+- id: sarabalis2020
+  type: journal-article
+  authors: ["C. J. Sarabalis", "T. P. McKenna", "R. N. Patel", "R. Van Laer", "A. H. Safavi-Naeini"]
+  title: "Acousto-optic modulation in lithium niobate on sapphire"
+  container: "APL Photonics"
+  volume: "5"
+  issue: "8"
+  pages: "086104"
+  issued: 2020-08-01
+  doi: 10.1063/5.0012288
+  license: CC BY 4.0
+  arxiv: "2005.00916"
+  biblio_check: crossref 2026-10-25; arXiv API abstract 2026-10-25
+  content_read: "abstract (C03); Table I and TFLN fit via R06 subagent"
+  used_for: "orientation dependence of piezoelectric and optomechanical coupling (abstract); carrier of the Andrushchak set; TFLN photoelastic fit (p33, p41, p44)"
+- id: zelmon1997
+  type: journal-article
+  authors: ["D. E. Zelmon", "D. L. Small", "D. Jundt"]
+  container: "JOSA B"
+  volume: "14"
+  pages: "3319"
+  issued: 1997
+  doi: 10.1364/JOSAB.14.003319
+  biblio_check: "R06 register"
+  content_read: "P-db via R06"
+  used_for: "n_o at 1550 nm (2.2111, R06 sec. 2.4, computed) for the optical wavelength in the crystal"
+
+# ---------- acoustics theory and SAW ----------
+- id: rayleigh1885
+  type: journal-article
+  authors: ["Lord Rayleigh"]
+  title: "On Waves Propagated along the Plane Surface of an Elastic Solid"
+  container: "Proceedings of the London Mathematical Society"
+  volume: "s1-17"
+  issue: "1"
+  pages: "4-11"
+  issued: 1885-11
+  doi: 10.1112/plms/s1-17.1.4
+  biblio_check: crossref 2026-10-25
+  content_read: "title only"
+  used_for: "definition of the Rayleigh wave (no numbers)"
+- id: bond1943
+  type: journal-article
+  authors: ["W. L. Bond"]
+  title: "The Mathematics of the Physical Properties of Crystals"
+  container: "Bell System Technical Journal"
+  volume: "22"
+  issue: "1"
+  pages: "1-72"
+  issued: 1943-01
+  doi: 10.1002/j.1538-7305.1943.tb01304.x
+  biblio_check: crossref 2026-10-25
+  content_read: "title only"
+  used_for: "Bond 6x6 transformation (method name)"
+- id: campbell1968
+  type: journal-article
+  authors: ["J. J. Campbell", "W. R. Jones"]
+  title: "A method for estimating optimal crystal cuts and propagation directions for excitation of piezoelectric surface waves"
+  container: "IEEE Transactions on Sonics and Ultrasonics"
+  volume: "15"
+  issue: "4"
+  pages: "209-217"
+  issued: 1968-10
+  doi: 10.1109/T-SU.1968.29477
+  biblio_check: crossref 2026-10-25
+  content_read: "title only (method as described in R11 S10)"
+  used_for: "partial-wave SAW method (method name)"
+- id: ingebrigtsen1969
+  type: journal-article
+  authors: ["K. A. Ingebrigtsen"]
+  title: "Surface Waves in Piezoelectrics"
+  container: "Journal of Applied Physics"
+  volume: "40"
+  issue: "7"
+  pages: "2681-2686"
+  issued: 1969-06-01
+  doi: 10.1063/1.1658060
+  biblio_check: crossref 2026-10-25
+  content_read: "not read (relation as cited in R11 S10)"
+  used_for: "k^2 approx 2 (v_free - v_met)/v_free"
+- id: jaeken2016
+  type: journal-article
+  authors: ["J. W. Jaeken", "S. Cottenier"]
+  title: "Solving the Christoffel equation: Phase and group velocities"
+  container: "Computer Physics Communications"
+  volume: "207"
+  pages: "445-451"
+  issued: 2016-10
+  doi: 10.1016/j.cpc.2016.06.014
+  biblio_check: crossref 2026-10-25
+  content_read: "not read (algorithm reference per R11 S10; status S)"
+  used_for: "group velocity and power-flow angle algorithm"
+- id: spencer1965
+  type: journal-article
+  authors: ["E. G. Spencer", "P. V. Lenzo", "K. Nassau"]
+  title: "Elastic wave propagation in lithium niobate"
+  container: "Applied Physics Letters"
+  volume: "7"
+  issue: "3"
+  pages: "67-69"
+  issued: 1965-08-01
+  doi: 10.1063/1.1754303
+  biblio_check: crossref 2026-10-25
+  content_read: "title only"
+  used_for: "history cross-link (no numbers)"
+- id: white1965
+  type: journal-article
+  authors: ["R. M. White", "F. W. Voltmer"]
+  title: "Direct piezoelectric coupling to surface elastic waves"
+  container: "Applied Physics Letters"
+  volume: "7"
+  issue: "12"
+  pages: "314-316"
+  issued: 1965-12-15
+  doi: 10.1063/1.1754276
+  biblio_check: crossref 2026-10-25
+  content_read: "title only; substrate of the first device not verified (R07)"
+  used_for: "invention of the IDT (no numbers)"
+- id: yamanouchi1972
+  type: journal-article
+  authors: ["K. Yamanouchi", "K. Shibayama"]
+  title: "Propagation and Amplification of Rayleigh Waves and Piezoelectric Leaky Surface Waves in LiNbO3"
+  container: "Journal of Applied Physics"
+  volume: "43"
+  issue: "3"
+  pages: "856-862"
+  issued: 1972-03-01
+  doi: 10.1063/1.1661294
+  biblio_check: crossref 2026-10-25
+  content_read: "title only"
+  used_for: "leaky SAW on LN (no numbers taken)"
+- id: shibayama1976
+  type: journal-article
+  authors: ["K. Shibayama", "K. Yamanouchi", "H. Sato", "T. Meguro"]
+  title: "Optimum cut for rotated Y-cut LiNbO3 crystal used as the substrate of acoustic-surface-wave filters"
+  container: "Proceedings of the IEEE"
+  volume: "64"
+  issue: "5"
+  pages: "595-597"
+  issued: 1976
+  doi: 10.1109/PROC.1976.10181
+  biblio_check: crossref 2026-10-25
+  content_read: "title only; optimization criterion not read (U)"
+  used_for: "128 deg Y-X optimum cut (history; no numbers)"
+- id: smith1969
+  type: journal-article
+  authors: ["W. R. Smith", "H. M. Gerard", "J. H. Collins", "T. M. Reeder", "H. J. Shaw"]
+  title: "Analysis of Interdigital Surface Wave Transducers by Use of an Equivalent Circuit Model"
+  container: "IEEE Transactions on Microwave Theory and Techniques"
+  volume: "17"
+  issue: "11"
+  pages: "856-864"
+  issued: 1969-11
+  doi: 10.1109/TMTT.1969.1127075
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; absolute conductance prefactor open (open-questions Q5)"
+  used_for: "IDT equivalent-circuit model (method name)"
+- id: hashimoto2000
+  type: book
+  authors: ["K. Hashimoto"]
+  title: "Surface Acoustic Wave Devices in Telecommunications"
+  container: "Springer"
+  issued: 2000
+  doi: 10.1007/978-3-662-04223-6
+  biblio_check: crossref 2026-10-25
+  content_read: "not read"
+  used_for: "standard design-model reference (no numbers)"
+- id: plessky2019
+  type: journal-article
+  authors: ["V. Plessky", "S. Yandrapalli", "P. J. Turner", "L. G. Villanueva", "J. Koskela", "R. B. Hammond"]
+  title: "5 GHz laterally-excited bulk-wave resonators (XBARs) based on thin platelets of lithium niobate"
+  container: "Electronics Letters"
+  volume: "55"
+  issue: "2"
+  pages: "98-100"
+  issued: 2019-01
+  doi: 10.1049/el.2018.7297
+  biblio_check: crossref 2026-10-25
+  content_read: "abstract-level numbers via R08 sec. 2.10 (Y)"
+  used_for: "XBAR: about 4.8 GHz, 400 nm ZY-LN, coupling about 25%, Q about 300 (reported)"
+
+# ---------- acousto-optics ----------
+- id: nelsonlax1970
+  type: journal-article
+  authors: ["D. F. Nelson", "M. Lax"]
+  title: "New Symmetry for Acousto-Optic Scattering"
+  container: "Physical Review Letters"
+  volume: "24"
+  issue: "8"
+  pages: "379-380"
+  issued: 1970-02-23
+  doi: 10.1103/PhysRevLett.24.379
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; statement via weis1985 p. 200 (P-comp)"
+  used_for: "rotational (antisymmetric) photoelastic contribution"
+- id: nelsonlax1971
+  type: journal-article
+  authors: ["D. F. Nelson", "M. Lax"]
+  title: "Theory of the Photoelastic Interaction"
+  container: "Physical Review B"
+  volume: "3"
+  issue: "8"
+  pages: "2778-2794"
+  issued: 1971-04-15
+  doi: 10.1103/PhysRevB.3.2778
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; via weis1985"
+  used_for: "displacement gradient as the independent variable; direction-dependent indirect term"
+- id: dixon1967
+  type: journal-article
+  authors: ["R. W. Dixon"]
+  title: "Photoelastic Properties of Selected Materials and Their Relevance for Applications to Acoustic Light Modulators and Scanners"
+  container: "Journal of Applied Physics"
+  volume: "38"
+  issue: "13"
+  pages: "5149-5153"
+  issued: 1967-12-01
+  doi: 10.1063/1.1709293
+  biblio_check: crossref 2026-10-25
+  content_read: "not read; M1, M2 (and misprinted M3) via weis1985 p. 201 (P-comp)"
+  used_for: "AO figures of merit"
+- id: chang1976
+  type: journal-article
+  authors: ["I. C. Chang"]
+  title: "I. Acoustooptic Devices and Applications"
+  container: "IEEE Transactions on Sonics and Ultrasonics"
+  volume: "23"
+  issue: "1"
+  pages: "2-21"
+  issued: 1976-01
+  doi: 10.1109/T-SU.1976.30835
+  biblio_check: crossref 2026-10-25 (weis1985 prints pp. 2-22)
+  content_read: "not read; M4 via weis1985 (P-comp)"
+  used_for: "M4; future source for diffraction-efficiency formula (open-questions Q6)"
+- id: wan2022
+  type: journal-article
+  authors: ["L. Wan", "Z. Yang", "W. Zhou", "M. Wen", "T. Feng", "S. Zeng", "D. Liu", "H. Li", "et al. (12 authors)"]
+  title: "Highly efficient acousto-optic modulation using nonsuspended thin-film lithium niobate-chalcogenide hybrid waveguides"
+  container: "Light: Science & Applications"
+  volume: "11"
+  issue: "1"
+  pages: "145"
+  issued: 2022-05-20
+  doi: 10.1038/s41377-022-00840-6
+  license: CC BY 4.0
+  biblio_check: crossref 2026-10-25
+  content_read: "number via R08 sec. 2.10 (Y)"
+  used_for: "AO modulator V_pi L = 0.03 V cm, unsuspended (reported)"
+- id: atalar2022
+  type: journal-article
+  authors: ["O. Atalar", "R. Van Laer", "A. H. Safavi-Naeini", "A. Arbabian"]
+  title: "Longitudinal piezoelectric resonant photoelastic modulator for efficient intensity modulation at megahertz frequencies"
+  container: "Nature Communications"
+  volume: "13"
+  issue: "1"
+  pages: "1526"
+  issued: 2022-03-22
+  doi: 10.1038/s41467-022-29204-9
+  license: CC BY 4.0
+  biblio_check: crossref 2026-10-25 (full title re-fetched)
+  content_read: "title only"
+  used_for: "bulk-wafer LN photoelastic modulator (context, no numbers)"
+
+# ---------- phononics and piezo-optomechanics (LINQS and others) ----------
+- id: p03
+  type: journal-article
+  authors: ["W. Jiang", "R. N. Patel", "F. M. Mayor", "T. P. McKenna", "P. Arrangoiz-Arriola", "C. J. Sarabalis", "J. D. Witmer", "R. Van Laer", "A. H. Safavi-Naeini"]
+  title: "Lithium niobate piezo-optomechanical crystals"
+  container: "Optica"
+  volume: "6"
+  issue: "7"
+  pages: "845"
+  issued: 2019-07-02
+  doi: 10.1364/OPTICA.6.000845
+  arxiv: "1903.00957"
+  license: "Optica Open Access License v1 (attribution, non-commercial; R01 sec. 4c)"
+  figure_reuse: "redraw (non-commercial clause conflicts with CC BY site data; author decision in open-questions Q10)"
+  biblio_check: crossref 2026-10-25; arXiv API abstract 2026-10-25
+  content_read: "arXiv abstract (C03); further numbers via R01 sec. 4d (ar5iv text)"
+  used_for: "g0/2pi approx 120 kHz, C > 1, phonon lasing, eta approx 1e-8 (abstract)"
+- id: p04
+  type: journal-article
+  authors: ["P. Arrangoiz-Arriola", "E. A. Wollack", "Z. Wang", "M. Pechal", "W. Jiang", "T. P. McKenna", "J. D. Witmer", "R. Van Laer", "A. H. Safavi-Naeini"]
+  title: "Resolving the energy levels of a nanomechanical oscillator"
+  container: "Nature"
+  volume: "571"
+  issue: "7766"
+  pages: "537-540"
+  issued: 2019-07-24
+  doi: 10.1038/s41586-019-1386-x
+  biblio_check: crossref 2026-10-25
+  content_read: "via R01"
+  used_for: "context (quantum acoustics with LN)"
+- id: p05
+  type: journal-article
+  authors: ["W. Jiang", "C. J. Sarabalis", "Y. D. Dahmani", "R. N. Patel", "F. M. Mayor", "T. P. McKenna", "R. Van Laer", "A. H. Safavi-Naeini"]
+  title: "Efficient bidirectional piezo-optomechanical transduction between microwave and optical frequency"
+  container: "Nature Communications"
+  volume: "11"
+  issue: "1"
+  pages: "1166"
+  issued: 2020-03-03
+  doi: 10.1038/s41467-020-14863-3
+  arxiv: "1909.04627"
+  license: CC BY 4.0
+  figure_reuse: "allowed with attribution and license note"
+  biblio_check: crossref 2026-10-25
+  content_read: "arXiv v1 full text (C03, downloaded to a scratch directory, not redistributed): Eq. 4, App. A Eqs. A10-A13, device numbers"
+  used_for: "F3.9 model and parameters; IDT conductance and bandwidth; V_pi; efficiencies"
+- id: p06
+  type: journal-article
+  authors: ["Y. D. Dahmani", "C. J. Sarabalis", "W. Jiang", "F. M. Mayor", "A. H. Safavi-Naeini"]
+  title: "Piezoelectric Transduction of a Wavelength-Scale Mechanical Waveguide"
+  container: "Physical Review Applied"
+  volume: "13"
+  issue: "2"
+  pages: "024069"
+  issued: 2020-02-25
+  doi: 10.1103/PhysRevApplied.13.024069
+  arxiv: "1907.13058"
+  license: "APS default"
+  figure_reuse: redraw
+  biblio_check: crossref 2026-10-25; arXiv API abstract 2026-10-25
+  content_read: abstract
+  used_for: "1.7 GHz, -12 dB, material-loss limited"
+- id: p07
+  type: journal-article
+  authors: ["W. Jiang", "F. M. Mayor", "R. N. Patel", "T. P. McKenna", "C. J. Sarabalis", "A. H. Safavi-Naeini"]
+  title: "Nanobenders as efficient piezoelectric actuators for widely tunable nanophotonics at CMOS-level voltages"
+  container: "Communications Physics"
+  volume: "3"
+  issue: "1"
+  pages: "156"
+  issued: 2020-09-04
+  doi: 10.1038/s42005-020-00412-3
+  arxiv: "1911.10973"
+  license: CC BY 4.0
+  figure_reuse: "allowed with attribution and license note"
+  biblio_check: crossref 2026-10-25; arXiv API abstract 2026-10-25
+  content_read: "abstract and arXiv v1 text (Eq. 1; linear fit at |U| < 0.5 V; nonlinear tuning curve)"
+  used_for: "0.01 nm/V vs tens of nm/V; R^2 scaling (Eq. 1); 5 nm/V (0.6 THz/V) small-signal; 1520-1560 nm within 4 V"
+- id: p09
+  type: journal-article
+  authors: ["F. M. Mayor", "W. Jiang", "C. J. Sarabalis", "T. P. McKenna", "J. D. Witmer", "A. H. Safavi-Naeini"]
+  title: "Gigahertz Phononic Integrated Circuits on Thin-Film Lithium Niobate on Sapphire"
+  container: "Physical Review Applied"
+  volume: "15"
+  issue: "1"
+  pages: "014039"
+  issued: 2021-01-21
+  doi: 10.1103/PhysRevApplied.15.014039
+  arxiv: "2007.04961"
+  license: "APS default"
+  figure_reuse: redraw
+  biblio_check: crossref 2026-10-25; arXiv API abstract 2026-10-25
+  content_read: abstract
+  used_for: "index guiding without suspension; 50 ohm transducer; 1 um waveguides; Q approx 50,000 at 4 K; phononic four-wave mixing"
+- id: p10
+  type: journal-article
+  authors: ["C. J. Sarabalis", "R. Van Laer", "R. N. Patel", "Y. D. Dahmani", "W. Jiang", "F. M. Mayor", "A. H. Safavi-Naeini"]
+  title: "Acousto-optic modulation of a wavelength-scale waveguide"
+  container: "Optica"
+  volume: "8"
+  issue: "4"
+  pages: "477"
+  issued: 2021-04-06
+  doi: 10.1364/OPTICA.413401
+  arxiv: "2010.12517"
+  license: "Optica Open Access License v1"
+  figure_reuse: redraw
+  biblio_check: crossref 2026-10-25; arXiv API abstract 2026-10-25
+  content_read: "abstract (C03); numbers via R01 sec. 4d (arXiv text)"
+  used_for: "SH0 at 440 MHz, 1.25 um waveguide, TE0-TE1, up to 18% conversion (reported)"
+- id: p11
+  type: journal-article
+  authors: ["E. A. Wollack", "A. Y. Cleland", "P. Arrangoiz-Arriola", "T. P. McKenna", "R. G. Gruenke", "R. N. Patel", "W. Jiang", "C. J. Sarabalis", "A. H. Safavi-Naeini"]
+  title: "Loss channels affecting lithium niobate phononic crystal resonators at cryogenic temperature"
+  container: "Applied Physics Letters"
+  volume: "118"
+  issue: "12"
+  pages: "123501"
+  issued: 2021-03-22
+  doi: 10.1063/5.0034909
+  biblio_check: crossref 2026-10-25
+  content_read: "via R01"
+  used_for: "context (loss channels at cryogenic temperature)"
+- id: p17
+  type: journal-article
+  authors: ["W. Jiang", "F. M. Mayor", "S. Malik", "R. Van Laer", "T. P. McKenna", "R. N. Patel", "J. D. Witmer", "A. H. Safavi-Naeini"]
+  title: "Optically heralded microwave photon addition"
+  container: "Nature Physics"
+  volume: "19"
+  issue: "10"
+  pages: "1423-1428"
+  issued: 2023-07-20
+  doi: 10.1038/s41567-023-02129-w
+  arxiv: "2210.10739"
+  license: "journal: Springer Nature subscription; arXiv version CC BY 4.0 (R01 sec. 4c)"
+  figure_reuse: "arXiv-version figures and Zenodo data with attribution"
+  biblio_check: crossref 2026-10-25; arXiv API abstract 2026-10-25
+  content_read: "arXiv abstract (C03); platform numbers via R01 sec. 4d"
+  used_for: "5% CW efficiency, 15 Hz heralding, < 2 thermal photons (abstract); 3.6 GHz, 410 kHz, stack (R01)"
+- id: zenodo7903643
+  type: dataset
+  authors: ["W. Jiang", "F. M. Mayor", "S. Malik", "R. Van Laer", "T. P. McKenna", "J. D. Witmer", "A. H. Safavi-Naeini"]
+  title: "Optically heralded microwave photon addition"
+  container: "Zenodo"
+  issued: 2023-05-07
+  doi: 10.5281/zenodo.7903643
+  license: CC BY 4.0
+  biblio_check: zenodo API 2026-10-25
+  content_read: "file list only: ExtFig 1.xlsx, Fig 2.xlsx, Fig 3.xlsx, ExtFig 3.xlsx, ExtFig 5.xlsx, ExtFig2.csv"
+  used_for: "F3.10 data source"
+- id: arrangoiz2018
+  type: journal-article
+  authors: ["P. Arrangoiz-Arriola", "E. A. Wollack", "M. Pechal", "J. D. Witmer", "J. T. Hill", "A. H. Safavi-Naeini"]
+  title: "Coupling a Superconducting Quantum Circuit to a Phononic Crystal Defect Cavity"
+  container: "Physical Review X"
+  volume: "8"
+  issue: "3"
+  pages: "031007"
+  issued: 2018-07-10
+  doi: 10.1103/PhysRevX.8.031007
+  license: CC BY 4.0
+  biblio_check: crossref 2026-10-25
+  content_read: "title only"
+  used_for: "context"
+- id: wollack2022
+  type: journal-article
+  authors: ["E. A. Wollack", "A. Y. Cleland", "R. G. Gruenke", "Z. Wang", "P. Arrangoiz-Arriola", "A. H. Safavi-Naeini"]
+  title: "Quantum state preparation and tomography of entangled mechanical resonators"
+  container: "Nature"
+  volume: "604"
+  issue: "7906"
+  pages: "463-467"
+  issued: 2022-04-20
+  doi: 10.1038/s41586-022-04500-y
+  biblio_check: crossref 2026-10-25
+  content_read: "title only"
+  used_for: "context"
+- id: safavinaeini2019
+  type: journal-article
+  authors: ["A. H. Safavi-Naeini", "D. Van Thourhout", "R. Baets", "R. Van Laer"]
+  title: "Controlling phonons and photons at the wavelength scale: integrated photonics meets integrated phononics"
+  container: "Optica"
+  volume: "6"
+  issue: "2"
+  pages: "213"
+  issued: 2019-02-19
+  doi: 10.1364/OPTICA.6.000213
+  biblio_check: crossref 2026-10-25
+  content_read: "title only"
+  used_for: "context (perspective)"
+- id: shao2019
+  type: journal-article
+  authors: ["L. Shao", "M. Yu", "S. Maity", "N. Sinclair", "L. Zheng", "C. Chia", "A. Shams-Ansari", "C. Wang", "M. Zhang", "K. Lai", "M. Loncar"]
+  title: "Microwave-to-optical conversion using lithium niobate thin-film acoustic resonators"
+  container: "Optica"
+  volume: "6"
+  issue: "12"
+  pages: "1498"
+  issued: 2019-12-02
+  doi: 10.1364/OPTICA.6.001498
+  biblio_check: crossref 2026-10-25
+  content_read: "numbers via R08 sec. 2.9"
+  used_for: "context: room temperature, up to 4.5 GHz"
+- id: weaver2024
+  type: journal-article
+  authors: ["M. J. Weaver", "P. Duivestein", "A. C. Bernasconi", "S. Scharmer", "M. Lemang", "T. C. van Thiel", "F. Hijazi", "B. Hensen", "S. Groblacher", "R. Stockill"]
+  title: "An integrated microwave-to-optics interface for scalable quantum computing"
+  container: "Nature Nanotechnology"
+  volume: "19"
+  issue: "2"
+  pages: "166-172"
+  issued: 2024-02
+  doi: 10.1038/s41565-023-01515-y
+  biblio_check: crossref 2026-10-25 (published online 2023-10-05; print issue vol. 19, 2024)
+  content_read: "numbers via R08 sec. 2.9"
+  used_for: "context: 0.9% at 1 uW, LN-on-Si mechanics"
+
+- id: white1965-erl
+  type: report
+  authors: ["R. M. White", "F. W. Voltmer"]
+  title: "Direct piezoelectric coupling to surface elastic waves (UC Berkeley ERL Technical Memorandum M-132)"
+  container: "Electronics Research Laboratory, University of California, Berkeley"
+  issued: 1965-10-12
+  url: https://www2.eecs.berkeley.edu/Pubs/TechRpts/1965/ERL-m-132.pdf
+  content_read: "full text (C07): aluminum electrodes vacuum-deposited on a quartz bar, operation at 15 and 45 Mc"
+  used_for: "substrate of the first IDT (quartz)"
+- id: jiang2018-blog-photoelastic
+  type: webpage
+  authors: ["W. Jiang"]
+  title: "Rotation of photoelastic tensor and piezoelectric tensor (outside5sigma.com)"
+  url: https://outside5sigma.com/tutorial/rotation-of-photoelastic-tensor-and-piezoelectric/
+  issued: 2018
+  content_read: "public blog post (R02 sec. 2.2-2.3, A13)"
+  used_for: "p22' values 0.304 / 0.223 at 45/135 deg; rotation-term estimate below 4%"
+
+# ---------- industry (product pages, news) ----------
+- id: fomos-ln
+  type: webpage
+  authors: ["OJSC Fomos-Materials"]
+  title: "Lithium niobate (knowledge base)"
+  url: https://en.newpiezo.com/knowledge_base/1/lithium-niobate/
+  accessed: 2026-10-25
+  grade: V
+  content_read: "SAW velocity row (3488 YZ; 3980 128 YX; 4690 64 YX; 4750 41 YX m/s), coupling row (5.04; 5.7; 10; 17 %; quantity undefined), temperature frequency coefficient row (-95; -72; -70; -70 ppm/C). Page undated (copyright 2001-2026)"
+  used_for: "vendor cross-check of derived SAW velocities"
+- id: smm-ln-lt
+  type: webpage
+  authors: ["Sumitomo Metal Mining Co., Ltd."]
+  title: "Lithium tantalate / lithium niobate single crystal substrates"
+  url: https://www.smm.co.jp/en/business/material/products/lithium/
+  accessed: "2026-10-24 (via R09 S3)"
+  grade: "P (product page, own products); performance claims V"
+  used_for: "128 deg rotated Y LN wafers (350 um at 4 in, 500 um at 6 in), LT 36-50 deg rotated Y; smartphone SAW filters and duplexers"
+- id: soitec-poi
+  type: webpage
+  authors: ["Soitec SA"]
+  title: "Connect POI"
+  url: https://www.soitec.com/en/products/poi
+  accessed: "2026-10-24 (via R09 S10, R08 sec. 2.11)"
+  grade: "P (product page)"
+  used_for: "LT6-MHB, LT6-LB, LN6 at 150 mm; LT8-MHB, LT8-LB at 200 mm"
+- id: eenews-2020-soitec-qualcomm
+  type: webpage
+  title: "Qualcomm adopts Soitec POI wafers for SAW filters"
+  container: "eeNews Europe"
+  url: https://www.eenewseurope.com/en/qualcomm-adopts-soitec-poi-wafers-for-saw-filters/
+  issued: 2020-07-07
+  accessed: "2026-10-24 (via R09 S11)"
+  grade: "S (trade press)"
+  used_for: "volume POI supply for Qualcomm RF filters (300 nm to 1 um LT)"
+- id: murata-2022
+  type: webpage
+  authors: ["Murata Manufacturing Co., Ltd."]
+  title: "News release on completion of the acquisition of Resonant Inc."
+  url: https://corporate.murata.com/newsroom/news/company/general/2022/0329
+  issued: 2022-03-29
+  accessed: "2026-10-24 (via R09 S46)"
+  grade: "P (company release)"
+  used_for: "acquisition completed 2022-03-28 (US time)"
+- id: mwj-2018-filters
+  type: webpage
+  title: "SAW/BAW: new market entrants offer new approaches"
+  container: "Microwave Journal"
+  url: https://www.microwavejournal.com/articles/31149-sawbaw-new-market-entrants-offer-new-approaches
+  issued: 2018-10-11
+  accessed: "2026-10-24 (via R09 S50)"
+  grade: "V (vendor contribution in trade press)"
+  used_for: "> 50 filters per mid/high-tier 4G phone, > 70 expected with 5G"
+
+# ---------- project notes and computation ----------
+- id: c03-calc
+  type: computation
+  title: "Independent check of the derived values from the Kushibiki et al. 1999 constants, 2026-10-25"
+  content: "Python/NumPy/SciPy, not committed. (1) e, c^E, eps^S -> s^E, d, g, h, c^D, eps^T; (2) Christoffel with stiffening (ieee176 Eq. 47); (3) partial-wave SAW, 8x8 generalized eigenproblem, nondimensionalized, Im(alpha) < 0 or Poynting into the substrate, boundary determinant minimized over real v (Rayleigh) or complex v (leaky), 1 m/s exclusion around bulk thresholds; (4) photoelastic longitudinal coefficient p_ijkl b_i b_j b_k b_l; (5) arithmetic checks (Bragg, IDT f0, thermal occupation). Inputs: kushibiki1999 with c66 = (c11 - c12)/2; alternates ogi2002, warner1967 (rho 4700, eps^S 44.3/27.9)"
+  status: derived
+  note: "reproduced by src/lib/physics (saw.test.ts, piezo.test.ts and related tests)"
+- id: R01
+  type: research-note
+  path: research/R01-author-public-record.md
+  used_for: "author's publication list, licenses, numbers from arXiv text"
+- id: R02
+  type: research-note
+  path: research/R02-blog-corpus.md
+  used_for: "convention-of-2s rules as recorded; p22' values 0.304 / 0.223; roto-optic estimate"
+- id: R05
+  type: research-note
+  path: research/R05-blender-3d-workflow.md
+  used_for: "3D asset workflow for F3.4, F3.9-F3.11 scenes"
+- id: R06
+  type: research-note
+  path: research/R06-material-properties-data.md
+  used_for: "source register, constant tables, pitfalls 2, 3, 6, 7, API URL scheme"
+- id: R07
+  type: research-note
+  path: research/R07-history.md
+  used_for: "IDT and 128 deg cut history; unverified substrate of the first IDT"
+- id: R08
+  type: research-note
+  path: research/R08-tfln-state-of-art.md
+  used_for: "transduction and AO records, XBAR, Murata XBAR mass production 2025-07-08"
+- id: R09
+  type: research-note
+  path: research/R09-industry-market.md
+  used_for: "SAW industry: wafers, POI, LT vs LN share (N/A), filters per phone"
+- id: R11
+  type: research-note
+  path: research/R11-browser-simulations.md
+  used_for: "S10 Christoffel and SAW solver spec, timing"
+- id: R14
+  type: research-note
+  path: research/R14-property-verification.md
+  used_for: "sign frame resolution, d_h constraint, photoelastic set origins and sign pairing"

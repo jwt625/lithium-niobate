@@ -42,8 +42,9 @@ const LN = (() => {
     const img = ctx.createImageData(size, size);
     const d = thicknessMm * 1e3; // um
     const E = fieldKVmm * 1e6; // V/m
-    const samples = white ? SPECTRUM : [{ lam: 0.6328, w: [1, 0.12, 0.08] }];
-    const sw = white ? WSUM : [1, 0.12, 0.08];
+    const mono = !!opt.mono;
+    const samples = white ? SPECTRUM : [{ lam: 0.6328, w: mono ? [1, 1, 1] : [1, 0.12, 0.08] }];
+    const sw = white ? WSUM : mono ? [1, 1, 1] : [1, 0.12, 0.08];
     const per = samples.map((s) => {
       const no = n("o", s.lam), ne = n("e", s.lam);
       return { lam: s.lam, w: s.w, dn: no - ne, dE: no ** 3 * R22_T * E, no };

@@ -1,0 +1,48 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "dark-conductivity",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "electrical",
+      "conditions": {
+        "temperature_text": "room temperature, extrapolated from high temperature"
+      },
+      "default": true,
+      "id": "dark-conductivity/cln/volk2008",
+      "kind": "scalar",
+      "max": 1e-14,
+      "min": 1e-16,
+      "name": "Dark conductivity",
+      "notes": "Protonic conduction; activation energy about 1.1 eV (200-1000 C). 8-10 orders of magnitude below the 1.0e-6 S/m floor fitted in bouchy2022.",
+      "property": "dark-conductivity",
+      "provenance": {
+        "locator": "Sec. 3.2.1, pp. 59-60 (1e-16 to 1.0e-18 Ohm^-1 cm^-1)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "sigma_d",
+      "unit": {
+        "display": "S/m",
+        "ucum": "S/m"
+      },
+      "variant": "cln",
+      "variant_note": "undoped or slightly doped CLN"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

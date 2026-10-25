@@ -1,0 +1,48 @@
+{
+  "citation": "L. E. Myers, W. R. Bosenberg, G. D. Miller, et al., \"Quasi-phase-matched 1064-μm-pumped optical parametric oscillator in bulk periodically poled LiNbO_3\", Optics Letters 20, 52, (1995) doi:10.1364/ol.20.000052",
+  "link": "https://doi.org/10.1364/ol.20.000052",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "L. E. Myers"
+      },
+      {
+        "literal": "W. R. Bosenberg"
+      },
+      {
+        "literal": "G. D. Miller"
+      },
+      {
+        "literal": "R. C. Eckardt"
+      },
+      {
+        "literal": "M. M. Fejer"
+      },
+      {
+        "literal": "R. L. Byer"
+      }
+    ],
+    "container_title": "Optics Letters",
+    "doi": "10.1364/ol.20.000052",
+    "id": "myers1995a",
+    "issue": "1",
+    "issued": "1995-01-01",
+    "page": "52",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Quasi-phase-matched 1064-μm-pumped optical parametric oscillator in bulk periodically poled LiNbO_3",
+    "type": "article-journal",
+    "volume": "20"
+  }
+}

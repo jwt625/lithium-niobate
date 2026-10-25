@@ -1,0 +1,57 @@
+{
+  "alternatives": [
+    "elastic-stiffness-cE/unspecified/andrushchak2009",
+    "elastic-stiffness-cE/unspecified/ogi2002",
+    "elastic-stiffness-cE/unspecified/ogi2002-kovacs1990",
+    "elastic-stiffness-cE/unspecified/weis1985-nakagawa1973",
+    "elastic-stiffness-cE/unspecified/weis1985-smithwelsh1971",
+    "elastic-stiffness-cE/unspecified/weis1985-warner1967"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "elastic-stiffness-cE",
+    "variant": "unspecified"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "c11": {
+      "max": 203.0,
+      "min": 198.4,
+      "n_records": 6
+    },
+    "c12": {
+      "max": 57.3,
+      "min": 53,
+      "n_records": 6
+    },
+    "c13": {
+      "max": 75.2,
+      "min": 60,
+      "n_records": 6
+    },
+    "c14": {
+      "max": 9,
+      "min": 7.88,
+      "n_records": 6
+    },
+    "c33": {
+      "max": 245,
+      "min": 227.9,
+      "n_records": 6
+    },
+    "c44": {
+      "max": 60,
+      "min": 59.48,
+      "n_records": 6
+    }
+  }
+}

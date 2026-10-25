@@ -1,0 +1,25 @@
+{
+  "citation": "\"iXblue completes integration of iXFiber and Photline\", Photonics Online, (2015) https://www.photonicsonline.com/doc/ixblue-completes-integration-of-ixfiber-and-photline-0001",
+  "link": "https://www.photonicsonline.com/doc/ixblue-completes-integration-of-ixfiber-and-photline-0001",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Photonics Online",
+    "id": "photonicsonline-2015",
+    "issued": "2015-02-04",
+    "read": "Read",
+    "title": "iXblue completes integration of iXFiber and Photline",
+    "type": "webpage",
+    "url": "https://www.photonicsonline.com/doc/ixblue-completes-integration-of-ixfiber-and-photline-0001"
+  }
+}

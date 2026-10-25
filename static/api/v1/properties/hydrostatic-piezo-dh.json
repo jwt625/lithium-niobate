@@ -1,0 +1,94 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33 of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/hydrostatic-piezo-dh.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/hydrostatic-piezo-dh.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33",
+    "url": "https://lithium-niobate.com/api/v1/properties/hydrostatic-piezo-dh.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "d_h (unspecified)",
+        "unitText": "pC/N",
+        "value": 6.31
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "hydrostatic-piezo-dh"
+  },
+  "records": [
+    {
+      "category": "acoustic",
+      "default": true,
+      "id": "hydrostatic-piezo-dh/unspecified/weis1985-graham1976",
+      "kind": "scalar",
+      "name": "Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33",
+      "notes": "Implies d33 of about 8.0-8.4 pC/N with measured d31, favouring the kushibiki1999 set (d33 = 8.7, computed) over 6.0 and ruling out 12.5-16.",
+      "property": "hydrostatic-piezo-dh",
+      "provenance": {
+        "locator": "p. 198",
+        "original_reference": "Graham, Ferroelectrics 10, 65 (1976); confirmed on 9 samples from 5 suppliers, Graham, J. Appl. Phys. 48, 2153 (1977)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "d_h",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.014
+      },
+      "unit": {
+        "display": "pC/N",
+        "ucum": "pC/N"
+      },
+      "value": 6.31,
+      "variant": "unspecified"
+    }
+  ]
+}

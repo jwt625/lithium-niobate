@@ -1,0 +1,214 @@
+# Image candidates, chapter 07 History. Lane C07, 2026-10-25.
+# Nothing downloaded. License and author fields copied from Wikimedia Commons extmetadata
+# (API query) on the date in 'checked'. Re-check before publishing; Commons metadata can change.
+# use: ok = public domain or CC0, attribution courtesy only; attrib = CC BY, credit required;
+#      attrib-sa = CC BY-SA, credit and share-alike for the image; hold = license unclear or
+#      conflicting, do not publish until resolved.
+# caption: what the picture shows, as far as the file page states it. No caption may claim LN
+#   where the file does not.
+
+images:
+
+- file: "File:Heinrich Rose Litho.jpg"
+  subject: "Heinrich Rose, lithograph (Austrian National Library original)"
+  license: "Public domain"
+  author: "Rudolph Hoffmann (lithograph); photograph of the ONB original by the Commons uploader"
+  source: "https://commons.wikimedia.org/wiki/File:Heinrich_Rose_Litho.jpg"
+  size_px: "1681x2500"
+  checked: "2026-10-25"
+  use: ok
+  chapter: h01
+  caption: "Heinrich Rose, who named niobium in 1844."
+
+- file: "File:Heinrich Rose.jpg"
+  subject: "Heinrich Rose, engraving, circa 1825 (Smithsonian)"
+  license: "Public domain"
+  author: "W. C. Sharpe (engraver), after l'Alemand"
+  source: "https://commons.wikimedia.org/wiki/File:Heinrich_Rose.jpg"
+  size_px: "858x1054"
+  checked: "2026-10-25"
+  use: ok
+  chapter: h01
+  caption: "Heinrich Rose, engraving."
+
+- file: "File:Jöns Jacob Berzelius 1826.jpg"
+  subject: "Jons Jacob Berzelius, portrait, 1826"
+  license: "Public domain"
+  author: "John Way (per file page)"
+  source: "https://commons.wikimedia.org/wiki/File:J%C3%B6ns_Jacob_Berzelius_1826.jpg"
+  size_px: "990x1260"
+  checked: "2026-10-25"
+  use: ok
+  chapter: h01
+  caption: "Berzelius, who named lithium after the Greek for stone."
+
+- file: "File:Charles Hatchett. Lithograph by W. Drummond, 1836, after T. Wellcome V0002613.jpg"
+  subject: "Charles Hatchett, lithograph by W. Drummond, 1836 (Wellcome Collection)"
+  license: "CC BY 2.0"
+  author: "Wellcome Collection (credit line per file page)"
+  source: "https://commons.wikimedia.org/wiki/File:Charles_Hatchett._Lithograph_by_W._Drummond,_1836,_after_T._Wellcome_V0002613.jpg"
+  size_px: "2362x3066"
+  checked: "2026-10-25"
+  use: attrib
+  chapter: h01
+  caption: "Charles Hatchett, who named columbium in 1801."
+
+- file: "File:Uffizi Gallery - Daughter of Niobe bent by terror.jpg"
+  subject: "Daughter of Niobe, Roman sculpture group, Uffizi (Sala della Niobe)"
+  license: "CC BY-SA 4.0"
+  author: "Petar Milosevic"
+  source: "https://commons.wikimedia.org/wiki/File:Uffizi_Gallery_-_Daughter_of_Niobe_bent_by_terror.jpg"
+  size_px: "3513x2634"
+  checked: "2026-10-25"
+  use: attrib-sa
+  chapter: h01
+  caption: "A daughter of Niobe, Uffizi. Niobe gives niobium its name."
+  notes: "Better option: a procedural or commissioned drawing for the family tree (F7.1), avoiding share-alike."
+
+- file: "File:De val van Tantalus.jpg"
+  subject: "The fall of Tantalus, print, about 1550 (Ghent University Library)"
+  license: "CC BY-SA 4.0"
+  author: "Unknown (Ghent University Library, digitization)"
+  source: "https://commons.wikimedia.org/wiki/File:De_val_van_Tantalus.jpg"
+  size_px: "4000x3942"
+  checked: "2026-10-25"
+  use: attrib-sa
+  chapter: h01
+  caption: "Tantalus, namesake of tantalum, in a 16th-century print."
+  notes: "The underlying print is public domain by age; Commons tags the digitization CC BY-SA 4.0. Treat as attrib-sa unless a PD-Art tag is confirmed."
+
+- file: "File:W. H. Zachariasen.jpg"
+  subject: "W. H. Zachariasen, newspaper photograph, about 1945 (Aftenposten)"
+  license: "Public domain (per Commons tag)"
+  author: "Unknown"
+  source: "https://commons.wikimedia.org/wiki/File:W._H._Zachariasen.jpg"
+  size_px: "547x907"
+  checked: "2026-10-25"
+  use: hold
+  chapter: h01
+  caption: "W. H. Zachariasen, whose 1928 thesis lists LiNbO3."
+  notes: "Confirm which public-domain rationale Commons applies (Norwegian anonymous-work term) before use."
+
+- file: "File:J._Czochralski_ca_1910.jpg"
+  subject: "Jan Czochralski, about 1910"
+  license: "Public domain"
+  author: "Unknown"
+  source: "https://commons.wikimedia.org/wiki/File:J._Czochralski_ca_1910.jpg"
+  size_px: "686x727"
+  checked: "2026-10-25"
+  use: ok
+  chapter: h01
+  caption: "Jan Czochralski, about 1910."
+
+- file: "File:Bell_Telephone_Laboratories,_Murray_Hill,_New_Jersey._LOC_gsc.5a08712.jpg"
+  subject: "Bell Telephone Laboratories, Murray Hill NJ, 1942 (Library of Congress, Gottscho-Schleisner)"
+  license: "Public domain"
+  author: "Gottscho-Schleisner Collection"
+  source: "https://commons.wikimedia.org/wiki/File:Bell_Telephone_Laboratories,_Murray_Hill,_New_Jersey._LOC_gsc.5a08712.jpg"
+  size_px: "8836x6417"
+  checked: "2026-10-25"
+  use: ok
+  chapter: h02
+  caption: "Bell Telephone Laboratories, Murray Hill, 1942."
+
+- file: "File:Lithium_Niobate_Crystal_(7788237698).jpg"
+  subject: "Small LN crystal in a NIST quantum-optics setup, 2012"
+  license: "Public domain (NIST, US Government work)"
+  author: "National Institute of Standards and Technology"
+  source: "https://commons.wikimedia.org/wiki/File:Lithium_Niobate_Crystal_(7788237698).jpg"
+  size_px: "1157x691"
+  checked: "2026-10-25"
+  use: ok
+  chapter: h06
+  caption: "A lithium niobate crystal in a NIST quantum-optics experiment, 2012."
+
+- file: "File:Lithium_Niobate_Wafer.jpg"
+  subject: "LN single-crystal wafer"
+  license: "CC0"
+  author: "Smithy71"
+  source: "https://commons.wikimedia.org/wiki/File:Lithium_Niobate_Wafer.jpg"
+  size_px: "4000x3000"
+  checked: "2026-10-25"
+  use: ok
+  chapter: h08
+  caption: "A lithium niobate wafer."
+
+- file: "File:Laser-Induced_Optical_Damage_in_LiNbO3.jpg"
+  subject: "Laser-induced damage in LN, 150x Nomarski microscopy"
+  license: "CC BY-SA 4.0"
+  author: "Jason Yager"
+  source: "https://commons.wikimedia.org/wiki/File:Laser-Induced_Optical_Damage_in_LiNbO3.jpg"
+  size_px: "3400x4400"
+  checked: "2026-10-25"
+  use: attrib-sa
+  chapter: h03
+  caption: "Laser damage in lithium niobate under a Nomarski microscope."
+  notes: "Shows laser-induced damage at the surface as photographed; whether it is photorefractive or physical damage is not stated on the file page, so the caption must not call it the photorefractive effect."
+
+- file: "File:Arthur_Ashkin_D81_2485_(44417144580)_(cropped).jpg"
+  subject: "Arthur Ashkin at Nobel week, 2018-12-08"
+  license: "CC BY 2.0"
+  author: "Bengt Nyman"
+  source: "https://commons.wikimedia.org/wiki/File:Arthur_Ashkin_D81_2485_(44417144580)_(cropped).jpg"
+  size_px: "3995x3773"
+  checked: "2026-10-25"
+  use: attrib
+  chapter: h03
+  caption: "Arthur Ashkin, Stockholm, 2018."
+
+- file: "File:Nicolaas_Bloembergen_1981.jpg"
+  subject: "Nicolaas Bloembergen, Lindau, 1981-07-02"
+  license: "CC BY-SA 3.0 nl"
+  author: "Vetter (Spaarnestad Photo); Dutch National Archives"
+  source: "https://commons.wikimedia.org/wiki/File:Nicolaas_Bloembergen_1981.jpg"
+  size_px: "2564x3465"
+  checked: "2026-10-25"
+  use: attrib-sa
+  chapter: h06
+  caption: "Nicolaas Bloembergen, co-author of the 1962 quasi-phase-matching proposal."
+
+- file: "File:LiNbO3.png"
+  subject: "Crystal structure with NbO6 octahedra"
+  license: "Public domain (own work)"
+  author: "'Solid State' (Commons user)"
+  source: "https://commons.wikimedia.org/wiki/File:LiNbO3.png"
+  size_px: "1188x1368"
+  checked: "2026-10-25 (audit)"
+  use: ok
+  chapter: h01
+  caption: "LiNbO3 structure."
+  notes: "Prefer the site's own 3D cell (chapter 01)."
+
+- file: "File:Bernd_Matthias.jpg; File:Matthias_and_Kunzler_periodic_table.jpg"
+  subject: "Bernd Matthias portrait; Matthias pointing at niobium on a periodic table"
+  license: "'Copyrighted free use' on Commons; source AIP Emilio Segre Visual Archives"
+  author: "AIP ESVA, Physics Today Collection"
+  checked: "2026-10-24 (R07)"
+  use: hold
+  chapter: h01
+  caption: "Bernd Matthias, co-discoverer of ferroelectricity in LiNbO3 (1949)."
+  notes: "AIP terms not confirmed. The niobium photo concerns superconductivity, not LN."
+
+- file: "File:Lithium_niobate_crystal.jpg"
+  subject: "Cracked LN crystal, Science Museum object 1982-139 (from RSRE)"
+  license: "Conflict: Commons CC BY 4.0; Science Museum Group page CC BY-NC-SA 4.0"
+  author: "Science Museum Group"
+  checked: "2026-10-24 (R07)"
+  use: hold
+  chapter: h05
+  caption: "Lithium niobate crystal, Science Museum collection."
+  notes: "1982 is the accession year, not the crystal's date."
+
+- file: "File:Kyocera_38.9MN_SAW_filter.jpg; File:Siemens_OFW_G1961_SAW_filter.jpg"
+  subject: "TV IF SAW filters, 1980s-1990s"
+  license: "CC BY-SA 4.0"
+  author: "Mister rf"
+  checked: "2026-10-24 (R07)"
+  use: attrib-sa
+  chapter: h04
+  caption: "A television IF SAW filter (substrate not stated)."
+  notes: "Substrate not stated on the file pages; never caption as LN."
+
+# Gaps (no openly licensed image found): LN boule, early Ti:LN modulator package, PPLN chip,
+# TFLN chip, 1960s Bell Labs crystal-growth photos, Kaminow 1973 device. Fill with procedural
+# drawings or Blender renders (R05) labeled as renders, or permissioned photos.

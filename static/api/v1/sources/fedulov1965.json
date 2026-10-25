@@ -1,0 +1,34 @@
+{
+  "citation": "S. A. Fedulov, et al., \"Czochralski growth of LiNbO3, LiTaO3 and NaNbO3 single crystals (title as cited; variants conflict)\", Kristallografiya 10, 268 (1965)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "S. A. Fedulov"
+      },
+      {
+        "literal": "et al."
+      }
+    ],
+    "container_title": "Kristallografiya",
+    "id": "fedulov1965",
+    "issued": "1965",
+    "page": "268",
+    "read": "Not seen. Present in Crossref-deposited reference lists of nassau1966a, nassau1966b, abrahams1966a, smolenskii1966",
+    "title": "Czochralski growth of LiNbO3, LiTaO3 and NaNbO3 single crystals (title as cited; variants conflict)",
+    "type": "webpage",
+    "volume": "10"
+  }
+}

@@ -1,0 +1,2317 @@
+# History events, lithium niobate, 1801-2026
+# Lane C07, compiled 2026-10-25. Merge target: data/events/history.yaml.
+#
+# Fields: id (merge key, added for cross-reference), date, date_precision, title, people,
+# institution, citation, doi, url, status, hook (<= 20 words), chapter, notes.
+#
+# date: ISO 8601. Day, month or year as precise as the source allows. Ranges use the ISO
+#   interval form "start/end".
+# date_precision: day | month | year | approx | range
+#   Publication dates are issue dates from Crossref (published-print, else issued) unless
+#   notes say otherwise.
+# status:
+#   V  Crossref record, publisher abstract, archival scan, or the issuing organization's own
+#      page confirms the publication or announcement; the claim restates its title, abstract
+#      or text. Vendor performance numbers stay vendor claims even when V.
+#   P  Publication confirmed; its link to the stated LN claim, or a detail such as
+#      affiliation, rests on a secondary source (named in notes).
+#   S  Secondary source only: trade press, retrospective, catalog, company profile in a third
+#      party directory, or a search snippet (named in notes).
+#   derived  Count or calculation made from cited data (method in notes).
+# institution: as printed on the byline when notes say "byline"; otherwise standard
+#   attribution, not re-checked.
+# chapter: h01 A crystal on paper; h02 Bell Labs grows a crystal; h03 The damage that became
+#   a memory; h04 Sound on a crystal; h05 Light in a channel; h06 Taming the crystal; h07 The
+#   internet's modulator; h08 Peeling the crystal; h09 The thin-film renaissance; h10 Into the
+#   AI data center.
+# Items that could not be verified are not listed here; see open-questions.md.
+
+events:
+
+# ---------------------------------------------------------------- h01 A crystal on paper
+
+- id: h-1801-hatchett-columbium
+  date: "1801-11-26"
+  date_precision: day
+  title: "Hatchett reports a new metal in a North American mineral and names it columbium"
+  people: ["Charles Hatchett"]
+  institution: "Royal Society of London (paper read)"
+  citation: "C. Hatchett, Phil. Trans. R. Soc. Lond. 92, 49-66 (1802)"
+  doi: "10.1098/rstl.1802.0005"
+  url: "https://archive.org/details/s3id13528400"
+  status: V
+  hook: "A London chemist finds an unknown metal in an American mineral and calls it columbium."
+  chapter: h01
+  notes: "Read 1801-11-26, printed 1802. Naming sentence p. 65: 'I have been induced to give it the name of Columbium.' Scan read on archive.org; Crossref record confirms volume and pages. The element is niobium; the name columbium persisted in US metallurgy."
+
+- id: h-1802-ekeberg-tantalum
+  date: "1802"
+  date_precision: year
+  title: "Ekeberg names tantalum after Tantalus"
+  people: ["Anders Gustaf Ekeberg"]
+  institution: "Uppsala (attribution)"
+  citation: "Kongl. Vetenskaps Academiens Nya Handlingar 1802, p. 68 (as cited by Wollaston 1809 and Rose 1844)"
+  doi: null
+  url: null
+  status: P
+  hook: "Tantalus could never drink; Ekeberg's new oxide could not take up acid, so he named it tantalum."
+  chapter: h01
+  notes: "Original Swedish paper not found online. The naming reason is as reported by Rose 1844 (Ann. Phys. 139, p. 318): the oxide is insoluble in excess acid, 'Wegen dieser Eigenschaft nannte er das ... Metall Tantal'."
+
+- id: h-1809-wollaston-identity
+  date: "1809"
+  date_precision: year
+  title: "Wollaston argues columbium and tantalum are the same element"
+  people: ["William Hyde Wollaston"]
+  institution: "London"
+  citation: "W. H. Wollaston, 'On the identity of columbium and tantalum', Phil. Trans. R. Soc. Lond. 99, 246-252 (1809)"
+  doi: "10.1098/rstl.1809.0017"
+  url: null
+  status: V
+  hook: "For 35 years chemists believed niobium and tantalum were one metal."
+  chapter: h01
+  notes: "Crossref record and abstract (first paragraph). The error held until Rose 1844."
+
+- id: h-1818-arfwedson-lithium
+  date: "1818-02-09"
+  date_precision: day
+  title: "Lithium announced: Arfwedson finds a new alkali in petalite; Berzelius names it from Greek lithos"
+  people: ["Johan August Arfwedson", "Jons Jacob Berzelius"]
+  institution: "Berzelius laboratory, Stockholm"
+  citation: "Berzelius, letter dated 1818-02-09, Ann. Chim. Phys. 7, 199-201; A. Arfwedson, Afhandlingar i Fysik, Kemi och Mineralogi 6, 145-172 (Stockholm 1818)"
+  doi: null
+  url: "https://archive.org/details/bub_gb_71QrAAAAcAAJ"
+  status: V
+  hook: "Lithium means stone: Berzelius named it for being found in a mineral."
+  chapter: h01
+  notes: "Scans read: Arfwedson p. 153, Berzelius proposed 'Lithion' after the Greek for stone 'efter som detta alkali forst blifvit funnit i mineralriket'. Berzelius letter scan: archive.org/details/s3id13207740 (volume title page 1817, letter dated 1818-02-09). The discovery itself is commonly dated 1817 (secondary: Weeks, J. Chem. Educ. 9, 1035, 1932, doi:10.1021/ed009p1035)."
+
+- id: h-1844-rose-niobium
+  date: "1844-10-31"
+  date_precision: day
+  title: "Heinrich Rose names niobium after Niobe, daughter of Tantalus"
+  people: ["Heinrich Rose"]
+  institution: "Berlin (Royal Prussian Academy of Sciences, paper read)"
+  citation: "H. Rose, 'Ueber die Zusammensetzung der Tantalite und ein im Tantalite von Baiern enthaltenes neues Metall', Ann. Phys. Chem. (Poggendorff) 63 = Ann. Phys. 139, 317-341 (1844); Bericht Akad. Wiss. Berlin 1844, 361-364"
+  doi: "10.1002/andp.18441391006"
+  url: "https://archive.org/details/annalenderphysi88pogggoog"
+  status: V
+  hook: "Niobium is named for Niobe, daughter of Tantalus, to mark its likeness to tantalum."
+  chapter: h01
+  notes: "Naming sentence pp. 335-336: 'Ich nenne dasselbe Niobium und sein Oxyd Niobsaure, von Niobe, der Tochter des Tantalus, um durch den Namen die Aehnlichkeit ... anzudeuten.' Read to the Berlin Academy 1844-10-31 (Bericht scan, archive.org/details/BerichtUberDieZurBekanntmachung1844). Resolves the 1844 vs 1846 question: niobium 1844, pelopium 1846."
+
+- id: h-1846-rose-pelopium
+  date: "1846-07-16"
+  date_precision: day
+  title: "Rose names a second 'new metal' pelopium after Pelops, Niobe's brother"
+  people: ["Heinrich Rose"]
+  institution: "Berlin (Royal Prussian Academy of Sciences, paper read)"
+  citation: "H. Rose, 'Ueber ein zweites im Tantalit (Columbit) von Baiern enthaltenes neues Metall', Ann. Phys. 145, 115-141 (1846)"
+  doi: "10.1002/andp.18461450911"
+  url: "https://archive.org/details/annalenderphysi84unkngoog"
+  status: V
+  hook: "Rose named a second metal after Niobe's brother Pelops; it turned out to be niobium again."
+  chapter: h01
+  notes: "Naming p. 119: 'Pelopium nennen, von Pelops, dem Sohne des Tantalus, und dem Bruder der Niobe'. Read 1846-07-16 (Bericht Akad. Wiss. Berlin 1846, 229-230). Secondary sources that give '1846' for niobium conflate the two papers."
+
+- id: h-1866-marignac-niobium
+  date: "1866"
+  date_precision: year
+  title: "Marignac settles niobium chemistry; pelopium and 'ilmenium' are not new elements"
+  people: ["Jean Charles Galissard de Marignac"]
+  institution: "Geneva"
+  citation: "C. Marignac, 'Recherches sur les combinaisons du niobium', Ann. Chim. Phys. (4) 8, 5-75 (1866)"
+  doi: null
+  url: "https://archive.org/details/s696id13664940"
+  status: V
+  hook: "Two decades after Rose, a Geneva chemist untangled niobium from tantalum for good."
+  chapter: h01
+  notes: "Scan pp. 5-8, 45-50. Marignac p. 6: Rose himself 'reconnut que ces deux acides renfermaient un meme metal'; p. 45 the white chloride is NbOCl3; p. 50 Nb-Ta association caused Rose's errors and credits Blomstrand's parallel work (1864-1865). Reprints notices from Archives des sciences physiques et naturelles, Geneva, 1865-1866."
+
+- id: h-1917-czochralski
+  date: "1917-04-24"
+  date_precision: day
+  title: "Czochralski publishes the crystal-pulling method (as a way to measure metal crystallization speed)"
+  people: ["Jan Czochralski"]
+  institution: "Berlin (AEG laboratory, attribution)"
+  citation: "J. Czochralski, 'Ein neues Verfahren zur Messung der Kristallisationsgeschwindigkeit der Metalle', Z. Phys. Chem. 92, 219-221"
+  doi: "10.1515/zpch-1918-9212"
+  url: "https://archive.org/details/sim_zeitschrift_physikalische_chemie_1917-04-24_92_2"
+  status: V
+  hook: "The method that grows lithium niobate boules began as a speed test for molten metals."
+  chapter: h01
+  notes: "Received 1916-08-19; Heft 2 'Ausgegeben am 24. April 1917'; volume 92 spans 1916-11 to 1918-06, so Crossref and most citations give 1918. Melt in a charcoal crucible; a thin crystal thread pulled at the maximum continuous speed. The 1916 'pen dipped in molten tin' story is an anecdote (secondary: Malecka, ACADEMIA 4(40), 2013); origin unverified."
+
+- id: h-1928-zachariasen
+  date: "1928"
+  date_precision: year
+  title: "Zachariasen's structure survey of sesquioxides and ABO3 compounds lists LiNbO3"
+  people: ["W. H. Zachariasen"]
+  institution: "University of Oslo (doctoral thesis)"
+  citation: "W. H. Zachariasen, 'Untersuchungen uber die Kristallstruktur von Sesquioxyden und Verbindungen ABO3', Skr. Nor. Vidensk.-Akad. Oslo, Mat.-Naturv. Kl. 1928, No. 4, 165 pp."
+  doi: null
+  url: null
+  status: P
+  hook: "A Norwegian doctoral thesis on oxide crystal structures includes LiNbO3, according to later citations."
+  chapter: h01
+  notes: "Thesis scan not seen. LiNbO3 content confirmed only by citing papers: Matthias & Remeika 1949 ('LiCbO3 ... was described by Zachariasen as belonging to the ilmenite structure'), Abrahams 1966, Bartasyte 2017 (doi:10.1002/admi.201600998). One library catalog gives the series volume imprint as 1929."
+
+- id: h-1949-matthias-remeika
+  date: "1949-12-15"
+  date_precision: day
+  title: "Matthias and Remeika find ferroelectricity in LiNbO3 and LiTaO3"
+  people: ["B. T. Matthias", "J. P. Remeika"]
+  institution: "Bell Telephone Laboratories, Murray Hill (byline)"
+  citation: "B. T. Matthias, J. P. Remeika, 'Ferroelectricity in the Ilmenite Structure', Phys. Rev. 76, 1886-1887 (1949)"
+  doi: "10.1103/PhysRev.76.1886.2"
+  url: "https://archive.org/details/sim_physical-review_1949-12-15_76_12"
+  status: V
+  hook: "Two Bell Labs physicists find a crystal with a built-in electric arrow that a field can flip."
+  chapter: h01
+  notes: "Full letter read (scan). Dated 1949-11-07. 'Single crystals of LiTaO3 and LiCbO3 have been found to be strongly ferroelectric'; ceramics 'show hardly any effect'. Written with the old symbol Cb (columbium). Crystal growth method not stated in the letter. Note DOI suffix .2: 10.1103/PhysRev.76.1886 is a different paper."
+
+- id: h-1949-iupac-niobium
+  date: "1949"
+  date_precision: year
+  title: "The name niobium chosen internationally over columbium"
+  people: []
+  institution: "IUPAC (15th Conference, Amsterdam)"
+  citation: "G. Rayner-Canham, J. Zheng, Found. Chem. 10, 13-18 (2008); vanderkrogt.net element 41"
+  doi: "10.1007/s10698-007-9042-1"
+  url: "https://www.vanderkrogt.net/elements/element.php?num=41"
+  status: S
+  hook: "After 148 years and two names, chemists agreed to call the metal niobium."
+  chapter: h01
+  notes: "Chosen at the 1949 conference, accepted by IUPAC in 1950 (secondary). Conference proceedings not located. 'Columbium' persists in some US metallurgical usage (secondary)."
+
+- id: h-1958-reisman-holtzberg
+  date: "1958-12"
+  date_precision: month
+  title: "Li2O-Nb2O5 phase diagram"
+  people: ["Arnold Reisman", "Frederic Holtzberg"]
+  institution: "IBM (attribution)"
+  citation: "A. Reisman, F. Holtzberg, J. Am. Chem. Soc. 80, 6503-6507 (1958)"
+  doi: "10.1021/ja01557a010"
+  url: null
+  status: V
+  hook: "A map of how lithium oxide and niobium oxide melt and freeze together."
+  chapter: h01
+  notes: "Title: 'Heterogeneous Equilibria in the Systems Li2O-, Ag2O-Nb2O5 and Oxide-Models'. A liquidus maximum near 48.6 mol% Li2O is attributed to this paper by a 2021 review (PMC8617696, via R07), not read here; the 48.6 mol% congruent value is sourced to Carruthers 1971."
+
+# ---------------------------------------------------------------- h02 Bell Labs grows a crystal
+
+- id: h-1960-nassau-vanuitert-cawo4
+  date: "1960-08-01"
+  date_precision: day
+  title: "Bell Labs pulls large CaWO4 crystals by Czochralski for masers"
+  people: ["K. Nassau", "L. G. Van Uitert"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "K. Nassau, L. G. Van Uitert, J. Appl. Phys. 31, 1508 (1960)"
+  doi: "10.1063/1.1735881"
+  url: null
+  status: P
+  hook: "Before lithium niobate, Bell Labs pulled large oxide crystals for masers."
+  chapter: h02
+  notes: "Publication confirmed (Crossref). Its role as an early Czochralski oxide growth is from Uecker, J. Cryst. Growth 401, 7-24 (2014). Whether it was the first Czochralski oxide is not verified."
+
+- id: h-1964-peterson-eo
+  date: "1964-08-01"
+  date_precision: day
+  title: "Electro-optic properties of LiNbO3 measured"
+  people: ["G. E. Peterson", "A. A. Ballman", "P. V. Lenzo", "P. M. Bridenbaugh"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "G. E. Peterson et al., Appl. Phys. Lett. 5, 62-64 (1964)"
+  doi: "10.1063/1.1754053"
+  url: null
+  status: V
+  hook: "A voltage across the crystal changes how fast light travels through it."
+  chapter: h02
+  notes: ""
+
+- id: h-1964-boyd-nlo
+  date: "1964-12-01"
+  date_precision: day
+  title: "LiNbO3: an efficient phase-matchable nonlinear optical material"
+  people: ["G. D. Boyd", "R. C. Miller", "K. Nassau", "W. L. Bond", "A. Savage"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "G. D. Boyd et al., Appl. Phys. Lett. 5, 234-236 (1964)"
+  doi: "10.1063/1.1723604"
+  url: null
+  status: V
+  hook: "Infrared in, green out: the crystal can change the color of laser light."
+  chapter: h02
+  notes: ""
+
+- id: h-1965-ballman-czochralski
+  date: "1965-02"
+  date_precision: month
+  title: "Ballman grows LiNbO3 and other piezoelectric and ferroelectric crystals by Czochralski pulling"
+  people: ["A. A. Ballman"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "A. A. Ballman, 'Growth of Piezoelectric and Ferroelectric Materials by the Czochralski Technique', J. Am. Ceram. Soc. 48, 112-113 (1965)"
+  doi: "10.1111/j.1151-2916.1965.tb11814.x"
+  url: null
+  status: P
+  hook: "Dip a seed into a glowing oxide melt, pull slowly, and a clear crystal boule grows."
+  chapter: h02
+  notes: "Publication confirmed (Crossref; note the suffix 11814, not 11811). Cited as the LN growth source by Abrahams et al. 1966 (doi:10.1016/0022-3697(66)90072-2) and Uecker 2014. A Soviet Czochralski LN report appeared the same year (h-1965-fedulov)."
+
+- id: h-1965-fedulov
+  date: "1965"
+  date_precision: year
+  title: "Soviet Czochralski growth of LiNbO3, LiTaO3 and NaNbO3"
+  people: ["S. A. Fedulov"]
+  institution: "USSR (not verified)"
+  citation: "S. A. Fedulov et al., Kristallografiya 10, 268 (1965)"
+  doi: null
+  url: null
+  status: P
+  hook: "A Soviet group pulled lithium niobate from the melt in the same year as Bell Labs."
+  chapter: h02
+  notes: "No DOI. Existence, journal, volume and page confirmed through the Crossref-deposited reference lists of four 1966 papers: Nassau et al. JPCS 27, 983 and 989; Abrahams et al. JPCS 27, 997; Smolenskii et al. pss 13, 309. Full title and coauthors (Shapiro, Ladyzhinskii in snippets) unverified; title variants conflict."
+
+- id: h-1965-miller-noncritical
+  date: "1965-02-15"
+  date_precision: day
+  title: "Noncritical (90 degree) phase matching in LiNbO3"
+  people: ["R. C. Miller", "G. D. Boyd", "A. Savage"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "R. C. Miller, G. D. Boyd, A. Savage, Appl. Phys. Lett. 6, 77-79 (1965)"
+  doi: "10.1063/1.1754174"
+  url: null
+  status: V
+  hook: "At the right temperature the beams phase-match without walking apart."
+  chapter: h02
+  notes: "Title: 'Nonlinear optical interactions in LiNbO3 without double refraction'."
+
+- id: h-1965-nassau-domains
+  date: "1965-06-01"
+  date_precision: day
+  title: "Ferroelectric domain structure of LiNbO3 revealed by etching"
+  people: ["K. Nassau", "H. J. Levinstein", "G. M. Loiacono"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "K. Nassau, H. J. Levinstein, G. M. Loiacono, Appl. Phys. Lett. 6, 228-229 (1965)"
+  doi: "10.1063/1.1754147"
+  url: null
+  status: V
+  hook: "Acid shows hidden up and down regions inside the crystal."
+  chapter: h02
+  notes: ""
+
+- id: h-1965-giordmaine-miller-opo
+  date: "1965-06-14"
+  date_precision: day
+  title: "First tunable optical parametric oscillator, in LiNbO3"
+  people: ["J. A. Giordmaine", "R. C. Miller"]
+  institution: "Bell Telephone Laboratories, Murray Hill (OpenAlex affiliation)"
+  citation: "J. A. Giordmaine, R. C. Miller, 'Tunable Coherent Parametric Oscillation in LiNbO3 at Optical Frequencies', Phys. Rev. Lett. 14, 973 (1965)"
+  doi: "10.1103/PhysRevLett.14.973"
+  url: null
+  status: V
+  hook: "One laser color in, a tunable pair of new colors out: the first optical parametric oscillator."
+  chapter: h02
+  notes: "Publication V. 'First tunable OPO' per Harris, Proc. IEEE 57, 2096 (1969). Operating details (pump 5290 A, output tunable 9700-11500 A by crystal temperature, about 0.45% efficiency) are from a 1965 Chinese translation of Bell Laboratories Record 43(7), 310-311 (S); the PRL text was not accessible. Same source credits Ballman (large-crystal growth) and Nassau and Levinstein (crystal quality). Pump laser type not confirmed."
+
+- id: h-1966-smolenskii-tc
+  date: "1966-01"
+  date_precision: month
+  title: "Soviet measurement of the Curie temperature of LiNbO3"
+  people: ["G. A. Smolenskii", "N. N. Krainik", "N. P. Khuchua", "V. V. Zhdanova", "I. E. Mylnikova"]
+  institution: "USSR (not verified)"
+  citation: "G. A. Smolenskii et al., 'The Curie Temperature of LiNbO3', phys. stat. sol. 13, 309-314 (1966)"
+  doi: "10.1002/pssb.19660130202"
+  url: null
+  status: V
+  hook: "Soviet physicists measure the temperature at which the crystal's built-in polarization vanishes."
+  chapter: h02
+  notes: "Crossref metadata and reference list only; abstract and Tc value not read."
+
+- id: h-1966-kaminow-turner-review
+  date: "1966"
+  date_precision: year
+  title: "Electro-optic light modulators (review)"
+  people: ["I. P. Kaminow", "E. H. Turner"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "I. P. Kaminow, E. H. Turner, Proc. IEEE 54, 1374-1390 (1966)"
+  doi: "10.1109/PROC.1966.5124"
+  url: null
+  status: V
+  hook: "Bell Labs lays out how a crystal and a voltage can switch light on and off."
+  chapter: h02
+  notes: ""
+
+- id: h-1966-lenzo-eo
+  date: "1966-05-01"
+  date_precision: day
+  title: "Electro-optic coefficients of single-domain LiNbO3"
+  people: ["P. V. Lenzo", "E. G. Spencer", "K. Nassau"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "P. V. Lenzo, E. G. Spencer, K. Nassau, J. Opt. Soc. Am. 56, 633 (1966)"
+  doi: "10.1364/JOSA.56.000633"
+  url: null
+  status: V
+  hook: "With the crystal's arrows all aligned, its electro-optic strength can finally be measured cleanly."
+  chapter: h02
+  notes: ""
+
+- id: h-1966-ferroelectric-ln-series
+  date: "1966-06"
+  date_precision: month
+  title: "'Ferroelectric lithium niobate' parts 1-5: growth, single-domain poling, X-ray and neutron structure"
+  people: ["K. Nassau", "H. J. Levinstein", "G. M. Loiacono", "S. C. Abrahams", "J. M. Reddy", "J. L. Bernstein", "W. C. Hamilton"]
+  institution: "Bell Telephone Laboratories (Hamilton: Brookhaven) (attribution)"
+  citation: "J. Phys. Chem. Solids 27, 983-1026 (1966), five consecutive papers"
+  doi: "10.1016/0022-3697(66)90070-9"
+  url: null
+  status: V
+  hook: "Five papers in one journal issue cover growth, domains, poling, and X-ray and neutron structure."
+  chapter: h02
+  notes: "DOIs 10.1016/0022-3697(66)90070-9, 90071-0, 90072-2, 90073-4, 90074-6 (all Crossref). Part 2 is the preparation of single-domain crystals; parts 3-4 fix the R3c structure at 24 C; part 5 covers 24-1200 C."
+
+- id: h-1967-crystal-technology
+  date: "1967"
+  date_precision: year
+  title: "Crystal Technology (Palo Alto) begins making oxide single crystals including LiNbO3"
+  people: []
+  institution: "Crystal Technology, Inc., Palo Alto"
+  citation: "optics.org buyers guide (company profile); Gooch & Housego LN wafer page"
+  doi: null
+  url: "https://gandh.com/product-categories/ln-wafers"
+  status: V
+  hook: "A Palo Alto company starts selling lithium niobate crystals, beginning a supply chain that lasts decades."
+  chapter: h02
+  notes: "Company statements: optics.org 'Since 1967, Crystal Technology, Inc. has been a manufacturer of oxide single crystals'; G&H (successor) 'growing Lithium Niobate dates back to 1967 when we produced the first commercially available material' (vendor claim of priority)."
+
+# ---------------------------------------------------------------- h03 The damage that became a memory
+
+- id: h-1966-ashkin-optical-damage
+  date: "1966-07-01"
+  date_precision: day
+  title: "Optically induced refractive-index inhomogeneities ('optical damage') discovered in LiNbO3 and LiTaO3"
+  people: ["A. Ashkin", "G. D. Boyd", "J. M. Dziedzic", "R. G. Smith", "A. A. Ballman", "J. J. Levinstein", "K. Nassau"]
+  institution: "Bell Telephone Laboratories, Murray Hill (byline)"
+  citation: "A. Ashkin et al., 'Optically-induced refractive index inhomogeneities in LiNbO3 and LiTaO3', Appl. Phys. Lett. 9, 72-74 (1966)"
+  doi: "10.1063/1.1754607"
+  url: null
+  status: V
+  hook: "A laser beam leaves a lasting index change in the crystal; in 1968 the effect stores holograms."
+  chapter: h03
+  notes: "Received 1966-05-20. No abstract exists online. Now called the photorefractive effect."
+
+- id: h-1967-levinstein-reduction
+  date: "1967-07-01"
+  date_precision: day
+  title: "Field annealing reduces damage susceptibility"
+  people: ["H. J. Levinstein", "A. A. Ballman", "R. T. Denton", "A. Ashkin", "J. M. Dziedzic"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "H. J. Levinstein et al., J. Appl. Phys. 38, 3101-3102 (1967)"
+  doi: "10.1063/1.1710070"
+  url: null
+  status: V
+  hook: "Bake the crystal in an electric field and it resists the laser's scar, a little."
+  chapter: h03
+  notes: "Crossref prints the co-author as J. J. Levinstein (probably H. J. Levinstein; scan not checked). Abstract: anneal at 700 C in 250 V/cm for 0.5 h, cool with field on at 100 C/h; LiTaO3 then withstands 500 W/cm2; LiNbO3 improves less."
+
+- id: h-1968-chen-holography
+  date: "1968-10-01"
+  date_precision: day
+  title: "Holographic storage in lithium niobate"
+  people: ["F. S. Chen", "J. T. LaMacchia", "D. B. Fraser"]
+  institution: "Bell Telephone Laboratories, Murray Hill (byline)"
+  citation: "F. S. Chen, J. T. LaMacchia, D. B. Fraser, Appl. Phys. Lett. 13, 223-225 (1968)"
+  doi: "10.1063/1.1652580"
+  url: null
+  status: V
+  hook: "The damage becomes a memory: holograms written into a crystal with light, no developing needed."
+  chapter: h03
+  notes: "Abstract: 'a pure-phase, volume-holographic medium requiring no processing. The holograms formed have high diffraction efficiencies and are thermally erasable.'"
+
+- id: h-1969-chen-model
+  date: "1969-07-01"
+  date_precision: day
+  title: "Charge-drift model of optically induced index change"
+  people: ["F. S. Chen"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "F. S. Chen, J. Appl. Phys. 40, 3389-3396 (1969)"
+  doi: "10.1063/1.1658195"
+  url: null
+  status: V
+  hook: "Light frees electrons, they drift and get trapped, and their field bends the light."
+  chapter: h03
+  notes: "Abstract: extraordinary index decreased by up to 1e-3 under 20 mW focused Ar laser light at 488 nm; attributed to drift of photoexcited electrons and retrapping, space-charge field acting through the electro-optic effect."
+
+- id: h-1971-staebler-amodei-fixing
+  date: "1971-06-15"
+  date_precision: day
+  title: "Thermal fixing of holograms in electro-optic crystals"
+  people: ["J. J. Amodei", "D. L. Staebler"]
+  institution: "RCA Laboratories, Princeton (attribution)"
+  citation: "J. J. Amodei, D. L. Staebler, 'Holographic pattern fixing in electro-optic crystals', Appl. Phys. Lett. 18, 540-542 (1971)"
+  doi: "10.1063/1.1653530"
+  url: null
+  status: V
+  hook: "Warm the crystal for half an hour and the hologram survives being read."
+  chapter: h03
+  notes: "Abstract: heating about 30 min at 100 C gives optically nonerasable holograms with up to 50% diffraction efficiency in LiNbO3, via thermally activated ionic drift."
+
+- id: h-1971-peterson-iron
+  date: "1971-09-01"
+  date_precision: day
+  title: "Iron impurities identified as the origin of optical damage"
+  people: ["G. E. Peterson", "A. M. Glass", "T. J. Negran"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "G. E. Peterson, A. M. Glass, T. J. Negran, Appl. Phys. Lett. 19, 130-132 (1971)"
+  doi: "10.1063/1.1653854"
+  url: null
+  status: V
+  hook: "The culprit behind the laser scars turns out to be traces of iron."
+  chapter: h03
+  notes: "Abstract quoted by research lane: 'The origin of laser-induced refractive changes (laser damage) in LiNbO3 has been identified as iron impurities.'"
+
+- id: h-1972-amodei-doped
+  date: "1972-02-01"
+  date_precision: day
+  title: "Transition-metal doping and fixing techniques for holographic recording in LiNbO3"
+  people: ["J. J. Amodei", "W. Phillips", "D. L. Staebler"]
+  institution: "RCA Laboratories, Princeton (OpenAlex affiliation)"
+  citation: "J. J. Amodei, W. Phillips, D. L. Staebler, Appl. Opt. 11, 390 (1972)"
+  doi: "10.1364/AO.11.000390"
+  url: null
+  status: V
+  hook: "Add a pinch of iron on purpose and the crystal records holograms far better."
+  chapter: h03
+  notes: "Abstract: storage 'greatly enhanced by introducing transition metal impurities'; diffraction efficiencies 'well over 50%' for a few mm thickness. Fe-specific companion: IEDM 1971, pp. 112-114, doi:10.1109/IEDM.1971.188425 (metadata only)."
+
+- id: h-1974-kurz-photorefractive-term
+  date: "1974-01"
+  date_precision: month
+  title: "Earliest paper title found using 'photorefractive'"
+  people: ["H. Kurz"]
+  institution: "Philips Research, Hamburg (attribution)"
+  citation: "H. Kurz, 'Wavelength dependence of the photorefractive process in doped LiNbO3', Ferroelectrics 8, 437-439 (1974)"
+  doi: "10.1080/00150197408234119"
+  url: null
+  status: P
+  hook: "Around 1974 'optical damage' acquires its modern name: the photorefractive effect."
+  chapter: h03
+  notes: "Earliest by title in Crossref (to 1976) and OpenAlex (to 1974) searches by the research lane; earlier use in body text cannot be excluded. Glass, von der Linde, Negran use the term in a title in 1974-08."
+
+- id: h-1974-glass-bpve
+  date: "1974-08-15"
+  date_precision: day
+  title: "High-voltage bulk photovoltaic effect identified as the photorefractive driver in LiNbO3"
+  people: ["A. M. Glass", "D. von der Linde", "T. J. Negran"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "A. M. Glass, D. von der Linde, T. J. Negran, Appl. Phys. Lett. 25, 233-235 (1974)"
+  doi: "10.1063/1.1655453"
+  url: null
+  status: V
+  hook: "Light alone pushes current through the crystal, building fields of a hundred kilovolts per centimeter."
+  chapter: h03
+  notes: "Abstract: saturation voltages above 1000 V (about 1e5 V/cm); explanation based on lattice asymmetry."
+
+- id: h-1977-fridkin-bpve
+  date: "1977-08"
+  date_precision: month
+  title: "Fridkin's mechanism for the bulk photovoltaic effect and optical damage"
+  people: ["V. M. Fridkin"]
+  institution: "Institute of Crystallography, USSR Academy of Sciences, Moscow (attribution; byline seen on his 1984 review)"
+  citation: "V. M. Fridkin, Appl. Phys. 13, 357-359 (1977)"
+  doi: "10.1007/BF00882610"
+  url: null
+  status: V
+  hook: "A Soviet physicist explains why light drives a current through a crystal with no junction."
+  chapter: h03
+  notes: "Title: 'The possible mechanism for the bulk photovoltaic effect and optical damage in ferroelectrics'. Monograph: Photoferroelectrics, Springer 1979, doi:10.1007/978-3-642-81351-1."
+
+- id: h-1977-kukhtarev-opt-commun
+  date: "1977-12"
+  date_precision: month
+  title: "Transient energy transfer during hologram formation in LiNbO3 in an external field"
+  people: ["N. Kukhtarev", "V. Markov", "S. Odulov"]
+  institution: "Kyiv (attribution, not byline-checked)"
+  citation: "N. Kukhtarev, V. Markov, S. Odulov, Opt. Commun. 23, 338-343 (1977)"
+  doi: "10.1016/0030-4018(77)90376-5"
+  url: null
+  status: V
+  hook: "Two light beams writing a hologram in the crystal start trading power."
+  chapter: h03
+  notes: "LN-specific precursor to the 1978/1979 band-transport papers."
+
+- id: h-1978-kukhtarev-equations
+  date: "1978-01"
+  date_precision: month
+  title: "Band-transport model of photorefractive recording ('Kukhtarev equations')"
+  people: ["N. V. Kukhtarev", "V. B. Markov", "S. G. Odulov", "M. S. Soskin", "V. L. Vinetskii"]
+  institution: "Institute of Physics, Kyiv (attribution, not byline-checked)"
+  citation: "N. V. Kukhtarev et al., 'Holographic storage in electrooptic crystals. I. Steady state' and 'II. Beam coupling - light amplification', Ferroelectrics 22, 949-960 and 961-964"
+  doi: "10.1080/00150197908239450"
+  url: null
+  status: V
+  hook: "Five physicists write the band-transport equations that holographic-storage papers cite as 'Kukhtarev's equations'."
+  chapter: h03
+  notes: "Crossref issue date 1978-01; the literature cites 1979. Part II: doi:10.1080/00150197908239451. Rupp and Fally review: most holographic-storage papers refer to this model as 'Kukhtarev's equations'. Kyiv affiliation from a secondary preprint citation."
+
+- id: h-1980-belinicher-sturman
+  date: "1980-03-31"
+  date_precision: day
+  title: "Theory review: the photogalvanic (bulk photovoltaic) effect in media lacking a center of symmetry"
+  people: ["V. I. Belinicher", "B. I. Sturman"]
+  institution: "USSR (not verified)"
+  citation: "V. I. Belinicher, B. I. Sturman, Sov. Phys. Usp. 23, 199-223 (1980)"
+  doi: "10.1070/PU1980v023n03ABEH004703"
+  url: null
+  status: V
+  hook: "Theory shows why a crystal without a mirror center turns light into a steady current."
+  chapter: h03
+  notes: "Russian original: UFN 130, 415-458, doi:10.3367/UFNr.0130.198003b.0415. Later monograph: Sturman and Fridkin, Gordon and Breach 1992 (reissue doi:10.1201/9780203743416)."
+
+- id: h-1993-mok-5000-holograms
+  date: "1993-06-01"
+  date_precision: day
+  title: "5000 holograms angle-multiplexed in one Fe:LiNbO3 crystal"
+  people: ["F. H. Mok"]
+  institution: "Electronics Systems Division, Northrop Corporation, Hawthorne CA (byline)"
+  citation: "F. H. Mok, 'Angle-multiplexed storage of 5000 holograms in lithium niobate', Opt. Lett. 18, 915-917 (1993)"
+  doi: "10.1364/OL.18.000915"
+  url: "https://opg.optica.org/ol/abstract.cfm?uri=ol-18-11-915"
+  status: V
+  hook: "5000 images stacked in one crystal, each recalled by tilting the beam."
+  chapter: h03
+  notes: "Abstract: up to 5000 holograms of 320 x 220 pixel images in a single Fe:LiNbO3 crystal; 90 degree geometry, fractal-space multiplexing."
+
+- id: h-2018-ashkin-nobel
+  date: "2018-10-02"
+  date_precision: day
+  title: "Arthur Ashkin, first author of the 1966 optical-damage paper, shares the Nobel Prize in Physics for optical tweezers"
+  people: ["Arthur Ashkin"]
+  institution: "Bell Laboratories (Nobel record affiliation)"
+  citation: "Nobel Prize API, laureate record (Physics 2018)"
+  doi: null
+  url: "https://api.nobelprize.org/2.1/laureates?name=Ashkin"
+  status: V
+  hook: "The man who first saw lasers scar lithium niobate won a Nobel Prize at 96, for tweezers made of light."
+  chapter: h03
+  notes: "Born 1922-09-02, died 2020-09-21; awarded 2018-10-02 'for the optical tweezers and their application to biological systems'. Age 96.08 at award: oldest laureate at that time (derived by the research lane from Nobel API dates for all laureates; J. B. Goodenough, 97.2, surpassed it in 2019). The Nobel citation is not about LN."
+
+# ---------------------------------------------------------------- h04 Sound on a crystal
+
+- id: h-1965-spencer-elastic
+  date: "1965-08-01"
+  date_precision: day
+  title: "Elastic wave propagation in lithium niobate"
+  people: ["E. G. Spencer", "P. V. Lenzo", "K. Nassau"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "E. G. Spencer, P. V. Lenzo, K. Nassau, Appl. Phys. Lett. 7, 67-69 (1965)"
+  doi: "10.1063/1.1754303"
+  url: null
+  status: V
+  hook: "Bell Labs measures how elastic waves travel through the crystal."
+  chapter: h04
+  notes: "Low acoustic loss is the standard reading of this paper; the abstract was not read."
+
+- id: h-1965-white-voltmer-idt
+  date: "1965-12-15"
+  date_precision: day
+  title: "Interdigital transducer: direct piezoelectric coupling to surface elastic waves (on quartz)"
+  people: ["R. M. White", "F. W. Voltmer"]
+  institution: "Dept. of Electrical Engineering, UC Berkeley (Crossref affiliation)"
+  citation: "R. M. White, F. W. Voltmer, 'Direct piezoelectric coupling to surface elastic waves', Appl. Phys. Lett. 7, 314-316 (1965)"
+  doi: "10.1063/1.1754276"
+  url: "https://www2.eecs.berkeley.edu/Pubs/TechRpts/1965/ERL-m-132.pdf"
+  status: V
+  hook: "Comb-shaped electrodes turn a radio signal into a tiny surface ripple. The first one was on quartz."
+  chapter: h04
+  notes: "Substrate from the same-title preprint, UC Berkeley ERL Tech. Memo. M-132 (1965-10-12), full text read: aluminum electrodes 'vacuum-deposited on the quartz bar', operation at 15 and 45 Mc. LiNbO3 was not used in this paper."
+
+- id: h-1972-yamanouchi-leaky-saw
+  date: "1972-03-01"
+  date_precision: day
+  title: "Large-coupling leaky surface waves on 64 degree rotated Y-cut LiNbO3"
+  people: ["Kazuhiko Yamanouchi", "Kimio Shibayama"]
+  institution: "Research Institute of Electrical Communication, Tohoku University, Sendai (Crossref affiliation)"
+  citation: "K. Yamanouchi, K. Shibayama, J. Appl. Phys. 43, 856-862 (1972)"
+  doi: "10.1063/1.1661294"
+  url: null
+  status: V
+  hook: "A Sendai team finds a crystal cut where leaky surface waves couple strongly to electrodes."
+  chapter: h04
+  notes: "Abstract: leaky surface wave along X on 64 degree rotated Y cut, K^2 = 0.113, attenuation 0.036 dB/wavelength free, zero metallized; 130 degree Y-cut X-propagation Rayleigh wave K^2 larger than Y-cut Z-propagation."
+
+- id: h-1976-shibayama-128
+  date: "1976"
+  date_precision: year
+  title: "Optimum 127.86 degree rotated Y-cut, X-propagating LiNbO3 for SAW filters"
+  people: ["K. Shibayama", "K. Yamanouchi", "H. Sato", "T. Meguro"]
+  institution: "Tohoku University (attribution; affiliation not on the Crossref record)"
+  citation: "K. Shibayama et al., Proc. IEEE 64, 595-597 (1976)"
+  doi: "10.1109/PROC.1976.10181"
+  url: null
+  status: V
+  hook: "At 127.86 degrees rotated Y the spurious shear wave is suppressed while surface-wave coupling stays large."
+  chapter: h04
+  notes: "Abstract: a 127.86 degree rotated Y-cut X-propagating plate suppresses the spurious slow shear wave and has large coupling. The '128 Y-X' cut remains a standard SAW wafer (Sumitomo Metal Mining product page, R09 S3)."
+
+- id: h-1980-tv-saw-practical
+  date: "1980"
+  date_precision: approx
+  title: "SAW filters reach practical use in television receivers (Japan)"
+  people: ["Michio Kadota (retrospective author)"]
+  institution: "Murata Manufacturing (author affiliation)"
+  citation: "M. Kadota, 'Surface acoustic wave devices' (in Japanese), J. Acoust. Soc. Jpn. 67(10), 494-495 (2011)"
+  doi: null
+  url: "https://acoustics.jp/cms/wp_asj/wp-content/uploads/2019/03/6710onkochishin.pdf"
+  status: S
+  hook: "By about 1980, surface acoustic wave filters are in practical use in television receivers."
+  chapter: h04
+  notes: "Practitioner retrospective, full text read. Gives about 1980 for TV SAW filters becoming practical; the author commercialized ZnO-film TV filters. Substrate per filter type not stated for all TV filters, so not claimed as LN."
+
+- id: h-1984-shinetsu-lt
+  date: "1984"
+  date_precision: year
+  title: "Shin-Etsu Chemical develops lithium tantalate crystals"
+  people: []
+  institution: "Shin-Etsu Chemical Co., Ltd."
+  citation: "Shin-Etsu Chemical corporate history page"
+  doi: null
+  url: "https://www.shinetsu.co.jp/jp/company/history/"
+  status: V
+  hook: "LN's sibling, lithium tantalate, becomes a Shin-Etsu crystal product for surface-wave devices."
+  chapter: h04
+  notes: "Timeline entry 1984: 'リチウム・タンタレート(LT)を開発'. No LN entry in the timeline."
+
+- id: h-1980s-rf-saw-yx-ln
+  date: "1985/1989"
+  date_precision: range
+  title: "RF SAW filters on 40-70 degree rotated YX-cut LN and LT become practical"
+  people: []
+  institution: "Japanese SAW industry"
+  citation: "M. Kadota, J. Acoust. Soc. Jpn. 67(10), 494-495 (2011)"
+  doi: null
+  url: "https://acoustics.jp/cms/wp_asj/wp-content/uploads/2019/03/6710onkochishin.pdf"
+  status: S
+  hook: "In the late 1980s, radio-frequency SAW filters on rotated-cut LN and LT reach practical use."
+  chapter: h04
+  notes: "Retrospective gives 'late 1980s'; the interval stands for that phrase, not for documented start and end years."
+
+- id: h-2003-murata-love-wave
+  date: "2003"
+  date_precision: year
+  title: "SiO2/Cu/YX-LN Love-wave duplexer reaches practical use"
+  people: []
+  institution: "Murata Manufacturing"
+  citation: "M. Kadota, J. Acoust. Soc. Jpn. 67(10), 494-495 (2011)"
+  doi: null
+  url: "https://acoustics.jp/cms/wp_asj/wp-content/uploads/2019/03/6710onkochishin.pdf"
+  status: S
+  hook: "Copper fingers under glass on lithium niobate let one tiny chip send and receive at once."
+  chapter: h04
+  notes: "Same retrospective: SiO2/Au/YX-LN boundary-wave GSM receive filter practical in 2005."
+
+- id: h-2014-smm-saw-expansion
+  date: "2014-12-18"
+  date_precision: day
+  title: "Sumitomo Metal Mining plans LT/LN SAW substrate expansion to 210k wafers per month"
+  people: []
+  institution: "Sumitomo Metal Mining (Sumiko Kunitomi Denshi)"
+  citation: "SMM Tokyo Stock Exchange disclosure, 2014-12-18"
+  doi: null
+  url: "https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf"
+  status: S
+  hook: "Smartphone filters need so many crystal wafers that one maker plans 210,000 a month."
+  chapter: h04
+  notes: "Search snippet only (PDF returned 403): 120k to 210k wafers per month, about JPY 3.5 bn, completion 2016-09; text reportedly says SMM has made LT/LN substrates for about 30 years."
+
+- id: h-2020-soitec-poi-qualcomm
+  date: "2020-07-07"
+  date_precision: day
+  title: "Soitec to supply piezoelectric-on-insulator (POI) wafers in volume for Qualcomm RF filters"
+  people: []
+  institution: "Soitec; Qualcomm"
+  citation: "eeNews Europe, 2020-07-07"
+  doi: null
+  url: "https://www.eenewseurope.com/en/qualcomm-adopts-soitec-poi-wafers-for-saw-filters/"
+  status: S
+  hook: "The layer-splitting process behind thin-film photonics is contracted for volume phone-filter wafers."
+  chapter: h04
+  notes: "Trade press, read (R09 S11). POI here is thin LT on oxide on high-resistivity Si."
+
+- id: h-2022-murata-resonant
+  date: "2022-03-28"
+  date_precision: day
+  title: "Murata completes acquisition of Resonant (XBAR resonators on thin piezoelectric single-crystal films)"
+  people: []
+  institution: "Murata Manufacturing; Resonant Inc."
+  citation: "Murata news release, 2022-03-29"
+  doi: null
+  url: "https://corporate.murata.com/newsroom/news/company/general/2022/0329"
+  status: V
+  hook: "A phone-filter maker buys the startup behind resonators on thin piezoelectric single-crystal film."
+  chapter: h04
+  notes: "Completion 2022-03-28 US time (release). Murata describes XBAR as 'filter technology using piezoelectric monocrystal thin film' and does not name LN; XBAR on thin LN is from an EPFL record (R09 S48, S)."
+
+# ---------------------------------------------------------------- h05 Light in a channel
+
+- id: h-1973-kaminow-thin-film
+  date: "1973-05-15"
+  date_precision: day
+  title: "'Thin-film LiNbO3 electro-optic light modulator': an out-diffused planar guide in bulk LN, 3.2 GHz"
+  people: ["I. P. Kaminow", "J. R. Carruthers", "E. H. Turner", "L. W. Stulz"]
+  institution: "Bell Telephone Laboratories, Crawford Hill/Holmdel and Murray Hill (byline)"
+  citation: "I. P. Kaminow et al., Appl. Phys. Lett. 22, 540-542 (1973)"
+  doi: "10.1063/1.1654500"
+  url: null
+  status: V
+  hook: "In 1973 'thin-film lithium niobate' meant a light-guiding skin made by letting lithium escape the surface."
+  chapter: h05
+  notes: "Abstract: 'An out-diffused planar optical waveguide in LiNbO3 has been used to produce an efficient broad-band electro-optic phase modulator'; modulation index per volt 0.13 V^-1; 3.2 GHz bandwidth with 50 ohm load; 0.2 mW/MHz for 1 rad. Not a film on insulator."
+
+- id: h-1974-carruthers-outdiffusion
+  date: "1974-10-01"
+  date_precision: day
+  title: "Diffusion kinetics of Li2O out-diffused waveguides in LiNbO3 and LiTaO3"
+  people: ["J. R. Carruthers", "I. P. Kaminow", "L. W. Stulz"]
+  institution: "Bell Laboratories (OpenAlex affiliation)"
+  citation: "J. R. Carruthers, I. P. Kaminow, L. W. Stulz, Appl. Opt. 13, 2333 (1974)"
+  doi: "10.1364/AO.13.002333"
+  url: null
+  status: V
+  hook: "Lose a little lithium from the surface and the extraordinary index rises enough to trap light."
+  chapter: h05
+  notes: "Abstract: out-diffusion of lithium oxide raises n_e; diffusion activation energy in LiNbO3 68 +- 1.2 kcal/mol; single-mode guide with effective thickness 12 um."
+
+- id: h-1974-schmidt-kaminow-ti
+  date: "1974-10-15"
+  date_precision: day
+  title: "Metal (Ti) in-diffused optical waveguides in LiNbO3"
+  people: ["R. V. Schmidt", "I. P. Kaminow"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "R. V. Schmidt, I. P. Kaminow, 'Metal-diffused optical waveguides in LiNbO3', Appl. Phys. Lett. 25, 458-460 (1974)"
+  doi: "10.1063/1.1655547"
+  url: null
+  status: V
+  hook: "Bake titanium stripes into the crystal and light follows them like wires."
+  chapter: h05
+  notes: "Abstract: Ti, V and Ni films diffused in; Ti gives single-mode low-loss guides confining light within about 1 um of the surface. The workhorse waveguide of bulk LN modulators."
+
+- id: h-1974-tien-epitaxial
+  date: "1974-11-15"
+  date_precision: day
+  title: "Beam scanning in epitaxial LiNbO3 film waveguides"
+  people: ["P. K. Tien", "S. Riva-Sanseverino", "A. A. Ballman"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "P. K. Tien, S. Riva-Sanseverino, A. A. Ballman, Appl. Phys. Lett. 25, 563-565 (1974)"
+  doi: "10.1063/1.1655311"
+  url: null
+  status: V
+  hook: "Bell Labs also grows epitaxial LN films and steers light beams inside them."
+  chapter: h05
+  notes: "Abstract: electro-optic deflection up to 4 degrees in the film plane."
+
+- id: h-1982-alferness-review
+  date: "1982-08"
+  date_precision: month
+  title: "Waveguide electro-optic modulators (review)"
+  people: ["R. C. Alferness"]
+  institution: "Bell Laboratories (attribution)"
+  citation: "R. C. Alferness, IEEE Trans. Microw. Theory Tech. 30, 1121-1137 (1982)"
+  doi: "10.1109/TMTT.1982.1131213"
+  url: null
+  status: V
+  hook: "The playbook for Ti:LN modulators is written down."
+  chapter: h05
+  notes: ""
+
+- id: h-1982-jackel-proton-exchange
+  date: "1982-10-01"
+  date_precision: day
+  title: "Proton exchange in benzoic acid for high-index LiNbO3 waveguides"
+  people: ["J. L. Jackel", "C. E. Rice", "J. J. Veselka"]
+  institution: "Bell Laboratories (attribution)"
+  citation: "J. L. Jackel, C. E. Rice, J. J. Veselka, Appl. Phys. Lett. 41, 607-608 (1982)"
+  doi: "10.1063/1.93615"
+  url: null
+  status: V
+  hook: "Swap lithium for hydrogen in a warm acid bath and you have a waveguide."
+  chapter: h05
+  notes: "Abstract: benzoic acid melt 200-250 C; step index increase 0.12 for extraordinary polarization only; losses < 0.5 dB/cm at 633 nm on x-cut; damages y-cut surfaces."
+
+- id: h-1985-crystal-technology-modulator
+  date: "1985"
+  date_precision: year
+  title: "First commercially available guided-wave modulator (high-speed intensity modulator)"
+  people: []
+  institution: "Crystal Technology, Inc., Palo Alto"
+  citation: "R. A. Becker, 'Optical-Guided-Wave Modulators', MRS Bull. 13(8), 21-23 (1988)"
+  doi: "10.1557/S0883769400064630"
+  url: null
+  status: V
+  hook: "1985: the first commercially available guided-wave intensity modulator."
+  chapter: h05
+  notes: "Abstract: 'In 1985, Crystal Technology, Inc. announced the first commercially available product - a high-speed, efficient, intensity modulator.' Active guided-wave devices reported since about 1975, mostly Ti:LiNbO3. Single source for the 1985 first; Becker's affiliation not checked."
+
+- id: h-1989-smm-ti-ln-photorefraction
+  date: "1989-03-13"
+  date_precision: day
+  title: "Photorefraction in Ti:LiNbO3 waveguides studied at Sumitomo Metal Mining"
+  people: ["T. Fujiwara", "S. Sato", "H. Mori"]
+  institution: "Electronics Materials Laboratory, Sumitomo Metal Mining, Ome (Crossref affiliation)"
+  citation: "T. Fujiwara, S. Sato, H. Mori, Appl. Phys. Lett. 54, 975-977 (1989)"
+  doi: "10.1063/1.101421"
+  url: null
+  status: V
+  hook: "A Japanese wafer maker studies how its crystals behave inside optical chips."
+  chapter: h05
+  notes: "Companion: APL 55, 2718 (1989-12-25), doi:10.1063/1.102369. Shows SMM LN substrate R&D by 1989; start year of the wafer business not found."
+
+- id: h-1989-lallier-nd-laser
+  date: "1989-10-26"
+  date_precision: day
+  title: "Laser oscillation in a single-mode Nd:MgO:LiNbO3 channel waveguide"
+  people: ["E. Lallier", "J. P. Pocholle", "M. Papuchon", "C. Grezes-Besset", "E. Pelletier", "M. de Micheli", "M. J. Li", "Q. He", "D. B. Ostrowsky"]
+  institution: "France (affiliations not byline-checked)"
+  citation: "E. Lallier et al., Electron. Lett. 25, 1491-1492 (1989)"
+  doi: "10.1049/el:19891000"
+  url: null
+  status: V
+  hook: "A neodymium-doped lithium niobate channel waveguide lases: a laser built inside the crystal."
+  chapter: h05
+  notes: "Crossref record (title, authors, issue date); abstract not read. Found by the fresh-context audit; predates the 1991 Er:Ti:LN laser that its authors call the first integrated optical laser in LiNbO3."
+
+- id: h-1990-paderborn-er-ln
+  date: "1990"
+  date_precision: year
+  title: "Annealed erbium-implanted single-mode LiNbO3 waveguides (postdeadline)"
+  people: ["R. Brinkmann", "Ch. Buchal", "S. Mohr", "W. Sohler", "H. Suche"]
+  institution: "Universitat Paderborn (attribution)"
+  citation: "Integrated Photonics Research 1990, postdeadline paper PD1"
+  doi: "10.1364/ipr.1990.pd1"
+  url: null
+  status: V
+  hook: "Paderborn implants erbium into LN waveguides, the first step toward lasers on the crystal."
+  chapter: h05
+  notes: "Crossref title: Annealed Erbium-implanted single-mode LiNbO3 waveguides."
+
+- id: h-1991-brinkmann-er-laser
+  date: "1991-02-28"
+  date_precision: day
+  title: "Er-doped Ti:LiNbO3 waveguide laser at 1.532 um ('first integrated optical laser in LiNbO3' per the authors)"
+  people: ["R. Brinkmann", "W. Sohler", "H. Suche"]
+  institution: "Universitat Paderborn (Crossref affiliation)"
+  citation: "R. Brinkmann, W. Sohler, H. Suche, Electron. Lett. 27, 415-417 (1991)"
+  doi: "10.1049/el:19910263"
+  url: null
+  status: V
+  hook: "An erbium-doped lithium niobate waveguide lases at the telecom wavelength 1.532 micrometers."
+  chapter: h05
+  notes: "Abstract: 'The first integrated optical laser in LiNbO3'; Er3+ indiffusion before Ti channel guides; colour-centre pump at 1.477 um; CW at 1.532 um; threshold about 8 mW absorbed. An earlier Nd:MgO:LiNbO3 channel-waveguide laser was published 1989-10-26 (h-1989-lallier-nd-laser), so 'first' is the authors' claim."
+
+# ---------------------------------------------------------------- h06 Taming the crystal
+
+- id: h-1962-abdp-qpm
+  date: "1962-09-15"
+  date_precision: day
+  title: "Theory of light-wave interactions in nonlinear dielectrics, including periodic reversal (quasi-phase matching)"
+  people: ["J. A. Armstrong", "N. Bloembergen", "J. Ducuing", "P. S. Pershan"]
+  institution: "Harvard University (attribution)"
+  citation: "J. A. Armstrong et al., 'Interactions between Light Waves in a Nonlinear Dielectric', Phys. Rev. 127, 1918-1939 (1962)"
+  doi: "10.1103/PhysRev.127.1918"
+  url: null
+  status: V
+  hook: "Flip the crystal every few microns and light waves keep adding up instead of cancelling."
+  chapter: h06
+  notes: "Foundational nonlinear-optics paper; the QPM proposal is the standard reading. Franken and Ward, Rev. Mod. Phys. 35, 23 (1963), doi:10.1103/RevModPhys.35.23, is also credited (QPM content not inspected)."
+
+- id: h-1968-lerner-stoichiometry
+  date: "1968-01"
+  date_precision: month
+  title: "Commercial LiNbO3 crystals are lithium-deficient"
+  people: ["P. Lerner", "C. Legras", "J. P. Dumas"]
+  institution: "France (attribution)"
+  citation: "P. Lerner, C. Legras, J. P. Dumas, 'Stoechiometrie des monocristaux de metaniobate de lithium', J. Cryst. Growth 3-4, 231-235 (1968)"
+  doi: "10.1016/0022-0248(68)90139-5"
+  url: null
+  status: V
+  hook: "Nearly every lithium niobate crystal is slightly lithium-poor, because that is how it melts evenly."
+  chapter: h06
+  notes: ""
+
+- id: h-1971-carruthers-congruent
+  date: "1971-04-01"
+  date_precision: day
+  title: "Congruent melting composition located at 48.6 mol% Li2O"
+  people: ["J. R. Carruthers", "G. E. Peterson", "M. Grasso", "P. M. Bridenbaugh"]
+  institution: "Bell Telephone Laboratories (attribution)"
+  citation: "J. R. Carruthers et al., 'Nonstoichiometry and Crystal Growth of Lithium Niobate', J. Appl. Phys. 42, 1846-1851 (1971)"
+  doi: "10.1063/1.1660455"
+  url: null
+  status: V
+  hook: "The recipe card: 48.6 percent lithium oxide, and the crystal grows uniform from end to end."
+  chapter: h06
+  notes: "Abstract: congruent composition 48.6 mol% Li2O; room-temperature solid solution 48-50% Li2O; determined by 93Nb NMR, Curie temperature shifts, DTA and growth."
+
+- id: h-1980-zhong-mgo
+  date: "1980-06"
+  date_precision: month
+  title: "MgO doping raises the optical-damage resistance of LiNbO3 (conference abstract)"
+  people: ["Zhong Ji-guo", "Jin J.", "Wu Zhong-kang"]
+  institution: "Not verified; Zhong's 1983 follow-up lists the Southwest Institute of Technical Physics, Chengdu"
+  citation: "Zhong G.-G., Jin J., Wu Z.-K., 11th International Quantum Electronics Conference (IQEC), 1980-06, abstracts in J. Opt. Soc. Am. 70(6), 577-681 (p. 631)"
+  doi: "10.1364/JOSA.70.000577"
+  url: null
+  status: P
+  hook: "About 4.6 mol% MgO raises the damage resistance at least a hundredfold."
+  chapter: h06
+  notes: "The DOI is the IQEC abstract block (no authors in Crossref); the abstract text was not seen. The 4.6 mol% threshold and 'at least two orders of magnitude' come from Zheng et al., Sci. Rep. 6, 20308 (2016), doi:10.1038/srep20308, citing this abstract (P). The common attribution to Nankai University is not supported by sources found."
+
+- id: h-1980-feng-qpm
+  date: "1980-10-01"
+  date_precision: day
+  title: "SHG enhanced in LiNbO3 crystals grown with periodic laminar ferroelectric domains (first QPM experiment in LN, standard attribution)"
+  people: ["Duan Feng", "Nai-Ben Ming", "Jing-Fen Hong", "Yong-Shun Yang", "Jin-Song Zhu", "Zhen Yang", "Ye-Ning Wang"]
+  institution: "Institute of Solid State Physics, Nanking University (Crossref byline)"
+  citation: "D. Feng et al., Appl. Phys. Lett. 37, 607-609 (1980)"
+  doi: "10.1063/1.92035"
+  url: null
+  status: V
+  hook: "Nanjing physicists grow stripes of flipped domains into the crystal, 18 years after the idea was proposed."
+  chapter: h06
+  notes: "Abstract: Czochralski-grown crystals with periodic laminar domains whose half-period nearly matches the coherence length; QPM for d33 approximately realized. The growth mechanism (striations from off-axis rotation) is the usual secondary description and is not in the abstract. Follow-up: Xue, Ming, Zhu, Feng, Acta Phys. Sin. 32, 1515 (1983), doi:10.7498/aps.32.1515: order-of-magnitude enhancement, SH power proportional to N^2 up to N = 200."
+
+- id: h-1983-zhong-mg-ln-growth
+  date: "1983"
+  date_precision: year
+  title: "Heavily Mg-doped LiNbO3: growth and 2 W average second-harmonic power"
+  people: ["Zhong Ji-guo", "Xu Guan-feng", "Wang Ting-fu", "et al."]
+  institution: "Southwest Institute of Technical Physics, Chengdu (journal metadata)"
+  citation: "Zhong J.-G. et al., Acta Phys. Sin. 32, 795-798 (1983)"
+  doi: "10.7498/aps.32.795"
+  url: null
+  status: V
+  hook: "Magnesium-doped crystal doubles a Q-switched laser to 2 watts of average green power."
+  chapter: h06
+  notes: "Up to 2 W average SH power in an intracavity acousto-optically Q-switched Nd:YAG laser (journal page abstract excerpt, research lane)."
+
+- id: h-1984-bryan-mgo
+  date: "1984-05-01"
+  date_precision: day
+  title: "Increased optical damage resistance in MgO-doped lithium niobate"
+  people: ["D. A. Bryan", "R. Gerson", "H. E. Tomaschke"]
+  institution: "McDonnell Douglas Astronautics (Bryan), University of Missouri-Rolla (Gerson), Greenville College (Tomaschke) (byline)"
+  citation: "D. A. Bryan, R. Gerson, H. E. Tomaschke, Appl. Phys. Lett. 44, 847-849 (1984)"
+  doi: "10.1063/1.94946"
+  url: null
+  status: V
+  hook: "A US team confirms the magnesium effect and traces it to a hundredfold rise in photoconductivity."
+  chapter: h06
+  notes: "Abstract opens 'We have confirmed greatly improved resistance to photorefractive damage' for 4.5 at.% MgO or more; due to a hundredfold increase in photoconductivity; OH line shifts 2.87 to 2.83 um."
+
+- id: h-1987-luh-sln-fibers
+  date: "1987-11"
+  date_precision: month
+  title: "Stoichiometric LiNbO3 single-crystal fibers by vapor transport equilibration"
+  people: ["Y. S. Luh", "M. M. Fejer", "R. L. Byer", "R. S. Feigelson"]
+  institution: "Stanford University (attribution)"
+  citation: "Y. S. Luh et al., J. Cryst. Growth 85, 264-269 (1987)"
+  doi: "10.1016/0022-0248(87)90233-8"
+  url: null
+  status: V
+  hook: "Soaking crystal fibers in lithium-rich vapor shifts their phase-matching temperature from 4 to 238 C."
+  chapter: h06
+  notes: "Abstract: VTE with Li-rich powder gives stoichiometric composition; 1064 nm SHG phase-matching temperature raised from 4 to 238 C, above the photorefractive annealing temperature; first doubling of 954 nm in LN."
+
+- id: h-1989-lim-green
+  date: "1989-02-02"
+  date_precision: day
+  title: "Green SHG in a periodically poled planar LiNbO3 waveguide"
+  people: ["E. J. Lim", "M. M. Fejer", "R. L. Byer"]
+  institution: "Stanford University (attribution)"
+  citation: "E. J. Lim, M. M. Fejer, R. L. Byer, Electron. Lett. 25, 174 (1989)"
+  doi: "10.1049/el:19890127"
+  url: null
+  status: V
+  hook: "Stripes meet waveguides: green light from a striped channel in the crystal."
+  chapter: h06
+  notes: "Abstract: 532 nm, room temperature, CW, 5% per W cm^2, QPM using d33."
+
+- id: h-1989-lim-blue
+  date: "1989-05-25"
+  date_precision: day
+  title: "Blue SHG in a periodically poled LiNbO3 channel waveguide"
+  people: ["E. J. Lim", "M. M. Fejer", "R. L. Byer", "W. J. Kozlovsky"]
+  institution: "Stanford University; IBM (Kozlovsky) (attribution)"
+  citation: "E. J. Lim et al., Electron. Lett. 25, 731-732 (1989)"
+  doi: "10.1049/el:19890495"
+  url: null
+  status: V
+  hook: "Blue laser light from infrared, in a striped crystal waveguide."
+  chapter: h06
+  notes: ""
+
+- id: h-1990-magel-bulk-ppln
+  date: "1990-01-08"
+  date_precision: day
+  title: "Blue QPM SHG in LiNbO3 with periodic domains grown by laser-heated pedestal growth"
+  people: ["G. A. Magel", "M. M. Fejer", "R. L. Byer"]
+  institution: "Stanford University (attribution)"
+  citation: "G. A. Magel, M. M. Fejer, R. L. Byer, Appl. Phys. Lett. 56, 108-110 (1990)"
+  doi: "10.1063/1.103276"
+  url: null
+  status: V
+  hook: "Stanford grows domain stripes one micron thick into a crystal fiber and makes violet-blue light."
+  chapter: h06
+  notes: "Abstract: laser-heated pedestal growth; domains as thin as 1 um; SHG down to 407 nm; effective interaction length about 320 um (> 230 domains); no discernible photorefractive damage."
+
+- id: h-1990-volk-zn
+  date: "1990-09-15"
+  date_precision: day
+  title: "Zinc as an optical-damage-resistant dopant in LiNbO3"
+  people: ["T. R. Volk", "V. I. Pryalkin", "N. M. Rubinina"]
+  institution: "Institute of Crystallography, USSR Academy of Sciences (Volk); Moscow State University (Pryalkin, Rubinina) (Optica byline)"
+  citation: "T. R. Volk, V. I. Pryalkin, N. M. Rubinina, 'Optical-damage-resistant LiNbO3:Zn crystal', Opt. Lett. 15, 996-998 (1990)"
+  doi: "10.1364/OL.15.000996"
+  url: null
+  status: V
+  hook: "A Moscow team finds that zinc also protects the crystal from laser scarring."
+  chapter: h06
+  notes: "About 50% SHG conversion of 1.06 um; threshold about 4-6 mol% Zn in the melt (research lane, Optica abstract). Optica lists an inconsistent 'published' date; Crossref print date used. Indium followed in 1992 (Volk, Rubinina, Ferroelectrics Lett. 14, 37, doi:10.1080/07315179208203341)."
+
+- id: h-1992-fejer-qpm-theory
+  date: "1992"
+  date_precision: year
+  title: "QPM second-harmonic generation: tuning and tolerances"
+  people: ["M. M. Fejer", "G. A. Magel", "D. H. Jundt", "R. L. Byer"]
+  institution: "Stanford University (attribution)"
+  citation: "M. M. Fejer et al., IEEE J. Quantum Electron. 28, 2631-2654 (1992)"
+  doi: "10.1109/3.161322"
+  url: null
+  status: V
+  hook: "The design manual for striped crystals."
+  chapter: h06
+  notes: ""
+
+- id: h-1992-kitamura-double-crucible
+  date: "1992-02"
+  date_precision: month
+  title: "Stoichiometric LiNbO3 grown by double-crucible Czochralski with automatic powder supply"
+  people: ["K. Kitamura", "J. K. Yamamoto", "N. Iyi", "S. Kimura", "T. Hayashi"]
+  institution: "NIRIM, Tsukuba (attribution; affiliation seen on Kitamura's 2000 APL, not on this paper)"
+  citation: "K. Kitamura et al., J. Cryst. Growth 116, 327-332 (1992)"
+  doi: "10.1016/0022-0248(92)90640-5"
+  url: null
+  status: V
+  hook: "Two nested crucibles let Tsukuba grow lithium niobate with its full share of lithium."
+  chapter: h06
+  notes: "Crossref misspells Kimura. Related: Furukawa, Kitamura et al., APL 77, 2494 (2000), doi:10.1063/1.1318721, photorefraction vs [Li]/[Nb] and MgO."
+
+- id: h-1993-yamada-field-poling
+  date: "1993-02-01"
+  date_precision: day
+  title: "Electric-field periodic poling of LiNbO3 at room temperature for first-order QPM blue SHG"
+  people: ["M. Yamada", "N. Nada", "M. Saitoh", "K. Watanabe"]
+  institution: "Corporate Research Laboratories, Sony Corporation, Tokyo (Crossref byline)"
+  citation: "M. Yamada et al., Appl. Phys. Lett. 62, 435-436 (1993)"
+  doi: "10.1063/1.108925"
+  url: null
+  status: V
+  hook: "Sony engineers flip domains with an applied field at room temperature, the method still used for PPLN."
+  chapter: h06
+  notes: "Abstract: ideal laminar domains by applying an external field at room temperature; 20.7 mW blue; 600%/W cm^2. Wavelength and period not in the abstract."
+
+- id: h-1994-volk-review
+  date: "1994-09-01"
+  date_precision: day
+  title: "Optical-damage-resistant impurities in lithium niobate (review)"
+  people: ["T. Volk", "N. Rubinina", "M. Wohlecke"]
+  institution: "Moscow; Osnabruck (attribution)"
+  citation: "T. Volk, N. Rubinina, M. Wohlecke, J. Opt. Soc. Am. B 11, 1681 (1994)"
+  doi: "10.1364/JOSAB.11.001681"
+  url: null
+  status: V
+  hook: "Magnesium, zinc, indium: a family of dopants that keep the crystal clear under intense light."
+  chapter: h06
+  notes: "Monograph: Volk and Wohlecke, 'Lithium Niobate: Defects, Photorefraction and Ferroelectric Switching', Springer Series in Materials Science (Crossref issued 2009), doi:10.1007/978-3-540-70766-0."
+
+- id: h-1995-myers-ppln-opo
+  date: "1995-01-01"
+  date_precision: day
+  title: "Quasi-phase-matched 1.064 um pumped OPO in bulk periodically poled LiNbO3"
+  people: ["L. E. Myers", "W. R. Bosenberg", "G. D. Miller", "R. C. Eckardt", "M. M. Fejer", "R. L. Byer"]
+  institution: "Stanford Ginzton Laboratory; Lightwave Electronics (OpenAlex affiliation)"
+  citation: "L. E. Myers et al., Opt. Lett. 20, 52 (1995)"
+  doi: "10.1364/OL.20.000052"
+  url: null
+  status: V
+  hook: "Thirty years after the first OPO, the same crystal does it again, this time with stripes."
+  chapter: h06
+  notes: "Abstract: Q-switched Nd:YAG pump; temperature-tuned 1.66-2.95 um; threshold about 0.1 mJ, > 10x below damage; 0.5 mm thick, 5.2 mm long, QPM period 31 um."
+
+- id: h-1995-myers-josab
+  date: "1995-11-01"
+  date_precision: day
+  title: "Quasi-phase-matched OPOs in bulk PPLN (full paper)"
+  people: ["L. E. Myers", "R. C. Eckardt", "M. M. Fejer", "R. L. Byer", "W. R. Bosenberg", "J. W. Pierce"]
+  institution: "Stanford University; Lightwave Electronics; Cygnus Laser (OpenAlex affiliation)"
+  citation: "L. E. Myers et al., J. Opt. Soc. Am. B 12, 2102 (1995)"
+  doi: "10.1364/JOSAB.12.002102"
+  url: null
+  status: V
+  hook: "Striped crystal OPOs tune across 1.4 to 4 micrometers, by temperature or by stripe period."
+  chapter: h06
+  notes: "Abstract: uniform domains over 15 mm in 0.5 mm crystals; 1.4-4 um; threshold as low as 0.012 mJ; cw doubly resonant OPO near 1.96 um pumped by a 978 nm diode."
+
+- id: h-1997-jundt-sellmeier
+  date: "1997-10-15"
+  date_precision: day
+  title: "Temperature-dependent Sellmeier equation for n_e of congruent LiNbO3"
+  people: ["Dieter H. Jundt"]
+  institution: "Crystal Technology (attribution, not verified)"
+  citation: "D. H. Jundt, Opt. Lett. 22, 1553 (1997)"
+  doi: "10.1364/OL.22.001553"
+  url: null
+  status: V
+  hook: "One equation tells designers which stripe period gives which color."
+  chapter: h06
+  notes: "Affiliation not checked."
+
+- id: h-1997-zhu-quasiperiodic
+  date: "1997-10-31"
+  date_precision: day
+  title: "Quasi-phase-matched third-harmonic generation in a quasi-periodic optical superlattice (LiTaO3)"
+  people: ["Shi-ning Zhu", "Yong-yuan Zhu", "Nai-ben Ming"]
+  institution: "National Laboratory of Solid State Microstructures, Nanjing University (Crossref affiliation)"
+  citation: "S. Zhu, Y. Zhu, N. Ming, Science 278, 843-846 (1997)"
+  doi: "10.1126/science.278.5339.843"
+  url: null
+  status: V
+  hook: "Nanjing arranges domains in a quasi-periodic pattern and triples light's frequency in one crystal."
+  chapter: h06
+  notes: "Crystal is LiTaO3 (abstract), LN's sibling. Coupled SHG and SFG through QPM."
+
+- id: h-2000-oxide-corp
+  date: "2000-10"
+  date_precision: month
+  title: "Oxide Corporation founded (Yamanashi) to commercialize 'Super LN/LT' crystals"
+  people: ["Yasunori Furukawa"]
+  institution: "Oxide Corporation"
+  citation: "Oxide Corporation company history page"
+  doi: null
+  url: "https://www.opt-oxide.com/company/history/"
+  status: V
+  hook: "A national-lab crystal grower starts a company to sell new grades of LN and LT crystals."
+  chapter: h06
+  notes: "Company timeline: founded 2000-10 as the first case under the national civil-servant side-job system; founder Y. Furukawa left NIMS in 2003-10; 2001-05 'Super LN/LT' product described as a world first. The page does not equate Super LN with stoichiometric LN."
+
+- id: h-2003-ntt-direct-bonded-ppln
+  date: "2003-04-03"
+  date_precision: day
+  title: "Direct-bonded QPM-LN ridge waveguide with high damage resistance at room temperature"
+  people: ["Y. Nishida", "H. Miyazawa", "M. Asobe", "O. Tadanaga", "H. Suzuki"]
+  institution: "NTT Photonics Laboratories, Atsugi (Crossref affiliation)"
+  citation: "Y. Nishida et al., Electron. Lett. 39, 609-611 (2003)"
+  doi: "10.1049/el:20030402"
+  url: null
+  status: V
+  hook: "NTT bonds a striped crystal layer onto another crystal: a ridge waveguide that shrugs off damage."
+  chapter: h06
+  notes: "Abstract: 13 mm long; SHG 44%/W; very high photorefractive resistance at room temperature; DFG -17.6 dB at 1550 nm band."
+
+- id: h-2009-ppln-green-projectors
+  date: "2009-09-17"
+  date_precision: day
+  title: "MgO:PPLN chips for 1060 to 530 nm green in pico-projectors"
+  people: []
+  institution: "Crystal Technology (EPCOS subsidiary)"
+  citation: "Product news, electronicsonline.net.au, 2009-09-17 (via R07)"
+  doi: null
+  url: null
+  status: S
+  hook: "Striped crystal chips make the green in pocket projectors."
+  chapter: h06
+  notes: "Trade product news only. Not evidence that consumer green laser pointers use PPLN (unverified)."
+
+- id: h-2021-ntt-ppln-squeezer
+  date: "2021-12-20"
+  date_precision: day
+  title: "Low-loss PPLN waveguide OPA module gives 6.3 dB squeezed light up to 6 THz"
+  people: ["Takahiro Kashiwazaki", "Taichi Yamashima", "Naoto Takanashi", "Asuka Inoue", "et al."]
+  institution: "NTT; University of Tokyo (attribution)"
+  citation: "T. Kashiwazaki et al., Appl. Phys. Lett. 119, 251104 (2021)"
+  doi: "10.1063/5.0063118"
+  url: null
+  status: V
+  hook: "The striped crystal squeezes light's quantum noise by 6.3 dB across 6 THz."
+  chapter: h06
+  notes: "Abstract: 45 mm waveguide with 7% loss; core directly bonded on LiTaO3; module insertion loss 21%; 6.3 dB squeezing DC to 6.0 THz."
+
+# ---------------------------------------------------------------- h07 The internet's modulator
+
+- id: h-1992-seino-fujitsu-drift
+  date: "1992-02"
+  date_precision: month
+  title: "Low DC-drift Ti:LiNbO3 modulator assured over 15 years"
+  people: ["M. Seino", "T. Nakazawa", "Y. Kubota", "M. Doi", "T. Yamane", "H. Hakogi"]
+  institution: "Fujitsu Laboratories; Fujitsu Ltd (Optica byline)"
+  citation: "M. Seino et al., OFC 1992, postdeadline paper PD3"
+  doi: "10.1364/ofc.1992.pd3"
+  url: null
+  status: V
+  hook: 'A bias point assured for 15 years, "stable enough for use in commercial optical transmission systems".'
+  chapter: h07
+  notes: "Abstract: Ti:LN modulators used in transmission experiments and planned for commercial systems; abstract also states 'There has, however, been no report to guarantee the long-term reliability of Ti:LiNbO3 devices against DC drift'; Si coating prevents temperature and humidity drift; long-term DC drift 'stable enough for use in commercial optical transmission systems'."
+
+- id: h-1993-sumitomo-cement-drift
+  date: "1993-05-01"
+  date_precision: day
+  title: "DC drift of Ti:LiNbO3 modulators studied at Sumitomo Cement"
+  people: ["Hirotoshi Nagata", "Kazumasa Kiuchi"]
+  institution: "Central Research Laboratories, Sumitomo Cement, Funabashi (Crossref affiliation)"
+  citation: "H. Nagata, K. Kiuchi, J. Appl. Phys. 73, 4162-4164 (1993)"
+  doi: "10.1063/1.352849"
+  url: null
+  status: V
+  hook: "A cement company's research lab works on keeping optical modulators stable."
+  chapter: h07
+  notes: "Earliest Sumitomo Cement LN modulator paper found in Crossref; the business start year is not found."
+
+- id: h-1994-soc-formed
+  date: "1994-10-01"
+  date_precision: day
+  title: "Sumitomo Cement and Osaka Cement merge into Sumitomo Osaka Cement"
+  people: []
+  institution: "Sumitomo Osaka Cement"
+  citation: "Sumitomo Osaka Cement company history page"
+  doi: null
+  url: "https://www.soc.co.jp/company/history/"
+  status: V
+  hook: "Sumitomo Osaka Cement is formed; its optoelectronics business sells LN modulators today."
+  chapter: h07
+  notes: "The history page has no pre-1994 entries and no optoelectronics start date."
+
+- id: h-1995-uniphase-utp
+  date: "1995-07-01"
+  date_precision: day
+  title: "Uniphase buys United Technologies Photonics (LN integrated optics, Bloomfield CT)"
+  people: []
+  institution: "Uniphase; United Technologies Photonics"
+  citation: "Lightwave, 'Business purchase', 1995-07-01"
+  doi: null
+  url: "https://www.lightwaveonline.com/business/market-research/article/16662114/business-purchase"
+  status: S
+  hook: "A $8 million deal brings a lithium niobate modulator line into what becomes JDS Uniphase."
+  chapter: h07
+  notes: "Article date (deal possibly 1995-05 per an unopened snippet). USD 8.05 M. UTP later Uniphase Telecommunications Products, maker of LN modulators (referenceforbusiness JDSU history, S)."
+
+- id: h-1995-utp-submarine
+  date: "1995-07-01"
+  date_precision: day
+  title: "UTP engineers: external modulation first deployed in telecom on submarine routes"
+  people: ["F. J. Leonberger", "S. W. Merritt", "P. G. Suchoski"]
+  institution: "Uniphase Telecommunications Products (vendor authors)"
+  citation: "Laser Focus World, 1995-07-01"
+  doi: null
+  url: "https://www.laserfocusworld.com/optics/article/16553605/optical-modulators-find-wider-use-in-catv-and-telecommunications"
+  status: S
+  hook: "Undersea cables were among the first networks to switch light with a lithium niobate chip."
+  chapter: h07
+  notes: "Vendor-authored article; no year given for the first submarine deployment. Also: integrated-optic modulators used with 1320 nm CATV transmitters 'for several years'."
+
+- id: h-1997-utp-oc192
+  date: "1997-02-01"
+  date_precision: day
+  title: "OC-192 (10 Gb/s) lithium niobate modulators described by UTP engineers"
+  people: ["J. Lin", "P. Sanders"]
+  institution: "Uniphase Telecommunications Products (vendor authors)"
+  citation: "Lightwave, 1997-02-01"
+  doi: null
+  url: "https://www.lightwaveonline.com/optical-tech/electronics/article/16652774/oc192-lithiumniobate-modulators-spark-fiberoptic-network-capacity"
+  status: S
+  hook: "Ten billion bits per second, imprinted on light by a lithium niobate chip."
+  chapter: h07
+  notes: ""
+
+- id: h-1997-eospace
+  date: "1997"
+  date_precision: year
+  title: "EOSPACE formed in Redmond WA as a spin-out of Boeing integrated optics"
+  people: ["Suwat Thaniyavarn"]
+  institution: "EOSPACE, Inc."
+  citation: "EOSPACE technical management page"
+  doi: null
+  url: "https://www.eospace.com/technicalmanagement"
+  status: V
+  hook: "A Boeing integrated-optics team spins out to build lithium niobate modulators."
+  chapter: h07
+  notes: "Company page: 'In late 1997, Dr. Thaniyavarn formed EOSPACE Inc., spinning integrated optics technology out of Boeing.'"
+
+- id: h-1998-lucent-x2600
+  date: "1998-05-01"
+  date_precision: day
+  title: "Lucent X2600 LN modulator family for 10 and 20 Gb/s"
+  people: []
+  institution: "Lucent Technologies Microelectronics Group"
+  citation: "Lightwave product note, 1998-05-01"
+  doi: null
+  url: "https://www.lightwaveonline.com/optical-tech/electronics/article/16656084/lithium-niobate-modulators"
+  status: S
+  hook: "Lucent offers lithium niobate modulators rated for 10 and 20 Gb/s."
+  chapter: h07
+  notes: "Fab location not confirmed."
+
+- id: h-1999-jdsu-merger
+  date: "1999-06-28"
+  date_precision: day
+  title: "JDS Fitel and Uniphase merge into JDS Uniphase; Ramar (LN integrated optics) acquired 1999-10"
+  people: []
+  institution: "JDS Uniphase"
+  citation: "JDS Uniphase company history, referenceforbusiness.com"
+  doi: null
+  url: "https://www.referenceforbusiness.com/history2/11/JDS-Uniphase-Corporation.html"
+  status: S
+  hook: "Two merged component makers fold lithium niobate modulator lines into JDS Uniphase."
+  chapter: h07
+  notes: "Shareholder approval date per the history text."
+
+- id: h-2000-wooten-review
+  date: "2000-01"
+  date_precision: month
+  title: "Review of lithium niobate modulators for fiber-optic communications"
+  people: ["E. L. Wooten", "K. M. Kissa", "A. Yi-Yan", "E. J. Murphy", "D. A. Lafaw", "P. F. Hallemeier", "D. Maack", "D. V. Attanasio", "D. J. Fritz", "G. J. McBrien", "D. E. Bossi"]
+  institution: "JDS Uniphase, Bloomfield CT (OpenAlex affiliation, all authors)"
+  citation: "E. L. Wooten et al., IEEE J. Sel. Top. Quantum Electron. 6, 69-82 (2000)"
+  doi: "10.1109/2944.826874"
+  url: null
+  status: V
+  hook: "The industry's own snapshot: lithium niobate modulators carry 2.5, 10 and 40 Gb/s traffic."
+  chapter: h07
+  notes: "Abstract (OpenAlex): meets requirements of 2.5, 10 and 40 Gb/s digital systems and CATV analog; 10 Gb/s RZ pulse generation plus data modulation in one device. Affiliation status P."
+
+- id: h-2000-photline
+  date: "2000-09"
+  date_precision: month
+  title: "Photline Technologies founded in Besancon from FEMTO-ST"
+  people: ["Henri Porte"]
+  institution: "Photline Technologies"
+  citation: "Photoniques interview (snippet); Exail page (R09 S37: LN modulators since 2000)"
+  doi: null
+  url: null
+  status: S
+  hook: "A French lab spin-off starts making lithium niobate modulators, later used in gyroscopes and quantum labs."
+  chapter: h07
+  notes: "Became a 100% iXblue subsidiary in 2013-07 (Photonics Online, 2015-02-04, S); iXblue and ECA Group became Exail on 2022-10-18 (search summary, S)."
+
+- id: h-2000-corning-pirelli
+  date: "2000-09-27"
+  date_precision: day
+  title: "Corning agrees to buy Pirelli's optical components unit (Milan), including LN modulators, for about $3.6 B"
+  people: []
+  institution: "Corning; Pirelli; Cisco (10%)"
+  citation: "Compound Semiconductor, 2000"
+  doi: null
+  url: "https://compoundsemiconductor.net/article/80769/Corning_to_Acquire_Pirellis_Optical_Components_and_Devices_Business_For_36_Billion"
+  status: S
+  hook: "A lithium niobate modulator business is part of Corning's $3.6 billion purchase."
+  chapter: h07
+  notes: "Later chain of the Milan LN line (Avanex 2003, Oclaro 2009, Lumentum 2018) is press-level only."
+
+- id: h-2003-covega
+  date: "2003-03-05"
+  date_precision: day
+  title: "Codeon (Mach-10 and Mach-40 LN modulators) merges with Quantum Photonics to form Covega"
+  people: []
+  institution: "Codeon; Covega"
+  citation: "Lightwave, 2003"
+  doi: null
+  url: "https://lightwaveonline.com/business/article/16656427/codeon-corp-and-quantum-photonics-merge-to-form-covega-corp"
+  status: S
+  hook: "Two US modulator startups merge as Covega."
+  chapter: h07
+  notes: ""
+
+- id: h-2009-fujitsu-dpqpsk
+  date: "2009-09-14"
+  date_precision: day
+  title: "Fujitsu introduces a DP-QPSK LN modulator for 100 Gb/s networks"
+  people: []
+  institution: "Fujitsu Optical Components"
+  citation: "Fujitsu Optical Components press release, 2009-09-14"
+  doi: null
+  url: "https://web.archive.org/web/20210620162454/https://www.fujitsu.com/jp/group/foc/en/resources/news/press-releases/2009/0914.html"
+  status: V
+  hook: "One chip now writes data onto light's phase in two polarizations: 100 Gb/s per wavelength."
+  chapter: h07
+  notes: "Release title claims 'World's First DP-QPSK LN Modulator for 100Gbps' (vendor claim). 25 GHz bandwidth, max 3.5 V drive, shipping 2009-12-01. Archived copy read."
+
+- id: h-2011-gh-crystal-technology
+  date: "2011-04-01"
+  date_precision: day
+  title: "Gooch & Housego acquires Crystal Technology, LLC (Palo Alto LN and TeO2 growth)"
+  people: []
+  institution: "Gooch & Housego"
+  citation: "G&H RNS announcement, 2011-04-01 (reprint); G&H history page"
+  doi: null
+  url: "https://gandh.com/our-history"
+  status: V
+  hook: "The company that sold the first LN modulator in 1985 changes hands."
+  chapter: h07
+  notes: "USD 13.75 M; about 65 staff; assets from 'a larger business, Crystal Technology, Inc.' (seller not named). LN growth later moved to Cleveland OH (2013-03 release, S). EPCOS ownership implied only by patent assignment records (P)."
+
+- id: h-2011-soc-guangdong
+  date: "2011-11"
+  date_precision: month
+  title: "Sumitomo Osaka Cement sets up an optical-communication parts subsidiary in Guangdong"
+  people: []
+  institution: "Sumitomo Osaka Cement"
+  citation: "SOC company history page"
+  doi: null
+  url: "https://www.soc.co.jp/company/history/"
+  status: V
+  hook: "Lithium niobate modulator assembly moves toward China's optical-module cluster."
+  chapter: h07
+  notes: "Nikkan Kogyo 2016-12-13 (archived, read; S): new LN modulator line at the Guangdong plant from autumn 2017."
+
+- id: h-2019-lumentum-afr
+  date: "2019-11-28"
+  date_precision: day
+  title: "Lumentum sells its LN modulator product lines (San Donato, Italy) to Advanced Fiber Resources"
+  people: []
+  institution: "Lumentum; Advanced Fiber Resources (Zhuhai)"
+  citation: "Lightwave, 2019-12-02"
+  doi: null
+  url: "https://www.lightwaveonline.com/business/mergers-acquisitions/article/14072909/lumentum-to-sell-certain-lithium-niobate-based-product-lines-to-afr"
+  status: S
+  hook: "A US-listed company's bulk lithium niobate modulator line moves to a Chinese buyer."
+  chapter: h07
+  notes: "Terms not disclosed in the article; USD 17 M from 10-K summaries (unread)."
+
+- id: h-2021-fujitsu-millionth
+  date: "2021-03-31"
+  date_precision: day
+  title: "Fujitsu Optical Components ships its one millionth coherent LN modulator"
+  people: []
+  institution: "Fujitsu Optical Components"
+  citation: "FOC press release, 2021-03-31"
+  doi: null
+  url: "https://web.archive.org/web/20230812112018/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20210331.html"
+  status: V
+  hook: "A million coherent lithium niobate modulators shipped in eleven years."
+  chapter: h07
+  notes: "Shipping began 2009-12; cumulative sales exceeded 1 million at the end of 2021-02; '70% market share' in 2020 (vendor claim)."
+
+# ---------------------------------------------------------------- h08 Peeling the crystal
+
+- id: h-1995-bruel-smart-cut
+  date: "1995-07-06"
+  date_precision: day
+  title: "Smart Cut: hydrogen implantation plus bonding for silicon-on-insulator"
+  people: ["M. Bruel"]
+  institution: "LETI-CEA, Grenoble (byline)"
+  citation: "M. Bruel, 'Silicon on insulator material technology', Electron. Lett. 31, 1201-1202 (1995)"
+  doi: "10.1049/el:19950805"
+  url: null
+  status: V
+  hook: "Implant hydrogen, bond, heat, and a thin layer splits off: the trick later used on lithium niobate."
+  chapter: h08
+  notes: "Silicon, not LN; the process family later adapted to LN and LT (CEA-LETI LN transfer 2008-2010: doi:10.1109/ultsym.2008.0049, 10.1109/iedm.2008.4796785, 10.1063/1.3258496, 10.1149/1.3483511)."
+
+- id: h-1998-levy-cis
+  date: "1998-10-19"
+  date_precision: day
+  title: "Single-crystal LiNbO3 films by crystal ion slicing"
+  people: ["M. Levy", "R. M. Osgood Jr.", "R. Liu", "L. E. Cross", "G. S. Cargill III", "A. Kumar", "H. Bakhru"]
+  institution: "Columbia; Penn State; Lehigh; SUNY Albany (Crossref affiliation)"
+  citation: "M. Levy et al., Appl. Phys. Lett. 73, 2293-2295 (1998)"
+  doi: "10.1063/1.121801"
+  url: null
+  status: V
+  hook: "Implant ions deep into the crystal and peel off a 9-micron single-crystal sheet."
+  chapter: h08
+  notes: "Abstract: deep-ion implantation creates a buried sacrificial layer in c-cut poled LiNbO3; 9 um films separated and bonded to Si and GaAs. Ion species and energy not in the abstract (the group's patent US6540827 B1 gives 3.8 MeV for about 10 um depth, not tied to this paper)."
+
+- id: h-2004-rabiei-gunter
+  date: "2004-11-15"
+  date_precision: day
+  title: "Submicrometer LiNbO3 films by ion slicing and wafer bonding on SiO2, r33 = 31 pm/V"
+  people: ["Payam Rabiei", "Peter Gunter"]
+  institution: "ETH Zurich (Crossref affiliation)"
+  citation: "P. Rabiei, P. Gunter, Appl. Phys. Lett. 85, 4603-4605 (2004)"
+  doi: "10.1063/1.1819527"
+  url: null
+  status: V
+  hook: "Zurich slices the crystal to 680 nanometers on glass and its electro-optic strength survives."
+  chapter: h08
+  notes: "Abstract: 680 nm films on SiO2; quality comparable to bulk; r33 = 31 pm/V at 633 nm."
+
+- id: h-2007-guarino-microring
+  date: "2007-07"
+  date_precision: month
+  title: "Electro-optically tunable microring resonators in lithium niobate (bonded film)"
+  people: ["A. Guarino", "G. Poberaj", "D. Rezzonico", "R. Degl'Innocenti", "P. Gunter"]
+  institution: "ETH Zurich (OpenAlex affiliation)"
+  citation: "A. Guarino et al., Nat. Photonics 1, 407-410 (2007)"
+  doi: "10.1038/nphoton.2007.93"
+  url: null
+  status: V
+  hook: "A voltage-tuned racetrack for light, carved in a film of crystal."
+  chapter: h08
+  notes: "Abstract not read. Device numbers (R = 100 um, Q about 4e3, 0.14 GHz/V) are from the author's 2018 literature notes (R02 L4), status P."
+
+- id: h-2008-hartung-ibee
+  date: "2008-10-15"
+  date_precision: day
+  title: "Ridge waveguides in Zn-substituted LiNbO3 by ion-beam enhanced etching"
+  people: ["Holger Hartung", "Ernst-Bernhard Kley", "Andreas Tunnermann", "Thomas Gischkat", "et al."]
+  institution: "Jena (attribution)"
+  citation: "H. Hartung et al., Opt. Lett. 33, 2320 (2008)"
+  doi: "10.1364/OL.33.002320"
+  url: null
+  status: V
+  hook: "Before thin-film wafers, physicists etched near-vertical ridges into epitaxial crystal layers with ion beams."
+  chapter: h08
+  notes: "Abstract: liquid-phase epitaxy plus multiple ion-beam enhanced etching; side walls near 90 degrees; 0.9 dB/cm single-mode at 1064 nm."
+
+- id: h-2009-hu-photonic-wires
+  date: "2009-12-21"
+  date_precision: day
+  title: "Lithium niobate photonic wires from a bonded single-crystal film"
+  people: ["H. Hu", "R. Ricken", "W. Sohler"]
+  institution: "Universitat Paderborn (attribution)"
+  citation: "H. Hu, R. Ricken, W. Sohler, Opt. Express 17, 24261 (2009)"
+  doi: "10.1364/OE.17.024261"
+  url: null
+  status: V
+  hook: "Paderborn mills the bonded crystal film into wires one micron wide."
+  chapter: h08
+  notes: "Abstract: Ar milling of a LiNbO3 film bonded to SiO2/LiNbO3; cross-section down to 1 x 0.73 um^2; 9.9 dB/cm (qTM), 12.9 dB/cm (qTE)."
+
+- id: h-2010-nanoln
+  date: "2010"
+  date_precision: year
+  title: "NANOLN (Jinan Jingzheng Electronics) established; supplies LNOI and LTOI wafers"
+  people: []
+  institution: "Jinan Jingzheng Electronics Co., Ltd. (NANOLN), Jinan"
+  citation: "NANOLN 'About' page"
+  doi: null
+  url: "https://www.nanoln.com/ABOUT_NANOLN.html"
+  status: V
+  hook: "A Jinan company starts selling single-crystal lithium niobate thin films."
+  chapter: h08
+  notes: "Company: 'NanoLN, established in 2010, is specialized in producing single-crystal lithium niobate thin films.' Registry aggregator gives 2010-03-25 (S). Wafer source for Zhang 2017 and Wang 2018 per the author's literature notes (R02 L5, L9), P."
+
+- id: h-2012-poberaj-lnoi-review
+  date: "2012-07-16"
+  date_precision: day
+  title: "'Lithium niobate on insulator (LNOI) for micro-photonic devices' (review)"
+  people: ["G. Poberaj", "H. Hu", "W. Sohler", "P. Gunter"]
+  institution: "ETH Zurich; Universitat Paderborn (attribution)"
+  citation: "G. Poberaj et al., Laser Photonics Rev. 6, 488-503 (2012)"
+  doi: "10.1002/lpor.201100035"
+  url: null
+  status: V
+  hook: "A 2012 review uses the name LNOI; the films already come as 3-inch wafers."
+  chapter: h08
+  notes: "Abstract: sub-micrometer films by ion slicing, bonded by two techniques, 'even as wafer of 3\" diameter'; photonic wires < 1 um^2, PP-LNOI SHG, EO microrings, photonic crystals."
+
+- id: h-2014-wang-microdisk
+  date: "2014-12-15"
+  date_precision: day
+  title: "Integrated high-Q LiNbO3 microdisk resonators"
+  people: ["Cheng Wang", "Michael J. Burek", "Zin Lin", "et al."]
+  institution: "Harvard University (attribution)"
+  citation: "C. Wang et al., Opt. Express 22, 30924 (2014)"
+  doi: "10.1364/OE.22.030924"
+  url: null
+  status: V
+  hook: "Harvard etches microdisks from crystal film with a quality factor of a hundred thousand."
+  chapter: h08
+  notes: "Abstract: Q about 1e5, visible to near-IR; on-chip SHG 0.109 /W."
+
+# ---------------------------------------------------------------- h09 The thin-film renaissance
+
+- id: h-2017-chang-ln-sin
+  date: "2017-02-15"
+  date_precision: day
+  title: "Heterogeneous LN/SiN waveguides for wafer-scale PICs on silicon"
+  people: ["Lin Chang", "Martin H. P. Pfeiffer", "Nicolas Volet", "et al.", "T. J. Kippenberg", "J. E. Bowers"]
+  institution: "UCSB; EPFL (attribution)"
+  citation: "L. Chang et al., Opt. Lett. 42, 803 (2017)"
+  doi: "10.1364/OL.42.000803"
+  url: null
+  status: V
+  hook: "Bond the crystal onto silicon nitride and skip etching it altogether."
+  chapter: h09
+  notes: ""
+
+- id: h-2017-zhang-microring
+  date: "2017-12-20"
+  date_precision: day
+  title: "Monolithic ultra-high-Q LiNbO3 microring resonator: Q = 1e7, 2.7 dB/m"
+  people: ["Mian Zhang", "Cheng Wang", "Rebecca Cheng", "Amirhassan Shams-Ansari", "Marko Loncar"]
+  institution: "Harvard University (attribution)"
+  citation: "M. Zhang et al., Optica 4, 1536 (2017)"
+  doi: "10.1364/OPTICA.4.001536"
+  url: null
+  status: V
+  hook: "The hard-to-etch crystal is etched so smoothly that a microring reaches a quality factor of ten million."
+  chapter: h09
+  notes: "Abstract: dry-etched subwavelength waveguides; Q of 1e7; loss as low as 2.7 dB/m."
+
+- id: h-2018-wang-oe-modulators
+  date: "2018-01-22"
+  date_precision: day
+  title: "Nanophotonic LiNbO3 electro-optic modulators, 1.8 V cm"
+  people: ["Cheng Wang", "Mian Zhang", "Brian Stern", "Michal Lipson", "Marko Loncar"]
+  institution: "Harvard; Columbia (attribution)"
+  citation: "C. Wang et al., Opt. Express 26, 1547 (2018)"
+  doi: "10.1364/OE.26.001547"
+  url: null
+  status: V
+  hook: "Shrink the waveguide and the voltage needed to switch light drops several-fold."
+  chapter: h09
+  notes: "Abstract: half-wave efficiency 1.8 V cm; data rates up to 40 Gbps."
+
+- id: h-2018-hyperlight-founded
+  date: "2018"
+  date_precision: year
+  title: "HyperLight founded as a Harvard spin-out (Cambridge MA)"
+  people: ["Mian Zhang (CEO)", "Christian Reimer (co-founder)"]
+  institution: "HyperLight Corporation"
+  citation: "Lightwave, 2021-09-13 ('founded out of Harvard in 2018'); optics.org, 2026-03-12 ('the Harvard University spin-out')"
+  doi: null
+  url: null
+  status: S
+  hook: "A Harvard lab's thin-film modulators become a company."
+  chapter: h09
+  notes: "Founding year and founder list only in trade press and aggregators; hyperlightcorp.com gives no year. Reimer co-founder per Optica speaker bios."
+
+- id: h-2018-weigel-hybrid
+  date: "2018-09-03"
+  date_precision: day
+  title: "Bonded thin-film LN on foundry silicon photonics, > 106 GHz 3 dB electrical bandwidth"
+  people: ["Peter O. Weigel", "Jie Zhao", "Kelvin Fang", "et al.", "Shayan Mookherjea"]
+  institution: "UC San Diego; Sandia (attribution)"
+  citation: "P. O. Weigel et al., Opt. Express 26, 23728 (2018)"
+  doi: "10.1364/OE.26.023728"
+  url: null
+  status: V
+  hook: "An unetched crystal film on a silicon chip passes signals above 100 GHz."
+  chapter: h09
+  notes: "Abstract: oxide-bonded at 200 C; no LN etching; beyond 106 GHz 3 dB electrical bandwidth."
+
+- id: h-2018-wang-nature
+  date: "2018-10"
+  date_precision: month
+  title: "Integrated LN electro-optic modulators at CMOS-compatible voltages"
+  people: ["Cheng Wang", "Mian Zhang", "Xi Chen", "Maxime Bertrand", "Amirhassan Shams-Ansari", "Sethumadhavan Chandrasekhar", "Peter Winzer", "Marko Loncar"]
+  institution: "Harvard; Nokia Bell Labs (attribution)"
+  citation: "C. Wang et al., Nature 562, 101-104 (2018)"
+  doi: "10.1038/s41586-018-0551-y"
+  url: null
+  status: V
+  hook: "A modulator driven by a computer chip's voltage, not a lab amplifier."
+  chapter: h09
+  notes: "Abstract: CMOS-compatible drive voltage, up to 210 Gbit/s, on-chip loss < 0.5 dB. Text: half-wave voltages 1.4, 2.3, 4.4 V for 20, 10, 5 mm devices; 70 Gbit/s directly CMOS-driven; 100 Gbaud, 210 Gbit/s. 3 dB bandwidth value not seen in accessible text."
+
+- id: h-2018-wang-optica-ppln
+  date: "2018-11-20"
+  date_precision: day
+  title: "Nanophotonic PPLN waveguides: 2600%/W cm^2 SHG at 1.5 um, 4 um poling period"
+  people: ["Cheng Wang", "Carsten Langrock", "Alireza Marandi", "Marc Jankowski", "Mian Zhang", "Boris Desiatov", "Martin M. Fejer", "Marko Loncar"]
+  institution: "Harvard; Stanford (attribution)"
+  citation: "C. Wang et al., Optica 5, 1438 (2018)"
+  doi: "10.1364/OPTICA.5.001438"
+  url: null
+  status: V
+  hook: "The 1990s striped crystal, shrunk onto a chip, beats diffused waveguides twentyfold in efficiency."
+  chapter: h09
+  notes: "Abstract: 2600%/W cm^2, more than 20x diffused waveguides; first-order period 4 um."
+
+- id: h-2019-wang-kerr-comb
+  date: "2019-02-28"
+  date_precision: day
+  title: "Monolithic LN circuits for Kerr comb generation, filtering and modulation"
+  people: ["Cheng Wang", "Mian Zhang", "Mengjie Yu", "Rongrong Zhu", "Han Hu", "Marko Loncar"]
+  institution: "Harvard (attribution)"
+  citation: "C. Wang et al., Nat. Commun. 10, 978 (2019)"
+  doi: "10.1038/s41467-019-08969-6"
+  url: null
+  status: V
+  hook: "One chip makes a comb of colors, picks one tooth and modulates it."
+  chapter: h09
+  notes: ""
+
+- id: h-2019-zhang-eo-comb
+  date: "2019-04"
+  date_precision: month
+  title: "Broadband electro-optic frequency comb in an LN microring"
+  people: ["Mian Zhang", "Brandon Buscaino", "Cheng Wang", "et al."]
+  institution: "Harvard (attribution)"
+  citation: "M. Zhang et al., Nature 568, 373-377 (2019)"
+  doi: "10.1038/s41586-019-1008-7"
+  url: null
+  status: V
+  hook: "A microwave drive turns one laser line into a ruler of evenly spaced colors."
+  chapter: h09
+  notes: ""
+
+- id: h-2019-he-sysu-hybrid
+  date: "2019-05"
+  date_precision: month
+  title: "Hybrid silicon and LN Mach-Zehnder modulators for 100 Gbit/s and beyond"
+  people: ["Mingbo He", "Mengyue Xu", "Yuxuan Ren", "et al.", "Xinlun Cai"]
+  institution: "Sun Yat-sen University (attribution)"
+  citation: "M. He et al., Nat. Photonics 13, 359-364 (2019)"
+  doi: "10.1038/s41566-019-0378-6"
+  url: null
+  status: V
+  hook: "A Guangzhou team bonds the crystal onto silicon for 100 Gbit/s modulators."
+  chapter: h09
+  notes: ""
+
+- id: h-2019-lu-ppln-microring
+  date: "2019-12-20"
+  date_precision: day
+  title: "Periodically poled thin-film LN microrings, SHG efficiency 250,000%/W"
+  people: ["Juanjuan Lu", "Joshua B. Surya", "Xianwen Liu", "et al.", "Hong X. Tang"]
+  institution: "Yale University (attribution)"
+  citation: "J. Lu et al., Optica 6, 1455 (2019)"
+  doi: "10.1364/OPTICA.6.001455"
+  url: null
+  status: V
+  hook: "A striped crystal ring converts 15 percent of 115 microwatts into the second harmonic."
+  chapter: h09
+  notes: "Abstract: z-cut, field-assisted domain engineering; pump near 1617 nm; 250,000%/W on chip; 15% absolute efficiency at 115 uW."
+
+- id: h-2020-jankowski-ultrabroadband
+  date: "2020-01-20"
+  date_precision: day
+  title: "Ultrabroadband nonlinear optics in nanophotonic PPLN waveguides"
+  people: ["Marc Jankowski", "Carsten Langrock", "Boris Desiatov", "et al.", "Martin M. Fejer"]
+  institution: "Stanford; Harvard (attribution)"
+  citation: "M. Jankowski et al., Optica 7, 40 (2020)"
+  doi: "10.1364/OPTICA.7.000040"
+  url: null
+  status: V
+  hook: "Dispersion-engineered striped waveguides convert ultrabroadband light."
+  chapter: h09
+  notes: ""
+
+- id: h-2020-liobate-founded
+  date: "2020-07"
+  date_precision: month
+  title: "Liobate (Jiangsu Niobao Optoelectronics) founded"
+  people: []
+  institution: "Jiangsu Liobate Optoelectronics Technology Co., Ltd., Nanjing"
+  citation: "Liobate company page"
+  doi: null
+  url: "https://liobate.com/company"
+  status: V
+  hook: "A Nanjing startup sets out to make thin-film lithium niobate modulator chips end to end."
+  chapter: h09
+  notes: "Company: founded 2020-07; HQ opened 2021-03-28; 2022-09-24 TFLN coherent chip supported 260 GBaud DP-QPSK over 100 km (vendor claim). Founder identities only in directories (S)."
+
+- id: h-2020-luke-wafer-scale
+  date: "2020-08-17"
+  date_precision: day
+  title: "Wafer-scale low-loss LN PICs on 4- and 6-inch wafers with DUV lithography"
+  people: ["Kevin Luke", "Prashanta Kharel", "Christian Reimer", "Lingyan He", "Marko Loncar", "Mian Zhang"]
+  institution: "HyperLight; Harvard (attribution)"
+  citation: "K. Luke et al., Opt. Express 28, 24452 (2020)"
+  doi: "10.1364/OE.401959"
+  url: null
+  status: V
+  hook: "Thin-film lithium niobate leaves the e-beam writer: 6-inch wafers, optical lithography, 0.27 dB/cm."
+  chapter: h09
+  notes: "Abstract: monolithic LN PICs on 4- and 6-inch wafers with DUV lithography; 0.27 dB/cm propagation loss at wafer scale."
+
+- id: h-2021-kharel-electrodes
+  date: "2021-03-20"
+  date_precision: day
+  title: "Micro-structured electrodes: 1.3 V RF half-wave voltage with 1.8 dB roll-off at 50 GHz"
+  people: ["Prashanta Kharel", "Christian Reimer", "Kevin Luke", "Lingyan He", "Mian Zhang"]
+  institution: "HyperLight (attribution)"
+  citation: "P. Kharel et al., Optica 8, 357 (2021)"
+  doi: "10.1364/OPTICA.416155"
+  url: null
+  status: V
+  hook: "Micro-structured electrodes keep the RF half-wave voltage at 1.3 V with little roll-off to 50 GHz."
+  chapter: h09
+  notes: "Abstract: RF Vpi 1.3 V; 1.8 dB roll-off at 50 GHz."
+
+- id: h-2021-zhu-review
+  date: "2021-06-30"
+  date_precision: day
+  title: "'Integrated photonics on thin-film lithium niobate' (review)"
+  people: ["Di Zhu", "Linbo Shao", "Mengjie Yu", "et al.", "Marko Loncar"]
+  institution: "Harvard (attribution)"
+  citation: "D. Zhu et al., Adv. Opt. Photonics 13, 242 (2021)"
+  doi: "10.1364/AOP.411024"
+  url: null
+  status: V
+  hook: "The thin-film field gets its standard review."
+  chapter: h09
+  notes: ""
+
+- id: h-2021-fujitsu-tfln
+  date: "2021-10-22"
+  date_precision: day
+  title: "Fujitsu Optical Components commercializes a compact thin-film LN modulator (200 GBaud class)"
+  people: []
+  institution: "Fujitsu Optical Components"
+  citation: "FOC press release, 2021-10-22"
+  doi: null
+  url: "https://web.archive.org/web/20240225003522/https://www.fujitsu.com/jp/group/foc/en/subsidiary-gig5-sample/about/resources/news/press-releases/downloads/20211022.html"
+  status: V
+  hook: "The bulk-modulator leader says it has tamed thin-film drift for a 20-year life."
+  chapter: h09
+  notes: "Release wording: 'commercializing the world's first thin-film LN modulator ... of the 200GBaud class' (vendor claim, scoped to that class); DC drift stabilized; 20-year reliability; package 60% smaller; 128 GBd HB-CDM samples planned 2022-04."
+
+- id: h-2021-hu-frequency-shifter
+  date: "2021-11-25"
+  date_precision: day
+  title: "On-chip electro-optic frequency shifters and beam splitters"
+  people: ["Yaowen Hu", "Mengjie Yu", "Di Zhu", "et al.", "Marko Loncar"]
+  institution: "Harvard (attribution)"
+  citation: "Y. Hu et al., Nature 599, 587-593 (2021)"
+  doi: "10.1038/s41586-021-03999-x"
+  url: null
+  status: V
+  hook: "A chip that nudges light's color by a set amount, on command."
+  chapter: h09
+  notes: ""
+
+- id: h-2022-elena
+  date: "2022-01-01"
+  date_precision: day
+  title: "ELENA: EU project for a European LN photonic platform and LNOI supply starts (coordinator CSEM)"
+  people: []
+  institution: "CSEM (coordinator); Soitec, CEA, ETH Zurich, Thales, III-V Lab, Nokia, VPIphotonics, Vanguard Automation, Rosenberger, L-up"
+  citation: "CORDIS project 101016138"
+  doi: null
+  url: "https://cordis.europa.eu/project/id/101016138"
+  status: V
+  hook: "Europe funds its own thin-film lithium niobate supply chain, wafer to package."
+  chapter: h09
+  notes: "2022-01-01 to 2025-06-30; EU contribution EUR 4,982,900.63 (CORDIS). CEA page: goal of 150 mm optical-grade LNOI wafers at industrial scale."
+
+- id: h-2022-xu-dp-iq
+  date: "2022-01-20"
+  date_precision: day
+  title: "Dual-polarization thin-film LN IQ modulators: sub-1-V drive, 110 GHz, 1.96 Tb/s net single wavelength"
+  people: ["Mengyue Xu", "Yuntao Zhu", "Fabio Pittala", "et al.", "Xinlun Cai"]
+  institution: "Sun Yat-sen University; Zhejiang University (Crossref affiliations for some authors)"
+  citation: "M. Xu et al., Optica 9, 61 (2022)"
+  doi: "10.1364/OPTICA.449691"
+  url: null
+  status: V
+  hook: "Almost two terabits per second on one wavelength, driven by under one volt."
+  chapter: h09
+  notes: "Abstract: first dual-polarization TFLN coherent modulator (authors' claim); sub-1-V; 110 GHz; 1.96 Tb/s net. Huawei co-affiliation not verified (6 of 14 authors without affiliation in Crossref)."
+
+- id: h-2022-eoptolink-800g
+  date: "2022-03"
+  date_precision: month
+  title: "800G OSFP DR8 transceiver with a HyperLight TFLN modulator shown at OFC 2022"
+  people: []
+  institution: "Eoptolink; HyperLight"
+  citation: "Lightwave, 2022 (search snippet)"
+  doi: null
+  url: "https://www.lightwaveonline.com/optical-tech/transmission/article/14235578/eoptolink-demos-800g-osfp-dr8-optical-transceiver-featuring-thin-film-lithium-niobate-modulator"
+  status: S
+  hook: "Thin-film lithium niobate appears inside a data-center transceiver prototype."
+  chapter: h09
+  notes: "Snippet only (R09 S40)."
+
+- id: h-2022-hust-huawei
+  date: "2022-07-01"
+  date_precision: day
+  title: "TFLN dual-polarization IQ modulator on silicon substrate for single-carrier 1.6 Tb/s"
+  people: ["Xuanhao Wang", "Chenglin Shang", "An Pan", "Xingran Cheng", "et al.", "Jinsong Xia"]
+  institution: "Huazhong University of Science and Technology; Huawei (Crossref affiliations)"
+  citation: "X. Wang et al., APL Photonics 7, 076101 (2022)"
+  doi: "10.1063/5.0097296"
+  url: null
+  status: V
+  hook: "A university and a telecom giant co-author a 1.6 Tb/s thin-film modulator."
+  chapter: h09
+  notes: ""
+
+- id: h-2022-luxtelligence
+  date: "2022-10/2022-12"
+  date_precision: range
+  title: "Luxtelligence incorporated in Lausanne as an EPFL spin-off (TFLN foundry and PDK)"
+  people: []
+  institution: "Luxtelligence SA"
+  citation: "Luxtelligence 'About' page"
+  doi: null
+  url: "https://luxtelligence.ai/about"
+  status: V
+  hook: "A Lausanne spin-off offers thin-film lithium niobate chips with an open design kit."
+  chapter: h09
+  notes: "Company page: incorporated in the fourth quarter of 2022 (stored as the interval 2022-10/2022-12); TFLN at EPFL since 2017; first wafer 2023-07/2023-09; open lnoi400 PDK 2024-01/2024-03."
+
+- id: h-2023-boes-review
+  date: "2023-01-06"
+  date_precision: day
+  title: "'Lithium niobate photonics: Unlocking the electromagnetic spectrum' (review)"
+  people: ["Andreas Boes", "Lin Chang", "Carsten Langrock", "Mengjie Yu", "Mian Zhang", "Qiang Lin", "et al."]
+  institution: "multi-institution"
+  citation: "A. Boes et al., Science 379, eabj4396 (2023)"
+  doi: "10.1126/science.abj4396"
+  url: null
+  status: V
+  hook: "Science reviews the crystal's comeback from radio to ultraviolet."
+  chapter: h09
+  notes: "Abstract says LN was 'first synthesized 70 years ago' (about 1953), which conflicts with 1949 single crystals and the 1928 structure report (see disputes)."
+
+- id: h-2023-hyperlight-tx
+  date: "2023-03-07"
+  date_precision: day
+  title: "HyperLight announces TFLN transmitter PICs for 200 G/lane IM/DD and 1.6 Tb/s coherent"
+  people: []
+  institution: "HyperLight"
+  citation: "Business Wire, 2023-03-07 (snippet)"
+  doi: null
+  url: "https://www.businesswire.com/news/home/20230307005911/en/HyperLight-Announces-Thin-film-Lithium-Niobate-Transmitter-Chips-Supporting-Energy-Efficient-1.6-Tbps-Transceiver-Modules"
+  status: S
+  hook: "Thin-film transmitter chips are offered for 800G and 1.6T modules."
+  chapter: h09
+  notes: "Snippet only (R09 S22). Vendor claim."
+
+- id: h-2023-snigirev-laser
+  date: "2023-03-16"
+  date_precision: day
+  title: "Ultrafast tunable lasers using LN integrated photonics (Si3N4-LiNbO3)"
+  people: ["Viacheslav Snigirev", "Annina Riedhauser", "Grigory Lihachev", "et al.", "Paul Seidler", "Tobias J. Kippenberg"]
+  institution: "EPFL; IBM Research Zurich (attribution)"
+  citation: "V. Snigirev et al., Nature 615, 411-417 (2023)"
+  doi: "10.1038/s41586-023-05724-2"
+  url: null
+  status: V
+  hook: "A chip laser whose color the crystal retunes electro-optically, used for coherent ranging."
+  chapter: h09
+  notes: "Abstract: hybrid Si3N4-LiNbO3 platform; frequency-agile narrow-linewidth laser; coherent laser ranging."
+
+- id: h-2023-lightium
+  date: "2023"
+  date_precision: year
+  title: "Lightium founded in Zurich (TFLN design, foundry, packaging) after work at CSEM"
+  people: ["A. Ghadimi", "F. Loizeau", "D. Englund"]
+  institution: "Lightium AG"
+  citation: "optics.org, 2024-09-24"
+  doi: null
+  url: "https://optics.org/news/lithium-niobate-in-vogue-as-thin-film-developers-raise-cash"
+  status: S
+  hook: "Another Swiss thin-film lithium niobate company appears, from CSEM roots."
+  chapter: h09
+  notes: "Trade press. USD 7 M seed reported 2024-09 (R09 S24)."
+
+# ---------------------------------------------------------------- h10 Into the AI data center
+
+- id: h-2023-anpai-8inch
+  date: "2023-09"
+  date_precision: month
+  title: "Anpai completes an 8-inch TFLN design-plus-fab line in Wuhan (reporter claim)"
+  people: []
+  institution: "Anpai Optoelectronics"
+  citation: "Yicai via Sina, 2024-08-27"
+  doi: null
+  url: "https://finance.sina.cn/2024-08-27/detail-incmaynh4172882.d.html"
+  status: S
+  hook: "A Chinese startup reports an 8-inch thin-film lithium niobate line, called a world first by the reporter."
+  chapter: h10
+  notes: "Reporter calls it the world's first 8-inch TFLN line; about CNY 60 M; founded 2021 in Shanghai. Not independently verified; conflicts with other 'first 8-inch' claims (disputes)."
+
+- id: h-2024-wang-tflt
+  date: "2024-05-23"
+  date_precision: day
+  title: "Lithium tantalate photonic integrated circuits for volume manufacturing"
+  people: ["Chengli Wang", "Zihan Li", "Johann Riemensberger", "et al.", "Xin Ou", "Tobias J. Kippenberg"]
+  institution: "EPFL; SIMIT (attribution)"
+  citation: "C. Wang et al., Nature 629, 784-790 (2024)"
+  doi: "10.1038/s41586-024-07369-1"
+  url: null
+  status: V
+  hook: "LN's sibling, already used in 5G radio filters, joins integrated photonics."
+  chapter: h10
+  notes: "Abstract: LiTaO3 already adopted for 5G RF filters, enabling low-cost scalable manufacturing; equal or superior properties to LiNbO3 in some cases. 5.6 dB/m with DUV stepper per R09 S55 (abstract via RePEc)."
+
+- id: h-2024-chipx
+  date: "2024-09"
+  date_precision: month
+  title: "CHIPX (SJTU Wuxi) TFLN pilot line opens; first 6-inch TFLN wafer reported 2025-06"
+  people: []
+  institution: "Wuxi Photonic Chip Research Institute, Shanghai Jiao Tong University"
+  citation: "C114, 2025-06-09"
+  doi: null
+  url: "https://m.c114.com.cn/w5285-1290717.html"
+  status: S
+  hook: "A university-run pilot line in Wuxi starts producing thin-film lithium niobate wafers."
+  chapter: h10
+  notes: "Construction began 2022-12; opened 2024-09; 2025-06 first 6-inch TFLN wafer with modulators >110 GHz, IL <3.5 dB, 0.2 dB/cm, 1.9 V cm; 12,000 wafers/yr capacity (all as reported)."
+
+- id: h-2024-hyperlight-series-b
+  date: "2024-09-24"
+  date_precision: day
+  title: "HyperLight raises USD 37 M Series B"
+  people: []
+  institution: "HyperLight; Summit Partners (lead)"
+  citation: "Lightwave, 2024-09-24"
+  doi: null
+  url: "https://lightwaveonline.com/home/article/55142234/hyperlight-secures-37m-in-new-funding"
+  status: S
+  hook: "Venture money arrives for thin-film modulator chips."
+  chapter: h10
+  notes: "Trade press (R09 S21)."
+
+- id: h-2024-qant-npu
+  date: "2024-11-20"
+  date_precision: day
+  title: "Q.ANT launches a photonic processor using TFLN modulator arrays"
+  people: []
+  institution: "Q.ANT GmbH, Stuttgart"
+  citation: "The Quantum Insider (URL dated 2024-11-20); eeNews Europe (via R07)"
+  doi: null
+  url: null
+  status: S
+  hook: "Thin-film lithium niobate is used to compute, not only to communicate."
+  chapter: h10
+  notes: "Date taken from the article URL. Vendor framing; performance claims not included."
+
+- id: h-2025-afr-volume
+  date: "2025-04-07"
+  date_precision: day
+  title: "AFR reports volume shipment of 96 and 130 GBd TFLN coherent driver modulators; debuts a 400 Gb/s/lane TFLN chip"
+  people: []
+  institution: "Advanced Fiber Resources (Zhuhai)"
+  citation: "AFR news, 2025-04-07 (OFC 2025)"
+  doi: null
+  url: "https://www.fiber-resources.com/medias/140.html"
+  status: V
+  hook: "The company that bought a bulk lithium niobate line in 2019 now ships thin-film modulators in volume."
+  chapter: h10
+  notes: "Vendor claim. Optica corporate member news carries a related AFR release dated 2025-03-27."
+
+- id: h-2025-tdg-8inch
+  date: "2025-04-28"
+  date_precision: day
+  title: "TDG Holding says 8-inch LN/LT wafers are in mass production"
+  people: []
+  institution: "TDG Holding (Tiantong, SSE 600330)"
+  citation: "Cailian Press, 2025-04-28; TDG investor-relations record 2026-06-03 (R09 S5)"
+  doi: null
+  url: "https://www.cls.cn/detail/2358012"
+  status: S
+  hook: "Bulk lithium niobate wafers reach 8 inches, the size of mainstream silicon fabs."
+  chapter: h10
+  notes: "Company statement relayed by press; IR record (R09 S5, read) states 8-inch LN in mass production."
+
+- id: h-2025-ccraft
+  date: "2025-05-13"
+  date_precision: day
+  title: "CSEM spins off CCRAFT, a pure-play TFLN foundry in Neuchatel"
+  people: ["Hamed Sattari (CEO)"]
+  institution: "CSEM; CCRAFT SA"
+  citation: "CSEM press release"
+  doi: null
+  url: "https://www.csem.ch/en/press/tfln-photonic-foundry-emerges-from-csem-spin-off/"
+  status: V
+  hook: "A Swiss research center turns six years of thin-film work into a foundry with multi-project wafer runs."
+  chapter: h10
+  notes: "Release: 'first production-ready pure-play foundry in the world' (claim); 150 mm pilot line, 200 mm planned; after six years of R&D at CSEM; incorporated 2025-04. USD 7.8 M round 2026-07 (CSEM press, https://www.csem.ch/en/press/ccraft-photonic-chips-switzerland-scaling/)."
+
+- id: h-2025-elena-lnoi
+  date: "2025-06-23"
+  date_precision: day
+  title: "ELENA announces Europe's first commercial LNOI wafer supplier (150 mm); Soitec to supply CCRAFT"
+  people: []
+  institution: "ELENA consortium; Soitec; CCRAFT"
+  citation: "PIC Magazine, 2025-06-23; optics.org, 2025-06-25"
+  doi: null
+  url: "https://optics.org/news/laser-2025-ccraft-and-lightium-push-thin-film-lithium-niobate-pics"
+  status: S
+  hook: "Europe gets its own source of thin-film lithium niobate wafers."
+  chapter: h10
+  notes: "Trade press (R09 S12, S13). Consortium states prior supply 'depended on a single commercial supplier outside the EU' (unnamed)."
+
+- id: h-2025-lam-4inch-quartz
+  date: "2025-08-15"
+  date_precision: day
+  title: "Volume manufacturing of TFLN modulators > 110 GHz on 4-inch wafers with a quartz handle"
+  people: ["Yang Liu", "Zihan Zhou", "Peiqi Zhou", "et al.", "Xi Xiao"]
+  institution: "National Information Optoelectronics Innovation Center, Wuhan; Peng Cheng Laboratory (journal page)"
+  citation: "Y. Liu et al., Light: Adv. Manuf. 6(3), 575-581 (2025)"
+  doi: "10.37188/lam.2025.047"
+  url: "https://www.light-am.com/en/article/doi/10.37188/lam.2025.047"
+  status: V
+  hook: "Swap the silicon handle for quartz and thin-film modulators pass 110 GHz on production wafers."
+  chapter: h10
+  notes: "Published online 2025-08-15. Pages 575-581 per the journal page; Crossref lists article number 1. Abstract: bandwidth exceeding 110 GHz, Vpi lower than 3 V; extendable to 6 or 8 inch."
+
+- id: h-2025-sal-8inch
+  date: "2025-09-25"
+  date_precision: day
+  title: "Silicon Austria Labs unveils an 8-inch TFLN wafer processed in its Villach cleanroom"
+  people: ["Mohssen Moridi"]
+  institution: "Silicon Austria Labs"
+  citation: "SAL news post, 2025-09-25"
+  doi: null
+  url: "https://silicon-austria-labs.com/en/wp-json/wp/v2/posts/4124"
+  status: V
+  hook: "A European research lab shows an 8-inch thin-film lithium niobate wafer processed in-house."
+  chapter: h10
+  notes: "Title 'SAL Unveils First 8-Inch TFLN Wafer'; hard-mask deposition and stitching-free e-beam lithography; 8-inch MPW access planned from 2026."
+
+- id: h-2025-imec-ecoc
+  date: "2025-09-28"
+  date_precision: day
+  title: "Transfer-printed TFLN MZMs on foundry silicon photonics: 2 km 160 GBd PAM-4 O-band link"
+  people: ["Jakob Declercq", "Shengpu Niu", "Margot Niels", "et al."]
+  institution: "imec; Ghent University (attribution)"
+  citation: "J. Declercq et al., ECOC 2025"
+  doi: "10.1109/ECOC66593.2025.11263113"
+  url: null
+  status: V
+  hook: "Small pieces of crystal film are printed onto a silicon chip like stamps."
+  chapter: h10
+  notes: "Abstract: 2 km 160 GBd PAM-4 O-band link with co-packaged drivers and TIAs; 100 GHz Ge PD. Title: 320 Gb/s unamplified."
+
+- id: h-2025-gbt-46611
+  date: "2025-10-31"
+  date_precision: day
+  title: "China issues national standard GB/T 46611-2025 for LN single-crystal thin films for EO modulators"
+  people: []
+  institution: "SAC/TC461; drafting led by Jinan Jingzheng (NANOLN), 36 organizations"
+  citation: "GB/T 46611-2025, National Standards Information Public Service Platform"
+  doi: null
+  url: "https://std.samr.gov.cn/gb/search/gbDetailed?id=42BA7D06A44DE936E06397BE0A0ACDC9"
+  status: V
+  hook: "Thin-film lithium niobate wafers get a national standard, written by 36 organizations."
+  chapter: h10
+  notes: "Issued 2025-10-31, in force 2026-05-01. Drafting organizations include wafer makers, chip makers, universities (Shandong, Nankai, SJTU, Zhejiang, HUST) and module makers. Follow-on plan 20263597-T-609 for optical-grade LN wafers as thin-film substrates (2026-06-27, drafting)."
+
+- id: h-2026-ligentec-xfab
+  date: "2026-01-19"
+  date_precision: day
+  title: "Ligentec and X-FAB add TFLN-on-SiN and TFLN-on-SOI at 200 mm"
+  people: []
+  institution: "Ligentec SA; X-FAB Silicon Foundries"
+  citation: "X-FAB news, 2026-01-19"
+  doi: null
+  url: "https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling"
+  status: V
+  hook: "A merchant semiconductor foundry offers thin-film lithium niobate on 200 mm wafers."
+  chapter: h10
+  notes: "No production dates given."
+
+- id: h-2026-niels-tflt-sip
+  date: "2026-02"
+  date_precision: month
+  title: "High-speed heterogeneous lithium tantalate silicon photonics platform"
+  people: ["Margot Niels", "Tom Vanackere", "Ewoud Vissers", "et al.", "Gunther Roelkens"]
+  institution: "imec; Ghent University (attribution)"
+  citation: "M. Niels et al., Nat. Photonics 20, 225-231 (2026)"
+  doi: "10.1038/s41566-025-01832-9"
+  url: null
+  status: V
+  hook: "Lithium tantalate is integrated on silicon photonics for high-speed modulation."
+  chapter: h10
+  notes: "imec 2026-03-26 article calls it the first heterogeneous integration of a LiTaO3 modulator on a silicon PIC (institutional claim)."
+
+- id: h-2026-hyperlight-umc
+  date: "2026-03-11"
+  date_precision: day
+  title: "HyperLight, UMC and Wavetek partner for high-volume TFLN production on 6- and 8-inch wafers"
+  people: ["Mian Zhang (CEO)"]
+  institution: "HyperLight; United Microelectronics Corporation; Wavetek"
+  citation: "Business Wire release 20260311544174 (archived); optics.org and UMC, 2026-03-12"
+  doi: null
+  url: "https://web.archive.org/web/20260311212337/https://www.businesswire.com/news/home/20260311544174/en/"
+  status: V
+  hook: "UMC, a silicon foundry, partners for thin-film LN production on 6- and 8-inch wafers."
+  chapter: h10
+  notes: "Release: production of the TFLN Chiplet platform on 6- and 8-inch wafers; Wavetek had brought TFLN to a customer-qualified HVM line in a 6-inch CMOS foundry. CEO quote 'The era of TFLN as a niche technology is over.' via optics.org 2026-03-12 (R07, S); UMC page 403."
+
+- id: h-2026-ofc-1p6t
+  date: "2026-03-17"
+  date_precision: day
+  title: "OFC 2026: 1.6T-DR8 TFLN reference transceiver (single CW laser, 20 W) with TFC"
+  people: []
+  institution: "HyperLight; Suzhou TFC Optical Communication"
+  citation: "Business Wire China, 2026-03-17"
+  doi: null
+  url: "https://www.businesswirechina.com/en/news/62386.html"
+  status: V
+  hook: "One laser feeds eight 200-gigabit lanes through thin-film lithium niobate."
+  chapter: h10
+  notes: "Vendor claims: 20 W fully retimed, about 20% below alternatives, one CW laser instead of 2-4 (R09 S20)."
+
+- id: h-2026-ofc-corpus
+  date: "2026-03"
+  date_precision: month
+  title: "OFC 2026: 56 of 677 extracted papers mention TFLN/LNOI; 4 of 24 postdeadline papers are LN/LT devices"
+  people: []
+  institution: "OFC 2026 (Optical Fiber Communication Conference)"
+  citation: "Research note R04 sec. 3 (author's OFC 2026 corpus)"
+  doi: null
+  url: null
+  status: derived
+  hook: "At the main optical-networking conference, one paper in twelve mentions thin-film lithium niobate."
+  chapter: h10
+  notes: "Counts from the author's extracted corpus of 677 OFC 2026 papers (R04). Session W1A 'Thin-Film LN/LT and Silicon Mach-Zehnder Modulators': 6 of 7 papers LN/LT. 56/677 = 8.3%, so 'one in twelve'."
+
+- id: h-2026-imec-double
+  date: "2026-03-26"
+  date_precision: day
+  title: "imec: TFLN and LiTaO3 modulators integrated on silicon photonics by micro-transfer printing"
+  people: []
+  institution: "imec"
+  citation: "imec article, 2026-03-26"
+  doi: null
+  url: "https://imec-int.com/en/articles/double-world-first-integrating-lithium-niobate-and-lithium-tantalate-modulators-silicon"
+  status: V
+  hook: "Both sibling crystals, printed onto the same silicon photonics platform."
+  chapter: h10
+  notes: "Institutional claim of a 'double world-first'; path to 400 Gb/s per lane per imec."
+
+- id: h-2026-hyperlight-series-c
+  date: "2026-06-18"
+  date_precision: day
+  title: "HyperLight raises USD 80 M Series C led by MediaTek"
+  people: []
+  institution: "HyperLight; MediaTek (lead); UMC Capital, Jabil, Foxconn and others"
+  citation: "Summit Partners news, 2026-06-18"
+  doi: null
+  url: "https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure"
+  status: V
+  hook: "Chip and electronics-assembly giants invest in thin-film lithium niobate for AI networks."
+  chapter: h10
+  notes: "Investor list per release (R09 S18)."
+
+- id: h-2026-starnault-circulator
+  date: "2026-09-11"
+  date_precision: day
+  title: "Integrated electro-optic circulator on TFLN for bidirectional fiber transmission"
+  people: ["Charles St-Arnault", "Charles Laperle", "Derek M. Kita", "Christian Reimer", "David V. Plant"]
+  institution: "McGill; Ciena; HyperLight (attribution)"
+  citation: "C. St-Arnault et al., Nat. Photonics (2026), online 2026-09-11"
+  doi: "10.1038/s41566-026-02008-9"
+  url: null
+  status: V
+  hook: "A one-way street for light, built from modulators instead of magnets."
+  chapter: h10
+  notes: "Abstract: cascaded traveling-wave MZMs; up to 37 dB isolation over O and C+L bands (14 THz); 400G per polarization bidirectional coherent transmission."
+
+- id: h-2026-genuine-3p2t
+  date: "2026-09"
+  date_precision: month
+  title: "3.2T OSFP module on a TFLN platform, up to 450 Gb/s per lane, shown at ECOC 2026"
+  people: []
+  institution: "Wuhan HG Genuine Optics"
+  citation: "EIN Presswire, 2026-09 (snippet)"
+  doi: null
+  url: "https://www.einnews.com/pr_news/943821166/genuine-optics-unveils-3-2t-osfp-module-with-450-gb-s-lanes-at-ecoc-2026"
+  status: S
+  hook: "Eight lanes of 400-plus gigabits each, through thin-film crystal, in one pluggable."
+  chapter: h10
+  notes: "Snippet only (R09 S67). Vendor claim."

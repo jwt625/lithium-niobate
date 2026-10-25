@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "All public records of this tensor across variants; spread is per component over all records (compare variant, conditions and frame before use).",
+    "tensor": "piezo-strain-d"
+  },
+  "records": [
+    "piezo-strain-d/cln/cti1999",
+    "piezo-strain-d/cln/kushibiki1999",
+    "piezo-strain-d/unspecified/weis1985-smithwelsh1971",
+    "piezo-strain-d/unspecified/weis1985-warner1967",
+    "piezo-strain-d/unspecified/weis1985-yamada1967"
+  ],
+  "spread": {
+    "d15": {
+      "max": 74,
+      "min": 66.3805,
+      "n_records": 5
+    },
+    "d22": {
+      "max": 21,
+      "min": 20.2979,
+      "n_records": 5
+    },
+    "d31": {
+      "max": -0.85,
+      "min": -1.03662,
+      "n_records": 5
+    },
+    "d33": {
+      "max": 16,
+      "min": 6.0,
+      "n_records": 5
+    }
+  }
+}

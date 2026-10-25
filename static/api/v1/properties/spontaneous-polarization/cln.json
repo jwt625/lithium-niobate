@@ -1,0 +1,78 @@
+{
+  "alternatives": [
+    {
+      "category": "ferroelectric",
+      "id": "spontaneous-polarization/cln/gopalan1998",
+      "kind": "scalar",
+      "name": "Spontaneous polarization",
+      "notes": "Abstract: insensitive to stoichiometry and H content.",
+      "property": "spontaneous-polarization",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "gopalan1998",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "P_s",
+      "uncertainty": {
+        "type": "stated",
+        "value": 5
+      },
+      "unit": {
+        "display": "uC/cm^2",
+        "ucum": "uC/cm2"
+      },
+      "value": 80,
+      "variant": "cln",
+      "variant_note": "abstract gives the value for CLN and near-SLN alike"
+    },
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "id": "spontaneous-polarization/cln/volk2008",
+      "kind": "scalar",
+      "name": "Spontaneous polarization",
+      "notes": "Mismatch with gopalan1998 (80 +- 5). volk2008 ref. [24] (APL 73, 3073) is a LiTaO3 paper per Crossref.",
+      "property": "spontaneous-polarization",
+      "provenance": {
+        "locator": "Table 1.1, p. 3 (refs. [22], [24])",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "P_s",
+      "unit": {
+        "display": "uC/cm^2",
+        "ucum": "uC/cm2"
+      },
+      "value": 71,
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "spontaneous-polarization",
+    "variant": "cln"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": {
+    "max": 80,
+    "min": 71,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "uC/cm2"
+  }
+}

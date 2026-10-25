@@ -1,0 +1,50 @@
+{
+  "citation": "Mian Zhang, Cheng Wang, Rebecca Cheng, et al., \"Monolithic ultra-high-Q lithium niobate microring resonator\", Optica 4, 1536, (2017) doi:10.1364/optica.4.001536",
+  "link": "https://doi.org/10.1364/optica.4.001536",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Wang",
+        "given": "Cheng"
+      },
+      {
+        "family": "Cheng",
+        "given": "Rebecca"
+      },
+      {
+        "family": "Shams-Ansari",
+        "given": "Amirhassan"
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.4.001536",
+    "id": "zhang2017",
+    "issue": "12",
+    "issued": "2017-12-18",
+    "page": "1536",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Monolithic ultra-high-Q lithium niobate microring resonator",
+    "type": "article-journal",
+    "volume": "4"
+  }
+}

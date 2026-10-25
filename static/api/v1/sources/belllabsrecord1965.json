@@ -1,0 +1,24 @@
+{
+  "citation": "\"Chinese translation of a Bell Laboratories Record item on the tunable parametric oscillator, Bell Lab. Rec. 43(7), 310-311 (1965)\", (1965) https://www.researching.cn/ArticlePdf/m00002/1965/2/10/1965-10-0031.pdf",
+  "link": "https://www.researching.cn/ArticlePdf/m00002/1965/2/10/1965-10-0031.pdf",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "belllabsrecord1965",
+    "issued": "1965",
+    "read": "PDF read; scan partly garbled",
+    "title": "Chinese translation of a Bell Laboratories Record item on the tunable parametric oscillator, Bell Lab. Rec. 43(7), 310-311 (1965)",
+    "type": "article-journal",
+    "url": "https://www.researching.cn/ArticlePdf/m00002/1965/2/10/1965-10-0031.pdf"
+  }
+}

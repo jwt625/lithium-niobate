@@ -1,0 +1,142 @@
+# Chapter 05 glossary. One-sentence definitions (L1); `detail` carries the expert note (L2/L3) with sources from refs.yaml.
+terms:
+  - term: Czochralski growth
+    abbr: Cz
+    definition: Growth of a single crystal by touching a seed to a melt and pulling it upward while rotating it, so the crystal freezes from the meniscus.
+    detail: "Reported LN parameters: 1-2 mm/h pull, 5-10 rpm, 153 mm x 110 mm boule [wang2020cryst via chen2021molecules; S]."
+  - term: Congruent composition
+    abbr: CLN
+    definition: The Li-deficient melt composition that freezes to a crystal of the same composition, about 48.4-48.6 mol% Li2O for LN.
+    detail: "48.45 mol% Li2O, [Li]/[Nb] = 0.94 [volk2008; P-comp]; range in use 48.38-48.6 mol% [R06]."
+  - term: Near-stoichiometric lithium niobate
+    abbr: SLN
+    definition: LN with a Li2O fraction close to 50 mol%, grown by double-crucible Czochralski or made by vapour transport equilibration.
+    detail: "Mole fraction 0.498 vs 0.484 for CLN; coercive field 4-5x lower than CLN [gopalan1998; P(abs)]."
+  - term: Vapour transport equilibration
+    abbr: VTE
+    definition: Changing the composition of a grown crystal by annealing it in contact with a Li-rich or Li-poor powder until Li diffuses to equilibrium.
+    detail: "Crystals equilibrated to the Li-rich phase boundary had excellent optical homogeneity [bordui1992; P(abs)]."
+  - term: Double-crucible Czochralski
+    definition: Czochralski growth in which an inner crucible holds the growth melt and powder is fed continuously so the melt composition stays fixed while growing off-congruent crystals.
+    detail: "Kitamura et al. 1992, with an automatic powder supply system [kitamura1992; P(title)]."
+  - term: MgO doping
+    definition: Adding magnesium oxide to the melt to raise LN's resistance to photorefractive damage.
+    detail: "Threshold 4.5 at.% MgO in congruent LN; photoconductivity rises 100x [bryan1984; P(abs)]."
+  - term: Single-domain poling (boule)
+    definition: Making the spontaneous polarization point the same way throughout a grown crystal.
+    detail: "Reported by Nassau et al. 1966 [nassau1966b; P(title)]; procedure values unverified here (open-questions Q3)."
+  - term: x-cut, y-cut, z-cut
+    definition: Wafer named after the crystal axis normal to its surface.
+    detail: "x-cut TFLN puts Z in plane so TE modes use r33 [wang2018oe; P]."
+  - term: 128 deg Y-X cut
+    definition: Y-cut rotated by 128 degrees about X with waves propagating along X, the standard LN cut for surface acoustic wave filters.
+    detail: "Optimum rotated Y-cut reported in 1976 [shibayama1976; P(title)]."
+  - term: Wafer flat
+    definition: A straight edge ground on a wafer whose position encodes the crystal orientation.
+    detail: "Flat lengths and orientations are vendor-specific; not sourced here (open-questions Q4)."
+  - term: Titanium indiffusion
+    abbr: Ti:LN
+    definition: Making a waveguide by depositing titanium stripes on a wafer and diffusing them in at about 1000 C, which raises the refractive index locally.
+    detail: "80 nm Ti, 7 um wide, 1060 C for 9 h on z-cut [luo2019sciadv; P]."
+  - term: Proton exchange
+    abbr: PE
+    definition: Replacing lithium ions near the surface with protons in a hot acid melt, which raises the extraordinary index.
+    detail: "Benzoic acid 200-250 C; delta n_e = +0.12, step profile [jackel1982; P(abs)]. APE adds an anneal; RPE adds a reverse exchange that buries the guide [langrock2007; P]."
+  - term: Lithium niobate on insulator
+    abbr: LNOI
+    definition: A sub-micrometre single-crystal LN film bonded onto a low-index layer such as SiO2 on a handle wafer.
+    detail: "Commercial films 300-900 nm on 3- to 8-inch wafers [R09:S6]."
+  - term: Thin-film lithium niobate
+    abbr: TFLN
+    definition: LN film thin enough (typically 300-900 nm) to confine light in submicrometre waveguides; used interchangeably with LNOI.
+  - term: Crystal ion slicing
+    abbr: CIS
+    definition: Separating a thin crystal layer from a wafer along a plane weakened by implanted light ions.
+    detail: "First shown for LN in 1998 with 9 um films [levy1998; P(abs)]."
+  - term: Smart Cut
+    definition: The implant, bond, and split process family introduced for silicon-on-insulator wafers.
+    detail: "[bruel1995; P(title)]; adapted to LN, LT, and piezoelectric-on-insulator substrates."
+  - term: Projected range
+    abbr: Rp
+    definition: Mean depth at which implanted ions come to rest, set mainly by ion species and energy.
+    detail: "He+ at 195 keV peaks at 0.68 um in LN [guarino2007; P]; full range curves need SRIM [ziegler2010] (open-questions Q6)."
+  - term: Fluence
+    definition: Number of implanted ions per unit area, in cm^-2.
+    detail: "4 x 10^16 cm^-2 He+ [guarino2007; P]; 7.0 x 10^16 cm^-2 H+ for LiTaO3 [wang2024nature; P]."
+  - term: Plasma-activated direct bonding
+    definition: Joining two polished wafers without adhesive after a plasma treatment makes their surfaces bond at room temperature.
+    detail: "RCA clean, N2 plasma, room-temperature bond, 150 C 2 h anneal [you2019; P]."
+  - term: BCB
+    definition: Benzocyclobutene, a polymer adhesive used to bond early LN films; it limits later annealing temperatures.
+    detail: "Maximum 320 C, below the about 800 C needed to restore r33 fully [guarino2007; P]."
+  - term: Splitting anneal
+    definition: The heating step that makes implanted gas coalesce in a buried plane until the film separates from the donor.
+    detail: "About 230 C after a below-200 C strengthening anneal [er_smartcut2022; P (arXiv)]."
+  - term: Chemical mechanical polishing
+    abbr: CMP
+    definition: Polishing with a rotating pad and abrasive, chemically active slurry to remove material and flatten a surface.
+  - term: Preston equation
+    definition: Empirical CMP law that removal rate is proportional to applied pressure times relative velocity, dz/dt = Kp P v.
+    detail: "Attributed to Preston 1927 [preston1927; U bibliographic]; no Kp for LN sourced."
+  - term: PLACE
+    definition: Photolithography-assisted chemo-mechanical etching, in which a patterned Cr mask protects LN while CMP removes the exposed film.
+    detail: "Cr 600 nm, fs-laser patterned; anneal 450 C 2 h; Q_i 4.04 x 10^7 [li2023oe; P]."
+  - term: Electron-beam lithography
+    abbr: EBL
+    definition: Writing a pattern into resist point by point with a focused electron beam.
+    detail: "Write time t = dose x area / current; 7600 uC/cm^2 at 100 nA takes 21.1 h per cm^2 (derived from [kaufmann2023])."
+  - term: HSQ
+    definition: Hydrogen silsesquioxane, a negative EBL resist that becomes silicon oxide and serves as an etch mask or cladding.
+    detail: "FOx-16, about 500 nm, 85 deg resist sidewall after development [kaufmann2023; P]."
+  - term: DUV stepper
+    definition: Optical lithography tool that projects a reduced reticle image with deep-ultraviolet light and steps it across the wafer field by field.
+    detail: "248 nm; 22 mm x 22 mm fields on 4- and 6-inch TFLN wafers [luke2020; P]."
+  - term: Hard mask
+    definition: An inorganic layer patterned first and then used to protect material during a harsher etch.
+    detail: "SiO2, a-Si, Cr, HSQ, and DLC have been used on LN (manuscript 5.7)."
+  - term: Diamond-like carbon
+    abbr: DLC
+    definition: Hard amorphous carbon film used as an etch mask that erodes slowly under argon ions.
+    detail: "300 nm PECVD from CH4; LN:DLC selectivity up to 3 [li2023nc; P]."
+  - term: Argon ion milling / ion beam etching
+    abbr: IBE
+    definition: Physical removal of material by a directed beam of argon ions.
+  - term: ICP-RIE
+    definition: Inductively coupled plasma reactive ion etching, where a coil sustains a dense plasma and a separate bias sets ion energy.
+    detail: "Ar 10 sccm, 1 mTorr, 300 W, 600 V gives 24 nm/min on LN [kaufmann2023; P]."
+  - term: Redeposition
+    definition: Etched material that lands back on the sidewalls or mask during physical etching.
+    detail: "Removed with SC-1 (NH4OH:H2O2:H2O = 1:1:5) [li2023nc; P] or avoided by tuning bias and pressure [kaufmann2023; P]."
+  - term: Etch selectivity
+    definition: Ratio of the etch rate of the target material to that of the mask.
+  - term: Sidewall angle
+    definition: Angle between an etched waveguide wall and the substrate plane; 90 deg is vertical.
+    detail: "About 60 deg typical for SiO2-masked ridges, 75 deg with Cr, 80 deg with DLC (manuscript 5.7)."
+  - term: PECVD
+    definition: Plasma-enhanced chemical vapour deposition, used for SiO2 masks and cladding at a few hundred degrees C.
+    detail: "800 nm at 300 C [shamsansari2022; P]."
+  - term: ICPCVD
+    definition: Chemical vapour deposition in an inductively coupled plasma, allowing films near room temperature.
+    detail: "800 nm SiO2 at 80 C preserved the benefit of annealing [shamsansari2022; P]."
+  - term: Lift-off
+    definition: Patterning metal by evaporating it over a resist pattern and dissolving the resist, leaving metal only where the resist was open.
+  - term: Periodic poling
+    definition: Inverting the ferroelectric polarization in a periodic pattern to quasi-phase-match nonlinear optical processes.
+    detail: "Wafer-scale on 4-inch TFLN, periods 4.38-5.51 um [chen2024materials; P]."
+  - term: Coercive field
+    abbr: Ec
+    definition: Electric field needed to reverse the spontaneous polarization.
+    detail: "21 kV/mm for congruent bulk LN [langrock2007; P], [volk2008; P-comp]."
+  - term: Duty cycle (poling)
+    definition: Fraction of each poling period occupied by the inverted domain; 50% maximizes first-order QPM efficiency.
+  - term: Edge exclusion
+    definition: Rim of a wafer left out of measurement or devices because film quality or handling degrades there.
+    detail: "8 mm on 4-inch TFLN [luke2020; P]."
+  - term: Inverse taper edge coupler
+    definition: Waveguide that narrows toward the chip edge so the mode expands to match a fiber.
+    detail: "Below 1.7 dB/facet with a bilayer taper [he2019ol; P(abs)]."
+  - term: Photonic wire bonding
+    definition: Connecting chips with 3D-printed polymer waveguides written in place.
+    detail: "Used to join amplifiers to TFLN circuits [franken2025; P(abs)]."
+  - term: Analog (provenance)
+    definition: A reported value taken from a paper other than the one anchoring a process flow, or from LiTaO3, and marked as such.

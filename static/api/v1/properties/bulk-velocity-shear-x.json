@@ -1,0 +1,95 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk shear velocity along X (resonance) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-x.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-x.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk shear velocity along X (resonance)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk shear velocity along X (resonance)",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-shear-x.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "resonance, (110) plate",
+        "name": "v_S,X (cln)",
+        "unitText": "m/s",
+        "value": 4750.67
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "bulk-velocity-shear-x"
+  },
+  "records": [
+    {
+      "category": "acoustic",
+      "conditions": {
+        "method": "resonance, (110) plate"
+      },
+      "default": true,
+      "id": "bulk-velocity-shear-x/cln/kushibiki1999",
+      "kind": "scalar",
+      "name": "Bulk shear velocity along X (resonance)",
+      "property": "bulk-velocity-shear-x",
+      "provenance": {
+        "locator": "Table II",
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "v_S,X",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.59
+      },
+      "unit": {
+        "display": "m/s",
+        "ucum": "m/s"
+      },
+      "value": 4750.67,
+      "variant": "cln"
+    }
+  ]
+}

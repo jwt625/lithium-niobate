@@ -1,0 +1,28 @@
+# LNOI stack (scene src/lib/scenes/lnoi-stack.ts): LN film / thermal SiO2 / Si handle with thin-film interference colour.
+# Same field vocabulary as crystal.toml. Lengths in the unit given per row.
+
+[meta]
+id = "lnoi"
+date = "2026-10-25"
+scene_unit = "mm"
+
+[stack]
+wafer_diameter = { value = 100, unit = "mm", status = "reported", source = "luke2020", locator = "4-inch x-cut LNOI (process-flow.yaml scales: wafer)", analog = false }
+film_default = { value = 600, unit = "nm", status = "reported", source = "luke2020", locator = "Sec. III (process-flow.yaml s11 target_film)", analog = false }
+box = { value = 4700, unit = "nm", status = "reported", source = "luke2020", locator = "Sec. III (process-flow.yaml s07 thermal_oxide; li2023nc also 4.7 um)", analog = false }
+handle_si = { value = 500, unit = "um", status = "reported", source = "luke2020", locator = "Sec. III (process-flow.yaml s07 handle_si_thickness_ridge)", analog = false }
+film_range = { value = [100, 1000], unit = "nm", status = "template", note = "control range; spans the 300 nm (li2026aa) to 900 nm films in the atlas (R05 A04); not a data claim" }
+box_range = { value = [1000, 5000], unit = "nm", status = "template", note = "control range; covers the 2 to 3 um buffers (R05 A04) and 4.7 um (luke2020)" }
+
+[optics]
+ln_model = { value = "zelmon1997-cln-o / -e", unit = "", status = "reported", source = "zelmon1997", locator = "src/lib/physics/constants.ts (P-db, 0.4-5 um, 21 C)", analog = false }
+sio2_model = { value = "Malitson 1965 Sellmeier", unit = "", status = "reported", source = "malitson1965", locator = "refractiveindex.info main/SiO2/nk/Malitson.yml (CC0), formula 1, 0.21-6.7 um", analog = true, note = "fused-silica index used for thermal SiO2 (approximation)" }
+si_model = { value = "Green 2008 tabulated n, k, 300 K", unit = "", status = "reported", source = "green2008", locator = "refractiveindex.info main/Si/nk/Green-2008.yml (CC0), rows 390-800 nm", analog = false }
+spectrum = { value = [400, 780, 2], unit = "nm", status = "template", note = "integration grid; 400 nm is the lower limit of the Zelmon fit; 2 nm resolves the 4.7 um BOX fringes (period about 12 nm at 400 nm)" }
+illuminant = { value = "equal energy, white-normalized", unit = "", status = "template", note = "site convention for interference colours (DevLog-003b sec. 3.2): R = 1 maps to sRGB white" }
+handle_back = { value = "semi-infinite", unit = "", status = "template", note = "back-side reflection of the 500 um Si handle ignored (absorbing below about 700 nm; rough back side assumed)" }
+
+[display]
+illustrative_heights = { value = { film = 0.06, box = 0.10, si = 0.30 }, unit = "fraction of wafer radius", status = "template", note = "frozen illustrative z-map; true scale uses the stack values above" }
+cutaway = { value = 90, unit = "deg", status = "template", note = "quarter of the wafer removed so the stack edge is visible" }
+film_wedge_range = { value = [-300, 300], unit = "nm", status = "template", note = "optional linear thickness gradient across the wafer for display of colour bands; not a measured map (luke2020 reports only a standard deviation)" }

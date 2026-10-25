@@ -1,0 +1,37 @@
+{
+  "citation": "O. Mys, et al., \"Photoelastic coefficients of LiNbO3 (Mys et al. 2015, quoting Krupych et al. 2014)\", Applied Optics 54, 8176 (2015), (2015) arXiv:1508.01075",
+  "link": "https://arxiv.org/abs/1508.01075",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "preprint"
+    },
+    "arxiv": "1508.01075",
+    "author": [
+      {
+        "family": "Mys",
+        "given": "O."
+      },
+      {
+        "literal": "et al."
+      }
+    ],
+    "container_title": "Applied Optics 54, 8176 (2015)",
+    "id": "mys2015",
+    "issued": "2015",
+    "notes": "Title field is a placeholder description.",
+    "read": "arXiv",
+    "title": "Photoelastic coefficients of LiNbO3 (Mys et al. 2015, quoting Krupych et al. 2014)",
+    "type": "preprint"
+  }
+}

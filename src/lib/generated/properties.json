@@ -1,0 +1,3723 @@
+[
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "o and e polarization, 390-3800 nm"
+    },
+    "default": true,
+    "id": "absorption-coefficient/cln/leidinger2015",
+    "kind": "scalar",
+    "max": 2,
+    "min": 0.0001,
+    "name": "Absorption coefficient in the transparent range",
+    "notes": "Range over 390-3800 nm ('< 1.0e-4 to 2 cm^-1'); the value at 1550 nm is in the paper and was not read. 1.0e-4 cm^-1 = 0.043 dB/m.",
+    "property": "absorption-coefficient",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "leidinger2015",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha",
+    "unit": {
+      "display": "cm^-1",
+      "ucum": "/cm"
+    },
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1064.0
+    },
+    "default": true,
+    "id": "birefringence/cln/zelmon1997-1064nm",
+    "kind": "scalar",
+    "name": "Birefringence n_e - n_o",
+    "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+    "property": "birefringence",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-e minus zelmon1997-cln-o at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e - n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": -0.0766,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1550.0
+    },
+    "default": true,
+    "id": "birefringence/cln/zelmon1997-1550nm",
+    "kind": "scalar",
+    "name": "Birefringence n_e - n_o",
+    "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+    "property": "birefringence",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-e minus zelmon1997-cln-o at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e - n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": -0.0736,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 632.8
+    },
+    "default": true,
+    "id": "birefringence/cln/zelmon1997-632.8nm",
+    "kind": "scalar",
+    "name": "Birefringence n_e - n_o",
+    "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+    "property": "birefringence",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-e minus zelmon1997-cln-o at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e - n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": -0.0842,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1064.0
+    },
+    "default": true,
+    "id": "birefringence/mgo5-cln/zelmon1997-1064nm",
+    "kind": "scalar",
+    "name": "Birefringence n_e - n_o",
+    "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+    "property": "birefringence",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-e minus zelmon1997-mgo5-o at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e - n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": -0.0815,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1550.0
+    },
+    "default": true,
+    "id": "birefringence/mgo5-cln/zelmon1997-1550nm",
+    "kind": "scalar",
+    "name": "Birefringence n_e - n_o",
+    "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+    "property": "birefringence",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-e minus zelmon1997-mgo5-o at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e - n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": -0.0782,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 632.8
+    },
+    "default": true,
+    "id": "birefringence/mgo5-cln/zelmon1997-632.8nm",
+    "kind": "scalar",
+    "name": "Birefringence n_e - n_o",
+    "notes": "Negative: LiNbO3 is negative uniaxial (n_e < n_o).",
+    "property": "birefringence",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-e minus zelmon1997-mgo5-o at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e - n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": -0.0897,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "acoustic",
+    "conditions": {
+      "method": "plane-wave ultrasonic, (110) plate"
+    },
+    "default": true,
+    "id": "bulk-velocity-longitudinal-x/cln/kushibiki1999",
+    "kind": "scalar",
+    "name": "Bulk longitudinal velocity along X",
+    "property": "bulk-velocity-longitudinal-x",
+    "provenance": {
+      "locator": "Table II",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "v_L,X",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.3
+    },
+    "unit": {
+      "display": "m/s",
+      "ucum": "m/s"
+    },
+    "value": 6544.53,
+    "variant": "cln"
+  },
+  {
+    "category": "acoustic",
+    "conditions": {
+      "method": "plane-wave ultrasonic, (300) plate"
+    },
+    "default": true,
+    "id": "bulk-velocity-longitudinal-y/cln/kushibiki1999",
+    "kind": "scalar",
+    "name": "Bulk longitudinal velocity along Y",
+    "property": "bulk-velocity-longitudinal-y",
+    "provenance": {
+      "locator": "Table II",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "v_L,Y",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.26
+    },
+    "unit": {
+      "display": "m/s",
+      "ucum": "m/s"
+    },
+    "value": 6806.55,
+    "variant": "cln"
+  },
+  {
+    "category": "acoustic",
+    "conditions": {
+      "method": "plane-wave ultrasonic, (006) plate"
+    },
+    "default": true,
+    "id": "bulk-velocity-longitudinal-z/cln/kushibiki1999",
+    "kind": "scalar",
+    "name": "Bulk longitudinal velocity along Z",
+    "notes": "Reproduced to 0.4 m/s by the piezo-stiffened velocity from the kushibiki1999 constants (consistency check in the tensor records).",
+    "property": "bulk-velocity-longitudinal-z",
+    "provenance": {
+      "locator": "Table II",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "v_L,Z",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.32
+    },
+    "unit": {
+      "display": "m/s",
+      "ucum": "m/s"
+    },
+    "value": 7328.2,
+    "variant": "cln",
+    "variant_note": "SAW-grade congruent"
+  },
+  {
+    "category": "acoustic",
+    "conditions": {
+      "method": "resonance, (110) plate"
+    },
+    "default": true,
+    "id": "bulk-velocity-shear-x/cln/kushibiki1999",
+    "kind": "scalar",
+    "name": "Bulk shear velocity along X (resonance)",
+    "property": "bulk-velocity-shear-x",
+    "provenance": {
+      "locator": "Table II",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "v_S,X",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.59
+    },
+    "unit": {
+      "display": "m/s",
+      "ucum": "m/s"
+    },
+    "value": 4750.67,
+    "variant": "cln"
+  },
+  {
+    "category": "acoustic",
+    "conditions": {
+      "method": "plane-wave ultrasonic, (300) plate"
+    },
+    "default": true,
+    "id": "bulk-velocity-shear-y/cln/kushibiki1999",
+    "kind": "scalar",
+    "name": "Bulk shear velocity along Y",
+    "property": "bulk-velocity-shear-y",
+    "provenance": {
+      "locator": "Table II",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "v_S,Y",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.21
+    },
+    "unit": {
+      "display": "m/s",
+      "ucum": "m/s"
+    },
+    "value": 3940.49,
+    "variant": "cln"
+  },
+  {
+    "category": "acoustic",
+    "conditions": {
+      "method": "plane-wave ultrasonic, (006) plate"
+    },
+    "default": true,
+    "id": "bulk-velocity-shear-z/cln/kushibiki1999",
+    "kind": "scalar",
+    "name": "Bulk shear velocity along Z",
+    "property": "bulk-velocity-shear-z",
+    "provenance": {
+      "locator": "Table II",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "v_S,Z",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.23
+    },
+    "unit": {
+      "display": "m/s",
+      "ucum": "m/s"
+    },
+    "value": 3590.41,
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "id": "coercive-field-ratio-cln-sln/cln/gopalan1998",
+    "kind": "scalar",
+    "max": 5,
+    "min": 4,
+    "name": "Coercive field ratio E_c(CLN)/E_c(SLN)",
+    "property": "coercive-field-ratio-cln-sln",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "gopalan1998",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "-",
+      "ucum": "1"
+    },
+    "variant": "cln",
+    "variant_note": "CLN (C = 0.484) vs near-SLN (C = 0.498)"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "coercive-field-ratio-cln-sln/cln/volk2008",
+    "kind": "scalar",
+    "max": 3.5,
+    "min": 3.2,
+    "name": "Coercive field ratio E_c(CLN)/E_c(SLN)",
+    "notes": "Differs from gopalan1998 (4-5); the sources measured different crystals.",
+    "property": "coercive-field-ratio-cln-sln",
+    "provenance": {
+      "derivation": "ratio of the volk2008 Table 7.1 CLN and SLN values; p. 184 states a factor of three (ref. Chen et al. 2001)",
+      "locator": "Table 7.1, p. 185; p. 184 ('factor of three', ref. Chen et al. 2001)",
+      "source_id": "volk2008",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "-",
+      "ucum": "1"
+    },
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "coercive-field/cln/volk2008",
+    "kind": "scalar",
+    "name": "Coercive field",
+    "property": "coercive-field",
+    "provenance": {
+      "locator": "Table 7.1, p. 185 (210 kV/cm, literature average); p. 118 (210-220 kV/cm)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_c",
+    "unit": {
+      "display": "kV/mm",
+      "ucum": "kV/mm"
+    },
+    "value": 21,
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "coercive-field/mgo1-sln/volk2008",
+    "kind": "scalar",
+    "name": "Coercive field",
+    "property": "coercive-field",
+    "provenance": {
+      "locator": "Table 7.1, p. 185 (25 kV/cm)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_c",
+    "unit": {
+      "display": "kV/mm",
+      "ucum": "kV/mm"
+    },
+    "value": 2.5,
+    "variant": "mgo1-sln"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "coercive-field/mgo5-cln/volk2008",
+    "kind": "scalar",
+    "max": 6.8,
+    "min": 6.0,
+    "name": "Coercive field",
+    "notes": "Individual reports in the text (p. 184): switching at 4.45 kV/mm (0.5 mm wafer, Kuroda et al.); poling with 2.5 kV/mm pulses (4.8% MgO, 0.3 mm, Mizuuchi et al.).",
+    "property": "coercive-field",
+    "provenance": {
+      "locator": "Table 7.1, p. 185 (60-68 kV/cm, table average)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_c",
+    "unit": {
+      "display": "kV/mm",
+      "ucum": "kV/mm"
+    },
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "coercive-field/sln/volk2008",
+    "kind": "scalar",
+    "max": 6.5,
+    "min": 6.0,
+    "name": "Coercive field",
+    "notes": "Conflicts within volk2008: p. 118 gives about 21-25 kV/cm (2.1-2.5 kV/mm) for near-stoichiometric crystals, citing gopalan1998.",
+    "property": "coercive-field",
+    "provenance": {
+      "locator": "Table 7.1, p. 185 (60-65 kV/cm)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_c",
+    "unit": {
+      "display": "kV/mm",
+      "ucum": "kV/mm"
+    },
+    "variant": "sln"
+  },
+  {
+    "category": "structure",
+    "id": "congruent-composition/cln/cti1999",
+    "kind": "scalar",
+    "name": "Congruent composition",
+    "property": "congruent-composition",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.01
+    },
+    "unit": {
+      "display": "mol% Li2O",
+      "ucum": "%"
+    },
+    "value": 48.38,
+    "variant": "cln"
+  },
+  {
+    "category": "structure",
+    "default": true,
+    "id": "congruent-composition/cln/volk2008",
+    "kind": "scalar",
+    "name": "Congruent composition",
+    "notes": "volk2008 also gives [Li]/[Nb] = 0.94 (p. 9) and R = 0.4845 (p. 5); its UV-edge formula uses 48.38 mol% (p. 142).",
+    "property": "congruent-composition",
+    "provenance": {
+      "locator": "pp. 4-5, 9",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "mol% Li2O",
+      "ucum": "%"
+    },
+    "value": 48.45,
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "curie-temperature-vs-composition/unspecified/volk2008-bordui1992",
+    "kind": "scalar",
+    "name": "Curie temperature vs crystal composition (linear fit)",
+    "notes": "Gives 1143.2 / 1145.9 / 1206.5 C at 48.38 / 48.45 / 50.0 mol% (computed).",
+    "property": "curie-temperature-vs-composition",
+    "provenance": {
+      "locator": "Eq. (6.3), p. 140",
+      "original_reference": "Bordui et al., J. Appl. Phys. 71, 875 (1992)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value_text": "T_C = 39.064 c - 746.73 (T_C in C, c in mol% Li2O)",
+    "variant": "unspecified"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "method": "DTA / dielectric"
+    },
+    "default": true,
+    "id": "curie-temperature-vs-composition/unspecified/volk2008-iyi1992",
+    "kind": "scalar",
+    "name": "Curie temperature vs crystal composition (linear fit)",
+    "notes": "Gives 1138.7 / 1141.5 / 1202.3 C at 48.38 / 48.45 / 50.0 mol% (computed).",
+    "property": "curie-temperature-vs-composition",
+    "provenance": {
+      "locator": "Eq. (6.2), p. 140",
+      "original_reference": "Iyi et al., J. Solid State Chem. 101, 340 (1992)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value_text": "T_C = 39.26 c - 760.67 (T_C in C, c in mol% Li2O)",
+    "variant": "unspecified"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "curie-temperature/cln/cti1999",
+    "kind": "scalar",
+    "name": "Curie temperature",
+    "notes": "Agrees within 1 C with the Bordui composition fit at 48.38 mol% (1143.2 C, computed ).",
+    "property": "curie-temperature",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_C",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.7
+    },
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value": 1142.3,
+    "variant": "cln",
+    "variant_note": "48.38 mol% Li2O"
+  },
+  {
+    "category": "ferroelectric",
+    "default": true,
+    "id": "curie-temperature/cln/volk2008",
+    "kind": "scalar",
+    "name": "Curie temperature",
+    "property": "curie-temperature",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nikogosyan 2005",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_C",
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value": 1140,
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "default": true,
+    "id": "curie-temperature/sln/volk2008",
+    "kind": "scalar",
+    "name": "Curie temperature",
+    "property": "curie-temperature",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Chen et al., Opt. Commun. 188, 359 (2001)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_C",
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value": 1206,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "curie-temperature/sln/wong2002",
+    "kind": "scalar",
+    "name": "Curie temperature",
+    "notes": "Quoted from wong2002 by a secondary web page (de.wikipedia); wong2002 not read. Lies 7 C above volk2008 and above both composition fits at 50.0 mol% (1202.3 and 1206.5 C).",
+    "property": "curie-temperature",
+    "provenance": {
+      "source_id": "wong2002",
+      "status": "S",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_C",
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value": 1213,
+    "variant": "sln"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "method": "neutron powder diffraction"
+    },
+    "id": "curie-temperature/unspecified/boysen1994",
+    "kind": "scalar",
+    "name": "Curie temperature",
+    "notes": "Abstract gives 'about 1430 K' (about 1157 C); composition not seen.",
+    "property": "curie-temperature",
+    "provenance": {
+      "source_id": "boysen1994",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_C",
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "K",
+      "ucum": "K"
+    },
+    "value": 1430,
+    "variant": "unspecified"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "curie-temperature/unspecified/weis1985",
+    "kind": "scalar",
+    "name": "Curie temperature",
+    "notes": "weis1985 p. 192 text says 'below 1210 C' without a reference.",
+    "property": "curie-temperature",
+    "provenance": {
+      "locator": "Table 1, p. 197",
+      "original_reference": "Warner, Onoe, Coquin, JASA 42, 1223 (1967)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_C",
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value": 1165,
+    "variant": "unspecified",
+    "variant_note": "Warner et al. 1967 sample"
+  },
+  {
+    "category": "electrical",
+    "conditions": {
+      "temperature_text": "200-1000 C"
+    },
+    "default": true,
+    "id": "dark-conductivity-activation-energy/cln/volk2008",
+    "kind": "scalar",
+    "name": "Activation energy of dark (protonic) conductivity",
+    "property": "dark-conductivity-activation-energy",
+    "provenance": {
+      "locator": "Sec. 3.2.1, pp. 59-60",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "eV",
+      "ucum": "eV"
+    },
+    "value": 1.1,
+    "variant": "cln"
+  },
+  {
+    "category": "electrical",
+    "conditions": {
+      "temperature_text": "room temperature, extrapolated from high temperature"
+    },
+    "default": true,
+    "id": "dark-conductivity/cln/volk2008",
+    "kind": "scalar",
+    "max": 1e-14,
+    "min": 1e-16,
+    "name": "Dark conductivity",
+    "notes": "Protonic conduction; activation energy about 1.1 eV (200-1000 C). 8-10 orders of magnitude below the 1.0e-6 S/m floor fitted in bouchy2022.",
+    "property": "dark-conductivity",
+    "provenance": {
+      "locator": "Sec. 3.2.1, pp. 59-60 (1e-16 to 1.0e-18 Ohm^-1 cm^-1)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "sigma_d",
+    "unit": {
+      "display": "S/m",
+      "ucum": "S/m"
+    },
+    "variant": "cln",
+    "variant_note": "undoped or slightly doped CLN"
+  },
+  {
+    "category": "structure",
+    "id": "density/cln/cti1999",
+    "kind": "scalar",
+    "name": "Density",
+    "property": "density",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "rho",
+    "unit": {
+      "display": "kg/m^3",
+      "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "ucum": "kg/m3"
+    },
+    "value": 4650,
+    "variant": "cln"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "method": "Archimedes"
+    },
+    "default": true,
+    "id": "density/cln/kushibiki1999",
+    "kind": "scalar",
+    "name": "Density",
+    "property": "density",
+    "provenance": {
+      "locator": "Table IV",
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "rho",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.2
+    },
+    "unit": {
+      "display": "kg/m^3",
+      "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "ucum": "kg/m3"
+    },
+    "value": 4642.8,
+    "variant": "cln",
+    "variant_note": "SAW-grade congruent"
+  },
+  {
+    "category": "structure",
+    "id": "density/cln/volk2008",
+    "kind": "scalar",
+    "name": "Density",
+    "notes": "Unit misprinted 'g cm^-1' in the source table.",
+    "property": "density",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Takanaga, Hirohashi, Kushibiki, Jpn. J. Appl. Phys. 38, 3201 (1999)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "rho",
+    "unit": {
+      "display": "kg/m^3",
+      "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "ucum": "kg/m3"
+    },
+    "value": 4647,
+    "variant": "cln"
+  },
+  {
+    "category": "structure",
+    "default": true,
+    "id": "density/sln/volk2008",
+    "kind": "scalar",
+    "name": "Density",
+    "notes": "SLN is lighter than CLN in the same compilation (4635 vs 4647 kg/m^3).",
+    "property": "density",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Takanaga, Hirohashi, Kushibiki, Jpn. J. Appl. Phys. 38, 3201 (1999)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "rho",
+    "unit": {
+      "display": "kg/m^3",
+      "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "ucum": "kg/m3"
+    },
+    "value": 4635,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "temperature_C": 30
+    },
+    "id": "density/unspecified/ogi2002",
+    "kind": "scalar",
+    "name": "Density",
+    "notes": "ogi2002 also quotes a handbook value of 4633 kg/m^3.",
+    "property": "density",
+    "provenance": {
+      "source_id": "ogi2002",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "rho",
+    "unit": {
+      "display": "kg/m^3",
+      "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "ucum": "kg/m3"
+    },
+    "value": 4636,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "id": "density/unspecified/weis1985",
+    "kind": "scalar",
+    "name": "Density",
+    "notes": "Used in a cell-volume calculation without a measurement reference; weis1985 p. 201 uses 4.7e3 kg/m^3 in acousto-optic figures of merit.",
+    "property": "density",
+    "provenance": {
+      "locator": "p. 194",
+      "source_id": "weis1985",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "rho",
+    "unit": {
+      "display": "kg/m^3",
+      "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+      "ucum": "kg/m3"
+    },
+    "value": 4628,
+    "variant": "unspecified"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 1064
+    },
+    "id": "dne-dt/cln/jundt1997-1064nm",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, extraordinary",
+    "property": "dne-dt",
+    "provenance": {
+      "derivation": "derivative of the Jundt 1997 n_e(T) Sellmeier at 25 C; coefficients status S (via a secondary source)",
+      "source_id": "jundt1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "dn_e/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 4.01e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 1550
+    },
+    "default": true,
+    "id": "dne-dt/cln/jundt1997-1550nm",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, extraordinary",
+    "property": "dne-dt",
+    "provenance": {
+      "derivation": "derivative of the Jundt 1997 n_e(T) Sellmeier at 25 C; coefficients status S (via a secondary source)",
+      "source_id": "jundt1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "dn_e/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 3.75e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 633
+    },
+    "id": "dne-dt/cln/jundt1997-633nm",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, extraordinary",
+    "property": "dne-dt",
+    "provenance": {
+      "derivation": "derivative of the Jundt 1997 n_e(T) Sellmeier at 25 C; coefficients status S (via a secondary source)",
+      "source_id": "jundt1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "dn_e/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 4.89e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": null,
+      "temperature_text": "300 K",
+      "wavelength_nm": 1523
+    },
+    "id": "dne-dt/cln/moretti2005-1523nm",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, extraordinary",
+    "notes": "Quoted by zhu2021; moretti2005's own table not read.",
+    "property": "dne-dt",
+    "provenance": {
+      "source_id": "moretti2005",
+      "status": "S",
+      "transcribed": "2026-10-25",
+      "via": "zhu2021"
+    },
+    "public": true,
+    "symbol": "dn_e/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 3.34e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "300 K",
+      "wavelength_nm": 632
+    },
+    "id": "dne-dt/cln/moretti2005-632nm-300k",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, extraordinary",
+    "notes": "16% below the Jundt-derived value at 633 nm.",
+    "property": "dne-dt",
+    "provenance": {
+      "derivation": "dn_e/dT = (-2.6 + 22.4e-3 T) x 1.0e-5 per K evaluated at T = 300 K (T in K inferred); formula status S",
+      "locator": "schwesyg2011 Eqs. (2.26)-(2.27)",
+      "source_id": "moretti2005",
+      "status": "C",
+      "transcribed": "2026-10-25",
+      "via": "schwesyg2011"
+    },
+    "public": true,
+    "symbol": "dn_e/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 4.12e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 1064
+    },
+    "id": "dno-dt/cln/cti1999-1064nm",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, ordinary",
+    "property": "dno-dt",
+    "provenance": {
+      "derivation": "derivative of the cti1999 vendor Sellmeier (status V) at 25 C",
+      "source_id": "cti1999",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "dn_o/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 5.4e-06,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 1550
+    },
+    "id": "dno-dt/cln/cti1999-1550nm",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, ordinary",
+    "property": "dno-dt",
+    "provenance": {
+      "derivation": "derivative of the cti1999 vendor Sellmeier (status V) at 25 C",
+      "source_id": "cti1999",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "dn_o/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 4.1e-06,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 633
+    },
+    "id": "dno-dt/cln/cti1999-633nm",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, ordinary",
+    "property": "dno-dt",
+    "provenance": {
+      "derivation": "derivative of the cti1999 vendor Sellmeier (status V) at 25 C",
+      "source_id": "cti1999",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "dn_o/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 9.4e-06,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "300 K",
+      "wavelength_nm": 632
+    },
+    "id": "dno-dt/cln/moretti2005-632nm-300k",
+    "kind": "scalar",
+    "name": "Thermo-optic coefficient, ordinary",
+    "notes": "2.5x below the value derived from the cti1999 Sellmeier.",
+    "property": "dno-dt",
+    "provenance": {
+      "derivation": "dn_o/dT = (-1.7 + 6.9e-3 T) x 1.0e-5 per K evaluated at T = 300 K (T in K inferred); formula status S",
+      "locator": "schwesyg2011 Eqs. (2.26)-(2.27)",
+      "source_id": "moretti2005",
+      "status": "C",
+      "transcribed": "2026-10-25",
+      "via": "schwesyg2011"
+    },
+    "public": true,
+    "symbol": "dn_o/dT",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 3.7e-06,
+    "variant": "cln"
+  },
+  {
+    "category": "acoustic",
+    "conditions": {
+      "electrical_boundary": "E"
+    },
+    "default": true,
+    "id": "elastic-c14/lt-saw/kushibiki1999",
+    "kind": "scalar",
+    "name": "Elastic stiffness component c14 (constant E)",
+    "notes": "In the same table and convention LiNbO3 has c14 = +7.83 GPa: the c14 sign differs between LN and LT.",
+    "property": "elastic-c14",
+    "provenance": {
+      "source_id": "kushibiki1999",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c14^E",
+    "tensor_component": "c14",
+    "unit": {
+      "display": "GPa",
+      "qudt": "http://qudt.org/vocab/unit/GigaPA",
+      "ucum": "GPa"
+    },
+    "value": -10.75,
+    "variant": "lt-saw"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "mechanical_boundary": "T",
+      "wavelength_nm": 633
+    },
+    "default": true,
+    "id": "eo-r13-T/sln/volk2008",
+    "kind": "scalar",
+    "name": "Electro-optic coefficient r13, unclamped",
+    "property": "eo-r13-T",
+    "provenance": {
+      "locator": "Table 1.2, p. 4",
+      "original_reference": "Nikogosyan 2005",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "r13^T",
+    "tensor_component": "r13",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "value": 10.4,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "mechanical_boundary": "T"
+    },
+    "id": "eo-r22-T/cln/volk2008-yonekura2007",
+    "kind": "scalar",
+    "name": "Electro-optic coefficient r22, unclamped",
+    "notes": "Labelled 'constant stress (clamped)' in the source, which contradicts itself (constant stress = unclamped, T); the magnitude fits T values. CLN:5%Mg 6.2 and near-SLN:1.8%Mg 6.97 pm/V in the same report.",
+    "property": "eo-r22-T",
+    "provenance": {
+      "locator": "p. 150",
+      "original_reference": "Yonekura et al., Opt. Rev. 14, 194 (2007)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "r22^T",
+    "tensor_component": "r22",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "value": 6.54,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "mechanical_boundary": "T",
+      "wavelength_nm": 633
+    },
+    "default": true,
+    "id": "eo-r33-T/sln/volk2008",
+    "kind": "scalar",
+    "name": "Electro-optic coefficient r33, unclamped",
+    "notes": "Partial set (r22 absent), so stored as scalars rather than a tensor.",
+    "property": "eo-r33-T",
+    "provenance": {
+      "locator": "Table 1.2, p. 4",
+      "original_reference": "Nikogosyan 2005",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "r33^T",
+    "tensor_component": "r33",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "value": 38,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "optical",
+    "default": true,
+    "id": "eo-r33/lt-unspecified/wang2025lt",
+    "kind": "scalar",
+    "name": "Electro-optic coefficient r33",
+    "notes": "Clamping condition and wavelength not stated where quoted.",
+    "property": "eo-r33",
+    "provenance": {
+      "locator": "introduction, ref. 29",
+      "original_reference": "Wang et al., Optica 11, 1614 (2024), DOI 10.1364/OPTICA.537730 (wang2024optica)",
+      "source_id": "wang2025lt",
+      "status": "S",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "r33",
+    "tensor_component": "r33",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "value": 30.5,
+    "variant": "lt-unspecified",
+    "variant_note": "thin-film LiTaO3 context"
+  },
+  {
+    "category": "acoustic",
+    "default": true,
+    "id": "hydrostatic-piezo-dh/unspecified/weis1985-graham1976",
+    "kind": "scalar",
+    "name": "Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33",
+    "notes": "Implies d33 of about 8.0-8.4 pC/N with measured d31, favouring the kushibiki1999 set (d33 = 8.7, computed) over 6.0 and ruling out 12.5-16.",
+    "property": "hydrostatic-piezo-dh",
+    "provenance": {
+      "locator": "p. 198",
+      "original_reference": "Graham, Ferroelectrics 10, 65 (1976); confirmed on 9 samples from 5 suppliers, Graham, J. Appl. Phys. 48, 2153 (1977)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "d_h",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.014
+    },
+    "unit": {
+      "display": "pC/N",
+      "ucum": "pC/N"
+    },
+    "value": 6.31,
+    "variant": "unspecified"
+  },
+  {
+    "category": "ferroelectric",
+    "default": true,
+    "id": "internal-field/cln/gopalan1998",
+    "kind": "scalar",
+    "name": "Internal field",
+    "notes": "Abstract: the internal field vanishes in SLN.",
+    "property": "internal-field",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "gopalan1998",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_int",
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "kV/mm",
+      "ucum": "kV/mm"
+    },
+    "value": 2.5,
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "internal-field/cln/volk2008",
+    "kind": "scalar",
+    "name": "Internal field",
+    "property": "internal-field",
+    "provenance": {
+      "locator": "Table 7.1, p. 185",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_int",
+    "unit": {
+      "display": "kV/cm",
+      "ucum": "kV/cm"
+    },
+    "value_text": "printed '2-33' kV/cm (likely a misprinted range)",
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "default": true,
+    "id": "internal-field/mgo5-cln/volk2008",
+    "kind": "scalar",
+    "name": "Internal field",
+    "property": "internal-field",
+    "provenance": {
+      "locator": "Table 7.1, p. 185 (5 kV/cm)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_int",
+    "unit": {
+      "display": "kV/mm",
+      "ucum": "kV/mm"
+    },
+    "value": 0.5,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "1/e transmission, 1 cm thick"
+    },
+    "id": "ir-cutoff/cln/cti1999",
+    "kind": "scalar",
+    "name": "IR transmission cutoff",
+    "property": "ir-cutoff",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "nm",
+      "ucum": "nm"
+    },
+    "value": 4600,
+    "variant": "cln"
+  },
+  {
+    "category": "structure",
+    "id": "lattice-a/cln/cti1999",
+    "kind": "scalar",
+    "name": "Lattice constant a (hexagonal setting)",
+    "property": "lattice-a",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.151,
+    "variant": "cln",
+    "variant_note": "48.38 mol% Li2O"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "lattice-a/cln/volk2008",
+    "kind": "scalar",
+    "name": "Lattice constant a (hexagonal setting)",
+    "property": "lattice-a",
+    "provenance": {
+      "locator": "Table 1.1, p. 3 (515.0 pm)",
+      "original_reference": "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.15,
+    "variant": "cln"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "lattice-a/sln/volk2008",
+    "kind": "scalar",
+    "name": "Lattice constant a (hexagonal setting)",
+    "property": "lattice-a",
+    "provenance": {
+      "locator": "Table 1.1, p. 3 (514.7 pm)",
+      "original_reference": "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.147,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "method": "single-crystal neutron diffraction",
+      "temperature_C": 24
+    },
+    "id": "lattice-a/unspecified/cod-abrahams1966-pt4",
+    "kind": "scalar",
+    "name": "Lattice constant a (hexagonal setting)",
+    "property": "lattice-a",
+    "provenance": {
+      "locator": "COD 1541936",
+      "original_reference": "Abrahams, Hamilton, Reddy, J. Phys. Chem. Solids 27, 1013 (1966), part 4, DOI 10.1016/0022-3697(66)90073-4",
+      "source_id": "cod",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.14829,
+    "variant": "unspecified",
+    "variant_note": "1966 crystal, composition not stated"
+  },
+  {
+    "category": "structure",
+    "id": "lattice-a/unspecified/cod-ohgaki1992",
+    "kind": "scalar",
+    "name": "Lattice constant a (hexagonal setting)",
+    "property": "lattice-a",
+    "provenance": {
+      "locator": "COD 1544665",
+      "source_id": "ohgaki1992",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.1502,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "method": "synchrotron X-ray diffraction",
+      "temperature_text": "293 K (COD CIF)"
+    },
+    "default": true,
+    "id": "lattice-a/unspecified/hsu1997",
+    "kind": "scalar",
+    "name": "Lattice constant a (hexagonal setting)",
+    "notes": "Same value as W. L. Bond quoted in weis1985 p. 193 (P-comp).",
+    "property": "lattice-a",
+    "provenance": {
+      "locator": "COD 2101845",
+      "source_id": "hsu1997",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.148,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "id": "lattice-a/unspecified/weis1985-from-density",
+    "kind": "scalar",
+    "name": "Lattice constant a (hexagonal setting)",
+    "property": "lattice-a",
+    "provenance": {
+      "derivation": "calculated in the source from c = 13.863 A and rho = 4628 kg/m^3",
+      "locator": "p. 194",
+      "source_id": "weis1985",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.15,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "id": "lattice-c/cln/cti1999",
+    "kind": "scalar",
+    "name": "Lattice constant c (hexagonal setting)",
+    "property": "lattice-c",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 13.866,
+    "variant": "cln",
+    "variant_note": "48.38 mol% Li2O"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "lattice-c/cln/volk2008",
+    "kind": "scalar",
+    "name": "Lattice constant c (hexagonal setting)",
+    "property": "lattice-c",
+    "provenance": {
+      "locator": "Table 1.1, p. 3 (1386.4 pm)",
+      "original_reference": "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 13.864,
+    "variant": "cln"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "lattice-c/sln/volk2008",
+    "kind": "scalar",
+    "name": "Lattice constant c (hexagonal setting)",
+    "property": "lattice-c",
+    "provenance": {
+      "locator": "Table 1.1, p. 3 (1385.6 pm)",
+      "original_reference": "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 13.856,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "method": "single-crystal neutron diffraction",
+      "temperature_C": 24
+    },
+    "id": "lattice-c/unspecified/cod-abrahams1966-pt4",
+    "kind": "scalar",
+    "name": "Lattice constant c (hexagonal setting)",
+    "property": "lattice-c",
+    "provenance": {
+      "locator": "COD 1541936",
+      "original_reference": "Abrahams, Hamilton, Reddy, J. Phys. Chem. Solids 27, 1013 (1966), part 4, DOI 10.1016/0022-3697(66)90073-4",
+      "source_id": "cod",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 13.8631,
+    "variant": "unspecified",
+    "variant_note": "1966 crystal, composition not stated"
+  },
+  {
+    "category": "structure",
+    "id": "lattice-c/unspecified/cod-ohgaki1992",
+    "kind": "scalar",
+    "name": "Lattice constant c (hexagonal setting)",
+    "property": "lattice-c",
+    "provenance": {
+      "locator": "COD 1544665",
+      "source_id": "ohgaki1992",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 13.8653,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "conditions": {
+      "method": "synchrotron X-ray diffraction",
+      "temperature_text": "293 K (COD CIF)"
+    },
+    "default": true,
+    "id": "lattice-c/unspecified/hsu1997",
+    "kind": "scalar",
+    "name": "Lattice constant c (hexagonal setting)",
+    "property": "lattice-c",
+    "provenance": {
+      "locator": "COD 2101845",
+      "source_id": "hsu1997",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 13.863,
+    "variant": "unspecified"
+  },
+  {
+    "category": "electrical",
+    "default": true,
+    "id": "maxwell-relaxation-time/cln/volk2008",
+    "kind": "scalar",
+    "max": 500,
+    "min": 5,
+    "name": "Maxwell relaxation time (dark)",
+    "notes": "Internally inconsistent with volk2008's own sigma_d: tau = eps eps0 / sigma gives 0.3-29 days (eps = 28) or 0.9-86 days (eps = 84) (computed).",
+    "property": "maxwell-relaxation-time",
+    "provenance": {
+      "locator": "p. 159",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "tau_M",
+    "unit": {
+      "display": "days",
+      "ucum": "d"
+    },
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "melting-point/cln/cti1999",
+    "kind": "scalar",
+    "name": "Melting point",
+    "property": "melting-point",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_m",
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value": 1250,
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "default": true,
+    "id": "melting-point/cln/volk2008",
+    "kind": "scalar",
+    "name": "Melting point",
+    "notes": "Inside the 1240-1275 C range quoted across vendors and handbooks.",
+    "property": "melting-point",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nikogosyan 2005",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_m",
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value": 1255,
+    "variant": "cln"
+  },
+  {
+    "category": "ferroelectric",
+    "default": true,
+    "id": "melting-point/sln/volk2008",
+    "kind": "scalar",
+    "name": "Melting point",
+    "property": "melting-point",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nikogosyan 2005",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "T_m",
+    "unit": {
+      "display": "C",
+      "ucum": "Cel"
+    },
+    "value_text": "< 1200",
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "photorefractive",
+    "default": true,
+    "id": "mgo-photorefractive-threshold/mgo5-cln/bryan1984",
+    "kind": "scalar",
+    "name": "MgO concentration threshold for optical-damage resistance",
+    "notes": "Abstract: about 100x photoconductivity increase; activation energy 0.1 eV (resistant) vs 0.5 eV.",
+    "property": "mgo-photorefractive-threshold",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "bryan1984",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "at.% MgO",
+      "ucum": "%"
+    },
+    "value_text": ">= 4.5 at.% MgO",
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "structure",
+    "id": "mohs-hardness/cln/cti1999",
+    "kind": "scalar",
+    "name": "Mohs hardness",
+    "property": "mohs-hardness",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "Mohs",
+      "ucum": "1"
+    },
+    "value": 5,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "parametric fluorescence, 488 nm pump"
+    },
+    "id": "nlo-d31/cln/kitamoto1995-488nm",
+    "kind": "scalar",
+    "name": "Second-order nonlinear coefficient d31",
+    "notes": "Abstract judges an earlier 5.8 pm/V overestimated.",
+    "property": "nlo-d31",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "kitamoto1995",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "d31",
+    "tensor_component": "d31",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.5
+    },
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "value": 4.8,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "parametric fluorescence, 532 nm pump"
+    },
+    "id": "nlo-d31/cln/kitamoto1995-532nm",
+    "kind": "scalar",
+    "name": "Second-order nonlinear coefficient d31",
+    "property": "nlo-d31",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "kitamoto1995",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "d31",
+    "tensor_component": "d31",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.5
+    },
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "value": 4.3,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "Z-scan, 30 ps, e-polarization",
+      "wavelength_nm": 1064
+    },
+    "default": true,
+    "id": "nonlinear-index-n2/unspecified/desalvo1996-1064nm",
+    "kind": "scalar",
+    "name": "Nonlinear (Kerr) refractive index",
+    "property": "nonlinear-index-n2",
+    "provenance": {
+      "source_id": "desalvo1996",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_2",
+    "unit": {
+      "display": "m^2/W",
+      "ucum": "m2/W"
+    },
+    "value": 9.33e-20,
+    "variant": "unspecified"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "Z-scan, 22 ps",
+      "wavelength_nm": 532
+    },
+    "id": "nonlinear-index-n2/unspecified/desalvo1996-532nm",
+    "kind": "scalar",
+    "name": "Nonlinear (Kerr) refractive index",
+    "property": "nonlinear-index-n2",
+    "provenance": {
+      "source_id": "desalvo1996",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_2",
+    "unit": {
+      "display": "m^2/W",
+      "ucum": "m2/W"
+    },
+    "value": 8.25e-19,
+    "variant": "unspecified"
+  },
+  {
+    "category": "optical",
+    "id": "nonlinear-index-n2/unspecified/zhu2021",
+    "kind": "scalar",
+    "name": "Nonlinear (Kerr) refractive index",
+    "notes": "Wavelength and primary measurement not given in the review table.",
+    "property": "nonlinear-index-n2",
+    "provenance": {
+      "locator": "Table 1",
+      "source_id": "zhu2021",
+      "status": "S",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_2",
+    "unit": {
+      "display": "m^2/W",
+      "ucum": "m2/W"
+    },
+    "value": 1.8e-19,
+    "variant": "unspecified"
+  },
+  {
+    "category": "optical",
+    "default": true,
+    "id": "oh-stretch-band/cln/bryan1984",
+    "kind": "scalar",
+    "name": "OH stretch absorption band",
+    "property": "oh-stretch-band",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "bryan1984",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "um",
+      "ucum": "um"
+    },
+    "value": 2.87,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "default": true,
+    "id": "oh-stretch-band/mgo5-cln/bryan1984",
+    "kind": "scalar",
+    "name": "OH stretch absorption band",
+    "property": "oh-stretch-band",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "bryan1984",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "um",
+      "ucum": "um"
+    },
+    "value": 2.83,
+    "variant": "mgo5-cln",
+    "variant_note": "MgO >= 4.5 at.%"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "optical absorption (direct)"
+    },
+    "default": true,
+    "id": "optical-band-gap/unspecified/thierfelder2010",
+    "kind": "scalar",
+    "name": "Optical band gap (frequently cited)",
+    "notes": "GW calculations give a fundamental (quasiparticle) gap at least 1 eV larger; the quasiparticle gap is debated.",
+    "property": "optical-band-gap",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "thierfelder2010",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "E_g",
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "eV",
+      "ucum": "eV"
+    },
+    "value": 3.7,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "default": true,
+    "id": "point-group/unspecified/weis1985",
+    "kind": "scalar",
+    "name": "Point group (ferroelectric phase)",
+    "notes": "weis1985 prints the Schoenflies symbol as C6v, a typo; 3m is C3v. Same in volk2008 p. 2.",
+    "property": "point-group",
+    "provenance": {
+      "locator": "p. 192, Sec. 2.1",
+      "source_id": "weis1985",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "-",
+      "ucum": "1"
+    },
+    "value_text": "3m (C3v)",
+    "variant": "unspecified"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_C": 25
+    },
+    "id": "pyroelectric-p3/cln/cti1999",
+    "kind": "scalar",
+    "name": "Pyroelectric coefficient",
+    "notes": "Sign convention not stated in the data sheet.",
+    "property": "pyroelectric-p3",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "p_3",
+    "unit": {
+      "display": "C/(m^2 K)",
+      "ucum": "C/(m2.K)"
+    },
+    "value": -8.3e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "id": "pyroelectric-p3/unspecified/schwesyg2011",
+    "kind": "scalar",
+    "name": "Pyroelectric coefficient",
+    "property": "pyroelectric-p3",
+    "provenance": {
+      "locator": "Eq. (2.17)",
+      "original_reference": "Bartholomaus, Buse, Deuper, Kratzig, phys. stat. sol. (a) 142, 55 (1994)",
+      "source_id": "schwesyg2011",
+      "status": "S",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "p_3",
+    "unit": {
+      "display": "C/(m^2 K)",
+      "ucum": "C/(m2.K)"
+    },
+    "value": -6.4e-05,
+    "variant": "unspecified",
+    "variant_note": "'crystals of different compositions'"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "frame": {
+      "convention": "IRE-1949",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"
+    },
+    "id": "pyroelectric-p3/unspecified/weis1985",
+    "kind": "scalar",
+    "name": "Pyroelectric coefficient",
+    "notes": "p3 < 0 means that on cooling the +c face becomes more positive (weis1985 p. 196). Magnitudes across sources span 4-9.5e-5 C/(m^2 K).",
+    "property": "pyroelectric-p3",
+    "provenance": {
+      "locator": "Eq. (2), p. 196",
+      "original_reference": "Savage, J. Appl. Phys. 37, 3071 (1966)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "p_3",
+    "unit": {
+      "display": "C/(m^2 K)",
+      "ucum": "C/(m2.K)"
+    },
+    "value": -4e-05,
+    "variant": "unspecified"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "wavelength_nm": 632.8
+    },
+    "id": "refractive-index-e/cln/cti1999-632.8nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2028,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 24.5,
+      "wavelength_nm": 1060
+    },
+    "id": "refractive-index-e/cln/weis1985-1060nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "locator": "Table 2, p. 197",
+      "original_reference": "Nelson & Mikulyak, J. Appl. Phys. 45, 3688 (1974)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1561,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 24.5,
+      "wavelength_nm": 632.8
+    },
+    "id": "refractive-index-e/cln/weis1985-632.8nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "notes": "6e-4 above the Zelmon value at 21 C.",
+    "property": "refractive-index-e",
+    "provenance": {
+      "locator": "Table 2, p. 197",
+      "original_reference": "Nelson & Mikulyak, J. Appl. Phys. 45, 3688 (1974)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2028,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1064.0
+    },
+    "default": true,
+    "id": "refractive-index-e/cln/zelmon1997-1064nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-e at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1555,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1550.0
+    },
+    "default": true,
+    "id": "refractive-index-e/cln/zelmon1997-1550nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-e at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1376,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 632.8
+    },
+    "default": true,
+    "id": "refractive-index-e/cln/zelmon1997-632.8nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-e at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2022,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "room temperature",
+      "wavelength_nm": 1000
+    },
+    "default": true,
+    "id": "refractive-index-e/lt-unspecified/bond1965-1000nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+    "property": "refractive-index-e",
+    "provenance": {
+      "locator": "refractiveindex.info LiTaO3/Bond-e tabulated data",
+      "source_id": "bond1965",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1432,
+    "variant": "lt-unspecified",
+    "variant_note": "1965 bulk crystal"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "room temperature",
+      "wavelength_nm": 1600
+    },
+    "default": true,
+    "id": "refractive-index-e/lt-unspecified/bond1965-1600nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+    "property": "refractive-index-e",
+    "provenance": {
+      "locator": "refractiveindex.info LiTaO3/Bond-e tabulated data",
+      "source_id": "bond1965",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1213,
+    "variant": "lt-unspecified",
+    "variant_note": "1965 bulk crystal"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "room temperature",
+      "wavelength_nm": 600
+    },
+    "default": true,
+    "id": "refractive-index-e/lt-unspecified/bond1965-600nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+    "property": "refractive-index-e",
+    "provenance": {
+      "locator": "refractiveindex.info LiTaO3/Bond-e tabulated data",
+      "source_id": "bond1965",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1878,
+    "variant": "lt-unspecified",
+    "variant_note": "1965 bulk crystal"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1064.0
+    },
+    "default": true,
+    "id": "refractive-index-e/mgo5-cln/zelmon1997-1064nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-e at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1474,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1550.0
+    },
+    "default": true,
+    "id": "refractive-index-e/mgo5-cln/zelmon1997-1550nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-e at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1299,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 632.8
+    },
+    "default": true,
+    "id": "refractive-index-e/mgo5-cln/zelmon1997-632.8nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "property": "refractive-index-e",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-e at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1928,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "wavelength_nm": 633
+    },
+    "default": true,
+    "id": "refractive-index-e/sln/volk2008-633nm",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "notes": "The generalized (Schlarb) Sellmeier gives 2.1867 at 50.0 mol% (computed), supporting this value.",
+    "property": "refractive-index-e",
+    "provenance": {
+      "locator": "Table 1.2, p. 4 (refs. [26-28])",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.19,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 632.8
+    },
+    "id": "refractive-index-e/sln/weis1985-boyd1967",
+    "kind": "scalar",
+    "name": "Extraordinary refractive index",
+    "notes": "Conflicts with volk2008 near-SLN values.",
+    "property": "refractive-index-e",
+    "provenance": {
+      "locator": "Table 2, p. 197",
+      "original_reference": "Boyd, Bond, Carter, J. Appl. Phys. 38, 1941 (1967)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_e",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2005,
+    "variant": "sln",
+    "variant_note": "labelled 'stoichiometric' (1967 crystal)"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "wavelength_nm": 632.8
+    },
+    "id": "refractive-index-o/cln/cti1999-632.8nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "notes": "Identical to Nelson & Mikulyak 1974.",
+    "property": "refractive-index-o",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2866,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 24.5,
+      "wavelength_nm": 1060
+    },
+    "id": "refractive-index-o/cln/weis1985-1060nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "locator": "Table 2, p. 197",
+      "original_reference": "Nelson & Mikulyak, J. Appl. Phys. 45, 3688 (1974)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2323,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 24.5,
+      "wavelength_nm": 632.8
+    },
+    "id": "refractive-index-o/cln/weis1985-632.8nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "notes": "weis1985 Table 2 misprints n_o at 472.7 nm as 3.3597.",
+    "property": "refractive-index-o",
+    "provenance": {
+      "locator": "Table 2, p. 197",
+      "original_reference": "Nelson & Mikulyak, J. Appl. Phys. 45, 3688 (1974)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2866,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1064.0
+    },
+    "default": true,
+    "id": "refractive-index-o/cln/zelmon1997-1064nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-o at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2321,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1550.0
+    },
+    "default": true,
+    "id": "refractive-index-o/cln/zelmon1997-1550nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-o at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2111,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 632.8
+    },
+    "default": true,
+    "id": "refractive-index-o/cln/zelmon1997-632.8nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-cln-o at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2865,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "room temperature",
+      "wavelength_nm": 1000
+    },
+    "default": true,
+    "id": "refractive-index-o/lt-unspecified/bond1965-1000nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+    "property": "refractive-index-o",
+    "provenance": {
+      "locator": "refractiveindex.info LiTaO3/Bond-o tabulated data",
+      "source_id": "bond1965",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1391,
+    "variant": "lt-unspecified",
+    "variant_note": "1965 bulk crystal"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "room temperature",
+      "wavelength_nm": 1600
+    },
+    "default": true,
+    "id": "refractive-index-o/lt-unspecified/bond1965-1600nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+    "property": "refractive-index-o",
+    "provenance": {
+      "locator": "refractiveindex.info LiTaO3/Bond-o tabulated data",
+      "source_id": "bond1965",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1174,
+    "variant": "lt-unspecified",
+    "variant_note": "1965 bulk crystal"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_text": "room temperature",
+      "wavelength_nm": 600
+    },
+    "default": true,
+    "id": "refractive-index-o/lt-unspecified/bond1965-600nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "notes": "n_e > n_o at every tabulated wavelength (0.45-4.0 um) in this dataset: LT is weakly positive uniaxial here, unlike LN.",
+    "property": "refractive-index-o",
+    "provenance": {
+      "locator": "refractiveindex.info LiTaO3/Bond-o tabulated data",
+      "source_id": "bond1965",
+      "status": "P-db",
+      "transcribed": "2026-10-25",
+      "via": "rii"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.1834,
+    "variant": "lt-unspecified",
+    "variant_note": "1965 bulk crystal"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1064.0
+    },
+    "default": true,
+    "id": "refractive-index-o/mgo5-cln/zelmon1997-1064nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-o at 1064 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2288,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 1550.0
+    },
+    "default": true,
+    "id": "refractive-index-o/mgo5-cln/zelmon1997-1550nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-o at 1550 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2082,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 21,
+      "wavelength_nm": 632.8
+    },
+    "default": true,
+    "id": "refractive-index-o/mgo5-cln/zelmon1997-632.8nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "derivation": "evaluated from dispersion model zelmon1997-mgo5-o at 632.8 nm, 21 C by scripts/build_data.py (rounded to 1e-4)",
+      "source_id": "zelmon1997",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.2825,
+    "variant": "mgo5-cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "wavelength_nm": 633
+    },
+    "default": true,
+    "id": "refractive-index-o/sln/volk2008-633nm",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "property": "refractive-index-o",
+    "provenance": {
+      "locator": "Table 1.2, p. 4 (refs. [26-28])",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.288,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 25,
+      "wavelength_nm": 632.8
+    },
+    "id": "refractive-index-o/sln/weis1985-boyd1967",
+    "kind": "scalar",
+    "name": "Ordinary refractive index",
+    "notes": "Conflicts with volk2008 near-SLN values.",
+    "property": "refractive-index-o",
+    "provenance": {
+      "locator": "Table 2, p. 197",
+      "original_reference": "Boyd, Bond, Carter, J. Appl. Phys. 38, 1941 (1967)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "n_o",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "value": 2.291,
+    "variant": "sln",
+    "variant_note": "labelled 'stoichiometric' (1967 crystal)"
+  },
+  {
+    "category": "optical",
+    "default": true,
+    "id": "residual-absorption/cln/schwesyg2011",
+    "kind": "scalar",
+    "name": "Residual absorption, as-grown crystals",
+    "property": "residual-absorption",
+    "provenance": {
+      "locator": "abstract; Sec. 3.1, 3.3",
+      "source_id": "schwesyg2011",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "cm^-1",
+      "ucum": "/cm"
+    },
+    "value_text": "up to 0.04 cm^-1 (transition-metal impurities, 400-2000 nm); about 0.001 cm^-1 H-related bands at 2300-2800 nm; annealing lowers absorption by up to 10x",
+    "variant": "cln",
+    "variant_note": "CLN and MgO5 crystals"
+  },
+  {
+    "category": "structure",
+    "id": "rhombohedral-a/unspecified/hsu1997",
+    "kind": "scalar",
+    "name": "Rhombohedral cell edge a_R",
+    "property": "rhombohedral-a",
+    "provenance": {
+      "locator": "COD 2101845",
+      "source_id": "hsu1997",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a_R",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.002
+    },
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.493,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "default": true,
+    "id": "rhombohedral-a/unspecified/weis1985",
+    "kind": "scalar",
+    "name": "Rhombohedral cell edge a_R",
+    "property": "rhombohedral-a",
+    "provenance": {
+      "locator": "p. 194, Eq. (1)",
+      "source_id": "weis1985",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "a_R",
+    "unit": {
+      "display": "Angstrom",
+      "ucum": "Ao"
+    },
+    "value": 5.494,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "id": "rhombohedral-alpha/unspecified/hsu1997",
+    "kind": "scalar",
+    "name": "Rhombohedral cell angle alpha",
+    "property": "rhombohedral-alpha",
+    "provenance": {
+      "locator": "COD 2101845",
+      "source_id": "hsu1997",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_R",
+    "uncertainty": {
+      "type": "stated",
+      "value": 0.03
+    },
+    "unit": {
+      "display": "deg",
+      "ucum": "deg"
+    },
+    "value": 55.89,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "default": true,
+    "id": "rhombohedral-alpha/unspecified/weis1985",
+    "kind": "scalar",
+    "name": "Rhombohedral cell angle alpha",
+    "property": "rhombohedral-alpha",
+    "provenance": {
+      "locator": "p. 194, Eq. (1)",
+      "source_id": "weis1985",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_R",
+    "unit": {
+      "display": "deg",
+      "ucum": "deg"
+    },
+    "value": 55.867,
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "default": true,
+    "id": "space-group-paraelectric/unspecified/boysen1994",
+    "kind": "scalar",
+    "name": "Space group (paraelectric phase, above Tc)",
+    "notes": "volk2008 p. 2 prints R3m without a reference (conflict); the CIF value is kept.",
+    "property": "space-group-paraelectric",
+    "provenance": {
+      "locator": "COD 2101175-2101185 high-temperature entries",
+      "source_id": "boysen1994",
+      "status": "P-db",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "-",
+      "ucum": "1"
+    },
+    "value_text": "R-3c (No. 167)",
+    "variant": "unspecified"
+  },
+  {
+    "category": "structure",
+    "default": true,
+    "id": "space-group/unspecified/weis1985",
+    "kind": "scalar",
+    "name": "Space group (ferroelectric phase, below Tc)",
+    "property": "space-group",
+    "provenance": {
+      "locator": "p. 192, Sec. 2.1",
+      "source_id": "weis1985",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "-",
+      "ucum": "1"
+    },
+    "value_text": "R3c (No. 161)",
+    "variant": "unspecified"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_C": 25
+    },
+    "id": "specific-heat/cln/cti1999",
+    "kind": "scalar",
+    "name": "Specific heat capacity",
+    "property": "specific-heat",
+    "provenance": {
+      "derivation": "converted from 0.15 cal/(g C)",
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c_p",
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "J/(kg K)",
+      "qudt": "http://qudt.org/vocab/unit/J-PER-KiloGM-K",
+      "ucum": "J/(kg.K)"
+    },
+    "value": 628,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "specific-heat/cln/volk2008",
+    "kind": "scalar",
+    "name": "Specific heat capacity",
+    "property": "specific-heat",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nakamura et al., J. Cryst. Growth 290, 144 (2006)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c_p",
+    "unit": {
+      "display": "J/(kg K)",
+      "qudt": "http://qudt.org/vocab/unit/J-PER-KiloGM-K",
+      "ucum": "J/(kg.K)"
+    },
+    "value": 628,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "specific-heat/sln/volk2008",
+    "kind": "scalar",
+    "name": "Specific heat capacity",
+    "property": "specific-heat",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nakamura et al., J. Cryst. Growth 290, 144 (2006)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "c_p",
+    "unit": {
+      "display": "J/(kg K)",
+      "qudt": "http://qudt.org/vocab/unit/J-PER-KiloGM-K",
+      "ucum": "J/(kg.K)"
+    },
+    "value": 651,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "ferroelectric",
+    "id": "spontaneous-polarization/cln/gopalan1998",
+    "kind": "scalar",
+    "name": "Spontaneous polarization",
+    "notes": "Abstract: insensitive to stoichiometry and H content.",
+    "property": "spontaneous-polarization",
+    "provenance": {
+      "locator": "abstract",
+      "source_id": "gopalan1998",
+      "status": "P(abs)",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "P_s",
+    "uncertainty": {
+      "type": "stated",
+      "value": 5
+    },
+    "unit": {
+      "display": "uC/cm^2",
+      "ucum": "uC/cm2"
+    },
+    "value": 80,
+    "variant": "cln",
+    "variant_note": "abstract gives the value for CLN and near-SLN alike"
+  },
+  {
+    "category": "ferroelectric",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "id": "spontaneous-polarization/cln/volk2008",
+    "kind": "scalar",
+    "name": "Spontaneous polarization",
+    "notes": "Mismatch with gopalan1998 (80 +- 5). volk2008 ref. [24] (APL 73, 3073) is a LiTaO3 paper per Crossref.",
+    "property": "spontaneous-polarization",
+    "provenance": {
+      "locator": "Table 1.1, p. 3 (refs. [22], [24])",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "P_s",
+    "unit": {
+      "display": "uC/cm^2",
+      "ucum": "uC/cm2"
+    },
+    "value": 71,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_C": 25
+    },
+    "id": "thermal-conductivity/cln/cti1999",
+    "kind": "scalar",
+    "name": "Thermal conductivity",
+    "property": "thermal-conductivity",
+    "provenance": {
+      "derivation": "converted from 1.0e-2 cal/(cm s C)",
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "kappa",
+    "uncertainty": {
+      "type": "approximate"
+    },
+    "unit": {
+      "display": "W/(m K)",
+      "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+      "ucum": "W/(m.K)"
+    },
+    "value": 4.2,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "thermal-conductivity/cln/volk2008",
+    "kind": "scalar",
+    "name": "Thermal conductivity",
+    "notes": "Axis not stated in the compilation.",
+    "property": "thermal-conductivity",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nakamura et al., J. Cryst. Growth 290, 144 (2006)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "kappa",
+    "unit": {
+      "display": "W/(m K)",
+      "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+      "ucum": "W/(m.K)"
+    },
+    "value": 3.92,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "room temperature"
+    },
+    "default": true,
+    "id": "thermal-conductivity/sln/volk2008",
+    "kind": "scalar",
+    "name": "Thermal conductivity",
+    "property": "thermal-conductivity",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nakamura et al., J. Cryst. Growth 290, 144 (2006)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "kappa",
+    "unit": {
+      "display": "W/(m K)",
+      "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+      "ucum": "W/(m.K)"
+    },
+    "value": 5.97,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "thermal",
+    "id": "thermal-conductivity/unspecified/schwesyg2011",
+    "kind": "scalar",
+    "name": "Thermal conductivity",
+    "property": "thermal-conductivity",
+    "provenance": {
+      "locator": "Eq. (2.28)",
+      "original_reference": "Wong 2002 (EMIS Datareview 28)",
+      "source_id": "schwesyg2011",
+      "status": "S",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "kappa",
+    "unit": {
+      "display": "W/(m K)",
+      "qudt": "http://qudt.org/vocab/unit/W-PER-M-K",
+      "ucum": "W/(m.K)"
+    },
+    "value": 5,
+    "variant": "unspecified"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_C": 25
+    },
+    "id": "thermal-expansion-a/cln/cti1999",
+    "kind": "scalar",
+    "name": "Thermal expansion coefficient perpendicular to c",
+    "property": "thermal-expansion-a",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_11",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 1.5e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_C": null,
+      "temperature_text": "300 K"
+    },
+    "default": true,
+    "id": "thermal-expansion-a/cln/volk2008",
+    "kind": "scalar",
+    "name": "Thermal expansion coefficient perpendicular to c",
+    "property": "thermal-expansion-a",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nikogosyan 2005; Gallagher et al., Ferroelectrics 75, 71 (1987)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_11",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 1.41e-05,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "300 K"
+    },
+    "default": true,
+    "id": "thermal-expansion-a/sln/volk2008",
+    "kind": "scalar",
+    "name": "Thermal expansion coefficient perpendicular to c",
+    "property": "thermal-expansion-a",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_11",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 1.41e-05,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_C": 25
+    },
+    "id": "thermal-expansion-c/cln/cti1999",
+    "kind": "scalar",
+    "name": "Thermal expansion coefficient parallel to c",
+    "property": "thermal-expansion-c",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_33",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 7.5e-06,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "300 K"
+    },
+    "default": true,
+    "id": "thermal-expansion-c/cln/volk2008",
+    "kind": "scalar",
+    "name": "Thermal expansion coefficient parallel to c",
+    "notes": "alpha_c in circulating sources spans about 4-7.5 ppm/K; kim1969 (primary) not read. weis1985 p. 195 notes that c contracts from 600 to 1000 C.",
+    "property": "thermal-expansion-c",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "original_reference": "Nikogosyan 2005; Gallagher et al., Ferroelectrics 75, 71 (1987)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_33",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 4.1e-06,
+    "variant": "cln"
+  },
+  {
+    "category": "thermal",
+    "conditions": {
+      "temperature_text": "300 K"
+    },
+    "default": true,
+    "id": "thermal-expansion-c/sln/volk2008",
+    "kind": "scalar",
+    "name": "Thermal expansion coefficient parallel to c",
+    "notes": "alpha_c depends on composition, which may explain part of the spread across sources.",
+    "property": "thermal-expansion-c",
+    "provenance": {
+      "locator": "Table 1.1, p. 3",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "alpha_33",
+    "unit": {
+      "display": "1/K",
+      "qudt": "http://qudt.org/vocab/unit/PER-K",
+      "ucum": "/K"
+    },
+    "value": 6e-06,
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "optical",
+    "default": true,
+    "id": "transparency-range/cln/volk2008",
+    "kind": "scalar",
+    "max": 5,
+    "min": 0.32,
+    "name": "Transparency range",
+    "notes": "Criterion and thickness not stated.",
+    "property": "transparency-range",
+    "provenance": {
+      "locator": "Table 1.2, p. 4",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "um",
+      "ucum": "um"
+    },
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "default": true,
+    "id": "transparency-range/sln/volk2008",
+    "kind": "scalar",
+    "max": 5,
+    "min": 0.3,
+    "name": "Transparency range",
+    "notes": "Criterion and thickness not stated.",
+    "property": "transparency-range",
+    "provenance": {
+      "locator": "Table 1.2, p. 4",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "um",
+      "ucum": "um"
+    },
+    "variant": "sln",
+    "variant_note": "near-stoichiometric"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "1/e transmission, 1 cm thick"
+    },
+    "id": "uv-cutoff/cln/cti1999",
+    "kind": "scalar",
+    "name": "UV transmission cutoff",
+    "property": "uv-cutoff",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "nm",
+      "ucum": "nm"
+    },
+    "value": 340,
+    "variant": "cln"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "method": "absorption coefficient 20 (or 15) cm^-1; E parallel to c, k perpendicular to c",
+      "temperature_C": 22
+    },
+    "default": true,
+    "id": "uv-edge-formula/unspecified/volk2008-kovacs1997",
+    "kind": "scalar",
+    "name": "UV absorption edge vs composition",
+    "property": "uv-edge-formula",
+    "provenance": {
+      "locator": "Eqs. (6.5)-(6.6), p. 142",
+      "original_reference": "kovacs1997 (credited in Fig. 6.4)",
+      "source_id": "volk2008",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "unit": {
+      "display": "nm",
+      "ucum": "nm"
+    },
+    "value_text": "lambda_20 = 320.4 - 1.829 x - 5.485 x^2 nm; lambda_15 = 321.9 - 1.597 x - 5.745 x^2 nm; x = (mol% Li2O) - 48.38",
+    "variant": "unspecified"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 22
+    },
+    "default": true,
+    "id": "uv-edge-lambda20/cln/volk2008-kovacs1997",
+    "kind": "scalar",
+    "name": "UV absorption edge at alpha = 20 cm^-1",
+    "property": "uv-edge-lambda20",
+    "provenance": {
+      "derivation": "lambda_20 formula at x = 0 (48.38 mol%)",
+      "locator": "Eq. (6.5), p. 142",
+      "source_id": "volk2008",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "lambda_20",
+    "unit": {
+      "display": "nm",
+      "ucum": "nm"
+    },
+    "value": 320.4,
+    "variant": "cln",
+    "variant_note": "48.38 mol% Li2O"
+  },
+  {
+    "category": "optical",
+    "conditions": {
+      "temperature_C": 22
+    },
+    "default": true,
+    "id": "uv-edge-lambda20/sln/volk2008-kovacs1997",
+    "kind": "scalar",
+    "name": "UV absorption edge at alpha = 20 cm^-1",
+    "property": "uv-edge-lambda20",
+    "provenance": {
+      "derivation": "lambda_20 formula at x = 1.62 (50.0 mol%); 317.2 nm at 49.0 mol%",
+      "locator": "Eq. (6.5), p. 142",
+      "source_id": "volk2008",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "symbol": "lambda_20",
+    "unit": {
+      "display": "nm",
+      "ucum": "nm"
+    },
+    "value": 303.0,
+    "variant": "sln",
+    "variant_note": "50.0 mol% Li2O"
+  }
+]

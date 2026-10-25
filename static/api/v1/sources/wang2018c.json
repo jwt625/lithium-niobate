@@ -1,0 +1,54 @@
+{
+  "citation": "Cheng Wang, Carsten Langrock, Alireza Marandi, et al., \"Ultrahigh-efficiency wavelength conversion in nanophotonic periodically poled lithium niobate waveguides\", Optica 5, 1438, (2018) doi:10.1364/optica.5.001438",
+  "link": "https://doi.org/10.1364/optica.5.001438",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Cheng Wang"
+      },
+      {
+        "literal": "Carsten Langrock"
+      },
+      {
+        "literal": "Alireza Marandi"
+      },
+      {
+        "literal": "Marc Jankowski"
+      },
+      {
+        "literal": "Mian Zhang"
+      },
+      {
+        "literal": "Boris Desiatov"
+      },
+      {
+        "literal": "Martin M. Fejer"
+      },
+      {
+        "literal": "Marko Lončar"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.5.001438",
+    "id": "wang2018c",
+    "issue": "11",
+    "issued": "2018-11-20",
+    "page": "1438",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Ultrahigh-efficiency wavelength conversion in nanophotonic periodically poled lithium niobate waveguides",
+    "type": "article-journal",
+    "volume": "5"
+  }
+}

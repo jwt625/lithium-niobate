@@ -1,0 +1,36 @@
+{
+  "citation": "Hirotoshi Nagata, Kazumasa Kiuchi, \"Temperature dependence of dc drift of Ti:LiNbO3 optical modulators with sputter deposited SiO2 buffer layer\", Journal of Applied Physics 73, 4162-4164, (1993) doi:10.1063/1.352849",
+  "link": "https://doi.org/10.1063/1.352849",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Hirotoshi Nagata"
+      },
+      {
+        "literal": "Kazumasa Kiuchi"
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.352849",
+    "id": "nagata1993",
+    "issue": "9",
+    "issued": "1993-05-01",
+    "page": "4162-4164",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Temperature dependence of dc drift of Ti:LiNbO3 optical modulators with sputter deposited SiO2 buffer layer",
+    "type": "article-journal",
+    "volume": "73"
+  }
+}

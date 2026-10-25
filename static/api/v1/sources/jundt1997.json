@@ -1,0 +1,35 @@
+{
+  "citation": "Dieter H. Jundt, \"Temperature-dependent Sellmeier equation for the index of refraction, n_e, in congruent lithium niobate\", Optics Letters 22, 1553, (1997) doi:10.1364/OL.22.001553",
+  "link": "https://doi.org/10.1364/OL.22.001553",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Jundt",
+        "given": "Dieter H."
+      }
+    ],
+    "container_title": "Optics Letters",
+    "doi": "10.1364/OL.22.001553",
+    "id": "jundt1997",
+    "issued": "1997-10-15",
+    "page": "1553",
+    "read": "abstract only; coefficients only via a secondary source",
+    "title": "Temperature-dependent Sellmeier equation for the index of refraction, n_e, in congruent lithium niobate",
+    "type": "article-journal",
+    "volume": "22"
+  }
+}

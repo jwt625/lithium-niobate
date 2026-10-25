@@ -1,0 +1,214 @@
+# Scalar property records: thermal and pyroelectric. Schema: data/schema/scalar.schema.json.
+# Sources: research notes R06 sec. 2.2 and R14 sec. 2.2.
+
+- id: thermal-expansion-a/cln/volk2008
+  kind: scalar
+  property: thermal-expansion-a
+  name: Thermal expansion coefficient perpendicular to c
+  symbol: alpha_11
+  category: thermal
+  value: 14.1e-6
+  unit: {ucum: "/K", qudt: "http://qudt.org/vocab/unit/PER-K", display: "1/K"}
+  variant: cln
+  conditions: {temperature_C: null, temperature_text: "300 K"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nikogosyan 2005; Gallagher et al., Ferroelectrics 75, 71 (1987)", research_note: "R14 row 24", transcribed: "2026-10-25"}
+  default: true
+
+- id: thermal-expansion-c/cln/volk2008
+  kind: scalar
+  property: thermal-expansion-c
+  name: Thermal expansion coefficient parallel to c
+  symbol: alpha_33
+  category: thermal
+  value: 4.1e-6
+  unit: {ucum: "/K", qudt: "http://qudt.org/vocab/unit/PER-K", display: "1/K"}
+  variant: cln
+  conditions: {temperature_text: "300 K"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nikogosyan 2005; Gallagher et al., Ferroelectrics 75, 71 (1987)", research_note: "R14 row 24", transcribed: "2026-10-25"}
+  default: true
+  notes: "alpha_c in circulating sources spans about 4-7.5 ppm/K (R06 sec. 2.2); kim1969 (primary) not read. weis1985 p. 195 notes that c contracts from 600 to 1000 C."
+
+- id: thermal-expansion-a/sln/volk2008
+  kind: scalar
+  property: thermal-expansion-a
+  name: Thermal expansion coefficient perpendicular to c
+  symbol: alpha_11
+  category: thermal
+  value: 14.1e-6
+  unit: {ucum: "/K", qudt: "http://qudt.org/vocab/unit/PER-K", display: "1/K"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {temperature_text: "300 K"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, research_note: "R14 row 25", transcribed: "2026-10-25"}
+  default: true
+
+- id: thermal-expansion-c/sln/volk2008
+  kind: scalar
+  property: thermal-expansion-c
+  name: Thermal expansion coefficient parallel to c
+  symbol: alpha_33
+  category: thermal
+  value: 6.0e-6
+  unit: {ucum: "/K", qudt: "http://qudt.org/vocab/unit/PER-K", display: "1/K"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {temperature_text: "300 K"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, research_note: "R14 row 25", transcribed: "2026-10-25"}
+  default: true
+  notes: "alpha_c depends on composition, which may explain part of the spread across sources (R14 row 25)."
+
+- id: thermal-expansion-a/cln/cti1999
+  kind: scalar
+  property: thermal-expansion-a
+  name: Thermal expansion coefficient perpendicular to c
+  symbol: alpha_11
+  category: thermal
+  value: 15.0e-6
+  unit: {ucum: "/K", qudt: "http://qudt.org/vocab/unit/PER-K", display: "1/K"}
+  variant: cln
+  conditions: {temperature_C: 25}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.2", transcribed: "2026-10-25"}
+
+- id: thermal-expansion-c/cln/cti1999
+  kind: scalar
+  property: thermal-expansion-c
+  name: Thermal expansion coefficient parallel to c
+  symbol: alpha_33
+  category: thermal
+  value: 7.5e-6
+  unit: {ucum: "/K", qudt: "http://qudt.org/vocab/unit/PER-K", display: "1/K"}
+  variant: cln
+  conditions: {temperature_C: 25}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.2", transcribed: "2026-10-25"}
+
+- id: thermal-conductivity/cln/volk2008
+  kind: scalar
+  property: thermal-conductivity
+  name: Thermal conductivity
+  symbol: kappa
+  category: thermal
+  value: 3.92
+  unit: {ucum: "W/(m.K)", qudt: "http://qudt.org/vocab/unit/W-PER-M-K", display: "W/(m K)"}
+  variant: cln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nakamura et al., J. Cryst. Growth 290, 144 (2006)", research_note: "R14 row 27", transcribed: "2026-10-25"}
+  default: true
+  notes: "Axis not stated in the compilation."
+
+- id: thermal-conductivity/sln/volk2008
+  kind: scalar
+  property: thermal-conductivity
+  name: Thermal conductivity
+  symbol: kappa
+  category: thermal
+  value: 5.97
+  unit: {ucum: "W/(m.K)", qudt: "http://qudt.org/vocab/unit/W-PER-M-K", display: "W/(m K)"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nakamura et al., J. Cryst. Growth 290, 144 (2006)", research_note: "R14 row 27", transcribed: "2026-10-25"}
+  default: true
+
+- id: thermal-conductivity/cln/cti1999
+  kind: scalar
+  property: thermal-conductivity
+  name: Thermal conductivity
+  symbol: kappa
+  category: thermal
+  value: 4.2
+  uncertainty: {type: approximate}
+  unit: {ucum: "W/(m.K)", qudt: "http://qudt.org/vocab/unit/W-PER-M-K", display: "W/(m K)"}
+  variant: cln
+  conditions: {temperature_C: 25}
+  provenance: {source_id: cti1999, status: V, derivation: "converted from 1.0e-2 cal/(cm s C)", research_note: "R06 sec. 2.2", transcribed: "2026-10-25"}
+
+- id: thermal-conductivity/unspecified/schwesyg2011
+  kind: scalar
+  property: thermal-conductivity
+  name: Thermal conductivity
+  symbol: kappa
+  category: thermal
+  value: 5
+  unit: {ucum: "W/(m.K)", qudt: "http://qudt.org/vocab/unit/W-PER-M-K", display: "W/(m K)"}
+  variant: unspecified
+  provenance: {source_id: schwesyg2011, locator: "Eq. (2.28)", status: S, original_reference: "Wong 2002 (EMIS Datareview 28)", research_note: "R14 row 27", transcribed: "2026-10-25"}
+
+- id: specific-heat/cln/volk2008
+  kind: scalar
+  property: specific-heat
+  name: Specific heat capacity
+  symbol: c_p
+  category: thermal
+  value: 628
+  unit: {ucum: "J/(kg.K)", qudt: "http://qudt.org/vocab/unit/J-PER-KiloGM-K", display: "J/(kg K)"}
+  variant: cln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nakamura et al., J. Cryst. Growth 290, 144 (2006)", research_note: "R14 row 26", transcribed: "2026-10-25"}
+  default: true
+
+- id: specific-heat/sln/volk2008
+  kind: scalar
+  property: specific-heat
+  name: Specific heat capacity
+  symbol: c_p
+  category: thermal
+  value: 651
+  unit: {ucum: "J/(kg.K)", qudt: "http://qudt.org/vocab/unit/J-PER-KiloGM-K", display: "J/(kg K)"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Nakamura et al., J. Cryst. Growth 290, 144 (2006)", research_note: "R14 row 26", transcribed: "2026-10-25"}
+  default: true
+
+- id: specific-heat/cln/cti1999
+  kind: scalar
+  property: specific-heat
+  name: Specific heat capacity
+  symbol: c_p
+  category: thermal
+  value: 628
+  uncertainty: {type: approximate}
+  unit: {ucum: "J/(kg.K)", qudt: "http://qudt.org/vocab/unit/J-PER-KiloGM-K", display: "J/(kg K)"}
+  variant: cln
+  conditions: {temperature_C: 25}
+  provenance: {source_id: cti1999, status: V, derivation: "converted from 0.15 cal/(g C)", research_note: "R06 sec. 2.2", transcribed: "2026-10-25"}
+
+- id: pyroelectric-p3/unspecified/weis1985
+  kind: scalar
+  property: pyroelectric-p3
+  name: Pyroelectric coefficient
+  symbol: p_3
+  category: thermal
+  value: -4.0e-5
+  unit: {ucum: "C/(m2.K)", display: "C/(m^2 K)"}
+  variant: unspecified
+  conditions: {temperature_text: "room temperature"}
+  frame: {setting: "crystal-physics", x: "a axis, perpendicular to a mirror plane", y: "in a mirror plane", z: "polar c axis", handedness: right, convention: IRE-1949, z_sign_definition: "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"}
+  provenance: {source_id: weis1985, locator: "Eq. (2), p. 196", status: P-comp, original_reference: "Savage, J. Appl. Phys. 37, 3071 (1966)", research_note: "R14 rows 28, 30", transcribed: "2026-10-25"}
+  notes: "p3 < 0 means that on cooling the +c face becomes more positive (weis1985 p. 196). Magnitudes across sources span 4-9.5e-5 C/(m^2 K) (R14 row 28)."
+
+- id: pyroelectric-p3/unspecified/schwesyg2011
+  kind: scalar
+  property: pyroelectric-p3
+  name: Pyroelectric coefficient
+  symbol: p_3
+  category: thermal
+  value: -6.4e-5
+  unit: {ucum: "C/(m2.K)", display: "C/(m^2 K)"}
+  variant: unspecified
+  variant_note: "'crystals of different compositions'"
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: schwesyg2011, locator: "Eq. (2.17)", status: S, original_reference: "Bartholomaus, Buse, Deuper, Kratzig, phys. stat. sol. (a) 142, 55 (1994)", research_note: "R14 row 29", transcribed: "2026-10-25"}
+
+- id: pyroelectric-p3/cln/cti1999
+  kind: scalar
+  property: pyroelectric-p3
+  name: Pyroelectric coefficient
+  symbol: p_3
+  category: thermal
+  value: -8.3e-5
+  unit: {ucum: "C/(m2.K)", display: "C/(m^2 K)"}
+  variant: cln
+  conditions: {temperature_C: 25}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.2", transcribed: "2026-10-25"}
+  notes: "Sign convention not stated in the data sheet."

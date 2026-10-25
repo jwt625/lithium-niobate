@@ -1,0 +1,25 @@
+{
+  "citation": "\"optics.org buyers guide: Crystal Technology, Inc.\", (2026) https://optics.org/buyers-guide/crystal-technology-inc",
+  "link": "https://optics.org/buyers-guide/crystal-technology-inc",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "opticsorg-crystaltech",
+    "issued": "2026",
+    "notes": "Undated page; issued set to the access year.",
+    "read": "Read",
+    "title": "optics.org buyers guide: Crystal Technology, Inc.",
+    "type": "webpage",
+    "url": "https://optics.org/buyers-guide/crystal-technology-inc"
+  }
+}

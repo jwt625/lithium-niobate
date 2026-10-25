@@ -1,0 +1,38 @@
+{
+  "citation": "Ashutosh Rao, Sasan Fathpour, \"Compact Lithium Niobate Electrooptic Modulators\", IEEE Journal of Selected Topics in Quantum Electronics 24, 1-14, (2018) doi:10.1109/jstqe.2017.2779869",
+  "link": "https://doi.org/10.1109/jstqe.2017.2779869",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Rao",
+        "given": "Ashutosh"
+      },
+      {
+        "family": "Fathpour",
+        "given": "Sasan"
+      }
+    ],
+    "container_title": "IEEE Journal of Selected Topics in Quantum Electronics",
+    "doi": "10.1109/jstqe.2017.2779869",
+    "id": "rao2018",
+    "issue": "4",
+    "issued": "2018-07",
+    "page": "1-14",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Compact Lithium Niobate Electrooptic Modulators",
+    "type": "article-journal",
+    "volume": "24"
+  }
+}

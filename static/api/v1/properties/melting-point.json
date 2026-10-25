@@ -1,0 +1,144 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Melting point of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, sln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/melting-point.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/melting-point.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Melting point"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Melting point",
+    "url": "https://lithium-niobate.com/api/v1/properties/melting-point.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_m (cln)",
+        "unitText": "Cel",
+        "value": 1255
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_m (sln)",
+        "unitText": "Cel",
+        "value": "< 1200"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 3,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "melting-point"
+  },
+  "records": [
+    {
+      "category": "ferroelectric",
+      "id": "melting-point/cln/cti1999",
+      "kind": "scalar",
+      "name": "Melting point",
+      "property": "melting-point",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_m",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1250,
+      "variant": "cln"
+    },
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "melting-point/cln/volk2008",
+      "kind": "scalar",
+      "name": "Melting point",
+      "notes": "Inside the 1240-1275 C range quoted across vendors and handbooks.",
+      "property": "melting-point",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_m",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1255,
+      "variant": "cln"
+    },
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "melting-point/sln/volk2008",
+      "kind": "scalar",
+      "name": "Melting point",
+      "property": "melting-point",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_m",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value_text": "< 1200",
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ]
+}

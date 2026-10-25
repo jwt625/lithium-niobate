@@ -1,0 +1,25 @@
+{
+  "citation": "\"Nobel Prize API laureate record: Arthur Ashkin\", (2026) https://api.nobelprize.org/2.1/laureates?name=Ashkin",
+  "link": "https://api.nobelprize.org/2.1/laureates?name=Ashkin",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "nobelapi-ashkin",
+    "issued": "2026",
+    "notes": "Undated page; issued set to the access year.",
+    "read": "Read, 2026-10-25",
+    "title": "Nobel Prize API laureate record: Arthur Ashkin",
+    "type": "dataset",
+    "url": "https://api.nobelprize.org/2.1/laureates?name=Ashkin"
+  }
+}

@@ -1,0 +1,170 @@
+# glossary.yaml: chapter 08 Industry
+# Fields: term, expansion (if an abbreviation), definition, level, see.
+# As of 2026-10-25.
+
+- term: pyrochlore
+  definition: The niobium ore mineral mined in Brazil and Canada; the main primary source of niobium.
+  level: L1
+  see: "8.1"
+
+- term: ferroniobium
+  definition: An iron-niobium alloy, the main traded niobium product, used to make high-strength steel.
+  level: L1
+  see: "8.1"
+
+- term: Nb2O5
+  expansion: niobium pentoxide
+  definition: High-purity niobium oxide, one of the two starting powders for LN crystal growth; 69.904 wt% Nb.
+  level: L2
+  see: "8.1"
+
+- term: Li2CO3
+  expansion: lithium carbonate
+  definition: The lithium starting powder for LN crystal growth; most lithium is consumed by batteries.
+  level: L2
+  see: "8.1"
+
+- term: Czochralski growth
+  definition: Pulling a single crystal (a boule) from a melt on a rotating seed; the standard method for LN and LT (chapter 05).
+  level: L1
+  see: "8.1"
+
+- term: congruent LN
+  definition: LN grown from the melt composition at which crystal and melt have the same composition; Li-deficient; the standard SAW and optical grade.
+  level: L2
+  see: "8.1"
+
+- term: SAW grade / optical grade
+  definition: Wafer specifications for acoustic filters (rotated-Y cuts, e.g. 128-degree Y LN) versus optics (x- or z-cut, optical quality).
+  level: L2
+  see: "8.1"
+
+- term: ion slicing
+  expansion: also crystal ion slicing, Smart Cut
+  definition: Implanting light ions to a set depth, bonding the crystal to a handle wafer, and splitting along the implanted layer to leave a thin film (chapter 05).
+  level: L2
+  see: "8.1"
+
+- term: LNOI / LTOI
+  expansion: lithium niobate / lithium tantalate on insulator
+  definition: "Thin-film wafers for photonics: LN or LT film on buried oxide on a Si, LN, or quartz handle."
+  level: L1
+  see: "8.1"
+
+- term: POI
+  expansion: piezoelectric-on-insulator
+  definition: Thin LT or LN film on oxide on high-resistivity Si, made for SAW filters.
+  level: L2
+  see: "8.1"
+
+- term: foundry
+  definition: A company that manufactures chips to customers' designs; a pure-play foundry makes no products of its own.
+  level: L1
+  see: "8.2"
+
+- term: MPW
+  expansion: multi-project wafer
+  definition: A shared fabrication run in which several customers' designs occupy one wafer, splitting the cost.
+  level: L2
+  see: "8.2"
+
+- term: PDK
+  expansion: process design kit
+  definition: The design rules, component library, and models a foundry supplies so customers can design for its process.
+  level: L2
+  see: "8.2"
+
+- term: CDM
+  expansion: coherent driver modulator
+  definition: A packaged IQ modulator with integrated RF drivers for coherent transceivers; HB-CDM is the high-bandwidth class.
+  level: L2
+  see: "8.2"
+
+- term: TOSA
+  expansion: transmitter optical sub-assembly
+  definition: The packaged laser, modulator, and optics on the transmit side of a pluggable module.
+  level: L2
+  see: "8.5"
+
+- term: per-lane rate
+  definition: Data rate carried by one optical lane (one wavelength on one fiber); 200 G/lane and 400 G/lane are the module generations behind 1.6T and 3.2T.
+  level: L1
+  see: "8.3"
+
+- term: 1.6T / 3.2T
+  definition: Pluggable optical modules with 1.6 or 3.2 Tb/s aggregate rate, e.g. 8 lanes of 200 or 400 Gb/s (DR8 = 8 parallel single-mode lanes).
+  level: L2
+  see: "8.3"
+
+- term: IM/DD
+  expansion: intensity modulation / direct detection
+  definition: Transmission that encodes data in optical intensity and detects it with a photodiode; used inside data centers.
+  level: L2
+  see: "8.3"
+
+- term: coherent
+  definition: Transmission that encodes amplitude and phase on two polarizations and detects them against a local oscillator; used for long reach.
+  level: L2
+  see: "8.3"
+
+- term: CPO / NPO / LPO
+  expansion: co-packaged optics / near-packaged optics / linear pluggable optics
+  definition: Ways to place optics close to a switch chip (CPO, NPO) or to drive a pluggable without a retiming DSP (LPO).
+  level: L2
+  see: "8.5"
+
+- term: BEOL
+  expansion: back end of line
+  definition: The metal interconnect layers of a CMOS process, above the transistors.
+  level: L3
+  see: "8.5"
+
+- term: EIC
+  expansion: electronic integrated circuit
+  definition: The driver or receiver chip paired with a photonic chip.
+  level: L3
+  see: "8.5"
+
+- term: CTLE
+  expansion: continuous-time linear equalizer
+  definition: An analog filter that boosts high frequencies to compensate channel or device roll-off.
+  level: L3
+  see: "8.5"
+
+- term: OFC / ECOC
+  expansion: Optical Fiber Communication Conference / European Conference on Optical Communication
+  definition: Annual optical-communication conferences (OFC in March, ECOC in September); many announcements in this chapter are dated to them.
+  level: L1
+  see: "8.5"
+
+- term: postdeadline paper
+  definition: A late-submitted conference paper accepted for results judged exceptional; OFC 2026 had 24.
+  level: L2
+  see: "8.5"
+
+- term: evidence grade
+  definition: "The site's label for how a claim was checked: F (primary source read), V (vendor claim), T (trade press read), C (snippet only), LG (low-grade), E (site estimate), S (speculation)."
+  level: L1
+  see: "8.0"
+
+- term: CAGR
+  expansion: compound annual growth rate
+  definition: The constant yearly growth rate that links a base value to a forecast value; as quoted by each market report.
+  level: L2
+  see: "8.6"
+
+- term: market teaser
+  definition: The free summary page of a paid market report; it shows headline numbers without data or method.
+  level: L1
+  see: "8.6"
+
+- term: atlas sample
+  definition: The curated set of modulator papers in eo-modulator-atlas (233 papers at the pinned commit); counts describe the sample, not the whole field.
+  level: L2
+  see: "8.4"
+
+- term: FOG
+  expansion: fiber-optic gyroscope
+  definition: A rotation sensor that measures the Sagnac phase between counter-propagating light in a fiber coil; LN integrated optical circuits split and modulate the light.
+  level: L1
+  see: "8.7"

@@ -1,0 +1,33 @@
+{
+  "citation": "Paweł E. Tomaszewski, \"Jan Czochralski—father of the Czochralski method\", Journal of Crystal Growth 236, 1-4, (2002) doi:10.1016/s0022-0248(01)02195-9",
+  "link": "https://doi.org/10.1016/s0022-0248(01)02195-9",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Paweł E. Tomaszewski"
+      }
+    ],
+    "container_title": "Journal of Crystal Growth",
+    "doi": "10.1016/s0022-0248(01)02195-9",
+    "id": "tomaszewski2002",
+    "issue": "1-3",
+    "issued": "2002-03",
+    "page": "1-4",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Jan Czochralski—father of the Czochralski method",
+    "type": "article-journal",
+    "volume": "236"
+  }
+}

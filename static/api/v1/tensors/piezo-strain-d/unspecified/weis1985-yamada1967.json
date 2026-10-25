@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "piezo-strain-d",
+    "variant": "unspecified"
+  },
+  "record": {
+    "frame": {
+      "convention": "IRE-1949",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -21.0,
+          37.0
+        ],
+        [
+          -21.0,
+          0.0,
+          0.0
+        ],
+        [
+          37.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -21.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          21.0,
+          37.0
+        ],
+        [
+          0.0,
+          37.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -0.87,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.87,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          16.0
+        ]
+      ]
+    ],
+    "id": "piezo-strain-d/unspecified/weis1985-yamada1967",
+    "independent": {
+      "d15": {
+        "value": 74
+      },
+      "d22": {
+        "value": 21
+      },
+      "d31": {
+        "value": -0.87
+      },
+      "d33": {
+        "value": 16
+      }
+    },
+    "kind": "tensor",
+    "name": "Piezoelectric strain constants",
+    "notes": "d33 = 16 pC/N is ruled out by the hydrostatic d_h measurements.",
+    "provenance": {
+      "locator": "Table 3, p. 198",
+      "original_reference": "Yamada, Niizeki, Toyoda, Jpn. J. Appl. Phys. 6, 151 (1967)",
+      "source_id": "weis1985",
+      "status": "P-comp",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "d",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "d15",
+          "-2*d22"
+        ],
+        [
+          "-d22",
+          "d22",
+          "0",
+          "d15",
+          "0",
+          "0"
+        ],
+        [
+          "d31",
+          "d31",
+          "d33",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "d16 = -2 d22",
+        "d21 = -d22",
+        "d24 = d15",
+        "d32 = d31"
+      ]
+    },
+    "tensor": "piezo-strain-d",
+    "unit": {
+      "display": "pC/N",
+      "ucum": "pC/N"
+    },
+    "variant": "unspecified",
+    "voigt": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        74.0,
+        -42.0
+      ],
+      [
+        -21.0,
+        21.0,
+        0.0,
+        74.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.87,
+        -0.87,
+        16.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "d_ijk = d_iJ x (1 if J<=3 else 1/2) (engineering shear strain)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

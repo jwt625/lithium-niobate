@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "eo-rT",
+    "variant": "cln"
+  },
+  "record": {
+    "conditions": {
+      "frequency_text": "low frequency",
+      "mechanical_boundary": "T",
+      "wavelength_nm": 633
+    },
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          0.0,
+          -7.0,
+          10.0
+        ],
+        [
+          -7.0,
+          0.0,
+          0.0
+        ],
+        [
+          33.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -7.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.0,
+          10.0
+        ],
+        [
+          0.0,
+          33.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          33.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          33.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          33.0
+        ]
+      ]
+    ],
+    "id": "eo-rT/cln/cti1999",
+    "independent": {
+      "r13": {
+        "value": 10
+      },
+      "r22": {
+        "value": 7
+      },
+      "r33": {
+        "value": 33
+      },
+      "r51": {
+        "value": 33
+      }
+    },
+    "kind": "tensor",
+    "name": "Linear electro-optic (Pockels) coefficients, unclamped (constant stress)",
+    "notes": "Data sheet also lists r_c = 18 pm/V.",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 3,
+    "scale": 1,
+    "symbol": "r^T",
+    "symmetry_form": {
+      "form": [
+        [
+          "0",
+          "-r22",
+          "r13"
+        ],
+        [
+          "0",
+          "r22",
+          "r13"
+        ],
+        [
+          "0",
+          "0",
+          "r33"
+        ],
+        [
+          "0",
+          "r51",
+          "0"
+        ],
+        [
+          "r51",
+          "0",
+          "0"
+        ],
+        [
+          "-r22",
+          "0",
+          "0"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "r12 = -r22",
+        "r23 = r13",
+        "r42 = r51",
+        "r61 = -r22"
+      ]
+    },
+    "tensor": "eo-rT",
+    "unit": {
+      "display": "pm/V",
+      "ucum": "pm/V"
+    },
+    "variant": "cln",
+    "voigt": [
+      [
+        0.0,
+        -7.0,
+        10.0
+      ],
+      [
+        0.0,
+        7.0,
+        10.0
+      ],
+      [
+        0.0,
+        0.0,
+        33.0
+      ],
+      [
+        0.0,
+        33.0,
+        0.0
+      ],
+      [
+        33.0,
+        0.0,
+        0.0
+      ],
+      [
+        -7.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "r_ijk = r_Ik, I = V(ij) (impermeability change d(eta)_ij = r_ijk E_k)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

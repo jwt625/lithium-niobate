@@ -1,0 +1,66 @@
+{
+  "citation": "Run Li, Jinye Li, Zongyu Lu, et al., \"Low-Frequency Time-Domain Response of Thin-Film Lithium Niobate Electro-Optic Modulator\", Photonics 13, 339, (2026) doi:10.3390/photonics13040339",
+  "link": "https://doi.org/10.3390/photonics13040339",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "license": "CC BY 4.0",
+      "oa_status": "gold"
+    },
+    "accessed": "2026-10-25",
+    "article_number": "339",
+    "author": [
+      {
+        "family": "Li",
+        "given": "Run"
+      },
+      {
+        "family": "Li",
+        "given": "Jinye"
+      },
+      {
+        "family": "Lu",
+        "given": "Zongyu"
+      },
+      {
+        "family": "Huang",
+        "given": "Jiayu"
+      },
+      {
+        "family": "Jia",
+        "given": "Qianqian"
+      },
+      {
+        "family": "Xiang",
+        "given": "Zichuan"
+      },
+      {
+        "family": "Xiao",
+        "given": "Jinlong"
+      },
+      {
+        "family": "Liu",
+        "given": "Jianguo"
+      }
+    ],
+    "container_title": "Photonics",
+    "doi": "10.3390/photonics13040339",
+    "id": "li2026photonics",
+    "issue": "4",
+    "issued": "2026-03-31",
+    "read": "bibliographic record only (Crossref, 2026-10-25)",
+    "title": "Low-Frequency Time-Domain Response of Thin-Film Lithium Niobate Electro-Optic Modulator",
+    "type": "article-journal",
+    "volume": "13"
+  }
+}

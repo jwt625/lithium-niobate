@@ -1,0 +1,365 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "photoelastic-p",
+    "variant": "unspecified"
+  },
+  "record": {
+    "conditions": {
+      "wavelength_nm": 633
+    },
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated; the set is quoted with c14 > 0 (pitfall 2)"
+    },
+    "full": [
+      [
+        [
+          [
+            -0.023,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.076,
+            0.057
+          ],
+          [
+            0.0,
+            0.057,
+            0.147
+          ]
+        ],
+        [
+          [
+            0.0,
+            -0.0495,
+            0.057
+          ],
+          [
+            -0.0495,
+            0.0,
+            0.0
+          ],
+          [
+            0.057,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            0.051,
+            0.126
+          ],
+          [
+            0.051,
+            0.0,
+            0.0
+          ],
+          [
+            0.126,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            -0.0495,
+            0.057
+          ],
+          [
+            -0.0495,
+            0.0,
+            0.0
+          ],
+          [
+            0.057,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.076,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.023,
+            -0.057
+          ],
+          [
+            0.0,
+            -0.057,
+            0.147
+          ]
+        ],
+        [
+          [
+            0.051,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.051,
+            0.126
+          ],
+          [
+            0.0,
+            0.126,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            0.051,
+            0.126
+          ],
+          [
+            0.051,
+            0.0,
+            0.0
+          ],
+          [
+            0.126,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.051,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.051,
+            0.126
+          ],
+          [
+            0.0,
+            0.126,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.157,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.157,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.141
+          ]
+        ]
+      ]
+    ],
+    "id": "photoelastic-p/unspecified/mys2015-krupych2014",
+    "independent": {
+      "p11": {
+        "value": -0.023
+      },
+      "p12": {
+        "value": 0.076
+      },
+      "p13": {
+        "value": 0.147
+      },
+      "p14": {
+        "value": 0.057
+      },
+      "p31": {
+        "value": 0.157
+      },
+      "p33": {
+        "value": 0.141
+      },
+      "p41": {
+        "value": 0.051
+      },
+      "p44": {
+        "value": 0.126
+      }
+    },
+    "kind": "tensor",
+    "name": "Photoelastic (strain-optic) coefficients",
+    "notes": "p14, p41 > 0 with c14 > 0 disagrees in sign with the weis1985 compilation of Avakyants.",
+    "provenance": {
+      "original_reference": "Krupych et al., Appl. Opt. 53, B1 (2014)",
+      "source_id": "mys2015",
+      "status": "S",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 4,
+    "scale": 1,
+    "symbol": "p",
+    "symmetry_form": {
+      "form": [
+        [
+          "p11",
+          "p12",
+          "p13",
+          "p14",
+          "0",
+          "0"
+        ],
+        [
+          "p12",
+          "p11",
+          "p13",
+          "-p14",
+          "0",
+          "0"
+        ],
+        [
+          "p31",
+          "p31",
+          "p33",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "p41",
+          "-p41",
+          "0",
+          "p44",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "p44",
+          "p41"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "p14",
+          "(p11-p12)/2"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "p22 = p11",
+        "p23 = p13",
+        "p24 = -p14",
+        "p32 = p31",
+        "p42 = -p41",
+        "p55 = p44",
+        "p56 = p41",
+        "p65 = p14",
+        "p66 = (p11 - p12)/2",
+        "p_IJ is not symmetric (p14 != p41)"
+      ]
+    },
+    "tensor": "photoelastic-p",
+    "unit": {
+      "display": "-",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "variant": "unspecified",
+    "voigt": [
+      [
+        -0.023,
+        0.076,
+        0.147,
+        0.057,
+        0.0,
+        0.0
+      ],
+      [
+        0.076,
+        -0.023,
+        0.147,
+        -0.057,
+        0.0,
+        0.0
+      ],
+      [
+        0.157,
+        0.157,
+        0.141,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.051,
+        -0.051,
+        0.0,
+        0.126,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.126,
+        0.051
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.057,
+        -0.0495
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "p_ijkl = p_IJ, I = V(ij), J = V(kl) (d(eta)_I = p_IJ S_J with engineering S_4..S_6)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  }
+}

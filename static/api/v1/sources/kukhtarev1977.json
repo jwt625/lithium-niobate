@@ -1,0 +1,39 @@
+{
+  "citation": "N. Kukhtarev, V. Markov, S. Odulov, \"Transient energy transfer during hologram formation in LiNbO3 in external electric field\", Optics Communications 23, 338-343, (1977) doi:10.1016/0030-4018(77)90376-5",
+  "link": "https://doi.org/10.1016/0030-4018(77)90376-5",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "N. Kukhtarev"
+      },
+      {
+        "literal": "V. Markov"
+      },
+      {
+        "literal": "S. Odulov"
+      }
+    ],
+    "container_title": "Optics Communications",
+    "doi": "10.1016/0030-4018(77)90376-5",
+    "id": "kukhtarev1977",
+    "issue": "3",
+    "issued": "1977-12",
+    "page": "338-343",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Transient energy transfer during hologram formation in LiNbO3 in external electric field",
+    "type": "article-journal",
+    "volume": "23"
+  }
+}

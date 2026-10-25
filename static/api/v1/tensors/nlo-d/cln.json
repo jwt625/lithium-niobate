@@ -1,0 +1,38 @@
+{
+  "alternatives": [
+    "nlo-d/cln/cti1999",
+    "nlo-d/cln/volk2008"
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "nlo-d",
+    "variant": "cln"
+  },
+  "recommended": null,
+  "recommended_note": "No single recommended set: sources disagree (shown as a spread, not blended).",
+  "spread": {
+    "d22": {
+      "max": 3,
+      "min": 3,
+      "n_records": 2
+    },
+    "d31": {
+      "max": 6,
+      "min": -5,
+      "n_records": 2
+    },
+    "d33": {
+      "max": 34,
+      "min": -33,
+      "n_records": 2
+    }
+  }
+}

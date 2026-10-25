@@ -1,0 +1,390 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "elastic-compliance-sE",
+    "variant": "cln"
+  },
+  "recommended": {
+    "conditions": {
+      "electrical_boundary": "E"
+    },
+    "default": true,
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        [
+          [
+            5.85352,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.18173,
+            -0.460201
+          ],
+          [
+            0.0,
+            -0.460201,
+            -1.35637
+          ]
+        ],
+        [
+          [
+            0.0,
+            3.517625,
+            -0.460201
+          ],
+          [
+            3.517625,
+            0.0,
+            0.0
+          ],
+          [
+            -0.460201,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.0,
+            -0.460201,
+            4.237325
+          ],
+          [
+            -0.460201,
+            0.0,
+            0.0
+          ],
+          [
+            4.237325,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            3.517625,
+            -0.460201
+          ],
+          [
+            3.517625,
+            0.0,
+            0.0
+          ],
+          [
+            -0.460201,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            -1.18173,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.85352,
+            0.460201
+          ],
+          [
+            0.0,
+            0.460201,
+            -1.35637
+          ]
+        ],
+        [
+          [
+            -0.460201,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.460201,
+            4.237325
+          ],
+          [
+            0.0,
+            4.237325,
+            0.0
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0.0,
+            -0.460201,
+            4.237325
+          ],
+          [
+            -0.460201,
+            0.0,
+            0.0
+          ],
+          [
+            4.237325,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          [
+            -0.460201,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.460201,
+            4.237325
+          ],
+          [
+            0.0,
+            4.237325,
+            0.0
+          ]
+        ],
+        [
+          [
+            -1.35637,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.35637,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            5.05782
+          ]
+        ]
+      ]
+    ],
+    "id": "elastic-compliance-sE/cln/kushibiki1999",
+    "independent": {
+      "s11": {
+        "value": 5.85352
+      },
+      "s12": {
+        "value": -1.18173
+      },
+      "s13": {
+        "value": -1.35637
+      },
+      "s14": {
+        "value": -0.920402
+      },
+      "s33": {
+        "value": 5.05782
+      },
+      "s44": {
+        "value": 16.9493
+      }
+    },
+    "kind": "tensor",
+    "name": "Elastic compliance at constant electric field",
+    "notes": "Derived, not a published number. lists the same inversion: s11 5.854, s12 -1.182, s13 -1.356, s14 -0.920, s33 5.058, s44 16.949, s66 14.071.",
+    "provenance": {
+      "derivation": "inverse of the kushibiki1999 c^E Voigt matrix (engineering shear strain), computed by scripts/build_data.py",
+      "source_id": "kushibiki1999",
+      "status": "C",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 4,
+    "scale": 1,
+    "symbol": "s^E",
+    "symmetry_form": {
+      "form": [
+        [
+          "s11",
+          "s12",
+          "s13",
+          "s14",
+          "0",
+          "0"
+        ],
+        [
+          "s12",
+          "s11",
+          "s13",
+          "-s14",
+          "0",
+          "0"
+        ],
+        [
+          "s13",
+          "s13",
+          "s33",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "s14",
+          "-s14",
+          "0",
+          "s44",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "s44",
+          "2*s14"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "2*s14",
+          "2*(s11-s12)"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "s22 = s11",
+        "s23 = s13",
+        "s24 = -s14",
+        "s55 = s44",
+        "s56 = 2 s14",
+        "s66 = 2 (s11 - s12)"
+      ]
+    },
+    "tensor": "elastic-compliance-sE",
+    "unit": {
+      "display": "1e-12 m^2/N",
+      "ucum": "10*-12.m2/N"
+    },
+    "variant": "cln",
+    "variant_note": "SAW-grade congruent",
+    "voigt": [
+      [
+        5.85352,
+        -1.18173,
+        -1.35637,
+        -0.920402,
+        0.0,
+        0.0
+      ],
+      [
+        -1.18173,
+        5.85352,
+        -1.35637,
+        0.920402,
+        0.0,
+        0.0
+      ],
+      [
+        -1.35637,
+        -1.35637,
+        5.05782,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.920402,
+        0.920402,
+        0.0,
+        16.9493,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.9493,
+        -1.840804
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.840804,
+        14.0705
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "s_ijkl = s_IJ x (1 if I<=3 else 1/2) x (1 if J<=3 else 1/2) (engineering shear strain)",
+      "order": [
+        "xx",
+        "yy",
+        "zz",
+        "yz",
+        "xz",
+        "xy"
+      ],
+      "shear_strain": "engineering"
+    }
+  },
+  "recommended_note": null,
+  "spread": {
+    "s11": {
+      "max": 5.85352,
+      "min": 5.85352,
+      "n_records": 1
+    },
+    "s12": {
+      "max": -1.18173,
+      "min": -1.18173,
+      "n_records": 1
+    },
+    "s13": {
+      "max": -1.35637,
+      "min": -1.35637,
+      "n_records": 1
+    },
+    "s14": {
+      "max": -0.920402,
+      "min": -0.920402,
+      "n_records": 1
+    },
+    "s33": {
+      "max": 5.05782,
+      "min": 5.05782,
+      "n_records": 1
+    },
+    "s44": {
+      "max": 16.9493,
+      "min": 16.9493,
+      "n_records": 1
+    }
+  }
+}

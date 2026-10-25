@@ -1,0 +1,42 @@
+{
+  "citation": "F. S. Chen, J. T. LaMacchia, D. B. Fraser, \"HOLOGRAPHIC STORAGE IN LITHIUM NIOBATE\", Applied Physics Letters 13, 223-225, (1968) doi:10.1063/1.1652580",
+  "link": "https://doi.org/10.1063/1.1652580",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Chen",
+        "given": "F. S."
+      },
+      {
+        "family": "LaMacchia",
+        "given": "J. T."
+      },
+      {
+        "family": "Fraser",
+        "given": "D. B."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1652580",
+    "id": "chen1968",
+    "issue": "7",
+    "issued": "1968-10-01",
+    "page": "223-225",
+    "read": "bibliographic record only (Crossref)",
+    "title": "HOLOGRAPHIC STORAGE IN LITHIUM NIOBATE",
+    "type": "article-journal",
+    "volume": "13"
+  }
+}

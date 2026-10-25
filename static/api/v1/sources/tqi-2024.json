@@ -1,0 +1,23 @@
+{
+  "citation": "\"Q.ANT photonic NPU launch (The Quantum Insider)\" (2024)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "tqi-2024",
+    "issued": "2024-11-20",
+    "read": "Per; URL not recorded",
+    "title": "Q.ANT photonic NPU launch (The Quantum Insider)",
+    "type": "webpage"
+  }
+}

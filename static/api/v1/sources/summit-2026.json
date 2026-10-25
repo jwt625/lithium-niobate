@@ -1,0 +1,24 @@
+{
+  "citation": "\"HyperLight announces $80 million Series C to accelerate TFLN deployment for AI infrastructure\", (2026) https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure",
+  "link": "https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "summit-2026",
+    "issued": "2026-06-18",
+    "read": "Read",
+    "title": "HyperLight announces $80 million Series C to accelerate TFLN deployment for AI infrastructure",
+    "type": "webpage",
+    "url": "https://www.summitpartners.com/news/hyperlight-announces-80-million-series-c-to-accelerate-tfln-deployment-for-ai-infrastructure"
+  }
+}

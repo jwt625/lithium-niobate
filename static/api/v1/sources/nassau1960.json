@@ -1,0 +1,36 @@
+{
+  "citation": "K. Nassau, L. G. Van Uitert, \"Preparation of Large Calcium-Tungstate Crystals Containing Paramagnetic Ions for Maser Applications\", Journal of Applied Physics 31, 1508-1508, (1960) doi:10.1063/1.1735881",
+  "link": "https://doi.org/10.1063/1.1735881",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "K. Nassau"
+      },
+      {
+        "literal": "L. G. Van Uitert"
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1735881",
+    "id": "nassau1960",
+    "issue": "8",
+    "issued": "1960-08-01",
+    "page": "1508-1508",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Preparation of Large Calcium-Tungstate Crystals Containing Paramagnetic Ions for Maser Applications",
+    "type": "article-journal",
+    "volume": "31"
+  }
+}

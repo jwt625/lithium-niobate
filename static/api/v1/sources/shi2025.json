@@ -1,0 +1,62 @@
+{
+  "citation": "Jiakang Shi, Zhilin Ye, Zhen Liu, et al., \"Alleviation of DC drift in a thin-film lithium niobate modulator utilizing Ar + ion milling\", Optics Letters 50, 1703, (2025) doi:10.1364/ol.549975",
+  "link": "https://doi.org/10.1364/ol.549975",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Shi",
+        "given": "Jiakang"
+      },
+      {
+        "family": "Ye",
+        "given": "Zhilin"
+      },
+      {
+        "family": "Liu",
+        "given": "Zhen"
+      },
+      {
+        "family": "Yan",
+        "given": "Zhong"
+      },
+      {
+        "family": "Jia",
+        "given": "Kunpeng"
+      },
+      {
+        "family": "Zhang",
+        "given": "Liqiang"
+      },
+      {
+        "family": "Ge",
+        "given": "Daohan"
+      },
+      {
+        "family": "Zhu",
+        "given": "Shining"
+      }
+    ],
+    "container_title": "Optics Letters",
+    "doi": "10.1364/ol.549975",
+    "id": "shi2025",
+    "issue": "5",
+    "issued": "2025-02-27",
+    "page": "1703",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Alleviation of DC drift in a thin-film lithium niobate modulator utilizing Ar + ion milling",
+    "type": "article-journal",
+    "volume": "50"
+  }
+}

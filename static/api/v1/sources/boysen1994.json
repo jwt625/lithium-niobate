@@ -1,0 +1,39 @@
+{
+  "citation": "H. Boysen, F. Altorfer, \"A neutron powder investigation of the high-temperature structure and phase transition in LiNbO3\", Acta Crystallographica Section B 50, 405, (1994) doi:10.1107/S0108768193012820",
+  "link": "https://doi.org/10.1107/S0108768193012820",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Boysen",
+        "given": "H."
+      },
+      {
+        "family": "Altorfer",
+        "given": "F."
+      }
+    ],
+    "container_title": "Acta Crystallographica Section B",
+    "doi": "10.1107/S0108768193012820",
+    "id": "boysen1994",
+    "issued": "1994",
+    "page": "405",
+    "read": "abstract only; structures via COD 2101175-2101185",
+    "title": "A neutron powder investigation of the high-temperature structure and phase transition in LiNbO3",
+    "type": "article-journal",
+    "volume": "50"
+  }
+}

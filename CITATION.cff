@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this website, its code or its data, please cite it as below. For individual property values, also cite the original source given with each value."
+title: "lithium-niobate.com: lithium niobate (LiNbO3) physics, data and history"
+type: software
+authors:
+  - family-names: Jiang
+    given-names: Wentao
+    orcid: "https://orcid.org/0000-0002-6592-4322"
+version: 0.1.0
+date-released: "2026-10-25"
+url: "https://lithium-niobate.com"
+license:
+  - GPL-3.0
+  - CC-BY-4.0
+abstract: >-
+  A website and static data API on lithium niobate (LiNbO3): crystal structure, optical, acoustic and
+  electro-optic properties, fabrication, devices, history and industry. Code is licensed under GPL-3.0.
+  Data (compiled property values with per-value provenance, dispersion models and grids, records,
+  timelines, glossary and exported datasets under static/api/) is licensed under CC BY 4.0
+  (https://creativecommons.org/licenses/by/4.0/).
+keywords:
+  - lithium niobate
+  - LiNbO3
+  - thin-film lithium niobate
+  - material properties
+  - electro-optics
+  - nonlinear optics
+  - piezoelectricity

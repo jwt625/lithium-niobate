@@ -1,0 +1,43 @@
+{
+  "citation": "R. Brinkmann, Ch. Buchal, St. Mohr, et al., \"Annealed Erbium-implanted single-mode LiNbO3 waveguides\", Integrated Photonics Research, PD1, (1990) doi:10.1364/ipr.1990.pd1",
+  "link": "https://doi.org/10.1364/ipr.1990.pd1",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "R. Brinkmann"
+      },
+      {
+        "literal": "Ch. Buchal"
+      },
+      {
+        "literal": "St. Mohr"
+      },
+      {
+        "literal": "W. Sohler"
+      },
+      {
+        "literal": "H. Suche"
+      }
+    ],
+    "container_title": "Integrated Photonics Research",
+    "doi": "10.1364/ipr.1990.pd1",
+    "id": "brinkmann1990",
+    "issued": "1990",
+    "page": "PD1",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Annealed Erbium-implanted single-mode LiNbO3 waveguides",
+    "type": "paper-conference"
+  }
+}

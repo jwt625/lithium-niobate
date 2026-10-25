@@ -1,0 +1,1491 @@
+# Glossary seed for lithium-niobate.com. Schema: data/schema/glossary.schema.json.
+# Numbers come only from research/R06-material-properties-data.md and research/R14-property-verification.md,
+# each cited to the source named there. Sign conventions follow R06 sec. 3 and R14 sec. 2.11.
+# Source ids resolve to the coordinator source register or to the glossary sources fragment.
+
+# ---------------------------------------------------------------- crystal
+- id: "point-group-3m"
+  term: "3m point group"
+  aliases: ["C3v"]
+  symbol: "3m"
+  category: "crystal"
+  short: "3m (Schoenflies C3v) is the point group of ferroelectric LiNbO3: a threefold rotation axis along c with three mirror planes that contain it."
+  long: "The point group fixes which tensor components can be nonzero, for example the r tensor with independent r13, r22, r33 and r51. It lacks an inversion center, which allows piezoelectric, Pockels and chi(2) effects, and it is polar (the two ends of the threefold axis are inequivalent), which allows pyroelectricity. weis1985 prints the Schoenflies symbol as C6v, a typo; 3m corresponds to C3v. IEEE Std 176-1987 lists LiNbO3 as its example of class 3m."
+  sources:
+    - {source_id: "weis1985", locator: "p. 192, Sec. 2.1"}
+    - {source_id: "ieee176", locator: "Table 3"}
+  related: ["space-group-r3c", "mirror-plane", "polar-axis", "eo-tensor"]
+  chapters: ["01-crystal"]
+
+- id: "space-group-r3c"
+  term: "R3c space group"
+  symbol: "R3c"
+  category: "crystal"
+  short: "R3c (No. 161) is the space group of LiNbO3 below the Curie temperature: a rhombohedral lattice with glide planes containing the threefold axis."
+  long: "Oxygen ions form distorted octahedra stacked along c, filled by Li, Nb and a vacancy in turn. Above the Curie temperature the structure becomes centrosymmetric R-3c (No. 167), per high-temperature CIFs in the Crystallography Open Database; volk2008 p. 2 prints R3m instead, without a reference."
+  sources:
+    - {source_id: "weis1985", locator: "p. 192, Sec. 2.1"}
+    - {source_id: "volk2008", locator: "p. 2"}
+    - {source_id: "cod"}
+  related: ["point-group-3m", "hexagonal-cell", "curie-temperature"]
+  chapters: ["01-crystal"]
+
+- id: "polar-axis"
+  term: "polar c-axis"
+  aliases: ["c axis", "crystal-physics z axis"]
+  category: "crystal"
+  short: "The c axis (crystal-physics z axis) of LiNbO3 is polar: its two ends are inequivalent, and the spontaneous polarization points along it."
+  long: "Because +c and -c differ, the signs of odd-rank tensor components depend on which end is called +z; the IRE 1949 and IEEE 176-1987 rules give the same +z for LN. Ferroelectric switching reverses the polar direction locally, the basis of domain engineering. The c axis is also the optic axis."
+  sources:
+    - {source_id: "weis1985", locator: "pp. 192-193"}
+    - {source_id: "ieee176", locator: "Table 5 (p. 18)"}
+  related: ["plus-z-face", "spontaneous-polarization", "optic-axis", "ferroelectric-domain"]
+  chapters: ["01-crystal"]
+
+- id: "mirror-plane"
+  term: "mirror plane"
+  category: "crystal"
+  short: "Each of the three mirror planes of LiNbO3 contains the c axis, and the crystal-physics x axis is chosen perpendicular to one of them."
+  long: "With x perpendicular to a mirror and y lying in it, the 3m tensor forms place r22, d22 and e22 at fixed positions and give c24 = -c14. A 180 deg rotation about z flips c14, e22, d22, r22, p14 and p41 together, so data sets in different frames cannot be mixed blindly. IEEE 176-1987 removes this freedom by requiring positive d22 along +Y."
+  sources:
+    - {source_id: "ieee176", locator: "Sec. 3.2.5; Table 5 (p. 18)"}
+    - {source_id: "weis1985"}
+  related: ["point-group-3m", "ieee-176", "voigt-notation", "elastic-stiffness"]
+  chapters: ["01-crystal", "03-sound"]
+
+- id: "hexagonal-cell"
+  term: "hexagonal and rhombohedral cells"
+  aliases: ["unit cell", "lattice constants"]
+  category: "crystal"
+  short: "The R3c structure of LiNbO3 can be described by a hexagonal cell (a = 5.148 A, c = 13.863 A at room temperature) or by the primitive rhombohedral cell (a_R = 5.494 A, alpha = 55.867 deg)."
+  long: "Lattice constants depend on composition: volk2008 lists a = 515.0 pm, c = 1386.4 pm for congruent and a = 514.7 pm, c = 1385.6 pm for near-stoichiometric LN. Synchrotron data (hsu1997) give a_R = 5.493 A and alpha = 55.89 deg, consistent within uncertainty. Quoting lattice values without the cell setting is a common error."
+  sources:
+    - {source_id: "weis1985", locator: "pp. 193-194, Eq. (1)"}
+    - {source_id: "volk2008", locator: "Table 1.1, p. 3"}
+    - {source_id: "hsu1997"}
+  related: ["space-group-r3c", "congruent", "stoichiometric"]
+  chapters: ["01-crystal"]
+
+- id: "plus-z-face"
+  term: "+z face (+c face)"
+  aliases: ["+c face", "z+ face"]
+  category: "crystal"
+  short: "The +z (+c) face of LiNbO3 is the c face that becomes negatively charged under compression along c and positively charged on cooling."
+  long: "IRE 1949 (as used in weis1985), IRE 1958 (as cited in volk2008) and IEEE Std 176-1987 (positive d33: tension along Z makes the +Z face positive) give the same +z for LN. The pyroelectric coefficient p3 is negative in this frame. Flipping +z (a 180 deg rotation about x) reverses every odd-rank tensor (e, d, r, chi(2), p3) but leaves the elastic and photoelastic tensors unchanged."
+  sources:
+    - {source_id: "weis1985", locator: "pp. 192-193"}
+    - {source_id: "ieee176", locator: "p. 22"}
+    - {source_id: "volk2008", locator: "p. 2"}
+    - {source_id: "ire1949"}
+  related: ["polar-axis", "ieee-176", "pyroelectric-effect", "piezoelectric-effect"]
+  chapters: ["01-crystal"]
+
+- id: "ieee-176"
+  term: "IEEE Std 176-1987"
+  aliases: ["IEEE 176", "IEEE Standard on Piezoelectricity"]
+  category: "crystal"
+  short: "IEEE Std 176-1987, the IEEE Standard on Piezoelectricity, sets axis and sign conventions for piezoelectric crystals and lists LiNbO3 as its class-3m example."
+  long: "For 3m it takes +Z with positive d33, +Y with positive d22, and X along an a axis perpendicular to a mirror plane, completing a right-handed set. The only frame change from the IRE 1949 standard stated in the document is a 180 deg rotation about Z for quartz (class 32), so the LN frame is the same in both. In this frame c14 is positive (as in kushibiki1999 and Smith and Welsh 1971), so a data set reporting c14 < 0 uses a non-standard frame (an inference from the rule texts, R14 row 81)."
+  sources:
+    - {source_id: "ieee176", locator: "Table 5 (p. 18); Sec. 3.2.5.1; Table 3"}
+    - {source_id: "ire1949"}
+    - {source_id: "weis1985", locator: "Table 6, p. 200"}
+  related: ["plus-z-face", "mirror-plane", "voigt-notation", "piezoelectric-coefficients"]
+  chapters: ["01-crystal", "03-sound"]
+  notes: "Predecessor: IRE 'Standards on Piezoelectric Crystals, 1949', Proc. IRE 37, 1378 (ire1949)."
+
+- id: "voigt-notation"
+  term: "Voigt notation"
+  aliases: ["contracted index notation", "matrix notation"]
+  category: "general"
+  short: "Voigt notation contracts symmetric index pairs (xx, yy, zz, yz, xz, xy) to 1-6, so rank-3 and rank-4 property tensors of LiNbO3 become 3x6 and 6x6 matrices."
+  long: "Factors of 2 enter through engineering shear strain (S4 = 2 S23): for 3m, s66 = 2(s11 - s12) and s56 = 2 s14, while c66 = (c11 - c12)/2 and c56 = c14; for piezoelectric strain constants d16 = -2 d22. Each data set must state its convention, and full-rank tensors avoid manual factor errors. The photoelastic matrix p_IJ is not symmetric (p14 differs from p41)."
+  sources:
+    - {source_id: "weis1985", locator: "Eqs. (16)-(17), pp. 199-200; Eq. (8)"}
+    - {source_id: "ogi2002"}
+  related: ["elastic-stiffness", "piezoelectric-coefficients", "photoelastic-effect", "eo-tensor"]
+  chapters: ["01-crystal", "03-sound"]
+
+- id: "dielectric-permittivity"
+  term: "dielectric permittivity (eps^T, eps^S)"
+  aliases: ["dielectric constant", "relative permittivity"]
+  symbol: "eps_ij"
+  category: "rf"
+  short: "The relative permittivity of LiNbO3 is a uniaxial tensor (eps11 perpendicular, eps33 parallel to c) whose value depends on whether the crystal is mechanically free (eps^T) or clamped (eps^S)."
+  long: "kushibiki1999 measured eps11^T = 83.3 and eps33^T = 28.5 and fitted eps11^S = 44.9 and eps33^S = 26.7 for congruent LN; the large eps11 gap comes from piezoelectric coupling. Across sources eps11^T spans 83.3-85.2 and eps33^S 23.7-29. Electrodes driven above the acoustic resonances, as in GHz modulators, see eps^S."
+  sources:
+    - {source_id: "kushibiki1999", locator: "Tables IV-V"}
+    - {source_id: "weis1985", locator: "Table 1, p. 197"}
+  related: ["clamped", "unclamped", "characteristic-impedance", "velocity-matching", "piezoelectric-effect"]
+  chapters: ["01-crystal", "03-sound", "06-devices"]
+
+- id: "x-cut"
+  term: "X-cut"
+  category: "fabrication"
+  short: "An X-cut LiNbO3 wafer or film has its surface normal along the crystal x axis, so the c axis lies in the plane."
+  long: "In X-cut TFLN, coplanar electrodes on both sides of a waveguide apply an in-plane field along z, and a TE mode polarized along z uses n_e and r33; this is the common TFLN modulator geometry. Periodic poling of X-cut films also uses coplanar electrodes, which give a field that is nonuniform in depth."
+  sources:
+    - {source_id: "zhu2021"}
+    - {source_id: "zhang2021"}
+  related: ["z-cut", "y-cut", "r33", "poling", "mzm"]
+  chapters: ["05-making", "06-devices"]
+
+- id: "y-cut"
+  term: "Y-cut"
+  aliases: ["rotated Y-cut"]
+  category: "fabrication"
+  short: "A Y-cut LiNbO3 wafer has its surface normal along the crystal y axis, which lies in a mirror plane; a rotated Y-cut tilts that normal about x by a stated angle."
+  long: "The rotation angle selects the velocity, coupling and spurious responses of acoustic waves on the plate. shibayama1976 identified a rotated Y-cut near 128 deg with X propagation as optimum for surface-acoustic-wave filter substrates."
+  sources:
+    - {source_id: "shibayama1976"}
+  related: ["x-cut", "z-cut", "128-y-x-cut", "saw"]
+  chapters: ["03-sound", "05-making"]
+
+- id: "z-cut"
+  term: "Z-cut"
+  category: "fabrication"
+  short: "A Z-cut LiNbO3 wafer or film has its surface normal along the polar c axis, so its two faces are the +z and -z faces."
+  long: "In Z-cut TFLN a vertical field couples to TM-like modes through r33, while TE modes see n_o and smaller coefficients. Poling is done with a field through the film or by poling a bulk wafer before bonding. A temperature change leaves pyroelectric charge on the faces, producing a vertical field that overlaps strongly with the mode."
+  sources:
+    - {source_id: "zhu2021"}
+  related: ["x-cut", "y-cut", "plus-z-face", "pyroelectric-effect", "poling"]
+  chapters: ["05-making", "06-devices", "04-quirks"]
+
+- id: "128-y-x-cut"
+  term: "128 deg Y-X cut"
+  aliases: ["128 deg rotated Y-cut", "128YX LN"]
+  category: "acoustics"
+  short: "The 128 deg Y-X cut of LiNbO3 is a substrate orientation whose plate normal is the y axis rotated by about 128 deg about x, with surface waves propagating along x."
+  long: "shibayama1976 reported it as the optimum rotated Y-cut for acoustic-surface-wave filter substrates, and it later became a standard SAW cut. Interdigital transducers on the polished plate launch and detect the surface wave along x."
+  sources:
+    - {source_id: "shibayama1976"}
+  related: ["y-cut", "saw", "idt", "electromechanical-coupling"]
+  chapters: ["03-sound", "07-history"]
+
+# ---------------------------------------------------------------- defects and composition
+- id: "congruent"
+  term: "congruent lithium niobate (CLN)"
+  aliases: ["CLN", "congruent composition"]
+  category: "defects"
+  short: "Congruent LiNbO3 is the Li-deficient composition (about 48.4-48.5 mol% Li2O) at which melt and crystal have the same composition, so Czochralski boules grow uniform."
+  long: "Both 48.38 and 48.45 mol% Li2O are in use (volk2008 uses both and gives [Li]/[Nb] = 0.94). The Li2O-Nb2O5 phase diagram (reisman1958) and stoichiometry studies (lerner1968; carruthers1971) established the Li deficit. The Nb excess is accommodated largely as Nb_Li antisites, which govern photorefraction, coercive field and Curie temperature."
+  sources:
+    - {source_id: "volk2008", locator: "pp. 4-5, 9, 142"}
+    - {source_id: "reisman1958"}
+    - {source_id: "lerner1968"}
+    - {source_id: "carruthers1971"}
+  related: ["stoichiometric", "antisite-nb-li", "li-vacancy", "czochralski-growth", "curie-temperature"]
+  chapters: ["01-crystal", "05-making", "07-history"]
+
+- id: "stoichiometric"
+  term: "stoichiometric lithium niobate (SLN)"
+  aliases: ["SLN", "near-stoichiometric LN"]
+  category: "defects"
+  short: "Stoichiometric (in practice near-stoichiometric, about 49.8-50 mol% Li2O) LiNbO3 has [Li]/[Nb] close to 1 and far fewer intrinsic defects than congruent LN."
+  long: "Because it does not grow congruently, it is made by double-crucible Czochralski growth with continuous powder supply (kitamura1992) or by vapor transport equilibration of congruent wafers (bordui1992). Relative to congruent LN it has a lower coercive field, a near-zero internal field, a higher Curie temperature (1206 C in volk2008 Table 1.1) and a UV edge at shorter wavelength."
+  sources:
+    - {source_id: "volk2008", locator: "Table 1.1, p. 3"}
+    - {source_id: "gopalan1998", locator: "abstract"}
+    - {source_id: "kitamura1992"}
+    - {source_id: "bordui1992"}
+  related: ["congruent", "vte", "coercive-field", "internal-field", "uv-absorption-edge"]
+  chapters: ["01-crystal", "05-making"]
+
+- id: "antisite-nb-li"
+  term: "Nb_Li antisite"
+  aliases: ["niobium antisite", "antisite defect"]
+  symbol: "Nb_Li"
+  category: "defects"
+  short: "An Nb_Li antisite is a niobium ion on a lithium site, the dominant intrinsic defect that accommodates the Li deficit of congruent LiNbO3."
+  long: "In the Li-site vacancy model each Nb_Li^4+ is compensated by four Li vacancies (lerner1968, supported by iyi1992); the alternative Nb-site vacancy model is due to abrahams1986. Nb_Li traps electrons as bound small polarons and so drives photorefraction and GRIIRA in undoped crystals; MgO above its threshold removes these sites. Defect complexes around Nb_Li are linked to the internal field and high coercive field of congruent LN."
+  sources:
+    - {source_id: "iyi1992"}
+    - {source_id: "abrahams1986"}
+    - {source_id: "volk2008"}
+    - {source_id: "furukawa2001"}
+  related: ["li-vacancy", "polaron", "congruent", "griira", "mgo-doping"]
+  chapters: ["01-crystal", "04-quirks"]
+
+- id: "li-vacancy"
+  term: "Li vacancy"
+  aliases: ["lithium vacancy"]
+  symbol: "V_Li"
+  category: "defects"
+  short: "A lithium vacancy (V_Li) is an empty Li site; in the Li-site vacancy model of congruent LiNbO3, four V_Li compensate each Nb_Li antisite."
+  long: "The model writes the congruent defect structure as Nb_Li^4+ + 4 V_Li^-; a comparative structural study of different compositions (iyi1992) supports it over the Nb-site vacancy model (abrahams1986). Li2O loss at high temperature adds vacancies near the surface."
+  sources:
+    - {source_id: "iyi1992"}
+    - {source_id: "abrahams1986"}
+    - {source_id: "lerner1968"}
+  related: ["antisite-nb-li", "congruent", "li-out-diffusion", "polaron"]
+  chapters: ["01-crystal"]
+
+- id: "polaron"
+  term: "small polaron"
+  aliases: ["bipolaron", "bound polaron", "free polaron"]
+  category: "defects"
+  short: "A small polaron in LiNbO3 is an electron or hole self-trapped on a single ion by the lattice distortion it creates."
+  long: "Electron species are the bound polaron Nb_Li^4+, the free polaron Nb_Nb^4+ and the bipolaron Nb_Li^4+-Nb_Nb^4+; holes self-trap as O^- polarons near Li vacancies. Their broad absorption bands produce GRIIRA and BLIIRA, and light-induced polarons take part in photorefractive charge transport in undoped LN."
+  sources:
+    - {source_id: "schirmer2009"}
+    - {source_id: "imlau2015"}
+    - {source_id: "volk2008"}
+  related: ["antisite-nb-li", "griira", "bliira", "photorefraction"]
+  chapters: ["01-crystal", "04-quirks"]
+
+- id: "mgo-doping"
+  term: "MgO doping"
+  aliases: ["MgO:LN", "magnesium doping"]
+  category: "defects"
+  short: "MgO doping above a threshold (about 4.5 at.% MgO in congruent LiNbO3) makes the crystal resistant to photorefractive damage by raising its photoconductivity."
+  long: "bryan1984 reported the threshold, an about 100x increase in photoconductivity, a drop of activation energy from 0.5 to 0.1 eV, and a shift of the OH band from 2.87 to 2.83 um. Mg replaces Nb_Li antisites, which also removes the bound-polaron sites behind GRIIRA (same threshold, furukawa2001). MgO also lowers the coercive field: volk2008 Table 7.1 averages 6.0-6.8 kV/mm for 5 mol% MgO, against about 21 kV/mm for undoped congruent LN."
+  sources:
+    - {source_id: "bryan1984", locator: "abstract"}
+    - {source_id: "furukawa2001"}
+    - {source_id: "volk2008", locator: "Table 7.1, p. 185"}
+  related: ["photorefraction", "photoconductivity", "griira", "antisite-nb-li", "coercive-field", "ppln"]
+  chapters: ["01-crystal", "04-quirks", "07-history"]
+
+- id: "fe-doping"
+  term: "Fe doping (Fe:LN)"
+  aliases: ["Fe:LN", "iron-doped lithium niobate"]
+  category: "defects"
+  short: "Iron doping supplies Fe2+/Fe3+ deep traps in LiNbO3 that act as photorefractive donors and acceptors, making Fe:LN a holographic recording medium."
+  long: "Light excites electrons from Fe2+; they move by bulk photovoltaic current, drift and diffusion and retrap at Fe3+ in darker regions, building a space-charge field. Fe:LN combined with thermal fixing gave long-lived holograms. Transition-metal impurities also cause residual absorption in nominally undoped crystals, up to 0.04 cm^-1 between 400 and 2000 nm as grown (schwesyg2011)."
+  sources:
+    - {source_id: "volk2008"}
+    - {source_id: "schwesyg2011", locator: "abstract; Sec. 3.1, 3.3"}
+    - {source_id: "staebler1971"}
+  related: ["photorefraction", "hologram-fixing", "space-charge-field", "bulk-photovoltaic-effect"]
+  chapters: ["04-quirks", "07-history"]
+
+- id: "dark-conductivity"
+  term: "dark conductivity"
+  symbol: "sigma_d"
+  category: "defects"
+  short: "Dark conductivity is the electrical conductivity of LiNbO3 without illumination, which sets how long space-charge and bias fields persist."
+  long: "For undoped or slightly doped congruent LN at room temperature, extrapolation from high temperature gives about 1e-14 to 1e-16 S/m, protonic, with an activation energy of about 1.1 eV (volk2008). The Maxwell relaxation time tau = eps eps0 / sigma_d is then about 0.3-29 days for eps33 = 28; volk2008 p. 159 states 5-500 days. Millisecond-to-hour drift in TFLN modulators therefore points to conduction in claddings, interfaces or contacts rather than bulk LN."
+  sources:
+    - {source_id: "volk2008", locator: "Sec. 3.2.1, pp. 59-60; p. 159"}
+    - {source_id: "holzgrafe2024"}
+  related: ["dc-bias-drift", "photoconductivity", "space-charge-field", "hologram-fixing"]
+  chapters: ["04-quirks"]
+
+# ---------------------------------------------------------------- ferroelectric
+- id: "ferroelectric"
+  term: "ferroelectricity"
+  aliases: ["ferroelectric"]
+  category: "ferroelectric"
+  short: "LiNbO3 is ferroelectric: it has a spontaneous polarization along c that a sufficiently strong applied field can reverse."
+  long: "Matthias and Remeika reported ferroelectricity in LiNbO3 and LiTaO3 in 1949, describing them as ilmenite-type; the 1966 structure work established the distinct R3c LN structure. The polar phase persists up to the Curie temperature (about 1140 C for congruent LN), and reversal at room temperature needs about 21 kV/mm in congruent crystals."
+  sources:
+    - {source_id: "matthias1949"}
+    - {source_id: "abrahams1966"}
+    - {source_id: "volk2008", locator: "Table 1.1; Table 7.1, p. 185"}
+  related: ["spontaneous-polarization", "curie-temperature", "coercive-field", "ferroelectric-domain", "space-group-r3c"]
+  chapters: ["01-crystal", "07-history"]
+
+- id: "curie-temperature"
+  term: "Curie temperature"
+  symbol: "T_c"
+  category: "ferroelectric"
+  short: "The Curie temperature T_c is the temperature of the ferroelectric (R3c) to paraelectric (R-3c) transition of LiNbO3, and it rises with Li content."
+  long: "volk2008 Table 1.1 gives 1140 C for congruent and 1206 C for near-stoichiometric LN. Linear fits such as T_c = 39.064 c - 746.73 (c in mol% Li2O; bordui1992, as given in volk2008) are used to infer composition. Older values, such as 1165 C in weis1985 Table 1, refer to crystals of unstated composition, so T_c values without composition are not comparable."
+  sources:
+    - {source_id: "volk2008", locator: "Table 1.1; Eqs. (6.2)-(6.3), p. 140"}
+    - {source_id: "bordui1992"}
+    - {source_id: "weis1985", locator: "Table 1, p. 197"}
+  related: ["ferroelectric", "congruent", "stoichiometric", "space-group-r3c", "vte"]
+  chapters: ["01-crystal"]
+
+- id: "spontaneous-polarization"
+  term: "spontaneous polarization"
+  symbol: "P_s"
+  category: "ferroelectric"
+  short: "The spontaneous polarization P_s of LiNbO3 is the electric dipole moment per unit volume along c present without an applied field below T_c."
+  long: "Reported room-temperature magnitudes disagree: gopalan1998 gives 80 +- 5 uC/cm^2 for both congruent and near-stoichiometric crystals, while volk2008 Table 1.1 lists 71 uC/cm^2 for congruent LN (its near-stoichiometric entry cites a LiTaO3 paper and has no LN source). P_s decreases with rising temperature, the origin of the negative pyroelectric coefficient. Inverting P_s in a domain reverses the sign of all odd-rank tensors there."
+  sources:
+    - {source_id: "gopalan1998", locator: "abstract"}
+    - {source_id: "volk2008", locator: "Table 1.1"}
+    - {source_id: "savage1966"}
+  related: ["ferroelectric", "pyroelectric-effect", "ferroelectric-domain", "polar-axis"]
+  chapters: ["01-crystal"]
+
+- id: "ferroelectric-domain"
+  term: "ferroelectric domain"
+  aliases: ["domain"]
+  category: "ferroelectric"
+  short: "A ferroelectric domain is a region of uniform spontaneous polarization; LiNbO3 has only 180 deg domains, with P_s along +c or -c."
+  long: "Domains in LN were revealed by acid etching, which attacks the two polar faces at different rates (nassau1965). Inverting a domain reverses the sign of d33 and r33 but leaves the refractive indices unchanged, which QPM gratings exploit. Domain stability and wall motion depend strongly on composition and defects (gopalan2007)."
+  sources:
+    - {source_id: "nassau1965"}
+    - {source_id: "gopalan2007"}
+    - {source_id: "volk2008"}
+  related: ["domain-wall", "poling", "qpm", "ppln", "coercive-field"]
+  chapters: ["01-crystal", "05-making"]
+
+- id: "domain-wall"
+  term: "domain wall"
+  category: "ferroelectric"
+  short: "A domain wall is the narrow boundary between antiparallel domains in LiNbO3, across which the polarization reverses."
+  long: "Field switching proceeds by nucleation at electrode edges, forward growth along c and sideways wall motion, which in LN tends to produce hexagonal domains. Point defects pin walls, so switching fields, wall velocity and back-switching differ between congruent and stoichiometric crystals."
+  sources:
+    - {source_id: "gopalan2007"}
+    - {source_id: "chakkoria2025"}
+  related: ["ferroelectric-domain", "poling", "coercive-field", "internal-field"]
+  chapters: ["01-crystal", "05-making"]
+
+- id: "coercive-field"
+  term: "coercive field"
+  symbol: "E_c"
+  category: "ferroelectric"
+  short: "The coercive field E_c is the field along c needed to reverse the spontaneous polarization of LiNbO3 at a given temperature and field ramp."
+  long: "volk2008 Table 7.1 gives about 21 kV/mm for congruent LN at room temperature, 6.0-6.5 kV/mm for near-stoichiometric LN (its text also quotes 2.1-2.5 kV/mm) and an average of 6.0-6.8 kV/mm for 5 mol% MgO LN. Reported congruent-to-stoichiometric ratios range from about 3 to 5 (volk2008; gopalan1998), as the sources measured different crystals."
+  sources:
+    - {source_id: "volk2008", locator: "Table 7.1, p. 185; p. 118"}
+    - {source_id: "gopalan1998", locator: "abstract"}
+  related: ["internal-field", "poling", "stoichiometric", "mgo-doping", "ferroelectric"]
+  chapters: ["01-crystal", "05-making"]
+
+- id: "internal-field"
+  term: "internal field"
+  symbol: "E_int"
+  category: "ferroelectric"
+  short: "The internal field is a built-in bias in congruent LiNbO3 that makes the forward and reverse coercive fields unequal, shifting the hysteresis loop along the field axis."
+  long: "gopalan1998 reports about 2.5 kV/mm in congruent LN and a vanishing value in near-stoichiometric crystals, tying it to nonstoichiometric defects. volk2008 Table 7.1 gives about 5 kV/cm (0.5 kV/mm) for 5 mol% MgO LN."
+  sources:
+    - {source_id: "gopalan1998", locator: "abstract"}
+    - {source_id: "volk2008", locator: "Table 7.1"}
+  related: ["coercive-field", "antisite-nb-li", "stoichiometric", "domain-wall"]
+  chapters: ["01-crystal"]
+
+- id: "poling"
+  term: "poling"
+  aliases: ["domain inversion", "electric-field poling"]
+  category: "ferroelectric"
+  short: "Poling is the reversal of ferroelectric domains in LiNbO3 by a field above the coercive field, either over a whole crystal (single-domain) or in a pattern."
+  long: "Patterned electric-field poling through a periodic electrode (yamada1993) is the standard route to PPLN. In thin films, X-cut coplanar electrodes give a depth-nonuniform field, so incomplete depth, domain merging at sub-micrometre periods and back-switching are controlled with shaped pulses and in-situ monitoring (chakkoria2025)."
+  sources:
+    - {source_id: "yamada1993"}
+    - {source_id: "chakkoria2025"}
+    - {source_id: "volk2008"}
+  related: ["ppln", "coercive-field", "ferroelectric-domain", "qpm", "x-cut"]
+  chapters: ["01-crystal", "05-making", "07-history"]
+
+- id: "pyroelectric-effect"
+  term: "pyroelectric effect"
+  symbol: "p3"
+  category: "ferroelectric"
+  short: "The pyroelectric effect is the change of spontaneous polarization with temperature, which leaves bound charge on the c faces of LiNbO3 after a temperature change."
+  long: "p3 = dP_s/dT is negative in the IEEE/IRE frame, so on cooling the +c face becomes more positive (weis1985; volk2008). Room-temperature magnitudes span about 4e-5 to 9.5e-5 C/(m^2 K) across sources (weis1985 Eq. (2) gives -4e-5, citing savage1966). Unscreened charge produces fields that shift n_e through r33, a concern for Z-cut devices and cryogenic cooldown."
+  sources:
+    - {source_id: "weis1985", locator: "Eq. (2), p. 196"}
+    - {source_id: "savage1966"}
+    - {source_id: "volk2008", locator: "p. 2"}
+  related: ["spontaneous-polarization", "plus-z-face", "z-cut", "dc-bias-drift"]
+  chapters: ["01-crystal", "04-quirks"]
+
+# ---------------------------------------------------------------- optics
+- id: "optic-axis"
+  term: "optic axis"
+  category: "optics"
+  short: "The optic axis of LiNbO3 is the crystal c axis, the single direction along which light of any polarization propagates with index n_o."
+  long: "LN is uniaxial because threefold symmetry makes eps11 = eps22. Light propagating at angle theta to c splits into an ordinary wave (index n_o) and an extraordinary wave with 1/n(theta)^2 = cos^2(theta)/n_o^2 + sin^2(theta)/n_e^2."
+  sources:
+    - {source_id: "weis1985"}
+    - {source_id: "zhu2021"}
+  related: ["ordinary-index", "extraordinary-index", "birefringence", "negative-uniaxial", "index-ellipsoid"]
+  chapters: ["02-light"]
+
+- id: "ordinary-index"
+  term: "ordinary index"
+  symbol: "n_o"
+  category: "optics"
+  short: "The ordinary index n_o is the refractive index of LiNbO3 for light polarized perpendicular to the c axis."
+  long: "For congruent LN, n_o = 2.2866 at 632.8 nm and 24.5 C (Nelson and Mikulyak, as compiled in weis1985 Table 2); the zelmon1997 Sellmeier gives 2.2111 at 1550 nm and 21 C. n_o is much less sensitive to Li content and to temperature than n_e."
+  sources:
+    - {source_id: "weis1985", locator: "Table 2, p. 197"}
+    - {source_id: "zelmon1997"}
+    - {source_id: "volk2008", locator: "Table 6.1, p. 145"}
+  related: ["extraordinary-index", "birefringence", "sellmeier-equation", "negative-uniaxial"]
+  chapters: ["02-light"]
+
+- id: "extraordinary-index"
+  term: "extraordinary index"
+  symbol: "n_e"
+  category: "optics"
+  short: "The extraordinary index n_e is the refractive index of LiNbO3 for light polarized parallel to the c axis."
+  long: "For congruent LN, n_e = 2.2028 at 632.8 nm and 24.5 C (weis1985 Table 2), and the zelmon1997 Sellmeier gives 2.1376 at 1550 nm and 21 C. n_e rises with temperature (dn_e/dT about 3.3e-5 to 3.8e-5 /K near 1.5 um) and with Nb excess, so QPM design needs a temperature- and composition-dependent model. r33 modulates n_e."
+  sources:
+    - {source_id: "weis1985", locator: "Table 2, p. 197"}
+    - {source_id: "zelmon1997"}
+    - {source_id: "jundt1997"}
+    - {source_id: "volk2008", locator: "Table 6.1, p. 145"}
+  related: ["ordinary-index", "thermo-optic-coefficient", "sellmeier-equation", "r33"]
+  chapters: ["02-light"]
+
+- id: "birefringence"
+  term: "birefringence"
+  aliases: ["double refraction"]
+  category: "optics"
+  short: "Birefringence is the index difference n_e - n_o, which for congruent LiNbO3 is negative, about -0.07 to -0.08 between 633 and 1550 nm."
+  long: "From the zelmon1997 Sellmeier it is -0.0842 at 633 nm, -0.0766 at 1064 nm and -0.0736 at 1550 nm (21 C). It depends on temperature and composition, which permits temperature-tuned birefringent phase matching."
+  sources:
+    - {source_id: "zelmon1997"}
+    - {source_id: "rii"}
+  related: ["negative-uniaxial", "ordinary-index", "extraordinary-index", "birefringent-phase-matching", "walk-off"]
+  chapters: ["02-light"]
+
+- id: "negative-uniaxial"
+  term: "negative uniaxial"
+  category: "optics"
+  short: "LiNbO3 is negative uniaxial: its extraordinary index is smaller than its ordinary index (n_e < n_o)."
+  long: "The extraordinary index surface lies inside the ordinary one and touches it on the optic axis, so type-I birefringent phase matching combines ordinary fundamental waves into an extraordinary harmonic (o + o -> e). Requiring n_e < n_o over a Sellmeier model's validity range is a useful check; it exposes the swapped MgO:LN o/e headings in zelmon1997, already noted by gayer2008."
+  sources:
+    - {source_id: "zelmon1997"}
+    - {source_id: "gayer2008", locator: "p. 348"}
+  related: ["birefringence", "optic-axis", "birefringent-phase-matching", "sellmeier-equation"]
+  chapters: ["02-light"]
+
+- id: "index-ellipsoid"
+  term: "index ellipsoid"
+  aliases: ["optical indicatrix", "impermeability tensor"]
+  symbol: "B_ij"
+  category: "optics"
+  short: "The index ellipsoid is the surface B_ij x_i x_j = 1, where B = (eps/eps0)^-1 is the optical impermeability tensor, whose semi-axes are the principal refractive indices."
+  long: "For unbiased LN, B11 = B22 = 1/n_o^2 and B33 = 1/n_e^2, an ellipsoid of revolution about c. The Pockels effect is a linear change Delta B_I = r_Ij E_j; for a field along z, Delta(1/n_e^2) = r33 E3, so Delta n_e = -(1/2) n_e^3 r33 E3. A field along y changes B11 and B22 by -r22 E2 and +r22 E2 and adds B23 = r51 E2; a field along x adds B12 = -r22 E1 and B13 = r51 E1. Either makes the crystal biaxial and rotates the principal axes."
+  sources:
+    - {source_id: "weis1985"}
+    - {source_id: "zhu2021"}
+  related: ["pockels-effect", "eo-tensor", "optic-axis", "r33", "r51"]
+  chapters: ["02-light"]
+
+- id: "sellmeier-equation"
+  term: "Sellmeier equation"
+  aliases: ["dispersion formula"]
+  category: "optics"
+  short: "A Sellmeier equation is an empirical fit of refractive index versus wavelength, n^2 = 1 + sum_i B_i lambda^2 / (lambda^2 - C_i), with separate coefficients for n_o and n_e of LiNbO3."
+  long: "zelmon1997 fits congruent and 5 mol% MgO LN at 21 C over 0.4-5 um; its MgO o/e headings were swapped, as noted by gayer2008 and corrected in a 2026 erratum. Temperature-dependent forms (jundt1997 for congruent n_e; gayer2008 for MgO:LN) add terms in f = (T - 24.5)(T + 570.82), and generalized forms add Li content and dopants (schlarb1993). dn/dT computed from the gayer2008 coefficients disagrees strongly with jundt1997, so they should not be used for absolute dn/dT."
+  sources:
+    - {source_id: "zelmon1997"}
+    - {source_id: "jundt1997"}
+    - {source_id: "gayer2008", locator: "Table 1, p. 345; p. 348"}
+    - {source_id: "schlarb1993"}
+    - {source_id: "rii"}
+  related: ["ordinary-index", "extraordinary-index", "thermo-optic-coefficient", "qpm", "negative-uniaxial"]
+  chapters: ["02-light"]
+
+- id: "thermo-optic-coefficient"
+  term: "thermo-optic coefficient"
+  symbol: "dn/dT"
+  category: "optics"
+  short: "The thermo-optic coefficient dn/dT is the change of refractive index with temperature; in LiNbO3 it is much larger for n_e than for n_o."
+  long: "Near 1.5 um, dn_e/dT of congruent LN is about 3.3e-5 to 3.8e-5 /K (moretti2005 as quoted in zhu2021; computed from jundt1997), while dn_o/dT is several times smaller. In resonators the thermal red shift competes with the photorefractive blue shift (jiang2017)."
+  sources:
+    - {source_id: "jundt1997"}
+    - {source_id: "zhu2021"}
+    - {source_id: "schwesyg2011", locator: "Eqs. (2.26)-(2.27)"}
+    - {source_id: "jiang2017"}
+  related: ["extraordinary-index", "sellmeier-equation", "photorefraction", "microring"]
+  chapters: ["02-light", "04-quirks"]
+
+- id: "uv-absorption-edge"
+  term: "UV absorption edge"
+  category: "optics"
+  short: "The UV absorption edge of LiNbO3 moves to shorter wavelength as the Li content rises, and its position is used to measure composition."
+  long: "The calibration attributed to kovacs1997, as given in volk2008, is lambda20 = 320.4 - 1.829 x - 5.485 x^2 nm (absorption 20 cm^-1, E parallel to c, 22 C) with x = mol% Li2O - 48.38. It gives 320.4 nm at 48.38 mol% and 303.0 nm at 50.0 mol%."
+  sources:
+    - {source_id: "kovacs1997"}
+    - {source_id: "volk2008", locator: "Eqs. (6.5)-(6.6), p. 142"}
+  related: ["congruent", "stoichiometric", "bandgap", "transparency-window"]
+  chapters: ["02-light", "01-crystal"]
+
+- id: "transparency-window"
+  term: "transparency window"
+  category: "optics"
+  short: "The transparency window of LiNbO3 spans roughly 0.32 to 5 um, bounded by electronic absorption in the UV and lattice absorption in the mid-IR."
+  long: "volk2008 Table 1.2 lists 0.32-5 um for congruent and 0.3-5 um for near-stoichiometric LN, without stating the criterion; the limits depend on thickness and absorption threshold. Inside the window, an OH stretch band at 2.87 um (2.83 um in MgO-doped crystals; bryan1984) and impurity absorption set the residual loss."
+  sources:
+    - {source_id: "volk2008", locator: "Table 1.2, p. 4"}
+    - {source_id: "bryan1984", locator: "abstract"}
+    - {source_id: "schwesyg2011"}
+  related: ["uv-absorption-edge", "bandgap", "propagation-loss", "fe-doping"]
+  chapters: ["02-light"]
+
+- id: "bandgap"
+  term: "band gap"
+  category: "optics"
+  short: "The band gap of LiNbO3 is usually quoted as about 3.7 eV from optical absorption, while GW calculations place the fundamental quasiparticle gap at least 1 eV higher."
+  long: "thierfelder2010 posed the question directly ('Do we know the band gap of lithium niobate?'). Because the absorption edge also shifts with Li content, an optical gap value needs the composition and the absorption criterion."
+  sources:
+    - {source_id: "thierfelder2010", locator: "abstract"}
+  related: ["uv-absorption-edge", "transparency-window"]
+  chapters: ["02-light"]
+
+- id: "effective-index"
+  term: "effective index"
+  symbol: "n_eff"
+  category: "optics"
+  short: "The effective index n_eff = beta / k0 of a waveguide mode is its propagation constant divided by the vacuum wavenumber."
+  long: "In TFLN waveguides n_eff lies between the cladding index and the LN index seen by the mode (n_o or n_e, set by polarization and cut). Phase matching in waveguides uses modal indices; for first-order QPM SHG the period is Lambda = lambda_F / (2 (n_eff,SH - n_eff,F))."
+  sources:
+    - {source_id: "zhu2021"}
+  related: ["group-index", "phase-matching", "qpm", "overlap-factor"]
+  chapters: ["02-light", "06-devices"]
+
+- id: "group-index"
+  term: "group index"
+  symbol: "n_g"
+  category: "optics"
+  short: "The group index n_g = n_eff - lambda dn_eff/dlambda gives the speed c/n_g at which an optical pulse envelope, or a modulation imprinted on it, travels in a waveguide."
+  long: "In traveling-wave modulators the optical group index must match the microwave index of the electrode for modulation to accumulate along the device. n_g also sets the free spectral range of a ring resonator, FSR = c / (n_g L), and links intrinsic Q to loss."
+  sources:
+    - {source_id: "zhu2021"}
+    - {source_id: "zhang2021"}
+  related: ["effective-index", "velocity-matching", "traveling-wave-electrode", "microring", "q-factor"]
+  chapters: ["02-light", "06-devices"]
+
+- id: "propagation-loss"
+  term: "propagation loss"
+  symbol: "alpha"
+  category: "optics"
+  short: "Propagation loss is the power attenuation per unit length of a guided mode from absorption and scattering, usually given in dB/m or dB/cm."
+  long: "Etched TFLN reached 2.7 dB/m in a 2017 microring (zhang2017), and bulk whispering-gallery resonators indicate a material loss below 0.4 dB/m (as cited in zhu2021). Sidewall roughness, residual implantation damage and impurity or OH absorption set the floor in thin films. Intrinsic Q and loss are related by Q_i = 2 pi n_g / (lambda alpha), with alpha the power attenuation coefficient."
+  sources:
+    - {source_id: "zhang2017"}
+    - {source_id: "zhu2021"}
+  related: ["q-factor", "microring", "transparency-window", "ar-milling"]
+  chapters: ["02-light", "05-making", "06-devices"]
+
+- id: "microring"
+  term: "microring resonator"
+  aliases: ["ring resonator", "microresonator"]
+  category: "devices"
+  short: "A microring resonator is a closed waveguide loop, coupled to a bus waveguide, that resonates where the round-trip phase is a multiple of 2 pi (n_eff L = m lambda)."
+  long: "In TFLN, voltage shifts the resonances through the Pockels effect, enabling tunable filters and resonant EO combs (zhang2019); monolithic ultra-high-Q rings (zhang2017) made such devices practical. With chi(3) and anomalous dispersion, rings host Kerr solitons (he2019), and with QPM they serve as resonant SHG and OPO devices."
+  sources:
+    - {source_id: "zhang2017"}
+    - {source_id: "zhang2019"}
+    - {source_id: "he2019"}
+  related: ["q-factor", "eo-comb", "kerr-soliton-microcomb", "group-index", "photorefraction"]
+  chapters: ["02-light", "06-devices"]
+
+- id: "q-factor"
+  term: "Q factor"
+  aliases: ["quality factor", "intrinsic Q", "loaded Q"]
+  symbol: "Q"
+  category: "optics"
+  short: "The quality factor Q = omega0 tau = lambda0 / delta_lambda (FWHM, for a Lorentzian resonance) measures stored energy relative to the energy lost per optical cycle."
+  long: "The loaded Q combines intrinsic loss and coupling, 1/Q_L = 1/Q_i + 1/Q_c. Intrinsic Q of TFLN rings serves as a loss metric through Q_i = 2 pi n_g / (lambda alpha). Higher Q lowers OPO thresholds and comb pump powers and raises resonant EO efficiency."
+  sources:
+    - {source_id: "zhang2017"}
+    - {source_id: "zhu2021"}
+  related: ["microring", "propagation-loss", "group-index", "opo"]
+  chapters: ["02-light", "06-devices"]
+
+# ---------------------------------------------------------------- nonlinear optics
+- id: "second-order-susceptibility"
+  term: "second-order susceptibility chi(2)"
+  aliases: ["chi(2)", "d tensor", "nonlinear coefficient"]
+  symbol: "chi(2), d_ij"
+  category: "nonlinear-optics"
+  short: "The second-order susceptibility chi(2), usually given as the d tensor (d = chi(2)/2), describes the polarization quadratic in the optical field that drives SHG, SFG, DFG and parametric processes in LiNbO3."
+  long: "For 3m with Kleinman symmetry the independent components are d33, d31 (= d15) and d22. Absolute values depend on the measurement scale: compilations list d33, d31, d22 = 34, 6, 3 pm/V at 1.06 um for congruent LN (volk2008 Table 1.2, legacy scale), and shoji1997 found many accepted standard values overestimated. The signs of the d components reverse with the +z convention and inside inverted domains."
+  sources:
+    - {source_id: "volk2008", locator: "Table 1.2, p. 4"}
+    - {source_id: "shoji1997", locator: "abstract"}
+    - {source_id: "armstrong1962"}
+  related: ["d33", "d-eff", "kleinman-symmetry", "shg", "millers-rule"]
+  chapters: ["02-light"]
+
+- id: "d33"
+  term: "d33 (nonlinear)"
+  symbol: "d33"
+  category: "nonlinear-optics"
+  short: "d33 is the chi(2) component coupling optical fields polarized along c, the largest nonlinear coefficient of LiNbO3 and the one used by PPLN."
+  long: "With all waves e-polarized, a first-order QPM grating with 50% duty cycle gives d_eff = (2/pi) d33. Compilations give 34 pm/V at 1.06 um (volk2008 Table 1.2, legacy scale); shoji1997 indicates that such standard values are overestimated, and zhu2021 Table 1 lists -27.0 pm/V without a reference. Values at other wavelengths are commonly scaled by Miller's rule."
+  sources:
+    - {source_id: "volk2008", locator: "Table 1.2, p. 4"}
+    - {source_id: "shoji1997", locator: "abstract"}
+    - {source_id: "zhu2021", locator: "Table 1"}
+  related: ["second-order-susceptibility", "d-eff", "qpm", "ppln", "millers-rule"]
+  chapters: ["02-light"]
+  notes: "Not the piezoelectric strain constant d33 (pC/N); see piezoelectric-coefficients."
+
+- id: "d-eff"
+  term: "effective nonlinear coefficient"
+  aliases: ["d_eff"]
+  symbol: "d_eff"
+  category: "nonlinear-optics"
+  short: "The effective nonlinear coefficient d_eff is the projection of the d tensor onto the polarizations of the interacting waves, including any reduction by a QPM grating."
+  long: "For an e + e -> e interaction in PPLN, an m-th order grating with duty cycle D gives d_eff = (2/(m pi)) d33 sin(m pi D), which reduces to (2/pi) d33 for first order and D = 0.5. Conversion efficiency at low power scales as d_eff^2."
+  sources:
+    - {source_id: "fejer1992"}
+  related: ["d33", "qpm", "ppln", "coherence-length"]
+  chapters: ["02-light"]
+
+- id: "kleinman-symmetry"
+  term: "Kleinman symmetry"
+  category: "nonlinear-optics"
+  short: "Kleinman symmetry is the approximate invariance of the chi(2) tensor under any permutation of its Cartesian indices, valid when all frequencies lie far from material resonances."
+  long: "For LiNbO3 it adds d15 = d31 to the 3m relations (d24 = d15), leaving three independent coefficients, d33, d31 and d22. Being a low-dispersion approximation, it loses accuracy as any of the interacting frequencies approaches an absorption resonance."
+  sources:
+    - {source_id: "armstrong1962"}
+  related: ["second-order-susceptibility", "d33", "point-group-3m"]
+  chapters: ["02-light"]
+
+- id: "millers-rule"
+  term: "Miller's rule"
+  category: "nonlinear-optics"
+  short: "Miller's rule states that chi(2)(omega3; omega1, omega2) is approximately proportional to the product of the linear susceptibilities at the three frequencies, with a nearly material-independent constant."
+  long: "It is used to scale LN d coefficients measured at one wavelength, e.g. 1.064 um, to another. shoji1997 found the rule 'not so good' for scaling its absolute d values across wavelengths, so scaled values carry extra uncertainty."
+  sources:
+    - {source_id: "miller1964"}
+    - {source_id: "shoji1997", locator: "abstract"}
+  related: ["second-order-susceptibility", "d33"]
+  chapters: ["02-light"]
+
+- id: "shg"
+  term: "second-harmonic generation (SHG)"
+  aliases: ["SHG", "frequency doubling"]
+  category: "nonlinear-optics"
+  short: "Second-harmonic generation (SHG) is the chi(2) process in which two photons at frequency omega combine into one at 2 omega."
+  long: "Efficient SHG requires phase matching, Delta k = k(2 omega) - 2 k(omega) = 0, or quasi-phase matching. LiNbO3 was identified as an efficient, phase-matchable SHG crystal in 1964 (boyd1964). In waveguides the low-power efficiency eta = P_2omega / (P_omega^2 L^2) is quoted in %/W/cm^2."
+  sources:
+    - {source_id: "boyd1964"}
+    - {source_id: "fejer1992"}
+  related: ["phase-matching", "qpm", "ppln", "d-eff", "griira"]
+  chapters: ["02-light", "07-history"]
+
+- id: "sfg"
+  term: "sum-frequency generation (SFG)"
+  aliases: ["SFG", "up-conversion"]
+  category: "nonlinear-optics"
+  short: "Sum-frequency generation (SFG) is the chi(2) process omega1 + omega2 -> omega3 that combines two input photons into one at the sum frequency."
+  long: "Energy conservation omega3 = omega1 + omega2 and momentum matching k3 = k1 + k2 (plus a grating vector 2 pi m / Lambda for QPM) set the interaction. In PPLN it is used for up-conversion detection and quantum frequency conversion."
+  sources:
+    - {source_id: "armstrong1962"}
+  related: ["dfg", "shg", "phase-matching", "qpm"]
+  chapters: ["02-light"]
+
+- id: "dfg"
+  term: "difference-frequency generation (DFG)"
+  aliases: ["DFG"]
+  category: "nonlinear-optics"
+  short: "Difference-frequency generation (DFG) is the chi(2) process in which a pump at omega_p and a signal at omega_s generate an idler at omega_i = omega_p - omega_s while amplifying the signal."
+  long: "It is the same three-wave interaction as optical parametric amplification, viewed from the idler. PPLN supports DFG into the mid-IR within the LN transparency window."
+  sources:
+    - {source_id: "armstrong1962"}
+  related: ["sfg", "opa", "phase-matching", "transparency-window"]
+  chapters: ["02-light"]
+
+- id: "opa"
+  term: "optical parametric amplification (OPA)"
+  aliases: ["OPA", "parametric gain"]
+  category: "nonlinear-optics"
+  short: "Optical parametric amplification (OPA) is chi(2) gain for a signal at omega_s pumped at omega_p > omega_s, generating an idler at omega_i = omega_p - omega_s."
+  long: "Under phase matching the small-signal gain grows exponentially with length, with a gain coefficient proportional to d_eff times the square root of pump intensity. Degenerate, phase-sensitive OPA amplifies one field quadrature and de-amplifies the other, the mechanism behind squeezed-light generation in PPLN waveguides."
+  sources:
+    - {source_id: "armstrong1962"}
+    - {source_id: "zhu2021"}
+  related: ["opo", "dfg", "d-eff", "ppln"]
+  chapters: ["02-light", "06-devices"]
+
+- id: "opo"
+  term: "optical parametric oscillator (OPO)"
+  aliases: ["OPO"]
+  category: "nonlinear-optics"
+  short: "An optical parametric oscillator (OPO) places a parametric amplifier in a resonator so that signal and/or idler build up from noise above a pump threshold."
+  long: "The first widely tunable coherent parametric oscillator used LiNbO3 (giordmaine1965), and bulk PPLN OPOs (myers1995) became standard mid-IR sources. Output wavelengths follow energy conservation and phase matching and are tuned by temperature, angle or poling period."
+  sources:
+    - {source_id: "giordmaine1965"}
+    - {source_id: "myers1995"}
+  related: ["opa", "ppln", "qpm", "q-factor"]
+  chapters: ["02-light", "06-devices", "07-history"]
+
+- id: "phase-matching"
+  term: "phase matching"
+  symbol: "Delta k = 0"
+  category: "nonlinear-optics"
+  short: "Phase matching is the condition Delta k = 0 under which the nonlinear polarization and the generated wave stay in phase, so the generated field grows over the whole interaction length."
+  long: "For SHG, Delta k = (4 pi / lambda_F)(n_2omega - n_omega); with Delta k not zero the low-power output follows sinc^2(Delta k L / 2) and oscillates with period 2 L_c in length. In LN it is achieved by birefringence (angle or temperature tuning), by QPM gratings, or by modal dispersion in thin-film waveguides."
+  sources:
+    - {source_id: "armstrong1962"}
+    - {source_id: "boyd1964"}
+    - {source_id: "fejer1992"}
+  related: ["birefringent-phase-matching", "qpm", "coherence-length", "effective-index", "walk-off"]
+  chapters: ["02-light"]
+
+- id: "birefringent-phase-matching"
+  term: "birefringent phase matching"
+  aliases: ["critical phase matching", "noncritical phase matching", "90 deg phase matching"]
+  category: "nonlinear-optics"
+  short: "Birefringent phase matching cancels material dispersion with the difference between ordinary and extraordinary indices, so that orthogonally polarized waves share the same phase velocity."
+  long: "In negative uniaxial LN, type-I SHG converts an o-polarized fundamental into an e-polarized harmonic. Angle tuning (critical phase matching) incurs walk-off; at theta = 90 deg, temperature tuning gives noncritical phase matching without walk-off (miller1965). Because n_e depends on temperature and Li content, the matching temperature shifts with composition."
+  sources:
+    - {source_id: "boyd1964"}
+    - {source_id: "miller1965"}
+  related: ["phase-matching", "walk-off", "negative-uniaxial", "birefringence"]
+  chapters: ["02-light", "07-history"]
+
+- id: "walk-off"
+  term: "walk-off"
+  aliases: ["Poynting vector walk-off", "spatial walk-off"]
+  symbol: "rho"
+  category: "nonlinear-optics"
+  short: "Walk-off is the angle rho between the Poynting vector and the wave vector of an extraordinary wave in a birefringent crystal, which separates beams and limits the useful interaction length."
+  long: "For propagation at angle theta to the optic axis, tan(rho) = (n(theta)^2 / 2) |1/n_e^2 - 1/n_o^2| sin(2 theta), which vanishes at theta = 0 and 90 deg. This is why noncritical (90 deg) phase matching in LN avoids walk-off (miller1965), as does QPM along a principal axis."
+  sources:
+    - {source_id: "miller1965"}
+  related: ["birefringent-phase-matching", "birefringence", "qpm"]
+  chapters: ["02-light"]
+
+- id: "coherence-length"
+  term: "coherence length"
+  symbol: "L_c"
+  category: "nonlinear-optics"
+  short: "The coherence length L_c = pi / |Delta k| is the distance over which the phase mismatch between nonlinear polarization and generated wave reaches pi, after which conversion reverses."
+  long: "In QPM the sign of d is reversed every L_c, so a first-order grating has period Lambda = 2 L_c = 2 pi / |Delta k|. An m-th order grating (odd m) uses Lambda = 2 m L_c, with efficiency reduced by 1/m^2."
+  sources:
+    - {source_id: "fejer1992"}
+  related: ["qpm", "phase-matching", "d-eff", "ppln"]
+  chapters: ["02-light"]
+
+- id: "qpm"
+  term: "quasi-phase matching (QPM)"
+  aliases: ["QPM"]
+  category: "nonlinear-optics"
+  short: "Quasi-phase matching (QPM) compensates phase mismatch by periodically reversing the sign of the nonlinear coefficient, adding a grating wave vector K = 2 pi m / Lambda to the momentum balance."
+  long: "Proposed by armstrong1962 and analysed for tuning and tolerances by fejer1992, it lets all waves be e-polarized to use d33, avoids walk-off, and reaches any process in the transparency window by choice of period. In LN the sign reversal is ferroelectric domain inversion: first by growth striations (feng1980), then by electric-field poling (yamada1993)."
+  sources:
+    - {source_id: "armstrong1962"}
+    - {source_id: "fejer1992"}
+    - {source_id: "feng1980"}
+    - {source_id: "yamada1993"}
+  related: ["ppln", "coherence-length", "d-eff", "poling", "phase-matching"]
+  chapters: ["02-light", "05-making", "07-history"]
+
+- id: "ppln"
+  term: "periodically poled lithium niobate (PPLN)"
+  aliases: ["PPLN", "PPMgLN", "MgO:PPLN"]
+  category: "nonlinear-optics"
+  short: "Periodically poled lithium niobate (PPLN) is LiNbO3 with a periodic pattern of inverted ferroelectric domains that acts as a QPM grating."
+  long: "Bulk PPLN is made by electric-field poling through patterned electrodes (yamada1993) and became the standard crystal for QPM SHG and mid-IR OPOs (myers1995). MgO-doped PPLN reduces photorefraction and GRIIRA. In TFLN, nanophotonic PPLN waveguides combine QPM with sub-micrometre confinement."
+  sources:
+    - {source_id: "yamada1993"}
+    - {source_id: "myers1995"}
+    - {source_id: "fejer1992"}
+  related: ["qpm", "poling", "opo", "shg", "mgo-doping"]
+  chapters: ["02-light", "05-making", "06-devices", "07-history"]
+
+- id: "kerr-effect"
+  term: "optical Kerr effect"
+  aliases: ["chi(3)", "third-order nonlinearity"]
+  category: "nonlinear-optics"
+  short: "The optical Kerr effect is the intensity-dependent refractive index n = n0 + n2 I arising from the third-order susceptibility chi(3)."
+  long: "In LN it coexists with a large chi(2) and drives self-phase modulation, four-wave mixing and dissipative Kerr solitons in TFLN microrings (he2019; wang2019). Measured n2 values also contain wavelength- and pulse-dependent contributions such as two-photon absorption (desalvo1996)."
+  sources:
+    - {source_id: "desalvo1996"}
+    - {source_id: "he2019"}
+    - {source_id: "wang2019"}
+  related: ["n2", "kerr-soliton-microcomb", "microring"]
+  chapters: ["02-light"]
+
+- id: "n2"
+  term: "nonlinear refractive index n2"
+  symbol: "n2"
+  category: "nonlinear-optics"
+  short: "n2 is the nonlinear refractive index coefficient in n = n0 + n2 I, expressed in m^2/W."
+  long: "For LiNbO3, desalvo1996 measured 9.33e-20 m^2/W at 1064 nm (Z-scan, 30 ps, e-polarization) and 8.25e-19 m^2/W at 532 nm (22 ps), as transcribed in refractiveindex.info; zhu2021 tabulates 1.8e-19 m^2/W without a primary reference. Values depend on wavelength, polarization and pulse duration."
+  sources:
+    - {source_id: "desalvo1996"}
+    - {source_id: "rii"}
+    - {source_id: "zhu2021", locator: "Table 1"}
+  related: ["kerr-effect", "kerr-soliton-microcomb"]
+  chapters: ["02-light"]
+
+- id: "kerr-soliton-microcomb"
+  term: "Kerr soliton microcomb"
+  aliases: ["dissipative Kerr soliton", "Kerr comb"]
+  category: "nonlinear-optics"
+  short: "A Kerr soliton microcomb is a frequency comb formed by a dissipative Kerr soliton circulating in a high-Q microresonator with anomalous dispersion under CW pumping."
+  long: "The line spacing equals the resonator free spectral range. The first LN soliton microcombs (he2019) were self-starting and switched bidirectionally with the help of photorefraction. Monolithic LN circuits combined Kerr comb generation with on-chip EO modulation (wang2019)."
+  sources:
+    - {source_id: "he2019"}
+    - {source_id: "wang2019"}
+  related: ["kerr-effect", "microring", "eo-comb", "photorefraction"]
+  chapters: ["02-light", "06-devices"]
+
+# ---------------------------------------------------------------- electro-optics
+- id: "pockels-effect"
+  term: "Pockels effect"
+  aliases: ["linear electro-optic effect", "EO effect"]
+  category: "electro-optics"
+  short: "The Pockels effect is a change of refractive index linear in an applied electric field, allowed only in crystals without inversion symmetry, such as LiNbO3."
+  long: "It is written Delta(1/n^2)_I = r_Ij E_j with the r tensor in Voigt notation; for E along z, Delta n_e = -(1/2) n_e^3 r33 E_z. Electronic and ionic contributions are always present, and below the acoustic resonances a piezoelectric-photoelastic contribution adds to them, so the coefficient depends on the clamping condition."
+  sources:
+    - {source_id: "weis1985", locator: "Table 4 and Eq. (13), p. 199"}
+    - {source_id: "turner1966"}
+  related: ["eo-tensor", "r33", "clamped", "unclamped", "index-ellipsoid"]
+  chapters: ["02-light", "06-devices"]
+
+- id: "eo-tensor"
+  term: "electro-optic tensor r_ij"
+  aliases: ["Pockels tensor", "r tensor"]
+  symbol: "r_ij"
+  category: "electro-optics"
+  short: "The electro-optic tensor r_Ij (pm/V) relates the change of optical impermeability to the applied field, Delta B_I = r_Ij E_j, with I = 1-6 in Voigt notation."
+  long: "For LN (3m, x perpendicular to a mirror) the nonzero components are r13 = r23, r33, r22 = -r12 = -r61 and r42 = r51. Each has a clamped (S) and an unclamped (T) value, related by r^T_ij = r^S_ij + p_ik d_jk (weis1985 Eq. (13)). Signs depend on the +z and +y convention, and most tables list magnitudes."
+  sources:
+    - {source_id: "weis1985", locator: "Table 4 and Eq. (13), p. 199"}
+  related: ["pockels-effect", "r33", "r13", "r22", "r51", "voigt-notation"]
+  chapters: ["02-light"]
+
+- id: "r33"
+  term: "r33"
+  symbol: "r33"
+  category: "electro-optics"
+  short: "r33 is the electro-optic coefficient that changes n_e for a field along c, the largest Pockels coefficient of LiNbO3 and the one most modulators use."
+  long: "weis1985 Table 4 lists r33^T = +32.2 pm/V (Zook et al. 1967) and r33^S = +28.8 pm/V (kaminow1980) or 30.8 pm/V (turner1966), all at 633 nm; TFLN papers usually take about 31 pm/V. No 1550 nm value appears in the sources checked. Clamping changes r33 only slightly."
+  sources:
+    - {source_id: "weis1985", locator: "Table 4, p. 199"}
+    - {source_id: "kaminow1980"}
+    - {source_id: "turner1966"}
+  related: ["pockels-effect", "eo-tensor", "vpi", "clamped", "x-cut"]
+  chapters: ["02-light", "06-devices"]
+
+- id: "r13"
+  term: "r13"
+  symbol: "r13"
+  category: "electro-optics"
+  short: "r13 (= r23) is the electro-optic coefficient that changes n_o for a field along c."
+  long: "weis1985 lists r13^T = +10.0 pm/V and r13^S = +7.7 pm/V (kaminow1980) or 8.6 pm/V (turner1966) at 633 nm, with the sign stated as positive. Because r13 is about a third of r33, a z field changes n_e and n_o by different amounts and so changes the birefringence."
+  sources:
+    - {source_id: "weis1985", locator: "Table 4, p. 199"}
+    - {source_id: "kaminow1980"}
+    - {source_id: "turner1966"}
+  related: ["r33", "eo-tensor", "ordinary-index", "birefringence"]
+  chapters: ["02-light"]
+
+- id: "r22"
+  term: "r22"
+  symbol: "r22"
+  category: "electro-optics"
+  short: "r22 is the electro-optic coefficient through which a field perpendicular to c changes and rotates the ordinary-index axes (r12 = r61 = -r22)."
+  long: "weis1985 lists r22^T of 6.7-6.8 pm/V and r22^S = 3.4 pm/V at 633 nm, so clamping roughly halves it. Unclamped r22 depends on composition: values of 1.5-9.9 pm/V are reported (Abdi et al. 1998, known here only through a secondary source, R06 sec. 2.6), with a minimum near 48.9 mol% Li2O (volk2008 p. 150)."
+  sources:
+    - {source_id: "weis1985", locator: "Table 4, p. 199"}
+    - {source_id: "volk2008", locator: "p. 150"}
+  related: ["eo-tensor", "clamped", "unclamped", "congruent"]
+  chapters: ["02-light"]
+
+- id: "r51"
+  term: "r51"
+  symbol: "r51"
+  category: "electro-optics"
+  short: "r51 (= r42) is the electro-optic coefficient through which a field perpendicular to c creates xz or yz impermeability components, tilting the principal axes out of the basal plane."
+  long: "weis1985 lists r51^T = 32 pm/V and r51^S = +18.2 pm/V (kaminow1980, judged probably the most accurate) or 28 pm/V (turner1966) at 633 nm. The 28 pm/V value used in many tables is about 35% above the 1980 clamped value. The large T-S gap reflects a large piezoelectric-photoelastic contribution."
+  sources:
+    - {source_id: "weis1985", locator: "Table 4, p. 199"}
+    - {source_id: "kaminow1980"}
+    - {source_id: "turner1966"}
+  related: ["eo-tensor", "clamped", "unclamped", "index-ellipsoid"]
+  chapters: ["02-light"]
+
+- id: "clamped"
+  term: "clamped (constant strain, S)"
+  aliases: ["constant strain", "high-frequency value", "superscript S"]
+  category: "electro-optics"
+  short: "A clamped coefficient (superscript S) is defined at constant strain, the condition reached at drive frequencies above the mechanical resonances of the sample, where the lattice cannot follow the field."
+  long: "Clamped EO coefficients of LN exclude the indirect piezoelectric-photoelastic part: r^T_ij = r^S_ij + p_ik d_jk (weis1985 Eq. (13)). They apply to GHz modulators: r33^S is close to r33^T, while r22 and r51 are much smaller. Permittivity likewise has eps^S below eps^T (eps11^S = 44.9 versus eps11^T = 83.3, kushibiki1999)."
+  sources:
+    - {source_id: "weis1985", locator: "Eq. (13), p. 199"}
+    - {source_id: "kushibiki1999", locator: "Tables IV-V"}
+  related: ["unclamped", "eo-tensor", "dielectric-permittivity", "r22", "r51"]
+  chapters: ["02-light", "03-sound", "06-devices"]
+
+- id: "unclamped"
+  term: "unclamped (constant stress, T)"
+  aliases: ["free", "constant stress", "low-frequency value", "superscript T"]
+  category: "electro-optics"
+  short: "An unclamped (free) coefficient (superscript T) is defined at constant stress, the condition reached at frequencies below the mechanical resonances, where the crystal deforms freely under the field."
+  long: "It includes the piezoelectric strain contribution, so the 633 nm unclamped EO coefficients in weis1985 exceed their clamped values, by about a factor 2 for r22. DC and kHz measurements of a modulator therefore probe T values, and in TFLN are further altered by charge relaxation (holzgrafe2024)."
+  sources:
+    - {source_id: "weis1985", locator: "Table 4 and Eq. (13), p. 199"}
+    - {source_id: "holzgrafe2024"}
+  related: ["clamped", "eo-tensor", "dielectric-permittivity", "dc-bias-drift"]
+  chapters: ["02-light", "03-sound"]
+  notes: "volk2008 p. 150 labels Yonekura et al. (2007) r22 values 'constant stress (clamped)', a contradiction; constant stress means unclamped."
+
+- id: "vpi"
+  term: "half-wave voltage V_pi"
+  aliases: ["Vpi", "half-wave voltage"]
+  symbol: "V_pi"
+  category: "electro-optics"
+  short: "The half-wave voltage V_pi is the drive voltage that produces a pi phase shift in a phase modulator, or switches an MZM from maximum to minimum transmission."
+  long: "For a lumped phase shifter of length L, V_pi = lambda g / (n_e^3 r33 Gamma L), with g the electrode gap and Gamma the field-mode overlap factor; push-pull drive halves it. RF V_pi rises with frequency through electrode loss and velocity mismatch, so DC and RF values differ. TFLN brought V_pi to CMOS-compatible levels at high bandwidth (wang2018)."
+  sources:
+    - {source_id: "wang2018"}
+    - {source_id: "zhang2021"}
+    - {source_id: "alferness1982"}
+  related: ["vpil", "overlap-factor", "push-pull", "mzm", "r33"]
+  chapters: ["06-devices"]
+
+- id: "vpil"
+  term: "V_pi*L"
+  aliases: ["VpiL", "voltage-length product"]
+  symbol: "Vpi*L"
+  category: "electro-optics"
+  short: "V_pi*L is the product of half-wave voltage and electrode length, a length-independent figure of merit for electro-optic modulation efficiency, usually in V cm."
+  long: "From V_pi*L = lambda g / (n_e^3 r33 Gamma), it scales with electrode gap divided by overlap, so the tight confinement of TFLN lowers it relative to bulk Ti:LN. Definitions differ (single arm or push-pull, DC or RF, wavelength), so published values are not strictly comparable. Narrower gaps lower V_pi*L but raise optical loss from the metal."
+  sources:
+    - {source_id: "zhang2021"}
+    - {source_id: "rao2018"}
+  related: ["vpi", "overlap-factor", "tfln", "ti-indiffusion"]
+  chapters: ["06-devices"]
+
+- id: "overlap-factor"
+  term: "overlap factor Gamma"
+  aliases: ["EO overlap", "electro-optic overlap integral"]
+  symbol: "Gamma"
+  category: "electro-optics"
+  short: "The electro-optic overlap factor Gamma is the overlap between the applied RF field, normalized to V/g, and the optical mode intensity inside the EO material."
+  long: "Gamma = (g/V) * integral_LN(E_z |E_opt|^2 dA) / integral(|E_opt|^2 dA), so Gamma = 1 for a uniform field V/g filling the mode. It enters V_pi*L = lambda g / (n_e^3 r33 Gamma). In TFLN, cladding, etch depth and electrode placement trade Gamma against metal-induced optical loss."
+  sources:
+    - {source_id: "zhang2021"}
+    - {source_id: "rao2018"}
+  related: ["vpi", "vpil", "effective-index", "traveling-wave-electrode"]
+  chapters: ["06-devices"]
+
+- id: "push-pull"
+  term: "push-pull drive"
+  aliases: ["push-pull"]
+  category: "electro-optics"
+  short: "Push-pull drive applies opposite phase shifts to the two arms of an MZM, doubling the differential phase per volt and cancelling the common-mode phase (chirp)."
+  long: "In X-cut LN with a ground-signal-ground electrode, the fields across the two waveguides point in opposite directions relative to c, giving push-pull from one signal line. Push-pull V_pi is half the single-arm value at equal length, which must be stated when quoting V_pi*L."
+  sources:
+    - {source_id: "zhang2021"}
+    - {source_id: "alferness1982"}
+  related: ["mzm", "vpi", "vpil", "x-cut"]
+  chapters: ["06-devices"]
+
+- id: "eo-bandwidth"
+  term: "electro-optic bandwidth"
+  aliases: ["3-dB EO bandwidth"]
+  category: "electro-optics"
+  short: "The electro-optic bandwidth of a modulator is the modulation frequency at which its EO response has fallen by a stated amount, usually 3 dB, from its low-frequency value."
+  long: "Papers differ in convention (3 dB or 6 dB, electrical or optical scale), so values need the definition. In traveling-wave LN modulators it is limited by electrode microwave loss, microwave-optical velocity mismatch and impedance mismatch. Micro-structured (segmented) electrodes reduce RF loss and relax the voltage-bandwidth trade-off (kharel2021)."
+  sources:
+    - {source_id: "zhang2021"}
+    - {source_id: "kharel2021"}
+  related: ["traveling-wave-electrode", "velocity-matching", "characteristic-impedance", "vpi"]
+  chapters: ["06-devices"]
+
+- id: "eo-comb"
+  term: "electro-optic frequency comb"
+  aliases: ["EO comb", "resonant EO comb"]
+  category: "electro-optics"
+  short: "An electro-optic (EO) frequency comb is a set of equally spaced optical lines produced by strong phase or intensity modulation at a microwave frequency, which sets the line spacing."
+  long: "In a resonant EO comb, a TFLN microring whose free spectral range matches the drive frequency recirculates light through the phase modulation, cascading sidebands over many resonances (zhang2019). Span is limited by drive strength, loss and dispersion (parriaux2020)."
+  sources:
+    - {source_id: "zhang2019"}
+    - {source_id: "parriaux2020"}
+  related: ["microring", "kerr-soliton-microcomb", "pockels-effect", "group-index"]
+  chapters: ["02-light", "06-devices"]
+
+- id: "dc-bias-drift"
+  term: "DC (bias) drift"
+  aliases: ["bias drift", "DC drift", "EO relaxation"]
+  category: "quirks"
+  short: "DC bias drift is the slow change of an LN modulator's operating point under constant bias voltage, caused by charge redistribution that screens the applied field."
+  long: "Mobile charge in LN, claddings and buried oxide, interface and contact traps, photogenerated carriers and pyroelectric charge contribute; a layered RC model with tau = eps rho per layer captures time scales from milliseconds to hours or longer in TFLN (zhu2021 Sec. 7.1). Drift was characterized in bulk Ti:LN devices by yamada1981. Mitigations include LN-metal interface control with annealing (holzgrafe2024), Ar+ milling (shi2025) and TFLT."
+  sources:
+    - {source_id: "zhu2021", locator: "Sec. 7.1"}
+    - {source_id: "yamada1981"}
+    - {source_id: "holzgrafe2024"}
+    - {source_id: "shi2025"}
+  related: ["dark-conductivity", "pyroelectric-effect", "mzm", "ar-milling", "tflt", "unclamped"]
+  chapters: ["04-quirks", "06-devices"]
+
+# ---------------------------------------------------------------- rf
+- id: "traveling-wave-electrode"
+  term: "traveling-wave electrode"
+  aliases: ["traveling-wave modulator", "TW electrode"]
+  category: "rf"
+  short: "A traveling-wave electrode is a transmission line running along the optical waveguide so that the modulating microwave co-propagates with the light, removing the RC limit of a lumped electrode."
+  long: "Bandwidth is then set by the mismatch between microwave index and optical group index, by RF loss, and by impedance matching to the source and termination. Coplanar ground-signal-ground lines on X-cut LN are typical. Micro-structured (segmented) electrodes reduce RF loss and allow long, low-V_pi devices with high bandwidth (kharel2021)."
+  sources:
+    - {source_id: "alferness1982"}
+    - {source_id: "zhang2021"}
+    - {source_id: "kharel2021"}
+  related: ["velocity-matching", "characteristic-impedance", "eo-bandwidth", "mzm", "group-index"]
+  chapters: ["06-devices"]
+
+- id: "velocity-matching"
+  term: "velocity matching"
+  aliases: ["microwave index matching"]
+  category: "rf"
+  short: "Velocity matching equalizes the microwave phase velocity on the electrode (index n_m) with the optical group velocity (index n_g), so the light sees the same modulating phase along the whole device."
+  long: "For a lossless traveling-wave modulator with mismatch Delta n = n_m - n_g, the response follows |sin(x)/x| with x = pi f L Delta n / c, which bounds the product f L. In bulk LN the microwave index far exceeds the optical group index, while TFLN on low-permittivity substrates can bring the two close."
+  sources:
+    - {source_id: "zhang2021"}
+    - {source_id: "rao2018"}
+  related: ["traveling-wave-electrode", "group-index", "dielectric-permittivity", "eo-bandwidth"]
+  chapters: ["06-devices"]
+
+- id: "characteristic-impedance"
+  term: "characteristic impedance Z0"
+  symbol: "Z0"
+  category: "rf"
+  short: "The characteristic impedance Z0 = sqrt((R + j omega L) / (G + j omega C)) of a transmission-line electrode is the voltage-to-current ratio of a single traveling wave on it."
+  long: "Matching Z0 to the driver and termination (usually 50 ohm) avoids reflections. The permittivity of LN raises the capacitance per length, lowering Z0 and the microwave phase velocity together, so Z0, microwave index and RF loss are designed jointly with the optical cross-section."
+  sources:
+    - {source_id: "zhang2021"}
+  related: ["traveling-wave-electrode", "velocity-matching", "dielectric-permittivity", "eo-bandwidth"]
+  chapters: ["06-devices"]
+
+# ---------------------------------------------------------------- devices and platforms
+- id: "mzm"
+  term: "Mach-Zehnder modulator (MZM)"
+  aliases: ["MZM", "Mach-Zehnder interferometer modulator"]
+  category: "devices"
+  short: "A Mach-Zehnder modulator (MZM) splits light into two arms with EO phase shifters and recombines it, converting the phase difference into intensity, T = cos^2(Delta phi / 2)."
+  long: "Biased at quadrature it gives linear small-signal intensity modulation; biased at null it gives field modulation, and IQ modulators nest two MZMs. Bulk Ti:LN MZMs served long-haul fibre links for decades (wooten2000), and TFLN MZMs (wang2018) reach lower V_pi at high bandwidth."
+  sources:
+    - {source_id: "alferness1982"}
+    - {source_id: "wooten2000"}
+    - {source_id: "wang2018"}
+  related: ["vpi", "push-pull", "traveling-wave-electrode", "dc-bias-drift", "tfln"]
+  chapters: ["06-devices", "07-history"]
+
+- id: "microwave-to-optical-transduction"
+  term: "microwave-to-optical transduction"
+  aliases: ["microwave-optical conversion", "quantum transduction"]
+  category: "devices"
+  short: "Microwave-to-optical transduction converts signals or single quanta between GHz microwave and optical carriers, for example to link superconducting qubits through optical fibre."
+  long: "LN offers two routes: cavity electro-optics, where a microwave resonator modulates an optical resonator through r33, and piezo-optomechanics, where the microwave drives a mechanical mode piezoelectrically and the mode modulates light photoelastically. Figures of merit are conversion efficiency, added noise and bandwidth (han2021)."
+  sources:
+    - {source_id: "han2021"}
+    - {source_id: "jiang2020"}
+  related: ["piezo-optomechanics", "pockels-effect", "microring"]
+  chapters: ["03-sound", "06-devices"]
+
+- id: "tfln"
+  term: "thin-film lithium niobate (TFLN)"
+  aliases: ["TFLN", "thin-film LN"]
+  category: "devices"
+  short: "TFLN (thin-film lithium niobate) is integrated photonics in sub-micrometre LiNbO3 films, typically LNOI, patterned into high-confinement waveguides."
+  long: "Tight confinement shortens bends, places electrodes close to the mode and lowers V_pi*L, while keeping the EO, chi(2) and piezoelectric response of LN (zhu2021; boes2023). Low-loss etched rings (zhang2017) and CMOS-voltage modulators (wang2018) marked its 2017-2018 revival. In 1973, 'thin-film LN' meant an out-diffused surface guide in bulk LN (kaminow1973)."
+  sources:
+    - {source_id: "zhu2021"}
+    - {source_id: "boes2023"}
+    - {source_id: "wang2018"}
+    - {source_id: "kaminow1973"}
+  related: ["lnoi", "tflt", "ion-slicing", "mzm", "vpil"]
+  chapters: ["05-making", "06-devices", "07-history"]
+
+- id: "tflt"
+  term: "thin-film lithium tantalate (TFLT)"
+  aliases: ["TFLT", "LTOI"]
+  category: "devices"
+  short: "TFLT (thin-film lithium tantalate) is the LiTaO3 counterpart of TFLN: integrated photonics in thin LiTaO3 films on insulator."
+  long: "wang2024 introduced LT photonic integrated circuits for volume manufacturing, citing much lower birefringence than LN and the existing LT wafer supply for RF SAW filters. LiTaO3 is the tantalum analogue of LiNbO3; ferroelectricity in both was reported together in 1949 (matthias1949)."
+  sources:
+    - {source_id: "wang2024"}
+    - {source_id: "matthias1949"}
+  related: ["tfln", "lnoi", "dc-bias-drift"]
+  chapters: ["06-devices", "08-industry", "07-history"]
+
+# ---------------------------------------------------------------- acoustics
+- id: "piezoelectric-effect"
+  term: "piezoelectric effect"
+  aliases: ["piezoelectricity"]
+  category: "acoustics"
+  short: "The piezoelectric effect is the linear coupling between mechanical strain or stress and electric polarization, allowed in LiNbO3 because it lacks an inversion center."
+  long: "In stress-charge form, T = c^E S - e^t E and D = e S + eps^S E. LN's strong coupling (e15 = 3.655 C/m^2, kushibiki1999) underlies SAW and bulk acoustic devices, piezo-optomechanics, and the gap between clamped and unclamped EO and dielectric constants. The sign rule (compression makes the +z face negative) fixes the signs of all odd-rank tensors."
+  sources:
+    - {source_id: "kushibiki1999"}
+    - {source_id: "weis1985", locator: "Table 3, p. 198"}
+    - {source_id: "ieee176", locator: "p. 22"}
+  related: ["piezoelectric-coefficients", "elastic-stiffness", "saw", "clamped", "plus-z-face"]
+  chapters: ["03-sound"]
+
+- id: "piezoelectric-coefficients"
+  term: "piezoelectric coefficients e_ij and d_ij"
+  aliases: ["piezoelectric stress constants", "piezoelectric strain constants"]
+  symbol: "e_iJ, d_iJ"
+  category: "acoustics"
+  short: "The piezoelectric stress constants e_iJ (C/m^2) and strain constants d_iJ (pC/N) of LiNbO3 relate polarization to strain and to stress respectively, with d = e s^E."
+  long: "kushibiki1999 gives e15 = 3.655, e22 = 2.407, e31 = 0.328 and e33 = 1.894 C/m^2 for congruent LN, and ogi2002 agrees within its stated uncertainties. Piezoelectric d33 is the least certain constant (6-16 pC/N across compilations); the measured hydrostatic coefficient d_h = 2 d31 + d33 = 6.31 pC/N favours about 8-9 pC/N. For 3m, d16 = -2 d22 and d24 = d15."
+  sources:
+    - {source_id: "kushibiki1999"}
+    - {source_id: "ogi2002"}
+    - {source_id: "weis1985", locator: "Table 3, p. 198; Eq. (8)"}
+  related: ["piezoelectric-effect", "elastic-stiffness", "voigt-notation", "ieee-176"]
+  chapters: ["03-sound"]
+
+- id: "elastic-stiffness"
+  term: "elastic stiffness c^E"
+  aliases: ["elastic constants", "stiffness tensor"]
+  symbol: "c_IJ^E"
+  category: "acoustics"
+  short: "The elastic stiffness tensor c_IJ^E (GPa) of LiNbO3 relates stress to strain at constant electric field, with six independent components for 3m: c11, c12, c13, c14, c33 and c44."
+  long: "kushibiki1999 gives c11 = 198.86, c12 = 54.67, c13 = 67.99, c14 = 7.83, c33 = 234.18 and c44 = 59.85 GPa, with c66 = (c11 - c12)/2 = 72.09 GPa; resonant ultrasound (ogi2002) agrees within about 1% except c14 (8.7 GPa). c14 is positive in the IEEE/IRE frame. At constant D, piezoelectric stiffening makes c^D larger than c^E."
+  sources:
+    - {source_id: "kushibiki1999"}
+    - {source_id: "ogi2002"}
+    - {source_id: "weis1985", locator: "Table 6, p. 200"}
+  related: ["christoffel-equation", "piezoelectric-coefficients", "voigt-notation", "ieee-176", "baw"]
+  chapters: ["03-sound"]
+
+- id: "christoffel-equation"
+  term: "Christoffel equation"
+  category: "acoustics"
+  short: "The Christoffel equation, det(Gamma_ik - rho v^2 delta_ik) = 0 with Gamma_ik = c_ijkl n_j n_l, gives the phase velocities and polarizations of the three bulk acoustic waves for propagation direction n."
+  long: "In piezoelectric LN the stiffness is replaced by the stiffened tensor c_ijkl + (e_pij n_p)(e_qkl n_q) / (eps_pq^S n_p n_q). With the kushibiki1999 constants the stiffened longitudinal velocity along Z is 7328.6 m/s, against a measured 7328.20 +- 0.32 m/s (unstiffened: 7102.1 m/s)."
+  sources:
+    - {source_id: "kushibiki1999", locator: "Table II"}
+    - {source_id: "warner1967"}
+  related: ["elastic-stiffness", "baw", "piezoelectric-coefficients", "saw"]
+  chapters: ["03-sound"]
+
+- id: "baw"
+  term: "bulk acoustic wave (BAW)"
+  aliases: ["BAW"]
+  category: "acoustics"
+  short: "A bulk acoustic wave (BAW) is an elastic wave propagating through the volume of a crystal as a quasi-longitudinal or one of two quasi-shear modes."
+  long: "In congruent LN the measured longitudinal and shear velocities along Z are 7328.20 and 3590.41 m/s (kushibiki1999 Table II). BAW resonators confine such a mode between electrodes or free surfaces; thin LN plates support high-coupling shear resonances used in XBARs and mm-wave resonators (lu2025)."
+  sources:
+    - {source_id: "kushibiki1999", locator: "Table II"}
+    - {source_id: "lu2025"}
+  related: ["christoffel-equation", "xbar", "saw", "electromechanical-coupling"]
+  chapters: ["03-sound"]
+
+- id: "saw"
+  term: "surface acoustic wave (SAW)"
+  aliases: ["SAW", "Rayleigh wave"]
+  category: "acoustics"
+  short: "A surface acoustic wave (SAW) is an elastic wave bound to the surface of a solid, decaying within about one wavelength into the bulk."
+  long: "On piezoelectric LN a SAW carries an electric potential, so interdigital transducers can launch and detect it (white1965). Velocity and coupling depend on cut and propagation direction, hence specific orientations such as the 128 deg Y-X cut for filters (shibayama1976). In TFLN photonics, SAWs drive acousto-optic modulators (sarabalis2020)."
+  sources:
+    - {source_id: "white1965"}
+    - {source_id: "shibayama1976"}
+    - {source_id: "sarabalis2020"}
+  related: ["idt", "128-y-x-cut", "electromechanical-coupling", "acousto-optic-effect"]
+  chapters: ["03-sound", "07-history"]
+
+- id: "idt"
+  term: "interdigital transducer (IDT)"
+  aliases: ["IDT"]
+  category: "acoustics"
+  short: "An interdigital transducer (IDT) is a pair of interleaved comb electrodes on a piezoelectric surface that converts an RF voltage into a surface acoustic wave and back."
+  long: "Excitation is strongest when the electrode period (one finger pair) equals the acoustic wavelength, giving a center frequency f0 = v / p. White and Voltmer demonstrated direct piezoelectric coupling to surface waves with IDTs in 1965 (white1965). The coupling coefficient k^2 sets the attainable filter bandwidth."
+  sources:
+    - {source_id: "white1965"}
+  related: ["saw", "electromechanical-coupling", "xbar", "128-y-x-cut"]
+  chapters: ["03-sound", "07-history"]
+
+- id: "electromechanical-coupling"
+  term: "electromechanical coupling k^2"
+  aliases: ["k^2", "K^2", "k_t^2", "coupling coefficient"]
+  symbol: "k^2"
+  category: "acoustics"
+  short: "The electromechanical coupling coefficient k^2 measures the fraction of energy converted between electrical and mechanical form in a given piezoelectric mode, e.g. k_t^2 = e33^2 / (c33^D eps33^S) for a thickness mode."
+  long: "For SAW it is estimated as K^2 = 2 (v_free - v_metallized) / v_free. Large k^2 in LN allows wide-band filters, and cut angles are chosen to maximize k^2 of the wanted mode (shibayama1976). Thin LN plates in XBARs reach high coupling for a laterally excited shear mode (plessky2019)."
+  sources:
+    - {source_id: "shibayama1976"}
+    - {source_id: "plessky2019"}
+  related: ["saw", "idt", "xbar", "piezoelectric-coefficients", "128-y-x-cut"]
+  chapters: ["03-sound"]
+
+- id: "xbar"
+  term: "XBAR (laterally excited bulk acoustic resonator)"
+  aliases: ["XBAR", "laterally excited bulk-wave resonator"]
+  category: "acoustics"
+  short: "An XBAR is a suspended thin LiNbO3 plate with interdigital electrodes on its surface whose lateral field excites a thickness-shear bulk mode."
+  long: "The resonance is set mainly by plate thickness rather than electrode pitch, which allows GHz operation with relaxed lithography; plessky2019 reported 5 GHz XBARs on thin LN platelets. Thin-film LN resonators of this class are being extended to mm-wave filters (lu2025)."
+  sources:
+    - {source_id: "plessky2019"}
+    - {source_id: "lu2025"}
+  related: ["baw", "electromechanical-coupling", "idt"]
+  chapters: ["03-sound", "06-devices"]
+
+- id: "photoelastic-effect"
+  term: "photoelastic effect"
+  aliases: ["strain-optic effect", "elasto-optic effect"]
+  symbol: "p_IJ"
+  category: "acoustics"
+  short: "The photoelastic effect is the linear change of optical impermeability with strain, Delta B_I = p_IJ S_J, described in LiNbO3 by the photoelastic tensor p_IJ."
+  long: "For 3m, p_IJ has eight independent components and is not symmetric (p14 differs from p41). Sets at 633 nm disagree in magnitude and in the signs of p14 and p41: the Avakyants 1976 set (p13 = 0.133, p31 = 0.179, p41 = -0.151) appears in weis1985 and zhu2021, while andrushchak2009 gives p13 = 0.172 and p41 = -0.109. Combining p14 and p41 from one paper with c14 and e22 from another requires checking that the frames match."
+  sources:
+    - {source_id: "weis1985", locator: "Table 7, p. 201"}
+    - {source_id: "andrushchak2009"}
+    - {source_id: "mytsyk2021"}
+  related: ["acousto-optic-effect", "voigt-notation", "elastic-stiffness", "piezo-optomechanics"]
+  chapters: ["03-sound"]
+  notes: "Measured p13 and p33 include an indirect piezoelectric-electro-optic part (weis1985 p. 201)."
+
+- id: "acousto-optic-effect"
+  term: "acousto-optic effect"
+  aliases: ["AO effect", "acousto-optics"]
+  category: "acoustics"
+  short: "The acousto-optic effect is the modulation or diffraction of light by an acoustic wave through the index changes it carries: photoelastic, plus electro-optic from the accompanying piezoelectric field in LiNbO3."
+  long: "Diffraction efficiency scales with the figure of merit M2 = n^6 p^2 / (rho v^3); weis1985 tabulates acousto-optic figures of merit for LN. In thin-film LN, acoustic resonators and waveguides give GHz acousto-optic modulators and microwave-to-optical converters (shao2019; sarabalis2020)."
+  sources:
+    - {source_id: "weis1985", locator: "p. 201"}
+    - {source_id: "shao2019"}
+    - {source_id: "sarabalis2020"}
+  related: ["photoelastic-effect", "saw", "piezo-optomechanics", "microwave-to-optical-transduction"]
+  chapters: ["03-sound", "06-devices"]
+
+- id: "piezo-optomechanics"
+  term: "piezo-optomechanics"
+  aliases: ["piezo-optomechanical transduction", "optomechanical crystal"]
+  category: "acoustics"
+  short: "Piezo-optomechanics couples microwave signals to optical modes through a mechanical mode that is driven piezoelectrically and modulates an optical cavity photoelastically and by boundary motion."
+  long: "LN is both piezoelectric and photoelastic, so one suspended structure can host both interactions. LN optomechanical crystals co-localize GHz phonons and telecom photons in a patterned nanobeam (jiang2019); with an integrated piezoelectric drive they act as bidirectional microwave-optical transducers (jiang2020)."
+  sources:
+    - {source_id: "jiang2019"}
+    - {source_id: "jiang2020"}
+  related: ["microwave-to-optical-transduction", "photoelastic-effect", "piezoelectric-effect", "acousto-optic-effect"]
+  chapters: ["03-sound", "06-devices"]
+
+# ---------------------------------------------------------------- quirks
+- id: "photorefraction"
+  term: "photorefraction"
+  aliases: ["photorefractive effect", "optical damage"]
+  category: "quirks"
+  short: "Photorefraction is the light-induced refractive-index change in LiNbO3 caused by photoexcited charge redistribution, whose space-charge field alters the index through the Pockels effect."
+  long: "First reported as 'optical damage' (ashkin1966), it was explained by charge drift (chen1969) and the bulk photovoltaic effect (glass1974). Traps are Fe2+/Fe3+ impurities and, in undoped LN, Nb_Li polarons; MgO above threshold suppresses it by raising photoconductivity (bryan1984). In TFLN microresonators it responds fast and shifts resonances opposite to the thermal shift (jiang2017)."
+  sources:
+    - {source_id: "ashkin1966"}
+    - {source_id: "chen1969"}
+    - {source_id: "glass1974"}
+    - {source_id: "volk2008"}
+    - {source_id: "jiang2017"}
+  related: ["space-charge-field", "bulk-photovoltaic-effect", "photoconductivity", "mgo-doping", "fe-doping", "hologram-fixing"]
+  chapters: ["04-quirks", "07-history"]
+
+- id: "bulk-photovoltaic-effect"
+  term: "bulk photovoltaic effect"
+  aliases: ["Glass current", "photogalvanic effect"]
+  category: "quirks"
+  short: "The bulk photovoltaic effect is a DC current driven by uniform illumination in a crystal without inversion symmetry, j = kappa alpha I along c in LiNbO3, with no applied field or gradient."
+  long: "glass1974 identified it as the driver of photorefraction in LN: in an open-circuit crystal, charge accumulates until conduction balances the current, giving E_sc ~ j_pv / (sigma_d + sigma_ph), which is large in insulating crystals. MgO doping does not reduce the photovoltaic current but raises sigma_ph, collapsing E_sc (bryan1984)."
+  sources:
+    - {source_id: "glass1974"}
+    - {source_id: "bryan1984", locator: "abstract"}
+  related: ["photorefraction", "space-charge-field", "photoconductivity", "mgo-doping"]
+  chapters: ["04-quirks", "07-history"]
+
+- id: "space-charge-field"
+  term: "space-charge field"
+  symbol: "E_sc"
+  category: "quirks"
+  short: "The space-charge field E_sc is the electrostatic field of charges separated by photoexcitation, transport and retrapping in a photorefractive crystal."
+  long: "In LN it changes the index through the Pockels effect, Delta n_e = -(1/2) n_e^3 r33 E_sc. Its steady state is set by the balance of photovoltaic, drift and diffusion currents (about j_pv / (sigma_d + sigma_ph) in the photovoltaic limit), and its dark lifetime by the dielectric relaxation time eps eps0 / sigma_d. Periodic illumination writes a periodic E_sc, i.e. a volume hologram."
+  sources:
+    - {source_id: "chen1969"}
+    - {source_id: "glass1974"}
+    - {source_id: "volk2008"}
+  related: ["photorefraction", "bulk-photovoltaic-effect", "dark-conductivity", "hologram-fixing", "r33"]
+  chapters: ["04-quirks"]
+
+- id: "photoconductivity"
+  term: "photoconductivity"
+  symbol: "sigma_ph"
+  category: "quirks"
+  short: "Photoconductivity sigma_ph is the light-induced increase of electrical conductivity, proportional to intensity in the simplest one-center model."
+  long: "In LN it short-circuits the photovoltaic current: MgO doping at or above 4.5 at.% raises photoconductivity about 100x (bryan1984), which collapses the space-charge field and the photorefractive index change. The ratio sigma_ph / sigma_d also governs how fast holograms are written and erased."
+  sources:
+    - {source_id: "bryan1984", locator: "abstract"}
+    - {source_id: "volk2008"}
+  related: ["mgo-doping", "photorefraction", "dark-conductivity", "bulk-photovoltaic-effect"]
+  chapters: ["04-quirks"]
+
+- id: "griira"
+  term: "GRIIRA (green-induced infrared absorption)"
+  aliases: ["GRIIRA", "green-induced infrared absorption"]
+  category: "quirks"
+  short: "GRIIRA is the transient infrared absorption induced in LiNbO3 by green light, caused by light-generated small polarons."
+  long: "During SHG to the green it adds absorption at the infrared fundamental, heating the crystal and detuning phase matching. furukawa2001 assigned it to the Nb_Li bound polaron and found that its MgO threshold equals that of photorefraction."
+  sources:
+    - {source_id: "furukawa2001"}
+    - {source_id: "imlau2015"}
+  related: ["bliira", "polaron", "antisite-nb-li", "mgo-doping", "shg"]
+  chapters: ["04-quirks"]
+
+- id: "bliira"
+  term: "BLIIRA (blue-light-induced infrared absorption)"
+  aliases: ["BLIIRA", "blue-light-induced infrared absorption"]
+  category: "quirks"
+  short: "BLIIRA is the infrared absorption induced in LiNbO3 by blue (or two-photon) excitation through the same light-generated polaron absorption bands."
+  long: "hirohashi2007 measured picosecond BLIIRA in single-domain and periodically poled ferroelectrics and found it lowest in KNbO3 and MgO:LN, and slightly increased by periodic poling. Like GRIIRA, it adds infrared absorption and heating that degrade high-power frequency conversion."
+  sources:
+    - {source_id: "hirohashi2007"}
+    - {source_id: "imlau2015"}
+  related: ["griira", "polaron", "mgo-doping", "ppln"]
+  chapters: ["04-quirks"]
+
+- id: "hologram-fixing"
+  term: "hologram fixing"
+  aliases: ["thermal fixing"]
+  category: "quirks"
+  short: "Hologram fixing converts a photorefractive electronic charge grating in LiNbO3 into a stable ionic grating, so that reading light no longer erases it."
+  long: "In thermal fixing (staebler1971) the crystal is heated during or after recording so that mobile ions drift to compensate the electronic grating; after cooling, uniform illumination redistributes the electrons and reveals the ionic copy. It followed the demonstration of holographic storage in LN (chen1968) and made long-lived Fe:LN holograms possible."
+  sources:
+    - {source_id: "staebler1971"}
+    - {source_id: "chen1968"}
+    - {source_id: "volk2008"}
+  related: ["photorefraction", "fe-doping", "space-charge-field", "dark-conductivity"]
+  chapters: ["04-quirks", "07-history"]
+
+- id: "li-out-diffusion"
+  term: "Li out-diffusion"
+  aliases: ["Li2O out-diffusion"]
+  category: "quirks"
+  short: "Li out-diffusion is the loss of Li2O from the surface of LiNbO3 at high temperature, leaving a Li-poor surface layer with a higher extraordinary index."
+  long: "It was used deliberately to form planar waveguides (kaminow1973), with its diffusion kinetics studied by carruthers1974, and it can accompany other high-temperature steps. In thin films, Li out-diffusion during anneals is one proposed cause of higher coercive fields (zhu2021)."
+  sources:
+    - {source_id: "carruthers1974"}
+    - {source_id: "kaminow1973"}
+    - {source_id: "zhu2021"}
+  related: ["li-vacancy", "extraordinary-index", "ti-indiffusion", "coercive-field"]
+  chapters: ["04-quirks", "05-making", "07-history"]
+
+# ---------------------------------------------------------------- fabrication
+- id: "czochralski-growth"
+  term: "Czochralski growth"
+  aliases: ["crystal pulling", "Cz growth"]
+  category: "fabrication"
+  short: "Czochralski growth pulls a single crystal from a melt on a rotating seed, the standard method for LiNbO3 boules."
+  long: "ballman1965 reported Czochralski growth of LN among other piezoelectric and ferroelectric crystals. Growing at the congruent composition keeps melt and crystal compositions equal along the boule (carruthers1971); stoichiometric crystals need double-crucible growth with continuous powder supply (kitamura1992)."
+  sources:
+    - {source_id: "ballman1965"}
+    - {source_id: "carruthers1971"}
+    - {source_id: "kitamura1992"}
+  related: ["boule", "congruent", "stoichiometric"]
+  chapters: ["05-making", "07-history"]
+
+- id: "boule"
+  term: "boule"
+  aliases: ["ingot"]
+  category: "fabrication"
+  short: "A boule is the as-grown single-crystal ingot from which LiNbO3 wafers are cut after orientation."
+  long: "Unless grown at the congruent composition, a boule changes composition along its length as the melt drifts (carruthers1971). Composition-sensitive quantities such as the Curie temperature or the UV absorption edge are used to check uniformity."
+  sources:
+    - {source_id: "ballman1965"}
+    - {source_id: "carruthers1971"}
+    - {source_id: "volk2008", locator: "Eqs. (6.2)-(6.6), pp. 140-142"}
+  related: ["czochralski-growth", "congruent", "curie-temperature", "uv-absorption-edge"]
+  chapters: ["05-making"]
+
+- id: "vte"
+  term: "vapor transport equilibration (VTE)"
+  aliases: ["VTE"]
+  category: "fabrication"
+  short: "Vapor transport equilibration (VTE) raises the Li content of LiNbO3 wafers toward stoichiometry by annealing them next to Li-rich powder so that Li2O diffuses in through the vapor phase."
+  long: "bordui1992 prepared off-congruent crystals this way and fitted T_c = 39.064 c - 746.73 against composition. Because it is diffusion-limited, it suits wafers rather than thick crystals. Near-stoichiometric LN with 2% Mg made by VTE showed a coercive field of 1.8 +- 0.2 kV/mm (volk2008 Table 7.1)."
+  sources:
+    - {source_id: "bordui1992"}
+    - {source_id: "volk2008", locator: "Eqs. (6.2)-(6.3), p. 140; Table 7.1, p. 185"}
+  related: ["stoichiometric", "curie-temperature", "coercive-field"]
+  chapters: ["05-making"]
+
+- id: "ti-indiffusion"
+  term: "Ti indiffusion"
+  aliases: ["Ti:LN waveguide", "titanium indiffusion"]
+  category: "fabrication"
+  short: "Ti indiffusion forms optical waveguides in bulk LiNbO3 by depositing titanium stripes and diffusing them in at high temperature, raising both n_o and n_e locally."
+  long: "Introduced by schmidt1974, Ti:LN waveguides guide both polarizations and were the basis of commercial LN modulators for decades (wooten2000). The index contrast is small, so modes are large and electrodes sit far from the guide, giving a larger V_pi*L than TFLN."
+  sources:
+    - {source_id: "schmidt1974"}
+    - {source_id: "wooten2000"}
+  related: ["proton-exchange", "mzm", "vpil", "li-out-diffusion"]
+  chapters: ["05-making", "07-history"]
+
+- id: "proton-exchange"
+  term: "proton exchange"
+  aliases: ["PE", "annealed proton exchange", "APE"]
+  category: "fabrication"
+  short: "Proton exchange replaces Li+ by H+ near the LiNbO3 surface in an acid melt such as benzoic acid, raising n_e and lowering n_o to form waveguides that guide only the extraordinary polarization."
+  long: "jackel1982 introduced it as a low-temperature route to high-index waveguides. Annealing after exchange (APE) recovers nonlinear and EO response, and APE waveguides became the basis of PPLN waveguide devices; exchanged layers are also resistant to optical damage."
+  sources:
+    - {source_id: "jackel1982"}
+  related: ["ti-indiffusion", "ppln", "photorefraction"]
+  chapters: ["05-making", "07-history"]
+
+- id: "ion-slicing"
+  term: "ion slicing (Smart Cut)"
+  aliases: ["crystal ion slicing", "CIS", "Smart Cut", "ion cut"]
+  category: "fabrication"
+  short: "Ion slicing (crystal ion slicing, a Smart Cut variant) detaches a sub-micrometre single-crystal layer from a LiNbO3 wafer by light-ion implantation to a set depth, bonding to a handle wafer, and splitting along the implanted plane."
+  long: "Smart Cut was developed for silicon-on-insulator using hydrogen implantation and bonding (bruel1995); levy1998 made single-crystal LN films by crystal ion slicing, the basis of LNOI. The implant energy sets film thickness; annealing removes implantation damage and the split surface is polished by CMP (jia2021)."
+  sources:
+    - {source_id: "bruel1995"}
+    - {source_id: "levy1998"}
+    - {source_id: "jia2021"}
+  related: ["wafer-bonding", "lnoi", "cmp", "tfln"]
+  chapters: ["05-making", "07-history"]
+
+- id: "wafer-bonding"
+  term: "wafer bonding"
+  aliases: ["direct bonding"]
+  category: "fabrication"
+  short: "Wafer bonding joins two polished wafers, for example an implanted LiNbO3 donor and an oxidized Si or LN handle, by direct or adhesive bonding."
+  long: "rabiei2004 combined crystal ion slicing with wafer bonding to make submicrometre LN slab waveguides with EO function, a route to LNOI. LN's anisotropic thermal expansion (alpha_a = 14.1e-6 /K, alpha_c = 4.1e-6 /K for congruent LN at 300 K, volk2008) produces stress against Si or other handles during post-bond anneals."
+  sources:
+    - {source_id: "rabiei2004"}
+    - {source_id: "poberaj2012"}
+    - {source_id: "volk2008", locator: "Table 1.1"}
+  related: ["ion-slicing", "lnoi", "tfln"]
+  chapters: ["05-making"]
+
+- id: "cmp"
+  term: "chemical-mechanical polishing (CMP)"
+  aliases: ["CMP", "chemo-mechanical polishing"]
+  category: "fabrication"
+  short: "Chemical-mechanical polishing (CMP) smooths and thins a surface by combined chemical attack and abrasive polishing with a slurry, used on LiNbO3 films after ion slicing and to pattern low-loss structures."
+  long: "In LNOI production it removes split-surface roughness and residual damage and sets the final film thickness (jia2021). Combined with laser or photolithographic masks it shapes microresonators and waveguides with very smooth surfaces (lin2020)."
+  sources:
+    - {source_id: "lin2020"}
+    - {source_id: "jia2021"}
+  related: ["ion-slicing", "lnoi", "propagation-loss", "ar-milling"]
+  chapters: ["05-making"]
+
+- id: "ar-milling"
+  term: "Ar+ milling"
+  aliases: ["argon ion milling", "physical dry etching"]
+  category: "fabrication"
+  short: "Ar+ milling is physical dry etching in which accelerated argon ions sputter material, the usual way to etch LiNbO3 waveguides because LN resists chemical dry etching."
+  long: "Optimized physical etching produces the smooth, angled sidewalls of low-loss TFLN ridges (zhu2021). Ar+ milling of the LN surface has also been reported to alleviate DC drift in TFLN modulators (shi2025)."
+  sources:
+    - {source_id: "zhu2021"}
+    - {source_id: "shi2025"}
+  related: ["propagation-loss", "dc-bias-drift", "cmp", "duv-lithography"]
+  chapters: ["05-making"]
+
+- id: "duv-lithography"
+  term: "DUV lithography"
+  aliases: ["deep-ultraviolet lithography", "DUV stepper"]
+  category: "fabrication"
+  short: "Deep-ultraviolet (DUV) lithography patterns resist by projection exposure in steppers or scanners, enabling wafer-scale, foundry-style patterning of TFLN instead of electron-beam writing."
+  long: "luke2020 used DUV lithography to make wafer-scale low-loss LN photonic integrated circuits, and the TFLT platform of wang2024 was also patterned with a DUV stepper. Mask-based exposure repeats the same layout on every die, which wafer-level yield data and process design kits rely on."
+  sources:
+    - {source_id: "luke2020"}
+    - {source_id: "wang2024"}
+  related: ["tfln", "tflt", "ar-milling", "lnoi"]
+  chapters: ["05-making", "08-industry"]
+
+- id: "lnoi"
+  term: "lithium niobate on insulator (LNOI)"
+  aliases: ["LNOI"]
+  category: "fabrication"
+  short: "LNOI (lithium niobate on insulator) is a layer stack of a thin single-crystal LiNbO3 film on a low-index insulator, usually SiO2, on a handle wafer such as Si, LN or quartz."
+  long: "Made by ion slicing and bonding (levy1998; rabiei2004) and named in the review of poberaj2012, it confines light in sub-micrometre waveguides with high index contrast. 'LNOI' usually refers to the wafer and 'TFLN' to the platform and its devices."
+  sources:
+    - {source_id: "poberaj2012"}
+    - {source_id: "levy1998"}
+    - {source_id: "jia2021"}
+  related: ["tfln", "ion-slicing", "wafer-bonding", "tflt"]
+  chapters: ["05-making", "07-history", "08-industry"]

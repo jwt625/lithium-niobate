@@ -1,0 +1,72 @@
+{
+  "citation": "Mengyue Xu, Yuntao Zhu, Fabio Pittalà, et al., \"Dual-polarization thin-film lithium niobate in-phase quadrature modulators for terabit-per-second transmission\", Optica 9, 61, (2022) doi:10.1364/optica.449691",
+  "link": "https://doi.org/10.1364/optica.449691",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Mengyue Xu"
+      },
+      {
+        "literal": "Yuntao Zhu"
+      },
+      {
+        "literal": "Fabio Pittalà"
+      },
+      {
+        "literal": "Jin Tang"
+      },
+      {
+        "literal": "Mingbo He"
+      },
+      {
+        "literal": "Wing Chau Ng"
+      },
+      {
+        "literal": "Jingyi Wang"
+      },
+      {
+        "literal": "Ziliang Ruan"
+      },
+      {
+        "literal": "Xuefeng Tang"
+      },
+      {
+        "literal": "Maxim Kuschnerov"
+      },
+      {
+        "literal": "Liu Liu"
+      },
+      {
+        "literal": "Siyuan Yu"
+      },
+      {
+        "literal": "Bofang Zheng"
+      },
+      {
+        "literal": "Xinlun Cai"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.449691",
+    "id": "xu2022",
+    "issue": "1",
+    "issued": "2022-01-20",
+    "page": "61",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Dual-polarization thin-film lithium niobate in-phase quadrature modulators for terabit-per-second transmission",
+    "type": "article-journal",
+    "volume": "9"
+  }
+}

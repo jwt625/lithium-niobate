@@ -1,0 +1,47 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "dark-conductivity-activation-energy",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "electrical",
+      "conditions": {
+        "temperature_text": "200-1000 C"
+      },
+      "default": true,
+      "id": "dark-conductivity-activation-energy/cln/volk2008",
+      "kind": "scalar",
+      "name": "Activation energy of dark (protonic) conductivity",
+      "property": "dark-conductivity-activation-energy",
+      "provenance": {
+        "locator": "Sec. 3.2.1, pp. 59-60",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "eV",
+        "ucum": "eV"
+      },
+      "value": 1.1,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

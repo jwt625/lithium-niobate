@@ -1,0 +1,44 @@
+{
+  "alternatives": [
+    {
+      "category": "thermal",
+      "conditions": {
+        "temperature_C": 25
+      },
+      "id": "pyroelectric-p3/cln/cti1999",
+      "kind": "scalar",
+      "name": "Pyroelectric coefficient",
+      "notes": "Sign convention not stated in the data sheet.",
+      "property": "pyroelectric-p3",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "p_3",
+      "unit": {
+        "display": "C/(m^2 K)",
+        "ucum": "C/(m2.K)"
+      },
+      "value": -8.3e-05,
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "pyroelectric-p3",
+    "variant": "cln"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": null
+}

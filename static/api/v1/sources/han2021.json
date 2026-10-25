@@ -1,0 +1,50 @@
+{
+  "citation": "Xu Han, Wei Fu, Chang-Ling Zou, et al., \"Microwave-optical quantum frequency conversion\", Optica 8, 1050, (2021) doi:10.1364/optica.425414",
+  "link": "https://doi.org/10.1364/optica.425414",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Han",
+        "given": "Xu"
+      },
+      {
+        "family": "Fu",
+        "given": "Wei"
+      },
+      {
+        "family": "Zou",
+        "given": "Chang-Ling"
+      },
+      {
+        "family": "Jiang",
+        "given": "Liang"
+      },
+      {
+        "family": "Tang",
+        "given": "Hong X."
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.425414",
+    "id": "han2021",
+    "issue": "8",
+    "issued": "2021-08-02",
+    "page": "1050",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Microwave-optical quantum frequency conversion",
+    "type": "article-journal",
+    "volume": "8"
+  }
+}

@@ -1,0 +1,167 @@
+# Chapter 03 Sound: glossary
+# Fields: term, short (popup one-liner), long (L2/L3 popup), refs (ids in refs.yaml), see (related terms).
+- term: piezoelectric effect
+  short: "Electric polarization produced by mechanical stress; requires a crystal without a center of symmetry."
+  long: "Direct effect: stress -> charge (D = d T at E = 0). Converse effect: field -> strain (S = d^t E at T = 0). LN, point group 3m, is piezoelectric; d22 = 20.3 pC/N and d33 = 8.7 pC/N (derived from kushibiki1999, status derived)."
+  refs: [ieee176, kushibiki1999]
+  see: [constitutive equations, d coefficient]
+- term: constitutive equations
+  short: "Linear relations between stress, strain, electric field and displacement in a piezoelectric."
+  long: "IEEE 176 gives four exact forms with independent variables (S, E), (T, E), (T, D), (S, D) and coefficients e, d, g, h. Only the (S, E) form yields the field equations of the unbounded medium; the others suit bodies where some variables are nearly zero."
+  refs: [ieee176]
+  see: [e coefficient, d coefficient, g coefficient, h coefficient]
+- term: e coefficient
+  short: "Piezoelectric stress constant, C/m^2: stress per unit field at constant strain, or charge per unit strain."
+  long: "T = c^E S - e^t E; D = e S + eps^S E. LN (kushibiki1999, P): e15 3.655, e22 2.407, e31 0.328, e33 1.894 C/m^2. No Voigt factor."
+  refs: [ieee176, kushibiki1999]
+- term: d coefficient
+  short: "Piezoelectric strain constant, C/N = m/V: charge per unit stress, or strain per unit field."
+  long: "d = e s^E. Voigt shear entries carry a factor 2 (d16 = -2 d22 for 3m). LN from kushibiki1999: d15 66.4, d22 20.3, d31 -1.04, d33 8.69 pC/N (status derived)."
+  refs: [ieee176, kushibiki1999]
+- term: g coefficient
+  short: "Piezoelectric voltage constant, V m/N: field per unit stress at constant D."
+  long: "g = beta^T d. LN (status derived, kushibiki1999): g15 0.090, g22 0.0275, g33 0.0345 V m/N."
+  refs: [ieee176]
+- term: h coefficient
+  short: "Piezoelectric stiffness-voltage constant, V/m: field per unit strain at constant D."
+  long: "h = beta^S e. LN (status derived): h15 9.19, h22 6.06, h33 8.01 x 10^9 V/m."
+  refs: [ieee176]
+- term: constant E, constant D
+  short: "Electrical boundary condition: shorted (E = 0) or open (D = 0)."
+  long: "Elastic constants at constant D are stiffer: c^D = c^E + e^t h (c33^D 249.35, status derived, vs c33^E 234.18 GPa, P, for LN)."
+  refs: [ieee176]
+- term: clamped and free (S and T)
+  short: "Mechanical boundary condition: constant strain (clamped, above mechanical resonances) or constant stress (free, below them)."
+  long: "eps^T = eps^S + d e^t. For LN eps11^T/eps0 = 83.3 and eps11^S/eps0 = 44.9 (kushibiki1999, P). The same distinction separates r^T and r^S electro-optic coefficients."
+  refs: [ieee176, kushibiki1999, weis1985]
+- term: Voigt notation
+  short: "Compression of symmetric index pairs: 11->1, 22->2, 33->3, 23->4, 13->5, 12->6."
+  long: "IEEE 176 Table 2. Compressed matrices hide transformation properties; rotate with full tensors."
+  refs: [ieee176]
+  see: [convention of 2s]
+- term: convention of 2s
+  short: "Factors of 2 and 4 that appear when tensors are written in Voigt matrices."
+  long: "Engineering shear strain S4 = 2 S23. No factor on stress, stiffness c, piezo e, photoelastic p, EO r. Factor 2 on shear strain and on d (and g) for q = 4..6; factors 2 and 4 on compliance s and piezo-optic pi. Checks: c66 = (c11 - c12)/2 but s66 = 2(s11 - s12); d16 = -2 d22."
+  refs: [ieee176, weis1985]
+- term: IEEE Std 176-1987
+  short: "IEEE Standard on Piezoelectricity: notation, axes, sign rules, measurement methods."
+  long: "For class 3m: +Z gives positive d33, +Y gives positive d22, X along an a axis perpendicular to a mirror plane, right-handed. LN is the class 3m example in its Table 3."
+  refs: [ieee176]
+- term: sign frame
+  short: "The choice of +X, +Y, +Z that fixes the signs of odd-rank and some even-rank tensor components."
+  long: "A 180 deg rotation about Z flips c14, e22, d22, p14, p41, r22 together; requiring d22 > 0 removes the freedom, giving c14 > 0 for LN. Flipping +Z flips all odd-rank tensors."
+  refs: [ieee176, weis1985, R14]
+- term: electromechanical coupling factor
+  short: "Dimensionless k: the fraction of stored energy that converts between mechanical and electrical form, as k^2."
+  long: "Material factors (IEEE 176 Table 10), e.g. k33^2 = d33^2/(s33^E eps33^T); thickness factors k_t = e33/(c33^D eps33^S)^(1/2). LN (status derived): k_t 0.247, k15 0.600. For surface waves, k^2 approx 2 (v_free - v_met)/v_free."
+  refs: [ieee176, ingebrigtsen1969]
+- term: Christoffel equation
+  short: "Eigenvalue equation that gives the three plane-wave velocities and polarizations for a propagation direction."
+  long: "Gamma_jk = c_ijkl n_i n_l (+ piezoelectric stiffening term); det(Gamma - rho v^2 I) = 0."
+  refs: [ieee176, jaeken2016]
+  see: [piezoelectric stiffening, slowness surface]
+- term: piezoelectric stiffening
+  short: "Increase of the effective elastic constant because the wave's own electric field resists deformation."
+  long: "Added term (e_mij n_m n_i)(e_nkl n_n n_l)/(eps^S_rs n_r n_s) (IEEE 176 Eq. 47). LN Z-longitudinal: 7328.6 m/s stiffened vs 7102.1 m/s unstiffened (status derived; measured 7328.20, kushibiki1999, P)."
+  refs: [ieee176, kushibiki1999]
+- term: slowness surface
+  short: "Plot of 1/v versus propagation direction; one sheet per bulk mode."
+  long: "Group velocity is normal to the slowness surface; the power-flow angle is the angle between group and phase velocity."
+  refs: [jaeken2016]
+- term: surface acoustic wave
+  short: "SAW: an acoustic wave bound to a surface, with energy within about one wavelength of it."
+  long: "On LN, 3.4 to 4.0 km/s for Rayleigh-type waves on standard cuts (status derived, kushibiki1999)."
+  refs: [rayleigh1885, campbell1968]
+  see: [Rayleigh wave, leaky SAW]
+- term: Rayleigh wave
+  short: "Surface wave on a traction-free half-space with motion in the sagittal plane."
+  long: "On a piezoelectric substrate it carries an electric potential; metallizing the surface slows it. 128 deg Y-X LN: 3978.4 m/s open, 3870.7 m/s shorted (status derived)."
+  refs: [rayleigh1885, kushibiki1999]
+- term: leaky SAW
+  short: "A surface wave faster than the slow shear bulk wave that slowly radiates energy into the substrate (pseudo-SAW)."
+  long: "Mostly shear-horizontal on rotated Y-X LN near 36 to 64 deg; complex velocity. 64 deg Y-X: 4691.4 m/s open, 4448.2 m/s shorted, k^2 10.4% (status derived, kushibiki1999; Warner constants give 11.0%). On 41 deg Y-X the open-surface wave sits at the fast-shear bulk velocity, 4750 m/s."
+  refs: [yamanouchi1972, kushibiki1999, warner1967]
+- term: sagittal plane
+  short: "The plane containing the propagation direction and the surface normal."
+- term: partial-wave method
+  short: "SAW calculation that superposes bulk-like partial waves decaying into the substrate and enforces the surface boundary conditions."
+  refs: [campbell1968]
+- term: rotated Y cut
+  short: "Plate cut normal to the Y axis rotated by theta about X; notation (YXl) theta."
+  long: "128 deg Y-X = (YXl) 128 deg with propagation along X. Plate normal Y' = Y cos(theta) + Z sin(theta)."
+  refs: [ieee176]
+- term: interdigital transducer
+  short: "IDT: interleaved comb electrodes that launch and detect surface waves."
+  long: "Synchronous frequency f0 = v/p (p = finger-pair period). Invented 1965 (White and Voltmer)."
+  refs: [white1965, smith1969]
+- term: metallization ratio
+  short: "Fraction of the IDT period covered by metal fingers."
+- term: temperature coefficient of frequency
+  short: "TCF: relative change of a resonator's or filter's frequency per kelvin, in ppm/K."
+  long: "Vendor values for LN cuts: -95 (Y-Z), -72 (128 deg Y-X), -70 (41 and 64 deg Y-X) ppm/K (status V)."
+  refs: [fomos-ln]
+- term: POI
+  short: "Piezoelectric-on-insulator: a thin LT or LN layer bonded on oxide on silicon for SAW filters."
+  long: "Soitec Connect POI: LT6, LT8, LN6 products made by Smart Cut."
+  refs: [soitec-poi]
+- term: XBAR
+  short: "Laterally excited bulk-wave resonator: a thin LN platelet excited by in-plane fields from interdigital electrodes."
+  long: "First report: about 4.8 GHz, 400 nm ZY-LN, coupling about 25%, Q about 300 (status reported)."
+  refs: [plessky2019]
+- term: Love wave
+  short: "Shear-horizontal wave guided by a surface layer slower than the substrate."
+- term: Lamb wave
+  short: "Guided wave in a free plate with symmetric (S) and antisymmetric (A) families."
+  see: [SH0 mode]
+- term: SH0 mode
+  short: "Fundamental shear-horizontal plate mode; in-plane displacement normal to propagation."
+  long: "Used for collinear acousto-optic modulation in suspended X-cut TFLN (440 MHz, status reported)."
+  refs: [p10]
+- term: phononic index guiding
+  short: "Confinement of an acoustic wave in a film whose acoustic velocity is lower than the substrate's, without suspension."
+  long: "Used in thin-film LN on sapphire phononic circuits."
+  refs: [p09]
+- term: photoelastic effect
+  short: "Change of the optical impermeability with strain: Delta(1/n^2)_ij = p_ijkl S_kl."
+  long: "LN has eight independent p coefficients (3m); p_IJ is not symmetric (p14 differs from p41). Values at 633 nm only."
+  refs: [weis1985, andrushchak2009]
+- term: rotational photoelastic contribution
+  short: "Index change from local rotation (antisymmetric displacement gradient) in birefringent crystals."
+  long: "Nelson and Lax; in LN it gives p44 an antisymmetric part not resolved by available data."
+  refs: [nelsonlax1970, nelsonlax1971, weis1985]
+- term: indirect photoelastic effect
+  short: "Index change from strain via the piezoelectric field and the electro-optic effect."
+  long: "Significant for p13 and p33 in LN (status P-comp): p13(primary) = p13(measured) - 0.043, p33(primary) = p33(measured) - 0.154; depends on acoustic propagation direction."
+  refs: [weis1985]
+- term: acousto-optic figure of merit
+  short: "Material ranking numbers for acousto-optic devices, e.g. M2 = n^6 p^2/(rho v^3)."
+  long: "LN, longitudinal wave along X: M2 = 6.99 x 10^-15 s^3/kg (status P-comp, Dixon 1967 via weis1985)."
+  refs: [weis1985, dixon1967]
+- term: Bragg diffraction
+  short: "Diffraction of light by a thick acoustic grating at the angle where momentum is conserved: sin(theta_B) = lambda0/(2 n Lambda)."
+  long: "The diffracted light is shifted in frequency by the acoustic frequency."
+- term: optomechanical crystal
+  short: "A periodically patterned beam that co-localizes an optical and a mechanical mode."
+  long: "In thin-film LN the mechanical mode can also be driven piezoelectrically (piezo-optomechanical crystal)."
+  refs: [p03]
+- term: vacuum optomechanical coupling rate
+  short: "g0: optical frequency shift produced by the zero-point motion of the mechanical mode."
+  long: "LN piezo-optomechanical crystal: g0/2pi approx 120 kHz (p03); transducer of p05: 70 kHz measured, 84 kHz deduced (status reported)."
+  refs: [p03, p05]
+- term: cooperativity
+  short: "C = 4 g0^2 n_c/(kappa gamma): ratio of optomechanical coupling to the optical and mechanical loss rates."
+  long: "Conversion efficiency in p05: eta = eta_e 4C/(1 -+ C)^2 for red (upper sign) and blue detuning."
+  refs: [p05]
+- term: piezo-optomechanical transduction
+  short: "Conversion microwave -> phonon (piezoelectric) -> optical sideband (optomechanical), and back."
+  refs: [p05, p17]
+- term: nanobender
+  short: "A submicron piezoelectric bending beam driven by non-uniform fields from closely spaced electrodes."
+  long: "Tens of nm/V actuation vs about 0.01 nm/V for standard piezoelectric coefficients; displacement scales with the square of the aspect ratio; 5 nm/V small-signal optical tuning (p07, status reported)."
+  refs: [p07]
+- term: heralded microwave photon
+  short: "A microwave photon whose creation is signalled by the detection of a partner optical photon."
+  refs: [p17, zenodo7903643]
+- term: LN on sapphire
+  short: "Thin-film LN bonded on sapphire; acoustic waves are guided without suspension."
+  refs: [p09, sarabalis2020]

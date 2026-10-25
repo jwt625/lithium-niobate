@@ -1,0 +1,49 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "bulk-velocity-shear-x",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "acoustic",
+      "conditions": {
+        "method": "resonance, (110) plate"
+      },
+      "default": true,
+      "id": "bulk-velocity-shear-x/cln/kushibiki1999",
+      "kind": "scalar",
+      "name": "Bulk shear velocity along X (resonance)",
+      "property": "bulk-velocity-shear-x",
+      "provenance": {
+        "locator": "Table II",
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "v_S,X",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.59
+      },
+      "unit": {
+        "display": "m/s",
+        "ucum": "m/s"
+      },
+      "value": 4750.67,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

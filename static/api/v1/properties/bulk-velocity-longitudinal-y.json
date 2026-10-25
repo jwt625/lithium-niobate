@@ -1,0 +1,95 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Bulk longitudinal velocity along Y of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-y.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-y.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Bulk longitudinal velocity along Y"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Bulk longitudinal velocity along Y",
+    "url": "https://lithium-niobate.com/api/v1/properties/bulk-velocity-longitudinal-y.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "plane-wave ultrasonic, (300) plate",
+        "name": "v_L,Y (cln)",
+        "unitText": "m/s",
+        "value": 6806.55
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "bulk-velocity-longitudinal-y"
+  },
+  "records": [
+    {
+      "category": "acoustic",
+      "conditions": {
+        "method": "plane-wave ultrasonic, (300) plate"
+      },
+      "default": true,
+      "id": "bulk-velocity-longitudinal-y/cln/kushibiki1999",
+      "kind": "scalar",
+      "name": "Bulk longitudinal velocity along Y",
+      "property": "bulk-velocity-longitudinal-y",
+      "provenance": {
+        "locator": "Table II",
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "v_L,Y",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.26
+      },
+      "unit": {
+        "display": "m/s",
+        "ucum": "m/s"
+      },
+      "value": 6806.55,
+      "variant": "cln"
+    }
+  ]
+}

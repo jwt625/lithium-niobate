@@ -1,0 +1,34 @@
+{
+  "citation": "M. N. Polyanskiy, \"refractiveindex.info database of optical constants\", Scientific Data 11, 94 (2024), (2024) https://refractiveindex.info",
+  "link": "https://refractiveindex.info",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "license": "CC0 1.0",
+      "oa_status": "cc0"
+    },
+    "author": [
+      {
+        "family": "Polyanskiy",
+        "given": "M. N."
+      }
+    ],
+    "container_title": "Scientific Data 11, 94 (2024)",
+    "id": "rii",
+    "issued": "2024",
+    "read": "LiNbO3 Zelmon, Gayer, DeSalvo YAML entries",
+    "title": "refractiveindex.info database of optical constants",
+    "type": "dataset",
+    "url": "https://refractiveindex.info"
+  }
+}

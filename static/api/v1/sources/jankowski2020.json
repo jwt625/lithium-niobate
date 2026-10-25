@@ -1,0 +1,57 @@
+{
+  "citation": "Marc Jankowski, Carsten Langrock, Boris Desiatov, et al., \"Ultrabroadband nonlinear optics in nanophotonic periodically poled lithium niobate waveguides\", Optica 7, 40, (2020) doi:10.1364/optica.7.000040",
+  "link": "https://doi.org/10.1364/optica.7.000040",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Marc Jankowski"
+      },
+      {
+        "literal": "Carsten Langrock"
+      },
+      {
+        "literal": "Boris Desiatov"
+      },
+      {
+        "literal": "Alireza Marandi"
+      },
+      {
+        "literal": "Cheng Wang"
+      },
+      {
+        "literal": "Mian Zhang"
+      },
+      {
+        "literal": "Christopher R. Phillips"
+      },
+      {
+        "literal": "Marko Lončar"
+      },
+      {
+        "literal": "M. M. Fejer"
+      }
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/optica.7.000040",
+    "id": "jankowski2020",
+    "issue": "1",
+    "issued": "2020-01-20",
+    "page": "40",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Ultrabroadband nonlinear optics in nanophotonic periodically poled lithium niobate waveguides",
+    "type": "article-journal",
+    "volume": "7"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1002/pssc.200982473"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Optical band gap (frequently cited) of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/optical-band-gap.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/optical-band-gap.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Optical band gap (frequently cited)"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Optical band gap (frequently cited)",
+    "url": "https://lithium-niobate.com/api/v1/properties/optical-band-gap.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "optical absorption (direct)",
+        "name": "E_g (unspecified)",
+        "unitText": "eV",
+        "value": 3.7
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "optical-band-gap"
+  },
+  "records": [
+    {
+      "category": "optical",
+      "conditions": {
+        "method": "optical absorption (direct)"
+      },
+      "default": true,
+      "id": "optical-band-gap/unspecified/thierfelder2010",
+      "kind": "scalar",
+      "name": "Optical band gap (frequently cited)",
+      "notes": "GW calculations give a fundamental (quasiparticle) gap at least 1 eV larger; the quasiparticle gap is debated.",
+      "property": "optical-band-gap",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "thierfelder2010",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_g",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "eV",
+        "ucum": "eV"
+      },
+      "value": 3.7,
+      "variant": "unspecified"
+    }
+  ]
+}

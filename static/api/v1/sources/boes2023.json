@@ -1,0 +1,70 @@
+{
+  "citation": "Andreas Boes, Lin Chang, Carsten Langrock, et al., \"Lithium niobate photonics: Unlocking the electromagnetic spectrum\", Science 379, eabj4396, (2023) doi:10.1126/science.abj4396",
+  "link": "https://doi.org/10.1126/science.abj4396",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "article_number": "eabj4396",
+    "author": [
+      {
+        "family": "Boes",
+        "given": "Andreas"
+      },
+      {
+        "family": "Chang",
+        "given": "Lin"
+      },
+      {
+        "family": "Langrock",
+        "given": "Carsten"
+      },
+      {
+        "family": "Yu",
+        "given": "Mengjie"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mian"
+      },
+      {
+        "family": "Lin",
+        "given": "Qiang"
+      },
+      {
+        "family": "Lončar",
+        "given": "Marko"
+      },
+      {
+        "family": "Fejer",
+        "given": "Martin"
+      },
+      {
+        "family": "Bowers",
+        "given": "John"
+      },
+      {
+        "family": "Mitchell",
+        "given": "Arnan"
+      }
+    ],
+    "container_title": "Science",
+    "doi": "10.1126/science.abj4396",
+    "id": "boes2023",
+    "issue": "6627",
+    "issued": "2023-01-06",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Lithium niobate photonics: Unlocking the electromagnetic spectrum",
+    "type": "article-journal",
+    "volume": "379"
+  }
+}

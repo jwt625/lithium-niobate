@@ -1,0 +1,1136 @@
+{
+  "info": {
+    "description": "Static GET-only API. All parameters are path segments; query strings are ignored by the host.",
+    "license": {
+      "identifier": "CC-BY-4.0",
+      "name": "CC BY 4.0 (data)"
+    },
+    "title": "lithium-niobate.com data API",
+    "version": "0.1.0"
+  },
+  "jsonSchemaDialect": "https://json-schema.org/draft/2020-12/schema",
+  "openapi": "3.1.0",
+  "paths": {
+    "/api/v1/datapackage.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Frictionless Data Package v2 descriptor"
+          }
+        },
+        "summary": "Frictionless Data Package v2 descriptor"
+      }
+    },
+    "/api/v1/dispersion.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Dispersion model list"
+          }
+        },
+        "summary": "Dispersion model list"
+      }
+    },
+    "/api/v1/dispersion/{model_id}.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Model id",
+            "in": "path",
+            "name": "model_id",
+            "required": true,
+            "schema": {
+              "enum": [
+                "gayer2008-mgo1-sln-e",
+                "gayer2008-mgo5-e",
+                "gayer2008-mgo5-o",
+                "zelmon1997-cln-e",
+                "zelmon1997-cln-o",
+                "zelmon1997-mgo5-e",
+                "zelmon1997-mgo5-o"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "model": {
+                      "$ref": "https://lithium-niobate.com/api/v1/schema/dispersion.schema.json"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Dispersion model: formula, coefficients, validity, errata, check values"
+          }
+        },
+        "summary": "Dispersion model: formula, coefficients, validity, errata, check values"
+      }
+    },
+    "/api/v1/dispersion/{model_id}.rii.yml": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Model id",
+            "in": "path",
+            "name": "model_id",
+            "required": true,
+            "schema": {
+              "enum": [
+                "gayer2008-mgo1-sln-e",
+                "gayer2008-mgo5-e",
+                "gayer2008-mgo5-o",
+                "zelmon1997-cln-e",
+                "zelmon1997-cln-o",
+                "zelmon1997-mgo5-e",
+                "zelmon1997-mgo5-o"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/yaml": {}
+            },
+            "description": "refractiveindex.info-compatible YAML export"
+          }
+        },
+        "summary": "refractiveindex.info-compatible YAML export"
+      }
+    },
+    "/api/v1/events/history.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "events": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/event.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "History events (status V/P/S)"
+          }
+        },
+        "summary": "History events (status V/P/S)"
+      }
+    },
+    "/api/v1/events/industry.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "events": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/event.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Industry events with evidence grades"
+          }
+        },
+        "summary": "Industry events with evidence grades"
+      }
+    },
+    "/api/v1/glossary.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "terms": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/glossary.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Glossary terms"
+          }
+        },
+        "summary": "Glossary terms"
+      }
+    },
+    "/api/v1/grids/index/{model_id}/{temperature}.csv": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Model id",
+            "in": "path",
+            "name": "model_id",
+            "required": true,
+            "schema": {
+              "enum": [
+                "gayer2008-mgo1-sln-e",
+                "gayer2008-mgo5-e",
+                "gayer2008-mgo5-o",
+                "zelmon1997-cln-e",
+                "zelmon1997-cln-o",
+                "zelmon1997-mgo5-e",
+                "zelmon1997-mgo5-o"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "description": "Temperature tag",
+            "in": "path",
+            "name": "temperature",
+            "required": true,
+            "schema": {
+              "enum": [
+                "T21C",
+                "T24.5C"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "text/csv": {}
+            },
+            "description": "n(lambda) at 1 nm steps over the validity range, at the model reference temperature (file name T{T_C}C.csv)"
+          }
+        },
+        "summary": "n(lambda) at 1 nm steps over the validity range, at the model reference temperature (file name T{T_C}C.csv)"
+      }
+    },
+    "/api/v1/index.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Catalog: properties, tensors, dispersion models, variants, counts, endpoints, license"
+          }
+        },
+        "summary": "Catalog: properties, tensors, dispersion models, variants, counts, endpoints, license"
+      }
+    },
+    "/api/v1/properties.csv": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "text/csv": {}
+            },
+            "description": "All public scalar records as CSV"
+          }
+        },
+        "summary": "All public scalar records as CSV"
+      }
+    },
+    "/api/v1/properties.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "records": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/scalar.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "All public scalar records"
+          }
+        },
+        "summary": "All public scalar records"
+      }
+    },
+    "/api/v1/properties/{property}.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Property id",
+            "in": "path",
+            "name": "property",
+            "required": true,
+            "schema": {
+              "enum": [
+                "absorption-coefficient",
+                "birefringence",
+                "bulk-velocity-longitudinal-x",
+                "bulk-velocity-longitudinal-y",
+                "bulk-velocity-longitudinal-z",
+                "bulk-velocity-shear-x",
+                "bulk-velocity-shear-y",
+                "bulk-velocity-shear-z",
+                "coercive-field",
+                "coercive-field-ratio-cln-sln",
+                "congruent-composition",
+                "curie-temperature",
+                "curie-temperature-vs-composition",
+                "dark-conductivity",
+                "dark-conductivity-activation-energy",
+                "density",
+                "dne-dt",
+                "dno-dt",
+                "elastic-c14",
+                "eo-r13-T",
+                "eo-r22-T",
+                "eo-r33",
+                "eo-r33-T",
+                "hydrostatic-piezo-dh",
+                "internal-field",
+                "ir-cutoff",
+                "lattice-a",
+                "lattice-c",
+                "maxwell-relaxation-time",
+                "melting-point",
+                "mgo-photorefractive-threshold",
+                "mohs-hardness",
+                "nlo-d31",
+                "nonlinear-index-n2",
+                "oh-stretch-band",
+                "optical-band-gap",
+                "point-group",
+                "pyroelectric-p3",
+                "refractive-index-e",
+                "refractive-index-o",
+                "residual-absorption",
+                "rhombohedral-a",
+                "rhombohedral-alpha",
+                "space-group",
+                "space-group-paraelectric",
+                "specific-heat",
+                "spontaneous-polarization",
+                "thermal-conductivity",
+                "thermal-expansion-a",
+                "thermal-expansion-c",
+                "transparency-range",
+                "uv-cutoff",
+                "uv-edge-formula",
+                "uv-edge-lambda20"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "All public records for one property, with schema.org Dataset JSON-LD"
+          }
+        },
+        "summary": "All public records for one property, with schema.org Dataset JSON-LD"
+      }
+    },
+    "/api/v1/properties/{property}/{variant}.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Property id",
+            "in": "path",
+            "name": "property",
+            "required": true,
+            "schema": {
+              "enum": [
+                "absorption-coefficient",
+                "birefringence",
+                "bulk-velocity-longitudinal-x",
+                "bulk-velocity-longitudinal-y",
+                "bulk-velocity-longitudinal-z",
+                "bulk-velocity-shear-x",
+                "bulk-velocity-shear-y",
+                "bulk-velocity-shear-z",
+                "coercive-field",
+                "coercive-field-ratio-cln-sln",
+                "congruent-composition",
+                "curie-temperature",
+                "curie-temperature-vs-composition",
+                "dark-conductivity",
+                "dark-conductivity-activation-energy",
+                "density",
+                "dne-dt",
+                "dno-dt",
+                "elastic-c14",
+                "eo-r13-T",
+                "eo-r22-T",
+                "eo-r33",
+                "eo-r33-T",
+                "hydrostatic-piezo-dh",
+                "internal-field",
+                "ir-cutoff",
+                "lattice-a",
+                "lattice-c",
+                "maxwell-relaxation-time",
+                "melting-point",
+                "mgo-photorefractive-threshold",
+                "mohs-hardness",
+                "nlo-d31",
+                "nonlinear-index-n2",
+                "oh-stretch-band",
+                "optical-band-gap",
+                "point-group",
+                "pyroelectric-p3",
+                "refractive-index-e",
+                "refractive-index-o",
+                "residual-absorption",
+                "rhombohedral-a",
+                "rhombohedral-alpha",
+                "space-group",
+                "space-group-paraelectric",
+                "specific-heat",
+                "spontaneous-polarization",
+                "thermal-conductivity",
+                "thermal-expansion-a",
+                "thermal-expansion-c",
+                "transparency-range",
+                "uv-cutoff",
+                "uv-edge-formula",
+                "uv-edge-lambda20"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "description": "Variant id (see variants.json); only combinations listed in index.json exist",
+            "in": "path",
+            "name": "variant",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Recommended record(s), alternatives and spread for one property and variant"
+          }
+        },
+        "summary": "Recommended record(s), alternatives and spread for one property and variant"
+      }
+    },
+    "/api/v1/publications.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "publications": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/publication.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "LN-relevant publications of the author"
+          }
+        },
+        "summary": "LN-relevant publications of the author"
+      }
+    },
+    "/api/v1/records.csv": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "text/csv": {}
+            },
+            "description": "Device-performance records as CSV"
+          }
+        },
+        "summary": "Device-performance records as CSV"
+      }
+    },
+    "/api/v1/records.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "records": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/record.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Provisional device-performance records"
+          }
+        },
+        "summary": "Provisional device-performance records"
+      }
+    },
+    "/api/v1/schema/{type}.schema.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Schema name",
+            "in": "path",
+            "name": "type",
+            "required": true,
+            "schema": {
+              "enum": [
+                "common",
+                "dispersion",
+                "event",
+                "glossary",
+                "publication",
+                "record",
+                "scalar",
+                "source",
+                "tensor",
+                "variant"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/schema+json": {}
+            },
+            "description": "JSON Schema 2020-12 for a payload type"
+          }
+        },
+        "summary": "JSON Schema 2020-12 for a payload type"
+      }
+    },
+    "/api/v1/sources.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "sources": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/source.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "All sources"
+          }
+        },
+        "summary": "All sources"
+      }
+    },
+    "/api/v1/sources/{source_id}.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Source id",
+            "in": "path",
+            "name": "source_id",
+            "required": true,
+            "schema": {
+              "enum": [
+                "abrahams1966",
+                "abrahams1966b",
+                "abrahams1966c",
+                "abrahams1986",
+                "afr-2025",
+                "alferness1982",
+                "amodei1971a",
+                "amodei1972",
+                "andrushchak2009",
+                "arfwedson1818",
+                "armstrong1962",
+                "ashkin1966",
+                "ballman1965",
+                "bartasyte2017",
+                "becker1988",
+                "belinicher1980",
+                "belllabsrecord1965",
+                "berzelius1818",
+                "bjnews-2020",
+                "boes2023",
+                "bond1965",
+                "bordui1992",
+                "bouchy2022",
+                "boyd1964",
+                "boysen1994",
+                "brinkmann1990",
+                "brinkmann1991",
+                "bruel1995",
+                "bryan1984",
+                "bw-2023",
+                "bw-2026-umc",
+                "bwchina-2026",
+                "c114-2025",
+                "carruthers1971",
+                "carruthers1974",
+                "chakkoria2025",
+                "chang2017",
+                "chen1968",
+                "chen1969",
+                "cls-2025",
+                "cod",
+                "compoundsemi-2000",
+                "cordis-elena",
+                "csem-2025",
+                "csem-2026",
+                "cti1999",
+                "czochralski1918",
+                "declercq2025",
+                "deguet2010",
+                "desalvo1996",
+                "desiatov2019",
+                "eenews-2020-soitec",
+                "einnews-2026",
+                "ekeberg1802",
+                "electronicsonline-2009",
+                "eospace-mgmt",
+                "exail-2022",
+                "fedulov1965",
+                "fejer1992",
+                "feng1980",
+                "franken1963",
+                "fridkin1977",
+                "fridkin1978",
+                "fridkin1979",
+                "fridkin1984",
+                "fujitsu-2009",
+                "fujitsu-2021a",
+                "fujitsu-2021b",
+                "fujiwara1989a",
+                "fujiwara1989b",
+                "furukawa2000",
+                "furukawa2001",
+                "gayer2008",
+                "gbt46611",
+                "gh-history",
+                "gh-ln-wafers",
+                "giordmaine1965",
+                "glass1974",
+                "gopalan1998",
+                "gopalan2007",
+                "guarino2007",
+                "han2021",
+                "harris1969",
+                "hartung2008",
+                "hatchett1802",
+                "he2019",
+                "he2019-h",
+                "hirohashi2007",
+                "holzgrafe2024",
+                "hsu1997",
+                "hu2009",
+                "hu2021",
+                "ieee176",
+                "ifeng-2026",
+                "imec-2026",
+                "imlau2015",
+                "inbar1996",
+                "iqec1980",
+                "ire1949",
+                "iyi1992",
+                "jackel1982",
+                "jankowski2020",
+                "jazbinsek2002",
+                "jia2021",
+                "jiang2017",
+                "jiang2019",
+                "jiang2020",
+                "jundt1997",
+                "kadota2011",
+                "kaminow1966",
+                "kaminow1973",
+                "kaminow1980",
+                "kashiwazaki2021",
+                "kharel2021",
+                "kim1969",
+                "kitamoto1995",
+                "kitamura1992",
+                "kovacs1997",
+                "kukhtarev1977",
+                "kukhtarev1978a",
+                "kukhtarev1978b",
+                "kurz1974",
+                "kushibiki1999",
+                "kuzminov-catalog",
+                "lallier1989",
+                "leidinger2015",
+                "lenzo1966",
+                "lerner1968",
+                "levinstein1967",
+                "levy1998",
+                "lfw-1995",
+                "li2026photonics",
+                "lightwave-1995",
+                "lightwave-1997",
+                "lightwave-1998",
+                "lightwave-2003",
+                "lightwave-2019",
+                "lightwave-2021",
+                "lightwave-2022",
+                "lightwave-2024",
+                "lim1989a",
+                "lim1989b",
+                "lin2020",
+                "liobate-company",
+                "liu2025",
+                "lu2019",
+                "lu2025",
+                "luh1987",
+                "luke2020",
+                "luxtelligence-about",
+                "magel1990",
+                "malecka2013",
+                "marignac1866",
+                "matthias1949",
+                "miller1964",
+                "miller1965",
+                "mok1993",
+                "moretti2005",
+                "moulet2008",
+                "mp3731",
+                "murata-2022",
+                "myers1995",
+                "myers1995a",
+                "mys2015",
+                "mytsyk2021",
+                "nagata1993",
+                "nanoln-about",
+                "nassau1960",
+                "nassau1965",
+                "nassau1966a",
+                "nassau1966b",
+                "nassau1984",
+                "niels2026",
+                "nikkan-2016",
+                "nishida2003",
+                "nobelapi-ashkin",
+                "note-r06",
+                "ogi2002",
+                "ohgaki1992",
+                "opticsorg-2024",
+                "opticsorg-2025",
+                "opticsorg-2026",
+                "opticsorg-crystaltech",
+                "oxide-history",
+                "parriaux2020",
+                "peterson1964",
+                "peterson1971",
+                "photonicsonline-2015",
+                "picmag-2025",
+                "pijolat2008",
+                "pijolat2009",
+                "plessky2019",
+                "pmc8617696",
+                "poberaj2012",
+                "rabiei2004",
+                "rao2018",
+                "raynercanham2008",
+                "reisman1958",
+                "rfb-jdsu",
+                "rii",
+                "rodrigues2023",
+                "rose1844",
+                "rose1844bericht",
+                "rose1846",
+                "rose1846bericht",
+                "sal-2025",
+                "sarabalis2020",
+                "savage1966",
+                "schirmer2009",
+                "schlarb1993",
+                "schmidt1974",
+                "schwesyg2011",
+                "seino1992",
+                "shao2019",
+                "shi2025",
+                "shibayama1976",
+                "shinetsu-history",
+                "shoji1997",
+                "sina-2024",
+                "smith1976",
+                "smithwelsh1971",
+                "smm-2014",
+                "smm-products",
+                "smolenskii1966",
+                "snigirev2023",
+                "soc-history",
+                "spencer1965",
+                "staebler1971",
+                "starnault2026",
+                "sturman2021",
+                "summit-2026",
+                "tdg-ir-2026",
+                "thierfelder2010",
+                "tien1974",
+                "tomaszewski2002",
+                "tomaszewski2004",
+                "tqi-2024",
+                "turner1966",
+                "uecker2014",
+                "us6540827",
+                "vanderkrogt-nb",
+                "volk1990",
+                "volk1992",
+                "volk1994",
+                "volk2008",
+                "wang2014",
+                "wang2018",
+                "wang2018a",
+                "wang2018c",
+                "wang2019",
+                "wang2022",
+                "wang2024",
+                "wang2024optica",
+                "wang2025lt",
+                "wang2026",
+                "warner1967",
+                "weeks1932",
+                "weigel2018",
+                "weis1985",
+                "white1965",
+                "whitevoltmer1965preprint",
+                "wollaston1809",
+                "wong2002",
+                "wooten2000",
+                "xfab-2026",
+                "xu2022",
+                "xue1983",
+                "yamada1981",
+                "yamada1993",
+                "yamanouchi1972",
+                "zachariasen1928",
+                "zelmon1997",
+                "zhang2017",
+                "zhang2019",
+                "zhang2021",
+                "zheng2016",
+                "zhong1983",
+                "zhu1997",
+                "zhu2021",
+                "zook1967"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "One source with formatted citation"
+          }
+        },
+        "summary": "One source with formatted citation"
+      }
+    },
+    "/api/v1/tensors.csv": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "text/csv": {}
+            },
+            "description": "Independent tensor components as CSV"
+          }
+        },
+        "summary": "Independent tensor components as CSV"
+      }
+    },
+    "/api/v1/tensors.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "records": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/tensor.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "All public tensor records"
+          }
+        },
+        "summary": "All public tensor records"
+      }
+    },
+    "/api/v1/tensors/{tensor}.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Tensor id",
+            "in": "path",
+            "name": "tensor",
+            "required": true,
+            "schema": {
+              "enum": [
+                "elastic-compliance-sE",
+                "elastic-stiffness-cE",
+                "eo-rS",
+                "eo-rT",
+                "nlo-d",
+                "permittivity-S",
+                "permittivity-T",
+                "photoelastic-p",
+                "piezo-strain-d",
+                "piezo-stress-e"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "All records of one tensor across variants, with per-component spread"
+          }
+        },
+        "summary": "All records of one tensor across variants, with per-component spread"
+      }
+    },
+    "/api/v1/tensors/{tensor}/{variant}.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Tensor id",
+            "in": "path",
+            "name": "tensor",
+            "required": true,
+            "schema": {
+              "enum": [
+                "elastic-compliance-sE",
+                "elastic-stiffness-cE",
+                "eo-rS",
+                "eo-rT",
+                "nlo-d",
+                "permittivity-S",
+                "permittivity-T",
+                "photoelastic-p",
+                "piezo-strain-d",
+                "piezo-stress-e"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "variant",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Recommended tensor, alternatives and per-component spread"
+          }
+        },
+        "summary": "Recommended tensor, alternatives and per-component spread"
+      }
+    },
+    "/api/v1/tensors/{tensor}/{variant}/{source_id}.json": {
+      "get": {
+        "parameters": [
+          {
+            "description": "Tensor id",
+            "in": "path",
+            "name": "tensor",
+            "required": true,
+            "schema": {
+              "enum": [
+                "elastic-compliance-sE",
+                "elastic-stiffness-cE",
+                "eo-rS",
+                "eo-rT",
+                "nlo-d",
+                "permittivity-S",
+                "permittivity-T",
+                "photoelastic-p",
+                "piezo-strain-d",
+                "piezo-stress-e"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "variant",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Third segment of the record id",
+            "in": "path",
+            "name": "source_id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "record": {
+                      "$ref": "https://lithium-niobate.com/api/v1/schema/tensor.schema.json"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "One tensor record with Voigt, full tensor, frame and symmetry form"
+          }
+        },
+        "summary": "One tensor record with Voigt, full tensor, frame and symmetry form"
+      }
+    },
+    "/api/v1/unverified.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {}
+            },
+            "description": "Unverified rows, excluded from all default endpoints"
+          }
+        },
+        "summary": "Unverified rows, excluded from all default endpoints"
+      }
+    },
+    "/api/v1/variants.json": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "variants": {
+                      "items": {
+                        "$ref": "https://lithium-niobate.com/api/v1/schema/variant.schema.json"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "Material variants"
+          }
+        },
+        "summary": "Material variants"
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "text/plain": {}
+            },
+            "description": "Concatenated markdown of property data"
+          }
+        },
+        "summary": "Concatenated markdown of property data"
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "responses": {
+          "200": {
+            "content": {
+              "text/plain": {}
+            },
+            "description": "Agent index (llmstxt.org)"
+          }
+        },
+        "summary": "Agent index (llmstxt.org)"
+      }
+    }
+  },
+  "servers": [
+    {
+      "url": "https://lithium-niobate.com"
+    }
+  ]
+}

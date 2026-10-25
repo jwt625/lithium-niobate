@@ -1,0 +1,48 @@
+{
+  "citation": "Luigi Moretti, Mario Iodice, Francesco G. Della Corte, et al., \"Temperature dependence of the thermo-optic coefficient of lithium niobate, from 300 to 515 K in the visible and infrared regions\", Journal of Applied Physics 98, 036101, (2005) doi:10.1063/1.1988987",
+  "link": "https://doi.org/10.1063/1.1988987",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "article_number": "036101",
+    "author": [
+      {
+        "family": "Moretti",
+        "given": "Luigi"
+      },
+      {
+        "family": "Iodice",
+        "given": "Mario"
+      },
+      {
+        "family": "Della Corte",
+        "given": "Francesco G."
+      },
+      {
+        "family": "Rendina",
+        "given": "Ivo"
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.1988987",
+    "id": "moretti2005",
+    "issued": "2005",
+    "notes": "Abstract: measurements ran from 320 to 515 K.",
+    "read": "abstract only; coefficients via schwesyg2011",
+    "title": "Temperature dependence of the thermo-optic coefficient of lithium niobate, from 300 to 515 K in the visible and infrared regions",
+    "type": "article-journal",
+    "volume": "98"
+  }
+}

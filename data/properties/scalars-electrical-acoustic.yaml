@@ -1,0 +1,272 @@
+# Scalar property records: electrical transport, photorefraction thresholds, acoustic velocities, hydrostatic piezo constant,
+# and tensor components available only as partial sets. Schema: data/schema/scalar.schema.json.
+# Sources: research notes R06 sec. 2.6-2.7, 2.10, 2.12-2.13; R14 sec. 2.4-2.6, 2.8; R08 sec. 3.2.
+
+- id: dark-conductivity/cln/volk2008
+  kind: scalar
+  property: dark-conductivity
+  name: Dark conductivity
+  symbol: sigma_d
+  category: electrical
+  min: 1.0e-16
+  max: 1.0e-14
+  unit: {ucum: "S/m", display: "S/m"}
+  variant: cln
+  variant_note: "undoped or slightly doped CLN"
+  conditions: {temperature_text: "room temperature, extrapolated from high temperature"}
+  provenance: {source_id: volk2008, locator: "Sec. 3.2.1, pp. 59-60 (1e-16 to 1.0e-18 Ohm^-1 cm^-1)", status: P-comp, research_note: "R14 row 42", transcribed: "2026-10-25"}
+  default: true
+  notes: "Protonic conduction; activation energy about 1.1 eV (200-1000 C). 8-10 orders of magnitude below the 1.0e-6 S/m floor fitted in bouchy2022."
+
+- id: dark-conductivity-activation-energy/cln/volk2008
+  kind: scalar
+  property: dark-conductivity-activation-energy
+  name: Activation energy of dark (protonic) conductivity
+  category: electrical
+  value: 1.1
+  uncertainty: {type: approximate}
+  unit: {ucum: "eV", display: "eV"}
+  variant: cln
+  conditions: {temperature_text: "200-1000 C"}
+  provenance: {source_id: volk2008, locator: "Sec. 3.2.1, pp. 59-60", status: P-comp, research_note: "R14 row 42", transcribed: "2026-10-25"}
+  default: true
+
+- id: maxwell-relaxation-time/cln/volk2008
+  kind: scalar
+  property: maxwell-relaxation-time
+  name: Maxwell relaxation time (dark)
+  symbol: tau_M
+  category: electrical
+  min: 5
+  max: 500
+  unit: {ucum: "d", display: "days"}
+  variant: cln
+  provenance: {source_id: volk2008, locator: "p. 159", status: P-comp, research_note: "R14 row 42a", transcribed: "2026-10-25"}
+  default: true
+  notes: "Internally inconsistent with volk2008's own sigma_d: tau = eps eps0 / sigma gives 0.3-29 days (eps = 28) or 0.9-86 days (eps = 84) (computed, R14 row 42a)."
+
+- id: mgo-photorefractive-threshold/mgo5-cln/bryan1984
+  kind: scalar
+  property: mgo-photorefractive-threshold
+  name: MgO concentration threshold for optical-damage resistance
+  category: photorefractive
+  value_text: ">= 4.5 at.% MgO"
+  unit: {ucum: "%", display: "at.% MgO"}
+  variant: mgo5-cln
+  provenance: {source_id: bryan1984, locator: "abstract", status: P(abs), research_note: "R06 sec. 2.13", transcribed: "2026-10-25"}
+  default: true
+  notes: "Abstract: about 100x photoconductivity increase; activation energy 0.1 eV (resistant) vs 0.5 eV."
+
+- id: polaron-absorption-peaks/unspecified/schirmer2009
+  kind: scalar
+  property: polaron-absorption-peaks
+  name: Polaron absorption band peaks
+  category: photorefractive
+  value_text: "about 1.0 eV (free), 1.6 eV (bound), 2.5 eV (bipolaron)"
+  unit: {ucum: "eV", display: "eV"}
+  variant: unspecified
+  provenance: {source_id: schirmer2009, status: U, research_note: "R08 sec. 3.2", transcribed: "2026-10-25"}
+  notes: "Recalled values, not checked against the source (R08 sec. 3.2)."
+
+- id: bulk-velocity-longitudinal-z/cln/kushibiki1999
+  kind: scalar
+  property: bulk-velocity-longitudinal-z
+  name: Bulk longitudinal velocity along Z
+  symbol: v_L,Z
+  category: acoustic
+  value: 7328.20
+  uncertainty: {type: stated, value: 0.32}
+  unit: {ucum: "m/s", display: "m/s"}
+  variant: cln
+  variant_note: "SAW-grade congruent"
+  conditions: {method: "plane-wave ultrasonic, (006) plate"}
+  provenance: {source_id: kushibiki1999, locator: "Table II", status: P, research_note: "R06 sec. 2.12", transcribed: "2026-10-25"}
+  default: true
+  notes: "Reproduced to 0.4 m/s by the piezo-stiffened velocity from the kushibiki1999 constants (consistency check in the tensor records)."
+
+- id: bulk-velocity-shear-z/cln/kushibiki1999
+  kind: scalar
+  property: bulk-velocity-shear-z
+  name: Bulk shear velocity along Z
+  symbol: v_S,Z
+  category: acoustic
+  value: 3590.41
+  uncertainty: {type: stated, value: 0.23}
+  unit: {ucum: "m/s", display: "m/s"}
+  variant: cln
+  conditions: {method: "plane-wave ultrasonic, (006) plate"}
+  provenance: {source_id: kushibiki1999, locator: "Table II", status: P, research_note: "R06 sec. 2.12", transcribed: "2026-10-25"}
+  default: true
+
+- id: bulk-velocity-longitudinal-x/cln/kushibiki1999
+  kind: scalar
+  property: bulk-velocity-longitudinal-x
+  name: Bulk longitudinal velocity along X
+  symbol: v_L,X
+  category: acoustic
+  value: 6544.53
+  uncertainty: {type: stated, value: 0.30}
+  unit: {ucum: "m/s", display: "m/s"}
+  variant: cln
+  conditions: {method: "plane-wave ultrasonic, (110) plate"}
+  provenance: {source_id: kushibiki1999, locator: "Table II", status: P, research_note: "R06 sec. 2.12", transcribed: "2026-10-25"}
+  default: true
+
+- id: bulk-velocity-shear-x/cln/kushibiki1999
+  kind: scalar
+  property: bulk-velocity-shear-x
+  name: Bulk shear velocity along X (resonance)
+  symbol: v_S,X
+  category: acoustic
+  value: 4750.67
+  uncertainty: {type: stated, value: 0.59}
+  unit: {ucum: "m/s", display: "m/s"}
+  variant: cln
+  conditions: {method: "resonance, (110) plate"}
+  provenance: {source_id: kushibiki1999, locator: "Table II", status: P, research_note: "R06 sec. 2.12", transcribed: "2026-10-25"}
+  default: true
+
+- id: bulk-velocity-longitudinal-y/cln/kushibiki1999
+  kind: scalar
+  property: bulk-velocity-longitudinal-y
+  name: Bulk longitudinal velocity along Y
+  symbol: v_L,Y
+  category: acoustic
+  value: 6806.55
+  uncertainty: {type: stated, value: 0.26}
+  unit: {ucum: "m/s", display: "m/s"}
+  variant: cln
+  conditions: {method: "plane-wave ultrasonic, (300) plate"}
+  provenance: {source_id: kushibiki1999, locator: "Table II", status: P, research_note: "R06 sec. 2.12", transcribed: "2026-10-25"}
+  default: true
+
+- id: bulk-velocity-shear-y/cln/kushibiki1999
+  kind: scalar
+  property: bulk-velocity-shear-y
+  name: Bulk shear velocity along Y
+  symbol: v_S,Y
+  category: acoustic
+  value: 3940.49
+  uncertainty: {type: stated, value: 0.21}
+  unit: {ucum: "m/s", display: "m/s"}
+  variant: cln
+  conditions: {method: "plane-wave ultrasonic, (300) plate"}
+  provenance: {source_id: kushibiki1999, locator: "Table II", status: P, research_note: "R06 sec. 2.12", transcribed: "2026-10-25"}
+  default: true
+
+- id: hydrostatic-piezo-dh/unspecified/weis1985-graham1976
+  kind: scalar
+  property: hydrostatic-piezo-dh
+  name: Hydrostatic piezoelectric coefficient d_h = 2 d31 + d33
+  symbol: d_h
+  category: acoustic
+  value: 6.31
+  uncertainty: {type: stated, value: 0.014}
+  unit: {ucum: "pC/N", display: "pC/N"}
+  variant: unspecified
+  provenance: {source_id: weis1985, locator: "p. 198", status: P-comp, original_reference: "Graham, Ferroelectrics 10, 65 (1976); confirmed on 9 samples from 5 suppliers, Graham, J. Appl. Phys. 48, 2153 (1977)", research_note: "R14 row 60", transcribed: "2026-10-25"}
+  default: true
+  notes: "Implies d33 of about 8.0-8.4 pC/N with measured d31, favouring the kushibiki1999 set (d33 = 8.7, computed) over 6.0 and ruling out 12.5-16 (R14 row 60a)."
+
+- id: eo-r33-T/sln/volk2008
+  kind: scalar
+  property: eo-r33-T
+  name: Electro-optic coefficient r33, unclamped
+  symbol: r33^T
+  category: optical
+  tensor_component: r33
+  value: 38
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {wavelength_nm: 633, mechanical_boundary: T}
+  provenance: {source_id: volk2008, locator: "Table 1.2, p. 4", status: P-comp, original_reference: "Nikogosyan 2005", research_note: "R14 row 51", transcribed: "2026-10-25"}
+  default: true
+  notes: "Partial set (r22 absent), so stored as scalars rather than a tensor."
+
+- id: eo-r13-T/sln/volk2008
+  kind: scalar
+  property: eo-r13-T
+  name: Electro-optic coefficient r13, unclamped
+  symbol: r13^T
+  category: optical
+  tensor_component: r13
+  value: 10.4
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {wavelength_nm: 633, mechanical_boundary: T}
+  provenance: {source_id: volk2008, locator: "Table 1.2, p. 4", status: P-comp, original_reference: "Nikogosyan 2005", research_note: "R14 row 51", transcribed: "2026-10-25"}
+  default: true
+
+- id: eo-r22-T/cln/volk2008-yonekura2007
+  kind: scalar
+  property: eo-r22-T
+  name: Electro-optic coefficient r22, unclamped
+  symbol: r22^T
+  category: optical
+  tensor_component: r22
+  value: 6.54
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: cln
+  conditions: {mechanical_boundary: T}
+  provenance: {source_id: volk2008, locator: "p. 150", status: P-comp, original_reference: "Yonekura et al., Opt. Rev. 14, 194 (2007)", research_note: "R14 row 51a", transcribed: "2026-10-25"}
+  notes: "Labelled 'constant stress (clamped)' in the source, which contradicts itself (constant stress = unclamped, T); the magnitude fits T values. CLN:5%Mg 6.2 and near-SLN:1.8%Mg 6.97 pm/V in the same report."
+
+- id: nlo-d33/cln/shoji1997
+  kind: scalar
+  property: nlo-d33
+  name: Second-order nonlinear coefficient d33
+  symbol: d33
+  category: optical
+  tensor_component: d33
+  value: 25.2
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: cln
+  conditions: {wavelength_nm: 1064}
+  provenance: {source_id: shoji1997, status: U, research_note: "R06 sec. 2.7; R14 row 52b", transcribed: "2026-10-25"}
+  notes: "Claimed value; only the abstract was seen, which states that many accepted standard values are overestimated. Not verified."
+
+- id: nlo-d31/cln/shoji1997
+  kind: scalar
+  property: nlo-d31
+  name: Second-order nonlinear coefficient d31
+  symbol: d31
+  category: optical
+  tensor_component: d31
+  value: 4.6
+  uncertainty: {type: approximate}
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: cln
+  conditions: {wavelength_nm: 1064}
+  provenance: {source_id: shoji1997, status: U, research_note: "R06 sec. 2.7", transcribed: "2026-10-25"}
+  notes: "Claimed value (about 4.6); not verified."
+
+- id: nlo-d31/cln/kitamoto1995-488nm
+  kind: scalar
+  property: nlo-d31
+  name: Second-order nonlinear coefficient d31
+  symbol: d31
+  category: optical
+  tensor_component: d31
+  value: 4.8
+  uncertainty: {type: stated, value: 0.5}
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: cln
+  conditions: {method: "parametric fluorescence, 488 nm pump"}
+  provenance: {source_id: kitamoto1995, locator: "abstract", status: P(abs), research_note: "R06 sec. 2.7", transcribed: "2026-10-25"}
+  notes: "Abstract judges an earlier 5.8 pm/V overestimated."
+
+- id: nlo-d31/cln/kitamoto1995-532nm
+  kind: scalar
+  property: nlo-d31
+  name: Second-order nonlinear coefficient d31
+  symbol: d31
+  category: optical
+  tensor_component: d31
+  value: 4.3
+  uncertainty: {type: stated, value: 0.5}
+  unit: {ucum: "pm/V", display: "pm/V"}
+  variant: cln
+  conditions: {method: "parametric fluorescence, 532 nm pump"}
+  provenance: {source_id: kitamoto1995, locator: "abstract", status: P(abs), research_note: "R06 sec. 2.7", transcribed: "2026-10-25"}

@@ -1,0 +1,33 @@
+{
+  "citation": "Michio Kadota, \"Surface acoustic wave devices (in Japanese)\", Journal of the Acoustical Society of Japan 67, 494-495, (2011) https://acoustics.jp/cms/wp_asj/wp-content/uploads/2019/03/6710onkochishin.pdf",
+  "link": "https://acoustics.jp/cms/wp_asj/wp-content/uploads/2019/03/6710onkochishin.pdf",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Michio Kadota"
+      }
+    ],
+    "container_title": "Journal of the Acoustical Society of Japan",
+    "id": "kadota2011",
+    "issue": "10",
+    "issued": "2011",
+    "page": "494-495",
+    "read": "Full text read; practitioner retrospective",
+    "title": "Surface acoustic wave devices (in Japanese)",
+    "type": "webpage",
+    "url": "https://acoustics.jp/cms/wp_asj/wp-content/uploads/2019/03/6710onkochishin.pdf",
+    "volume": "67"
+  }
+}

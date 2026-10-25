@@ -1,0 +1,116 @@
+{
+  "$id": "https://lithium-niobate.com/api/v1/schema/scalar.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "anyOf": [
+    {
+      "required": [
+        "value"
+      ]
+    },
+    {
+      "required": [
+        "min",
+        "max"
+      ]
+    },
+    {
+      "required": [
+        "value_text"
+      ]
+    }
+  ],
+  "description": "One value of one property for one variant from one source, with conditions and provenance. The id is property/variant/source_id[-qualifier].",
+  "properties": {
+    "category": {
+      "enum": [
+        "structure",
+        "ferroelectric",
+        "thermal",
+        "optical",
+        "dielectric",
+        "acoustic",
+        "electrical",
+        "photorefractive"
+      ]
+    },
+    "conditions": {
+      "$ref": "common.schema.json#/$defs/conditions"
+    },
+    "default": {
+      "description": "Recommended record for this property and variant.",
+      "type": "boolean"
+    },
+    "frame": {
+      "$ref": "common.schema.json#/$defs/frame"
+    },
+    "id": {
+      "pattern": "^[a-z0-9][A-Za-z0-9.-]*/[a-z0-9.-]+/[a-z0-9.-]+$",
+      "type": "string"
+    },
+    "kind": {
+      "const": "scalar"
+    },
+    "max": {
+      "type": "number"
+    },
+    "min": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "property": {
+      "description": "Property slug; may contain S/T or E/D boundary suffixes in upper case.",
+      "pattern": "^[a-z0-9][A-Za-z0-9.-]*$",
+      "type": "string"
+    },
+    "provenance": {
+      "$ref": "common.schema.json#/$defs/provenance"
+    },
+    "public": {
+      "description": "Generated: false when status is U.",
+      "type": "boolean"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "tensor_component": {
+      "description": "Component label when the scalar is a tensor component (e.g. 'alpha_33').",
+      "type": "string"
+    },
+    "uncertainty": {
+      "$ref": "common.schema.json#/$defs/uncertainty"
+    },
+    "unit": {
+      "$ref": "common.schema.json#/$defs/unit"
+    },
+    "value": {
+      "type": "number"
+    },
+    "value_text": {
+      "description": "Verbatim value when it is not a single number (e.g. a formula).",
+      "type": "string"
+    },
+    "variant": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "variant_note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "kind",
+    "property",
+    "name",
+    "variant",
+    "unit",
+    "provenance"
+  ],
+  "title": "Scalar property record",
+  "type": "object"
+}

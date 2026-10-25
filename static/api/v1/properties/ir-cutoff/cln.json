@@ -1,0 +1,42 @@
+{
+  "alternatives": [
+    {
+      "category": "optical",
+      "conditions": {
+        "method": "1/e transmission, 1 cm thick"
+      },
+      "id": "ir-cutoff/cln/cti1999",
+      "kind": "scalar",
+      "name": "IR transmission cutoff",
+      "property": "ir-cutoff",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "nm",
+        "ucum": "nm"
+      },
+      "value": 4600,
+      "variant": "cln"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "ir-cutoff",
+    "variant": "cln"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": null
+}

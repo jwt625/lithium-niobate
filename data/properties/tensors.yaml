@@ -1,0 +1,866 @@
+# Tensor property records (point group 3m). Schema: data/schema/tensor.schema.json.
+# Only independent components are stored; scripts/build_data.py generates the Voigt matrix, the full Cartesian tensor and the
+# symmetry form, plus derived (status C) records: s^E and d from kushibiki1999. Sources: R06 sec. 2.6-2.11, R14 sec. 2.5-2.10.
+# Spreads between sources are kept as separate records; nothing is blended.
+
+- &frame_unstated_doc
+  _anchor_only: true
+  frame_unstated: &frame_unstated {setting: "crystal-physics", x: "a axis, perpendicular to a mirror plane", y: "in a mirror plane", z: "polar c axis", handedness: right, convention: unstated, z_sign_definition: "not stated in this record; tensor form matches this frame by symmetry (R06 sec. 3)"}
+  frame_ire: &frame_ire {setting: "crystal-physics", x: "a axis, perpendicular to a mirror plane", y: "in a mirror plane", z: "polar c axis", handedness: right, convention: IRE-1949, z_sign_definition: "+c points out of the face that becomes negative on compression; equivalently it becomes positive on cooling (weis1985 pp. 192-193)"}
+  u_rel: &u_rel {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "relative (eps/eps0)"}
+  u_gpa: &u_gpa {ucum: "GPa", qudt: "http://qudt.org/vocab/unit/GigaPA", display: "GPa"}
+  u_s: &u_s {ucum: "10*-12.m2/N", display: "1e-12 m^2/N"}
+  u_e: &u_e {ucum: "C/m2", qudt: "http://qudt.org/vocab/unit/C-PER-M2", display: "C/m^2"}
+  u_d: &u_d {ucum: "pC/N", display: "pC/N"}
+  u_r: &u_r {ucum: "pm/V", display: "pm/V"}
+  u_p: &u_p {ucum: "1", qudt: "http://qudt.org/vocab/unit/UNITLESS", display: "-"}
+
+# ---------------------------------------------------------------- permittivity
+
+- id: permittivity-T/cln/kushibiki1999
+  kind: tensor
+  tensor: permittivity-T
+  name: Relative permittivity, constant stress (free)
+  symbol: eps^T/eps0
+  rank: 2
+  unit: *u_rel
+  variant: cln
+  variant_note: "SAW-grade congruent; composition not stated in the source"
+  conditions: {mechanical_boundary: T, frequency_text: "low frequency (below acoustic resonances)", method: "measured"}
+  frame: *frame_unstated
+  independent:
+    eps11: {value: 83.3, uncertainty: {type: stated, value: 0.8}}
+    eps33: {value: 28.5, uncertainty: {type: stated, value: 0.3}}
+  provenance: {source_id: kushibiki1999, locator: "Table IV", status: P, research_note: "R06 sec. 2.8 (re-checked)", transcribed: "2026-10-25"}
+  default: true
+
+- id: permittivity-S/cln/kushibiki1999
+  kind: tensor
+  tensor: permittivity-S
+  name: Relative permittivity, constant strain (clamped)
+  symbol: eps^S/eps0
+  rank: 2
+  unit: *u_rel
+  variant: cln
+  variant_note: "SAW-grade congruent; composition not stated in the source"
+  conditions: {mechanical_boundary: S, frequency_text: "above acoustic resonances", method: "derived in the source's fit"}
+  frame: *frame_unstated
+  independent:
+    eps11: {value: 44.9, uncertainty: {type: stated, value: 0.4}}
+    eps33: {value: 26.7, uncertainty: {type: stated, value: 0.3}}
+  provenance: {source_id: kushibiki1999, locator: "Table V", status: P, research_note: "R06 sec. 2.8", transcribed: "2026-10-25"}
+  default: true
+
+- id: permittivity-T/unspecified/weis1985-warner1967
+  kind: tensor
+  tensor: permittivity-T
+  name: Relative permittivity, constant stress (free)
+  symbol: eps^T/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: T}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 85.2}
+    eps33: {value: 28.7}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Warner, Onoe, Coquin, JASA 42, 1223 (1967)", research_note: "R14 row 53", transcribed: "2026-10-25"}
+
+- id: permittivity-S/unspecified/weis1985-warner1967
+  kind: tensor
+  tensor: permittivity-S
+  name: Relative permittivity, constant strain (clamped)
+  symbol: eps^S/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: S}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 44.3}
+    eps33: {value: 27.9}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Warner, Onoe, Coquin, JASA 42, 1223 (1967)", research_note: "R14 row 53", transcribed: "2026-10-25"}
+  notes: "ogi2002 Table III attributes 44.0 / 29.0 to Warner; weis1985 gives Warner 44.3 / 27.9 (attribution mismatch, R14 row 53)."
+
+- id: permittivity-T/unspecified/weis1985-savage1966
+  kind: tensor
+  tensor: permittivity-T
+  name: Relative permittivity, constant stress (free)
+  symbol: eps^T/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: T}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 84}
+    eps33: {value: 30}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Savage, J. Appl. Phys. 37, 3071 (1966)", research_note: "R14 row 54", transcribed: "2026-10-25"}
+
+- id: permittivity-S/unspecified/weis1985-savage1966
+  kind: tensor
+  tensor: permittivity-S
+  name: Relative permittivity, constant strain (clamped)
+  symbol: eps^S/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: S}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 44}
+    eps33: {value: 29}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Savage, J. Appl. Phys. 37, 3071 (1966)", research_note: "R14 row 54", transcribed: "2026-10-25"}
+
+- id: permittivity-T/unspecified/weis1985-smithwelsh1971
+  kind: tensor
+  tensor: permittivity-T
+  name: Relative permittivity, constant stress (free)
+  symbol: eps^T/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: T}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 84.6}
+    eps33: {value: 28.6}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Smith & Welsh, J. Appl. Phys. 42, 2219 (1971)", research_note: "R14 row 55", transcribed: "2026-10-25"}
+  notes: "weis1985 lists no S values for Smith & Welsh; ogi2002 attributes 44.3 / 27.9 to them (attribution mismatch, R14 row 55)."
+
+- id: permittivity-S/unspecified/weis1985-yamada1967
+  kind: tensor
+  tensor: permittivity-S
+  name: Relative permittivity, constant strain (clamped)
+  symbol: eps^S/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: S}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 43.9}
+    eps33: {value: 23.7}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Yamada, Niizeki, Toyoda, Jpn. J. Appl. Phys. 6, 151 (1967)", research_note: "R14 row 56", transcribed: "2026-10-25"}
+  notes: "Low end of eps33^S."
+
+- id: permittivity-T/unspecified/weis1985-teague1975
+  kind: tensor
+  tensor: permittivity-T
+  name: Relative permittivity, constant stress (free)
+  symbol: eps^T/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: T}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 84.1}
+    eps33: {value: 28.1}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Teague, Rice, Gerson, J. Appl. Phys. 46, 2864 (1975)", research_note: "R14 row 57", transcribed: "2026-10-25"}
+
+- id: permittivity-S/unspecified/weis1985-teague1975
+  kind: tensor
+  tensor: permittivity-S
+  name: Relative permittivity, constant strain (clamped)
+  symbol: eps^S/eps0
+  rank: 2
+  unit: *u_rel
+  variant: unspecified
+  conditions: {mechanical_boundary: S}
+  frame: *frame_ire
+  independent:
+    eps11: {value: 46.5}
+    eps33: {value: 27.3}
+  provenance: {source_id: weis1985, locator: "Table 1, p. 197", status: P-comp, original_reference: "Teague, Rice, Gerson, J. Appl. Phys. 46, 2864 (1975)", research_note: "R14 row 57", transcribed: "2026-10-25"}
+
+- id: permittivity-T/cln/volk2008
+  kind: tensor
+  tensor: permittivity-T
+  name: Relative permittivity, constant stress (free)
+  symbol: eps^T/eps0
+  rank: 2
+  unit: *u_rel
+  variant: cln
+  conditions: {mechanical_boundary: T}
+  frame: *frame_unstated
+  independent:
+    eps11: {value: 84}
+    eps33: {value: 30}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Tomeno & Matsumura, PRB 38, 606 (1988)", research_note: "R14 row 58", transcribed: "2026-10-25"}
+  notes: "Identical to the Savage 1966 set."
+
+- id: permittivity-S/cln/volk2008
+  kind: tensor
+  tensor: permittivity-S
+  name: Relative permittivity, constant strain (clamped)
+  symbol: eps^S/eps0
+  rank: 2
+  unit: *u_rel
+  variant: cln
+  conditions: {mechanical_boundary: S}
+  frame: *frame_unstated
+  independent:
+    eps11: {value: 44}
+    eps33: {value: 29}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Tomeno & Matsumura, PRB 38, 606 (1988)", research_note: "R14 row 58", transcribed: "2026-10-25"}
+
+- id: permittivity-T/cln/cti1999
+  kind: tensor
+  tensor: permittivity-T
+  name: Relative permittivity, constant stress (free)
+  symbol: eps^T/eps0
+  rank: 2
+  unit: *u_rel
+  variant: cln
+  conditions: {mechanical_boundary: T, frequency_text: "< 500 kHz"}
+  frame: *frame_unstated
+  independent:
+    eps11: {value: 85}
+    eps33: {value: 28.7}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.8", transcribed: "2026-10-25"}
+
+- id: permittivity-S/cln/cti1999
+  kind: tensor
+  tensor: permittivity-S
+  name: Relative permittivity, constant strain (clamped)
+  symbol: eps^S/eps0
+  rank: 2
+  unit: *u_rel
+  variant: cln
+  conditions: {mechanical_boundary: S, frequency_text: "> 10 MHz"}
+  frame: *frame_unstated
+  independent:
+    eps11: {value: 44}
+    eps33: {value: 27.9}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.8", transcribed: "2026-10-25"}
+
+# ---------------------------------------------------------------- elastic stiffness c^E
+
+- id: elastic-stiffness-cE/cln/kushibiki1999
+  kind: tensor
+  tensor: elastic-stiffness-cE
+  name: Elastic stiffness at constant electric field
+  symbol: c^E
+  rank: 4
+  unit: *u_gpa
+  variant: cln
+  variant_note: "SAW-grade congruent"
+  conditions: {electrical_boundary: E}
+  frame: *frame_unstated
+  independent:
+    c11: {value: 198.86, uncertainty: {type: stated, value: 0.03}}
+    c12: {value: 54.67, uncertainty: {type: stated, value: 0.04}}
+    c13: {value: 67.99, uncertainty: {type: stated, value: 0.55}}
+    c14: {value: 7.83, uncertainty: {type: stated, value: 0.02}}
+    c33: {value: 234.18, uncertainty: {type: stated, value: 0.75}}
+    c44: {value: 59.85, uncertainty: {type: stated, value: 0.01}}
+  provenance: {source_id: kushibiki1999, status: P, research_note: "R06 sec. 2.9 (re-checked)", transcribed: "2026-10-25"}
+  default: true
+  notes: "The source also lists c66 = 72.09 +- 0.02 GPa; the 3m relation (c11 - c12)/2 gives 72.095. In the same table LiTaO3 has c14 = -10.75 GPa."
+
+- id: elastic-stiffness-cE/unspecified/ogi2002
+  kind: tensor
+  tensor: elastic-stiffness-cE
+  name: Elastic stiffness at constant electric field
+  symbol: c^E
+  rank: 4
+  unit: *u_gpa
+  variant: unspecified
+  conditions: {temperature_C: 30, electrical_boundary: E, method: "resonant ultrasound spectroscopy"}
+  frame: *frame_unstated
+  independent:
+    c11: {value: 199.5, uncertainty: {type: stated, value: 0.2}}
+    c12: {value: 55.27, uncertainty: {type: stated, value: 0.13}}
+    c13: {value: 67.67, uncertainty: {type: stated, value: 0.26}}
+    c14: {value: 8.7, uncertainty: {type: stated, value: 0.2}}
+    c33: {value: 235.2, uncertainty: {type: stated, value: 0.4}}
+    c44: {value: 59.48, uncertainty: {type: stated, value: 0.04}}
+  provenance: {source_id: ogi2002, status: P, research_note: "R06 sec. 2.9 (re-checked)", transcribed: "2026-10-25"}
+  notes: "Source lists c66 = 72.10 +- 0.01 GPa."
+
+- id: elastic-stiffness-cE/unspecified/weis1985-smithwelsh1971
+  kind: tensor
+  tensor: elastic-stiffness-cE
+  name: Elastic stiffness at constant electric field
+  symbol: c^E
+  rank: 4
+  unit: *u_gpa
+  variant: unspecified
+  conditions: {electrical_boundary: E}
+  frame: *frame_ire
+  independent:
+    c11: {value: 203.0}
+    c12: {value: 57.3}
+    c13: {value: 75.2}
+    c14: {value: 8.5}
+    c33: {value: 242.4}
+    c44: {value: 59.5}
+  provenance: {source_id: weis1985, locator: "Table 6, p. 200 (unit 1.0e11 N/m^2)", status: P-comp, original_reference: "Smith & Welsh, J. Appl. Phys. 42, 2219 (1971)", research_note: "R14 rows 63, 67", transcribed: "2026-10-25"}
+  notes: "cti1999 copies this set. Temperature coefficients (1e-4 /C): c11 -1.74, c12 -2.52, c13 -1.59, c14 -2.14, c33 -1.53, c44 -2.04 (weis1985 Table 6, R14 row 64)."
+
+- id: elastic-stiffness-cE/unspecified/weis1985-warner1967
+  kind: tensor
+  tensor: elastic-stiffness-cE
+  name: Elastic stiffness at constant electric field
+  symbol: c^E
+  rank: 4
+  unit: *u_gpa
+  variant: unspecified
+  conditions: {electrical_boundary: E}
+  frame: *frame_ire
+  independent:
+    c11: {value: 203}
+    c12: {value: 53}
+    c13: {value: 75}
+    c14: {value: 9}
+    c33: {value: 245}
+    c44: {value: 60}
+  provenance: {source_id: weis1985, locator: "Table 6, p. 200", status: P-comp, original_reference: "Warner, Onoe, Coquin, JASA 42, 1223 (1967)", research_note: "R14 row 63", transcribed: "2026-10-25"}
+
+- id: elastic-stiffness-cE/unspecified/weis1985-nakagawa1973
+  kind: tensor
+  tensor: elastic-stiffness-cE
+  name: Elastic stiffness at constant electric field
+  symbol: c^E
+  rank: 4
+  unit: *u_gpa
+  variant: unspecified
+  conditions: {electrical_boundary: E}
+  frame: *frame_ire
+  independent:
+    c11: {value: 200}
+    c12: {value: 54}
+    c13: {value: 60}
+    c14: {value: 8}
+    c33: {value: 243}
+    c44: {value: 60}
+  provenance: {source_id: weis1985, locator: "Table 6, p. 200", status: P-comp, original_reference: "Nakagawa et al. 1973", research_note: "R14 row 63", transcribed: "2026-10-25"}
+
+- id: elastic-stiffness-cE/unspecified/ogi2002-kovacs1990
+  kind: tensor
+  tensor: elastic-stiffness-cE
+  name: Elastic stiffness at constant electric field
+  symbol: c^E
+  rank: 4
+  unit: *u_gpa
+  variant: unspecified
+  conditions: {electrical_boundary: E}
+  frame: *frame_unstated
+  independent:
+    c11: {value: 198.4}
+    c12: {value: 54.72}
+    c13: {value: 65.13}
+    c14: {value: 7.88}
+    c33: {value: 227.9}
+    c44: {value: 59.65}
+  provenance: {source_id: ogi2002, locator: "Table III", status: S, original_reference: "Kovacs et al., IEEE Ultrasonics Symposium 1990", research_note: "R06 sec. 2.9", transcribed: "2026-10-25"}
+
+- id: elastic-stiffness-cE/unspecified/andrushchak2009
+  kind: tensor
+  tensor: elastic-stiffness-cE
+  name: Elastic stiffness at constant electric field
+  symbol: c^E
+  rank: 4
+  unit: *u_gpa
+  variant: unspecified
+  conditions: {electrical_boundary: E}
+  frame: *frame_unstated
+  independent:
+    c11: {value: 199}
+    c12: {value: 54.7}
+    c13: {value: 70.0}
+    c14: {value: 7.9}
+    c33: {value: 240}
+    c44: {value: 59.9}
+  provenance: {source_id: andrushchak2009, status: S, via: bouchy2022, research_note: "R06 sec. 2.9", transcribed: "2026-10-25"}
+
+# ---------------------------------------------------------------- elastic compliance s^E
+
+- id: elastic-compliance-sE/unspecified/weis1985-smithwelsh1971
+  kind: tensor
+  tensor: elastic-compliance-sE
+  name: Elastic compliance at constant electric field
+  symbol: s^E
+  rank: 4
+  unit: *u_s
+  variant: unspecified
+  conditions: {electrical_boundary: E}
+  frame: *frame_ire
+  independent:
+    s11: {value: 5.831}
+    s12: {value: -1.150}
+    s13: {value: -1.452}
+    s14: {value: -1.000}
+    s33: {value: 5.026}
+    s44: {value: 17.10}
+  provenance: {source_id: weis1985, locator: "Table 5, p. 200", status: P-comp, original_reference: "Smith & Welsh, J. Appl. Phys. 42, 2219 (1971)", research_note: "R14 row 65", transcribed: "2026-10-25"}
+  notes: "s14 < 0 goes with c14 > 0. Temperature coefficients (1e-4 /C): s11 1.66, s12 0.28, s13 1.94, s14 1.33, s33 1.60, s44 2.05 (R14 row 66)."
+
+- id: elastic-compliance-sE/unspecified/weis1985-warner1967
+  kind: tensor
+  tensor: elastic-compliance-sE
+  name: Elastic compliance at constant electric field
+  symbol: s^E
+  rank: 4
+  unit: *u_s
+  variant: unspecified
+  conditions: {electrical_boundary: E}
+  frame: *frame_ire
+  independent:
+    s11: {value: 5.78}
+    s12: {value: -1.01}
+    s13: {value: -1.47}
+    s14: {value: -1.02}
+    s33: {value: 5.02}
+    s44: {value: 17.0}
+  provenance: {source_id: weis1985, locator: "Table 5, p. 200", status: P-comp, original_reference: "Warner, Onoe, Coquin, JASA 42, 1223 (1967)", research_note: "R14 row 65", transcribed: "2026-10-25"}
+
+# ---------------------------------------------------------------- piezoelectric stress constants e
+
+- id: piezo-stress-e/cln/kushibiki1999
+  kind: tensor
+  tensor: piezo-stress-e
+  name: Piezoelectric stress constants
+  symbol: e
+  rank: 3
+  unit: *u_e
+  variant: cln
+  variant_note: "SAW-grade congruent"
+  frame: *frame_unstated
+  independent:
+    e15: {value: 3.655, uncertainty: {type: stated, value: 0.022}}
+    e22: {value: 2.407, uncertainty: {type: stated, value: 0.015}}
+    e31: {value: 0.328, uncertainty: {type: stated, value: 0.032}}
+    e33: {value: 1.894, uncertainty: {type: stated, value: 0.054}}
+  provenance: {source_id: kushibiki1999, status: P, research_note: "R06 sec. 2.10 (re-checked)", transcribed: "2026-10-25"}
+  default: true
+
+- id: piezo-stress-e/unspecified/ogi2002
+  kind: tensor
+  tensor: piezo-stress-e
+  name: Piezoelectric stress constants
+  symbol: e
+  rank: 3
+  unit: *u_e
+  variant: unspecified
+  conditions: {temperature_C: 30, method: "resonant ultrasound spectroscopy"}
+  frame: *frame_unstated
+  independent:
+    e15: {value: 3.65, uncertainty: {type: stated, value: 0.03}}
+    e22: {value: 2.39, uncertainty: {type: stated, value: 0.03}}
+    e31: {value: 0.31, uncertainty: {type: stated, value: 0.04}}
+    e33: {value: 1.72, uncertainty: {type: stated, value: 0.18}}
+  provenance: {source_id: ogi2002, status: P, research_note: "R06 sec. 2.10 (re-checked)", transcribed: "2026-10-25"}
+
+- id: piezo-stress-e/unspecified/ogi2002-warner1967
+  kind: tensor
+  tensor: piezo-stress-e
+  name: Piezoelectric stress constants
+  symbol: e
+  rank: 3
+  unit: *u_e
+  variant: unspecified
+  frame: *frame_unstated
+  independent:
+    e15: {value: 3.7}
+    e22: {value: 2.5}
+    e31: {value: 0.2}
+    e33: {value: 1.3}
+  provenance: {source_id: ogi2002, locator: "Table III", status: S, original_reference: "Warner, Onoe, Coquin, JASA 42, 1223 (1967)", research_note: "R06 sec. 2.10", transcribed: "2026-10-25"}
+
+- id: piezo-stress-e/unspecified/ogi2002-smithwelsh1971
+  kind: tensor
+  tensor: piezo-stress-e
+  name: Piezoelectric stress constants
+  symbol: e
+  rank: 3
+  unit: *u_e
+  variant: unspecified
+  frame: *frame_unstated
+  independent:
+    e15: {value: 3.76}
+    e22: {value: 2.43}
+    e31: {value: 0.23}
+    e33: {value: 1.33}
+  provenance: {source_id: ogi2002, locator: "Table III", status: S, original_reference: "Smith & Welsh, J. Appl. Phys. 42, 2219 (1971)", research_note: "R06 sec. 2.10", transcribed: "2026-10-25"}
+
+- id: piezo-stress-e/unspecified/ogi2002-kovacs1990
+  kind: tensor
+  tensor: piezo-stress-e
+  name: Piezoelectric stress constants
+  symbol: e
+  rank: 3
+  unit: *u_e
+  variant: unspecified
+  frame: *frame_unstated
+  independent:
+    e15: {value: 3.69}
+    e22: {value: 2.42}
+    e31: {value: 0.30}
+    e33: {value: 1.77}
+  provenance: {source_id: ogi2002, locator: "Table III", status: S, original_reference: "Kovacs et al., IEEE Ultrasonics Symposium 1990", research_note: "R06 sec. 2.10", transcribed: "2026-10-25"}
+
+- id: piezo-stress-e/unspecified/andrushchak2009
+  kind: tensor
+  tensor: piezo-stress-e
+  name: Piezoelectric stress constants
+  symbol: e
+  rank: 3
+  unit: *u_e
+  variant: unspecified
+  frame: *frame_unstated
+  independent:
+    e15: {value: 3.67}
+    e22: {value: 2.38}
+    e31: {value: 0.34}
+    e33: {value: 1.60}
+  provenance: {source_id: andrushchak2009, status: S, via: bouchy2022, research_note: "R06 sec. 2.10", transcribed: "2026-10-25"}
+
+# ---------------------------------------------------------------- piezoelectric strain constants d
+
+- id: piezo-strain-d/unspecified/weis1985-smithwelsh1971
+  kind: tensor
+  tensor: piezo-strain-d
+  name: Piezoelectric strain constants
+  symbol: d
+  rank: 3
+  unit: *u_d
+  variant: unspecified
+  frame: *frame_ire
+  independent:
+    d15: {value: 69.2}
+    d22: {value: 20.8}
+    d31: {value: -0.85}
+    d33: {value: 6.0}
+  provenance: {source_id: weis1985, locator: "Table 3, p. 198 (unit 1.0e-11 C/N)", status: P-comp, original_reference: "Smith & Welsh, J. Appl. Phys. 42, 2219 (1971)", research_note: "R14 row 59", transcribed: "2026-10-25"}
+  notes: "cti1999 copies this set exactly. d33 = 6.0 is disfavoured by the hydrostatic d_h data (R14 row 60a)."
+
+- id: piezo-strain-d/unspecified/weis1985-warner1967
+  kind: tensor
+  tensor: piezo-strain-d
+  name: Piezoelectric strain constants
+  symbol: d
+  rank: 3
+  unit: *u_d
+  variant: unspecified
+  frame: *frame_ire
+  independent:
+    d15: {value: 68}
+    d22: {value: 21}
+    d31: {value: -1.0}
+    d33: {value: 6}
+  provenance: {source_id: weis1985, locator: "Table 3, p. 198", status: P-comp, original_reference: "Warner, Onoe, Coquin, JASA 42, 1223 (1967)", research_note: "R14 row 59", transcribed: "2026-10-25"}
+
+- id: piezo-strain-d/unspecified/weis1985-yamada1967
+  kind: tensor
+  tensor: piezo-strain-d
+  name: Piezoelectric strain constants
+  symbol: d
+  rank: 3
+  unit: *u_d
+  variant: unspecified
+  frame: *frame_ire
+  independent:
+    d15: {value: 74}
+    d22: {value: 21}
+    d31: {value: -0.87}
+    d33: {value: 16}
+  provenance: {source_id: weis1985, locator: "Table 3, p. 198", status: P-comp, original_reference: "Yamada, Niizeki, Toyoda, Jpn. J. Appl. Phys. 6, 151 (1967)", research_note: "R14 row 59", transcribed: "2026-10-25"}
+  notes: "d33 = 16 pC/N is ruled out by the hydrostatic d_h measurements (R14 row 60a)."
+
+- id: piezo-strain-d/cln/cti1999
+  kind: tensor
+  tensor: piezo-strain-d
+  name: Piezoelectric strain constants
+  symbol: d
+  rank: 3
+  unit: *u_d
+  variant: cln
+  frame: *frame_unstated
+  independent:
+    d15: {value: 69.2}
+    d22: {value: 20.8}
+    d31: {value: -0.85}
+    d33: {value: 6.0}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.10; R14 row 59", transcribed: "2026-10-25"}
+
+# ---------------------------------------------------------------- electro-optic r
+
+- id: eo-rT/cln/weis1985
+  kind: tensor
+  tensor: eo-rT
+  name: Linear electro-optic (Pockels) coefficients, unclamped (constant stress)
+  symbol: r^T
+  rank: 3
+  unit: *u_r
+  variant: cln
+  variant_note: "composition not stated in weis1985; volk2008 Table 1.2 lists the same values for CLN (R14 row 51)"
+  conditions: {wavelength_nm: 633, mechanical_boundary: T}
+  frame: *frame_ire
+  independent:
+    r13: {value: 10.0, original_reference: "Zook, Chen, Otto, APL 11, 159 (1967)", notes: "sign explicitly positive in weis1985; Smakula & Claspy 1967 give 10.9"}
+    r22: {value: 6.81, original_reference: "Zook, Chen, Otto, APL 11, 159 (1967)", notes: "Lenzo et al. 1966 and Smakula 1967 give 6.7"}
+    r33: {value: 32.2, original_reference: "Zook, Chen, Otto, APL 11, 159 (1967)", notes: "Smakula & Claspy 1967 give 34.0"}
+    r51: {value: 32, original_reference: "Bernal et al. 1966"}
+  provenance: {source_id: weis1985, locator: "Table 4, p. 199", status: P-comp, research_note: "R14 rows 43, 45, 47, 49", transcribed: "2026-10-25"}
+  default: true
+  notes: "No 1550 nm EO values were found in any source read (R06 gap 4; R14 sec. 2.5). Free (T) coefficients vary within +-5% with melt composition (Turner, Nash, Bridenbaugh 1970, via weis1985 p. 199); r22 varies with composition with a minimum near 48.9 mol% (volk2008 p. 150)."
+
+- id: eo-rS/cln/turner1966
+  kind: tensor
+  tensor: eo-rS
+  name: Linear electro-optic (Pockels) coefficients, clamped (constant strain)
+  symbol: r^S
+  rank: 3
+  unit: *u_r
+  variant: cln
+  variant_note: "composition not stated in weis1985; volk2008 Table 1.2 lists the same clamped r33, r13, r22 (31, 8.6, 3.4) for CLN (R14 row 51)"
+  conditions: {wavelength_nm: 633, mechanical_boundary: S}
+  frame: *frame_ire
+  independent:
+    r13: {value: 8.6}
+    r22: {value: 3.4}
+    r33: {value: 30.8}
+    r51: {value: 28}
+  provenance: {source_id: turner1966, via: weis1985, locator: "weis1985 Table 4, p. 199", status: P-comp, research_note: "R14 rows 44, 46, 48, 50", transcribed: "2026-10-25"}
+  notes: "Turner 1966 also gives 6.5 (r13), 3.1 (r22), 28 (r33) and 23 (r51) pm/V at 3390 nm. r33 = 30.8-31 is the value most TFLN papers reuse."
+
+- id: eo-rS/unspecified/kaminow1980
+  kind: tensor
+  tensor: eo-rS
+  name: Linear electro-optic (Pockels) coefficients, clamped (constant strain)
+  symbol: r^S
+  rank: 3
+  unit: *u_r
+  variant: unspecified
+  variant_note: "composition not stated in weis1985"
+  conditions: {wavelength_nm: 633, mechanical_boundary: S}
+  frame: *frame_ire
+  independent:
+    r13: {value: 7.7, original_reference: "Turner, as cited in Kaminow et al. 1980"}
+    r22: {value: 3.4, original_reference: "Turner, as cited in Kaminow et al. 1980"}
+    r33: {value: 28.8, original_reference: "Turner, as cited in Kaminow et al. 1980"}
+    r51: {value: 18.2, original_reference: "Kaminow et al. 1980"}
+  provenance: {source_id: kaminow1980, via: weis1985, locator: "weis1985 Table 4, p. 199", status: P-comp, research_note: "R14 rows 44, 46, 48, 50", transcribed: "2026-10-25"}
+  notes: "weis1985 calls the 1980 values probably the most accurate (fringing-field corrected). r51^S = 18.2 is 35% below the 28 of Turner 1966 and cti1999: shown as a spread, not blended. Kaminow 1980 itself not read (R14 sec. 5 item 6)."
+
+- id: eo-rT/cln/cti1999
+  kind: tensor
+  tensor: eo-rT
+  name: Linear electro-optic (Pockels) coefficients, unclamped (constant stress)
+  symbol: r^T
+  rank: 3
+  unit: *u_r
+  variant: cln
+  conditions: {wavelength_nm: 633, mechanical_boundary: T, frequency_text: "low frequency"}
+  frame: *frame_unstated
+  independent:
+    r13: {value: 10}
+    r22: {value: 7}
+    r33: {value: 33}
+    r51: {value: 33}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.6", transcribed: "2026-10-25"}
+  notes: "Data sheet also lists r_c = 18 pm/V."
+
+- id: eo-rS/cln/cti1999
+  kind: tensor
+  tensor: eo-rS
+  name: Linear electro-optic (Pockels) coefficients, clamped (constant strain)
+  symbol: r^S
+  rank: 3
+  unit: *u_r
+  variant: cln
+  conditions: {wavelength_nm: 633, mechanical_boundary: S, frequency_text: "high frequency"}
+  frame: *frame_unstated
+  independent:
+    r13: {value: 9}
+    r22: {value: 3}
+    r33: {value: 31}
+    r51: {value: 28}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.6", transcribed: "2026-10-25"}
+  notes: "Data sheet also lists r_c = 19 pm/V."
+
+# ---------------------------------------------------------------- photoelastic p (633 nm)
+
+- id: photoelastic-p/unspecified/weis1985-avakyants1976
+  kind: tensor
+  tensor: photoelastic-p
+  name: Photoelastic (strain-optic) coefficients
+  symbol: p
+  rank: 4
+  unit: *u_p
+  variant: unspecified
+  conditions: {wavelength_nm: 633}
+  frame: {setting: "crystal-physics", x: "a axis, perpendicular to a mirror plane", y: "in a mirror plane", z: "polar c axis", handedness: right, convention: unstated, z_sign_definition: "as compiled in weis1985 (IRE 1949 frame); the frame of the original Avakyants 1976 measurement is not verified (R14 row 75)"}
+  independent:
+    p11: {value: -0.026}
+    p12: {value: 0.090}
+    p13: {value: 0.133}
+    p14: {value: -0.075}
+    p31: {value: 0.179}
+    p33: {value: 0.071}
+    p41: {value: -0.151}
+    p44: {value: 0.146}
+  provenance: {source_id: weis1985, locator: "Table 7, p. 201", status: P-comp, original_reference: "Avakyants, Kiselev, Shchitkov, Sov. Phys. Solid State 18, 899 (1976)", research_note: "R14 rows 69, 75", transcribed: "2026-10-25"}
+  notes: "This is 'Set B' (also zhu2021). weis1985 lists these signed p14, p41 < 0 next to Smith & Welsh c14 > 0 in its IRE frame, without stating Avakyants' own frame; the sign pairing stays open until Avakyants 1976 is read (R14 row 75). Measured p13, p33 include an indirect (piezo-EO) part whose size depends on the acoustic direction (R14 row 72, N3)."
+
+- id: photoelastic-p/unspecified/weis1985-coquin
+  kind: tensor
+  tensor: photoelastic-p
+  name: Photoelastic (strain-optic) coefficients
+  symbol: p
+  rank: 4
+  unit: *u_p
+  variant: unspecified
+  conditions: {wavelength_nm: 633}
+  frame: *frame_ire
+  independent:
+    p11: {value: -0.02}
+    p12: {value: 0.08}
+    p13: {value: 0.13}
+    p14: {value: -0.08}
+    p31: {value: 0.17}
+    p33: {value: 0.07}
+    p41: {value: -0.15}
+    p44: {value: 0.12}
+  provenance: {source_id: weis1985, locator: "Table 7, p. 201", status: P-comp, original_reference: "Coquin, via Pinnow, Handbook of Lasers (1971)", research_note: "R14 row 70", transcribed: "2026-10-25"}
+
+- id: photoelastic-p/unspecified/andrushchak2009
+  kind: tensor
+  tensor: photoelastic-p
+  name: Photoelastic (strain-optic) coefficients
+  symbol: p
+  rank: 4
+  unit: *u_p
+  variant: unspecified
+  conditions: {wavelength_nm: 633}
+  frame: *frame_unstated
+  independent:
+    p11: {value: -0.021, uncertainty: {type: stated, value: 0.018}}
+    p12: {value: 0.060, uncertainty: {type: stated, value: 0.019}}
+    p13: {value: 0.172, uncertainty: {type: stated, value: 0.029}}
+    p14: {value: -0.052, uncertainty: {type: stated, value: 0.007}}
+    p31: {value: 0.141, uncertainty: {type: stated, value: 0.017}}
+    p33: {value: 0.118, uncertainty: {type: stated, value: 0.020}}
+    p41: {value: -0.109, uncertainty: {type: stated, value: 0.017}}
+    p44: {value: 0.121, uncertainty: {type: stated, value: 0.019}}
+  provenance: {source_id: andrushchak2009, status: S, via: sarabalis2020, locator: "sarabalis2020 Table I; mytsyk2021 Table 6", research_note: "R06 sec. 2.11", transcribed: "2026-10-25"}
+
+- id: photoelastic-p/unspecified/rodrigues2023
+  kind: tensor
+  tensor: photoelastic-p
+  name: Photoelastic (strain-optic) coefficients
+  symbol: p
+  rank: 4
+  unit: *u_p
+  variant: unspecified
+  conditions: {wavelength_nm: 633}
+  frame: *frame_unstated
+  independent:
+    p11: {value: -0.026}
+    p12: {value: 0.088}
+    p13: {value: 0.134}
+    p14: {value: -0.083}
+    p31: {value: 0.177}
+    p33: {value: 0.07}
+    p41: {value: -0.151}
+    p44: {value: 0.145}
+  provenance: {source_id: rodrigues2023, locator: "Eq. 8", status: S, research_note: "R06 sec. 2.11; R14 row 70", transcribed: "2026-10-25"}
+  notes: "Looks like a blend of the Avakyants and Coquin sets (observation, R14 row 70)."
+
+- id: photoelastic-p/unspecified/mys2015-krupych2014
+  kind: tensor
+  tensor: photoelastic-p
+  name: Photoelastic (strain-optic) coefficients
+  symbol: p
+  rank: 4
+  unit: *u_p
+  variant: unspecified
+  conditions: {wavelength_nm: 633}
+  frame: {setting: "crystal-physics", x: "a axis, perpendicular to a mirror plane", y: "in a mirror plane", z: "polar c axis", handedness: right, convention: unstated, z_sign_definition: "not stated; the set is quoted with c14 > 0 (R06 sec. 3, pitfall 2)"}
+  independent:
+    p11: {value: -0.023}
+    p12: {value: 0.076}
+    p13: {value: 0.147}
+    p14: {value: 0.057}
+    p31: {value: 0.157}
+    p33: {value: 0.141}
+    p41: {value: 0.051}
+    p44: {value: 0.126}
+  provenance: {source_id: mys2015, status: S, original_reference: "Krupych et al., Appl. Opt. 53, B1 (2014)", research_note: "R06 sec. 2.11; R14 row 75", transcribed: "2026-10-25"}
+  notes: "p14, p41 > 0 with c14 > 0 disagrees in sign with the weis1985 compilation of Avakyants (R14 row 75)."
+
+# ---------------------------------------------------------------- second-order nonlinear d (SHG, 1.06 um)
+
+- id: nlo-d/cln/volk2008
+  kind: tensor
+  tensor: nlo-d
+  name: Second-order nonlinear optical coefficients
+  symbol: d (SHG)
+  rank: 3
+  unit: *u_r
+  variant: cln
+  conditions: {wavelength_nm: 1060, note: "fundamental 1.06 um"}
+  frame: *frame_unstated
+  dk_scale: legacy
+  independent:
+    d31: {value: 6}
+    d22: {value: 3}
+    d33: {value: 34}
+  provenance: {source_id: volk2008, locator: "Table 1.2, p. 4", status: P-comp, original_reference: "Nikogosyan 2005", research_note: "R14 row 52b", transcribed: "2026-10-25"}
+  notes: "Legacy (pre-Shoji 1997) scale; the shoji1997 abstract states that many accepted standard values are overestimated. Kleinman symmetry assumed for the form (d15 = d31). Signs as listed (magnitudes)."
+
+- id: nlo-d/sln/volk2008
+  kind: tensor
+  tensor: nlo-d
+  name: Second-order nonlinear optical coefficients
+  symbol: d (SHG)
+  rank: 3
+  unit: *u_r
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {wavelength_nm: 1060, note: "fundamental 1.06 um"}
+  frame: *frame_unstated
+  dk_scale: legacy
+  independent:
+    d31: {value: 5}
+    d22: {value: 2.5}
+    d33: {value: 42}
+  provenance: {source_id: volk2008, locator: "Table 1.2, p. 4", status: P-comp, original_reference: "Nikogosyan 2005", research_note: "R14 row 52b", transcribed: "2026-10-25"}
+  notes: "Legacy scale."
+
+- id: nlo-d/cln/cti1999
+  kind: tensor
+  tensor: nlo-d
+  name: Second-order nonlinear optical coefficients
+  symbol: d (SHG)
+  rank: 3
+  unit: *u_r
+  variant: cln
+  conditions: {wavelength_nm: 1060}
+  frame: *frame_unstated
+  dk_scale: legacy
+  independent:
+    d31: {value: -5}
+    d22: {value: 3}
+    d33: {value: -33}
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.7", transcribed: "2026-10-25"}
+  notes: "Pre-Shoji scale (R06)."
+
+- id: nlo-d/unspecified/zhu2021
+  kind: tensor
+  tensor: nlo-d
+  name: Second-order nonlinear optical coefficients
+  symbol: d (SHG)
+  rank: 3
+  unit: *u_r
+  variant: unspecified
+  conditions: {wavelength_nm: 1064}
+  frame: *frame_unstated
+  independent:
+    d31: {value: -4.3}
+    d22: {value: 2.10}
+    d33: {value: -27.0}
+  provenance: {source_id: zhu2021, locator: "Table 1", status: S, research_note: "R06 sec. 2.7", transcribed: "2026-10-25"}
+  notes: "No reference given in the review table; scale not stated."

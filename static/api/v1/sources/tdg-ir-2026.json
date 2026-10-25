@@ -1,0 +1,24 @@
+{
+  "citation": "\"TDG Holding (600330) investor relations activity record\", (2026) https://pdf.dfcfw.com/pdf/H22_AN202606041823249221_1.pdf",
+  "link": "https://pdf.dfcfw.com/pdf/H22_AN202606041823249221_1.pdf",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "tdg-ir-2026",
+    "issued": "2026-06-03",
+    "read": "Read",
+    "title": "TDG Holding (600330) investor relations activity record",
+    "type": "webpage",
+    "url": "https://pdf.dfcfw.com/pdf/H22_AN202606041823249221_1.pdf"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lithium-niobate.com/api/v1/schema/publication.schema.json",
+  "title": "Publication",
+  "description": "An LN-relevant item from the author's (Wentao Jiang) public record, with full author list, identifiers, LN class, and license per item.",
+  "type": "object",
+  "required": ["id", "type", "title", "authors", "issued", "ln_class", "access"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "r01_id": {"type": "string", "description": "Row id in research note R01 (e.g. P03)."},
+    "type": {"enum": ["article-journal", "preprint", "thesis", "paper-conference", "patent", "review"]},
+    "title": {"type": "string"},
+    "authors": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "author_position": {"type": "string", "pattern": "^[0-9]+/[0-9]+$"},
+    "first_author": {"type": "boolean"},
+    "container_title": {"type": "string"},
+    "volume": {"type": "string"},
+    "issue": {"type": "string"},
+    "page": {"type": "string"},
+    "article_number": {"type": "string"},
+    "issued": {"$ref": "common.schema.json#/$defs/isoDate"},
+    "doi": {"$ref": "common.schema.json#/$defs/doi"},
+    "arxiv": {"$ref": "common.schema.json#/$defs/arxiv"},
+    "url": {"$ref": "common.schema.json#/$defs/url"},
+    "ln_class": {"type": "string", "description": "TFLN, TFLN-hyb, TFLN (LN on sapphire), review, etc., per R01."},
+    "topics": {"type": "array", "items": {"type": "string"}},
+    "access": {"$ref": "common.schema.json#/$defs/license"},
+    "arxiv_license": {"type": "string"},
+    "open_data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["doi", "license"],
+        "additionalProperties": false,
+        "properties": {
+          "doi": {"$ref": "common.schema.json#/$defs/doi"},
+          "license": {"type": "string"},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "summary": {"type": "string", "description": "One factual sentence on the LN result."},
+    "verification": {"type": "string", "description": "How the bibliographic record was checked (e.g. Crossref, arXiv API)."},
+    "notes": {"type": "string"}
+  }
+}

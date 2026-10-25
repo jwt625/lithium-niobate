@@ -1,0 +1,56 @@
+{
+  "citation": "M. Leidinger, S. Fieberg, N. Waasem, et al., \"Comparative study on three highly sensitive absorption measurement techniques characterizing lithium niobate over its entire transparent spectral range\", Optics Express 23, 21690, (2015) doi:10.1364/OE.23.021690",
+  "link": "https://doi.org/10.1364/OE.23.021690",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Blocked by anti-bot page.",
+      "oa_status": "gold"
+    },
+    "author": [
+      {
+        "family": "Leidinger",
+        "given": "M."
+      },
+      {
+        "family": "Fieberg",
+        "given": "S."
+      },
+      {
+        "family": "Waasem",
+        "given": "N."
+      },
+      {
+        "family": "Kühnemann",
+        "given": "F."
+      },
+      {
+        "family": "Buse",
+        "given": "K."
+      },
+      {
+        "family": "Breunig",
+        "given": "I."
+      }
+    ],
+    "container_title": "Optics Express",
+    "doi": "10.1364/OE.23.021690",
+    "id": "leidinger2015",
+    "issued": "2015",
+    "page": "21690",
+    "read": "abstract only",
+    "title": "Comparative study on three highly sensitive absorption measurement techniques characterizing lithium niobate over its entire transparent spectral range",
+    "type": "article-journal",
+    "volume": "23"
+  }
+}

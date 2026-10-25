@@ -1,0 +1,42 @@
+{
+  "citation": "G. E. Peterson, A. A. Ballman, P. V. Lenzo, et al., \"ELECTRO-OPTIC PROPERTIES OF LiNbO3\", Applied Physics Letters 5, 62-64, (1964) doi:10.1063/1.1754053",
+  "link": "https://doi.org/10.1063/1.1754053",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "G. E. Peterson"
+      },
+      {
+        "literal": "A. A. Ballman"
+      },
+      {
+        "literal": "P. V. Lenzo"
+      },
+      {
+        "literal": "P. M. Bridenbaugh"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754053",
+    "id": "peterson1964",
+    "issue": "3",
+    "issued": "1964-08-01",
+    "page": "62-64",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "ELECTRO-OPTIC PROPERTIES OF LiNbO3",
+    "type": "article-journal",
+    "volume": "5"
+  }
+}

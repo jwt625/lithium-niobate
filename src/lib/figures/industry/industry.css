@@ -1,0 +1,70 @@
+/* Chapter 08 Industry: figure and page styles. Every selector carries an i8- class (or .g8 on badges), so nothing leaks
+   into other chapters after client-side navigation. TECH = data sheet (mono, boxed, static); VISUAL rules under
+   :root[data-mode="visual"]. Sharp corners; colors only from the shared tokens. */
+
+/* ---------- grade tags (TECH: border style = grade) ---------- */
+.b.g8 { color: var(--fg2); }
+.b.g8.gF { border-style: solid; color: var(--fg); }
+.b.g8.gV { border-style: solid; background: linear-gradient(90deg, var(--acc-dim) 50%, transparent 50%); }
+.b.g8.gT { border-style: dashed; }
+.b.g8.gC { border-style: dotted; color: var(--fg3); }
+.b.g8.gE { border-style: dashed; font-style: italic; }
+.b.g8.gS { border-style: dotted; font-style: italic; }
+.b.g8.gLG { border-style: dotted; color: var(--fg3); background: repeating-linear-gradient(45deg, var(--rule2) 0 1px, transparent 1px 4px); }
+:root[data-mode="visual"] .b.g8 { color: var(--v-text2); border-color: var(--v-line2); border-style: solid; background: none; font-style: normal; }
+:root[data-mode="visual"] .b.g8.gF::before { background: currentColor; }
+:root[data-mode="visual"] .b.g8.gV::before { background: linear-gradient(90deg, currentColor 50%, transparent 50%); }
+:root[data-mode="visual"] .b.g8.gT::before { background: none; }
+:root[data-mode="visual"] .b.g8.gE::before { background: repeating-linear-gradient(0deg, currentColor 0 1px, transparent 1px 2.5px); }
+:root[data-mode="visual"] .b.g8.gC::before { background: radial-gradient(currentColor 0.8px, transparent 1px) 0 0 / 2.5px 2.5px; }
+:root[data-mode="visual"] .b.g8.gLG::before { background: repeating-linear-gradient(45deg, currentColor 0 0.8px, transparent 0.8px 2.4px), repeating-linear-gradient(-45deg, currentColor 0 0.8px, transparent 0.8px 2.4px); }
+:root[data-mode="visual"] .b.g8.gC, :root[data-mode="visual"] .b.g8.gLG { color: var(--v-text3); border-style: dashed; }
+.pop .i8-ps + .i8-ps { margin-top: 8px; padding-top: 6px; border-top: 1px solid var(--rule); }
+
+/* ---------- stamp line, provenance ---------- */
+.i8-stamp { display: flex; flex-wrap: wrap; gap: 2px 14px; padding: 4px 8px; border-top: 1px solid var(--rule); font: 400 10.5px/16px var(--mono); color: var(--fg3); }
+.i8-stamp a { color: var(--fg2); }
+:root[data-mode="visual"] .i8-stamp { padding: 10px 0 0; border-top: 0; font: 400 13px/20px var(--v-ui); color: var(--v-text3); gap: 4px 18px; }
+:root[data-mode="visual"] .i8-stamp a { color: var(--v-l532); }
+.i8-src { font-size: 11.5px; color: var(--fg3); }
+
+/* ---------- fact lists (cards, tables) ---------- */
+.i8-facts { list-style: none; margin: 0; padding: 0; }
+.i8-facts li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; padding: 3px 0; border-top: 1px solid var(--rule); font-size: 12px; line-height: 17px; color: var(--fg2); }
+.i8-facts li:first-child { border-top: 0; }
+.i8-facts li > span:last-child { white-space: nowrap; }
+:root[data-mode="visual"] .i8-facts li { padding: 8px 0; font: 400 15px/22px var(--v-ui); color: var(--v-text2); border-top-color: var(--v-line); }
+table.idx td.i8-g { width: 1%; white-space: nowrap; }
+
+/* ---------- landing ---------- */
+.i8-stampline { font: 400 10.5px/16px var(--mono); color: var(--fg3); margin: 6px 0 0; }
+.i8-doors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.i8-door { position: relative; display: flex; flex-direction: column; gap: 8px; min-height: 250px; padding: 20px; background: var(--v-ink1, var(--bg2)); border: 1px solid var(--v-line, var(--rule)); color: var(--v-text, var(--fg)); transition: border-color 240ms; }
+.i8-door:hover, .i8-door:focus-visible { border-color: var(--v-l532, var(--fg)); box-shadow: inset 0 0 0 1px var(--v-l532, var(--fg)); outline: none; }
+.i8-door .i8-ico { color: var(--v-text2, var(--fg2)); }
+.i8-door-no { font: 300 44px/44px var(--serif); font-variant-numeric: lining-nums; color: var(--v-text3, var(--fg3)); }
+.i8-door-t { font: 400 24px/30px var(--serif); }
+.i8-door-k { margin-top: auto; font: 400 14px/21px var(--v-ui, var(--sans)); color: var(--v-text2, var(--fg2)); }
+@media (max-width: 1100px) { .i8-doors { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .i8-doors { grid-template-columns: minmax(0, 1fr); } .i8-door { min-height: 0; } }
+.i8-lede { font: 400 22px/35px var(--serif); max-width: 52ch; margin: 0 0 18px; color: var(--v-text, var(--fg)); }
+.i8-lede b { font-weight: 500; }
+@media (max-width: 640px) { .i8-lede { font-size: 19px; line-height: 30px; } }
+
+/* ---------- shared figure frame ---------- */
+.i8-fig { margin-top: 14px; }
+.i8-tag { display: inline-block; font: 400 10px/14px var(--mono); letter-spacing: 0.06em; padding: 0 4px; border: 1px solid var(--rule2); color: var(--fg2); white-space: nowrap; }
+:root[data-mode="visual"] .i8-tag { font: 500 12px/18px var(--v-ui); letter-spacing: 0; padding: 0 8px; border-color: var(--v-line2); color: var(--v-text2); }
+.i8-btn { background: none; border: 1px solid var(--rule2); color: var(--fg2); font: 400 11px/16px var(--mono); padding: 2px 7px; cursor: pointer; text-align: left; }
+.i8-btn:hover { background: var(--acc-dim); color: var(--fg); }
+.i8-btn.on { background: var(--fg); color: var(--bg); }
+.i8-btn:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
+.i8-scroll { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+.i8-ctlrow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding: 6px 8px; border-bottom: 1px solid var(--rule); }
+.i8-ctlrow .lbl { margin-right: 2px; }
+.i8-ctlrow .seg { flex-wrap: wrap; }
+:root[data-mode="visual"] .i8-ctlrow { padding: 0 0 16px; border: 0; gap: 12px 20px; }
+:root[data-mode="visual"] .i8-ctlrow .lbl { font: 500 14px/20px var(--v-ui); letter-spacing: 0; text-transform: none; color: var(--v-text3); }
+.i8-num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: pre; }
+:root[data-mode="visual"] .i8-num { font-family: var(--v-ui); }
+.pop .i8-note { font-size: 0.92em; color: var(--fg3); }

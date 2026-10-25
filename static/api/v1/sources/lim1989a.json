@@ -1,0 +1,39 @@
+{
+  "citation": "E.J. Lim, M.M. Fejer, R.L. Byer, \"Second-harmonic generation of green light in periodically poled planar lithium niobate waveguide\", Electronics Letters 25, 174-174, (1989) doi:10.1049/el:19890127",
+  "link": "https://doi.org/10.1049/el:19890127",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "E.J. Lim"
+      },
+      {
+        "literal": "M.M. Fejer"
+      },
+      {
+        "literal": "R.L. Byer"
+      }
+    ],
+    "container_title": "Electronics Letters",
+    "doi": "10.1049/el:19890127",
+    "id": "lim1989a",
+    "issue": "3",
+    "issued": "1989-02-02",
+    "page": "174-174",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Second-harmonic generation of green light in periodically poled planar lithium niobate waveguide",
+    "type": "article-journal",
+    "volume": "25"
+  }
+}

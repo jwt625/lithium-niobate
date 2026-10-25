@@ -1,0 +1,497 @@
+# refs.yaml: chapter 01 "The crystal"
+# Lane C01, 2026-10-25.
+# Bibliographic fields checked against api.crossref.org/works/{doi} on 2026-10-25 (no mailto or personal
+# parameter) unless "verified" says otherwise. "oa" records what is known; "not checked" means no OA lookup
+# was made. "read" states what this lane read: full text, pages, abstract (Crossref), or title only.
+# Local PDFs (weis1985, volk2008) were read for verification only; nothing is redistributed or copied in layout.
+
+- id: weis1985
+  citation: "R. S. Weis, T. K. Gaylord, \"Lithium niobate: Summary of physical properties and crystal structure\", Appl. Phys. A 37, 191-203 (1985)"
+  doi: 10.1007/BF00614817
+  url: https://doi.org/10.1007/BF00614817
+  oa: closed (publisher TDM license URL only)
+  read: full text, all 13 pages (author's local copy)
+  verified: Crossref 2026-10-25
+  supports: "Structure description (octahedra, Nb/vacancy/Li order, paraelectric positions, Li +-0.37 A), 3m and R3c, hexagonal and rhombohedral cells (Eq. 1), cleavage 32.75 deg, axis and sign conventions, Neumann's principle (1833), tensor forms Eqs. (2), (4), (8), (12), (16)-(17), (19), congruent Li/Nb 0.946, Tc statements, indices Table 2"
+  notes: "Prints Schoenflies symbol C6v (should be C3v); Table 2 no at 472.7 nm printed 3.3597 (should be 2.3597); Tc 1210 C in text vs 1165 C in Table 1 (note-R14)."
+
+- id: volk2008
+  citation: "T. Volk, M. Woehlecke, Lithium Niobate: Defects, Photorefraction and Ferroelectric Switching, Springer Series in Materials Science 115 (Springer, Berlin Heidelberg, 2008)"
+  doi: 10.1007/978-3-540-70766-0
+  isbn: 978-3-540-70765-3
+  url: https://doi.org/10.1007/978-3-540-70766-0
+  oa: closed
+  read: "Ch. 1 (pp. 1-7), Ch. 2 (pp. 9-49), Sec. 3.2.1 (pp. 59-60), Sec. 6.1 (pp. 139-143), Ch. 7 selected (pp. 164-200); reference list entries checked for every original cited here (author's local copy)"
+  verified: "Crossref 2026-10-25 (Crossref gives year 2009; copyright page reads 2008, series volume 115 from the book)"
+  supports: "Compilation values (status P-comp): lattice and density CLN/SLN, Ps, Tc, Tm (Table 1.1); composition, phase diagram, SLN growth methods; defect models and polaron data; hydrogen; dopant thresholds and sites; Tc and UV-edge composition formulas; coercive and internal fields (Table 7.1); domain shapes, wall properties, poling history"
+  notes: "Source-internal errors found: paraelectric group printed R3m (p. 2); density unit g cm^-1 (Table 1.1); R1 = 0.969 vs 0.94 (pp. 5, 10); Ps column cites an LiTaO3 paper (ref. [24]); Table 7.1 Eint '2-33'; SLN Ec 60-65 kV/cm (Table 7.1) vs 21-25 kV/cm (p. 118); NSLN melting point '<1200 C' below its own NSLN Tc; OH peak positions differ between p. 24 and Table 2.4."
+
+- id: hsu1997
+  citation: "R. Hsu, E. N. Maslen, D. du Boulay, N. Ishizawa, \"Synchrotron X-ray studies of LiNbO3 and LiTaO3\", Acta Cryst. B 53, 420-428 (1997)"
+  doi: 10.1107/S010876819600777X
+  url: http://www.crystallography.net/cod/2101845.html
+  oa: "paper closed; CIF in the Crystallography Open Database (COD 2101845), CIF header: use with attribution to the article"
+  read: abstract (Crossref); CIF via the site's data file mockup/data/linbo3-cell.json
+  verified: Crossref 2026-10-25
+  supports: "Atomic coordinates, a = 5.148 A, c = 13.863 A at 293 K, bond lengths, rhombohedral a_R and alpha (abstract), Ps 0.43 C/m^2 Hirshfeld vs 0.71 experimental (abstract); all derived displacements"
+
+- id: abrahams1966a
+  citation: "S. C. Abrahams, J. M. Reddy, J. L. Bernstein, \"Ferroelectric lithium niobate. 3. Single crystal X-ray diffraction study at 24 C\", J. Phys. Chem. Solids 27, 997-1012 (1966)"
+  doi: 10.1016/0022-3697(66)90072-2
+  url: https://doi.org/10.1016/0022-3697(66)90072-2
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "History of the structure determination"
+
+- id: abrahams1966b
+  citation: "S. C. Abrahams, W. C. Hamilton, J. M. Reddy, \"Ferroelectric lithium niobate. 4. Single crystal neutron diffraction study at 24 C\", J. Phys. Chem. Solids 27, 1013-1018 (1966)"
+  doi: 10.1016/0022-3697(66)90073-4
+  url: http://www.crystallography.net/cod/1541936.html
+  oa: not checked; CIF in COD 1541936
+  read: title only; lattice values via COD (note-R06)
+  verified: Crossref 2026-10-25
+  supports: "a = 5.14829 A, c = 13.8631 A at 24 C (P-db)"
+
+- id: abrahams1966c
+  citation: "S. C. Abrahams, H. J. Levinstein, J. M. Reddy, \"Ferroelectric lithium niobate. 5. Polycrystal X-ray diffraction study between 24 and 1200 C\", J. Phys. Chem. Solids 27, 1019-1026 (1966)"
+  doi: 10.1016/0022-3697(66)90074-6
+  url: https://doi.org/10.1016/0022-3697(66)90074-6
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "History: high-temperature structure series"
+
+- id: nassau1965
+  citation: "K. Nassau, H. J. Levinstein, G. M. Loiacono, \"The domain structure and etching of ferroelectric lithium niobate\", Appl. Phys. Lett. 6, 228-229 (1965)"
+  doi: 10.1063/1.1754147
+  url: https://doi.org/10.1063/1.1754147
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "First domain etching of LN (milestone)"
+
+- id: nassau1966b
+  citation: "K. Nassau, H. J. Levinstein, G. M. Loiacono, \"Ferroelectric lithium niobate. 2. Preparation of single domain crystals\", J. Phys. Chem. Solids 27, 989-996 (1966)"
+  doi: 10.1016/0022-3697(66)90071-0
+  url: https://doi.org/10.1016/0022-3697(66)90071-0
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "Milestone: single-domain crystal preparation (method not read)"
+
+- id: boysen1994
+  citation: "H. Boysen, F. Altorfer, \"A neutron powder investigation of the high-temperature structure and phase transition in LiNbO3\", Acta Cryst. B 50, 405-414 (1994)"
+  doi: 10.1107/S0108768193012820
+  url: https://doi.org/10.1107/S0108768193012820
+  oa: "paper closed; CIFs in COD 2101175-2101185"
+  read: title (Crossref); space group of high-temperature entries and Tc near 1430 K per note-R06
+  verified: Crossref 2026-10-25
+  supports: "Paraelectric space group R-3c (P-db via COD); Li disorder at high T (via volk2008)"
+
+- id: inbar1996
+  citation: "I. Inbar, R. E. Cohen, \"Comparison of the electronic structures and energetics of ferroelectric LiNbO3 and LiTaO3\", Phys. Rev. B 53, 1193-1204 (1996); preprint arXiv:mtrl-th/9508005"
+  doi: 10.1103/PhysRevB.53.1193
+  url: https://arxiv.org/abs/mtrl-th/9508005
+  oa: arXiv preprint (green)
+  read: full text of the arXiv preprint
+  verified: Crossref 2026-10-25
+  supports: "Double-well depth 18.3 mRy (2858 K) LN, 17.3 mRy LT; Li-alone single well; order-disorder reading; Nb-O hybridization; soft mode 250 cm^-1; paraelectric average structure R-3c with 10-atom cell"
+
+- id: gopalan1998
+  citation: "V. Gopalan, T. E. Mitchell, Y. Furukawa, K. Kitamura, \"The role of nonstoichiometry in 180 deg domain switching of LiNbO3 crystals\", Appl. Phys. Lett. 72, 1981-1983 (1998)"
+  doi: 10.1063/1.121491
+  url: https://doi.org/10.1063/1.121491
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Ec ratio 4-5 (C = 0.484 vs 0.498), Eint about 2.5 kV/mm in CLN vanishing in SLN, H content no effect, Ps = 80 +- 5 uC/cm^2"
+
+- id: gopalan1999
+  citation: "V. Gopalan, Q. X. Jia, T. E. Mitchell, \"In situ video observation of 180 deg domain kinetics in congruent LiNbO3 crystals\", Appl. Phys. Lett. 75, 2482-2484 (1999)"
+  doi: 10.1063/1.125055
+  url: https://doi.org/10.1063/1.125055
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Domains nucleate and grow as six-sided polygons; spike-like wall velocity (pinning-depinning)"
+
+- id: gopalan1996
+  citation: "V. Gopalan, M. C. Gupta, \"Origin of internal field and visualization of 180 deg domains in congruent LiTaO3 crystals\", J. Appl. Phys. 80, 6099-6106 (1996)"
+  doi: 10.1063/1.363684
+  url: https://doi.org/10.1063/1.363684
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "In LiTaO3, internal field correlates with OH^- band changes after reversal; realigns after anneal at >= 200 C"
+
+- id: gopalan2007
+  citation: "V. Gopalan, V. Dierolf, D. A. Scrymgeour, \"Defect-domain wall interactions in trigonal ferroelectrics\", Annu. Rev. Mater. Res. 37, 449-489 (2007)"
+  doi: 10.1146/annurev.matsci.37.052506.084247
+  url: https://doi.org/10.1146/annurev.matsci.37.052506.084247
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Ideal walls 1-2 lattice units wide; property variations extending over micrometres; point defects and clusters control local wall structure"
+
+- id: kitamura1998
+  citation: "K. Kitamura, Y. Furukawa, K. Niwa, V. Gopalan, T. E. Mitchell, \"Crystal growth and low coercive field 180 deg domain switching characteristics of stoichiometric LiTaO3\", Appl. Phys. Lett. 73, 3073-3075 (1998)"
+  doi: 10.1063/1.122676
+  url: https://doi.org/10.1063/1.122676
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "Evidence that volk2008 ref. [24], cited for LN Ps, concerns LiTaO3 (citation-error flag)"
+
+- id: chen2001
+  citation: "Y.-L. Chen, J.-J. Xu, X.-J. Chen, Y.-F. Kong, G.-Y. Zhang, \"Domain reversion process in near-stoichiometric LiNbO3 crystals\", Opt. Commun. 188, 359-364 (2001)"
+  doi: 10.1016/S0030-4018(00)01137-8
+  url: https://doi.org/10.1016/S0030-4018(00)01137-8
+  oa: not checked
+  read: title only (values via volk2008)
+  verified: Crossref 2026-10-25
+  supports: "Switching field of near-SLN about one third of CLN (via volk2008 p. 184); SLN Tc 1206 C and Ps column source in volk2008 Table 1.1"
+
+- id: chen2003
+  citation: "Y. Chen, C. Lou, J. Xu, S. Chen, Y. Kong, G. Zhang, J. Wen, \"Domain switching characteristics of the near stoichiometric LiNbO3 doped with MgO\", J. Appl. Phys. 94, 3350-3352 (2003)"
+  doi: 10.1063/1.1597960
+  url: https://doi.org/10.1063/1.1597960
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Switching field 1.8 +- 0.2 kV/mm for near-SLN + 2.0 mol% MgO (VTE); about 1/3 of near-SLN, 1/10 of CLN"
+
+- id: iyi1992
+  citation: "N. Iyi, K. Kitamura, F. Izumi, J. K. Yamamoto, T. Hayashi, H. Asano, S. Kimura, \"Comparative study of defect structures in lithium niobate with different compositions\", J. Solid State Chem. 101, 340-352 (1992)"
+  doi: 10.1016/0022-4596(92)90189-3
+  url: https://doi.org/10.1016/0022-4596(92)90189-3
+  oa: not checked
+  read: title only (values via volk2008)
+  verified: Crossref 2026-10-25
+  supports: "About 1% Nb_Li and 4% V_Li in CLN (Li-site vacancy model); Tc-composition fit Tc = 39.26 c - 760.67"
+
+- id: abrahams1986
+  citation: "S. C. Abrahams, P. Marsh, \"Defect structure dependence on composition in lithium niobate\", Acta Cryst. B 42, 61-68 (1986)"
+  doi: 10.1107/S0108768186098567
+  url: https://doi.org/10.1107/S0108768186098567
+  oa: not checked
+  read: title only (values via volk2008)
+  verified: Crossref 2026-10-25
+  supports: "Nb on 4.9% of Li sites; Nb-site vacancy model"
+
+- id: donnerberg1989
+  citation: "H. Donnerberg, S. M. Tomlinson, C. R. A. Catlow, O. F. Schirmer, \"Computer-simulation studies of intrinsic defects in LiNbO3 crystals\", Phys. Rev. B 40, 11909-11916 (1989)"
+  doi: 10.1103/PhysRevB.40.11909
+  url: https://doi.org/10.1103/PhysRevB.40.11909
+  oa: not checked
+  read: title only (values via volk2008)
+  verified: Crossref 2026-10-25
+  supports: "Defect formation energies 4.56, 15.17, 10.67 eV for the three compensation reactions"
+
+- id: lerner1968
+  citation: "P. Lerner, C. Legras, J. P. Dumas, \"Stoechiometrie des monocristaux de metaniobate de lithium\", J. Cryst. Growth 3-4, 231-235 (1968)"
+  doi: 10.1016/0022-0248(68)90139-5
+  url: https://doi.org/10.1016/0022-0248(68)90139-5
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "Li deficiency of commercial crystals; lattice parameters vs composition; density argument for Nb_Li (via volk2008, weis1985)"
+
+- id: reisman1958
+  citation: "A. Reisman, F. Holtzberg, \"Heterogeneous equilibria in the systems Li2O-, Ag2O-Nb2O5 and oxide-models\", J. Am. Chem. Soc. 80, 6503-6507 (1958)"
+  doi: 10.1021/ja01557a010
+  url: https://doi.org/10.1021/ja01557a010
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "Phase diagram Li2O-Nb2O5 (history)"
+
+- id: carruthers1971
+  citation: "J. R. Carruthers, G. E. Peterson, M. Grasso, P. M. Bridenbaugh, \"Nonstoichiometry and crystal growth of lithium niobate\", J. Appl. Phys. 42, 1846-1851 (1971)"
+  doi: 10.1063/1.1660455
+  url: https://doi.org/10.1063/1.1660455
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Congruent composition 48.6 mol% Li2O; room-temperature solid solution 48-50 mol%; methods 93Nb NMR, Tc shifts, DTA"
+
+- id: bordui1992
+  citation: "P. F. Bordui, R. G. Norwood, D. H. Jundt, M. M. Fejer, \"Preparation and characterization of off-congruent lithium niobate crystals\", J. Appl. Phys. 71, 875-879 (1992)"
+  doi: 10.1063/1.351308
+  url: https://doi.org/10.1063/1.351308
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "VTE; Tc and phase-matching T nearly linear in Li/Nb; slow Li diffusivity; Tc fit Tc = 39.064 c - 746.73 (via volk2008)"
+
+- id: kitamura1992
+  citation: "K. Kitamura, J. K. Yamamoto, N. Iyi, S. Kimura, T. Hayashi, \"Stoichiometric LiNbO3 single crystal growth by double crucible Czochralski method using automatic powder supply system\", J. Cryst. Growth 116, 327-332 (1992)"
+  doi: 10.1016/0022-0248(92)90640-5
+  url: https://doi.org/10.1016/0022-0248(92)90640-5
+  oa: not checked
+  read: title only (method details via volk2008)
+  verified: "Crossref 2026-10-25 (Crossref prints the fourth author as 'S. Kirnura', an OCR error for S. Kimura)"
+  supports: "Double-crucible Czochralski growth of near-SLN"
+
+- id: malovichko1993
+  citation: "G. I. Malovichko, V. G. Grachev, E. P. Kokanyan, O. F. Schirmer, K. Betzler, B. Gather, F. Jermann, S. Klauer, U. Schlarb, M. Woehlecke, \"Characterization of stoichiometric LiNbO3 grown from melts containing K2O\", Appl. Phys. A 56, 103-108 (1993)"
+  doi: 10.1007/BF00517674
+  url: https://doi.org/10.1007/BF00517674
+  oa: not checked
+  read: title only (details via volk2008)
+  verified: Crossref 2026-10-25
+  supports: "Growth of near-SLN from K2O-containing melts"
+
+- id: polgar1997
+  citation: "K. Polgar, A. Peter, L. Kovacs, G. Corradi, Zs. Szaller, \"Growth of stoichiometric LiNbO3 single crystals by top seeded solution growth method\", J. Cryst. Growth 177, 211-216 (1997)"
+  doi: 10.1016/S0022-0248(96)01098-6
+  url: https://doi.org/10.1016/S0022-0248(96)01098-6
+  oa: not checked
+  read: title only (details via volk2008)
+  verified: Crossref 2026-10-25
+  supports: "TSSG growth of SLN; 20 mm boules (via volk2008)"
+
+- id: kovacs1997
+  citation: "L. Kovacs, G. Ruschhaupt, K. Polgar, G. Corradi, M. Woehlecke, \"Composition dependence of the ultraviolet absorption edge in lithium niobate\", Appl. Phys. Lett. 70, 2801-2803 (1997)"
+  doi: 10.1063/1.119056
+  url: https://doi.org/10.1063/1.119056
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "UV-edge composition method: 0.1 mol% absolute, better than 0.01 mol% relative near SLN; calibration behind volk2008 Eqs. (6.5)-(6.6)"
+
+- id: schirmer2009
+  citation: "O. F. Schirmer, M. Imlau, C. Merschjann, B. Schoke, \"Electron small polarons and bipolarons in LiNbO3\", J. Phys.: Condens. Matter 21, 123201 (2009)"
+  doi: 10.1088/0953-8984/21/12/123201
+  url: https://doi.org/10.1088/0953-8984/21/12/123201
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "Primary review for polaron band shapes (pending; numbers not taken from it)"
+
+- id: herth2005
+  citation: "P. Herth, D. Schaniel, Th. Woike, T. Granzow, M. Imlau, E. Kraetzig, \"Polarons generated by laser pulses in doped LiNbO3\", Phys. Rev. B 71, 125128 (2005)"
+  doi: 10.1103/PhysRevB.71.125128
+  url: https://doi.org/10.1103/PhysRevB.71.125128
+  oa: not checked
+  read: title only (values via volk2008)
+  verified: Crossref 2026-10-25
+  supports: "Pump-probe IR band at 740 nm (1.67 eV) assigned to bound polaron Nb_Li^4+"
+
+- id: furukawa2001
+  citation: "Y. Furukawa, K. Kitamura, A. Alexandrovski, R. K. Route, M. M. Fejer, G. Foulon, \"Green-induced infrared absorption in MgO doped LiNbO3\", Appl. Phys. Lett. 78, 1970-1972 (2001)"
+  doi: 10.1063/1.1359137
+  url: https://doi.org/10.1063/1.1359137
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "GRIIRA threshold equals photorefraction threshold; assigned to Nb_Li small polaron"
+
+- id: furukawa2000
+  citation: "Y. Furukawa, K. Kitamura, S. Takekawa, A. Miyamoto, M. Terao, N. Suda, \"Photorefraction in LiNbO3 as a function of [Li]/[Nb] and MgO concentrations\", Appl. Phys. Lett. 77, 2494-2496 (2000)"
+  doi: 10.1063/1.1318721
+  url: https://doi.org/10.1063/1.1318721
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Near-SLN ([Li]/[Nb] = 0.993) with > 0.78 mol% MgO: no measurable damage at 532 nm up to 2 MW/cm^2"
+
+- id: bryan1984
+  citation: "D. A. Bryan, R. Gerson, H. E. Tomaschke, \"Increased optical damage resistance in lithium niobate\", Appl. Phys. Lett. 44, 847-849 (1984)"
+  doi: 10.1063/1.94946
+  url: https://doi.org/10.1063/1.94946
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: ">= 4.5 at.% MgO; 100x photoconductivity; Glass current unchanged; activation 0.1 vs 0.5 eV; OH line 2.83 um vs 2.87 um"
+
+- id: zhong1980
+  citation: "G.-G. Zhong, J. Jin, Z.-K. Wu, conference abstract, 11th International Quantum Electronics Conference (IQEC), Washington DC, 1980-06, IEEE Cat. 80CH1561-0, p. 631; also cited as J. Opt. Soc. Am. 70, 631 (1980)"
+  doi: null
+  url: null
+  oa: not applicable
+  read: not read; cited through volk2008 ref. [171] and note-R07
+  verified: "no DOI; bibliographic data from note-R07 (status P) and volk2008 reference list"
+  supports: "First report of reduced optical damage with Mg (4.6% Mg, via volk2008 p. 34)"
+
+- id: iyi1995
+  citation: "N. Iyi, K. Kitamura, Y. Yajima, S. Kimura, Y. Furukawa, M. Sato, \"Defect structure model of MgO-doped LiNbO3\", J. Solid State Chem. 118, 148-152 (1995)"
+  doi: 10.1006/jssc.1995.1323
+  url: https://doi.org/10.1006/jssc.1995.1323
+  oa: not checked
+  read: title only (table via volk2008 Table 2.2)
+  verified: Crossref 2026-10-25
+  supports: "Two-step Mg incorporation scheme and formulas at 0, 3, 8% MgO"
+
+- id: miyazawa1979
+  citation: "S. Miyazawa, \"Ferroelectric domain inversion in Ti-diffused LiNbO3 optical waveguide\", J. Appl. Phys. 50, 4599-4603 (1979)"
+  doi: 10.1063/1.326568
+  url: https://doi.org/10.1063/1.326568
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Domain inversion layer in Ti-diffused +c face only; none on -c"
+
+- id: feng1980
+  citation: "D. Feng, N.-B. Ming, J.-F. Hong, Y.-S. Yang, J.-S. Zhu, Z. Yang, Y.-N. Wang, \"Enhancement of second-harmonic generation in LiNbO3 crystals with periodic laminar ferroelectric domains\", Appl. Phys. Lett. 37, 607-609 (1980)"
+  doi: 10.1063/1.92035
+  url: https://doi.org/10.1063/1.92035
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Czochralski-grown periodic laminar domains; approximate QPM on d33; SHG enhancement"
+
+- id: armstrong1962
+  citation: "J. A. Armstrong, N. Bloembergen, J. Ducuing, P. S. Pershan, \"Interactions between light waves in a nonlinear dielectric\", Phys. Rev. 127, 1918-1939 (1962)"
+  doi: 10.1103/PhysRev.127.1918
+  url: https://doi.org/10.1103/PhysRev.127.1918
+  oa: not checked
+  read: title only (QPM content per note-R07)
+  verified: Crossref 2026-10-25
+  supports: "Origin of the periodic-reversal (QPM) idea (milestone)"
+
+- id: yamada1993
+  citation: "M. Yamada, N. Nada, M. Saitoh, K. Watanabe, \"First-order quasi-phase matched LiNbO3 waveguide periodically poled by applying an external field for efficient blue second-harmonic generation\", Appl. Phys. Lett. 62, 435-436 (1993)"
+  doi: 10.1063/1.108925
+  url: https://doi.org/10.1063/1.108925
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Room-temperature external-field periodic poling; 20.7 mW blue; 600 %/(W cm^2); pulse and period via volk2008 p. 178"
+
+- id: myers1995
+  citation: "L. E. Myers, R. C. Eckardt, M. M. Fejer, R. L. Byer, W. R. Bosenberg, J. W. Pierce, \"Quasi-phase-matched optical parametric oscillators in bulk periodically poled LiNbO3\", J. Opt. Soc. Am. B 12(11), 2102 (1995)"
+  doi: 10.1364/JOSAB.12.002102
+  url: https://doi.org/10.1364/JOSAB.12.002102
+  oa: "Crossref license URL: Optica OA_License_v1 (VOR); OA status not checked"
+  read: title only (poling details via volk2008 pp. 179-180)
+  verified: "Crossref 2026-10-25 (Crossref gives first page 2102 only)"
+  supports: "Bulk PPLN OPOs; backswitching, Ec/2 hold, electrode configurations, 800 C stability (via volk2008)"
+
+- id: shur2006
+  citation: "V. Ya. Shur, \"Kinetics of ferroelectric domains: Application of general approach to LiNbO3 and LiTaO3\", J. Mater. Sci. 41, 199-210 (2006)"
+  doi: 10.1007/s10853-005-6065-7
+  url: https://doi.org/10.1007/s10853-005-6065-7
+  oa: not checked
+  read: title only
+  verified: Crossref 2026-10-25
+  supports: "Domain kinetics framework (nucleation, step generation on walls) for FIG-01-09"
+
+- id: lee2011
+  citation: "D. Lee, H. Xu, V. Dierolf, V. Gopalan, S. R. Phillpot, \"Shape of ferroelectric domains in LiNbO3 and LiTaO3 from defect/domain-wall interactions\", Appl. Phys. Lett. 98, 092903 (2011)"
+  doi: 10.1063/1.3560343
+  url: https://doi.org/10.1063/1.3560343
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Y-walls parallel to (11-20) lower in energy than X-walls (10-10) in stoichiometric LN and LT (DFT); hexagonal domains in SLN and CLN; triangular in CLT"
+
+- id: schroder2012
+  citation: "M. Schroeder, A. Haussmann, A. Thiessen, E. Soergel, T. Woike, L. M. Eng, \"Conducting domain walls in lithium niobate single crystals\", Adv. Funct. Mater. 22, 3936-3944 (2012)"
+  doi: 10.1002/adfm.201201174
+  url: https://doi.org/10.1002/adfm.201201174
+  oa: not checked
+  read: abstract (Crossref)
+  verified: Crossref 2026-10-25
+  supports: "Domain-wall conduction in mm-thick LN single crystals, switched by super-bandgap light, tuned by wall tilt"
+
+- id: werner2017
+  citation: "C. S. Werner, S. J. Herr, K. Buse, B. Sturman, E. Soergel, C. Razzaghi, I. Breunig, \"Large and accessible conductivity of charged domain walls in lithium niobate\", Sci. Rep. 7, 9862 (2017)"
+  doi: 10.1038/s41598-017-09703-2
+  url: https://europepmc.org/articles/PMC5575345
+  oa: gold, CC BY 4.0 (Crossref license)
+  read: full text (Europe PMC XML, PMC5575345)
+  verified: Crossref 2026-10-25
+  supports: "5 mol% MgO CLN, 300 um; tip-written inclined walls (about 1 deg); conductivity about 0.02 (Ohm cm)^-1 for 10 nm width; > 13 orders above bulk (< 1e-15 (Ohm cm)^-1); currents; stability <= 70 C; Ea 0.10 eV"
+  notes: "Near-SLN MgO content given as 1.2 mol% in Results and 1.3 mol% in Methods (internal inconsistency, not used here)."
+
+- id: kushibiki1999
+  citation: "J. Kushibiki, I. Takanaga, M. Arakawa, T. Sannomiya, \"Accurate measurements of the acoustical physical constants of LiNbO3 and LiTaO3 single crystals\", IEEE Trans. Ultrason. Ferroelectr. Freq. Control 46, 1315-1323 (1999)"
+  doi: 10.1109/58.796136
+  url: https://doi.org/10.1109/58.796136
+  oa: "green (Tohoku repository) per note-R06"
+  read: not read by this lane; density value per note-R06 (P, re-checked there)
+  verified: Crossref 2026-10-25
+  supports: "Density of SAW-grade CLN 4642.8 +- 0.2 kg/m^3"
+
+- id: cti1999
+  citation: "Crystal Technology Inc., \"LiNbO3 material properties\", data sheet DC-12 8/99 (congruent, 48.38 mol% Li2O)"
+  doi: null
+  url: null
+  oa: vendor PDF
+  read: not read by this lane; values per note-R06 (status V)
+  verified: note-R06
+  supports: "Tc 1142.3 +- 0.7 C at 48.38 mol%; congruent 48.38 +- 0.01 mol% (vendor values, status V)"
+
+- id: ieee176
+  citation: "IEEE Standard on Piezoelectricity, IEEE Std 176-1987 (1988); reprinted IEEE Trans. Ultrason. Ferroelectr. Freq. Control 43, 717 (1996)"
+  doi: 10.1109/IEEESTD.1988.79638
+  url: https://doi.org/10.1109/IEEESTD.1988.79638
+  oa: closed
+  read: not read by this lane; rule text per note-R14 rows 78-80 (read there)
+  verified: Crossref 2026-10-25 (record exists; no author or page metadata)
+  supports: "Axis rules for 3m: +Z positive d33, +Y positive d22, X along a and perpendicular to a mirror; no 3m change from 1949"
+
+- id: ire1949
+  citation: "IRE, \"Standards on Piezoelectric Crystals, 1949\", Proc. IRE 37, 1378-1395 (1949)"
+  doi: 10.1109/JRPROC.1949.229975
+  url: https://doi.org/10.1109/JRPROC.1949.229975
+  oa: closed
+  read: not read; cited as weis1985 ref. [9]
+  verified: Crossref 2026-10-25
+  supports: "Origin of the +c compression rule used by weis1985"
+
+- id: nye1985
+  citation: "J. F. Nye, Physical Properties of Crystals: Their Representation by Tensors and Matrices (Oxford University Press; first published 1957, paperback reissue 1985)"
+  doi: null
+  isbn: 978-0-19-851165-6
+  url: https://openlibrary.org/search?q=nye+physical+properties+of+crystals
+  oa: closed (book)
+  read: not read by this lane
+  verified: "ISBN via Open Library search 2026-10-25"
+  supports: "Standard method for applying Neumann's principle and Voigt contraction; weis1985 ref. [33] is Nye (Oxford 1957), cited for Neumann's principle and the compliance factor rules"
+
+- id: note-R06
+  citation: "lithium-niobate.com research note R06, material properties data (2026-10-24)"
+  doi: null
+  url: research/R06-material-properties-data.md
+  oa: repository file
+  read: Secs. 1-3
+  verified: n/a
+  supports: "Source register, COD entries, pitfalls (settings mix-up, sign conventions), kushibiki1999 density, cti1999 vendor values"
+
+- id: note-R07
+  citation: "lithium-niobate.com research note R07, history 1928-2026 (2026-10-24)"
+  doi: null
+  url: research/R07-history.md
+  oa: repository file
+  read: Secs. 1.1-1.3, 5, 6
+  verified: n/a
+  supports: "Dates and bibliographic status of milestones; Zhong 1980 record; QPM-origin note"
+
+- id: note-R08
+  citation: "lithium-niobate.com research note R08, TFLN state of the art (2026-10-24)"
+  doi: null
+  url: research/R08-tfln-state-of-art.md
+  oa: repository file
+  read: Secs. 3.1-3.7
+  verified: n/a
+  supports: "Thin-film poling records (cross-reference only)"
+
+- id: note-R11
+  citation: "lithium-niobate.com research note R11, browser simulations (2026-10-24)"
+  doi: null
+  url: research/R11-browser-simulations.md
+  oa: repository file
+  read: Secs. 0, S1, S2, S9, 4-5
+  verified: n/a
+  supports: "Index-ellipsoid behaviour under transverse field; KAI fit form; poling automaton validation"
+
+- id: note-R14
+  citation: "lithium-niobate.com research note R14, property verification (2026-10-24)"
+  doi: null
+  url: research/R14-property-verification.md
+  oa: repository file
+  read: all
+  verified: n/a
+  supports: "Row-level verification statuses, source-internal error list, sign-convention analysis (rows 76-81)"

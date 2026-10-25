@@ -1,0 +1,57 @@
+{
+  "citation": "E. Lallier, J.P. Pocholle, M. Papuchon, et al., \"Laser oscillation of single-mode channel waveguide in Nd:MgO:LiNbO3\", Electronics Letters 25, 1491-1492, (1989) doi:10.1049/el:19891000",
+  "link": "https://doi.org/10.1049/el:19891000",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "E. Lallier"
+      },
+      {
+        "literal": "J.P. Pocholle"
+      },
+      {
+        "literal": "M. Papuchon"
+      },
+      {
+        "literal": "C. Grezes-Besset"
+      },
+      {
+        "literal": "E. Pelletier"
+      },
+      {
+        "literal": "M. de Micheli"
+      },
+      {
+        "literal": "M.J. Li"
+      },
+      {
+        "literal": "Q. He"
+      },
+      {
+        "literal": "D.B. Ostrowsky"
+      }
+    ],
+    "container_title": "Electronics Letters",
+    "doi": "10.1049/el:19891000",
+    "id": "lallier1989",
+    "issue": "22",
+    "issued": "1989-10-26",
+    "page": "1491-1492",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Laser oscillation of single-mode channel waveguide in Nd:MgO:LiNbO3",
+    "type": "article-journal",
+    "volume": "25"
+  }
+}

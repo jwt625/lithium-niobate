@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "note": "All public records of this tensor across variants; spread is per component over all records (compare variant, conditions and frame before use).",
+    "tensor": "nlo-d"
+  },
+  "records": [
+    "nlo-d/cln/cti1999",
+    "nlo-d/cln/volk2008",
+    "nlo-d/sln/volk2008",
+    "nlo-d/unspecified/zhu2021"
+  ],
+  "spread": {
+    "d22": {
+      "max": 3,
+      "min": 2.1,
+      "n_records": 4
+    },
+    "d31": {
+      "max": 6,
+      "min": -5,
+      "n_records": 4
+    },
+    "d33": {
+      "max": 42,
+      "min": -33,
+      "n_records": 4
+    }
+  }
+}

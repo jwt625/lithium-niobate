@@ -1,0 +1,81 @@
+/* FIG-01-07 Which face is +z (prefix pz-). TECH: three ASCII columns. VISUAL: three illustrated stations whose parts switch on
+   data-on / data-flip; motion only with data-fx="on" (reduced motion: final states). */
+.pz-t { margin: 10px 0 0; }
+.pz-t .ph { align-items: center; flex-wrap: wrap; }
+.pz-gb { display: inline-flex; gap: 6px; }
+.pz-b { min-width: 10ch; background: var(--bg); border: 1px solid var(--rule2); color: var(--fg2); font: 400 10.5px/1 var(--mono); letter-spacing: 0.06em; padding: 4px 8px; cursor: pointer; }
+.pz-b:hover { background: var(--acc-dim); color: var(--fg); }
+.pz-b.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.pz-b:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
+.pz-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pz-col { min-width: 0; display: flex; flex-direction: column; }
+.pz-col + .pz-col { border-left: 1px solid var(--rule); }
+@media (max-width: 1000px) { .pz-cols { grid-template-columns: minmax(0, 1fr); } .pz-col + .pz-col { border-left: 0; border-top: 1px solid var(--rule2); } }
+.pz-h { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 4px 8px; border-bottom: 1px solid var(--rule); font: 400 10.5px/18px var(--mono); color: var(--fg2); }
+.pz-t .pz-a { height: 169px; padding: 8px 10px; box-sizing: content-box; color: var(--fg); }
+.pz-t .pz-ro { display: block; width: 100%; padding: 3px 8px; border-top: 1px solid var(--rule); font-size: 10.5px; line-height: 16px; color: var(--fg); }
+.pz-rule { margin: 0; padding: 4px 8px 6px; border-top: 1px solid var(--rule); font: 400 11px/16px var(--sans); color: var(--fg3); flex: 1; }
+.pz-rule sub { line-height: 0; }
+
+:root[data-mode="visual"] {
+  & .pz-v { margin: 24px 0 0; }
+  & .pz-vrow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+  @media (max-width: 1000px) { & .pz-vrow { grid-template-columns: minmax(0, 1fr); gap: 40px; } }
+  & .pz-vst { min-width: 0; }
+  & .pz-vh { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 12px; }
+  & .pz-vh h3 { margin: 0; font: 400 22px/28px var(--v-serif); color: var(--v-text); }
+  & .pz-vb { min-height: 44px; min-width: 96px; padding: 0 18px; border: 2px solid var(--v-line2); background: none; color: var(--v-text2); font: 500 15px/1 var(--v-ui); cursor: pointer; white-space: nowrap; transition: background-color 120ms var(--v-ease), color 120ms var(--v-ease); }
+  & .pz-vb:hover { background: var(--v-l532-dim); color: var(--v-text); }
+  & .pz-vb.on { background: var(--v-l532); color: var(--v-l532-ink); border-color: var(--v-l532); }
+  & .pz-vb:focus-visible { outline: 3px solid var(--v-l532); outline-offset: 3px; }
+  & .pz-vfig { position: relative; aspect-ratio: 300 / 260; background: var(--v-ink1); border: 1px solid var(--v-line); }
+  & .pz-vfig svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+  & .pz-vst .pz-ro { display: block; height: 28px; margin: 12px 0 0; overflow: hidden; white-space: pre; font: 500 18px/28px var(--v-ui); font-variant-numeric: tabular-nums; color: var(--v-text); }
+  & .pz-vst .v-cap { margin: 6px 0 0; }
+  & .pz-vctl { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  & .pz-vcap { margin: 14px 0 0; max-width: 90ch; }
+
+  /* drawing */
+  & .pz-vst .pz-metal, & .pz-vst .pz-rod { fill: var(--v-si); }
+  & .pz-vst .pz-jaw { fill: var(--v-si); stroke: var(--v-text3); stroke-width: 1; }
+  & .pz-vst .pz-mov { transform: translateY(-14px); }
+  & .pz-vst[data-on="1"] .pz-mov { transform: none; }
+  & .pz-vst .pz-force { opacity: 0; }
+  & .pz-vst .pz-force path { fill: none; stroke: var(--v-text2); stroke-width: 1.6; }
+  & .pz-vst .pz-force text { font: italic 500 16px/1 var(--v-serif); fill: var(--v-text2); }
+  & .pz-vst[data-on="1"] .pz-force { opacity: 1; }
+  & .pz-vst .pz-ln { fill: var(--v-ln); fill-opacity: 0.16; }
+  & .pz-vst .pz-edge { fill: none; stroke: var(--v-ln); stroke-width: 1.5; }
+  & .pz-vst .pz-face, & .pz-vst .pz-side { fill: none; stroke: var(--v-ln); stroke-width: 1.5; }
+  & .pz-vst .pz-rough { opacity: 0; }
+  & .pz-vst[data-on="1"] .pz-rough { opacity: 1; }
+  & .pz-vst[data-on="1"] .pz-smb { opacity: 0; }
+  & .pz-vst .pz-plate { transform-box: view-box; transform-origin: 150px 140px; }
+  & .pz-vst[data-flip="1"] .pz-plate { transform: rotate(180deg); }
+  & .pz-vst .pz-q { opacity: 0; }
+  & .pz-vst[data-on="1"] .pz-q { opacity: 1; }
+  & .pz-vst .pz-q circle { fill: var(--v-ink1); stroke: var(--v-text2); stroke-width: 1.2; }
+  & .pz-vst .pz-q path { fill: none; stroke: var(--v-text); stroke-width: 1.8; }
+  & .pz-vst .pz-ps line { stroke: var(--v-text); stroke-width: 2; }
+  & .pz-vst .pz-ps path { fill: var(--v-text); }
+  & .pz-vst .pz-pst { font: italic 500 16px/1 var(--v-serif); fill: var(--v-text); }
+  & .pz-vst .pz-fl { font: 600 15px/1 var(--v-ui); fill: var(--v-text2); }
+  & .pz-vst .pz-cer { fill: var(--v-text3); fill-opacity: 0.55; }
+  & .pz-vst .pz-pel { fill: var(--v-si); }
+  & .pz-vst .pz-pel.n { fill: var(--v-text3); }
+  & .pz-vst .pz-wire { fill: none; stroke: var(--v-text3); stroke-width: 1.4; }
+  & .pz-vst .pz-tube { fill: none; stroke: var(--v-text3); stroke-width: 1.2; }
+  & .pz-vst .pz-bulb, & .pz-vst .pz-hg { fill: var(--v-text2); }
+  & .pz-vst .pz-hg { transform-box: fill-box; transform-origin: 50% 100%; }
+  & .pz-vst[data-on="1"] .pz-hg { transform: scaleY(0.4); }
+  & .pz-vst .pz-cold { opacity: 0; }
+  & .pz-vst .pz-cold path { fill: none; stroke: var(--v-text2); stroke-width: 1.6; }
+  & .pz-vst[data-on="1"] .pz-cold { opacity: 1; }
+  & .pz-vst .pz-liq { fill: color-mix(in srgb, var(--v-text) 6%, transparent); }
+  & .pz-vst .pz-surf { fill: none; stroke: var(--v-text3); stroke-width: 1.2; }
+  & .pz-vst .pz-dish { fill: none; stroke: var(--v-text2); stroke-width: 2; }
+}
+:root[data-mode="visual"][data-fx="on"] {
+  & .pz-vst .pz-mov, & .pz-vst .pz-plate, & .pz-vst .pz-hg { transition: transform 360ms var(--v-ease); }
+  & .pz-vst .pz-q, & .pz-vst .pz-force, & .pz-vst .pz-rough, & .pz-vst .pz-smb, & .pz-vst .pz-cold { transition: opacity 240ms var(--v-ease) 120ms; }
+}

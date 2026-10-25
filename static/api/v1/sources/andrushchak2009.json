@@ -1,0 +1,60 @@
+{
+  "citation": "A. S. Andrushchak, B. G. Mytsyk, H. P. Laba, et al., \"Complete sets of elastic constants and photoelastic coefficients of pure and MgO-doped lithium niobate crystals at room temperature\", Journal of Applied Physics 106, 073510, (2009) doi:10.1063/1.3238507",
+  "link": "https://doi.org/10.1063/1.3238507",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "note": "Not reachable.",
+      "oa_status": "bronze"
+    },
+    "article_number": "073510",
+    "author": [
+      {
+        "family": "Andrushchak",
+        "given": "A. S."
+      },
+      {
+        "family": "Mytsyk",
+        "given": "B. G."
+      },
+      {
+        "family": "Laba",
+        "given": "H. P."
+      },
+      {
+        "family": "Yurkevych",
+        "given": "O. V."
+      },
+      {
+        "family": "Solskii",
+        "given": "I. M."
+      },
+      {
+        "family": "Kityk",
+        "given": "A. V."
+      },
+      {
+        "family": "Sahraoui",
+        "given": "B."
+      }
+    ],
+    "container_title": "Journal of Applied Physics",
+    "doi": "10.1063/1.3238507",
+    "id": "andrushchak2009",
+    "issued": "2009",
+    "read": "abstract only; numbers via sarabalis2020, mytsyk2021 and bouchy2022",
+    "title": "Complete sets of elastic constants and photoelastic coefficients of pure and MgO-doped lithium niobate crystals at room temperature",
+    "type": "article-journal",
+    "volume": "106"
+  }
+}

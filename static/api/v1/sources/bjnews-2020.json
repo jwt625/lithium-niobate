@@ -1,0 +1,24 @@
+{
+  "citation": "\"Obituary report for Feng Duan (Beijing News, citing Nanjing University)\", (2020) https://www.bjnews.com.cn/detail/160810570415610.html",
+  "link": "https://www.bjnews.com.cn/detail/160810570415610.html",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "bjnews-2020",
+    "issued": "2020-12",
+    "read": "Read: born 1923-07-23 Suzhou, died 2020-12-15 Nanjing",
+    "title": "Obituary report for Feng Duan (Beijing News, citing Nanjing University)",
+    "type": "webpage",
+    "url": "https://www.bjnews.com.cn/detail/160810570415610.html"
+  }
+}

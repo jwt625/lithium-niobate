@@ -1,0 +1,359 @@
+# Scalar property records: structure, composition, density. Schema: data/schema/scalar.schema.json.
+# Values re-keyed individually with citations (research notes R06 sec. 2.1, R14 sec. 2.1). Status codes per R06/R14.
+
+- id: point-group/unspecified/weis1985
+  kind: scalar
+  property: point-group
+  name: Point group (ferroelectric phase)
+  category: structure
+  value_text: "3m (C3v)"
+  unit: {ucum: "1", display: "-"}
+  variant: unspecified
+  provenance: {source_id: weis1985, locator: "p. 192, Sec. 2.1", status: P, research_note: "R14 row 1", transcribed: "2026-10-25"}
+  default: true
+  notes: "weis1985 prints the Schoenflies symbol as C6v, a typo; 3m is C3v (R14 row 1). Same in volk2008 p. 2."
+
+- id: space-group/unspecified/weis1985
+  kind: scalar
+  property: space-group
+  name: Space group (ferroelectric phase, below Tc)
+  category: structure
+  value_text: "R3c (No. 161)"
+  unit: {ucum: "1", display: "-"}
+  variant: unspecified
+  provenance: {source_id: weis1985, locator: "p. 192, Sec. 2.1", status: P, research_note: "R14 row 1", transcribed: "2026-10-25"}
+  default: true
+
+- id: space-group-paraelectric/unspecified/boysen1994
+  kind: scalar
+  property: space-group-paraelectric
+  name: Space group (paraelectric phase, above Tc)
+  category: structure
+  value_text: "R-3c (No. 167)"
+  unit: {ucum: "1", display: "-"}
+  variant: unspecified
+  provenance: {source_id: boysen1994, locator: "COD 2101175-2101185 high-temperature entries", status: P-db, research_note: "R06 sec. 2.1; R14 row 2", transcribed: "2026-10-25"}
+  default: true
+  notes: "volk2008 p. 2 prints R3m without a reference (R14 row 2, conflict); the CIF value is kept."
+
+- id: lattice-a/unspecified/cod-abrahams1966-pt4
+  kind: scalar
+  property: lattice-a
+  name: Lattice constant a (hexagonal setting)
+  symbol: a
+  category: structure
+  value: 5.14829
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  variant_note: "1966 crystal, composition not stated"
+  conditions: {temperature_C: 24, method: "single-crystal neutron diffraction"}
+  provenance: {source_id: cod, locator: "COD 1541936", status: P-db, original_reference: "Abrahams, Hamilton, Reddy, J. Phys. Chem. Solids 27, 1013 (1966), part 4, DOI 10.1016/0022-3697(66)90073-4", research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: lattice-c/unspecified/cod-abrahams1966-pt4
+  kind: scalar
+  property: lattice-c
+  name: Lattice constant c (hexagonal setting)
+  symbol: c
+  category: structure
+  value: 13.8631
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  variant_note: "1966 crystal, composition not stated"
+  conditions: {temperature_C: 24, method: "single-crystal neutron diffraction"}
+  provenance: {source_id: cod, locator: "COD 1541936", status: P-db, original_reference: "Abrahams, Hamilton, Reddy, J. Phys. Chem. Solids 27, 1013 (1966), part 4, DOI 10.1016/0022-3697(66)90073-4", research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: lattice-a/unspecified/hsu1997
+  kind: scalar
+  property: lattice-a
+  name: Lattice constant a (hexagonal setting)
+  symbol: a
+  category: structure
+  value: 5.148
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  conditions: {temperature_text: "293 K (COD CIF)", method: "synchrotron X-ray diffraction"}
+  provenance: {source_id: hsu1997, locator: "COD 2101845", status: P-db, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+  default: true
+  notes: "Same value as W. L. Bond quoted in weis1985 p. 193 (P-comp, R14 row 3)."
+
+- id: lattice-c/unspecified/hsu1997
+  kind: scalar
+  property: lattice-c
+  name: Lattice constant c (hexagonal setting)
+  symbol: c
+  category: structure
+  value: 13.863
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  conditions: {temperature_text: "293 K (COD CIF)", method: "synchrotron X-ray diffraction"}
+  provenance: {source_id: hsu1997, locator: "COD 2101845", status: P-db, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+  default: true
+
+- id: lattice-a/unspecified/cod-ohgaki1992
+  kind: scalar
+  property: lattice-a
+  name: Lattice constant a (hexagonal setting)
+  symbol: a
+  category: structure
+  value: 5.1502
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  provenance: {source_id: ohgaki1992, locator: "COD 1544665", status: P-db, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: lattice-c/unspecified/cod-ohgaki1992
+  kind: scalar
+  property: lattice-c
+  name: Lattice constant c (hexagonal setting)
+  symbol: c
+  category: structure
+  value: 13.8653
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  provenance: {source_id: ohgaki1992, locator: "COD 1544665", status: P-db, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: lattice-a/unspecified/weis1985-from-density
+  kind: scalar
+  property: lattice-a
+  name: Lattice constant a (hexagonal setting)
+  symbol: a
+  category: structure
+  value: 5.150
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  provenance: {source_id: weis1985, locator: "p. 194", status: P, derivation: "calculated in the source from c = 13.863 A and rho = 4628 kg/m^3", research_note: "R14 row 4", transcribed: "2026-10-25"}
+
+- id: lattice-a/cln/volk2008
+  kind: scalar
+  property: lattice-a
+  name: Lattice constant a (hexagonal setting)
+  symbol: a
+  category: structure
+  value: 5.150
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: cln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3 (515.0 pm)", status: P-comp, original_reference: "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)", research_note: "R14 row 6", transcribed: "2026-10-25"}
+  default: true
+
+- id: lattice-c/cln/volk2008
+  kind: scalar
+  property: lattice-c
+  name: Lattice constant c (hexagonal setting)
+  symbol: c
+  category: structure
+  value: 13.864
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: cln
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3 (1386.4 pm)", status: P-comp, original_reference: "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)", research_note: "R14 row 6", transcribed: "2026-10-25"}
+  default: true
+
+- id: lattice-a/sln/volk2008
+  kind: scalar
+  property: lattice-a
+  name: Lattice constant a (hexagonal setting)
+  symbol: a
+  category: structure
+  value: 5.147
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3 (514.7 pm)", status: P-comp, original_reference: "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)", research_note: "R14 row 7", transcribed: "2026-10-25"}
+  default: true
+
+- id: lattice-c/sln/volk2008
+  kind: scalar
+  property: lattice-c
+  name: Lattice constant c (hexagonal setting)
+  symbol: c
+  category: structure
+  value: 13.856
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  conditions: {temperature_text: "room temperature"}
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3 (1385.6 pm)", status: P-comp, original_reference: "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)", research_note: "R14 row 7", transcribed: "2026-10-25"}
+  default: true
+
+- id: lattice-a/cln/cti1999
+  kind: scalar
+  property: lattice-a
+  name: Lattice constant a (hexagonal setting)
+  symbol: a
+  category: structure
+  value: 5.151
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: cln
+  variant_note: "48.38 mol% Li2O"
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: lattice-c/cln/cti1999
+  kind: scalar
+  property: lattice-c
+  name: Lattice constant c (hexagonal setting)
+  symbol: c
+  category: structure
+  value: 13.866
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: cln
+  variant_note: "48.38 mol% Li2O"
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: rhombohedral-a/unspecified/weis1985
+  kind: scalar
+  property: rhombohedral-a
+  name: Rhombohedral cell edge a_R
+  symbol: a_R
+  category: structure
+  value: 5.494
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  provenance: {source_id: weis1985, locator: "p. 194, Eq. (1)", status: P, research_note: "R14 row 5", transcribed: "2026-10-25"}
+  default: true
+
+- id: rhombohedral-a/unspecified/hsu1997
+  kind: scalar
+  property: rhombohedral-a
+  name: Rhombohedral cell edge a_R
+  symbol: a_R
+  category: structure
+  value: 5.493
+  uncertainty: {type: stated, value: 0.002}
+  unit: {ucum: "Ao", display: "Angstrom"}
+  variant: unspecified
+  provenance: {source_id: hsu1997, locator: "COD 2101845", status: P-db, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: rhombohedral-alpha/unspecified/weis1985
+  kind: scalar
+  property: rhombohedral-alpha
+  name: Rhombohedral cell angle alpha
+  symbol: alpha_R
+  category: structure
+  value: 55.867
+  unit: {ucum: "deg", display: "deg"}
+  variant: unspecified
+  provenance: {source_id: weis1985, locator: "p. 194, Eq. (1)", status: P, research_note: "R14 row 5", transcribed: "2026-10-25"}
+  default: true
+
+- id: rhombohedral-alpha/unspecified/hsu1997
+  kind: scalar
+  property: rhombohedral-alpha
+  name: Rhombohedral cell angle alpha
+  symbol: alpha_R
+  category: structure
+  value: 55.89
+  uncertainty: {type: stated, value: 0.03}
+  unit: {ucum: "deg", display: "deg"}
+  variant: unspecified
+  provenance: {source_id: hsu1997, locator: "COD 2101845", status: P-db, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: density/cln/kushibiki1999
+  kind: scalar
+  property: density
+  name: Density
+  symbol: rho
+  category: structure
+  value: 4642.8
+  uncertainty: {type: stated, value: 0.2}
+  unit: {ucum: "kg/m3", qudt: "http://qudt.org/vocab/unit/KiloGM-PER-M3", display: "kg/m^3"}
+  variant: cln
+  variant_note: "SAW-grade congruent"
+  conditions: {method: "Archimedes"}
+  provenance: {source_id: kushibiki1999, locator: "Table IV", status: P, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+  default: true
+
+- id: density/unspecified/ogi2002
+  kind: scalar
+  property: density
+  name: Density
+  symbol: rho
+  category: structure
+  value: 4636
+  unit: {ucum: "kg/m3", qudt: "http://qudt.org/vocab/unit/KiloGM-PER-M3", display: "kg/m^3"}
+  variant: unspecified
+  conditions: {temperature_C: 30}
+  provenance: {source_id: ogi2002, status: P, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+  notes: "ogi2002 also quotes a handbook value of 4633 kg/m^3."
+
+- id: density/cln/volk2008
+  kind: scalar
+  property: density
+  name: Density
+  symbol: rho
+  category: structure
+  value: 4647
+  unit: {ucum: "kg/m3", qudt: "http://qudt.org/vocab/unit/KiloGM-PER-M3", display: "kg/m^3"}
+  variant: cln
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Takanaga, Hirohashi, Kushibiki, Jpn. J. Appl. Phys. 38, 3201 (1999)", research_note: "R14 row 8", transcribed: "2026-10-25"}
+  notes: "Unit misprinted 'g cm^-1' in the source table."
+
+- id: density/sln/volk2008
+  kind: scalar
+  property: density
+  name: Density
+  symbol: rho
+  category: structure
+  value: 4635
+  unit: {ucum: "kg/m3", qudt: "http://qudt.org/vocab/unit/KiloGM-PER-M3", display: "kg/m^3"}
+  variant: sln
+  variant_note: "near-stoichiometric"
+  provenance: {source_id: volk2008, locator: "Table 1.1, p. 3", status: P-comp, original_reference: "Takanaga, Hirohashi, Kushibiki, Jpn. J. Appl. Phys. 38, 3201 (1999)", research_note: "R14 row 9", transcribed: "2026-10-25"}
+  default: true
+  notes: "SLN is lighter than CLN in the same compilation (4635 vs 4647 kg/m^3)."
+
+- id: density/unspecified/weis1985
+  kind: scalar
+  property: density
+  name: Density
+  symbol: rho
+  category: structure
+  value: 4628
+  unit: {ucum: "kg/m3", qudt: "http://qudt.org/vocab/unit/KiloGM-PER-M3", display: "kg/m^3"}
+  variant: unspecified
+  provenance: {source_id: weis1985, locator: "p. 194", status: P, research_note: "R14 row 10", transcribed: "2026-10-25"}
+  notes: "Used in a cell-volume calculation without a measurement reference; weis1985 p. 201 uses 4.7e3 kg/m^3 in acousto-optic figures of merit."
+
+- id: density/cln/cti1999
+  kind: scalar
+  property: density
+  name: Density
+  symbol: rho
+  category: structure
+  value: 4650
+  unit: {ucum: "kg/m3", qudt: "http://qudt.org/vocab/unit/KiloGM-PER-M3", display: "kg/m^3"}
+  variant: cln
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: congruent-composition/cln/volk2008
+  kind: scalar
+  property: congruent-composition
+  name: Congruent composition
+  category: structure
+  value: 48.45
+  unit: {ucum: "%", display: "mol% Li2O"}
+  variant: cln
+  provenance: {source_id: volk2008, locator: "pp. 4-5, 9", status: P-comp, research_note: "R14 row 11", transcribed: "2026-10-25"}
+  default: true
+  notes: "volk2008 also gives [Li]/[Nb] = 0.94 (p. 9) and R = 0.4845 (p. 5); its UV-edge formula uses 48.38 mol% (p. 142)."
+
+- id: congruent-composition/cln/cti1999
+  kind: scalar
+  property: congruent-composition
+  name: Congruent composition
+  category: structure
+  value: 48.38
+  uncertainty: {type: stated, value: 0.01}
+  unit: {ucum: "%", display: "mol% Li2O"}
+  variant: cln
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}
+
+- id: mohs-hardness/cln/cti1999
+  kind: scalar
+  property: mohs-hardness
+  name: Mohs hardness
+  category: structure
+  value: 5
+  unit: {ucum: "1", display: "Mohs"}
+  variant: cln
+  provenance: {source_id: cti1999, status: V, research_note: "R06 sec. 2.1", transcribed: "2026-10-25"}

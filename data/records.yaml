@@ -1,0 +1,2487 @@
+# Device performance records transcribed from research/R08-tfln-state-of-art.md sec. 2
+# (Record metrics, provisional, as of 2026-10-24). Schema: data/schema/record.schema.json.
+# "Highest found" = highest found in the R08 pass as of 2026-10-24, not an absolute record.
+# date = first publication date (online first where Crossref gives one; e.g. Shen LPR 19, 2401092: online 2024-10-12, issue 2025-04).
+
+# ---------------------------------------------------------------- 2.1 loss-q
+- id: "loss-q-zhang2017"
+  category: "loss-q"
+  metric: "Dry-etched ring (baseline)"
+  value_text: "Q ~1e7; loss down to 2.7 dB/m; telecom"
+  values:
+    - {quantity: "Q", value: 1.0e+7, unit: "1", qualifier: "~"}
+    - {quantity: "propagation loss", value: 2.7, unit: "dB/m", qualifier: "=", note: "stated as 'down to'"}
+  platform: "TFLN"
+  first_author: "Zhang M."
+  venue: "Optica 4, 1536"
+  date: "2017-12"
+  date_precision: "month"
+  doi: "10.1364/OPTICA.4.001536"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+
+- id: "loss-q-luke2020"
+  category: "loss-q"
+  metric: "Wafer-scale deep-UV (DUV) lithography"
+  value_text: "0.27 dB/cm on 4- and 6-inch wafers"
+  values:
+    - {quantity: "propagation loss", value: 0.27, unit: "dB/cm", qualifier: "="}
+    - {quantity: "wafer diameter", value: 4, unit: "[in_i]", qualifier: "="}
+    - {quantity: "wafer diameter", value: 6, unit: "[in_i]", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Luke K."
+  venue: "Opt. Express"
+  date: "2020-08"
+  date_precision: "month"
+  doi: "10.1364/oe.401959"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+
+- id: "loss-q-zhu2024"
+  category: "loss-q"
+  metric: "Dry-etched ring, highest found"
+  value_text: "Intrinsic Q 29e6, 1.3 dB/m; ion-sliced TFLN"
+  values:
+    - {quantity: "intrinsic Q", value: 29.0e+6, unit: "1", qualifier: "="}
+    - {quantity: "propagation loss", value: 1.3, unit: "dB/m", qualifier: "="}
+  platform: "TFLN (ion-sliced)"
+  first_author: "Zhu X."
+  venue: "Photon. Res. 12, A63"
+  date: "2024-07"
+  date_precision: "month"
+  doi: "10.1364/prj.521172"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+
+- id: "loss-q-li2023"
+  category: "loss-q"
+  metric: "Photolithography-assisted chemo-mechanical etching (PLACE) ring with bus"
+  value_text: "Intrinsic Q 4.04e7, <1 dB/m after anneal"
+  values:
+    - {quantity: "intrinsic Q", value: 4.04e+7, unit: "1", qualifier: "="}
+    - {quantity: "propagation loss", value: 1, unit: "dB/m", qualifier: "<", note: "after anneal"}
+  platform: "TFLN (PLACE ring)"
+  first_author: "Li"
+  venue: "Opt. Express"
+  date: "2023-09"
+  date_precision: "month"
+  doi: "10.1364/oe.498086"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+
+- id: "loss-q-gao2021"
+  category: "loss-q"
+  metric: "PLACE microdisk"
+  value_text: "Q >1e8; OPO threshold 19.6 uW; SHG 23%"
+  values:
+    - {quantity: "Q", value: 1.0e+8, unit: "1", qualifier: ">"}
+  platform: "TFLN (PLACE microdisk)"
+  first_author: "Gao R."
+  venue: "New J. Phys."
+  date: "2021-12"
+  date_precision: "month"
+  doi: "10.1088/1367-2630/ac3d52"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+  notes: "Ver.: Y (Q). Only Q is flagged verified in this row; OPO threshold and SHG figures kept in value_text only (OPO threshold verified separately in R08 sec. 2.5)."
+
+- id: "loss-q-gao2022"
+  category: "loss-q"
+  metric: "CMP microring, film thinned from bulk (no ion slicing)"
+  value_text: "Q >1e8 (title: 'above 10^8'); ~0.28 dB/m at 1550 nm"
+  values:
+    - {quantity: "Q", value: 1.0e+8, unit: "1", qualifier: ">", note: "Crossref title: 'ultra-high Q factor above 10^8' (checked 2026-10-25)"}
+    - {quantity: "propagation loss", value: 0.28, unit: "dB/m", qualifier: "~"}
+    - {quantity: "wavelength", value: 1550, unit: "nm", qualifier: "="}
+  platform: "TFLN (CMP, thinned from bulk)"
+  first_author: "Gao R."
+  venue: "Chin. Opt. Lett. 20, 011902"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.3788/col202220.011902"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+
+- id: "loss-q-shamsansari2022"
+  category: "loss-q"
+  metric: "Material-limited estimate (not a device)"
+  value_text: "Annealed ion-sliced TFLN, material Q ~1.6e8 (0.2 dB/m)"
+  values:
+    - {quantity: "material Q", value: 1.6e+8, unit: "1", qualifier: "~"}
+    - {quantity: "material-limited loss", value: 0.2, unit: "dB/m", qualifier: "="}
+  platform: "TFLN (annealed ion-sliced)"
+  first_author: "Shams-Ansari A."
+  venue: "APL Photonics"
+  date: "2022-08"
+  date_precision: "month"
+  doi: "10.1063/5.0095146"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+  notes: "Ver.: Y (inferred limit). Estimate, not a device."
+
+- id: "loss-q-desiatov2019"
+  category: "loss-q"
+  metric: "Visible"
+  value_text: "6 dB/m; ring Q_i 11e6 at 637 nm"
+  values:
+    - {quantity: "propagation loss", value: 6, unit: "dB/m", qualifier: "="}
+    - {quantity: "intrinsic Q", value: 11.0e+6, unit: "1", qualifier: "="}
+    - {quantity: "wavelength", value: 637, unit: "nm", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Desiatov B."
+  venue: "Optica 6, 380"
+  date: "2019-03"
+  date_precision: "month"
+  doi: "10.1364/OPTICA.6.000380"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+
+- id: "loss-q-renaud2023"
+  category: "loss-q"
+  metric: "Near-IR modulator waveguide"
+  value_text: "~0.7 dB/cm at 738 nm"
+  values:
+    - {quantity: "propagation loss", value: 0.7, unit: "dB/cm", qualifier: "~"}
+    - {quantity: "wavelength", value: 738, unit: "nm", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Renaud D."
+  venue: "Nat. Commun."
+  date: "2023-03"
+  date_precision: "month"
+  doi: "10.1038/s41467-023-36870-w"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+
+- id: "loss-q-franken2026"
+  category: "loss-q"
+  metric: "UV"
+  value_text: "\"Record-low\" 2.3 dB/cm UV waveguides; light near 390 nm"
+  values:
+    - {quantity: "propagation loss", value: 2.3, unit: "dB/cm", qualifier: "="}
+    - {quantity: "wavelength", value: 390, unit: "nm", qualifier: "=", note: "stated as 'near 390 nm'"}
+  platform: "TFLN"
+  first_author: "Franken C."
+  venue: "Nat. Commun. 17, 3651"
+  date: "2026"
+  date_precision: "year"
+  doi: "10.1038/s41467-026-68524-y"
+  verification: "partial"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+  notes: "Ver.: partial (loss wavelength not in abstract)."
+
+- id: "loss-q-xanadu2025-press"
+  category: "loss-q"
+  metric: "Industry claim"
+  value_text: "<2 dB/m waveguide loss, ~20 mdB switch loss (Xanadu + HyperLight release)"
+  values:
+    - {quantity: "waveguide loss", value: 2, unit: "dB/m", qualifier: "<"}
+  platform: "TFLN"
+  venue: "Press"
+  date: "2025-07-30"
+  date_precision: "day"
+  url: "https://thequantuminsider.com/2025/07/30/xanadu-and-hyperlight-unveil-advances-in-photonic-chips-setting-new-quantum-computing-benchmarks/"
+  verification: "press"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.1"
+  notes: "Ver.: press only. Switch loss (~20 mdB) kept in value_text only."
+
+# ---------------------------------------------------------------- 2.2 modulator
+- id: "modulator-wang2017"
+  category: "modulator"
+  metric: "Early TFLN"
+  value_text: "VpiL 1.8 V cm; rings and micro-MZIs"
+  values:
+    - {quantity: "VpiL", value: 1.8, unit: "V.cm", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Wang C."
+  venue: "arXiv 1701.06470"
+  date: "2017"
+  date_precision: "year"
+  arxiv: "1701.06470"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-wang2018"
+  category: "modulator"
+  metric: "Benchmark MZM"
+  value_text: "CMOS-compatible drive; up to 210 Gb/s; on-chip loss <0.5 dB"
+  values:
+    - {quantity: "data rate", value: 210, unit: "Gbit/s", qualifier: "=", note: "stated as 'up to'"}
+    - {quantity: "on-chip loss", value: 0.5, unit: "dB", qualifier: "<"}
+  platform: "TFLN"
+  first_author: "Wang C."
+  venue: "Nature 562, 101"
+  date: "2018-09"
+  date_precision: "month"
+  doi: "10.1038/s41586-018-0551-y"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+  notes: "Ver.: Y (coordinator re-read abstract). \"Vpi 1.4 V\" and \"100 GHz\" are main-text figures: unverified here."
+
+- id: "modulator-mercante2018"
+  category: "modulator"
+  metric: "Early mmWave"
+  value_text: "\"THz operating bandwidth\" (title)"
+  platform: "TFLN"
+  first_author: "Mercante A."
+  venue: "Opt. Express 26, 14810"
+  date: "2018"
+  date_precision: "year"
+  doi: "10.1364/OE.26.014810"
+  verification: "title"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+  notes: "Only the title confirmed; ~40 GHz 3-dB figure is from a secondary source and is not in values."
+
+- id: "modulator-kharel2021"
+  category: "modulator"
+  metric: "Segmented (T-) electrodes"
+  value_text: "RF Vpi 1.3 V, 1.8 dB roll-off at 50 GHz"
+  values:
+    - {quantity: "RF Vpi", value: 1.3, unit: "V", qualifier: "="}
+    - {quantity: "EO roll-off", value: 1.8, unit: "dB", qualifier: "="}
+    - {quantity: "roll-off frequency", value: 50, unit: "GHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Kharel P."
+  venue: "Optica 8, 357"
+  date: "2021-03"
+  date_precision: "month"
+  doi: "10.1364/OPTICA.416155"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-xu2022"
+  category: "modulator"
+  metric: "Dual-pol IQ"
+  value_text: "Sub-1-V drive, 110 GHz"
+  values:
+    - {quantity: "drive voltage", value: 1, unit: "V", qualifier: "<", note: "stated as 'sub-1-V'"}
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Xu M."
+  venue: "Optica 9, 61"
+  date: "2022-01"
+  date_precision: "month"
+  doi: "10.1364/OPTICA.449691"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-zhang2022"
+  category: "modulator"
+  metric: "Highest measured 3-dB EO bandwidth found"
+  value_text: "170 GHz (3 dB), 295 GHz (6 dB); RF Vpi 7.3 V at 250 GHz; measured to 325 GHz"
+  values:
+    - {quantity: "3-dB EO bandwidth", value: 170, unit: "GHz", qualifier: "="}
+    - {quantity: "6-dB EO bandwidth", value: 295, unit: "GHz", qualifier: "="}
+    - {quantity: "RF Vpi", value: 7.3, unit: "V", qualifier: "=", note: "at 250 GHz"}
+    - {quantity: "RF Vpi frequency", value: 250, unit: "GHz", qualifier: "="}
+    - {quantity: "maximum measured frequency", value: 325, unit: "GHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Zhang Y."
+  venue: "Photon. Res."
+  date: "2022-09"
+  date_precision: "month"
+  doi: "10.1364/prj.468518"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-liu2025-lowk"
+  category: "modulator"
+  metric: "Low-k underfill"
+  value_text: "Vpi 1.9 V (C) / 1.54 V (O), 7 mm; VpiL 1.33 / 1.08 V cm; 3-dB 220 / 218 GHz extrapolated"
+  values:
+    - {quantity: "Vpi (C-band)", value: 1.9, unit: "V", qualifier: "="}
+    - {quantity: "Vpi (O-band)", value: 1.54, unit: "V", qualifier: "="}
+    - {quantity: "electrode length", value: 7, unit: "mm", qualifier: "="}
+    - {quantity: "VpiL (C-band)", value: 1.33, unit: "V.cm", qualifier: "="}
+    - {quantity: "VpiL (O-band)", value: 1.08, unit: "V.cm", qualifier: "="}
+    - {quantity: "3-dB EO bandwidth (C-band)", value: 220, unit: "GHz", qualifier: "=", note: "extrapolated"}
+    - {quantity: "3-dB EO bandwidth (O-band)", value: 218, unit: "GHz", qualifier: "=", note: "extrapolated"}
+  platform: "TFLN"
+  first_author: "Liu H."
+  venue: "Laser Photon. Rev."
+  date: "2025-03"
+  date_precision: "month"
+  doi: "10.1002/lpor.202402053"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+  notes: "3-dB bandwidths are extrapolated, not measured."
+
+- id: "modulator-yu2025"
+  category: "modulator"
+  metric: "Lowest telecom-class VpiL found"
+  value_text: "0.33 V cm, ridge-top transparent electrodes, 300 um device; 2.4 dB roll-off at 110 GHz; 3-dB 145 GHz extrapolated; IL 2.7 dB"
+  values:
+    - {quantity: "VpiL", value: 0.33, unit: "V.cm", qualifier: "="}
+    - {quantity: "device length", value: 300, unit: "um", qualifier: "="}
+    - {quantity: "EO roll-off", value: 2.4, unit: "dB", qualifier: "="}
+    - {quantity: "roll-off frequency", value: 110, unit: "GHz", qualifier: "="}
+    - {quantity: "3-dB EO bandwidth", value: 145, unit: "GHz", qualifier: "=", note: "extrapolated"}
+    - {quantity: "insertion loss", value: 2.7, unit: "dB", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Yu"
+  venue: "Opt. Express"
+  date: "2025-09"
+  date_precision: "month"
+  doi: "10.1364/oe.572384"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+  notes: "Ver.: Y (wavelength not in abstract). 3-dB bandwidth is extrapolated."
+
+- id: "modulator-renaud2023"
+  category: "modulator"
+  metric: "Visible/NIR"
+  value_text: "VpiL 0.55 V cm at 738 nm; >35 GHz"
+  values:
+    - {quantity: "VpiL", value: 0.55, unit: "V.cm", qualifier: "="}
+    - {quantity: "wavelength", value: 738, unit: "nm", qualifier: "="}
+    - {quantity: "EO bandwidth", value: 35, unit: "GHz", qualifier: ">"}
+  platform: "TFLN"
+  first_author: "Renaud D."
+  venue: "Nat. Commun."
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1038/s41467-023-36870-w"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-valdez2022"
+  category: "modulator"
+  metric: "Etchless TFLN bonded on SiN"
+  value_text: "VpiL 0.8 V cm at 784 nm; >100 GHz"
+  values:
+    - {quantity: "VpiL", value: 0.8, unit: "V.cm", qualifier: "="}
+    - {quantity: "wavelength", value: 784, unit: "nm", qualifier: "="}
+    - {quantity: "EO bandwidth", value: 100, unit: "GHz", qualifier: ">"}
+  platform: "TFLN + SiN"
+  first_author: "Valdez F."
+  venue: "arXiv 2211.13348"
+  date: "2022"
+  date_precision: "year"
+  arxiv: "2211.13348"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-liu2025-wafer"
+  category: "modulator"
+  metric: "Wafer-scale manufacturing"
+  value_text: "4-inch TFLN on quartz; >110 GHz; Vpi <3 V; VpiL 2.92 V cm; 50% yield"
+  values:
+    - {quantity: "wafer diameter", value: 4, unit: "[in_i]", qualifier: "="}
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: ">"}
+    - {quantity: "Vpi", value: 3, unit: "V", qualifier: "<"}
+    - {quantity: "VpiL", value: 2.92, unit: "V.cm", qualifier: "="}
+    - {quantity: "yield", value: 50, unit: "%", qualifier: "="}
+  platform: "TFLN on quartz"
+  first_author: "Liu"
+  venue: "Light Adv. Manuf."
+  date: "2025"
+  date_precision: "year"
+  doi: "10.37188/lam.2025.047"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-xiong2026"
+  category: "modulator"
+  metric: "Er-doped amplified MZM"
+  value_text: ">6 dB net on-chip gain; >110 GHz; 144 Gb/s"
+  values:
+    - {quantity: "net on-chip gain", value: 6, unit: "dB", qualifier: ">"}
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: ">"}
+    - {quantity: "data rate", value: 144, unit: "Gbit/s", qualifier: "="}
+  platform: "Er:TFLN"
+  first_author: "Xiong"
+  venue: "Photon. Res."
+  date: "2026-04"
+  date_precision: "month"
+  doi: "10.1364/prj.586899"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+
+- id: "modulator-dadkhah2026-sim"
+  category: "modulator"
+  metric: "Exclude"
+  value_text: "\"0.105 V cm, 235 GHz\": simulated design only"
+  values:
+    - {quantity: "VpiL", value: 0.105, unit: "V.cm", qualifier: "=", note: "simulated"}
+    - {quantity: "EO bandwidth", value: 235, unit: "GHz", qualifier: "=", note: "simulated"}
+  platform: "TFLN"
+  first_author: "Dadkhah"
+  venue: "Adv. Photon. Res."
+  date: "2026-02"
+  date_precision: "month"
+  doi: "10.1002/adpr.202500237"
+  verification: "simulation"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.2"
+  notes: "Simulated design only; excluded from records."
+
+- id: "modulator-shen2024"
+  category: "modulator"
+  metric: "Slow-light MZM, non-resonant"
+  value_text: "Vpi*L 0.21 V cm with a 1 mm modulation section; slow-light waveguides and capacitively loaded slow-wave electrodes on SiN-loaded LNOI; bandwidth >110 GHz; DSP-free NRZ up to 180 Gb/s and PAM8 up to 300 Gb/s"
+  values:
+    - {quantity: "VpiL", value: 0.21, unit: "V.cm", qualifier: "="}
+    - {quantity: "modulation length", value: 1, unit: "mm", qualifier: "="}
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: ">"}
+    - {quantity: "NRZ data rate", value: 180, unit: "Gbit/s", qualifier: "=", note: "stated as 'up to'"}
+    - {quantity: "PAM8 data rate", value: 300, unit: "Gbit/s", qualifier: "=", note: "stated as 'up to'"}
+  platform: "SiN-loaded TFLN"
+  first_author: "Shen J."
+  venue: "Laser Photon. Rev. 19, 2401092"
+  date: "2024-10-12"
+  date_precision: "day"
+  doi: "10.1002/lpor.202401092"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-25"
+  research_note: "C06 manuscript sec. 6.12"
+  notes: "Crossref record and abstract checked 2026-10-25 (published online 2024-10-12, issue 2025-04, 14 authors). Values from the abstract."
+
+# ---------------------------------------------------------------- 2.3 symbol-rate
+- id: "symbol-rate-deakin2025"
+  category: "symbol-rate"
+  metric: "Highest symbol rate found"
+  value_text: "440 GBd PS-16-ASK (probabilistically shaped amplitude-shift keying), single wavelength, 221 GHz band-interleaved DAC (digital-to-analog converter); title claims net >1 Tb/s per modulation dimension"
+  values:
+    - {quantity: "symbol rate", value: 440, unit: "GBd", qualifier: "="}
+    - {quantity: "DAC bandwidth", value: 221, unit: "GHz", qualifier: "="}
+    - {quantity: "net bit rate per modulation dimension", value: 1, unit: "Tbit/s", qualifier: ">", note: "title claim"}
+  platform: "TFLN"
+  first_author: "Deakin C."
+  venue: "OFC 2025 postdeadline Th4B.7; JLT 2026-02 (Che D.)"
+  date: "2025"
+  date_precision: "year"
+  doi: "10.1364/ofc.2025.th4b.7"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+  notes: "Ver.: Y (exact net rate not in abstract). Author affiliation: Nokia Bell Labs. Journal version: JLT 2026-02 (Che D.), DOI 10.1109/jlt.2025.3632244."
+
+- id: "symbol-rate-che2025"
+  category: "symbol-rate"
+  metric: "Earlier step"
+  value_text: "314 GBd PS-8-ASK, 158 GHz DAC"
+  values:
+    - {quantity: "symbol rate", value: 314, unit: "GBd", qualifier: "="}
+    - {quantity: "DAC bandwidth", value: 158, unit: "GHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Che D."
+  venue: "arXiv 2504.15331"
+  date: "2025-04"
+  date_precision: "month"
+  arxiv: "2504.15331"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+  notes: "Ver.: Y(arXiv); venue unverified. Date taken from the arXiv identifier (no date in R08 cell)."
+
+- id: "symbol-rate-almonacil2023"
+  category: "symbol-rate"
+  metric: "Coherent"
+  value_text: "260 GBd single-wavelength over 100 km, TFLN IQ"
+  platform: "TFLN"
+  first_author: "Almonacil S."
+  venue: "JLT"
+  date: "2023-06"
+  date_precision: "month"
+  doi: "10.1109/jlt.2023.3269740"
+  verification: "title"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+  notes: "Only title/metadata confirmed; numbers kept in value_text only."
+
+- id: "symbol-rate-xu2022"
+  category: "symbol-rate"
+  metric: "Coherent, single wavelength"
+  value_text: "1.96 Tb/s net"
+  values:
+    - {quantity: "net bit rate", value: 1.96, unit: "Tbit/s", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Xu M."
+  venue: "Optica"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.449691"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+
+- id: "symbol-rate-wang2022"
+  category: "symbol-rate"
+  metric: "Coherent, single carrier"
+  value_text: "1.6 Tb/s net, DP-IQ on Si"
+  values:
+    - {quantity: "net bit rate", value: 1.6, unit: "Tbit/s", qualifier: "="}
+  platform: "TFLN on Si"
+  first_author: "Wang"
+  venue: "APL Photonics"
+  date: "2022-07"
+  date_precision: "month"
+  doi: "10.1063/5.0097296"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+
+- id: "symbol-rate-berikaa2022"
+  category: "symbol-rate"
+  metric: "IM/DD (intensity modulation / direct detection)"
+  value_text: "128 GBd PAM16, net 400 Gb/s"
+  values:
+    - {quantity: "symbol rate", value: 128, unit: "GBd", qualifier: "="}
+    - {quantity: "net bit rate", value: 400, unit: "Gbit/s", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Berikaa E."
+  venue: "Opt. Lett."
+  date: "2022-12"
+  date_precision: "month"
+  doi: "10.1364/ol.476399"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+
+- id: "symbol-rate-zhang2025"
+  category: "symbol-rate"
+  metric: "IM/DD, dual polarization"
+  value_text: "512 Gb/s PAM4"
+  values:
+    - {quantity: "bit rate", value: 512, unit: "Gbit/s", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Zhang"
+  venue: "Nanophotonics"
+  date: "2025-11"
+  date_precision: "month"
+  doi: "10.1515/nanoph-2025-0472"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+
+- id: "symbol-rate-tian2026"
+  category: "symbol-rate"
+  metric: "IM/DD, microring"
+  value_text: "517 Gb/s (200 GBd PAM6), 1.5 fJ/bit"
+  values:
+    - {quantity: "bit rate", value: 517, unit: "Gbit/s", qualifier: "="}
+    - {quantity: "symbol rate", value: 200, unit: "GBd", qualifier: "="}
+    - {quantity: "energy per bit", value: 1.5, unit: "fJ/bit", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Tian"
+  venue: "Research Square"
+  date: "2026-09"
+  date_precision: "month"
+  doi: "10.21203/rs.3.rs-10811928/v1"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+
+- id: "symbol-rate-murata2026-industry"
+  category: "symbol-rate"
+  metric: "Industry"
+  value_text: "HyperLight 400G/lane PICs (2026-03-17); 1.6T-DR8 TFLN reference transceiver (2026-03-16); Murata TFLN modulator >100 GHz, 400G/ch PAM4 at OFC 2026"
+  values:
+    - {quantity: "EO bandwidth (Murata)", value: 100, unit: "GHz", qualifier: ">"}
+    - {quantity: "bit rate per channel (Murata)", value: 400, unit: "Gbit/s", qualifier: "=", note: "stated as '400G/ch PAM4'"}
+  platform: "TFLN"
+  venue: "Company news (hyperlightcorp.com; corporate.murata.com)"
+  date: "2026-03"
+  date_precision: "month"
+  url: "https://corporate.murata.com/en-us/newsroom/news/company/general/2026/0310"
+  verification: "press"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.3"
+  notes: "Ver.: official page (Murata: Y); HyperLight: headline only. HyperLight items from hyperlightcorp.com news, not in values. Date month from the items in the row."
+
+# ---------------------------------------------------------------- 2.4 shg
+- id: "shg-wang2018"
+  category: "shg"
+  metric: "Waveguide, normalized"
+  value_text: "2600 %/W/cm^2, 1.5 um pump, 4 um period"
+  values:
+    - {quantity: "normalized SHG efficiency", value: 2600, unit: "%/W/cm2", qualifier: "="}
+    - {quantity: "pump wavelength", value: 1.5, unit: "um", qualifier: "="}
+    - {quantity: "poling period", value: 4, unit: "um", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Wang C."
+  venue: "Optica 5, 1438"
+  date: "2018"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.5.001438"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-rao2019"
+  category: "shg"
+  metric: "Waveguide, normalized"
+  value_text: "4600 %/W/cm^2, poling after etching, actively monitored"
+  platform: "TFLN"
+  first_author: "Rao A."
+  venue: "Opt. Express 27, 25920"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1364/OE.27.025920"
+  verification: "title"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+  notes: "Ver.: Y (title). Numbers kept in value_text only."
+
+- id: "shg-zhao2020"
+  category: "shg"
+  metric: "Waveguide, shallow etch"
+  value_text: "3757 %/W/cm^2 (939 %/W), x-cut MgO:TFLN"
+  values:
+    - {quantity: "normalized SHG efficiency", value: 3757, unit: "%/W/cm2", qualifier: "="}
+    - {quantity: "SHG efficiency", value: 939, unit: "%/W", qualifier: "="}
+  platform: "MgO:TFLN (x-cut)"
+  first_author: "Zhao J."
+  venue: "Opt. Express"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1364/OE.395545"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-chen2024"
+  category: "shg"
+  metric: "Waveguide, adapted poling"
+  value_text: "104 %/W overall; >80% conversion at 20 mW"
+  values:
+    - {quantity: "SHG efficiency (overall)", value: 104, unit: "%/W", qualifier: "="}
+    - {quantity: "conversion efficiency", value: 80, unit: "%", qualifier: ">"}
+    - {quantity: "pump power", value: 20, unit: "mW", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Chen P.-K."
+  venue: "Nat. Nanotechnol. 19, 44"
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1038/s41565-023-01525-w"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-li2024"
+  category: "shg"
+  metric: "Waveguide, highest normalized found"
+  value_text: "9600 %/W/cm^2 measured; 85% absolute at high power; polarization-reversed double-layer TFLN"
+  values:
+    - {quantity: "normalized SHG efficiency", value: 9600, unit: "%/W/cm2", qualifier: "="}
+    - {quantity: "absolute conversion efficiency", value: 85, unit: "%", qualifier: "=", note: "at high power"}
+  platform: "TFLN (polarization-reversed double layer)"
+  first_author: "Li"
+  venue: "Adv. Photonics Nexus"
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1117/1.APN.3.6.066009"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-park2022"
+  category: "shg"
+  metric: "Blue SHG"
+  value_text: "33,000 %/W/cm^2"
+  values:
+    - {quantity: "normalized SHG efficiency", value: 33000, unit: "%/W/cm2", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Park T."
+  venue: "Opt. Lett. 47, 2706"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1364/OL.455046"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-mishra2021"
+  category: "shg"
+  metric: "Mid-IR DFG (LN on sapphire)"
+  value_text: "200 %/W/cm^2, out to 3.66 um"
+  values:
+    - {quantity: "normalized DFG efficiency", value: 200, unit: "%/W/cm2", qualifier: "="}
+    - {quantity: "longest wavelength", value: 3.66, unit: "um", qualifier: "="}
+  platform: "LN on sapphire"
+  first_author: "Mishra J."
+  venue: "Optica"
+  date: "2021"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.427428"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-luo2018"
+  category: "shg"
+  metric: "Modal phase matching (no poling)"
+  value_text: "4.7 %/W in 8 mm"
+  values:
+    - {quantity: "SHG efficiency", value: 4.7, unit: "%/W", qualifier: "="}
+    - {quantity: "waveguide length", value: 8, unit: "mm", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Luo R."
+  venue: "Optica 5, 1006"
+  date: "2018"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.5.001006"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-lu2019"
+  category: "shg"
+  metric: "Ring, z-cut PPLN"
+  value_text: "250,000 %/W; 15% absolute at 115 uW"
+  values:
+    - {quantity: "SHG efficiency", value: 250000, unit: "%/W", qualifier: "="}
+    - {quantity: "absolute conversion efficiency", value: 15, unit: "%", qualifier: "="}
+    - {quantity: "pump power", value: 115, unit: "uW", qualifier: "="}
+  platform: "TFLN (z-cut PPLN)"
+  first_author: "Lu J."
+  venue: "Optica 6, 1455"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.6.001455"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-lu2020"
+  category: "shg"
+  metric: "Ring, highest found"
+  value_text: "5,000,000 %/W; g/2pi ~1.2 MHz; g/kappa approaching 1%"
+  values:
+    - {quantity: "SHG efficiency", value: 5000000, unit: "%/W", qualifier: "="}
+    - {quantity: "single-photon coupling g/2pi", value: 1.2, unit: "MHz", qualifier: "~"}
+    - {quantity: "g/kappa", value: 1, unit: "%", qualifier: "=", note: "stated as 'approaching 1%'"}
+  platform: "TFLN"
+  first_author: "Lu J."
+  venue: "Optica"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.403931"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+- id: "shg-chen2019"
+  category: "shg"
+  metric: "Ring, x-cut QPM racetrack"
+  value_text: "3.8 %/mW (arXiv v1). The often-quoted 230,000 %/W is unverified"
+  values:
+    - {quantity: "SHG efficiency", value: 3.8, unit: "%/mW", qualifier: "=", note: "arXiv v1"}
+  platform: "TFLN (x-cut)"
+  first_author: "Chen J.-Y."
+  venue: "Optica 6, 1244"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.6.001244"
+  verification: "partial"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+  notes: "The often-quoted 230,000 %/W is unverified and not in values."
+
+- id: "shg-mckenna2022"
+  category: "shg"
+  metric: "Ring SHG + OPO"
+  value_text: ">10% SHG; OPO threshold tens of uW; >1 THz tuning"
+  values:
+    - {quantity: "SHG conversion efficiency", value: 10, unit: "%", qualifier: ">"}
+    - {quantity: "tuning range", value: 1, unit: "THz", qualifier: ">"}
+  platform: "TFLN"
+  first_author: "McKenna T.P."
+  venue: "Nat. Commun."
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41467-022-31134-5"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.4"
+
+# ---------------------------------------------------------------- 2.5 opa-opo
+- id: "opa-opo-ledezma2022"
+  category: "opa-opo"
+  metric: "fs OPA"
+  value_text: ">50 dB/cm phase-sensitive gain (6 mm); >100 dB/cm over 600 nm near 2 um (OPG)"
+  values:
+    - {quantity: "phase-sensitive gain", value: 50, unit: "dB/cm", qualifier: ">"}
+    - {quantity: "device length", value: 6, unit: "mm", qualifier: "="}
+    - {quantity: "OPG gain", value: 100, unit: "dB/cm", qualifier: ">"}
+    - {quantity: "gain bandwidth", value: 600, unit: "nm", qualifier: "="}
+    - {quantity: "center wavelength", value: 2, unit: "um", qualifier: "=", note: "stated as 'near 2 um'"}
+  platform: "TFLN"
+  first_author: "Ledezma L."
+  venue: "Optica"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.442332"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-jankowski2022"
+  category: "opa-opo"
+  metric: "fs OPA, highest found"
+  value_text: "71 dB (118 dB/cm) unsaturated, 1700-2700 nm, 4 pJ pump; 88 dB (>146 dB/cm) saturated"
+  values:
+    - {quantity: "unsaturated gain", value: 71, unit: "dB", qualifier: "="}
+    - {quantity: "unsaturated gain per length", value: 118, unit: "dB/cm", qualifier: "="}
+    - {quantity: "wavelength range min", value: 1700, unit: "nm", qualifier: "="}
+    - {quantity: "wavelength range max", value: 2700, unit: "nm", qualifier: "="}
+    - {quantity: "pump pulse energy", value: 4, unit: "pJ", qualifier: "="}
+    - {quantity: "saturated gain", value: 88, unit: "dB", qualifier: "="}
+    - {quantity: "saturated gain per length", value: 146, unit: "dB/cm", qualifier: ">"}
+  platform: "TFLN"
+  first_author: "Jankowski M."
+  venue: "Optica"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.442550"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-lu2021"
+  category: "opa-opo"
+  metric: "CW OPO threshold, ring"
+  value_text: "~30 uW; 11% conversion at 93 uW"
+  values:
+    - {quantity: "OPO threshold", value: 30, unit: "uW", qualifier: "~"}
+    - {quantity: "conversion efficiency", value: 11, unit: "%", qualifier: "="}
+    - {quantity: "pump power", value: 93, unit: "uW", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Lu J."
+  venue: "Optica"
+  date: "2021"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.418984"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-gao2021"
+  category: "opa-opo"
+  metric: "CW OPO threshold, PLACE microdisk"
+  value_text: "19.6 uW"
+  values:
+    - {quantity: "OPO threshold", value: 19.6, unit: "uW", qualifier: "="}
+  platform: "TFLN (PLACE microdisk)"
+  first_author: "Gao R."
+  venue: "New J. Phys."
+  date: "2021"
+  date_precision: "year"
+  doi: "10.1088/1367-2630/ac3d52"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-ledezma2023"
+  category: "opa-opo"
+  metric: "Pulsed tunable OPO"
+  value_text: "1.53-3.25 um, one chip"
+  values:
+    - {quantity: "tuning range min", value: 1.53, unit: "um", qualifier: "="}
+    - {quantity: "tuning range max", value: 3.25, unit: "um", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Ledezma L."
+  venue: "Sci. Adv."
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1126/sciadv.adf9711"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-roy2023"
+  category: "opa-opo"
+  metric: "fs OPO comb"
+  value_text: "1.5-3.3 um, femtojoule-level threshold"
+  values:
+    - {quantity: "spectral range min", value: 1.5, unit: "um", qualifier: "="}
+    - {quantity: "spectral range max", value: 3.3, unit: "um", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Roy A."
+  venue: "Nat. Commun."
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1038/s41467-023-42289-0"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-hwang2023"
+  category: "opa-opo"
+  metric: "Mid-IR OPO, LN on sapphire"
+  value_text: ">25 mW at 3.2 um; 15% power / 45% quantum efficiency"
+  values:
+    - {quantity: "output power", value: 25, unit: "mW", qualifier: ">"}
+    - {quantity: "wavelength", value: 3.2, unit: "um", qualifier: "="}
+    - {quantity: "power conversion efficiency", value: 15, unit: "%", qualifier: "="}
+    - {quantity: "quantum efficiency", value: 45, unit: "%", qualifier: "="}
+  platform: "LN on sapphire"
+  first_author: "Hwang A.Y."
+  venue: "Optica"
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.502487"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-hwang2026"
+  category: "opa-opo"
+  metric: "Electrically tuned mid-IR OPO"
+  value_text: "22 THz span, 2.7-3.4 um, Vernier tuning"
+  values:
+    - {quantity: "tuning span", value: 22, unit: "THz", qualifier: "="}
+    - {quantity: "tuning range min", value: 2.7, unit: "um", qualifier: "="}
+    - {quantity: "tuning range max", value: 3.4, unit: "um", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Hwang A.Y."
+  venue: "Nat. Photonics"
+  date: "2026-08-27"
+  date_precision: "day"
+  doi: "10.1038/s41566-026-01999-9"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-stokowski2024"
+  category: "opa-opo"
+  metric: "FM-OPO comb"
+  value_text: ">93% internal pump-to-comb (34% out-coupled), ~200 modes (>1 THz) (arXiv v1 said ~1000 modes)"
+  values:
+    - {quantity: "internal pump-to-comb efficiency", value: 93, unit: "%", qualifier: ">"}
+    - {quantity: "out-coupled efficiency", value: 34, unit: "%", qualifier: "="}
+    - {quantity: "comb modes", value: 200, unit: "1", qualifier: "~"}
+    - {quantity: "comb span", value: 1, unit: "THz", qualifier: ">"}
+  platform: "TFLN"
+  first_author: "Stokowski H.S."
+  venue: "Nature"
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1038/s41586-024-07071-2"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+  notes: "arXiv v1 said ~1000 modes; published value ~200 used in values."
+
+- id: "opa-opo-guo2022"
+  category: "opa-opo"
+  metric: "All-optical switching"
+  value_text: "tens of fJ, 18 fs, energy-time product 1.4e-27 J s"
+  values:
+    - {quantity: "switching time", value: 18, unit: "fs", qualifier: "="}
+    - {quantity: "energy-time product", value: 1.4e-27, unit: "J.s", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Guo Q."
+  venue: "Nat. Photonics"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41566-022-01044-5"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-guo2023"
+  category: "opa-opo"
+  metric: "Mode-locked laser (III-V + TFLN)"
+  value_text: "~4.8 ps, ~10 GHz, >2.6 pJ, >0.5 W peak, ~1065 nm"
+  values:
+    - {quantity: "pulse width", value: 4.8, unit: "ps", qualifier: "~"}
+    - {quantity: "repetition rate", value: 10, unit: "GHz", qualifier: "~"}
+    - {quantity: "pulse energy", value: 2.6, unit: "pJ", qualifier: ">"}
+    - {quantity: "peak power", value: 0.5, unit: "W", qualifier: ">"}
+    - {quantity: "wavelength", value: 1065, unit: "nm", qualifier: "~"}
+  platform: "III-V + TFLN"
+  first_author: "Guo Q."
+  venue: "Science"
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1126/science.adj5438"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+- id: "opa-opo-roy2022"
+  category: "opa-opo"
+  metric: "Quadratic soliton"
+  value_text: "(title only)"
+  platform: "TFLN"
+  first_author: "Roy A."
+  venue: "Nat. Photonics"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41566-021-00942-4"
+  verification: "title"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.5"
+
+# ---------------------------------------------------------------- 2.6 quantum
+- id: "quantum-nehra2022"
+  category: "quantum"
+  metric: "On-chip TFLN squeezing, highest found"
+  value_text: "4.9 dB measured, >25 THz, all-optical measurement on chip"
+  values:
+    - {quantity: "measured squeezing", value: 4.9, unit: "dB", qualifier: "="}
+    - {quantity: "squeezing bandwidth", value: 25, unit: "THz", qualifier: ">"}
+  platform: "TFLN"
+  first_author: "Nehra R."
+  venue: "Science"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1126/science.abo6213"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+  notes: "Ver.: Y (coordinator re-read abstract). \"11 dB inferred\" not in abstract: unverified."
+
+- id: "quantum-chen2022"
+  category: "quantum"
+  metric: "Single-pass squeezing"
+  value_text: "0.56 dB measured; ~2.6 dB inferred on chip; up to 7 THz"
+  values:
+    - {quantity: "measured squeezing", value: 0.56, unit: "dB", qualifier: "="}
+    - {quantity: "inferred on-chip squeezing", value: 2.6, unit: "dB", qualifier: "~"}
+    - {quantity: "squeezing bandwidth", value: 7, unit: "THz", qualifier: "=", note: "stated as 'up to'"}
+  platform: "TFLN"
+  first_author: "Chen P.-K."
+  venue: "Opt. Lett."
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1364/OL.447695"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+  notes: "Venue is Opt. Lett. (not PRL)."
+
+- id: "quantum-park2024"
+  category: "quantum"
+  metric: "OPO squeezing, on-chip SHG pump + homodyne"
+  value_text: "0.55 dB squeezing, 1.55 dB anti-squeezing"
+  values:
+    - {quantity: "squeezing", value: 0.55, unit: "dB", qualifier: "="}
+    - {quantity: "anti-squeezing", value: 1.55, unit: "dB", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Park T."
+  venue: "Sci. Adv."
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1126/sciadv.adl1814"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+
+- id: "quantum-kashiwazaki2023"
+  category: "quantum"
+  metric: "Comparison, bulk-bonded PPLN ridge (not TFLN)"
+  value_text: "8.3 dB CW"
+  values:
+    - {quantity: "CW squeezing", value: 8.3, unit: "dB", qualifier: "="}
+  platform: "bulk-bonded PPLN ridge"
+  first_author: "Kashiwazaki T."
+  venue: "APL"
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1063/5.0144385"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+
+- id: "quantum-zhao2020"
+  category: "quantum"
+  metric: "Pairs, waveguide"
+  value_text: "CAR >67,000; heralded g2(0) <0.025"
+  values:
+    - {quantity: "coincidence-to-accidental ratio (CAR)", value: 67000, unit: "1", qualifier: ">"}
+    - {quantity: "heralded g2(0)", value: 0.025, unit: "1", qualifier: "<"}
+  platform: "TFLN"
+  first_author: "Zhao J."
+  venue: "PRL 124, 163603"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1103/PhysRevLett.124.163603"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+
+- id: "quantum-ma2020"
+  category: "quantum"
+  metric: "Pairs, PPLN microring"
+  value_text: "36.3 MHz at 13.4 uW; CAR up to 14,682; g2(0)=0.008"
+  values:
+    - {quantity: "pair rate", value: 36.3, unit: "MHz", qualifier: "="}
+    - {quantity: "pump power", value: 13.4, unit: "uW", qualifier: "="}
+    - {quantity: "coincidence-to-accidental ratio (CAR)", value: 14682, unit: "1", qualifier: "=", note: "stated as 'up to'"}
+    - {quantity: "g2(0)", value: 0.008, unit: "1", qualifier: "="}
+  platform: "TFLN (PPLN microring)"
+  first_author: "Ma Z."
+  venue: "PRL 125, 263602"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1103/PhysRevLett.125.263602"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+
+- id: "quantum-wang2023"
+  category: "quantum"
+  metric: "QFC telecom to near-visible"
+  value_text: "73% internal, 900 cps noise"
+  values:
+    - {quantity: "internal conversion efficiency", value: 73, unit: "%", qualifier: "="}
+    - {quantity: "noise count rate", value: 900, unit: "{counts}/s", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Wang X."
+  venue: "npj Quantum Inf."
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1038/s41534-023-00704-w"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+
+- id: "quantum-arxiv2509.03869"
+  category: "quantum"
+  metric: "QFC, hybrid electrically pumped"
+  value_text: "57% on-chip QE; 386,000 %/W ring SHG"
+  values:
+    - {quantity: "on-chip quantum efficiency", value: 57, unit: "%", qualifier: "="}
+    - {quantity: "ring SHG efficiency", value: 386000, unit: "%/W", qualifier: "="}
+  platform: "TFLN"
+  venue: "arXiv 2509.03869"
+  date: "2025"
+  date_precision: "year"
+  arxiv: "2509.03869"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.6"
+  notes: "First author not given in R08."
+
+# ---------------------------------------------------------------- 2.7 eo-comb
+- id: "eo-comb-zhang2019"
+  category: "eo-comb"
+  metric: "Resonant EO comb"
+  value_text: ">900 lines at ~10 GHz, wider than L-band; spacing tunable 10 Hz to 100 MHz"
+  values:
+    - {quantity: "comb lines", value: 900, unit: "1", qualifier: ">"}
+    - {quantity: "line spacing", value: 10, unit: "GHz", qualifier: "~"}
+    - {quantity: "spacing tuning min", value: 10, unit: "Hz", qualifier: "="}
+    - {quantity: "spacing tuning max", value: 100, unit: "MHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Zhang M."
+  venue: "Nature 568, 373"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1038/s41586-019-1008-7"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.7"
+  notes: "Ver.: Y (coordinator re-read abstract). \"80 nm\" not in abstract."
+
+- id: "eo-comb-hu2022"
+  category: "eo-comb"
+  metric: "Coupled-ring EO comb"
+  value_text: "30% efficiency, 132 nm span, 336 fs"
+  values:
+    - {quantity: "conversion efficiency", value: 30, unit: "%", qualifier: "="}
+    - {quantity: "comb span", value: 132, unit: "nm", qualifier: "="}
+    - {quantity: "pulse width", value: 336, unit: "fs", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Hu Y."
+  venue: "Nat. Photonics"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41566-022-01059-y"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.7"
+
+- id: "eo-comb-yu2022"
+  category: "eo-comb"
+  metric: "Time-lens pulse generator"
+  value_text: "520 fs, 30 GHz, 0.54 pJ"
+  values:
+    - {quantity: "pulse width", value: 520, unit: "fs", qualifier: "="}
+    - {quantity: "repetition rate", value: 30, unit: "GHz", qualifier: "="}
+    - {quantity: "pulse energy", value: 0.54, unit: "pJ", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Yu M."
+  venue: "Nature"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41586-022-05345-1"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.7"
+
+- id: "eo-comb-zhang2023"
+  category: "eo-comb"
+  metric: "Non-resonant EO comb"
+  value_text: "47 lines at 25 GHz"
+  values:
+    - {quantity: "comb lines", value: 47, unit: "1", qualifier: "="}
+    - {quantity: "line spacing", value: 25, unit: "GHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Zhang K."
+  venue: "Commun. Phys."
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1038/s42005-023-01137-9"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.7"
+
+- id: "eo-comb-zhang2025-tflt"
+  category: "eo-comb"
+  metric: "Widest integrated EO comb found (TFLT, not LN)"
+  value_text: ">450 nm (>60 THz), >2000 lines, triply resonant"
+  values:
+    - {quantity: "comb span", value: 450, unit: "nm", qualifier: ">"}
+    - {quantity: "comb span", value: 60, unit: "THz", qualifier: ">"}
+    - {quantity: "comb lines", value: 2000, unit: "1", qualifier: ">"}
+  platform: "TFLT"
+  first_author: "Zhang J."
+  venue: "Nature"
+  date: "2025"
+  date_precision: "year"
+  doi: "10.1038/s41586-024-08354-4"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.7"
+
+- id: "eo-comb-hu2021"
+  category: "eo-comb"
+  metric: "EO frequency shifter"
+  value_text: "Up to 28 GHz at ~90% on-chip efficiency; cascaded 119.2 GHz from 29.8 GHz drive"
+  values:
+    - {quantity: "frequency shift", value: 28, unit: "GHz", qualifier: "=", note: "stated as 'up to'"}
+    - {quantity: "on-chip efficiency", value: 90, unit: "%", qualifier: "~"}
+    - {quantity: "cascaded frequency shift", value: 119.2, unit: "GHz", qualifier: "="}
+    - {quantity: "drive frequency", value: 29.8, unit: "GHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Hu Y."
+  venue: "Nature 599, 587"
+  date: "2021"
+  date_precision: "year"
+  doi: "10.1038/s41586-021-03999-x"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.7"
+  notes: "Ver.: Y (coordinator re-read abstract; arXiv v1 said ~99%)."
+
+- id: "eo-comb-shao2020"
+  category: "eo-comb"
+  metric: "AO frequency shifter"
+  value_text: "3 GHz, >30 dB carrier suppression"
+  values:
+    - {quantity: "frequency shift", value: 3, unit: "GHz", qualifier: "="}
+    - {quantity: "carrier suppression", value: 30, unit: "dB", qualifier: ">"}
+  platform: "TFLN"
+  first_author: "Shao L."
+  venue: "Opt. Express"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1364/OE.397138"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.7"
+
+# ---------------------------------------------------------------- 2.8 kerr
+- id: "kerr-he2019"
+  category: "kerr"
+  metric: "First LN soliton"
+  value_text: "Self-starting, bidirectional switching via photorefraction"
+  platform: "TFLN"
+  first_author: "He Y."
+  venue: "Optica 6, 1138"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.6.001138"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.8"
+
+- id: "kerr-wang2019"
+  category: "kerr"
+  metric: "Monolithic Kerr comb + EO"
+  value_text: "qualitative"
+  platform: "TFLN"
+  first_author: "Wang C."
+  venue: "Nat. Commun."
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1038/s41467-019-08969-6"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.8"
+
+- id: "kerr-gong2020"
+  category: "kerr"
+  metric: "Near-octave soliton"
+  value_text: "4/5 octave; Raman suppressed; 335 GHz rep rate"
+  values:
+    - {quantity: "repetition rate", value: 335, unit: "GHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Gong Z."
+  venue: "Optica"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.400994"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.8"
+
+- id: "kerr-song2024"
+  category: "kerr"
+  metric: "Octave-spanning TFLN soliton"
+  value_text: "Octave, Raman suppressed, near-unity yield"
+  platform: "TFLN"
+  first_author: "Song Y."
+  venue: "Light Sci. Appl."
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1038/s41377-024-01546-7"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.8"
+  notes: "Bold row in R08 without explicit 'highest found' wording."
+
+- id: "kerr-wan2024"
+  category: "kerr"
+  metric: "Photorefraction-assisted soliton"
+  value_text: "Single soliton >13 h without feedback"
+  values:
+    - {quantity: "single-soliton duration", value: 13, unit: "h", qualifier: ">"}
+  platform: "TFLN"
+  first_author: "Wan S."
+  venue: "Laser Photon. Rev. 18"
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1002/lpor.202300627"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.8"
+
+- id: "kerr-zhu2021-n2"
+  category: "kerr"
+  metric: "n2 of LN"
+  value_text: "1.8e-19 m^2/W as tabulated in Zhu 2021 (10.1364/AOP.411024); primary measurement source not traced"
+  platform: "LN"
+  first_author: "Zhu"
+  date: "2021"
+  date_precision: "year"
+  doi: "10.1364/AOP.411024"
+  verification: "unverified"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.8"
+  notes: "Ver.: unverified (primary). DOI is the review that tabulates the value, not a primary measurement; value not in values."
+
+# ---------------------------------------------------------------- 2.9 transduction
+- id: "transduction-shao2019"
+  category: "transduction"
+  metric: "Room-temp AO, suspended TFLN"
+  value_text: "up to 4.5 GHz; Vpi 0.77 V (racetrack); g0/2pi 1.1 kHz"
+  values:
+    - {quantity: "acoustic frequency", value: 4.5, unit: "GHz", qualifier: "=", note: "stated as 'up to'"}
+    - {quantity: "Vpi (racetrack)", value: 0.77, unit: "V", qualifier: "="}
+    - {quantity: "g0/2pi", value: 1.1, unit: "kHz", qualifier: "="}
+  platform: "TFLN (suspended)"
+  first_author: "Shao L."
+  venue: "Optica 6, 1498"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.6.001498"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-jiang2020"
+  category: "transduction"
+  metric: "Piezo-optomechanical, room temp"
+  value_text: "Vpi 0.02 V; 5.5% with 323 uW blue-detuned pump"
+  values:
+    - {quantity: "Vpi", value: 0.02, unit: "V", qualifier: "="}
+    - {quantity: "conversion efficiency", value: 5.5, unit: "%", qualifier: "="}
+    - {quantity: "pump power", value: 323, unit: "uW", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Jiang W."
+  venue: "Nat. Commun."
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1038/s41467-020-14863-3"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-holzgrafe2020"
+  category: "transduction"
+  metric: "Cavity EO, TFLN"
+  value_text: "2.7e-5"
+  values:
+    - {quantity: "conversion efficiency", value: 2.7e-5, unit: "1", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Holzgrafe J."
+  venue: "Optica 7, 1714"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.397513"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-mckenna2020"
+  category: "transduction"
+  metric: "Triply resonant LN on sapphire, mK"
+  value_text: "6.6e-6 on chip"
+  values:
+    - {quantity: "on-chip conversion efficiency", value: 6.6e-6, unit: "1", qualifier: "="}
+  platform: "LN on sapphire"
+  first_author: "McKenna T.P."
+  venue: "Optica 7, 1737"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.397235"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-xu2021"
+  category: "transduction"
+  metric: "EO, TFLN + superconducting resonator"
+  value_text: "1.02% total (15.2% internal), bidirectional"
+  values:
+    - {quantity: "total conversion efficiency", value: 1.02, unit: "%", qualifier: "="}
+    - {quantity: "internal conversion efficiency", value: 15.2, unit: "%", qualifier: "="}
+  platform: "TFLN + superconducting resonator"
+  first_author: "Xu Y."
+  venue: "Nat. Commun."
+  date: "2021"
+  date_precision: "year"
+  doi: "10.1038/s41467-021-24809-y"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-jiang2023"
+  category: "transduction"
+  metric: "Optically heralded microwave photon addition"
+  value_text: "5% CW conversion; 15 Hz heralding"
+  values:
+    - {quantity: "CW conversion efficiency", value: 5, unit: "%", qualifier: "="}
+    - {quantity: "heralding rate", value: 15, unit: "Hz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Jiang W."
+  venue: "Nat. Phys."
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1038/s41567-023-02129-w"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+  notes: "Ver.: Y(arXiv); 35% unverified (secondary only), not in values."
+
+- id: "transduction-weaver2024"
+  category: "transduction"
+  metric: "Integrated interface (LN-on-Si mechanics)"
+  value_text: "0.9% at 1 uW; 14.8 MHz bandwidth; few added photons"
+  values:
+    - {quantity: "conversion efficiency", value: 0.9, unit: "%", qualifier: "="}
+    - {quantity: "pump power", value: 1, unit: "uW", qualifier: "="}
+    - {quantity: "bandwidth", value: 14.8, unit: "MHz", qualifier: "="}
+  platform: "LN on Si"
+  first_author: "Weaver M.J."
+  venue: "Nat. Nanotechnol."
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1038/s41565-023-01515-y"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-warner2025"
+  category: "transduction"
+  metric: "Optical control of a qubit, TFLN EO"
+  value_text: "up to 1.18%; optically driven Rabi"
+  values:
+    - {quantity: "conversion efficiency", value: 1.18, unit: "%", qualifier: "=", note: "stated as 'up to'"}
+  platform: "TFLN"
+  first_author: "Warner H.K."
+  venue: "Nat. Phys."
+  date: "2025"
+  date_precision: "year"
+  doi: "10.1038/s41567-025-02812-0"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-sahu2022"
+  category: "transduction"
+  metric: "Bulk LN WGM EO (not thin film), comparison"
+  value_text: "8.7% at 0.16 added noise photons"
+  values:
+    - {quantity: "conversion efficiency", value: 8.7, unit: "%", qualifier: "="}
+    - {quantity: "added noise photons", value: 0.16, unit: "1", qualifier: "="}
+  platform: "bulk LN (WGM)"
+  first_author: "Sahu R."
+  venue: "Nat. Commun."
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41467-022-28924-2"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-sahu2023"
+  category: "transduction"
+  metric: "Bulk LN, microwave-optical entanglement"
+  value_text: "CV entanglement"
+  platform: "bulk LN"
+  first_author: "Sahu R."
+  venue: "Science"
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1126/science.adg3812"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+- id: "transduction-arnold2025"
+  category: "transduction"
+  metric: "Bulk LN EO, all-optical qubit readout"
+  value_text: "single-shot readout"
+  platform: "bulk LN"
+  first_author: "Arnold G."
+  venue: "Nat. Phys."
+  date: "2025"
+  date_precision: "year"
+  doi: "10.1038/s41567-024-02741-4"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.9"
+
+# ---------------------------------------------------------------- 2.10 acousto-optics
+- id: "acousto-optics-jiang2019"
+  category: "acousto-optics"
+  metric: "LN optomechanical crystal"
+  value_text: "g0/2pi ~120 kHz; phonon lasing"
+  values:
+    - {quantity: "g0/2pi", value: 120, unit: "kHz", qualifier: "~"}
+  platform: "LN"
+  first_author: "Jiang W."
+  venue: "Optica 6, 845"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.6.000845"
+  verification: "Y(arXiv)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.10"
+
+- id: "acousto-optics-sarabalis2020"
+  category: "acousto-optics"
+  metric: "AO modulator, LN on sapphire"
+  value_text: "first unsuspended devices"
+  platform: "LN on sapphire"
+  first_author: "Sarabalis C.J."
+  venue: "APL Photonics"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1063/5.0012288"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.10"
+
+- id: "acousto-optics-sarabalis2021"
+  category: "acousto-optics"
+  metric: "AO, wavelength-scale waveguide"
+  value_text: "FoM improved by orders of magnitude (no number in abstract)"
+  platform: "TFLN"
+  first_author: "Sarabalis C.J."
+  venue: "Optica"
+  date: "2021"
+  date_precision: "year"
+  doi: "10.1364/OPTICA.413401"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.10"
+  notes: "Ver.: Y (qual.)."
+
+- id: "acousto-optics-wan2022"
+  category: "acousto-optics"
+  metric: "AO modulator VpiL, lowest found"
+  value_text: "0.03 V cm, TFLN + chalcogenide, unsuspended"
+  values:
+    - {quantity: "VpiL", value: 0.03, unit: "V.cm", qualifier: "="}
+  platform: "TFLN + chalcogenide"
+  first_author: "Wan L."
+  venue: "Light Sci. Appl."
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41377-022-00840-6"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.10"
+
+- id: "acousto-optics-arrangoizarriola2019"
+  category: "acousto-optics"
+  metric: "Phonon-number resolution (LN + qubit)"
+  value_text: "number splitting ~5x qubit linewidth"
+  values:
+    - {quantity: "number splitting / qubit linewidth", value: 5, unit: "1", qualifier: "~"}
+  platform: "LN + qubit"
+  first_author: "Arrangoiz-Arriola P."
+  venue: "Nature"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1038/s41586-019-1386-x"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.10"
+
+- id: "acousto-optics-wollack2022"
+  category: "acousto-optics"
+  metric: "Entangled mechanical resonators (LN)"
+  value_text: "state tomography"
+  platform: "LN"
+  first_author: "Wollack E.A."
+  venue: "Nature"
+  date: "2022"
+  date_precision: "year"
+  doi: "10.1038/s41586-022-04500-y"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.10"
+
+- id: "acousto-optics-plessky2019"
+  category: "acousto-optics"
+  metric: "XBAR (laterally excited bulk acoustic resonator), first"
+  value_text: "~4.8 GHz, 400 nm ZY-LN, coupling ~25%, Q ~300"
+  values:
+    - {quantity: "resonance frequency", value: 4.8, unit: "GHz", qualifier: "~"}
+    - {quantity: "film thickness", value: 400, unit: "nm", qualifier: "="}
+    - {quantity: "coupling", value: 25, unit: "%", qualifier: "~"}
+    - {quantity: "Q", value: 300, unit: "1", qualifier: "~"}
+  platform: "ZY-LN (400 nm film)"
+  first_author: "Plessky V."
+  venue: "Electron. Lett. 55, 98"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1049/el.2018.7297"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.10"
+
+# ---------------------------------------------------------------- 2.11 wafer-foundry
+- id: "wafer-foundry-nanoln"
+  category: "wafer-foundry"
+  metric: "NanoLN (Jinan Jingzheng) LNOI and LTOI"
+  value_text: "3, 4, 6, 8 inch; film 300-900 nm; Si, LN, quartz, fused silica substrates"
+  values:
+    - {quantity: "wafer diameter", value: 3, unit: "[in_i]", qualifier: "="}
+    - {quantity: "wafer diameter", value: 4, unit: "[in_i]", qualifier: "="}
+    - {quantity: "wafer diameter", value: 6, unit: "[in_i]", qualifier: "="}
+    - {quantity: "wafer diameter", value: 8, unit: "[in_i]", qualifier: "="}
+    - {quantity: "film thickness min", value: 300, unit: "nm", qualifier: "="}
+    - {quantity: "film thickness max", value: 900, unit: "nm", qualifier: "="}
+  platform: "LNOI, LTOI"
+  venue: "Company page (nanoln.com)"
+  date: "2026-10-24"
+  date_precision: "day"
+  url: "https://nanoln.com/PRODUCTS.html"
+  verification: "press"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Ver.: Y (company page). Page undated; date is the fetch date (fetched 2026-10-24)."
+
+- id: "wafer-foundry-soitec"
+  category: "wafer-foundry"
+  metric: "Soitec POI (piezoelectric-on-insulator)"
+  value_text: "LT6/LT8 (150/200 mm LT), LN6 (150 mm LN)"
+  values:
+    - {quantity: "wafer diameter (LT)", value: 150, unit: "mm", qualifier: "="}
+    - {quantity: "wafer diameter (LT)", value: 200, unit: "mm", qualifier: "="}
+    - {quantity: "wafer diameter (LN)", value: 150, unit: "mm", qualifier: "="}
+  platform: "POI (LT, LN)"
+  venue: "Company page (soitec.com)"
+  date: "2026-10-24"
+  date_precision: "day"
+  url: "https://soitec.com/en/products/poi"
+  verification: "press"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Ver.: Y (company page). Date is the fetch date (fetched 2026-10-24)."
+
+- id: "wafer-foundry-lightium"
+  category: "wafer-foundry"
+  metric: "Lightium (Zurich)"
+  value_text: "\"200 mm wafers in a high-volume foundry environment\"; PDK at C, O, 780, 830 nm; closed beta"
+  values:
+    - {quantity: "wafer diameter", value: 200, unit: "mm", qualifier: "="}
+    - {quantity: "PDK wavelength", value: 780, unit: "nm", qualifier: "="}
+    - {quantity: "PDK wavelength", value: 830, unit: "nm", qualifier: "="}
+  platform: "TFLN"
+  venue: "Company page (lightium.com)"
+  date: "2026-10-24"
+  date_precision: "day"
+  url: "https://lightium.com"
+  verification: "press"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Ver.: Y (company claim). Date is the fetch date (fetched 2026-10-24)."
+
+- id: "wafer-foundry-hyperlight-umc"
+  category: "wafer-foundry"
+  metric: "HyperLight + UMC + Wavetek"
+  value_text: "Foundry production on 6- and 8-inch"
+  values:
+    - {quantity: "wafer diameter", value: 6, unit: "[in_i]", qualifier: "="}
+    - {quantity: "wafer diameter", value: 8, unit: "[in_i]", qualifier: "="}
+  platform: "TFLN"
+  venue: "ConvergeDigest"
+  date: "2026-06-18"
+  date_precision: "day"
+  url: "https://www.umc.com/en/News/press_release/Content/corporate/20260312"
+  verification: "unverified"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Ver.: trade press. Source: ConvergeDigest on 2026-06-18 Series C; HyperLight headlines 2026-03. R08 gives no URL; the URL is the UMC press release of 2026-03-12 on the same foundry deal (R09 S19, grade C: page returned 403, content via snippets)."
+
+- id: "wafer-foundry-ccraft"
+  category: "wafer-foundry"
+  metric: "CCRAFT (CSEM spin-off)"
+  value_text: "Pure-play TFLN foundry, 150 mm, PDK, MPW"
+  values:
+    - {quantity: "wafer diameter", value: 150, unit: "mm", qualifier: "="}
+  platform: "TFLN"
+  venue: "optics.org"
+  date: "2025-05-13"
+  date_precision: "day"
+  url: "https://optics.org/news/csem-spins-off-lithium-niobate-photonic-integrated-circuit-foundry"
+  verification: "press"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Ver.: Y (trade press). URL: the optics.org article of 2025-05-13 (R09 S14)."
+
+- id: "wafer-foundry-ligentec-xfab"
+  category: "wafer-foundry"
+  metric: "Ligentec + X-FAB"
+  value_text: "TFLN-on-SiN / TFLN-on-SOI at 200 mm; launched ECOC 2026"
+  values:
+    - {quantity: "wafer diameter", value: 200, unit: "mm", qualifier: "="}
+  platform: "TFLN-on-SiN / TFLN-on-SOI"
+  venue: "X-FAB news; picmagazine.net"
+  date: "2026-01-19"
+  date_precision: "day"
+  url: "https://www.xfab.com/news/details/article/ligentec-and-x-fab-expand-integrated-photonics-offering-with-soi-and-thin-film-lithium-niobate-volume-scaling"
+  verification: "partial"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Source: X-FAB news 2026-01-19; picmagazine.net. URL: the X-FAB news item (R09 S28, grade F)."
+
+- id: "wafer-foundry-qci"
+  category: "wafer-foundry"
+  metric: "QCi (Tempe)"
+  value_text: "TFLN foundry opened 2025-05-12"
+  platform: "TFLN"
+  venue: "Press release (quantumcomputinginc.com)"
+  date: "2025-05-13"
+  date_precision: "day"
+  url: "https://quantumcomputinginc.com"
+  verification: "press"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Ver.: Y; wafer size N/A. Source is a press release dated 2025-05-13; URL is the host only."
+
+- id: "wafer-foundry-noeic"
+  category: "wafer-foundry"
+  metric: "Wuhan NOEIC / Peng Cheng Lab"
+  value_text: "4-inch TFLN on quartz, DUV stepper; extendable to 6/8 inch (claim)"
+  values:
+    - {quantity: "wafer diameter", value: 4, unit: "[in_i]", qualifier: "="}
+  platform: "TFLN on quartz"
+  date: "2025"
+  date_precision: "year"
+  doi: "10.37188/lam.2025.047"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Extension to 6/8 inch is a claim, not in values. Date from the R08 sec. 2.2 row with the same DOI (Liu, Light Adv. Manuf., 2025)."
+
+- id: "wafer-foundry-luke2020"
+  category: "wafer-foundry"
+  metric: "Academic wafer-scale"
+  value_text: "4- and 6-inch DUV"
+  values:
+    - {quantity: "wafer diameter", value: 4, unit: "[in_i]", qualifier: "="}
+    - {quantity: "wafer diameter", value: 6, unit: "[in_i]", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Luke"
+  date: "2020"
+  date_precision: "year"
+  doi: "10.1364/oe.401959"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+
+- id: "wafer-foundry-tflt-arxiv2604.14836"
+  category: "wafer-foundry"
+  metric: "TFLT, academic"
+  value_text: "4-inch fused silica"
+  values:
+    - {quantity: "wafer diameter", value: 4, unit: "[in_i]", qualifier: "="}
+  platform: "TFLT on fused silica"
+  venue: "arXiv 2604.14836"
+  date: "2026-04"
+  date_precision: "month"
+  arxiv: "2604.14836"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.11"
+  notes: "Date taken from the arXiv identifier (no date in R08 cell)."
+
+# ---------------------------------------------------------------- 2.12 heterogeneous
+- id: "heterogeneous-opdebeeck2021"
+  category: "heterogeneous"
+  metric: "III-V on TFLN lasers + amps"
+  value_text: "electrically pumped, EO-tuned"
+  platform: "III-V on TFLN"
+  first_author: "Op de Beeck C."
+  venue: "Optica"
+  date: "2021-10"
+  date_precision: "month"
+  doi: "10.1364/OPTICA.438620"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+  notes: "Ver.: Y (no numbers in abstract)."
+
+- id: "heterogeneous-shamsansari2022"
+  category: "heterogeneous"
+  metric: "Laser transmitter"
+  value_text: "up to 60 mW in waveguide; with 50 GHz modulator"
+  values:
+    - {quantity: "on-chip optical power", value: 60, unit: "mW", qualifier: "=", note: "stated as 'up to'"}
+    - {quantity: "modulator bandwidth", value: 50, unit: "GHz", qualifier: "="}
+  platform: "III-V + TFLN"
+  first_author: "Shams-Ansari A."
+  venue: "Optica"
+  date: "2022-04"
+  date_precision: "month"
+  doi: "10.1364/OPTICA.448617"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+
+- id: "heterogeneous-li2022"
+  category: "heterogeneous"
+  metric: "Pockels laser"
+  value_text: "2.0e18 Hz/s FM speed; 50 MHz switching"
+  values:
+    - {quantity: "frequency modulation speed", value: 2.0e+18, unit: "Hz/s", qualifier: "="}
+    - {quantity: "switching rate", value: 50, unit: "MHz", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Li M."
+  venue: "Nat. Commun."
+  date: "2022-09"
+  date_precision: "month"
+  doi: "10.1038/s41467-022-33101-6"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+
+- id: "heterogeneous-snigirev2023"
+  category: "heterogeneous"
+  metric: "Self-injection-locked Si3N4-LN laser"
+  value_text: "3 kHz intrinsic linewidth; 12e15 Hz/s tuning; FMCW LiDAR demo"
+  values:
+    - {quantity: "intrinsic linewidth", value: 3, unit: "kHz", qualifier: "="}
+    - {quantity: "tuning rate", value: 12.0e+15, unit: "Hz/s", qualifier: "="}
+  platform: "Si3N4-LN"
+  first_author: "Snigirev V."
+  venue: "Nature"
+  date: "2023-03"
+  date_precision: "month"
+  doi: "10.1038/s41586-023-05724-2"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+
+- id: "heterogeneous-guo2023"
+  category: "heterogeneous"
+  metric: "Mode-locked laser"
+  value_text: "see 2.5"
+  platform: "III-V + TFLN"
+  first_author: "Guo Q."
+  venue: "Science"
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1126/science.adj5438"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+  notes: "Values listed under R08 sec. 2.5 (record opa-opo-guo2023)."
+
+- id: "heterogeneous-desiatov2019"
+  category: "heterogeneous"
+  metric: "a-Si detector (visible)"
+  value_text: "22-37 mA/W, 635-850 nm"
+  values:
+    - {quantity: "responsivity min", value: 22, unit: "mA/W", qualifier: "="}
+    - {quantity: "responsivity max", value: 37, unit: "mA/W", qualifier: "="}
+    - {quantity: "wavelength range min", value: 635, unit: "nm", qualifier: "="}
+    - {quantity: "wavelength range max", value: 850, unit: "nm", qualifier: "="}
+  platform: "a-Si on TFLN"
+  first_author: "Desiatov B."
+  venue: "APL"
+  date: "2019"
+  date_precision: "year"
+  doi: "10.1063/1.5118901"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+
+- id: "heterogeneous-wei2023"
+  category: "heterogeneous"
+  metric: "InP MUTC (modified uni-traveling-carrier) PD on TFLN"
+  value_text: "110 GHz, 0.4 A/W"
+  values:
+    - {quantity: "PD bandwidth", value: 110, unit: "GHz", qualifier: "="}
+    - {quantity: "responsivity", value: 0.4, unit: "A/W", qualifier: "="}
+  platform: "InP on TFLN"
+  first_author: "Wei C."
+  venue: "Light Adv. Manuf. 4:30"
+  date: "2023"
+  date_precision: "year"
+  doi: "10.37188/lam.2023.030"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+
+- id: "heterogeneous-xie2025"
+  category: "heterogeneous"
+  metric: "PD bandwidth, highest found"
+  value_text: "140 GHz; 7-ch coherent receiver 3.584 Tb/s aggregate"
+  values:
+    - {quantity: "PD bandwidth", value: 140, unit: "GHz", qualifier: "="}
+    - {quantity: "receiver channels", value: 7, unit: "1", qualifier: "="}
+    - {quantity: "aggregate bit rate", value: 3.584, unit: "Tbit/s", qualifier: "="}
+  platform: "TFLN"
+  first_author: "Xie X."
+  venue: "Light Sci. Appl. 14, 172"
+  date: "2025-04"
+  date_precision: "month"
+  doi: "10.1038/s41377-025-01821-1"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+
+- id: "heterogeneous-yu2026"
+  category: "heterogeneous"
+  metric: "Er:TFLN amp, fiber-to-fiber, highest found"
+  value_text: ">28 dB net at 1531 nm; NF 5.3 dB; >15 dBm out"
+  values:
+    - {quantity: "fiber-to-fiber net gain", value: 28, unit: "dB", qualifier: ">"}
+    - {quantity: "wavelength", value: 1531, unit: "nm", qualifier: "="}
+    - {quantity: "noise figure", value: 5.3, unit: "dB", qualifier: "="}
+    - {quantity: "output power", value: 15, unit: "dB[mW]", qualifier: ">"}
+  platform: "Er:TFLN"
+  first_author: "Yu"
+  venue: "Laser Photon. Rev."
+  date: "2026-08"
+  date_precision: "month"
+  doi: "10.1002/lpor.71753"
+  verification: "Y"
+  highest_found: true
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+  notes: "Internal gain and fiber-to-fiber gain are not comparable."
+
+- id: "heterogeneous-wang2024"
+  category: "heterogeneous"
+  metric: "Er:TFLN amp, internal"
+  value_text: "38 dB internal net gain, 9.16 cm"
+  values:
+    - {quantity: "internal net gain", value: 38, unit: "dB", qualifier: "="}
+    - {quantity: "waveguide length", value: 9.16, unit: "cm", qualifier: "="}
+  platform: "Er:TFLN"
+  first_author: "Wang"
+  venue: "CLEO 2024 ATu4M.3"
+  date: "2024"
+  date_precision: "year"
+  doi: "10.1364/cleo_at.2024.atu4m.3"
+  verification: "Y(conf)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+  notes: "Internal gain and fiber-to-fiber gain are not comparable."
+
+- id: "heterogeneous-zhang2023"
+  category: "heterogeneous"
+  metric: "Er/Yb TFLN"
+  value_text: "27 dB internal"
+  platform: "Er/Yb:TFLN"
+  first_author: "Zhang"
+  venue: "Optica Open"
+  date: "2023"
+  date_precision: "year"
+  doi: "10.1364/opticaopen.23309342"
+  verification: "title"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.12"
+  notes: "Only title/metadata confirmed; gain kept in value_text only."
+
+# ---------------------------------------------------------------- 2.13 tflt
+- id: "tflt-wang2024-platform"
+  category: "tflt"
+  metric: "Platform paper"
+  value_text: "5.6 dB/m (DUV stepper); MZM VpiL 1.9 V cm, up to 40 GHz; much lower birefringence than LN; soliton microcombs; LT already in 5G RF filters"
+  values:
+    - {quantity: "propagation loss", value: 5.6, unit: "dB/m", qualifier: "="}
+    - {quantity: "MZM VpiL", value: 1.9, unit: "V.cm", qualifier: "="}
+    - {quantity: "EO bandwidth", value: 40, unit: "GHz", qualifier: "=", note: "stated as 'up to'"}
+  platform: "TFLT"
+  first_author: "Wang C."
+  venue: "Nature 629, 784"
+  date: "2024-05"
+  date_precision: "month"
+  doi: "10.1038/s41586-024-07369-1"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+  notes: "Ver.: Y (coordinator re-read abstract). Author cell: Wang C. (Kippenberg, Ou X.)."
+
+- id: "tflt-wang2024-highspeed"
+  category: "tflt"
+  metric: "High-speed"
+  value_text: "110 GHz; 176 GBd PAM8 >400 Gb/s net"
+  values:
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: "="}
+    - {quantity: "symbol rate", value: 176, unit: "GBd", qualifier: "="}
+    - {quantity: "net bit rate", value: 400, unit: "Gbit/s", qualifier: ">"}
+  platform: "TFLT"
+  first_author: "Wang C."
+  venue: "Optica"
+  date: "2024-11"
+  date_precision: "month"
+  doi: "10.1364/OPTICA.537730"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-powell2024"
+  category: "tflt"
+  metric: "DC stability vs TFLN"
+  value_text: "<1 dB (TFLT) vs 5 dB (TFLN) over 46 h at 12.1 dBm; VpiL 3.4 V cm; 0-70 C"
+  values:
+    - {quantity: "DC drift (TFLT)", value: 1, unit: "dB", qualifier: "<"}
+    - {quantity: "DC drift (TFLN)", value: 5, unit: "dB", qualifier: "="}
+    - {quantity: "test duration", value: 46, unit: "h", qualifier: "="}
+    - {quantity: "optical power", value: 12.1, unit: "dB[mW]", qualifier: "="}
+    - {quantity: "VpiL", value: 3.4, unit: "V.cm", qualifier: "="}
+    - {quantity: "temperature range min", value: 0, unit: "Cel", qualifier: "="}
+    - {quantity: "temperature range max", value: 70, unit: "Cel", qualifier: "="}
+  platform: "TFLT"
+  first_author: "Powell K."
+  venue: "Opt. Express 32, 44115"
+  date: "2024-11"
+  date_precision: "month"
+  doi: "10.1364/oe.538870"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-powell2025"
+  category: "tflt"
+  metric: "DC stability, visible"
+  value_text: "<2 dB vs 8 dB drift at 737 nm, 16 min"
+  values:
+    - {quantity: "DC drift (TFLT)", value: 2, unit: "dB", qualifier: "<"}
+    - {quantity: "DC drift (comparison)", value: 8, unit: "dB", qualifier: "="}
+    - {quantity: "wavelength", value: 737, unit: "nm", qualifier: "="}
+    - {quantity: "test duration", value: 16, unit: "min", qualifier: "="}
+  platform: "TFLT"
+  first_author: "Powell K."
+  venue: "arXiv 2505.00906"
+  date: "2025"
+  date_precision: "year"
+  arxiv: "2505.00906"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-wang2024-switch"
+  category: "tflt"
+  metric: "Ultralow DC drift switch"
+  value_text: "stable 2 h, SiO2-clad, no anneal"
+  values:
+    - {quantity: "stable duration", value: 2, unit: "h", qualifier: "="}
+  platform: "TFLT"
+  first_author: "Wang"
+  venue: "Opt. Lett."
+  date: "2024-09"
+  date_precision: "month"
+  doi: "10.1364/ol.531263"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-chen2026"
+  category: "tflt"
+  metric: "Bandwidth + drift"
+  value_text: ">67 GHz, VpiL 2.4 V cm, <1 dB drift / 60 min"
+  values:
+    - {quantity: "EO bandwidth", value: 67, unit: "GHz", qualifier: ">"}
+    - {quantity: "VpiL", value: 2.4, unit: "V.cm", qualifier: "="}
+    - {quantity: "DC drift", value: 1, unit: "dB", qualifier: "<"}
+    - {quantity: "test duration", value: 60, unit: "min", qualifier: "="}
+  platform: "TFLT"
+  first_author: "Chen"
+  venue: "Opt. Express"
+  date: "2026-04"
+  date_precision: "month"
+  doi: "10.1364/oe.595937"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-zhang2025"
+  category: "tflt"
+  metric: "TFLT EO comb"
+  value_text: ">450 nm, >2000 lines"
+  values:
+    - {quantity: "comb span", value: 450, unit: "nm", qualifier: ">"}
+    - {quantity: "comb lines", value: 2000, unit: "1", qualifier: ">"}
+  platform: "TFLT"
+  first_author: "Zhang J."
+  venue: "Nature"
+  date: "2025"
+  date_precision: "year"
+  doi: "10.1038/s41586-024-08354-4"
+  verification: "Y"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-li2026-fusedsilica"
+  category: "tflt"
+  metric: "TFLT on fused silica"
+  value_text: "64 GHz; Vpi 1.53 V; bias-stable to 10 mHz; 440.6 Gb/s PAM8"
+  values:
+    - {quantity: "EO bandwidth", value: 64, unit: "GHz", qualifier: "="}
+    - {quantity: "Vpi", value: 1.53, unit: "V", qualifier: "="}
+    - {quantity: "bias-stable low-frequency limit", value: 10, unit: "mHz", qualifier: "="}
+    - {quantity: "bit rate", value: 440.6, unit: "Gbit/s", qualifier: "="}
+  platform: "TFLT on fused silica"
+  first_author: "Li Z."
+  venue: "arXiv 2604.14836; OFC 2026 W1A.5"
+  date: "2026"
+  date_precision: "year"
+  doi: "10.1364/ofc.2026.w1a.5"
+  arxiv: "2604.14836"
+  verification: "Y(conf)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+  notes: "Ver.: Y(preprint/conf)."
+
+- id: "tflt-li2026-suspended"
+  category: "tflt"
+  metric: "Suspended TFLT"
+  value_text: "110 GHz; 460 Gb/s net PAM8"
+  values:
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: "="}
+    - {quantity: "net bit rate", value: 460, unit: "Gbit/s", qualifier: "="}
+  platform: "TFLT (suspended)"
+  first_author: "Li Z."
+  venue: "arXiv 2607.17436"
+  date: "2026-07"
+  date_precision: "month"
+  arxiv: "2607.17436"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+  notes: "Date taken from the arXiv identifier (no date in R08 cell)."
+
+- id: "tflt-xu2026"
+  category: "tflt"
+  metric: "O-band sub-V"
+  value_text: "Vpi 1 V; >110 GHz"
+  values:
+    - {quantity: "Vpi", value: 1, unit: "V", qualifier: "="}
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: ">"}
+  platform: "TFLT"
+  first_author: "Xu"
+  venue: "OFC 2026 W1A.4"
+  date: "2026"
+  date_precision: "year"
+  doi: "10.1364/ofc.2026.w1a.4"
+  verification: "Y(conf)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-alsayem2026"
+  category: "tflt"
+  metric: "High temperature"
+  value_text: "DC-bias stable at 120 C"
+  values:
+    - {quantity: "operating temperature", value: 120, unit: "Cel", qualifier: "="}
+  platform: "TFLT"
+  first_author: "Al Sayem A."
+  venue: "arXiv 2604.27285"
+  date: "2026-04"
+  date_precision: "month"
+  arxiv: "2604.27285"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+  notes: "Date taken from the arXiv identifier (no date in R08 cell)."
+
+- id: "tflt-hulyal2026"
+  category: "tflt"
+  metric: "WDM transmitter"
+  value_text: "1.6 Tb/s aggregate net"
+  values:
+    - {quantity: "aggregate net bit rate", value: 1.6, unit: "Tbit/s", qualifier: "="}
+  platform: "TFLT"
+  first_author: "Hulyal"
+  venue: "CLEO 2026 STh1F.2"
+  date: "2026"
+  date_precision: "year"
+  doi: "10.1364/cleo_si.2026.sth1f.2"
+  verification: "Y(conf)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-he2026"
+  category: "tflt"
+  metric: "Resonant"
+  value_text: "PhC nanobeam Q >1e7; Vpi 12.85 mV (resonant, DC)"
+  values:
+    - {quantity: "Q", value: 1.0e+7, unit: "1", qualifier: ">"}
+    - {quantity: "Vpi (resonant, DC)", value: 12.85, unit: "mV", qualifier: "="}
+  platform: "TFLT (PhC nanobeam)"
+  first_author: "He"
+  venue: "CLEO 2026 SM4K.1"
+  date: "2026"
+  date_precision: "year"
+  doi: "10.1364/cleo_si.2026.sm4k.1"
+  verification: "Y(conf)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+
+- id: "tflt-kuznetsov2025"
+  category: "tflt"
+  metric: "On-chip PPLT SHG"
+  value_text: ">1 W SH at 775 nm; PPLT coercive field ~4x MgO:LN"
+  values:
+    - {quantity: "SH output power", value: 1, unit: "W", qualifier: ">"}
+    - {quantity: "SH wavelength", value: 775, unit: "nm", qualifier: "="}
+    - {quantity: "coercive field ratio PPLT / MgO:LN", value: 4, unit: "1", qualifier: "~"}
+  platform: "PPLT"
+  first_author: "Kuznetsov"
+  venue: "arXiv 2512.07968"
+  date: "2025-12"
+  date_precision: "month"
+  arxiv: "2512.07968"
+  verification: "Y(preprint)"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.13"
+  notes: "Author cell: Kuznetsov, Li, Kippenberg. Date taken from the arXiv identifier (no date in R08 cell)."
+
+- id: "tflt-xu2026-th4a2"
+  category: "tflt"
+  metric: "C-band TFLT MZM, line rate"
+  value_text: "Vpi 1.35 V, >110 GHz EO bandwidth; 768 Gbit/s line (536 Gbit/s net) data rate"
+  values:
+    - {quantity: "Vpi", value: 1.35, unit: "V", qualifier: "="}
+    - {quantity: "EO bandwidth", value: 110, unit: "GHz", qualifier: ">"}
+    - {quantity: "line rate", value: 768, unit: "Gbit/s", qualifier: "="}
+    - {quantity: "net bit rate", value: 536, unit: "Gbit/s", qualifier: "="}
+  platform: "TFLT"
+  first_author: "Xu M."
+  venue: "OFC 2026 Th4A.2"
+  date: "2026"
+  date_precision: "year"
+  doi: "10.1364/ofc.2026.th4a.2"
+  verification: "Y(conf)"
+  provisional: true
+  as_of: "2026-10-25"
+  research_note: "C06 manuscript sec. 6.11, 6.12"
+  notes: "Crossref record and abstract checked 2026-10-25 (5 authors). Values from the abstract; the 226 GBd symbol rate cited in chapter 06 is from the paper body and is not in values."
+
+# ---------------------------------------------------------------- 2.14 thermo-optic
+- id: "thermo-optic-ji2025"
+  category: "thermo-optic"
+  metric: "Thermo-optic phase shifter P_pi (candidate)"
+  value_text: "Candidate: \"High-efficiency thermo-optic phase shifter based on TFLN platform\". P_pi not in Crossref metadata: N/A. No verified record P_pi."
+  platform: "TFLN"
+  first_author: "Ji"
+  venue: "JLT"
+  date: "2025-07-15"
+  date_precision: "day"
+  doi: "10.1109/jlt.2025.3564158"
+  verification: "title"
+  provisional: true
+  as_of: "2026-10-24"
+  research_note: "R08 sec. 2.14"
+  notes: "P_pi N/A."

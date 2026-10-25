@@ -1,0 +1,24 @@
+{
+  "citation": "\"Sumitomo Metal Mining TSE disclosure on LT/LN substrate expansion\", (2014) https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf",
+  "link": "https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "smm-2014",
+    "issued": "2014-12-18",
+    "read": "Search snippet only; PDF returned 403/404",
+    "title": "Sumitomo Metal Mining TSE disclosure on LT/LN substrate expansion",
+    "type": "webpage",
+    "url": "https://www2.jpx.co.jp/disc/57130/140120141218095422.pdf"
+  }
+}

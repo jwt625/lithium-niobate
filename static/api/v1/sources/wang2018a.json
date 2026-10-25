@@ -1,0 +1,45 @@
+{
+  "citation": "Cheng Wang, Mian Zhang, Brian Stern, et al., \"Nanophotonic lithium niobate electro-optic modulators\", Optics Express 26, 1547, (2018) doi:10.1364/oe.26.001547",
+  "link": "https://doi.org/10.1364/oe.26.001547",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Cheng Wang"
+      },
+      {
+        "literal": "Mian Zhang"
+      },
+      {
+        "literal": "Brian Stern"
+      },
+      {
+        "literal": "Michal Lipson"
+      },
+      {
+        "literal": "Marko Lončar"
+      }
+    ],
+    "container_title": "Optics Express",
+    "doi": "10.1364/oe.26.001547",
+    "id": "wang2018a",
+    "issue": "2",
+    "issued": "2018-01-22",
+    "page": "1547",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Nanophotonic lithium niobate electro-optic modulators",
+    "type": "article-journal",
+    "volume": "26"
+  }
+}

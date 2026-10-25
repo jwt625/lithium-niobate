@@ -1,0 +1,69 @@
+/* Chapter 2.6 (EO combs and frequency shifters) page styles. Every rule is scoped under .lt; VISUAL rules under
+   :root[data-mode="visual"]; motion only under html[data-fx="on"]. Fixed boxes: SVGs carry a viewBox at width 100%,
+   readouts reserve their character width. */
+
+/* ---------- TECH ---------- */
+.lt table.ro26 col.cv { width: 17.5ch; }
+.lt table.ro26 col.cs { width: 74px; }
+.lt table.ro26 td.v { font-size: 11.5px; }
+.lt table.ro26 td:first-child { white-space: normal; overflow-wrap: anywhere; }
+.lt table.ro26s { border-top: 1px solid var(--rule2); margin-top: 4px; }
+.lt table.ro26s col.cv { width: 21ch; }
+.lt .panel .ctl output { white-space: pre; font-variant-numeric: tabular-nums; }
+.lt .panel .ctl .k { font-size: 12px; color: var(--fg2); }
+.lt .lgd .k.s4 { border-top: 1.2px dashed var(--fg2); border-image: none; }
+.lt .lgd .k.cur { border-top: 1px dashed var(--fg2); width: 14px; }
+.lt .lp .c26-st { stroke: var(--fg2); stroke-width: 1.2; }
+.lt .panel .pf > span { white-space: normal; margin-right: 8px; }
+.lt .c26-main { min-width: 0; }
+.lt .c26-main .lgd { border-bottom: 1px solid var(--rule); }
+@media (max-width: 520px) {
+  .lt #c26-svg .tk, .lt #c26-svg .al { font-size: 19px; }
+  .lt #s26-eff .tk, .lt #s26-eff .al, .lt #s26-td .tk, .lt #s26-td .al { font-size: 14px; }
+}
+.lt pre.s26-ascii { height: 190px; padding: 18px 12px; font-size: 13px; line-height: 17px; align-self: center; }
+@media (max-width: 520px) { .lt pre.s26-ascii { font-size: 11px; line-height: 14px; height: 160px; padding: 12px 8px; } }
+.lt .lt-split > .plotbox { min-width: 0; }
+.lt table.r26 td:nth-child(2) { color: var(--fg); }
+.lt table.r26 { min-width: 680px; }
+.lt .eq { overflow-x: auto; overflow-y: hidden; }
+.lt .eq.e26w { flex-wrap: wrap; row-gap: 8px; }
+.lt table.r26c td.num { text-align: right; }
+@media (max-width: 520px) {
+  .lt table.ro26 col.cs { width: 66px; }
+  .lt table.ro26s col.cv { width: 17.5ch; }
+  .lt table.ro26s td.v { font-size: 10.5px; }
+}
+
+/* ---------- VISUAL ---------- */
+:root[data-mode="visual"] {
+  & .lt { --v26-bin0: var(--v-ir1550); --v26-bin1: #a58bff; }
+  &[data-theme="light"] .lt { --v26-bin1: #5a3cc8; }
+  & .lt .v26-comb .v26-row { display: grid; grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr); gap: 16px; }
+  & .lt .v26-comb .v26-row > * { min-width: 0; }
+  & .lt .v26-comb #vc26-ring { display: flex; align-items: center; }
+  & .lt .lp .c26-st { stroke: var(--v-ir1550); stroke-width: 1.4; }
+  & .lt .v26-comb .v-ctls { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); align-items: end; }
+  & .lt .v26-comb .v-hud { grid-column: 1 / -1; grid-template-columns: repeat(3, auto minmax(0, 1fr)); }
+  & .lt .v26-comb .v-cap { margin: 0; }
+  & .lt .v26-sstage { display: grid; gap: 16px; min-width: 0; }
+  & .lt .v26-plots { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+  & .lt .v26-plots .v-stage { padding: 8px 8px 4px; }
+  & .lt #vs26 .v-hud dt { white-space: normal; }
+  & .lt .v26-m2 { font: 500 15px var(--v-ui); fill: var(--v-text2); }
+  & .lt .v26-m3 { font: 400 13px var(--v-ui); fill: var(--v-text3); }
+  & .lt #vc26-rank .v26-m2 { font-size: 17px; }
+  & .lt #vc26-pipes line { stroke-width: 4; }
+  & .lt #vs26-art .v26-m2 { font-size: 16px; }
+  & .lt .v-prov .b { margin-left: 4px; }
+  @media (max-width: 1100px) {
+    & .lt .v26-comb .v-hud { grid-template-columns: repeat(2, auto minmax(0, 1fr)); }
+  }
+  @media (max-width: 760px) {
+    & .lt .v26-comb .v26-row { grid-template-columns: minmax(0, 1fr); }
+    & .lt .v26-plots { grid-template-columns: minmax(0, 1fr); }
+    & .lt .v26-comb .v-hud { grid-template-columns: auto minmax(0, 1fr); }
+    & .lt #vc26-rank .v26-m2 { font-size: 22px; }
+    & .lt #vs26-art .v26-m2 { font-size: 22px; }
+  }
+}

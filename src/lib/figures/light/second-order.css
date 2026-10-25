@@ -1,0 +1,162 @@
+/* Section 2.3 (second-order nonlinear optics) styles. Every rule under .lt; VISUAL rules under :root[data-mode="visual"].
+   Fixed boxes and reserved widths for every live value (no layout shift); sharp corners; VISUAL color only from optics. */
+
+/* ---------- TECH ---------- */
+.lt .f23p { margin-top: 14px; }
+.lt .f23p .ctl { grid-template-columns: 124px minmax(0, 1fr) 118px; }
+.lt .f23p .ctl.seg2 { grid-template-columns: 124px minmax(0, 1fr); }
+.lt .f23p .ctl .seg button { white-space: nowrap; }
+.lt .f23p .ctl output { white-space: pre; overflow: hidden; }
+@media (max-width: 520px) {
+  .lt .f23p .ctl { grid-template-columns: minmax(0, 1fr) 118px; }
+  .lt .f23p .ctl.seg2 { grid-template-columns: minmax(0, 1fr); }
+}
+.lt table.ro.f23ro col.cv { width: 136px; }
+.lt table.ro.f23ro col.cs { width: 86px; }
+.lt table.ro.f23ro td { font-size: 11.5px; }
+.lt table.ro.f23ro td.v { font-family: var(--mono); }
+.lt table.ro.f23ro td:first-child { overflow: hidden; text-overflow: ellipsis; }
+.lt .f23-slot { display: inline-block; width: 74px; height: 18px; overflow: hidden; text-align: right; vertical-align: middle; white-space: nowrap; }
+.lt .f23-nob { font: 400 10px/16px var(--mono); color: var(--fg3); letter-spacing: 0.04em; }
+.lt .f23-ref { border-bottom: 1px dotted var(--fg3); cursor: help; }
+.lt .f23-ref:hover, .lt .f23-ref:focus-visible { border-bottom-color: var(--fg); background: var(--acc-dim); outline: none; }
+
+/* labels and table heads carrying symbols and units keep their case (uppercase would turn eta, mu, d, pm into other glyphs) */
+.lt .f23p .ctl .lbl, .lt .f23-sorth .lbl { text-transform: none; letter-spacing: 0.02em; }
+.lt table.f23t th { text-transform: none; letter-spacing: 0.02em; }
+.lt table.idx.f23t td:first-child { font-family: inherit; font-size: inherit; color: var(--fg); white-space: normal; width: auto; min-width: 9em; }
+.lt table.idx.f23t td.b0 { white-space: nowrap; }
+.lt table.idx.f23t + * { margin-top: 0; }
+.lt .scrollx + .tx, .lt .scrollx + .fine { margin-top: 8px; }
+
+/* control rows keep one line, so their height never depends on which font has loaded (no shift at font swap) */
+.lt .f23p .ctl > label, .lt .f23p .ctl > .lbl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.lt .f23p .ph > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.lt .f23p .ph > span:last-child { flex: none; }
+/* ASCII figures scroll inside their box instead of being clipped */
+.lt #f06-ascii, .lt #f07-ascii, .lt #f08-ascii { overflow-x: auto; }
+.lt .f23p .ctl.f23-axc { border-top: 0; }
+
+/* d matrix (TECH) */
+.lt .f23-mxw { padding: 8px 10px 0; }
+.lt table.mx.f23-mx { margin: 0 auto; table-layout: fixed; width: 384px; }
+.lt table.mx.f23-mx th:first-child { width: 24px; }
+.lt table.mx.f23-mx th { font: 400 10px/14px var(--mono); color: var(--fg3); padding: 2px 8px; text-align: center; letter-spacing: 0.04em; }
+.lt table.mx.f23-mx th.on { color: var(--fg); }
+.lt table.mx.f23-mx td { height: 24px; padding: 3px 4px; white-space: nowrap; overflow: hidden; font-variant-numeric: tabular-nums; }
+.lt .f23-info { display: grid; grid-template-rows: repeat(3, 16px); height: 60px; padding: 6px 10px; overflow: hidden; font: 400 11px/16px var(--mono); color: var(--fg2); white-space: pre; }
+.lt .f23-info > span { overflow: hidden; text-overflow: ellipsis; }
+.lt table.f23-resp td.num, .lt table.f23-resp td:first-child { white-space: nowrap; }
+.lt table.f23-resp td.num { width: 1%; }
+.lt table.idx td.num.l { text-align: left; }
+
+/* ledger labels: halo in the background color so converter lines never strike through them */
+.lt #f09-plot text.lg { paint-order: stroke; stroke: var(--bg); stroke-width: 3px; stroke-linejoin: round; }
+
+/* acceptance plots, hover row, sort row */
+.lt .lp .f23-band { fill: var(--acc-dim); stroke: none; }
+.lt .f23-hov { display: flex; gap: 12px; align-items: center; height: 26px; padding: 0 8px; border-top: 1px solid var(--rule); font: 400 11px/26px var(--mono); color: var(--fg2); white-space: nowrap; overflow: hidden; }
+.lt .f23-hov b { font-weight: 500; color: var(--fg); }
+.lt .f23-hov .dv { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.lt .f23-hov .b { flex: none; }
+.lt .f23-sorth { display: flex; gap: 10px; align-items: center; margin: 0 0 6px; font-size: 12px; color: var(--fg2); }
+.lt .f23-sorth .seg { flex-wrap: wrap; }
+.lt table.f23-meas tbody tr { height: 27px; }
+.lt table.f23-eta td.h .b, .lt table.f23-dset td .b { vertical-align: 1px; }
+
+/* ---------- VISUAL ---------- */
+:root[data-mode="visual"] {
+  & .lt .v-f23 { margin: 32px 0 8px; }
+  & .lt .v-f23 .v-inst { margin: 0; }
+  & .lt .v-f23 .v-seg { flex-wrap: wrap; }
+  & .lt .v-f23 .v-seg button { white-space: nowrap; }
+  & .lt .v-f23 .v-ctls { margin-top: 24px; }
+  & .lt .v-f23 .v-ctl > .v-lab.f23-labs { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+  & .lt .v-f23-foot { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; margin-top: 28px; align-items: start; }
+  @media (max-width: 900px) { & .lt .v-f23-foot { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
+  & .lt .v-f23 .v-hud dd { min-width: 0; }
+  /* instrument: drawing, caption and provenance on the left; controls and readouts on the right */
+  & .lt .f23-2c { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 36px; align-items: start; }
+  & .lt .f23-2c > * { min-width: 0; }
+  & .lt .f23-2c .v-stage { margin: 0; }
+  & .lt .f23-2c .v-cap { margin: 18px 0 0; }
+  & .lt .f23-2c .v-prov { margin-top: 14px; }
+  & .lt .f23-side { display: grid; gap: 22px; align-content: start; }
+  & .lt .f23-side .v-ctls { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px 24px; margin-top: 0; }
+  @media (max-width: 1100px) { & .lt .f23-2c { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
+  & .lt .f23-side .v-hud { gap: 2px 16px; font-size: 14px; line-height: 22px; }
+  & .lt .f23-side .v-hud dd { height: 22px; }
+  & .lt table.idx.f23t td, & .lt table.idx.f23t td:first-child, & .lt table.idx.f23t th { padding: 5px 10px; }
+  @media (min-width: 1101px) {
+    & .lt .f23-2c svg .f23-t1 { font-size: 23px; }
+    & .lt .f23-2c svg .f23-t2:not(.f23-mt) { font-size: 21px; }
+    & .lt .f23-2c svg .f23-t3:not(.f23-mt) { font-size: 18px; }
+    & .lt .f23-2c svg .lp .tk, & .lt .f23-2c svg .lp .al, & .lt .f23-2c svg.lp .tk, & .lt .f23-2c svg.lp .al { font-size: 18px; }
+    & .lt .f23-2c svg .f23-t2.f23-mt { font-size: 17px; }
+  }
+  /* phone: readouts stack (label above value) so no value is cut */
+  @media (max-width: 480px) {
+    & .lt .v-f23 .v-hud { grid-template-columns: minmax(0, 1fr); gap: 0 0; }
+    & .lt .v-f23 .v-hud dt { margin-top: 6px; }
+    & .lt .v-f23 .v-hud dd { text-align: left; white-space: pre; height: 24px; overflow-x: auto; overflow-y: hidden; }
+    & .lt #v06-hud dd { white-space: pre-wrap; height: 66px; overflow: hidden; }
+  }
+  /* tab groups: panes share one grid cell; inactive panes are hidden but keep their size, so switching moves nothing */
+  & .lt .f23-tabs { margin: 28px 0 8px; }
+  & .lt .f23-tabbar { margin-bottom: 18px; flex-wrap: wrap; }
+  & .lt .f23-panes { display: grid; }
+  & .lt .f23-pane { grid-area: 1 / 1; min-width: 0; }
+  & .lt .f23-pane > .h3:first-child { display: none; }
+  & .lt .f23-tabs[data-tab="0"] .f23-pane:not([data-i="0"]), & .lt .f23-tabs[data-tab="1"] .f23-pane:not([data-i="1"]), & .lt .f23-tabs[data-tab="2"] .f23-pane:not([data-i="2"]), & .lt .f23-tabs[data-tab="3"] .f23-pane:not([data-i="3"]), & .lt .f23-tabs[data-tab="4"] .f23-pane:not([data-i="4"]), & .lt .f23-tabs[data-tab="5"] .f23-pane:not([data-i="5"]) { visibility: hidden; }
+  & .lt .f23-hud6 { grid-template-columns: auto minmax(0, 1fr); }
+  & .lt .v-f23-dev { height: 24px; margin: 10px 0 0; font: 400 15px/24px var(--v-ui); color: var(--v-text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  & .lt .v-f23 svg .f23-t1 { font: 600 17px var(--v-ui); fill: var(--v-text); }
+  & .lt .v-f23 svg .f23-t2 { font: 500 15px var(--v-ui); fill: var(--v-text2); }
+  & .lt .v-f23 svg .f23-t3 { font: 400 13px var(--v-ui); fill: var(--v-text3); }
+  & .lt .v-f23 svg .f23-t2.ir-el { fill: var(--v-ir1550); }
+  & .lt .v-f23 svg .f23-t2.f23-on { fill: #fff; font-weight: 600; }
+  & .lt #v09-plot text { paint-order: stroke; stroke: var(--v-ink1); stroke-width: 4px; stroke-linejoin: round; }
+  & .lt .v-f23 .lp .f23-sh { stroke: var(--f23-sh); stroke-width: 3.2; fill: none; }
+  & .lt .v-f23 .lp .f23-ring { stroke: var(--v-l532); stroke-width: 2.4; stroke-dasharray: none; }
+  & .lt .v-f23 .lp .f23-acc { fill: none; stroke: var(--f23-acc); stroke-width: 3; }
+  & .lt .v-f23 .lp .f23-acc.ir { stroke-dasharray: 10 6; }
+  & .lt .lp .f23-band { fill: var(--v-l532-dim); }
+  /* true-scale domain drawings: 2 px per um in CSS pixels, independent of the stage width */
+  & .lt .f23-vst { padding: 20px 0 0; }
+  & .lt .f23-mag, & .lt .f23-strips { padding: 0 4% 0 5%; }
+  & .lt .f23-mag { height: 128px; }
+  & .lt .f23-magh { display: flex; justify-content: space-between; gap: 16px; height: 26px; font: 500 15px/26px var(--v-ui); color: var(--v-text2); white-space: nowrap; overflow: hidden; }
+  & .lt .f23-magh b { font-weight: 600; color: var(--v-text); }
+  & .lt .f23-magbox { position: relative; width: 900px; max-width: 100%; height: 56px; overflow: hidden; background: color-mix(in srgb, var(--v-ln) 14%, transparent); }
+  & .lt .f23-stripbox { position: relative; width: 100%; height: 48px; overflow: hidden; background: color-mix(in srgb, var(--v-ln) 14%, transparent); }
+  & .lt .f23-dom { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--v-ln) 46%, transparent) 0 var(--a), transparent var(--a) var(--b)); }
+  & .lt .f23-dom.one { background: color-mix(in srgb, var(--v-ln) 30%, transparent); }
+  & .lt .v-stage .f23-magbox svg { position: absolute; left: 0; top: 0; width: 900px; height: 56px; }
+  & .lt .f23-scale { display: flex; align-items: center; gap: 10px; height: 34px; font: 400 13px/18px var(--v-ui); color: var(--v-text3); }
+  & .lt .f23-scale .bar { flex: none; width: 100px; height: 8px; border: 1px solid var(--v-text3); border-top: 0; }
+  & .lt .f23-strip { height: 82px; margin-bottom: 4px; }
+  & .lt .f23-strip .f23-magh { height: 30px; line-height: 30px; }
+  /* phone: drawings fit the width; text inside them is set larger in user units so it stays legible */
+  @media (max-width: 700px) {
+    & .lt .f23-magh { font-size: 12px; }
+    & .lt .v-f23 svg .f23-t1 { font-size: 40px; }
+    & .lt .v-f23 svg .f23-t2:not(.f23-mt) { font-size: 36px; }
+    & .lt .v-f23 svg .f23-t3:not(.f23-mt) { font-size: 28px; }
+    & .lt .v-f23 svg .lp .tk, & .lt .v-f23 svg .lp .al, & .lt #v09-plot .tk, & .lt #v09-plot .al { font-size: 34px; }
+    & .lt #v09-plot .f23-ml { display: none; }
+  }
+  & .lt .f23-slot { width: 96px; height: 22px; }
+  & .lt .f23-nob { font: 500 12px/20px var(--v-ui); color: var(--v-text3); letter-spacing: 0; }
+  & .lt .f23-ref { border-bottom-color: var(--v-text3); }
+  & .lt table.ro.f23ro col.cv { width: 168px; }
+  & .lt table.ro.f23ro col.cs { width: 112px; }
+  & .lt table.ro.f23ro td { font-size: 14px; }
+  & .lt table.ro.f23ro td.v { font-family: var(--v-ui); }
+  & .lt .f23-info { grid-template-rows: repeat(3, 22px); height: 78px; font: 400 14px/22px var(--v-ui); color: var(--v-text2); }
+  & .lt table.mx.f23-mx { width: 456px; }
+  & .lt table.mx.f23-mx th:first-child { width: 30px; }
+  & .lt .f23-hov { font: 400 14px/26px var(--v-ui); color: var(--v-text2); border-top-color: var(--v-line); }
+  & .lt .f23-sorth { font: 500 15px/22px var(--v-ui); color: var(--v-text2); gap: 16px; }
+  & .lt table.f23-meas tbody tr { height: 34px; }
+  & .lt table.mx.f23-mx th { font: 500 12px/18px var(--v-ui); color: var(--v-text3); }
+}

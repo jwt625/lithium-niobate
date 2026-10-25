@@ -1,0 +1,34 @@
+{
+  "citation": "ALBERT A. BALLMAN, \"Growth of Piezoelectric and Ferroelectric Materials by the CzochraIski Technique\", Journal of the American Ceramic Society 48, 112-113, (1965) doi:10.1111/j.1151-2916.1965.tb11814.x",
+  "link": "https://doi.org/10.1111/j.1151-2916.1965.tb11814.x",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "BALLMAN",
+        "given": "ALBERT A."
+      }
+    ],
+    "container_title": "Journal of the American Ceramic Society",
+    "doi": "10.1111/j.1151-2916.1965.tb11814.x",
+    "id": "ballman1965",
+    "issue": "2",
+    "issued": "1965-02",
+    "page": "112-113",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Growth of Piezoelectric and Ferroelectric Materials by the CzochraIski Technique",
+    "type": "article-journal",
+    "volume": "48"
+  }
+}

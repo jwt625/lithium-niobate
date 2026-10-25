@@ -1,0 +1,33 @@
+# lithium-niobate.com
+
+> Lithium niobate (LiNbO3, LN): crystal, light, sound, quirks, fabrication, devices, history and industry. Machine-readable, provenance-tagged property data: every value carries its variant (CLN, SLN, MgO-doped), conditions, source with DOI and locator, and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed; U unverified rows are excluded from default endpoints). Data license: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Code license: GPL-3.0.
+
+The API is static and path-parameterized (no query strings). Defaults: congruent LN (CLN); kushibiki1999 for elastic, piezoelectric, dielectric constants and density; Zelmon 1997 Sellmeier (MgO5 with the 2026 erratum applied). Where sources disagree (e.g. clamped r51: 18.2 vs 28 pm/V) records are listed side by side as a spread, not blended.
+
+## API
+
+- [Catalog](https://lithium-niobate.com/api/v1/index.json): properties, tensors, dispersion models, variants, counts, endpoint templates
+- [OpenAPI 3.1](https://lithium-niobate.com/api/openapi.json): every GET path
+- [Scalar properties (JSON)](https://lithium-niobate.com/api/v1/properties.json) and [CSV](https://lithium-niobate.com/api/v1/properties.csv)
+- [Tensors (JSON)](https://lithium-niobate.com/api/v1/tensors.json): 3m tensors with independent components, Voigt matrix and convention, full Cartesian tensor, frame and sign convention
+- [Dispersion models](https://lithium-niobate.com/api/v1/dispersion.json): formulas, coefficients, validity, errata, check values, 1 nm index grids, refractiveindex.info YAML
+- [Sources](https://lithium-niobate.com/api/v1/sources.json): bibliographic register with DOIs and how each source was read
+- [Variants](https://lithium-niobate.com/api/v1/variants.json)
+- [Data package](https://lithium-niobate.com/api/v1/datapackage.json): Frictionless v2 with UCUM units per field
+
+## Timelines and records
+
+- [History events](https://lithium-niobate.com/api/v1/events/history.json): dated milestones 1928 onward with status and DOI
+- [Industry events](https://lithium-niobate.com/api/v1/events/industry.json): 2009 onward, with evidence grades and access dates
+- [Device records](https://lithium-niobate.com/api/v1/records.json): provisional TFLN/TFLT performance records with DOI and verification flag
+- [Publications](https://lithium-niobate.com/api/v1/publications.json): LN-relevant publications of the site author
+
+## Reference
+
+- [Glossary](https://lithium-niobate.com/api/v1/glossary.json): 344 terms with one-sentence definitions and sources
+- [Full text for agents](https://lithium-niobate.com/llms-full.txt): recommended values, tensors, dispersion models and glossary as markdown
+
+## Optional
+
+- [Unverified rows](https://lithium-niobate.com/api/v1/unverified.json): claims that must not be presented as fact
+- [JSON Schemas](https://lithium-niobate.com/api/v1/schema/scalar.schema.json): one per payload type

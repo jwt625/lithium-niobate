@@ -1,0 +1,60 @@
+{
+  "citation": "Yaowen Hu, Mengjie Yu, Di Zhu, et al., \"On-chip electro-optic frequency shifters and beam splitters\", Nature 599, 587-593, (2021) doi:10.1038/s41586-021-03999-x",
+  "link": "https://doi.org/10.1038/s41586-021-03999-x",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Yaowen Hu"
+      },
+      {
+        "literal": "Mengjie Yu"
+      },
+      {
+        "literal": "Di Zhu"
+      },
+      {
+        "literal": "Neil Sinclair"
+      },
+      {
+        "literal": "Amirhassan Shams-Ansari"
+      },
+      {
+        "literal": "Linbo Shao"
+      },
+      {
+        "literal": "Jeffrey Holzgrafe"
+      },
+      {
+        "literal": "Eric Puma"
+      },
+      {
+        "literal": "Mian Zhang"
+      },
+      {
+        "literal": "Marko Lončar"
+      }
+    ],
+    "container_title": "Nature",
+    "doi": "10.1038/s41586-021-03999-x",
+    "id": "hu2021",
+    "issue": "7886",
+    "issued": "2021-11-25",
+    "page": "587-593",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "On-chip electro-optic frequency shifters and beam splitters",
+    "type": "article-journal",
+    "volume": "599"
+  }
+}

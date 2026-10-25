@@ -1,0 +1,89 @@
+/* Chapter 2.5 Third-order effects: page styles. Every rule under .lt (set on each section); VISUAL rules under
+   :root[data-mode="visual"]. Fixed boxes (SVG viewBox aspect), fixed-width readouts (white-space: pre, reserved ch),
+   one fixed-width Run/Stop button per variant. Sharp corners. */
+
+/* ---------- shared ---------- */
+.lt .c25-eq { overflow-x: auto; overflow-y: hidden; }
+.lt .c25-eq math { flex: 0 0 auto; }
+.lt ul.c25-ul { margin: 0 0 8px; padding-left: 18px; }
+.lt ul.c25-ul li { margin-bottom: 6px; }
+.lt table.c25-work td.num, .lt table.c25-n2 td.num { text-align: right; }
+.lt table.c25-work td:first-child, .lt table.c25-n2 td:first-child { font-family: var(--sans); }
+
+/* ---------- TECH panels ---------- */
+.lt .c25-k .ctl, .lt .c25-l .ctl { grid-template-columns: 130px minmax(0, 1fr) 15ch; }
+.lt .c25-k .ctl output, .lt .c25-l .ctl output { white-space: pre; overflow: hidden; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+@media (max-width: 520px) {
+  .lt .c25-k .ctl, .lt .c25-l .ctl { grid-template-columns: minmax(0, 1fr) 15ch; }
+}
+.lt .c25-k .lt-split > *, .lt .c25-l .lt-split > * { min-width: 0; }
+.lt table.c25-ro col.c25-v { width: 25ch; }
+.lt .lp .c25-stem { fill: none; stroke: var(--fg2); stroke-width: 0.8; }
+.lt table.c25-ro col.c25-s { width: 74px; }
+.lt table.c25-ro td:first-child { white-space: normal; line-height: 15px; }
+.lt table.c25-ro td.v { font-size: 11.5px; }
+.lt table.c25-ro td.c25-th { color: var(--fg); background: var(--bg2); border-top: 1px solid var(--rule2); font: 400 10.5px/16px var(--mono); letter-spacing: 0.02em; }
+.lt #l-cv { border-top: 1px solid var(--rule2); }
+
+.lt .c25-plots { padding: 6px 10px 2px; display: grid; gap: 4px; }
+.lt .c25-plots svg { display: block; width: 100%; height: auto; }
+.lt .c25-run { display: inline-block; width: 9ch; height: 22px; padding: 0; border: 1px solid var(--fg); background: var(--bg); color: var(--fg); font: 400 10.5px/20px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; box-shadow: 2px 2px 0 var(--shadow); }
+.lt .c25-run:hover { background: var(--acc-dim); }
+.lt .c25-run.on { background: var(--fg); color: var(--bg); }
+.lt .c25-run:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
+.lt .c25-k .plotbox { align-self: start; }
+
+/* ---------- VISUAL ---------- */
+:root[data-mode="visual"] {
+  & .lt .c25-vwrap { margin: 32px 0 8px; }
+  & .lt .c25-vwrap .v-inst { margin: 0; }
+  & .lt .c25-vstage { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); align-items: center; }
+  & .lt .c25-vstage > * { min-width: 0; }
+  & .lt .c25-vcomb { grid-column: 1 / -1; border-top: 1px solid var(--v-line); padding: 8px 8px 0; }
+  & .lt .c25-vtr { padding: 8px 8px 0 0; }
+  @media (max-width: 640px) { & .lt .c25-vcomb .c25-tk, & .lt .c25-vcomb .c25-lab { font-size: 32px; } }
+  @media (max-width: 640px) { & .lt .c25-vstage { grid-template-columns: minmax(0, 1fr); } & .lt .c25-vtr { padding: 0 8px; border-top: 1px solid var(--v-line); } }
+
+  /* drawing classes (VISUAL SVGs only) */
+  & .lt { --c25-l775: #8a1020; }
+  &[data-theme="light"] .lt { --c25-l775: #6a0815; }
+  & .lt .c25-lab { font: 500 20px var(--v-ui); fill: var(--v-text2); }
+  & .lt .c25-tk { font: 500 18px var(--v-ui); fill: var(--v-text3); font-variant-numeric: tabular-nums; }
+  & .lt .c25-val { font: 600 26px var(--v-ui); fill: var(--v-text); font-variant-numeric: tabular-nums; }
+  & .lt .c25-ax { stroke: var(--v-text3); stroke-width: 1; fill: none; }
+  & .lt .c25-gl { stroke: var(--v-line); stroke-width: 1; }
+  & .lt .c25-slab { fill: color-mix(in srgb, var(--v-ln) 8%, transparent); stroke: var(--v-line2); stroke-width: 1; }
+  & .lt .c25-beam { fill: color-mix(in srgb, var(--v-ir1550) 16%, transparent); stroke: var(--v-ir1550); stroke-width: 2; stroke-dasharray: 9 5; }
+  & .lt .c25-front { fill: none; stroke: var(--v-ir1550); stroke-width: 1.4; stroke-dasharray: 3 4; }
+  & .lt .c25-arrow { fill: none; stroke: var(--v-ir1550); stroke-width: 3; stroke-dasharray: 9 5; }
+  & .lt .c25-sh { fill: color-mix(in srgb, var(--c25-l775) 55%, transparent); stroke: var(--c25-l775); stroke-width: 2; } /* declared 775 nm values of visual.css; the computed --v-l775 (Effects.svelte) comes out green from the CMF fit tail */
+  & .lt .c25-bk { fill: var(--v-text3); }
+  & .lt .c25-bc { fill: var(--v-text); }
+  & .lt .c25-net { fill: var(--v-ink0); stroke: var(--v-text); stroke-width: 2.5; }
+  & .lt .c25-wg { fill: none; stroke: var(--v-ln); stroke-width: 8; stroke-opacity: 0.35; }
+  & .lt .c25-base { fill: none; stroke: var(--v-line2); stroke-width: 1; stroke-dasharray: 2 4; }
+  & .lt .c25-bus { fill: none; stroke: var(--v-ir1550); stroke-width: 3; stroke-dasharray: 9 5; }
+  & .lt .c25-polf { fill: color-mix(in srgb, var(--v-ir1550) 22%, transparent); stroke: none; }
+  & .lt .c25-pol { fill: none; stroke: var(--v-ir1550); stroke-width: 2; stroke-dasharray: 6 4; stroke-linejoin: round; }
+  & .lt .c25-tooth { fill: none; stroke: var(--v-ir1550); stroke-width: 1.6; stroke-dasharray: 3 2; }
+  & .lt .c25-pump { fill: none; stroke: var(--v-ir1550); stroke-width: 3.5; stroke-dasharray: 5 2; }
+  & .lt .c25-env { fill: none; stroke: var(--v-text2); stroke-width: 1.5; stroke-dasharray: 6 5; }
+
+  & .lt .c25-vconv { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; max-width: 760px; margin-top: 28px; }
+  & .lt .c25-vh { margin: 0; font: 400 24px/30px var(--v-serif); color: var(--v-text); }
+  /* Run / Stop: one full-width 52 px button */
+  & .lt .c25-vrun { display: block; width: 100%; min-height: 52px; padding: 0 16px; border: 2px solid var(--v-l532); background: none; color: var(--v-text); font: 500 17px/1 var(--v-ui); text-align: center; cursor: pointer; transition: background-color 120ms var(--v-ease), color 120ms var(--v-ease); }
+  & .lt .c25-vrun:hover { background: var(--v-l532-dim); }
+  & .lt .c25-vrun.on { background: var(--v-l532); color: var(--v-l532-ink); }
+  & .lt .c25-vrun:focus-visible { outline: 3px solid var(--v-l532); outline-offset: 3px; }
+
+  & .lt table.c25-ro td.c25-th { background: var(--v-ink2); color: var(--v-text2); font: 500 13px/20px var(--v-ui); border-top-color: var(--v-line); }
+  & .lt table.c25-ro col.c25-v { width: 19ch; }
+  & .lt table.c25-ro col.c25-s { width: 96px; }
+}
+
+/* Run / Stop label: a block that fills the fixed-width button, so its box does not follow the text */
+.lt .c25-rt { display: block; width: 100%; text-align: center; overflow: hidden; white-space: nowrap; }
+.lt .c25-l .pf > span, .lt .c25-k .pf > span { white-space: normal; }
+.lt .c25-eq { flex-wrap: wrap; column-gap: 2.2em; row-gap: 4px; }
+.lt .c25-eq .eqn { margin-left: auto; }

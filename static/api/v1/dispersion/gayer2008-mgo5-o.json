@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "model": "gayer2008-mgo5-o"
+  },
+  "model": {
+    "axis": "o",
+    "caveats": [
+      "n_o is reliable only to 1620 nm and about 20-100 C (gayer2008 p. 348); refractiveindex.info lists 0.5-1.7 um.",
+      "dn/dT from these coefficients: 1.11e-4 /K at 1550 nm; do not use for absolute dn/dT."
+    ],
+    "check_values": [
+      {
+        "T_C": 24.5,
+        "lambda_nm": 1550,
+        "n": 2.2088,
+        "source": "computed from these coefficients",
+        "tolerance": 6e-05
+      },
+      {
+        "T_C": 21,
+        "lambda_nm": 1550,
+        "n": 2.2082,
+        "source": "zelmon1997 corrected MgO5 n_o; independent model",
+        "tolerance": 0.0015
+      }
+    ],
+    "coefficients": {
+      "a1": 5.653,
+      "a2": 0.1185,
+      "a3": 0.2091,
+      "a4": 89.61,
+      "a5": 10.85,
+      "a6": 0.0197,
+      "b1": 7.941e-07,
+      "b2": 3.134e-08,
+      "b3": -4.641e-09,
+      "b4": -2.188e-06
+    },
+    "default": false,
+    "errata": [
+      {
+        "applied": true,
+        "citation": "Erratum, Appl. Phys. B 94, 367 (2009)",
+        "doi": "10.1007/s00340-008-3316-8",
+        "effect": "Replaces Fig. 3 (dispersion plot) only; Table 1 coefficients unchanged.",
+        "issued": "2009"
+      }
+    ],
+    "formula": {
+      "expression": "n^2 = a1 + b1 f + (a2 + b2 f)/(L^2 - (a3 + b3 f)^2) + (a4 + b4 f)/(L^2 - a5^2) - a6 L^2; f = (T - 24.5)(T + 570.82), T in C, L in um",
+      "form": "gayer-2008",
+      "latex": "n^2 = a_1 + b_1 f + \\frac{a_2 + b_2 f}{\\lambda^2 - (a_3 + b_3 f)^2} + \\frac{a_4 + b_4 f}{\\lambda^2 - a_5^2} - a_6 \\lambda^2,\\quad f = (T - 24.5)(T + 570.82)"
+    },
+    "id": "gayer2008-mgo5-o",
+    "lambda_unit": "um",
+    "name": "Gayer 2008, 5 mol% MgO:congruent LiNbO3, ordinary",
+    "provenance": {
+      "locator": "Table 1, p. 345; validity p. 348",
+      "source_id": "gayer2008",
+      "status": "P",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "reference_T_C": 24.5,
+    "temperature_dependent": true,
+    "valid_T_C": [
+      20,
+      100
+    ],
+    "valid_lambda_um": [
+      0.5,
+      1.62
+    ],
+    "variant": "mgo5-cln"
+  },
+  "python": "def n(L_um, T_C=24.5):\n    a1, a2, a3, a4, a5, a6 = 5.653, 0.1185, 0.2091, 89.61, 10.85, 0.0197\n    b1, b2, b3, b4 = 7.941e-07, 3.134e-08, -4.641e-09, -2.188e-06\n    f = (T_C - 24.5) * (T_C + 570.82); L2 = L_um * L_um\n    return (a1 + b1 * f + (a2 + b2 * f) / (L2 - (a3 + b3 * f) ** 2) + (a4 + b4 * f) / (L2 - a5 ** 2) - a6 * L2) ** 0.5\n"
+}

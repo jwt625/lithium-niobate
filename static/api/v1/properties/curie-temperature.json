@@ -1,0 +1,220 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1107/S0108768193012820",
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Curie temperature of lithium niobate (LiNbO3): 6 provenance-tagged value(s) from 5 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/curie-temperature.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/curie-temperature.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Curie temperature"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Curie temperature",
+    "url": "https://lithium-niobate.com/api/v1/properties/curie-temperature.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_C (cln)",
+        "unitText": "Cel",
+        "value": 1140
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "T_C (sln)",
+        "unitText": "Cel",
+        "value": 1206
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 6,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "curie-temperature"
+  },
+  "records": [
+    {
+      "category": "ferroelectric",
+      "id": "curie-temperature/cln/cti1999",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "Agrees within 1 C with the Bordui composition fit at 48.38 mol% (1143.2 C, computed ).",
+      "property": "curie-temperature",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.7
+      },
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1142.3,
+      "variant": "cln",
+      "variant_note": "48.38 mol% Li2O"
+    },
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "curie-temperature/cln/volk2008",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "property": "curie-temperature",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Nikogosyan 2005",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1140,
+      "variant": "cln"
+    },
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "curie-temperature/sln/volk2008",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "property": "curie-temperature",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Chen et al., Opt. Commun. 188, 359 (2001)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1206,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    },
+    {
+      "category": "ferroelectric",
+      "id": "curie-temperature/sln/wong2002",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "Quoted from wong2002 by a secondary web page (de.wikipedia); wong2002 not read. Lies 7 C above volk2008 and above both composition fits at 50.0 mol% (1202.3 and 1206.5 C).",
+      "property": "curie-temperature",
+      "provenance": {
+        "source_id": "wong2002",
+        "status": "S",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1213,
+      "variant": "sln"
+    },
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "method": "neutron powder diffraction"
+      },
+      "id": "curie-temperature/unspecified/boysen1994",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "Abstract gives 'about 1430 K' (about 1157 C); composition not seen.",
+      "property": "curie-temperature",
+      "provenance": {
+        "source_id": "boysen1994",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "K",
+        "ucum": "K"
+      },
+      "value": 1430,
+      "variant": "unspecified"
+    },
+    {
+      "category": "ferroelectric",
+      "id": "curie-temperature/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "weis1985 p. 192 text says 'below 1210 C' without a reference.",
+      "property": "curie-temperature",
+      "provenance": {
+        "locator": "Table 1, p. 197",
+        "original_reference": "Warner, Onoe, Coquin, JASA 42, 1223 (1967)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1165,
+      "variant": "unspecified",
+      "variant_note": "Warner et al. 1967 sample"
+    }
+  ]
+}

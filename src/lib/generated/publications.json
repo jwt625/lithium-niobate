@@ -1,0 +1,1003 @@
+[
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author_position": "4/7",
+    "authors": [
+      "Patricio Arrangoiz-Arriola",
+      "E. Alex Wollack",
+      "Marek Pechal",
+      "Wentao Jiang",
+      "Zhaoyou Wang",
+      "Timothy P. McKenna",
+      "Amir H. Safavi-Naeini"
+    ],
+    "container_title": "CLEO 2019",
+    "doi": "10.1364/CLEO_AT.2019.JW4A.4",
+    "first_author": false,
+    "id": "cleo2019-quantum-acoustics-ln-nanocavities",
+    "issued": "2019",
+    "ln_class": "LN (per title)",
+    "notes": ". Full author list from Crossref (2026-10-25); recorded the WJ position only.",
+    "page": "JW4A.4",
+    "title": "Quantum acoustics with lithium niobate nanocavities",
+    "topics": [
+      "quantum acoustics"
+    ],
+    "type": "paper-conference",
+    "verification": "Scholar + OpenAlex DOI (2026-10-24); Crossref year (2026-10-25)"
+  },
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author_position": "1/8",
+    "authors": [
+      "W. Jiang"
+    ],
+    "container_title": "APS March Meeting 2019",
+    "first_author": true,
+    "id": "jiang2019-aps-march-ln-optomechanical-crystal",
+    "issued": "2019",
+    "ln_class": "LN (per title)",
+    "notes": ". Full author list not; only WJ position recorded.",
+    "page": "T70.022",
+    "title": "Lithium niobate optomechanical crystal",
+    "topics": [
+      "optomechanical crystal"
+    ],
+    "type": "paper-conference",
+    "url": "https://meetings-archive.aps.org/mar/2019/t70/22",
+    "verification": "Scholar (2026-10-24); APS archive blocked, abstract body not checked"
+  },
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author_position": "1/8",
+    "authors": [
+      "Wentao Jiang",
+      "Rishi N. Patel",
+      "Felix M. Mayor",
+      "Timothy P. McKenna",
+      "Patricio Arrangoiz-Arriola",
+      "Christopher J. Sarabalis",
+      "Raphaël Van Laer",
+      "Amir H. Safavi-Naeini"
+    ],
+    "container_title": "CLEO 2019",
+    "doi": "10.1364/CLEO_SI.2019.SF2J.6",
+    "first_author": true,
+    "id": "jiang2019-cleo-high-quality-ln-optomechanical-crystal",
+    "issued": "2019",
+    "ln_class": "LN (per title)",
+    "notes": ". Full author list from Crossref (2026-10-25); recorded the WJ position only. Second DOI: 10.23919/CLEO.2019.8749167.",
+    "title": "High-quality lithium niobate optomechanical crystal",
+    "topics": [
+      "optomechanical crystal"
+    ],
+    "type": "paper-conference",
+    "verification": "Scholar + OpenAlex DOI (2026-10-24); Crossref year (2026-10-25)"
+  },
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author_position": "2/9",
+    "authors": [
+      "Timothy P. McKenna",
+      "Wentao Jiang",
+      "Jeremy Witmer",
+      "Bingyi Wang",
+      "Marc Jankowski",
+      "Raphael Van Laer",
+      "Carsten Langrock",
+      "Martin Fejer",
+      "Amir H. Safavi-Naeini"
+    ],
+    "container_title": "OSA Quantum Information and Measurement (QIM) 2019",
+    "doi": "10.1364/QIM.2019.T5A.7",
+    "first_author": false,
+    "id": "qim2019-low-loss-integrated-ln-photonics-quantum-light",
+    "issued": "2019",
+    "ln_class": "LN (per title)",
+    "notes": ". Full author list from Crossref (2026-10-25); recorded the WJ position only.",
+    "page": "T5A.7",
+    "title": "Low-loss integrated lithium niobate photonics for quantum light generation",
+    "topics": [
+      "quantum light generation"
+    ],
+    "type": "paper-conference",
+    "verification": "Scholar + OpenAlex DOI (2026-10-24); Crossref year (2026-10-25)"
+  },
+  {
+    "access": {
+      "license": "Optica Open Access License v1 (OAPA)",
+      "oa_status": "gold"
+    },
+    "arxiv": "1903.00957",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "1/9",
+    "authors": [
+      "W. Jiang",
+      "R. N. Patel",
+      "F. M. Mayor",
+      "T. P. McKenna",
+      "P. Arrangoiz-Arriola",
+      "C. J. Sarabalis",
+      "J. D. Witmer",
+      "R. Van Laer",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/OPTICA.6.000845",
+    "first_author": true,
+    "id": "jiang2019-optica-piezo-optomechanical-crystals",
+    "issued": "2019-07-02",
+    "ln_class": "TFLN",
+    "page": "845",
+    "r01_id": "P03",
+    "summary": "X-cut TFLN nanobeam optomechanical crystal with electrodes reached g0/2pi of about 120 kHz, intrinsic optical Q 3.5e5 near 1550 nm and a mechanical mode near 2 GHz, with g0 strongly dependent on in-plane orientation of the anisotropic LN.",
+    "title": "Lithium niobate piezo-optomechanical crystals",
+    "topics": [
+      "piezo-optomechanics",
+      "optomechanical crystal"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "6"
+  },
+  {
+    "access": {
+      "license": "Springer Nature subscription",
+      "oa_status": "closed"
+    },
+    "arxiv": "1902.04681",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "5/9",
+    "authors": [
+      "P. Arrangoiz-Arriola",
+      "E. A. Wollack",
+      "Z. Wang",
+      "M. Pechal",
+      "W. Jiang",
+      "T. P. McKenna",
+      "J. D. Witmer",
+      "R. Van Laer",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Nature",
+    "doi": "10.1038/s41586-019-1386-x",
+    "first_author": false,
+    "id": "arrangoizarriola2019-nature-energy-levels-nanomechanical-oscillator",
+    "issued": "2019-07-24",
+    "ln_class": "TFLN",
+    "notes": "Crossref lists 9 authors; arXiv v1 lists 8.",
+    "page": "537",
+    "r01_id": "P04",
+    "summary": "X-cut TFLN phononic crystal defect resonators on the same chip as a transmon qubit showed a phonon-number-resolved qubit spectrum, with a mode near 2.405 GHz and phonon-number-dependent shifts about 5x the qubit linewidth.",
+    "title": "Resolving the energy levels of a nanomechanical oscillator",
+    "topics": [
+      "quantum acoustics",
+      "phononic crystal resonator",
+      "superconducting qubit"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "571"
+  },
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author_position": "2/10",
+    "authors": [
+      "Raphael Van Laer",
+      "Wentao Jiang",
+      "Rishi N. Patel",
+      "Christopher J. Sarabalis",
+      "Agnetta Cleland",
+      "Timothy P. McKenna",
+      "E. Alex Wollack",
+      "Patricio Arrangoiz-Arriola",
+      "Jeremy D. Witmer",
+      "Amir H. Safavi-Naeini"
+    ],
+    "container_title": "CLEO 2020",
+    "doi": "10.1364/CLEO_SI.2020.STu4J.2",
+    "first_author": false,
+    "id": "cleo2020-piezo-optomechanics-ln-on-soi",
+    "issued": "2020",
+    "ln_class": "TFLN-hyb (LN on SOI)",
+    "notes": "also presented at APS March Meeting 2020. LN class per title. Full author list from Crossref (2026-10-25); recorded the WJ position only.",
+    "page": "STu4J.2",
+    "title": "Piezo-optomechanics in lithium niobate on silicon-on-insulator for microwave-to-optics transduction",
+    "topics": [
+      "microwave-optical transduction",
+      "piezo-optomechanics"
+    ],
+    "type": "paper-conference",
+    "verification": "Scholar + OpenAlex DOI (2026-10-24); Crossref year (2026-10-25)"
+  },
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author_position": "1/8",
+    "authors": [
+      "Wentao Jiang",
+      "Christopher J. Sarabalis",
+      "Yanni D. Dahmani",
+      "Rishi N. Patel",
+      "Felix M. Mayor",
+      "Timothy P. McKenna",
+      "Raphaël Van Laer",
+      "Amir H. Safavi-Naeini"
+    ],
+    "container_title": "CLEO 2020",
+    "doi": "10.1364/CLEO_AT.2020.AF3K.4",
+    "first_author": true,
+    "id": "jiang2020-cleo-bidirectional-piezo-optomechanical-transduction",
+    "issued": "2020",
+    "ln_class": "TFLN",
+    "notes": ". Same title as journal article P05 (LN class TFLN). Full author list from Crossref (2026-10-25); recorded the WJ position only.",
+    "page": "AF3K.4",
+    "title": "Efficient bidirectional piezo-optomechanical transduction between microwave and optical frequency",
+    "topics": [
+      "microwave-optical transduction",
+      "piezo-optomechanics"
+    ],
+    "type": "paper-conference",
+    "verification": "Scholar + OpenAlex DOI (2026-10-24); Crossref year (2026-10-25)"
+  },
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author_position": "1/6",
+    "authors": [
+      "Wentao Jiang",
+      "Felix M. Mayor",
+      "Rishi N. Patel",
+      "Timothy P. McKenna",
+      "Christopher J. Sarabalis",
+      "Amir H. Safavi-Naeini"
+    ],
+    "container_title": "CLEO 2020",
+    "doi": "10.1364/CLEO_SI.2020.STu4J.1",
+    "first_author": true,
+    "id": "jiang2020-cleo-nanobenders",
+    "issued": "2020",
+    "ln_class": "TFLN",
+    "notes": "title truncated as. Conference version of the nanobender work (journal article P07, LN class TFLN). Full author list from Crossref (2026-10-25); recorded the WJ position only.",
+    "page": "STu4J.1",
+    "title": "Nanobenders: efficient piezoelectric actuators ...",
+    "topics": [
+      "piezoelectric actuator",
+      "tunable nanophotonics"
+    ],
+    "type": "paper-conference",
+    "verification": "Scholar + OpenAlex DOI (2026-10-24); Crossref year (2026-10-25)"
+  },
+  {
+    "access": {
+      "license": "APS default license (subscription)",
+      "oa_status": "closed"
+    },
+    "article_number": "024069",
+    "arxiv": "1907.13058",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "3/5",
+    "authors": [
+      "Y. D. Dahmani",
+      "C. J. Sarabalis",
+      "W. Jiang",
+      "F. M. Mayor",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Phys. Rev. Applied",
+    "doi": "10.1103/PhysRevApplied.13.024069",
+    "first_author": false,
+    "id": "dahmani2020-prapplied-piezoelectric-mechanical-waveguide",
+    "issued": "2020-02-25",
+    "ln_class": "TFLN",
+    "r01_id": "P06",
+    "summary": "An IDT on suspended TFLN drove a 1 um mechanical waveguide at 1.7 GHz with -12 dB conversion efficiency, limited by material loss.",
+    "title": "Piezoelectric transduction of a wavelength-scale mechanical waveguide",
+    "topics": [
+      "phononics",
+      "piezoelectric transduction"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "13"
+  },
+  {
+    "access": {
+      "license": "CC BY 4.0",
+      "oa_status": "gold"
+    },
+    "article_number": "1166",
+    "arxiv": "1909.04627",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "1/8",
+    "authors": [
+      "W. Jiang",
+      "C. J. Sarabalis",
+      "Y. D. Dahmani",
+      "R. N. Patel",
+      "F. M. Mayor",
+      "T. P. McKenna",
+      "R. Van Laer",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Nat. Commun.",
+    "doi": "10.1038/s41467-020-14863-3",
+    "first_author": true,
+    "id": "jiang2020-natcommun-bidirectional-piezo-optomechanical-transduction",
+    "issued": "2020-03-03",
+    "ln_class": "TFLN",
+    "r01_id": "P05",
+    "summary": "An all-LN suspended TFLN device (IDT, horn taper, mechanical waveguide, optomechanical crystal) at room temperature achieved bidirectional microwave-optical conversion efficiency of 1e-5 with a 3.3 uW red-detuned pump and 5.5 % with a 323 uW blue-detuned pump, at f_m = 1.85 GHz and g0/2pi = 70 kHz.",
+    "title": "Efficient bidirectional piezo-optomechanical transduction between microwave and optical frequency",
+    "topics": [
+      "microwave-optical transduction",
+      "piezo-optomechanics"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "11"
+  },
+  {
+    "access": {
+      "license": "CC BY 4.0",
+      "oa_status": "gold"
+    },
+    "article_number": "156",
+    "arxiv": "1911.10973",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "1/6",
+    "authors": [
+      "W. Jiang",
+      "F. M. Mayor",
+      "R. N. Patel",
+      "T. P. McKenna",
+      "C. J. Sarabalis",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Commun. Phys.",
+    "doi": "10.1038/s42005-020-00412-3",
+    "first_author": true,
+    "id": "jiang2020-commphys-nanobenders",
+    "issued": "2020-09-04",
+    "ln_class": "TFLN",
+    "r01_id": "P07",
+    "summary": "Piezoelectric TFLN nanobender beams on Si tuned a sliced photonic crystal cavity by about 5 nm/V (0.6 THz/V), over 1520 to 1560 nm (about 400 linewidths) within 4 V.",
+    "title": "Nanobenders as efficient piezoelectric actuators for widely tunable nanophotonics at CMOS-level voltages",
+    "topics": [
+      "piezoelectric actuator",
+      "tunable nanophotonics"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "3"
+  },
+  {
+    "access": {
+      "license": "Optica Open Access License v1 (OAPA)",
+      "oa_status": "gold"
+    },
+    "arxiv": "2005.00897",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "4/9",
+    "authors": [
+      "T. P. McKenna",
+      "J. D. Witmer",
+      "R. N. Patel",
+      "W. Jiang",
+      "R. Van Laer",
+      "P. Arrangoiz-Arriola",
+      "E. A. Wollack",
+      "J. F. Herrmann",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/OPTICA.397235",
+    "first_author": false,
+    "id": "mckenna2020-optica-lithium-niobate-on-sapphire-transducer",
+    "issued": "2020-12-08",
+    "ln_class": "TFLN (LN on sapphire)",
+    "page": "1737",
+    "r01_id": "P08",
+    "summary": "A triply resonant electro-optic transducer in TFLN on sapphire with a superconducting resonator, operated in a dilution fridge, reached on-chip efficiency of 6.6e-6 with 20 MHz bandwidth.",
+    "title": "Cryogenic microwave-to-optical conversion using a triply resonant lithium-niobate-on-sapphire transducer",
+    "topics": [
+      "microwave-optical transduction",
+      "electro-optic transducer"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "7"
+  },
+  {
+    "access": {
+      "license": "APS default license (subscription)",
+      "oa_status": "closed"
+    },
+    "article_number": "014039",
+    "arxiv": "2007.04961",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "2/6",
+    "authors": [
+      "F. M. Mayor",
+      "W. Jiang",
+      "C. J. Sarabalis",
+      "T. P. McKenna",
+      "J. D. Witmer",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Phys. Rev. Applied",
+    "doi": "10.1103/PhysRevApplied.15.014039",
+    "first_author": false,
+    "id": "mayor2021-prapplied-phononic-integrated-circuits-lnos",
+    "issued": "2021-01-21",
+    "ln_class": "TFLN (LN on sapphire)",
+    "r01_id": "P09",
+    "summary": "Unreleased TFLN on sapphire with phononic index guiding supported a 50 ohm-matched transducer, 1 um mechanical waveguides, delay lines, racetrack resonators with Q about 50,000 at 4 K, and phononic four-wave mixing.",
+    "title": "Gigahertz phononic integrated circuits on thin-film lithium niobate on sapphire",
+    "topics": [
+      "phononics",
+      "phononic integrated circuits"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "15"
+  },
+  {
+    "access": {
+      "license": "AIP (subscription)",
+      "note": "Crossref lists AIP rights page or none.",
+      "oa_status": "closed"
+    },
+    "article_number": "123501",
+    "arxiv": "2010.01025",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "7/9",
+    "authors": [
+      "E. A. Wollack",
+      "A. Y. Cleland",
+      "P. Arrangoiz-Arriola",
+      "T. P. McKenna",
+      "R. G. Gruenke",
+      "R. N. Patel",
+      "W. Jiang",
+      "C. J. Sarabalis",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Appl. Phys. Lett.",
+    "doi": "10.1063/5.0034909",
+    "first_author": false,
+    "id": "wollack2021-apl-loss-channels-ln-phononic-crystal-resonators",
+    "issued": "2021-03-22",
+    "ln_class": "TFLN",
+    "r01_id": "P11",
+    "summary": "TFLN phononic crystal resonators at mK temperatures reached internal Qi above 1e5 to 1e6 at high drive (5e6 phonons), with TLS and superconducting loss channels and an anomalous low-temperature frequency shift identified.",
+    "title": "Loss channels affecting lithium niobate phononic crystal resonators at cryogenic temperature",
+    "topics": [
+      "quantum acoustics",
+      "phononic crystal resonator",
+      "two-level systems"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "118"
+  },
+  {
+    "access": {
+      "license": "Optica Open Access License v1 (OAPA)",
+      "oa_status": "gold"
+    },
+    "arxiv": "2010.12517",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "5/7",
+    "authors": [
+      "C. J. Sarabalis",
+      "R. Van Laer",
+      "R. N. Patel",
+      "Y. D. Dahmani",
+      "W. Jiang",
+      "F. M. Mayor",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/OPTICA.413401",
+    "first_author": false,
+    "id": "sarabalis2021-optica-acousto-optic-modulation-waveguide",
+    "issued": "2021-04-06",
+    "ln_class": "TFLN",
+    "page": "477",
+    "r01_id": "P10",
+    "summary": "A suspended 250 nm X-cut TFLN waveguide driven by a 440 MHz SH0 acoustic mode showed collinear TE0-TE1 acousto-optic mode conversion with measured coupling 0.38 mm^-1 uW^-1/2 and maximum conversion of 18 % (RF power limited).",
+    "title": "Acousto-optic modulation of a wavelength-scale waveguide",
+    "topics": [
+      "acousto-optics"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "8"
+  },
+  {
+    "access": {
+      "license": "Optica Open Access License v1 (OAPA)",
+      "oa_status": "gold"
+    },
+    "author_position": "9/14",
+    "authors": [
+      "C. Op de Beeck",
+      "F. M. Mayor",
+      "S. Cuyvers",
+      "S. Poelman",
+      "J. F. Herrmann",
+      "O. Atalar",
+      "T. P. McKenna",
+      "B. Haq",
+      "W. Jiang",
+      "J. D. Witmer",
+      "G. Roelkens",
+      "A. H. Safavi-Naeini",
+      "R. Van Laer",
+      "B. Kuyken"
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/OPTICA.438620",
+    "first_author": false,
+    "id": "opdebeeck2021-optica-iii-v-on-lithium-niobate-amplifiers-lasers",
+    "issued": "2021-10-01",
+    "ln_class": "TFLN (heterogeneous III-V)",
+    "notes": "Short article; Scholar page range 1288-1289.",
+    "page": "1288",
+    "r01_id": "P13",
+    "summary": "Heterogeneous III-V gain on TFLN yielded electrically pumped lasers on TFLN with electro-optic wavelength tunability.",
+    "title": "III/V-on-lithium niobate amplifiers and lasers",
+    "topics": [
+      "heterogeneous integration",
+      "lasers",
+      "optical amplifiers"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref (2026-10-24); no arXiv version found; issued date from Crossref (2026-10-25)",
+    "volume": "8"
+  },
+  {
+    "access": {
+      "license": "No Creative Commons license; (c) 2022 Wentao Jiang",
+      "note": "PURL rights metadata read: world; PDF publicly downloadable.",
+      "oa_status": "free"
+    },
+    "author_position": "1/1",
+    "authors": [
+      "Wentao Jiang"
+    ],
+    "first_author": true,
+    "id": "jiang2022-thesis-microwave-optics-quantum-frequency-conversion",
+    "issued": "2022",
+    "ln_class": "TFLN and TFLN-hyb (LN on SOI)",
+    "notes": "Ph.D., Applied Physics, Stanford University, 2022. Supervisor Amir H. Safavi-Naeini; committee Hideo Mabuchi, David I. Schuster. Catalog: https://searchworks.stanford.edu/view/14423015. Abstract (condensed ): optomechanical crystals in TFLN; piezoelectric drive and readout with IDTs and microwave circuits; hybrid LN-on-SOI platform; fully integrated converter emitting a microwave photon heralded by optical single-photon detection.",
+    "title": "Microwave-optics quantum frequency conversion and optically heralded microwave photons",
+    "topics": [
+      "microwave-optical transduction",
+      "piezo-optomechanics",
+      "optomechanical crystal",
+      "quantum frequency conversion"
+    ],
+    "type": "thesis",
+    "url": "https://purl.stanford.edu/mx877vv9870",
+    "verification": "Stanford PURL + SearchWorks (2026-10-24)"
+  },
+  {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "authors": [
+      "W. Jiang"
+    ],
+    "container_title": "APS March Meeting 2022",
+    "first_author": true,
+    "id": "jiang2022-aps-march-tfln-on-soi-quantum-frequency-conversion",
+    "issued": "2022-03-14",
+    "ln_class": "TFLN-hyb (LN on SOI)",
+    "notes": ". WJ position 1; total author count not. LN class per title.",
+    "page": "B34.010",
+    "title": "Microwave-to-optical quantum frequency conversion with thin-film lithium niobate on silicon-on-insulator piezo-optomechanics",
+    "topics": [
+      "microwave-optical transduction",
+      "piezo-optomechanics",
+      "quantum frequency conversion"
+    ],
+    "type": "paper-conference",
+    "url": "https://meetings-archive.aps.org/mar/2022/b34/",
+    "verification": "APS session listing (2026-10-24); session held 2022-03-14, Chicago"
+  },
+  {
+    "access": {
+      "license": "Optica Open Access License v2",
+      "oa_status": "gold"
+    },
+    "arxiv": "2204.03138",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "8/10",
+    "authors": [
+      "O. T. Celik",
+      "C. J. Sarabalis",
+      "F. M. Mayor",
+      "H. S. Stokowski",
+      "J. F. Herrmann",
+      "T. P. McKenna",
+      "N. R. A. Lee",
+      "W. Jiang",
+      "K. K. S. Multani",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Opt. Express",
+    "doi": "10.1364/OE.460119",
+    "first_author": false,
+    "id": "celik2022-optexpress-780nm-electro-optic-modulation-tfln",
+    "issued": "2022-06-09",
+    "ln_class": "TFLN (LN on sapphire)",
+    "page": "23177",
+    "r01_id": "P15",
+    "summary": "A TFLN-on-sapphire modulator at 780 nm showed 4.2 V full-swing voltage, 2.7 GHz electro-optic bandwidth, 0.35 mm^2 footprint, 1.6 dB/cm loss and ring intrinsic Q of 4.4e5.",
+    "title": "High-bandwidth CMOS-voltage-level electro-optic modulation of 780 nm light in thin-film lithium niobate",
+    "topics": [
+      "electro-optic modulator",
+      "visible photonics"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "30"
+  },
+  {
+    "access": {
+      "license": "Optica Open Access License v2",
+      "oa_status": "gold"
+    },
+    "arxiv": "2209.04034",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "7/11",
+    "authors": [
+      "G. H. Ahn",
+      "A. D. White",
+      "H. Kim",
+      "N. Higashitarumizu",
+      "F. M. Mayor",
+      "J. F. Herrmann",
+      "W. Jiang",
+      "K. K. S. Multani",
+      "A. H. Safavi-Naeini",
+      "A. Javey",
+      "J. Vuckovic"
+    ],
+    "container_title": "Optica",
+    "doi": "10.1364/OPTICA.475387",
+    "first_author": false,
+    "id": "ahn2023-optica-tellurium-waveguide-photodetectors",
+    "issued": "2023-03-01",
+    "ln_class": "TFLN among Si, SiN",
+    "page": "349",
+    "r01_id": "P16",
+    "summary": "Evaporated Te photodetectors integrated on Si, SiN and LN waveguides showed > 40 GHz bandwidth with visible, telecom and mid-IR detection.",
+    "title": "Platform-agnostic waveguide integration of high-speed photodetectors with evaporated tellurium thin films",
+    "topics": [
+      "photodetector",
+      "heterogeneous integration"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "10"
+  },
+  {
+    "access": {
+      "license": "Springer Nature subscription",
+      "oa_status": "closed"
+    },
+    "arxiv": "2210.10739",
+    "arxiv_license": "CC BY 4.0",
+    "author_position": "1/8",
+    "authors": [
+      "W. Jiang",
+      "F. M. Mayor",
+      "S. Malik",
+      "R. Van Laer",
+      "T. P. McKenna",
+      "R. N. Patel",
+      "J. D. Witmer",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Nat. Phys.",
+    "doi": "10.1038/s41567-023-02129-w",
+    "first_author": true,
+    "id": "jiang2023-natphys-optically-heralded-microwave-photon-addition",
+    "issued": "2023-07-20",
+    "ln_class": "TFLN-hyb (LN on SOI)",
+    "open_data": [
+      {
+        "doi": "10.5281/zenodo.7903643",
+        "license": "CC BY 4.0",
+        "note": "Source data for Fig. 2, Fig. 3, Ext. Data Figs. 1, 2, 3, 5 (.xlsx, .csv, about 32 MB total)."
+      }
+    ],
+    "page": "1423",
+    "r01_id": "P17",
+    "summary": "A hybrid transducer of 290 nm X-cut MgO:LN transfer-printed onto 220 nm SOI, with a NbTiN high-impedance microwave chip below 10 mK, reached about 5 % (4.9 +/- 0.5 %) conversion efficiency over 1.5 MHz bandwidth and emitted optically heralded microwave photons at about 15 Hz with < 2 added thermal microwave photons.",
+    "title": "Optically heralded microwave photon addition",
+    "topics": [
+      "microwave-optical transduction",
+      "piezo-optomechanics",
+      "heralded microwave photons"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "19"
+  },
+  {
+    "access": {
+      "license": "AIP (subscription)",
+      "note": "Crossref lists AIP rights page or none.",
+      "oa_status": "closed"
+    },
+    "article_number": "104001",
+    "arxiv": "2304.13592",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "2/5",
+    "authors": [
+      "S. Malik",
+      "W. Jiang",
+      "F. M. Mayor",
+      "T. Makihara",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Appl. Phys. Lett.",
+    "doi": "10.1063/5.0157516",
+    "first_author": false,
+    "id": "malik2023-apl-flip-chip-nanomechanical-superconducting-resonator",
+    "issued": "2023-09-04",
+    "ln_class": "TFLN",
+    "r01_id": "P18",
+    "summary": "TFLN GHz nanomechanical resonators flip-chip bonded to a NbTiN kinetic-inductance resonator showed coupling of about 15 MHz with magnetic-field-tunable hybridized modes.",
+    "title": "Flexible integration of gigahertz nanomechanical resonators with a superconducting microwave resonator using a bonded flip-chip method",
+    "topics": [
+      "quantum acoustics",
+      "flip-chip integration",
+      "kinetic inductance"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "123"
+  },
+  {
+    "access": {
+      "note": "Green OA copy at Ghent University repository; license not stated.",
+      "oa_status": "green"
+    },
+    "author_position": "9/11",
+    "authors": [
+      "Isaac Luntadila Lufungula",
+      "Felix M. Mayor",
+      "Jason F. Herrmann",
+      "Taewon Park",
+      "Hubert S. Stokowski",
+      "Alexander Y. Hwang",
+      "Camiel Op De Beeck",
+      "Okan Atalar",
+      "Wentao Jiang",
+      "Bart Kuyken",
+      "Amir H. Safavi-Naeini"
+    ],
+    "container_title": "IEEE Photonics Conference (IPC) 2023",
+    "doi": "10.1109/IPC57732.2023.10360651",
+    "first_author": false,
+    "id": "ipc2023-tunable-dual-wavelength-laser-tfln",
+    "issued": "2023-11-12",
+    "ln_class": "TFLN",
+    "notes": ". LN class per title. Full author list from Crossref (2026-10-25); recorded the WJ position only.",
+    "title": "Tunable dual wavelength laser on thin film lithium niobate",
+    "topics": [
+      "lasers"
+    ],
+    "type": "paper-conference",
+    "verification": "Scholar + OpenAlex DOI (2026-10-24); issued date from Crossref (2026-10-25)"
+  },
+  {
+    "access": {
+      "license": "CC BY 4.0",
+      "oa_status": "gold"
+    },
+    "article_number": "040342",
+    "arxiv": "2304.13589",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "9/13",
+    "authors": [
+      "N. R. A. Lee",
+      "Y. Guo",
+      "A. Y. Cleland",
+      "E. A. Wollack",
+      "R. G. Gruenke",
+      "T. Makihara",
+      "Z. Wang",
+      "T. Rajabzadeh",
+      "W. Jiang",
+      "F. M. Mayor",
+      "P. Arrangoiz-Arriola",
+      "C. J. Sarabalis",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "PRX Quantum",
+    "doi": "10.1103/PRXQuantum.4.040342",
+    "first_author": false,
+    "id": "lee2023-prxquantum-mechanical-resonator-fluxonium",
+    "issued": "2023-12-13",
+    "ln_class": "TFLN",
+    "r01_id": "P19",
+    "summary": "A 690 MHz TFLN phononic crystal flip-chip coupled to a fluxonium qubit reached g of about 2pi x 14 MHz in the dispersive regime (Delta/g >= 10).",
+    "title": "Strong dispersive coupling between a mechanical resonator and a fluxonium superconducting qubit",
+    "topics": [
+      "quantum acoustics",
+      "superconducting qubit"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "4"
+  },
+  {
+    "access": {
+      "license": "AIP (subscription)",
+      "note": "Crossref lists AIP rights page or none.",
+      "oa_status": "closed"
+    },
+    "article_number": "154001",
+    "arxiv": "2505.23100",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "3/9",
+    "authors": [
+      "S. Malik",
+      "F. M. Mayor",
+      "W. Jiang",
+      "H. Oh",
+      "C. Padgett",
+      "V. Dharod",
+      "J. Venkatraman",
+      "A. C. Bleszynski Jayich",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Appl. Phys. Lett.",
+    "doi": "10.1063/5.0285138",
+    "first_author": false,
+    "id": "malik2025-apl-phononic-waveguide-tfln-on-diamond",
+    "issued": "2025-10-13",
+    "ln_class": "TFLN-hyb (LN on diamond)",
+    "r01_id": "P24",
+    "summary": "TFLN transfer-printed on bulk diamond (LNOD) carried a 2.8 GHz phononic waveguide with a 100 um delay line and -5.8 dB total insertion loss at 4 K (> 50 % per transducer).",
+    "title": "Integrated phononic waveguide on thin-film lithium niobate on diamond",
+    "topics": [
+      "phononics"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "127"
+  },
+  {
+    "access": {
+      "license": "APS default license (subscription)",
+      "oa_status": "closed"
+    },
+    "article_number": "044066",
+    "arxiv": "2501.08289",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "6/8",
+    "authors": [
+      "M. P. Maksymowych",
+      "M. Yuksel",
+      "O. A. Hitchcock",
+      "N. R. Lee",
+      "F. M. Mayor",
+      "W. Jiang",
+      "M. L. Roukes",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Phys. Rev. Applied",
+    "doi": "10.1103/22rx-v855",
+    "first_author": false,
+    "id": "maksymowych2025-prapplied-spectral-diffusion-single-defects",
+    "issued": "2025-10-22",
+    "ln_class": "TFLN",
+    "r01_id": "P23",
+    "summary": "Arrays of 250 nm X-cut TFLN phononic crystal resonators (about 450 MHz to 1 GHz) showed random telegraph frequency noise attributed to individual TLS between 10 mK and 1 K.",
+    "title": "Spectral diffusion of nanomechanical resonators due to single quantum defects",
+    "topics": [
+      "quantum acoustics",
+      "two-level systems"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "24"
+  },
+  {
+    "access": {
+      "license": "arXiv non-exclusive distribution",
+      "oa_status": "preprint"
+    },
+    "arxiv": "2607.26161",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "8/10",
+    "authors": [
+      "T. Xie",
+      "N. Ooi",
+      "L. Woodard",
+      "S. Malik",
+      "F. Mayor",
+      "O. A. Hitchcock",
+      "A. G. Primo",
+      "W. Jiang",
+      "S. Gyger",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "arXiv",
+    "doi": "10.48550/arXiv.2607.26161",
+    "first_author": false,
+    "id": "xie2026-arxiv-two-dimensional-piezo-optomechanical-transducer",
+    "issued": "2026",
+    "ln_class": "TFLN-hyb (LN on Si)",
+    "r01_id": "P27",
+    "summary": "TFLN transfer-printed on released thin-film Si with a 2D optomechanical crystal showed electromechanical coupling of 0.17 MHz at 10 mK and 0.85 % CW internal efficiency, with pulsed pair generation near the ground state.",
+    "title": "A two-dimensional piezo-optomechanical transducer",
+    "topics": [
+      "microwave-optical transduction",
+      "piezo-optomechanics",
+      "optomechanical crystal"
+    ],
+    "type": "preprint",
+    "verification": "arXiv API (2026-10-24)"
+  },
+  {
+    "access": {
+      "license": "APS default license (subscription)",
+      "oa_status": "closed"
+    },
+    "article_number": "024005",
+    "arxiv": "2502.16426",
+    "arxiv_license": "arXiv non-exclusive distribution",
+    "author_position": "3/6",
+    "authors": [
+      "O. A. Hitchcock",
+      "F. M. Mayor",
+      "W. Jiang",
+      "M. P. Maksymowych",
+      "S. Malik",
+      "A. H. Safavi-Naeini"
+    ],
+    "container_title": "Phys. Rev. Applied",
+    "doi": "10.1103/gv96-8xp1",
+    "first_author": false,
+    "id": "hitchcock2026-prapplied-correlated-dephasing-silicon-phononic-waveguide",
+    "issued": "2026-02-02",
+    "ln_class": "TFLN-hyb (LN piezo on Si)",
+    "open_data": [
+      {
+        "doi": "10.5281/zenodo.17138311",
+        "license": "CC BY 4.0",
+        "note": ".mat figure data (Figs. 1d, 2b-d, 4)."
+      }
+    ],
+    "r01_id": "P25",
+    "summary": "A TFLN piezo element driving a Si single-mode phononic waveguide at mK temperatures reached g/2pi = 1.1 MHz, T1 about 500 us and T_phi about 60 us, with correlated frequency noise.",
+    "title": "Correlated dephasing in a piezoelectrically transduced silicon phononic waveguide",
+    "topics": [
+      "phononics",
+      "quantum acoustics"
+    ],
+    "type": "article-journal",
+    "verification": "Crossref + arXiv API (2026-10-24); issued date from Crossref (2026-10-25)",
+    "volume": "25"
+  }
+]

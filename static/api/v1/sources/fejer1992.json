@@ -1,0 +1,46 @@
+{
+  "citation": "M.M. Fejer, G.A. Magel, D.H. Jundt, et al., \"Quasi-phase-matched second harmonic generation: tuning and tolerances\", IEEE Journal of Quantum Electronics 28, 2631-2654, (1992) doi:10.1109/3.161322",
+  "link": "https://doi.org/10.1109/3.161322",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Fejer",
+        "given": "M.M."
+      },
+      {
+        "family": "Magel",
+        "given": "G.A."
+      },
+      {
+        "family": "Jundt",
+        "given": "D.H."
+      },
+      {
+        "family": "Byer",
+        "given": "R.L."
+      }
+    ],
+    "container_title": "IEEE Journal of Quantum Electronics",
+    "doi": "10.1109/3.161322",
+    "id": "fejer1992",
+    "issue": "11",
+    "issued": "1992",
+    "page": "2631-2654",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Quasi-phase-matched second harmonic generation: tuning and tolerances",
+    "type": "article-journal",
+    "volume": "28"
+  }
+}

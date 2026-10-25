@@ -1,0 +1,143 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1063/1.121491",
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Internal field of lithium niobate (LiNbO3): 3 provenance-tagged value(s) from 2 source(s) for variant(s) cln, mgo5-cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/internal-field.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/internal-field.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Internal field"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Internal field",
+    "url": "https://lithium-niobate.com/api/v1/properties/internal-field.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_int (cln)",
+        "unitText": "kV/mm",
+        "value": 2.5
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "E_int (mgo5-cln)",
+        "unitText": "kV/mm",
+        "value": 0.5
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 3,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "internal-field"
+  },
+  "records": [
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "internal-field/cln/gopalan1998",
+      "kind": "scalar",
+      "name": "Internal field",
+      "notes": "Abstract: the internal field vanishes in SLN.",
+      "property": "internal-field",
+      "provenance": {
+        "locator": "abstract",
+        "source_id": "gopalan1998",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_int",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "value": 2.5,
+      "variant": "cln"
+    },
+    {
+      "category": "ferroelectric",
+      "id": "internal-field/cln/volk2008",
+      "kind": "scalar",
+      "name": "Internal field",
+      "property": "internal-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_int",
+      "unit": {
+        "display": "kV/cm",
+        "ucum": "kV/cm"
+      },
+      "value_text": "printed '2-33' kV/cm (likely a misprinted range)",
+      "variant": "cln"
+    },
+    {
+      "category": "ferroelectric",
+      "default": true,
+      "id": "internal-field/mgo5-cln/volk2008",
+      "kind": "scalar",
+      "name": "Internal field",
+      "property": "internal-field",
+      "provenance": {
+        "locator": "Table 7.1, p. 185 (5 kV/cm)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "E_int",
+      "unit": {
+        "display": "kV/mm",
+        "ucum": "kV/mm"
+      },
+      "value": 0.5,
+      "variant": "mgo5-cln"
+    }
+  ]
+}

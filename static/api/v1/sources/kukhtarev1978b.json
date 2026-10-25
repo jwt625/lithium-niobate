@@ -1,0 +1,45 @@
+{
+  "citation": "N. V. Kukhtarev, V. B. Markov, S. G. Odulov, et al., \"holographic storage in electrooptic crystals. II. beam coupling—light amplification\", Ferroelectrics 22, 961-964, (1978) doi:10.1080/00150197908239451",
+  "link": "https://doi.org/10.1080/00150197908239451",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "N. V. Kukhtarev"
+      },
+      {
+        "literal": "V. B. Markov"
+      },
+      {
+        "literal": "S. G. Odulov"
+      },
+      {
+        "literal": "M. S. Soskin"
+      },
+      {
+        "literal": "V. L. Vinetskii"
+      }
+    ],
+    "container_title": "Ferroelectrics",
+    "doi": "10.1080/00150197908239451",
+    "id": "kukhtarev1978b",
+    "issue": "1",
+    "issued": "1978-01",
+    "page": "961-964",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "holographic storage in electrooptic crystals. II. beam coupling—light amplification",
+    "type": "article-journal",
+    "volume": "22"
+  }
+}

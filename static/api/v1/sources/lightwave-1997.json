@@ -1,0 +1,33 @@
+{
+  "citation": "J. Lin, P. Sanders, \"OC-192 lithium-niobate modulators spark fiber-optic network capacity\", Lightwave, (1997) https://www.lightwaveonline.com/optical-tech/electronics/article/16652774/oc192-lithiumniobate-modulators-spark-fiberoptic-network-capacity",
+  "link": "https://www.lightwaveonline.com/optical-tech/electronics/article/16652774/oc192-lithiumniobate-modulators-spark-fiberoptic-network-capacity",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "J. Lin"
+      },
+      {
+        "literal": "P. Sanders"
+      }
+    ],
+    "container_title": "Lightwave",
+    "id": "lightwave-1997",
+    "issued": "1997-02-01",
+    "read": "Read",
+    "title": "OC-192 lithium-niobate modulators spark fiber-optic network capacity",
+    "type": "webpage",
+    "url": "https://www.lightwaveonline.com/optical-tech/electronics/article/16652774/oc192-lithiumniobate-modulators-spark-fiberoptic-network-capacity"
+  }
+}

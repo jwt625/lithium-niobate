@@ -1,0 +1,42 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "point-group",
+    "variant": "unspecified"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "default": true,
+      "id": "point-group/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Point group (ferroelectric phase)",
+      "notes": "weis1985 prints the Schoenflies symbol as C6v, a typo; 3m is C3v. Same in volk2008 p. 2.",
+      "property": "point-group",
+      "provenance": {
+        "locator": "p. 192, Sec. 2.1",
+        "source_id": "weis1985",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "unit": {
+        "display": "-",
+        "ucum": "1"
+      },
+      "value_text": "3m (C3v)",
+      "variant": "unspecified"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

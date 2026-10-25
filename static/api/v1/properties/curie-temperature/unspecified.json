@@ -1,0 +1,71 @@
+{
+  "alternatives": [
+    {
+      "category": "ferroelectric",
+      "conditions": {
+        "method": "neutron powder diffraction"
+      },
+      "id": "curie-temperature/unspecified/boysen1994",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "Abstract gives 'about 1430 K' (about 1157 C); composition not seen.",
+      "property": "curie-temperature",
+      "provenance": {
+        "source_id": "boysen1994",
+        "status": "P(abs)",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "uncertainty": {
+        "type": "approximate"
+      },
+      "unit": {
+        "display": "K",
+        "ucum": "K"
+      },
+      "value": 1430,
+      "variant": "unspecified"
+    },
+    {
+      "category": "ferroelectric",
+      "id": "curie-temperature/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Curie temperature",
+      "notes": "weis1985 p. 192 text says 'below 1210 C' without a reference.",
+      "property": "curie-temperature",
+      "provenance": {
+        "locator": "Table 1, p. 197",
+        "original_reference": "Warner, Onoe, Coquin, JASA 42, 1223 (1967)",
+        "source_id": "weis1985",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "T_C",
+      "unit": {
+        "display": "C",
+        "ucum": "Cel"
+      },
+      "value": 1165,
+      "variant": "unspecified",
+      "variant_note": "Warner et al. 1967 sample"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "curie-temperature",
+    "variant": "unspecified"
+  },
+  "recommended": [],
+  "recommended_note": "No single recommended record: sources disagree or none is primary; see alternatives and spread.",
+  "spread": null
+}

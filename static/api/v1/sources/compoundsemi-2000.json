@@ -1,0 +1,25 @@
+{
+  "citation": "\"Corning to acquire Pirelli's optical components and devices business for $3.6 billion\", Compound Semiconductor, (2000) https://compoundsemiconductor.net/article/80769/Corning_to_Acquire_Pirellis_Optical_Components_and_Devices_Business_For_36_Billion",
+  "link": "https://compoundsemiconductor.net/article/80769/Corning_to_Acquire_Pirellis_Optical_Components_and_Devices_Business_For_36_Billion",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "container_title": "Compound Semiconductor",
+    "id": "compoundsemi-2000",
+    "issued": "2000",
+    "read": "Read",
+    "title": "Corning to acquire Pirelli's optical components and devices business for $3.6 billion",
+    "type": "webpage",
+    "url": "https://compoundsemiconductor.net/article/80769/Corning_to_Acquire_Pirellis_Optical_Components_and_Devices_Business_For_36_Billion"
+  }
+}

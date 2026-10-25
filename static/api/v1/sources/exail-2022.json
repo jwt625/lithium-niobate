@@ -1,0 +1,24 @@
+{
+  "citation": "\"ECA Group and iXblue join forces and become Exail\", (2022) https://www.exail.com/eca-group-and-ixblue-join-forces-and-become-exail/",
+  "link": "https://www.exail.com/eca-group-and-ixblue-join-forces-and-become-exail/",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "id": "exail-2022",
+    "issued": "2022-10-18",
+    "read": "Search summary only (2026-10-25)",
+    "title": "ECA Group and iXblue join forces and become Exail",
+    "type": "webpage",
+    "url": "https://www.exail.com/eca-group-and-ixblue-join-forces-and-become-exail/"
+  }
+}

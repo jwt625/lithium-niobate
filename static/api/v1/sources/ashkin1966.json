@@ -1,0 +1,58 @@
+{
+  "citation": "A. Ashkin, G. D. Boyd, J. M. Dziedzic, et al., \"OPTICALLY-INDUCED REFRACTIVE INDEX INHOMOGENEITIES IN LiNbO3 AND LiTaO3\", Applied Physics Letters 9, 72-74, (1966) doi:10.1063/1.1754607",
+  "link": "https://doi.org/10.1063/1.1754607",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Ashkin",
+        "given": "A."
+      },
+      {
+        "family": "Boyd",
+        "given": "G. D."
+      },
+      {
+        "family": "Dziedzic",
+        "given": "J. M."
+      },
+      {
+        "family": "Smith",
+        "given": "R. G."
+      },
+      {
+        "family": "Ballman",
+        "given": "A. A."
+      },
+      {
+        "family": "Levinstein",
+        "given": "J. J."
+      },
+      {
+        "family": "Nassau",
+        "given": "K."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754607",
+    "id": "ashkin1966",
+    "issue": "1",
+    "issued": "1966-07-01",
+    "page": "72-74",
+    "read": "bibliographic record only (Crossref)",
+    "title": "OPTICALLY-INDUCED REFRACTIVE INDEX INHOMOGENEITIES IN LiNbO3 AND LiTaO3",
+    "type": "article-journal",
+    "volume": "9"
+  }
+}

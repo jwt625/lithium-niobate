@@ -1,0 +1,32 @@
+{
+  "citation": "Yu. S. Kuz'minov, A. M. Prokhorov, \"Kuz'minov monographs: Niobat i tantalat litiya (Nauka 1975); Elektroopticheskii i nelineinoopticheskii kristall niobata litiya (Nauka 1987); Physics and Chemistry of Crystalline Lithium Niobate (Adam Hilger 1990, with Prokhorov); Lithium Niobate Crystals (Cambridge International Science Publishing 1999)\" (2026)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Yu. S. Kuz'minov"
+      },
+      {
+        "literal": "A. M. Prokhorov"
+      }
+    ],
+    "id": "kuzminov-catalog",
+    "issued": "2026",
+    "notes": "Undated page; issued set to the access year.",
+    "read": "Catalog records only (Open Library; NIMS library) 2026-10-25",
+    "title": "Kuz'minov monographs: Niobat i tantalat litiya (Nauka 1975); Elektroopticheskii i nelineinoopticheskii kristall niobata litiya (Nauka 1987); Physics and Chemistry of Crystalline Lithium Niobate (Adam Hilger 1990, with Prokhorov); Lithium Niobate Crystals (Cambridge International Science Publishing 1999)",
+    "type": "webpage"
+  }
+}

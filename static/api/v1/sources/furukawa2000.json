@@ -1,0 +1,48 @@
+{
+  "citation": "Y. Furukawa, K. Kitamura, S. Takekawa, et al., \"Photorefraction in LiNbO3 as a function of [Li]/[Nb] and MgO concentrations\", Applied Physics Letters 77, 2494-2496, (2000) doi:10.1063/1.1318721",
+  "link": "https://doi.org/10.1063/1.1318721",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Y. Furukawa"
+      },
+      {
+        "literal": "K. Kitamura"
+      },
+      {
+        "literal": "S. Takekawa"
+      },
+      {
+        "literal": "A. Miyamoto"
+      },
+      {
+        "literal": "M. Terao"
+      },
+      {
+        "literal": "N. Suda"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1318721",
+    "id": "furukawa2000",
+    "issue": "16",
+    "issued": "2000-10-16",
+    "page": "2494-2496",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Photorefraction in LiNbO3 as a function of [Li]/[Nb] and MgO concentrations",
+    "type": "article-journal",
+    "volume": "77"
+  }
+}

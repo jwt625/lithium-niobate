@@ -1,0 +1,50 @@
+{
+  "alternatives": [],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "eo-r33-T",
+    "variant": "sln"
+  },
+  "recommended": [
+    {
+      "category": "optical",
+      "conditions": {
+        "mechanical_boundary": "T",
+        "wavelength_nm": 633
+      },
+      "default": true,
+      "id": "eo-r33-T/sln/volk2008",
+      "kind": "scalar",
+      "name": "Electro-optic coefficient r33, unclamped",
+      "notes": "Partial set (r22 absent), so stored as scalars rather than a tensor.",
+      "property": "eo-r33-T",
+      "provenance": {
+        "locator": "Table 1.2, p. 4",
+        "original_reference": "Nikogosyan 2005",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "r33^T",
+      "tensor_component": "r33",
+      "unit": {
+        "display": "pm/V",
+        "ucum": "pm/V"
+      },
+      "value": 38,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    }
+  ],
+  "recommended_note": null,
+  "spread": null
+}

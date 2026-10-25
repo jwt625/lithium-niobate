@@ -1,0 +1,34 @@
+{
+  "citation": "IRE, \"Standards on Piezoelectric Crystals, 1949\", Proceedings of the IRE 37, 1378, (1949) doi:10.1109/JRPROC.1949.229975",
+  "link": "https://doi.org/10.1109/JRPROC.1949.229975",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "literal": "IRE"
+      }
+    ],
+    "container_title": "Proceedings of the IRE",
+    "doi": "10.1109/JRPROC.1949.229975",
+    "id": "ire1949",
+    "issued": "1949",
+    "page": "1378",
+    "read": "not read; rules read through weis1985 and ieee176",
+    "title": "Standards on Piezoelectric Crystals, 1949",
+    "type": "standard",
+    "volume": "37"
+  }
+}

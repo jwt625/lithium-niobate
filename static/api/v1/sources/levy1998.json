@@ -1,0 +1,58 @@
+{
+  "citation": "M. Levy, R. M. Osgood, R. Liu, et al., \"Fabrication of single-crystal lithium niobate films by crystal ion slicing\", Applied Physics Letters 73, 2293-2295, (1998) doi:10.1063/1.121801",
+  "link": "https://doi.org/10.1063/1.121801",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Levy",
+        "given": "M."
+      },
+      {
+        "family": "Osgood",
+        "given": "R. M."
+      },
+      {
+        "family": "Liu",
+        "given": "R."
+      },
+      {
+        "family": "Cross",
+        "given": "L. E."
+      },
+      {
+        "family": "Cargill",
+        "given": "G. S."
+      },
+      {
+        "family": "Kumar",
+        "given": "A."
+      },
+      {
+        "family": "Bakhru",
+        "given": "H."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.121801",
+    "id": "levy1998",
+    "issue": "16",
+    "issued": "1998-10-19",
+    "page": "2293-2295",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Fabrication of single-crystal lithium niobate films by crystal ion slicing",
+    "type": "article-journal",
+    "volume": "73"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "citation": "J. D. Zook, D. Chen, G. N. Otto, \"Temperature dependence and model of the electro-optic effect in LiNbO3\", Applied Physics Letters 11, 159-161, (1967) doi:10.1063/1.1755078",
+  "link": "https://doi.org/10.1063/1.1755078",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Zook",
+        "given": "J. D."
+      },
+      {
+        "family": "Chen",
+        "given": "D."
+      },
+      {
+        "family": "Otto",
+        "given": "G. N."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1755078",
+    "id": "zook1967",
+    "issued": "1967-09-01",
+    "page": "159-161",
+    "read": "not read; values via weis1985 Table 4 ( 43, 45, 47); DOI from Crossref 2026-10-25",
+    "title": "Temperature dependence and model of the electro-optic effect in LiNbO3",
+    "type": "article-journal",
+    "volume": "11"
+  }
+}

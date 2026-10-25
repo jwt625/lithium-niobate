@@ -1,0 +1,36 @@
+{
+  "citation": "E. H. Turner, \"High-frequency electro-optic coefficients of lithium niobate\", Applied Physics Letters 8, 303-304, (1966) doi:10.1063/1.1754449",
+  "link": "https://doi.org/10.1063/1.1754449",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Turner",
+        "given": "E. H."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.1754449",
+    "id": "turner1966",
+    "issued": "1966-06-01",
+    "page": "303-304",
+    "read": "not read; values via weis1985 Table 4; DOI from Crossref 2026-10-25",
+    "title": "High-frequency electro-optic coefficients of lithium niobate",
+    "type": "article-journal",
+    "volume": "8"
+  }
+}

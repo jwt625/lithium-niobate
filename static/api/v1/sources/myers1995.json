@@ -1,0 +1,54 @@
+{
+  "citation": "L. E. Myers, R. C. Eckardt, M. M. Fejer, et al., \"Quasi-phase-matched optical parametric oscillators in bulk periodically poled LiNbO_3\", Journal of the Optical Society of America B 12, 2102, (1995) doi:10.1364/josab.12.002102",
+  "link": "https://doi.org/10.1364/josab.12.002102",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Myers",
+        "given": "L. E."
+      },
+      {
+        "family": "Eckardt",
+        "given": "R. C."
+      },
+      {
+        "family": "Fejer",
+        "given": "M. M."
+      },
+      {
+        "family": "Byer",
+        "given": "R. L."
+      },
+      {
+        "family": "Bosenberg",
+        "given": "W. R."
+      },
+      {
+        "family": "Pierce",
+        "given": "J. W."
+      }
+    ],
+    "container_title": "Journal of the Optical Society of America B",
+    "doi": "10.1364/josab.12.002102",
+    "id": "myers1995",
+    "issue": "11",
+    "issued": "1995-11-01",
+    "page": "2102",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Quasi-phase-matched optical parametric oscillators in bulk periodically poled LiNbO_3",
+    "type": "article-journal",
+    "volume": "12"
+  }
+}

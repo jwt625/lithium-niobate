@@ -1,0 +1,48 @@
+{
+  "citation": "Takahiro Kashiwazaki, Taichi Yamashima, Naoto Takanashi, et al., \"Fabrication of low-loss quasi-single-mode PPLN waveguide and its application to a modularized broadband high-level squeezer\", Applied Physics Letters 119, 251104, (2021) doi:10.1063/5.0063118",
+  "link": "https://doi.org/10.1063/5.0063118",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "literal": "Takahiro Kashiwazaki"
+      },
+      {
+        "literal": "Taichi Yamashima"
+      },
+      {
+        "literal": "Naoto Takanashi"
+      },
+      {
+        "literal": "Asuka Inoue"
+      },
+      {
+        "literal": "Takeshi Umeki"
+      },
+      {
+        "literal": "Akira Furusawa"
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/5.0063118",
+    "id": "kashiwazaki2021",
+    "issue": "25",
+    "issued": "2021-12-20",
+    "page": "251104",
+    "read": "Crossref REST API record, retrieved 2026-10-25",
+    "title": "Fabrication of low-loss quasi-single-mode PPLN waveguide and its application to a modularized broadband high-level squeezer",
+    "type": "article-journal",
+    "volume": "119"
+  }
+}

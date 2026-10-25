@@ -1,0 +1,47 @@
+{
+  "citation": "Venkatraman Gopalan, Terence E. Mitchell, Y. Furukawa, et al., \"The role of nonstoichiometry in 180 deg domain switching of LiNbO3 crystals\", Applied Physics Letters 72, 1981, (1998) doi:10.1063/1.121491",
+  "link": "https://doi.org/10.1063/1.121491",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Gopalan",
+        "given": "Venkatraman"
+      },
+      {
+        "family": "Mitchell",
+        "given": "Terence E."
+      },
+      {
+        "family": "Furukawa",
+        "given": "Y."
+      },
+      {
+        "family": "Kitamura",
+        "given": "K."
+      }
+    ],
+    "container_title": "Applied Physics Letters",
+    "doi": "10.1063/1.121491",
+    "id": "gopalan1998",
+    "issued": "1998",
+    "page": "1981",
+    "read": "abstract only",
+    "title": "The role of nonstoichiometry in 180 deg domain switching of LiNbO3 crystals",
+    "type": "article-journal",
+    "volume": "72"
+  }
+}

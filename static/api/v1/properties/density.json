@@ -1,0 +1,228 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1109/58.796136",
+      "https://doi.org/10.1063/1.1497702",
+      "https://doi.org/10.1007/978-3-540-70766-0",
+      "https://doi.org/10.1007/BF00614817"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Density of lithium niobate (LiNbO3): 6 provenance-tagged value(s) from 5 source(s) for variant(s) cln, sln, unspecified. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/density.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/density.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Density"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Density",
+    "url": "https://lithium-niobate.com/api/v1/properties/density.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "Archimedes",
+        "name": "rho (cln)",
+        "unitCode": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "unitText": "kg/m3",
+        "value": 4642.8
+      },
+      {
+        "@type": "PropertyValue",
+        "measurementTechnique": "see source",
+        "name": "rho (sln)",
+        "unitCode": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "unitText": "kg/m3",
+        "value": 4635
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 6,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "density"
+  },
+  "records": [
+    {
+      "category": "structure",
+      "id": "density/cln/cti1999",
+      "kind": "scalar",
+      "name": "Density",
+      "property": "density",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4650,
+      "variant": "cln"
+    },
+    {
+      "category": "structure",
+      "conditions": {
+        "method": "Archimedes"
+      },
+      "default": true,
+      "id": "density/cln/kushibiki1999",
+      "kind": "scalar",
+      "name": "Density",
+      "property": "density",
+      "provenance": {
+        "locator": "Table IV",
+        "source_id": "kushibiki1999",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "uncertainty": {
+        "type": "stated",
+        "value": 0.2
+      },
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4642.8,
+      "variant": "cln",
+      "variant_note": "SAW-grade congruent"
+    },
+    {
+      "category": "structure",
+      "id": "density/cln/volk2008",
+      "kind": "scalar",
+      "name": "Density",
+      "notes": "Unit misprinted 'g cm^-1' in the source table.",
+      "property": "density",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Takanaga, Hirohashi, Kushibiki, Jpn. J. Appl. Phys. 38, 3201 (1999)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4647,
+      "variant": "cln"
+    },
+    {
+      "category": "structure",
+      "default": true,
+      "id": "density/sln/volk2008",
+      "kind": "scalar",
+      "name": "Density",
+      "notes": "SLN is lighter than CLN in the same compilation (4635 vs 4647 kg/m^3).",
+      "property": "density",
+      "provenance": {
+        "locator": "Table 1.1, p. 3",
+        "original_reference": "Takanaga, Hirohashi, Kushibiki, Jpn. J. Appl. Phys. 38, 3201 (1999)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4635,
+      "variant": "sln",
+      "variant_note": "near-stoichiometric"
+    },
+    {
+      "category": "structure",
+      "conditions": {
+        "temperature_C": 30
+      },
+      "id": "density/unspecified/ogi2002",
+      "kind": "scalar",
+      "name": "Density",
+      "notes": "ogi2002 also quotes a handbook value of 4633 kg/m^3.",
+      "property": "density",
+      "provenance": {
+        "source_id": "ogi2002",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4636,
+      "variant": "unspecified"
+    },
+    {
+      "category": "structure",
+      "id": "density/unspecified/weis1985",
+      "kind": "scalar",
+      "name": "Density",
+      "notes": "Used in a cell-volume calculation without a measurement reference; weis1985 p. 201 uses 4.7e3 kg/m^3 in acousto-optic figures of merit.",
+      "property": "density",
+      "provenance": {
+        "locator": "p. 194",
+        "source_id": "weis1985",
+        "status": "P",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "rho",
+      "unit": {
+        "display": "kg/m^3",
+        "qudt": "http://qudt.org/vocab/unit/KiloGM-PER-M3",
+        "ucum": "kg/m3"
+      },
+      "value": 4628,
+      "variant": "unspecified"
+    }
+  ]
+}

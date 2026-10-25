@@ -1,0 +1,95 @@
+{
+  "jsonld": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "about": {
+      "@type": "ChemicalSubstance",
+      "chemicalComposition": "LiNbO3",
+      "name": "lithium niobate"
+    },
+    "citation": [
+      "https://doi.org/10.1007/978-3-540-70766-0"
+    ],
+    "creator": {
+      "@type": "Person",
+      "name": "Wentao Jiang"
+    },
+    "description": "Dark conductivity of lithium niobate (LiNbO3): 1 provenance-tagged value(s) from 1 source(s) for variant(s) cln. Each value carries conditions, uncertainty, the source locator and a status code (P primary, P-comp compilation, P-db database, S secondary, V vendor, C computed).",
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties/dark-conductivity.json",
+        "encodingFormat": "application/json"
+      },
+      {
+        "@type": "DataDownload",
+        "contentUrl": "https://lithium-niobate.com/api/v1/properties.csv",
+        "encodingFormat": "text/csv"
+      }
+    ],
+    "identifier": "https://lithium-niobate.com/api/v1/properties/dark-conductivity.json",
+    "isAccessibleForFree": true,
+    "keywords": [
+      "lithium niobate",
+      "LiNbO3",
+      "Dark conductivity"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "LiNbO3 Dark conductivity",
+    "url": "https://lithium-niobate.com/api/v1/properties/dark-conductivity.json",
+    "variableMeasured": [
+      {
+        "@type": "PropertyValue",
+        "maxValue": 1e-14,
+        "measurementTechnique": "see source",
+        "minValue": 1e-16,
+        "name": "sigma_d (cln)",
+        "unitText": "S/m"
+      }
+    ],
+    "version": "0.1.0"
+  },
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "count": 1,
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "dark-conductivity"
+  },
+  "records": [
+    {
+      "category": "electrical",
+      "conditions": {
+        "temperature_text": "room temperature, extrapolated from high temperature"
+      },
+      "default": true,
+      "id": "dark-conductivity/cln/volk2008",
+      "kind": "scalar",
+      "max": 1e-14,
+      "min": 1e-16,
+      "name": "Dark conductivity",
+      "notes": "Protonic conduction; activation energy about 1.1 eV (200-1000 C). 8-10 orders of magnitude below the 1.0e-6 S/m floor fitted in bouchy2022.",
+      "property": "dark-conductivity",
+      "provenance": {
+        "locator": "Sec. 3.2.1, pp. 59-60 (1e-16 to 1.0e-18 Ohm^-1 cm^-1)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "sigma_d",
+      "unit": {
+        "display": "S/m",
+        "ucum": "S/m"
+      },
+      "variant": "cln",
+      "variant_note": "undoped or slightly doped CLN"
+    }
+  ]
+}

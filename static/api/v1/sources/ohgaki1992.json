@@ -1,0 +1,38 @@
+{
+  "citation": "M. Ohgaki, et al., \"Crystal structure of LiNbO3 (COD 1544665 entry)\", Mineralogical Journal 16, 150 (1992)",
+  "link": null,
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "unknown"
+    },
+    "author": [
+      {
+        "family": "Ohgaki",
+        "given": "M."
+      },
+      {
+        "literal": "et al."
+      }
+    ],
+    "container_title": "Mineralogical Journal",
+    "id": "ohgaki1992",
+    "issued": "1992",
+    "notes": "Title field is a placeholder description; the article title was not recorded.",
+    "page": "150",
+    "read": "via COD 1544665 CIF; DOI not checked",
+    "title": "Crystal structure of LiNbO3 (COD 1544665 entry)",
+    "type": "article-journal",
+    "volume": "16"
+  }
+}

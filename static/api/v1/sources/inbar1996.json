@@ -1,0 +1,39 @@
+{
+  "citation": "Iris Inbar, R. E. Cohen, \"Comparison of the electronic structures and energetics of ferroelectric LiNbO3 and LiTaO3\", Physical Review B 53, 1193, (1996) doi:10.1103/PhysRevB.53.1193",
+  "link": "https://doi.org/10.1103/PhysRevB.53.1193",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "access": {
+      "oa_status": "closed"
+    },
+    "author": [
+      {
+        "family": "Inbar",
+        "given": "Iris"
+      },
+      {
+        "family": "Cohen",
+        "given": "R. E."
+      }
+    ],
+    "container_title": "Physical Review B",
+    "doi": "10.1103/PhysRevB.53.1193",
+    "id": "inbar1996",
+    "issued": "1996",
+    "page": "1193",
+    "read": "not read",
+    "title": "Comparison of the electronic structures and energetics of ferroelectric LiNbO3 and LiTaO3",
+    "type": "article-journal",
+    "volume": "53"
+  }
+}

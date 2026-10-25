@@ -1,0 +1,91 @@
+# Zelmon, Small, Jundt 1997 Sellmeier models (21 C, 0.4-5.0 um). Schema: data/schema/dispersion.schema.json.
+# Coefficients: refractiveindex.info (CC0) transcription, re-checked (R06 sec. 2.3). MgO5 rows with the 2026 erratum applied
+# (o/e headings swapped in the 1997 Table 2). Check values: R06 sec. 2.4 (computed) and R14 rows 31-32 (compiled measurements).
+
+- id: zelmon1997-cln-o
+  name: Zelmon 1997, congruent LiNbO3, ordinary
+  variant: cln
+  axis: o
+  formula: &zform
+    form: sellmeier-3term
+    latex: "n^2 - 1 = \\sum_{i=1}^{3} \\frac{B_i \\lambda^2}{\\lambda^2 - C_i}"
+    expression: "n^2 - 1 = B1 L^2/(L^2 - C1) + B2 L^2/(L^2 - C2) + B3 L^2/(L^2 - C3), L in um"
+    rii_formula: 2
+  coefficients: {B1: 2.6734, C1: 0.01764, B2: 1.2290, C2: 0.05914, B3: 12.614, C3: 474.60}
+  coefficient_units: &zunits {B1: "1", B2: "1", B3: "1", C1: "um2", C2: "um2", C3: "um2"}
+  lambda_unit: um
+  valid_lambda_um: [0.4, 5.0]
+  valid_T_C: null
+  temperature_dependent: false
+  reference_T_C: 21
+  errata: []
+  check_values:
+    - {lambda_nm: 632.8, T_C: 21, n: 2.2865, tolerance: 0.00006, source: "R06 sec. 2.4 (computed from these coefficients)"}
+    - {lambda_nm: 1064, T_C: 21, n: 2.2321, tolerance: 0.00006, source: "R06 sec. 2.4 (computed)"}
+    - {lambda_nm: 1550, T_C: 21, n: 2.2111, tolerance: 0.00006, source: "R06 sec. 2.4 (computed)"}
+    - {lambda_nm: 632.8, T_C: 24.5, n: 2.2866, tolerance: 0.0005, source: "Nelson & Mikulyak 1974 via weis1985 Table 2 (R14 row 31); independent measurement"}
+    - {lambda_nm: 1060, T_C: 24.5, n: 2.2323, tolerance: 0.0006, source: "Nelson & Mikulyak 1974 via weis1985 Table 2 (R14 row 32); independent measurement"}
+  provenance: {source_id: zelmon1997, locator: "Table 2 (via refractiveindex.info LiNbO3 Zelmon-o)", status: P-db, via: rii, research_note: "R06 sec. 2.3 (re-checked)", transcribed: "2026-10-25"}
+  default: true
+
+- id: zelmon1997-cln-e
+  name: Zelmon 1997, congruent LiNbO3, extraordinary
+  variant: cln
+  axis: e
+  formula: *zform
+  coefficients: {B1: 2.9804, C1: 0.02047, B2: 0.5981, C2: 0.0666, B3: 8.9543, C3: 416.08}
+  coefficient_units: *zunits
+  lambda_unit: um
+  valid_lambda_um: [0.4, 5.0]
+  valid_T_C: null
+  temperature_dependent: false
+  reference_T_C: 21
+  errata: []
+  check_values:
+    - {lambda_nm: 632.8, T_C: 21, n: 2.2022, tolerance: 0.00006, source: "R06 sec. 2.4 (computed from these coefficients)"}
+    - {lambda_nm: 1064, T_C: 21, n: 2.1555, tolerance: 0.00006, source: "R06 sec. 2.4 (computed)"}
+    - {lambda_nm: 1550, T_C: 21, n: 2.1376, tolerance: 0.00006, source: "R06 sec. 2.4 (computed)"}
+    - {lambda_nm: 632.8, T_C: 24.5, n: 2.2028, tolerance: 0.0008, source: "Nelson & Mikulyak 1974 via weis1985 Table 2 (R14 row 31); Zelmon is 6e-4 lower"}
+    - {lambda_nm: 1060, T_C: 24.5, n: 2.1561, tolerance: 0.0008, source: "Nelson & Mikulyak 1974 via weis1985 Table 2 (R14 row 32)"}
+  provenance: {source_id: zelmon1997, locator: "Table 2 (via refractiveindex.info LiNbO3 Zelmon-e)", status: P-db, via: rii, research_note: "R06 sec. 2.3 (re-checked)", transcribed: "2026-10-25"}
+  default: true
+
+- id: zelmon1997-mgo5-o
+  name: Zelmon 1997, 5 mol% MgO:congruent LiNbO3, ordinary (erratum applied)
+  variant: mgo5-cln
+  axis: o
+  formula: *zform
+  coefficients: {B1: 2.4272, C1: 0.01478, B2: 1.4617, C2: 0.05612, B3: 9.6536, C3: 371.216}
+  coefficient_units: *zunits
+  lambda_unit: um
+  valid_lambda_um: [0.4, 5.0]
+  valid_T_C: null
+  temperature_dependent: false
+  reference_T_C: 21
+  errata: &zerrata
+    - {citation: "Erratum, J. Opt. Soc. Am. B 43(11), 2788 (2026): the headings for the ordinary and extraordinary index for 5 mol.% doped lithium niobate are switched", doi: 10.1364/JOSAB.616304, issued: "2026-10-22", effect: "The 1997 Table 2 MgO5 'o' row is the extraordinary index and vice versa; the coefficients here are assigned to the corrected axes (as already done by refractiveindex.info).", applied: true}
+    - {citation: "Gayer et al., Appl. Phys. B 91, 343 (2008), p. 348: the Zelmon MgO5 n_o and n_e parameters 'were switched by mistake'", doi: 10.1007/s00340-008-2998-2, issued: "2008", effect: "Earliest printed notice of the same swap (R14 row 36d).", applied: true}
+  check_values:
+    - {lambda_nm: 1550, T_C: 21, n: 2.2082, tolerance: 0.00006, source: "R06 sec. 2.4 (computed, corrected Zelmon MgO5)"}
+    - {lambda_nm: 1550, T_C: 24.5, n: 2.2088, tolerance: 0.001, source: "gayer2008 MgO5 n_o at 24.5 C (computed, R06 sec. 2.4); independent model"}
+  provenance: {source_id: zelmon1997, locator: "Table 2, MgO5 row labelled 'e' in print (via refractiveindex.info, swapped)", status: P-db, via: rii, research_note: "R06 sec. 2.3; R14 row 36d", transcribed: "2026-10-25"}
+  default: true
+
+- id: zelmon1997-mgo5-e
+  name: Zelmon 1997, 5 mol% MgO:congruent LiNbO3, extraordinary (erratum applied)
+  variant: mgo5-cln
+  axis: e
+  formula: *zform
+  coefficients: {B1: 2.2454, C1: 0.01242, B2: 1.3005, C2: 0.05313, B3: 6.8972, C3: 331.33}
+  coefficient_units: *zunits
+  lambda_unit: um
+  valid_lambda_um: [0.4, 5.0]
+  valid_T_C: null
+  temperature_dependent: false
+  reference_T_C: 21
+  errata: *zerrata
+  check_values:
+    - {lambda_nm: 1550, T_C: 21, n: 2.1299, tolerance: 0.00006, source: "R06 sec. 2.4 (computed, corrected Zelmon MgO5)"}
+    - {lambda_nm: 1550, T_C: 24.5, n: 2.1306, tolerance: 0.001, source: "gayer2008 MgO5 n_e at 24.5 C (computed, R06 sec. 2.4); independent model"}
+  provenance: {source_id: zelmon1997, locator: "Table 2, MgO5 row labelled 'o' in print (via refractiveindex.info, swapped)", status: P-db, via: rii, research_note: "R06 sec. 2.3; R14 row 36d", transcribed: "2026-10-25"}
+  default: true

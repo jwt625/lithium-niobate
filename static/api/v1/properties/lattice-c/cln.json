@@ -1,0 +1,74 @@
+{
+  "alternatives": [
+    {
+      "category": "structure",
+      "id": "lattice-c/cln/cti1999",
+      "kind": "scalar",
+      "name": "Lattice constant c (hexagonal setting)",
+      "property": "lattice-c",
+      "provenance": {
+        "source_id": "cti1999",
+        "status": "V",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 13.866,
+      "variant": "cln",
+      "variant_note": "48.38 mol% Li2O"
+    }
+  ],
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "property": "lattice-c",
+    "variant": "cln"
+  },
+  "recommended": [
+    {
+      "category": "structure",
+      "conditions": {
+        "temperature_text": "room temperature"
+      },
+      "default": true,
+      "id": "lattice-c/cln/volk2008",
+      "kind": "scalar",
+      "name": "Lattice constant c (hexagonal setting)",
+      "property": "lattice-c",
+      "provenance": {
+        "locator": "Table 1.1, p. 3 (1386.4 pm)",
+        "original_reference": "Furukawa et al., Jpn. J. Appl. Phys. 38, 1816 (1999)",
+        "source_id": "volk2008",
+        "status": "P-comp",
+        "transcribed": "2026-10-25"
+      },
+      "public": true,
+      "symbol": "c",
+      "unit": {
+        "display": "Angstrom",
+        "ucum": "Ao"
+      },
+      "value": 13.864,
+      "variant": "cln"
+    }
+  ],
+  "recommended_note": null,
+  "spread": {
+    "max": 13.866,
+    "min": 13.864,
+    "n_records": 2,
+    "note": "Range over all public records regardless of conditions; compare conditions before use.",
+    "unit": "Ao"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "tensor": "permittivity-S",
+    "variant": "cln"
+  },
+  "record": {
+    "conditions": {
+      "frequency_text": "> 10 MHz",
+      "mechanical_boundary": "S"
+    },
+    "frame": {
+      "convention": "unstated",
+      "handedness": "right",
+      "setting": "crystal-physics",
+      "x": "a axis, perpendicular to a mirror plane",
+      "y": "in a mirror plane",
+      "z": "polar c axis",
+      "z_sign_definition": "not stated in this record; tensor form matches this frame by symmetry"
+    },
+    "full": [
+      [
+        44.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        44.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        27.9
+      ]
+    ],
+    "id": "permittivity-S/cln/cti1999",
+    "independent": {
+      "eps11": {
+        "value": 44
+      },
+      "eps33": {
+        "value": 27.9
+      }
+    },
+    "kind": "tensor",
+    "name": "Relative permittivity, constant strain (clamped)",
+    "provenance": {
+      "source_id": "cti1999",
+      "status": "V",
+      "transcribed": "2026-10-25"
+    },
+    "public": true,
+    "rank": 2,
+    "scale": 1,
+    "symbol": "eps^S/eps0",
+    "symmetry_form": {
+      "form": [
+        [
+          "eps11",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "eps11",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "eps33"
+        ]
+      ],
+      "mirror": "x = 0 plane (x perpendicular to the mirror, z polar)",
+      "point_group": "3m",
+      "relations": [
+        "eps22 = eps11",
+        "off-diagonal = 0"
+      ]
+    },
+    "tensor": "permittivity-S",
+    "unit": {
+      "display": "relative (eps/eps0)",
+      "qudt": "http://qudt.org/vocab/unit/UNITLESS",
+      "ucum": "1"
+    },
+    "variant": "cln",
+    "voigt": [
+      [
+        44.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        44.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        27.9
+      ]
+    ],
+    "voigt_convention": {
+      "full_from_voigt": "full[i][j] = M[i][j]",
+      "order": [
+        "x",
+        "y",
+        "z"
+      ]
+    }
+  }
+}

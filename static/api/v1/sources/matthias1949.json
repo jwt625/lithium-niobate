@@ -1,0 +1,38 @@
+{
+  "citation": "B. T. Matthias, J. P. Remeika, \"Ferroelectricity in the Ilmenite Structure\", Physical Review 76, 1886-1887, (1949) doi:10.1103/physrev.76.1886.2",
+  "link": "https://doi.org/10.1103/physrev.76.1886.2",
+  "meta": {
+    "api_version": "v1",
+    "attribution": "lithium-niobate.com data compiled by Wentao Jiang; cite the original sources listed per value.",
+    "data_version": "0.1.0",
+    "documentation": "https://lithium-niobate.com/api/openapi.json",
+    "license": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "source": {
+    "accessed": "2026-10-25",
+    "author": [
+      {
+        "family": "Matthias",
+        "given": "B. T."
+      },
+      {
+        "family": "Remeika",
+        "given": "J. P."
+      }
+    ],
+    "container_title": "Physical Review",
+    "doi": "10.1103/physrev.76.1886.2",
+    "id": "matthias1949",
+    "issue": "12",
+    "issued": "1949-12-15",
+    "page": "1886-1887",
+    "read": "bibliographic record only (Crossref)",
+    "title": "Ferroelectricity in the Ilmenite Structure",
+    "type": "article-journal",
+    "volume": "76"
+  }
+}
