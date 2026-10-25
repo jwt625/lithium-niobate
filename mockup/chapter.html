@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pockels Effect (mockup)</title>
+<meta name="description" content="Sample chapter page of the lithium-niobate.com mockup: the Pockels effect, with an explorable, sidenotes, and a deeper layer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="pr-trace" aria-hidden="true"></canvas>
+
+<header class="topbar">
+  <div class="wrap row">
+    <a class="brand" href="index.html" aria-label="lithium niobate home">
+      <canvas id="logo" aria-hidden="true"></canvas>
+      <span class="name">lithium niobate</span><span class="formula">LiNbO<sub>3</sub></span>
+    </a>
+    <nav class="nav" aria-label="Chapters">
+      <a href="index.html#doors">Crystal</a><a class="on" href="chapter.html">Light</a><a href="index.html#doors">Sound</a><a href="index.html#doors">Quirks</a>
+      <a href="index.html#doors">Making</a><a href="index.html#doors">Devices</a><a href="index.html#history">History</a><a href="index.html#industry">Industry</a>
+      <a href="index.html#lab">Lab</a><a href="index.html#data">Data</a>
+    </nav>
+    <div class="tools">
+      <div class="seg" data-units role="group" aria-label="Wavelength units"><button data-u="nm">nm</button><button data-u="THz">THz</button><button data-u="eV">eV</button></div>
+      <button class="iconbtn" id="motion-btn" aria-label="Toggle motion"></button>
+      <button class="iconbtn" id="theme-btn" aria-label="Toggle theme"></button>
+    </div>
+  </div>
+</header>
+
+<div class="spine" aria-hidden="true"><span class="axislabel">c</span></div>
+
+<main class="wrap">
+  <div class="crumbs"><a href="index.html">lithium niobate</a> / <a href="index.html#doors">02 Light</a> / 2.2</div>
+
+  <div class="chapter">
+    <article>
+      <section id="s1" data-spine="Steering light with voltage">
+        <div class="eyebrow" style="margin-top:18px">Chapter 2.2</div>
+        <h1 class="biref" style="font-size:52px">The Pockels effect</h1>
+        <div class="meta"><span class="chip">lay</span><span class="chip">grad</span><span class="chip">expert in "Go deeper"</span><span class="badge">last verified 2026-10-25</span><span class="badge">4 references</span></div>
+
+        <p class="lede">Light slows down inside a crystal. In lithium niobate, how much it slows down depends on the voltage you apply. Change the voltage, and you change the light.</p>
+
+        <p>Split a beam into two paths, run one of them past a pair of electrodes, and bring the paths back together. When the two beams arrive in step, they add up and the light comes out. Shift one by half a wavelength and they cancel: the light goes dark. That switch is a
+          <span class="term" data-pop="mzi">Mach-Zehnder modulator</span>, and lithium niobate versions of it have carried fiber-optic traffic for decades.</p>
+      </section>
+
+      <div class="explorable facet" style="--cut:14px" id="mzi-x">
+        <div class="vis">
+          <svg viewBox="0 0 640 200" aria-label="Mach-Zehnder modulator schematic with live output">
+            <path d="M20 100h110l40-46h300l40 46h110" fill="none" stroke="var(--text-2)" stroke-width="2"/>
+            <path d="M130 100l40 46h300l40-46" fill="none" stroke="var(--text-2)" stroke-width="2"/>
+            <rect x="200" y="30" width="240" height="10" fill="var(--gold)"/>
+            <rect x="200" y="68" width="240" height="10" fill="var(--gold)" opacity=".85"/>
+            <rect x="200" y="160" width="240" height="10" fill="var(--gold)"/>
+            <g id="wave-top"></g><g id="wave-bot"></g>
+            <rect id="out-bar" x="600" y="70" width="22" height="60" fill="var(--shg)"/>
+            <rect x="600" y="70" width="22" height="60" fill="none" stroke="var(--line-2)"/>
+            <text x="20" y="88" font-family="IBM Plex Mono" font-size="11" fill="var(--muted)">in</text>
+            <text x="582" y="150" font-family="IBM Plex Mono" font-size="11" fill="var(--muted)">out</text>
+          </svg>
+        </div>
+        <div class="controls">
+          <div class="ctl"><label for="mv">Voltage on the electrodes</label><input id="mv" type="range" min="0" max="4" step="0.01" value="0" aria-valuetext="0 volts"><output id="mvo">0.00 V</output></div>
+          <div class="small">Half-wave voltage V<sub>&pi;</sub> = 2.0 V <span class="badge template">template</span> (illustrative; real devices: see the Modulator Designer).</div>
+        </div>
+      </div>
+
+      <p>At <span class="live" id="lv">0.00 V</span>,&nbsp;<span class="live" id="lt">100%</span> of the light comes out. The crystal did nothing but change its refractive index by a few parts per million. No moving parts, no free electrons to push around: the
+        <span class="term" data-pop="speed">response is effectively instantaneous</span>, which is why these modulators reach well beyond 100 GHz.</p>
+
+      <section id="s2" data-spine="Why lithium niobate">
+        <h2 class="biref" style="margin-top:34px">Why this crystal</h2>
+        <p>Many crystals show the effect. Lithium niobate combines a large electro-optic coefficient with transparency from the visible to the mid-infrared, a mature growth industry, and, since 2017, thin films that squeeze light into waveguides a fraction of a micrometer tall
+          <span class="cite" data-pop="ref-zhang">[1]</span><span class="cite" data-pop="ref-wang">[2]</span>.</p>
+        <p>Its biggest coefficient, r<sub>33</sub>, works when the field and the light's polarization both lie along the crystal's polar c axis. That single fact decides how every modulator is cut and laid out. The
+          <span class="term" data-pop="cuts">x-cut</span> wafer, with c in the plane, is the standard choice.</p>
+      </section>
+
+      <details class="deeper" id="s3" data-spine="Go deeper">
+        <summary>Go deeper: the electro-optic tensor, clamping, and sign conventions</summary>
+        <div class="inner">
+          <p>The field <i>E</i> perturbs the optical impermeability (the index ellipsoid) linearly:</p>
+          <p style="text-align:center">
+            <math display="block"><mrow><mi>&Delta;</mi><msub><mrow><mo>(</mo><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow><mi>i</mi></msub><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mn>3</mn></munderover><msub><mi>r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mi>E</mi><mi>j</mi></msub><mo>,</mo><mspace width="1em"/><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mo>&hellip;</mo><mo>,</mo><mn>6</mn></mrow></math>
+          </p>
+          <p>Point group 3m leaves four independent coefficients (frame: x perpendicular to the mirror plane, z along the polar c axis):</p>
+          <table class="matrix" aria-label="Electro-optic tensor form for point group 3m">
+            <tr><td class="z">0</td><td>-r<sub>22</sub></td><td>r<sub>13</sub></td></tr>
+            <tr><td class="z">0</td><td>r<sub>22</sub></td><td>r<sub>13</sub></td></tr>
+            <tr><td class="z">0</td><td class="z">0</td><td>r<sub>33</sub></td></tr>
+            <tr><td class="z">0</td><td>r<sub>51</sub></td><td class="z">0</td></tr>
+            <tr><td>r<sub>51</sub></td><td class="z">0</td><td class="z">0</td></tr>
+            <tr><td>-r<sub>22</sub></td><td class="z">0</td><td class="z">0</td></tr>
+          </table>
+          <p>Values depend on whether the crystal can deform (unclamped, T, below acoustic resonances) or not (clamped, S, high frequency):</p>
+          <table class="t">
+            <tr><th>Source</th><th>Condition</th><th>r<sub>13</sub></th><th>r<sub>22</sub></th><th>r<sub>33</sub></th><th>r<sub>51</sub></th><th>Status</th></tr>
+            <tr><td>Rauber 1978 via Veit et al.</td><td>unclamped (T)</td><td class="num">10.0</td><td class="num">6.8</td><td class="num">32.2</td><td class="num">32.6</td><td><span class="badge s">S</span></td></tr>
+            <tr><td>Rauber 1978 via Veit et al.</td><td>clamped (S)</td><td class="num">8.6</td><td class="num">3.4</td><td class="num">30.8</td><td class="num">28</td><td><span class="badge s">S</span></td></tr>
+            <tr><td>Vendor sheet (1999)</td><td>clamped (S), 633 nm</td><td class="num">9</td><td class="num">3</td><td class="num">31</td><td class="num">28</td><td><span class="badge v">V</span></td></tr>
+          </table>
+          <p class="small">Units pm/V. Primary-source verification in progress (research note R14). r<sub>13</sub> carries a <span class="term" data-pop="r13">reported sign discrepancy</span> between two handbooks.</p>
+        </div>
+      </details>
+
+      <section id="s4" data-spine="References">
+        <h3>References</h3>
+        <ol class="refs">
+          <li>M. Zhang et al., Optica 4, 1536 (2017). <a href="https://doi.org/10.1364/OPTICA.4.001536">doi:10.1364/OPTICA.4.001536</a></li>
+          <li>C. Wang et al., Nature 562, 101 (2018). <a href="https://doi.org/10.1038/s41586-018-0551-y">doi:10.1038/s41586-018-0551-y</a></li>
+          <li>G. E. Peterson et al., Appl. Phys. Lett. 5, 62 (1964). <a href="https://doi.org/10.1063/1.1754053">doi:10.1063/1.1754053</a></li>
+          <li>D. E. Zelmon, D. L. Small, D. Jundt, JOSA B 14, 3319 (1997). <a href="https://doi.org/10.1364/JOSAB.14.003319">doi:10.1364/JOSAB.14.003319</a></li>
+        </ol>
+      </section>
+    </article>
+
+    <aside class="sidecol" aria-label="Sidenotes">
+      <div class="sidenote" style="top:250px"><b>Half a wavelength.</b> For telecom light at <span data-lam="1.55"></span>, that is about 0.78 &micro;m of optical path, made by an index change of order 10<sup>-5</sup> to 10<sup>-4</sup> over a few millimeters.</div>
+      <div class="sidenote" style="top:760px"><b>Where to see it.</b> The hero on the landing page applies the same effect to a whole cone of light: a field across the c axis makes the crystal biaxial.</div>
+      <div class="sidenote" style="top:1180px"><b>Clamped or not?</b> At low frequency the crystal also deforms (piezoelectric strain) and the strain changes the index again (photoelastic effect). Above the acoustic resonances that path freezes out: r<sub>22</sub> and r<sub>51</sub> drop the most.</div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap grid">
+    <div class="wafer"><div class="small" style="margin-bottom:8px">Site map (you are on the highlighted die)</div><svg viewBox="0 0 240 250" data-here="Light"></svg></div>
+    <div class="fine"><p style="margin-top:0"><b style="color:var(--text)">Mockup, 2026-10-25.</b> Sample chapter page: lay text first, one explorable, hover previews, sidenotes, and a collapsed expert layer. Values carry source status badges; the template V<sub>&pi;</sub> is marked as such.</p></div>
+    <div class="bias"><div>Modulator bias point</div><div class="meter" title="Click to re-lock" data-pop="drift"><span class="pt"></span></div><div class="state"></div></div>
+  </div>
+</footer>
+
+<script src="ln.js"></script>
+<script>
+window.POPS = {
+  mzi: { h: "Mach-Zehnder modulator", body: "An interferometer: split, phase-shift one or both arms with the Pockels effect, recombine. Output follows cos<sup>2</sup>(&pi;V / 2V<sub>&pi;</sub>) for a push-pull device biased at maximum transmission.", more: ["Modulator Designer (F3)", "index.html#lab"] },
+  speed: { h: "How fast?", body: "The electronic Pockels response is far faster than any electrical drive; practical limits come from the electrodes: RF loss, velocity mismatch, impedance. Thin-film LN modulators with measured 3-dB EO bandwidths of 170 GHz have been reported.", badges: [["reported", "reported"]], src: "Records table: research note R08 sec. 2 (provisional, 2026-10-24)." },
+  cuts: { h: "x-cut, z-cut", body: "The wafer is named by the crystal axis normal to its surface. In x-cut, the polar c axis lies in the plane, so in-plane electrodes and TE-polarized light both use r<sub>33</sub>.", more: ["Tensor & Convention Explorer (F4)", "index.html#lab"] },
+  r13: { h: "The r<sub>13</sub> sign", body: "The author's 2018 notes recorded one sign difference in r<sub>13</sub> between the Wong and Weis &amp; Gaylord tables. All accessible tables list r<sub>13</sub> positive in the stated frame. Flagged until checked against both primaries.", badges: [["u", "U: unresolved"]], src: "Research notes R02, R06; verification R14." },
+  "ref-zhang": { h: "Zhang et al. 2017", body: "Monolithic ultra-high-Q lithium niobate microring resonator. Showed that etched thin-film LN can be very low loss.", src: "Optica 4, 1536 (2017), <a href='https://doi.org/10.1364/OPTICA.4.001536'>doi:10.1364/OPTICA.4.001536</a>" },
+  "ref-wang": { h: "Wang et al. 2018", body: "Integrated lithium niobate electro-optic modulators operating at CMOS-compatible voltages.", src: "Nature 562, 101 (2018), <a href='https://doi.org/10.1038/s41586-018-0551-y'>doi:10.1038/s41586-018-0551-y</a>" },
+  drift: { h: "Bias drift", body: "A DC bias on a thin-film LN modulator is slowly screened by mobile charge in the film, cladding, and interfaces, so the operating point drifts and needs a control loop. Click to re-lock.", src: "Research note R08 sec. 3." },
+};
+</script>
+<script src="app.js"></script>
+<script>
+(() => {
+  const VPI = 2.0; // template value, illustrative
+  const mv = document.getElementById("mv");
+  const top = document.getElementById("wave-top"), bot = document.getElementById("wave-bot");
+  function wave(y0, phase, color) {
+    let d = "";
+    for (let x = 200; x <= 440; x += 3) {
+      const y = y0 + 6 * Math.sin((x - 200) / 9 + phase * ((x - 200) / 240));
+      d += (x === 200 ? "M" : "L") + x + " " + y.toFixed(1);
+    }
+    return `<path d="${d}" fill="none" stroke="${color}" stroke-width="1.4" opacity=".9"/>`;
+  }
+  function upd() {
+    const V = +mv.value;
+    const dphi = Math.PI * V / VPI; // push-pull: total phase difference
+    const T = Math.cos(dphi / 2) ** 2;
+    top.innerHTML = wave(54, dphi / 2, "var(--ir)");
+    bot.innerHTML = wave(146, -dphi / 2, "var(--ir)");
+    const h = 60 * T;
+    const bar = document.getElementById("out-bar");
+    bar.setAttribute("y", 130 - h); bar.setAttribute("height", h);
+    document.getElementById("mvo").textContent = `${V.toFixed(2)} V`;
+    document.getElementById("lv").textContent = `${V.toFixed(2)} V`;
+    document.getElementById("lt").textContent = `${(100 * T).toFixed(0)}%`;
+    mv.setAttribute("aria-valuetext", `${V.toFixed(2)} volts, ${(100 * T).toFixed(0)} percent transmitted`);
+  }
+  mv.addEventListener("input", upd);
+  upd();
+})();
+</script>
+</body>
+</html>
