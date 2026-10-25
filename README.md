@@ -6,7 +6,7 @@ A website dedicated to lithium niobate (LiNbO3): the crystal, its physics, how i
 
 Research, proposal, and static mockup phase (2026-10-25). The production site is not built yet.
 
-- Static mockup (theme "Optic Axis", layout, core elements): [mockup/](mockup/) (open `mockup/index.html`; served by GitHub Pages until the site exists)
+- Static mockup (theme "Optic Axis", layout, core elements): [mockup/](mockup/) (serve locally, e.g. `uv run --no-project python -m http.server <port> --directory mockup`)
 - Proposal: [DevLog/DevLog-001-proposal.md](DevLog/DevLog-001-proposal.md)
 - Requirements and progress: [DevLog/DevLog-000-kickoff-and-requirements.md](DevLog/DevLog-000-kickoff-and-requirements.md)
 - Research notes: [research/](research/) (R01..R13)
@@ -19,7 +19,6 @@ Research, proposal, and static mockup phase (2026-10-25). The production site is
 | `DevLog/` | Plans, decisions, progress, audits |
 | `research/` | Sourced research notes feeding the proposal |
 | `mockup/` | Static, no-build mockup of theme and layout (live conoscope hero, sample chapter page) |
-| `.github/workflows/pages.yml` | GitHub Pages deployment (currently the mockup) |
 
 ## License
 
