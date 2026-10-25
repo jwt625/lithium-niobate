@@ -28,7 +28,7 @@
 
 - [x] Mockup `mockup/index.html`, `mockup/chapter.html` (+ shared CSS/JS); screenshot-verified desktop and phone width, dark and light
 - [x] `review/materials-review.md` (subagent; local-only, 253 rows)
-- [ ] `research/R14-property-verification.md` (subagent)
+- [x] `research/R14-property-verification.md` (subagent)
 - [x] LICENSE, .gitignore, Pages workflow, README update
 - [x] Privacy review, first commit, repo create, push, Pages enable
 
@@ -39,3 +39,4 @@
 - 2026-10-25 Materials review page delivered (local-only): data 38, history 39, images 19, author materials 51, industry 37, library 15, code/3D 23, motifs 10, do-not-use 21 rows. COMSOL clip library is on the NAS (not mounted); clips need clearance.
 - 2026-10-25 05:42 UTC Repo created: github.com/jwt625/lithium-niobate (public), first commit 71bc5d1; Pages via workflow, deploy run succeeded; mockup live at outside5sigma.com/lithium-niobate/ (user-level custom domain) until lithium-niobate.com DNS is set by the author.
 - 2026-10-25 Correction (author: "i only need localhost to review it"): Pages deployment was out of scope. Pages site deleted (`gh api -X DELETE repos/jwt625/lithium-niobate/pages`), workflow removed. Review happens on localhost only.
+- 2026-10-25 R14 delivered: local primaries found (Weis & Gaylord 1985, IEEE 176-1987, Volk & Wohlecke 2008, Gayer 2008 + 2009 erratum, Schwesyg 2011); 29 R06 entries verified (mostly P-comp = read in a compilation), 7 mismatches (Ps, SLN Tc, SLN Ec, Ec ratio, r51^S 18.2 vs 28, two eps^S attributions); 24 sources still needed (R14 sec. 5). Mockup updated: r22 badge P-comp; chapter EO table adds the Kaminow 1980 clamped set preferred by Weis & Gaylord.

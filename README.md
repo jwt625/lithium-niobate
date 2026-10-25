@@ -9,7 +9,7 @@ Research, proposal, and static mockup phase (2026-10-25). The production site is
 - Static mockup (theme "Optic Axis", layout, core elements): [mockup/](mockup/) (serve locally, e.g. `uv run --no-project python -m http.server <port> --directory mockup`)
 - Proposal: [DevLog/DevLog-001-proposal.md](DevLog/DevLog-001-proposal.md)
 - Requirements and progress: [DevLog/DevLog-000-kickoff-and-requirements.md](DevLog/DevLog-000-kickoff-and-requirements.md)
-- Research notes: [research/](research/) (R01..R13)
+- Research notes: [research/](research/) (R01..R14)
 - Audits: [DevLog/audits/](DevLog/audits/)
 
 ## Structure
