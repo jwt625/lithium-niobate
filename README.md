@@ -14,6 +14,10 @@ Build in progress (2026-10-25). SvelteKit app at the repo root; landing, chapter
 2. SAW sweep data for figure F3.4 (only after a change to `src/lib/physics/saw.ts` or the elastic/piezoelectric constants; takes about 25 s per constant set): `node src/lib/figures/sound/gen-saw-sweep.ts` writes `static/data/sound/saw-sweep-*.json`.
 3. Site: `pnpm build` runs `vite build` (prerenders every route to `build/`) and then `pagefind --site build` (search index in `build/pagefind/`, loaded by the masthead search on first open). The dev server has no search index.
 4. Preview the production build: `pnpm preview` (127.0.0.1:47615).
+
+### Deployment
+
+GitHub Actions (`.github/workflows/deploy.yml`) runs on every push to `main`: install, `pnpm check`, physics tests, `pnpm build`, then deploy `build/` to GitHub Pages. Pages source is "GitHub Actions"; the custom domain is `lithium-niobate.com` (`static/CNAME`, apex A/AAAA records and `www` CNAME in Cloudflare). The end-to-end suite stays local (it needs Chrome and `vite preview`).
 - Plans and decisions: [DevLog/](DevLog/) (start at DevLog-004, DevLog-005, DevLog-006); research notes: [research/](research/); chapter manuscripts: [content/chapters/](content/chapters/)
 - Approved visual reference: [mockup/](mockup/)
 
