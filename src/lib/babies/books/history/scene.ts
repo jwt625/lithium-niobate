@@ -2,7 +2,8 @@
 // is stitched into a strip canvas in world coordinates, seeded per world tile / panel / page, so a
 // given stretch bakes to the same pixels in every scene. On an in-book page turn (host.from) the
 // camera starts exactly at the previous page's resting view and pans along the strip to this
-// stretch; nothing re-stitches. On a fresh entry the page rests at its stretch and its own
+// stretch; nothing re-stitches. The arriving stretch's moving parts slide in at their start state
+// and play once the camera stops. On a fresh entry the page rests at its stretch and its own
 // elements stitch in once.
 
 import type { Scene, SceneHost } from "../../types";
@@ -11,6 +12,7 @@ import { BUILD, FINAL, type Art, type St } from "./pages";
 import { Emb, W, clamp, drawItem, drawRun, itemAt, type Ctx } from "./stitch";
 
 export const INTRO = 3.2; // fresh entry: stitch-in settles
+const LEAD = 0.8; // page turn: moving-parts clock at arrival, skipping most of the fresh-entry stitch-in wait
 const TILE = 200;
 
 /** Ease with slow start, fast middle, gentle stop (smootherstep). */
@@ -115,8 +117,8 @@ export function stripScene(host: SceneHost, p: number): Scene {
   bake();
 
   let lastT = 0;
-  /** Clock for this stretch's moving parts: on a page turn they are already settled. */
-  const dynT = (t: number): number => (st.reduced ? FINAL : fresh ? t : t + 100);
+  /** Clock for this stretch's moving parts: on a page turn it reaches LEAD as the pan arrives. */
+  const dynT = (t: number): number => (st.reduced ? FINAL : fresh ? t : t - D + LEAD);
   const frame = (t: number): void => {
     lastT = t;
     const css = host.el.clientWidth || 600;
@@ -165,7 +167,7 @@ export function stripScene(host: SceneHost, p: number): Scene {
 
   return {
     frame,
-    settle: pan ? D : fresh ? INTRO : 0,
+    settle: pan ? D + INTRO - LEAD : fresh ? INTRO : 0,
     destroy() {
       canvas.removeEventListener("pointerdown", onDown);
       canvas.removeEventListener("pointerup", onUp);
