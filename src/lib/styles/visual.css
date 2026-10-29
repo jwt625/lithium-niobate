@@ -363,6 +363,7 @@
   & footer .imprint { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--v-line); font: 500 13px/20px var(--v-ui); letter-spacing: 0; text-transform: none; color: var(--v-text3); }
   & footer .tag { font: 500 12px/18px var(--v-ui); letter-spacing: 0; text-transform: none; border: 1px solid var(--v-line2); padding: 0 8px; color: var(--v-text2); }
   @media (max-width: 1100px) { & footer .grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+  & footer .imprint .sep { margin: 0 8px; color: var(--v-line2); }
   @media (max-width: 640px) { & footer .grid { grid-template-columns: minmax(0, 1fr); } }
 
   /* ---------- instrument cards (index, VISUAL) ---------- */

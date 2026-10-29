@@ -275,6 +275,7 @@ footer h3.key-set { margin-top: 12px; } /* INT: chapter legend (PageMeta.keyDefs
 footer .imprint { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--rule); margin-top: 14px; padding-top: 6px; font: 400 11px/18px var(--cond); letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg3); }
 .tag { display: inline-block; font: 400 10px/14px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; border: 1px dotted var(--fg3); padding: 0 4px; color: var(--fg2); }
 .tag.solid { border-style: solid; color: var(--fg); }
+footer .imprint .sep { margin: 0 0.5em; color: var(--rule2); }
 .wafer svg { width: 180px; height: 190px; display: block; }
 .wafer .die { fill: transparent; stroke: var(--rule2); stroke-width: 0.8; }
 .wafer a .die { fill: var(--bg3); stroke: var(--fg3); cursor: pointer; }

@@ -1,6 +1,6 @@
 <!-- Footer (port of mockup footer + app.js wafer map and bias meter): wafer-map site map (one die per page, built pages
-     link), status key (codes used on the page), license, VISUAL background-lattice note, and either the MZM bias meter or
-     the FEM data credit. -->
+     link), status key (codes used on the page), license, VISUAL background-lattice note, either the MZM bias meter or
+     the FEM data credit, and the imprint row (domain, creator credit, date tag). -->
 <script lang="ts">
   import { STATUS, waferPages, type StatusCode, type FooterAside, type KeySet } from "$lib/content/site";
   import { untrack } from "svelte";
@@ -153,5 +153,5 @@
       </div>
     {/if}
   </div>
-  <div class="imprint"><span>lithium-niobate.com</span><span><span class="tag">2026-10-25</span></span></div>
+  <div class="imprint"><span>lithium-niobate.com</span><span class="credit">Created by Wentao Jiang<span class="sep">|</span><a class="u" href="https://outside5sigma.com" target="_blank" rel="noopener">homepage</a><span class="sep">|</span><a class="u" href="https://github.com/jwt625/lithium-niobate" target="_blank" rel="noopener">GitHub</a></span><span><span class="tag">2026-10-25</span></span></div>
 </footer>
