@@ -1,0 +1,57 @@
+/* BABY mode (DevLog-007): the book is the screen. From html[data-mode="baby"] (set before first paint, so a persisted
+   BABY never flashes the page) this file hides main, masthead, spine, footer, and the effects layer, and lays out the
+   book screen (src/lib/babies/runtime/BabyStage.svelte): a square stage as large as fits above one bare control row,
+   a quiet meta row, and two tiny lines, centered on a theme-following neutral surround (BabyBook.surround overrides it
+   through --bb-surround on <html>). Popups keep the VISUAL rules (visual.css also matches baby). Every box has a fixed
+   size: no control moves anything. Sharp corners. */
+
+.baby { display: none; }
+
+:root[data-mode="baby"][data-theme] { --v-gut: 0px; } /* no spine gutter; beats the VISUAL >= 1100 px value */
+:root[data-mode="baby"] {
+  --bb-g: 20px;                   /* screen gutter */
+  --bb-fixed: 108px;              /* below the stage: 8 + 36 (controls) + 8 + 24 (meta) + 16 + 16 (two lines) */
+  --bb-paper: #efe8d8;            /* stage default; the scene draws its own page */
+  --bb-bg: #161616; --bb-ink: #d6d2ca; --bb-ink2: #8a877f; --bb-line: #3b3a37; --bb-hover: rgba(255, 255, 255, 0.06);
+  @media (max-width: 640px) { --bb-g: 12px; }
+  &[data-theme="light"] { --bb-bg: #e7e5e0; --bb-ink: #2a2824; --bb-ink2: #6f6b63; --bb-line: #c3bfb6; --bb-hover: rgba(0, 0, 0, 0.05); }
+  background: var(--bb-surround, var(--bb-bg));
+
+  & body { background: var(--bb-surround, var(--bb-bg)); }
+  & body::before, & #pr-trace, & main, & header.mast, & .spine, & footer { display: none; }
+  & .pop:not(.show) { display: none; } /* the idle popup box sits below the screen and would add a vertical scroll */
+  & .baby { display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; margin: 0; min-height: 100vh; min-height: 100svh; padding: var(--bb-g); }
+  & .bb-col { width: min(100%, calc(100vh - 2 * var(--bb-g) - var(--bb-fixed))); width: min(100%, calc(100svh - 2 * var(--bb-g) - var(--bb-fixed))); min-width: 0; }
+  & .bb-stage { position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; contain: layout paint; background: var(--bb-paper); touch-action: pan-y; }
+  & .bb-scene { position: absolute; inset: 0; overflow: hidden; }
+
+  /* bare control row: home, prev, dots, next, Exit */
+  & .bb-ctl { display: grid; grid-template-columns: 32px 32px minmax(0, 1fr) 32px auto; column-gap: 6px; align-items: center; height: 36px; margin-top: 8px; }
+  & :is(.bb-btn, .bb-exit, .bb-note) { height: 32px; padding: 0; border: 1px solid var(--bb-line); border-radius: 0; background: none; color: var(--bb-ink2); cursor: pointer; }
+  & :is(.bb-btn, .bb-exit, .bb-note):hover:not(:disabled) { color: var(--bb-ink); background: var(--bb-hover); }
+  & .bb-btn { width: 32px; display: grid; place-items: center; }
+  & .bb-btn svg { width: 15px; height: 15px; display: block; }
+  & .bb-btn:disabled { opacity: 0.35; cursor: default; }
+  & .bb-exit { width: 52px; font: 500 12px/1 var(--v-ui); letter-spacing: 0.02em; }
+  & .bb-dots { display: flex; justify-content: center; height: 32px; overflow: hidden; }
+  & .bb-dot { width: 20px; height: 32px; flex: none; display: grid; place-items: center; padding: 0; border: 0; border-radius: 0; background: none; cursor: pointer; }
+  & .bb-dot span { width: 8px; height: 8px; border: 1px solid var(--bb-ink2); }
+  & .bb-dot:hover span { border-color: var(--bb-ink); }
+  & .bb-dot[aria-current] span { background: var(--bb-ink); border-color: var(--bb-ink); }
+  & :is(.bb-btn, .bb-exit, .bb-dot, .bb-note, .bb-sec, .bb-credit a):focus-visible { outline: 2px solid var(--bb-ink); outline-offset: 1px; }
+
+  /* quiet meta row: parent note, grown-up section */
+  & .bb-meta { display: grid; grid-template-columns: 20px minmax(0, 1fr); column-gap: 8px; align-items: center; height: 24px; margin-top: 8px; }
+  & .bb-note { width: 20px; height: 20px; font: italic 500 12px/1 var(--v-serif); cursor: help; }
+  & .bb-sec { min-width: 0; font: 400 12px/24px var(--v-ui); color: var(--bb-ink2); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  & .bb-sec:hover { color: var(--bb-ink); text-decoration: underline; text-underline-offset: 3px; }
+  & .bb-sec .n { margin-right: 6px; font-variant-numeric: tabular-nums; }
+
+  /* two tiny lines: cover-only non-affiliation, credit */
+  & .bb-fine { height: 16px; margin: 0; font: 400 11px/16px var(--v-ui); color: var(--bb-ink2); opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  & .bb-credit { opacity: 0.6; }
+  & .bb-credit a { color: inherit; text-decoration: none; }
+  & .bb-credit a:hover { text-decoration: underline; text-underline-offset: 2px; }
+  & .bb-credit .sep { margin: 0 6px; }
+  & .bb-sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}

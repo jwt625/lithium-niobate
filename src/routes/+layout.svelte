@@ -1,9 +1,11 @@
-<!-- Shell: effects layer, masthead, spine, page, footer, popup engine. Page shell settings come from the site registry by
-     path (metaFor) with optional per-page overrides returned from a page load as { meta }. -->
+<!-- Shell: effects layer, masthead, spine, page, BABY book stage (shown instead of the page in BABY), footer, popup engine.
+     Page shell settings come from the site registry by path (metaFor) with optional per-page overrides returned from a
+     page load as { meta }. -->
 <script lang="ts">
   import "$lib/styles/tech.css";
   import "$lib/styles/chapter.css";
   import "$lib/styles/visual.css";
+  import "$lib/styles/baby.css";
   import type { Snippet } from "svelte";
   import { page } from "$app/state";
   import { initUi } from "$lib/stores/ui.svelte";
@@ -14,6 +16,7 @@
   import Footer from "$lib/components/Footer.svelte";
   import Popups from "$lib/components/Popups.svelte";
   import Effects from "$lib/components/Effects.svelte";
+  import BabyStage from "$lib/babies/runtime/BabyStage.svelte";
   import { usePops } from "$lib/content/pops";
   import { SHELL_POPS } from "$lib/content/pops-landing";
 
@@ -38,6 +41,7 @@
   <main data-pagefind-body>
     {@render children()}
   </main>
+  <BabyStage />
   <Footer here={meta.here} keys={meta.keys} keyDefs={meta.keyDefs} aside={meta.aside} lattice={meta.landing} />
   <Popups />
 </div>

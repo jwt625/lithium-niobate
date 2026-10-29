@@ -1,9 +1,10 @@
 /* VISUAL layer. Port of mockup/visual.css; edits marked "F0". Rules: DevLog/DevLog-003b-visual-language.md.
-   Every rule is scoped under :root[data-mode="visual"] (the html element) with CSS nesting; TECH stays in styles.css.
+   Every rule is scoped under :root:is([data-mode="visual"], [data-mode="baby"]) (the html element) with CSS nesting; TECH stays in styles.css.
+   BABY (picture books, src/lib/babies) reuses this layer for the masthead and footer; its own rules are in baby.css.
    Shared tokens (--bg, --fg, --acc, --nb, --gold, ...) are redefined here so app.js, lattice.js, eo.js pick up VISUAL colors.
    Spectral tokens (--v-l532, --v-l633, --v-l775) are static fallbacks; visual.js recomputes them from wavelength. */
 
-:root[data-mode="visual"] {
+:root:is([data-mode="visual"], [data-mode="baby"]) {
   --v-serif: "Newsreader", "Newsreader Fallback", "Newsreader Fallback TNR", "STIX Two Text", "STIX Two Text Fallback", Georgia, serif; /* STIX Two Text supplies Greek (Newsreader has none); FIX-S: metric fallbacks in tech.css */
   --v-ui: "Inter", "Inter Fallback", ui-sans-serif, system-ui, sans-serif;
   --v-code: ui-monospace, "SF Mono", Menlo, monospace;
@@ -69,7 +70,7 @@
   & .spine .mark .tip { left: 32px; top: 0; font: 500 13px/22px var(--v-ui); color: var(--v-text); background: var(--v-ink1); border: 1px solid var(--v-line2); padding: 0 8px; transition: opacity 120ms var(--v-ease); }
 
   /* ---------- masthead (shared DOM header.mast; app.js hooks: #logo, .seg.mode, #theme-btn, .qpm-lab) ---------- */
-  & .mast { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "brand nav tools" "band band band"; column-gap: 28px; padding: 0 var(--v-inset); border-bottom: 1px solid var(--v-line); background: color-mix(in srgb, var(--v-ink0) 88%, transparent); }
+  & .mast { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "brand nav tools" "band band band"; column-gap: 24px; padding: 0 var(--v-inset); border-bottom: 1px solid var(--v-line); background: color-mix(in srgb, var(--v-ink0) 88%, transparent); }
   & .mast .row { display: contents; }
   & .brand { grid-area: brand; display: flex; align-items: center; gap: 14px; min-height: 88px; margin: 0; white-space: nowrap; color: var(--v-text); }
   & .brand canvas { width: 44px; height: 44px; display: block; align-self: center; border: 0; clip-path: circle(50%); background: #000; }
@@ -84,11 +85,11 @@
   & .nav > span[aria-disabled] { opacity: 1; color: var(--v-text3); }
   & .tools { grid-area: tools; display: flex; gap: 8px; align-items: center; }
   & .seg.mode { display: inline-flex; border: 2px solid var(--v-line2); font: 500 15px/1 var(--v-ui); letter-spacing: 0; text-transform: capitalize; }
-  & .seg.mode button { min-height: 40px; padding: 0 16px; color: var(--v-text2); background: none; font: inherit; letter-spacing: 0; text-transform: lowercase; transition: background-color 120ms var(--v-ease), color 120ms var(--v-ease); }
+  & .seg.mode button { min-height: 40px; padding: 0 9px; color: var(--v-text2); background: none; font: inherit; letter-spacing: 0; text-transform: lowercase; transition: background-color 120ms var(--v-ease), color 120ms var(--v-ease); }
   & .seg.mode button::first-letter { text-transform: uppercase; }
   & .seg.mode button + button { border-left: 2px solid var(--v-line2); }
   & .seg.mode button:hover { background: var(--v-l532-dim); color: var(--v-text); }
-  & .seg.mode button.on, & .seg.mode button[data-m="visual"] { background: var(--v-l532); color: var(--v-l532-ink); } /* F0: pre-hydration state */
+  & .seg.mode button.on, &[data-mode="visual"] .seg.mode button[data-m="visual"], &[data-mode="baby"] .seg.mode button[data-m="baby"] { background: var(--v-l532); color: var(--v-l532-ink); } /* F0: pre-hydration state */
   & .seg.mode button:focus-visible, & .iconbtn:focus-visible { outline: 3px solid var(--v-l532); outline-offset: 3px; }
   & .iconbtn { width: 44px; height: 44px; border: 2px solid var(--v-line2); background: none; color: var(--v-text2); display: grid; place-items: center; cursor: pointer; padding: 0; }
   & .iconbtn:hover { color: var(--v-text); background: var(--v-l532-dim); }
@@ -108,14 +109,15 @@
   & .mast .band .qpm-lab { display: block; position: static; padding: 0; background: none; font: 500 12px/1 var(--v-ui); letter-spacing: 0; color: var(--v-text3); white-space: nowrap; font-variant-numeric: tabular-nums; }
   & .mast .band:hover .qpm-lab, & .mast .band:focus-visible .qpm-lab { color: var(--v-text); }
   & .mast .band:focus-visible { outline: 3px solid var(--v-l532); outline-offset: 2px; }
-  /* FIX-S G03: the eight chapter links need 691 px; the one-row masthead gives the nav 716 px at >= 1440 px (1320 px column).
-     1280-1439 px: formula after the wordmark hidden, narrower gaps, 16 px links (needs 628 px, has >= 653 px).
+  /* FIX-S G03: the eight chapter links need 691 px; the one-row masthead gives the nav 696 px at >= 1440 px (1320 px column;
+     three mode buttons since BABY, padding 9 px, gaps 24 px; measured in Chrome 2026-10-29).
+     1280-1439 px: formula after the wordmark hidden, narrower gaps, 16 px links, mode padding 6 px (needs 628 px, has >= 635 px).
      Below 1280 px: nav on its own row. */
   @media (max-width: 1439px) {
-    & .mast { column-gap: 20px; }
+    & .mast { column-gap: 16px; }
     & .brand span { display: none; }
     & .nav > a, & .nav > span { padding: 0 4px; font-size: 16px; }
-    & .seg.mode button { padding: 0 12px; }
+    & .seg.mode button { padding: 0 6px; }
   }
   @media (max-width: 1279px) {
     & .mast { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "brand tools" "nav nav" "band band"; }
@@ -361,9 +363,9 @@
   & footer .bias .tr .cur { stroke: var(--v-l532); stroke-width: 1.5; }
   & footer .bias .state { margin-top: 6px; font: 500 14px/22px var(--v-ui); color: var(--v-text2); font-variant-numeric: tabular-nums; height: 22px; white-space: nowrap; }
   & footer .imprint { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--v-line); font: 500 13px/20px var(--v-ui); letter-spacing: 0; text-transform: none; color: var(--v-text3); }
+  & footer .imprint .sep { margin: 0 8px; color: var(--v-line2); }
   & footer .tag { font: 500 12px/18px var(--v-ui); letter-spacing: 0; text-transform: none; border: 1px solid var(--v-line2); padding: 0 8px; color: var(--v-text2); }
   @media (max-width: 1100px) { & footer .grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
-  & footer .imprint .sep { margin: 0 8px; color: var(--v-line2); }
   @media (max-width: 640px) { & footer .grid { grid-template-columns: minmax(0, 1fr); } }
 
   /* ---------- instrument cards (index, VISUAL) ---------- */
@@ -455,5 +457,5 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  :root[data-mode="visual"] * { transition: none !important; }
+  :root:is([data-mode="visual"], [data-mode="baby"]) * { transition: none !important; }
 }

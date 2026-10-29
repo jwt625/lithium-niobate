@@ -11,13 +11,15 @@ export const qa = <T extends Element = HTMLElement>(root: ParentNode, sel: strin
 
 const html = (): HTMLElement => document.documentElement;
 export const isVisual = (): boolean => html().dataset.mode === "visual";
+/** VISUAL styling of the chrome (masthead, footer, popups): VISUAL and BABY. Figures keep isVisual (they are hidden in BABY). */
+export const visualChrome = (): boolean => { const m = html().dataset.mode; return m === "visual" || m === "baby"; };
 export const fxOn = (): boolean => html().dataset.fx === "on";
 export const isLight = (): boolean => html().dataset.theme === "light";
 export const isDark = (): boolean => html().dataset.theme !== "light";
 export const cssVar = (name: string): string => getComputedStyle(html()).getPropertyValue(name).trim();
 export const dpr = (): number => Math.min(2, window.devicePixelRatio || 1);
 
-export interface UiDetail { mode: "tech" | "visual"; theme: "dark" | "light"; fx: boolean }
+export interface UiDetail { mode: "tech" | "visual" | "baby"; theme: "dark" | "light"; fx: boolean }
 /** Subscribe to mode, theme, and effects changes (window event "ln-mode", emitted by the ui store). Returns the unsubscribe. */
 export function onUi(cb: (d: UiDetail) => void): () => void {
   const h = (e: Event): void => cb((e as CustomEvent<UiDetail>).detail);

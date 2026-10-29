@@ -1,10 +1,12 @@
-// Display state: mode (tech | visual), theme (dark | light), effects (VISUAL and no reduced motion).
+// Display state: mode (tech | visual | baby), theme (dark | light), effects (VISUAL and no reduced motion; never in BABY).
+// BABY (DevLog-007) replaces page content with a picture book (src/lib/babies); its chrome uses the VISUAL styles.
 // The pre-paint script in src/app.html sets html[data-mode|data-theme|data-fx] from ?mode= / ?theme= / localStorage before
 // first paint; this store adopts those values on hydration, persists changes (localStorage, try/catch), mirrors them on
 // <html>, and emits the window event "ln-mode" that the imperative figure modules listen to (src/lib/figures/dom.ts onUi).
 import { browser } from "$app/environment";
 
-export type Mode = "tech" | "visual";
+export type Mode = "tech" | "visual" | "baby";
+export const MODES: readonly Mode[] = ["tech", "visual", "baby"];
 export type Theme = "dark" | "light";
 
 const store = {
@@ -26,7 +28,7 @@ export function initUi(): void {
   if (!browser || inited) return;
   inited = true;
   const r = document.documentElement;
-  ui.mode = r.dataset.mode === "visual" ? "visual" : "tech";
+  ui.mode = MODES.find((m) => m === r.dataset.mode) ?? "tech";
   ui.theme = r.dataset.theme === "light" ? "light" : "dark";
   const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
   ui.reducedMotion = mq.matches;
@@ -48,10 +50,17 @@ export function emit(): void {
 
 export function setMode(m: Mode): void {
   if (m === ui.mode) return;
+  if (m === "baby") store.set("ln-mode-adult", ui.mode);
   ui.mode = m;
   store.set("ln-mode", m);
   apply();
   emit();
+}
+
+/** The mode BABY was entered from (persisted), for links from a book page back to the grown-up section. */
+export function adultMode(): Mode {
+  const m = store.get("ln-mode-adult");
+  return m === "visual" ? "visual" : "tech";
 }
 
 export function setTheme(t: Theme): void {

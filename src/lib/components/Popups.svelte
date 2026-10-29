@@ -7,11 +7,11 @@
   import { onMount } from "svelte";
   import { afterNavigate } from "$app/navigation";
   import { resolvePop, loadGlossary, glossaryLoaded } from "$lib/content/pops";
+  import { visualChrome as isVisual } from "$lib/figures/dom"; // VISUAL keys also in BABY (VISUAL chrome)
 
   let pop: HTMLDivElement;
   let current: HTMLElement | null = null;
 
-  const isVisual = (): boolean => document.documentElement.dataset.mode === "visual";
   const keyOf = (el: HTMLElement): string => (isVisual() && el.dataset.popVisual) || el.dataset.pop || "";
   const touch = (): boolean => window.matchMedia("(hover: none)").matches;
 

@@ -1,5 +1,5 @@
 /* TECH layer and shared base. Port of mockup/styles.css (DevLog-003a); edits marked "F0".
-   Modes: html[data-mode="tech|visual"] (color), html[data-fx="on|off"] (effects), html[data-theme="dark|light"]. */
+   Modes: html[data-mode="tech|visual|baby"] (color; baby shares the VISUAL rules), html[data-fx="on|off"] (effects), html[data-theme="dark|light"]. */
 
 /* FIX-S G04: metric-matched fallback faces for each web font (Google Fonts, display=swap), so the swap from the local
    fallback to the web font does not reflow text or move baselines. size-adjust = advance-width ratio web/fallback on a
@@ -48,7 +48,7 @@
   --spine-x: 22px;
   color-scheme: dark;
 }
-:root[data-mode="visual"] { --acc: #5ee38c; --acc-dim: rgba(94, 227, 140, 0.11); --link: #5ee38c; }
+:root:is([data-mode="visual"], [data-mode="baby"]) { --acc: #5ee38c; --acc-dim: rgba(94, 227, 140, 0.11); --link: #5ee38c; }
 :root[data-theme="light"] {
   --bg0: #d9d8d2; --bg: #f5f4ef; --bg2: #ecebe5; --bg3: #e3e2db;
   --fg: #111112; --fg2: #434347; --fg3: #6b6b6e; --rule: #d3d2cb; --rule2: #a8a7a0;
@@ -56,7 +56,7 @@
   --shg: #0f8a45; --ir: #a8307a; --gold: #8a620a; --nb: #2f5fbf; --dot: rgba(17, 17, 18, 0.07); --shadow: #b9b8b1;
   color-scheme: light;
 }
-:root[data-theme="light"][data-mode="visual"] { --acc: #0f8a45; --acc-dim: rgba(15, 138, 69, 0.09); --link: #0f8a45; }
+:root[data-theme="light"]:is([data-mode="visual"], [data-mode="baby"]) { --acc: #0f8a45; --acc-dim: rgba(15, 138, 69, 0.09); --link: #0f8a45; }
 
 * { box-sizing: border-box; border-radius: 0; }
 html { background: var(--bg0); }
@@ -85,6 +85,8 @@ body > *, :where(.app) > * { position: relative; z-index: 1; } /* F0: .app is th
 .brand b { font: 600 16px/1 var(--cond); letter-spacing: 0.01em; }
 .brand span { font: 400 12px/1 var(--mono); color: var(--fg3); }
 .tools { display: flex; gap: 8px; align-items: center; }
+/* phones: the three mode buttons (TECH / VISUAL / BABY) need the formula's width; tools wrap below the brand if still short */
+@media (max-width: 480px) { .brand span { display: none; } .mast .row { flex-wrap: wrap; row-gap: 6px; } }
 .mast .band { height: 12px; margin: 8px 0 8px; position: relative;
   background: radial-gradient(var(--fg3) 0.55px, transparent 1px) 0 0 / 3px 3px; }
 .mast .band .qpm-lab { display: none; }
@@ -109,7 +111,7 @@ body > *, :where(.app) > * { position: relative; z-index: 1; } /* F0: .app is th
 .seg button:hover { background: var(--acc-dim); color: var(--fg); }
 .seg button.on { color: var(--bg); background: var(--fg); }
 /* F0: mode button state from html[data-mode] (set before first paint), so prerendered markup is right before hydration */
-:root:not([data-mode="visual"]) .seg.mode button[data-m="tech"], :root[data-mode="visual"] .seg.mode button[data-m="visual"] { color: var(--bg); background: var(--fg); }
+:root:not([data-mode="visual"], [data-mode="baby"]) .seg.mode button[data-m="tech"], :root[data-mode="visual"] .seg.mode button[data-m="visual"], :root[data-mode="baby"] .seg.mode button[data-m="baby"] { color: var(--bg); background: var(--fg); }
 .seg button:focus-visible, .iconbtn:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
 .iconbtn { background: none; border: 1px solid var(--rule2); color: var(--fg2); width: 26px; height: 22px; display: grid; place-items: center; cursor: pointer; padding: 0; }
 .iconbtn:hover { color: var(--fg); background: var(--acc-dim); }
@@ -161,7 +163,7 @@ h3 { font-weight: 500; }
 .ref:hover { color: var(--acc); }
 a.u, td a, .pop a, .log a { text-decoration: underline; text-decoration-color: var(--fg3); text-underline-offset: 2px; }
 a.u:hover, td a:hover, .log a:hover { text-decoration-color: var(--fg); }
-:root[data-mode="visual"] a.u, :root[data-mode="visual"] td a, :root[data-mode="visual"] .log a { color: var(--link); }
+:root:is([data-mode="visual"], [data-mode="baby"]) a.u, :root:is([data-mode="visual"], [data-mode="baby"]) td a, :root:is([data-mode="visual"], [data-mode="baby"]) .log a { color: var(--link); }
 
 /* section head: h2 + dashed rule (VISUAL effects: poled-domain stripe) */
 section { margin: 0 0 22px; }
@@ -213,11 +215,11 @@ table.log tr:first-child td { padding-top: 5px; }
 .b.d, .b.t { border-style: dashed; }
 .b.r { border-style: solid; }
 .b.rec { border-style: solid; color: var(--fg); } /* INT: bibliographic record verified */
-:root[data-mode="visual"] .b.p, :root[data-mode="visual"] .b.pc { color: var(--shg); border-color: var(--shg); }
-:root[data-mode="visual"] .b.d { color: var(--nb); border-color: var(--nb); }
-:root[data-mode="visual"] .b.s, :root[data-mode="visual"] .b.r, :root[data-mode="visual"] .b.v, :root[data-mode="visual"] .b.rec { color: var(--gold); border-color: var(--gold); } /* F0: .v (vendor) added */
-:root[data-mode="visual"] .b.u { color: var(--ir); border-color: var(--ir); }
-:root[data-mode="visual"] .ir-el { color: var(--ir); }
+:root:is([data-mode="visual"], [data-mode="baby"]) .b.p, :root:is([data-mode="visual"], [data-mode="baby"]) .b.pc { color: var(--shg); border-color: var(--shg); }
+:root:is([data-mode="visual"], [data-mode="baby"]) .b.d { color: var(--nb); border-color: var(--nb); }
+:root:is([data-mode="visual"], [data-mode="baby"]) .b.s, :root:is([data-mode="visual"], [data-mode="baby"]) .b.r, :root:is([data-mode="visual"], [data-mode="baby"]) .b.v, :root:is([data-mode="visual"], [data-mode="baby"]) .b.rec { color: var(--gold); border-color: var(--gold); } /* F0: .v (vendor) added */
+:root:is([data-mode="visual"], [data-mode="baby"]) .b.u { color: var(--ir); border-color: var(--ir); }
+:root:is([data-mode="visual"], [data-mode="baby"]) .ir-el { color: var(--ir); }
 
 /* instrument panel / figure */
 .panel { border: 1px solid var(--rule2); background: var(--bg); box-shadow: 3px 3px 0 var(--shadow); }
@@ -243,8 +245,8 @@ input[type="range"]::-webkit-slider-runnable-track { height: 1px; background: va
 input[type="range"]::-moz-range-track { height: 1px; background: var(--fg3); }
 input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 7px; height: 13px; margin-top: -6px; background: var(--fg); border: 0; }
 input[type="range"]::-moz-range-thumb { width: 7px; height: 13px; background: var(--fg); border: 0; border-radius: 0; }
-:root[data-mode="visual"] input[type="range"]::-webkit-slider-thumb { background: var(--acc); }
-:root[data-mode="visual"] input[type="range"]::-moz-range-thumb { background: var(--acc); }
+:root:is([data-mode="visual"], [data-mode="baby"]) input[type="range"]::-webkit-slider-thumb { background: var(--acc); }
+:root:is([data-mode="visual"], [data-mode="baby"]) input[type="range"]::-moz-range-thumb { background: var(--acc); }
 input[type="range"]:focus-visible { outline: 1px solid var(--fg); outline-offset: 2px; }
 
 /* record card */
@@ -273,9 +275,9 @@ footer h3 { font: 400 10px/16px var(--mono); letter-spacing: 0.1em; text-transfo
 footer .key { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 3px 8px; font-size: 11.5px; line-height: 16px; color: var(--fg2); align-items: baseline; }
 footer h3.key-set { margin-top: 12px; } /* INT: chapter legend (PageMeta.keyDefs) */
 footer .imprint { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--rule); margin-top: 14px; padding-top: 6px; font: 400 11px/18px var(--cond); letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg3); }
+footer .imprint .sep { margin: 0 0.5em; color: var(--rule2); }
 .tag { display: inline-block; font: 400 10px/14px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; border: 1px dotted var(--fg3); padding: 0 4px; color: var(--fg2); }
 .tag.solid { border-style: solid; color: var(--fg); }
-footer .imprint .sep { margin: 0 0.5em; color: var(--rule2); }
 .wafer svg { width: 180px; height: 190px; display: block; }
 .wafer .die { fill: transparent; stroke: var(--rule2); stroke-width: 0.8; }
 .wafer a .die { fill: var(--bg3); stroke: var(--fg3); cursor: pointer; }
@@ -289,7 +291,7 @@ footer .imprint .sep { margin: 0 0.5em; color: var(--rule2); }
 .bias .ax { stroke: var(--rule2); stroke-width: 1; }
 .bias .q { stroke: var(--rule2); stroke-dasharray: 2 2; }
 .bias .pt { fill: var(--fg); }
-:root[data-mode="visual"] .bias .pt { fill: var(--gold); }
+:root:is([data-mode="visual"], [data-mode="baby"]) .bias .pt { fill: var(--gold); }
 .bias .state { font: 400 11px/16px var(--mono); color: var(--fg2); }
 .bias svg.tr { height: 30px; margin-top: 4px; } /* FIX-S: relative offset vs time since the step */
 .bias .tr .curve { stroke: var(--fg2); }
@@ -329,7 +331,7 @@ math { font-size: 1.05em; }
 table.mx { border-collapse: collapse; font: 400 12.5px/1.4 var(--mono); border-left: 1px solid var(--fg2); border-right: 1px solid var(--fg2); }
 table.mx td { padding: 3px 12px; text-align: center; color: var(--fg3); }
 table.mx td.on { color: var(--bg); background: var(--fg); }
-:root[data-mode="visual"] table.mx td.on { background: var(--acc); color: #06110a; }
+:root:is([data-mode="visual"], [data-mode="baby"]) table.mx td.on { background: var(--acc); color: #06110a; }
 table.mx td.nz { color: var(--fg); }
 .mxwrap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: start; }
 @media (max-width: 760px) { .mxwrap { grid-template-columns: 1fr; } }
@@ -388,8 +390,8 @@ table.mx td.nz { color: var(--fg); }
 .legend1 { height: 42px; overflow: hidden; align-content: flex-start; }
 :root[data-fx="on"] .sh { padding-bottom: 4px; } /* same box height as TECH (3 px padding + 1 px rule): no shift on mode switch */
 /* D3 full-viewport TECH cell (#cell); VISUAL keeps the hero panel #fig1 */
-:root[data-mode="visual"] #cell { display: none; }
-:root:not([data-mode="visual"]) #fig1 { display: none; }
+:root:is([data-mode="visual"], [data-mode="baby"]) #cell { display: none; }
+:root:not([data-mode="visual"], [data-mode="baby"]) #fig1 { display: none; }
 .cellfull { position: relative; width: calc(100vw - var(--sbw, 0px)); margin: 0 0 22px calc(50% - (100vw - var(--sbw, 0px)) / 2);
   height: max(460px, calc(100svh - var(--mast-b, 150px))); display: grid; grid-template-rows: 24px minmax(0, 1fr) 30px 36px 36px;
   background: var(--bg); border-top: 1px solid var(--rule2); border-bottom: 1px solid var(--rule2); }
@@ -413,7 +415,7 @@ table.mx td.nz { color: var(--fg); }
 @media (max-width: 760px) { .cellfull { grid-template-rows: 24px minmax(0, 1fr) 30px 52px 36px; } .cellfull .cbar.legend { align-content: flex-start; padding-top: 2px; } }
 
 /* Mode-specific variants (DevLog-003b sec. 9): blocks marked data-variant render only in their mode */
-:root[data-mode="visual"] [data-variant="tech"], :root:not([data-mode="visual"]) [data-variant="visual"] { display: none !important; }
+:root:is([data-mode="visual"], [data-mode="baby"]) [data-variant="tech"], :root:not([data-mode="visual"], [data-mode="baby"]) [data-variant="visual"] { display: none !important; }
 .mast .band > svg { display: none; } /* VISUAL poled-domain drawing (visual.js); TECH keeps the dot band */
 /* F0: source label reserves the width of its longest value ("white, luminance"), right-aligned: no resize on toggle */
 #fig0 #hud-src { width: 16ch; white-space: nowrap; }

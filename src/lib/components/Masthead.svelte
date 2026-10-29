@@ -1,4 +1,4 @@
-<!-- Masthead: conoscope logo, wordmark, mode and theme toggles, site search (Pagefind), poled-domain band, chapter nav (unbuilt chapters as plain
+<!-- Masthead: conoscope logo, wordmark, mode (TECH / VISUAL / BABY) and theme toggles, site search (Pagefind), poled-domain band, chapter nav (unbuilt chapters as plain
      text). One DOM for both systems (visual.css restyles it). Port of mockup header.mast + app.js (logo, toggles, anchor). -->
 <script lang="ts">
   import { onMount } from "svelte";
@@ -24,7 +24,7 @@
   const paintLogo = (): void => {
     logo.width = 40; logo.height = 40;
     const ctx = logo.getContext("2d");
-    if (ctx) renderConoscope(ctx, 40, { thicknessMm: 0.6, fieldKVmm: 0, fieldDir: "x", white: ui.mode === "visual", mono: ui.mode !== "visual", NA: 0.55 });
+    if (ctx) renderConoscope(ctx, 40, { thicknessMm: 0.6, fieldKVmm: 0, fieldDir: "x", white: ui.mode !== "tech", mono: ui.mode === "tech", NA: 0.55 });
   };
   onMount(() => {
     paintLogo();
@@ -66,7 +66,7 @@
     <a class="brand" href="/" aria-label="lithium niobate, landing page"><canvas id="logo" bind:this={logo} aria-hidden="true"></canvas><b>lithium niobate</b><span>LiNbO<sub>3</sub></span></a>
     <div class="tools">
       <div class="seg mode" role="group" aria-label="Display mode">
-        <button type="button" data-m="tech" title="Monochrome, static" aria-pressed={ui.mode === "tech"} onclick={() => pick("tech")}>TECH</button><button type="button" data-m="visual" title="Color and effects" aria-pressed={ui.mode === "visual"} onclick={() => pick("visual")}>VISUAL</button>
+        <button type="button" data-m="tech" title="Monochrome, static" aria-pressed={ui.mode === "tech"} onclick={() => pick("tech")}>TECH</button><button type="button" data-m="visual" title="Color and effects" aria-pressed={ui.mode === "visual"} onclick={() => pick("visual")}>VISUAL</button><button type="button" data-m="baby" title="Picture books" aria-pressed={ui.mode === "baby"} onclick={() => pick("baby")}>BABY</button>
       </div>
       <button type="button" class="iconbtn" id="theme-btn" aria-label="Toggle light or dark theme" title={ui.theme === "dark" ? "Light theme" : "Dark theme"} aria-pressed={ui.theme === "light"} onclick={() => setTheme(ui.theme === "dark" ? "light" : "dark")}>
         <svg class="i-sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.4 1.4M11.55 11.55l1.4 1.4M3.05 12.95l1.4-1.4M11.55 4.45l1.4-1.4"/></svg>
