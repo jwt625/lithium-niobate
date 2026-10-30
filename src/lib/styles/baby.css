@@ -25,8 +25,8 @@
   & .bb-stage { position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; contain: layout paint; background: var(--bb-paper); touch-action: pan-y; }
   & .bb-scene { position: absolute; inset: 0; overflow: hidden; }
 
-  /* bare control row: home, prev, dots, next, Exit */
-  & .bb-ctl { display: grid; grid-template-columns: 32px 32px minmax(0, 1fr) 32px auto; column-gap: 6px; align-items: center; height: 36px; margin-top: 8px; }
+  /* bare control row: home, prev, dots, next, play, Exit */
+  & .bb-ctl { display: grid; grid-template-columns: 32px 32px minmax(0, 1fr) 32px 32px auto; column-gap: 6px; align-items: center; height: 36px; margin-top: 8px; }
   & :is(.bb-btn, .bb-exit, .bb-note) { height: 32px; padding: 0; border: 1px solid var(--bb-line); border-radius: 0; background: none; color: var(--bb-ink2); cursor: pointer; }
   & :is(.bb-btn, .bb-exit, .bb-note):hover:not(:disabled) { color: var(--bb-ink); background: var(--bb-hover); }
   & .bb-btn { width: 32px; display: grid; place-items: center; }

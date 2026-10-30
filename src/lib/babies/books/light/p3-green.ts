@@ -1,9 +1,11 @@
 // Light p3 (second-harmonic generation, quasi-phase matching): an infrared lamp (dark red glass, dashed beam: false
-// colour) sends two bits into a striped crystal bar; they join into one green bit, which runs along an emerald lane.
-// With flipped stripes (arrows up, down, ...) the green lane brightens steadily; tap to remove the stripes and the
-// green rises and fades back stripe by stripe. Tap again: stripes back.
+// colour) sends a train of IR bit pairs along its beam through a striped crystal bar. Along the bar each pair dims while
+// a green bit above it brightens (shown IR fraction = 1 - green fraction, per stripe); leftover IR runs on to the edge,
+// the green bits run along an emerald lane to the green roundel. The IR beam glow dims downstream with the pairs.
+// With flipped stripes (arrows up, down, ...) green grows and IR fades steadily; tap to remove the stripes and the
+// two trade back and forth stripe by stripe (green rises and fades, IR dims and recovers). Tap again: stripes back.
 import type { Scene, SceneHost } from "../../types";
-import { G, GREEN, IRGLOW, arrowPts, blob, circlePts, clamp01, ease, easeIO, frameAndField, glowFill, lerp, makeWindow, movePts, pane, polyPath, rectPts, seg, strokeLead, type Ctx, type Pane } from "./kit";
+import { G, GREEN, IRGLOW, arrowPts, blob, circlePts, clamp01, easeIO, frameAndField, glowFill, lerp, makeWindow, movePts, pane, polyPath, rectPts, seg, strokeLead, type Ctx, type Pane } from "./kit";
 import { banner } from "./letters";
 
 export const TEXT3 = "Two infrared bits join into one green bit. Stripes keep the green growing.";
@@ -21,8 +23,13 @@ const LX = 96;
 const OX = 904;
 const FLIP = 0.4;
 const T_BITS = 0.2;
-const T_MERGE = 1.05;
-const T_END = 2.45;
+const T_END = 2.45; // last pair leaves the right edge
+const NP = 3; // IR pairs in the train
+const PP = 170; // pair pitch
+const PD = 24; // half spacing of the two bits in a pair
+const XR = 950; // right edge of the IR beam
+const V = (XR + PD + (NP - 1) * PP - LX) / (T_END - T_BITS); // train speed, units/s
+const CONV = 0.7; // displayed conversion at full green (leftover IR stays visible)
 
 /** Second-harmonic amplitude after distance x (units of SW): |integral of s(z) exp(i pi z) dz|, s = +-1 per stripe. */
 function amp(x: number, striped: boolean): number {
@@ -72,6 +79,13 @@ export function greenScene(host: SceneHost): Scene {
     // displayed brightness: not to scale (unstriped peak boosted, striped growth compressed)
     const dispOn = aOn.map((a) => (a / aMax) ** 1.3);
     const dispOff = aOff.map((a) => 0.42 * (a / offMax) ** 2);
+    /** Displayed green fraction at x on the active table (0 before the bar, held after it); IR fraction = 1 - this. */
+    const frac = (disp: number[], x: number) => {
+      if (x <= BX0) return 0;
+      const u = Math.min(NS * S, ((x - BX0) / SW) * S);
+      const k = Math.min(NS * S - 1, Math.floor(u));
+      return CONV * lerp(disp[k], disp[k + 1], u - k);
+    };
 
     let striped = true;
     let tFlip = -10; // time of last toggle
@@ -79,6 +93,21 @@ export function greenScene(host: SceneHost): Scene {
     const roundIR = polyPath(circlePts(LX, YIR, 26));
     const roundG = polyPath(circlePts(OX, YGR, 44));
     const arrow = arrowPts(112);
+
+    /** Bits of the current run at r: IR pairs on the beam, a green bit above each pair; a = shown fraction. */
+    const train = (r: number) => {
+      const out: { x: number; ir: boolean; a: number }[] = [];
+      if (r < T_BITS) return out;
+      const disp = striped ? dispOn : dispOff;
+      const c0 = LX + V * (r - T_BITS);
+      for (let p = 0; p < NP; p++) {
+        const c = c0 - p * PP;
+        for (const x of [c - PD, c + PD])
+          if (x >= LX && x <= XR) out.push({ x, ir: true, a: (1 - frac(disp, x)) * seg(x, LX + 10, LX + 60) * (1 - seg(x, XR - 45, XR)) });
+        if (c > BX0 && c < OX) out.push({ x: c, ir: false, a: frac(disp, c) * (1 - seg(c, OX - 50, OX)) });
+      }
+      return out;
+    };
 
     const bit = (g: Ctx, x: number, y: number, r: number, fill: string, dashed: boolean, a: number) => {
       if (a <= 0) return;
@@ -113,12 +142,28 @@ export function greenScene(host: SceneHost): Scene {
       glow(g, t) {
         const r = host.reduced ? 99 : t - t0;
         const lamp = clamp01((t - Math.min(t0, 0)) / 0.3);
+        const disp = striped ? dispOn : dispOff;
+        const c0 = LX + V * Math.max(0, r - T_BITS); // lead pair centre
         glowFill(g, roundIR, IRGLOW, 0.5 * lamp);
         blob(g, LX, YIR, 80, 0.12 * lamp);
-        for (const p of irPanes) glowFill(g, p.path, IRGLOW, 0.3 * lamp);
-        // green lane up to the green bit's position
-        const fx = r < T_MERGE ? BX0 : lerp(BX0, OX, ease((r - T_MERGE) / (T_END - T_MERGE)) ** 0.85);
-        const disp = striped ? dispOn : dispOff;
+        // IR beam: full before the bar; behind the lead pair it carries the IR fraction left at each pane
+        for (const p of irPanes) {
+          const px = (p.box[0] + p.box[2]) / 2;
+          glowFill(g, p.path, IRGLOW, 0.3 * lamp * (1 - (px <= c0 ? frac(disp, px) : 0)));
+        }
+        // halo under each bit, same shown fraction
+        for (const b of train(r)) {
+          const y = b.ir ? YIR : YGR;
+          const k = b.ir ? 0.8 * b.a : 0.7 * b.a;
+          if (k <= 0.003) continue;
+          const hg = g.createRadialGradient(b.x, y, 8, b.x, y, 44);
+          hg.addColorStop(0, `rgba(${b.ir ? IRGLOW : GREEN},${k})`);
+          hg.addColorStop(1, `rgba(${b.ir ? IRGLOW : GREEN},0)`);
+          g.fillStyle = hg;
+          g.fillRect(b.x - 44, y - 44, 88, 88);
+        }
+        // green lane up to the lead green bit's position
+        const fx = Math.min(OX, Math.max(BX0, c0));
         for (let i = 0; i < NS; i++) {
           const xa = BX0 + i * SW;
           if (fx <= xa) break;
@@ -135,7 +180,7 @@ export function greenScene(host: SceneHost): Scene {
         const end = disp[NS * S];
         const outA = clamp01((fx - BX1) / 60) * end;
         glowFill(g, grOut.path, GREEN, 0.85 * outA);
-        const reach = seg(r, T_END - 0.1, T_END + 0.2) * end;
+        const reach = seg(c0, OX - 50, OX) * end;
         // output lamp: same green as the growing line, fill plus a green halo (no white sprite)
         glowFill(g, roundG, GREEN, 0.6 * reach);
         if (reach > 0.003) {
@@ -165,21 +210,10 @@ export function greenScene(host: SceneHost): Scene {
           g.fill(path);
           strokeLead(g, path, 7);
         }
-        // bits
-        const r = host.reduced ? 99 : t - t0;
-        for (let j = 0; j < 2; j++) {
-          // two bits side by side along the beam, converging where the green lane starts
-          const k = easeIO((r - T_BITS) / (T_MERGE - T_BITS));
-          if (r < T_BITS || k >= 1) continue;
-          const x = lerp(LX + 20, BX0 + 26, k);
-          const spread = (j ? 1 : -1) * 30 * (1 - seg(k, 0.55, 1));
-          const y = lerp(YIR, YGR, seg(k, 0.55, 1)) + spread;
-          bit(g, x, y, 21, G.ir, true, seg(r, T_BITS, T_BITS + 0.12));
-        }
-        if (r >= T_MERGE - 0.05 && r < T_END) {
-          const x = lerp(BX0 + 26, OX, ease((r - T_MERGE) / (T_END - T_MERGE)) ** 0.85);
-          const pop = 0.7 + 0.3 * ease((r - T_MERGE + 0.05) / 0.25);
-          bit(g, x, YGR, 23 * pop, G.emerald, false, seg(r, T_MERGE - 0.05, T_MERGE + 0.08));
+        // bits: a train of IR pairs on the beam; above each pair a green bit that brightens as the pair dims
+        for (const b of train(host.reduced ? 99 : t - t0)) {
+          if (b.ir) bit(g, b.x, YIR, 19, G.ir, true, b.a);
+          else bit(g, b.x, YGR, 22, G.emerald, false, b.a);
         }
       },
       tap(_x, _y, t) {

@@ -9,7 +9,7 @@ import { test, expect, type Page } from "@playwright/test";
 const URLS = ["/", "/crystal/", "/crystal/polarization/", "/lab/"];
 const WIDTHS = [375, 390, 1280];
 const SHOTS = process.env.BABY_SHOTS;
-const BOXES = ".bb-col, .bb-stage, .bb-ctl, .bb-btn, .bb-exit, .bb-dots, .bb-dot, .bb-meta, .bb-note, .bb-fine";
+const BOXES = ".bb-col, .bb-stage, .bb-ctl, .bb-btn, .bb-play, .bb-exit, .bb-dots, .bb-dot, .bb-meta, .bb-note, .bb-fine";
 const go = (url: string, hash = "", fx = "1"): string => `${url}?mode=baby&babyfixture=${fx}${hash}`;
 
 function watch(page: Page): string[] {
@@ -183,7 +183,7 @@ test("baby note marker opens the popup; the section link leaves BABY for that se
 
 // book boundaries: Next on a last page opens the next book's p1 (cover, chapters in site.ts order, wrap to the cover);
 // Prev on p1 opens the previous book's last page; the query is kept; every stage and control box stays put
-const NEXT = ".bb-ctl > .bb-btn:nth-child(4)", PREV = ".bb-ctl > .bb-btn:nth-child(2)"; // home, prev, dots, next, exit
+const NEXT = ".bb-ctl > .bb-btn:nth-child(4)", PREV = ".bb-ctl > .bb-btn:nth-child(2)"; // home, prev, dots, next, play, exit
 for (const [from, how, to, toLast] of [
   ["/crystal/", "next", "/light/", false], ["/crystal/", "ArrowRight", "/light/", false], ["/industry/", "next", "/", false],
   ["/crystal/", "prev", "/", true], ["/", "prev", "/industry/", true],
@@ -286,5 +286,52 @@ test("baby door click on a hovered door: no second leaf swing", async ({ page })
   await door.click();
   await expect.poll(() => page.evaluate(() => (window as unknown as { leafAtStart?: unknown }).leafAtStart ?? null)).toEqual({ t: openT, anims: 0 });
   await landed(page, "/sound/", "first", 3000);
+  expect(errs, errs.join("\n")).toEqual([]);
+});
+
+// Play: pages turn by themselves (dev override window.__bbDwell = 0.4 s per page), across a book boundary, and stop on
+// the last page of the last book (no wrap); Play there restarts at cover p1; Space toggles; manual Next keeps playing;
+// Exit stops; the control row keeps every box in place in both states
+test("baby play runs to the end of the last book and stops", async ({ page }) => {
+  const errs = watch(page);
+  await page.setViewportSize({ width: 1280, height: 800 });
+  if (!(await open(page, "/history/", "#p99", "all"))) test.skip(true, "fixture is dev only");
+  await page.evaluate(() => { (window as unknown as { __bbDwell: number }).__bbDwell = 0.4; });
+  const play = page.locator(".bb-play"), where = async (): Promise<string> => { const s = await state(page); return `${new URL(page.url()).pathname} ${s.cur}/${s.n}`; };
+  const base = await boxes(page);
+  await expect(play).toHaveAttribute("aria-pressed", "false");
+  await expect(play).toHaveAttribute("aria-label", "Play");
+  await play.click();
+  await expect(play).toHaveAttribute("aria-pressed", "true");
+  await expect(play).toHaveAttribute("aria-label", "Pause");
+  await frame(page);
+  expect(await boxes(page)).toEqual(base); // playing vs paused
+  await expect.poll(where, { timeout: 5000, intervals: [50] }).toMatch(/^\/industry\/ 0\//); // crossed the book boundary
+  await expect(play).toHaveAttribute("aria-pressed", "false", { timeout: 10_000 }); // stopped by itself
+  const end = await state(page);
+  expect(new URL(page.url()).pathname).toBe("/industry/");
+  expect(end.cur).toBe(end.n - 1);
+  await page.waitForTimeout(1200); // three dwells: still there, no wrap
+  expect(await where()).toBe(`/industry/ ${end.n - 1}/${end.n}`);
+  expect(await boxes(page)).toEqual(base);
+  // Space (focus outside any button) toggles; Play on the final page restarts at cover p1
+  await page.evaluate(() => (document.activeElement as HTMLElement | null)?.blur());
+  await page.keyboard.press(" ");
+  await expect(play).toHaveAttribute("aria-pressed", "true");
+  await expect.poll(where, { timeout: 5000, intervals: [50] }).toMatch(/^\/ 0\//);
+  await page.locator(NEXT).click(); // manual Next: still playing
+  await expect(play).toHaveAttribute("aria-pressed", "true");
+  await page.evaluate(() => (document.activeElement as HTMLElement | null)?.blur());
+  await page.keyboard.press(" ");
+  await expect(play).toHaveAttribute("aria-pressed", "false");
+  const held = await where();
+  await page.waitForTimeout(1200);
+  expect(await where()).toBe(held); // paused: no turn
+  // Exit stops play
+  await play.click();
+  await expect(play).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "Exit baby mode" }).click(); await frame(page);
+  expect(await mode(page)).toBe("tech");
+  await expect(play).toHaveAttribute("aria-pressed", "false");
   expect(errs, errs.join("\n")).toEqual([]);
 });

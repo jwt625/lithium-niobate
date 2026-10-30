@@ -27,7 +27,7 @@ const book: BabyBook = {
     {
       text: P3_TEXT,
       sec: "/sound/idt-filters/",
-      note: "Interdigital transducer (IDT): a voltage across the interleaved metal combs strains the surface under every finger gap; the ripples add up only at the frequency whose wavelength equals the comb period, so the comb is both launcher and filter; two facing combs make a delay line (ch03:L295). Tap: a shorter or longer ripple does not build up. A 2018 count put more than 50 acoustic filters (SAW and BAW, bulk acoustic wave) in a mid- to high-tier 4G phone, more than 70 expected with 5G (ch03:L295; vendor contribution in trade press, grade V). Many SAW filters sit on LN or its sister crystal lithium tantalate (LT), which appears to dominate SAW; BAW filters use aluminum nitride, not LN (ch06:L392, ch03:L306-L308).",
+      note: "Interdigital transducer (IDT): a voltage across the interleaved metal combs strains the surface under every finger gap; the ripples add up only at the frequency whose wavelength equals the comb period, so the comb is both launcher and filter; two facing combs make a delay line (ch03:L295). Tap: stop or restart the sweep. A 2018 count put more than 50 acoustic filters (SAW and BAW, bulk acoustic wave) in a mid- to high-tier 4G phone, more than 70 expected with 5G (ch03:L295; vendor contribution in trade press, grade V). Many SAW filters sit on LN or its sister crystal lithium tantalate (LT), which appears to dominate SAW; BAW filters use aluminum nitride, not LN (ch06:L392, ch03:L306-L308).",
       scene: p3Scene,
     },
     {

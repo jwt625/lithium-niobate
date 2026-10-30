@@ -1,11 +1,13 @@
 <!-- BABY mode book screen (DevLog-007 sec. 8). Always in the DOM (prerendered fixed geometry); baby.css shows it and hides
      main, masthead, spine, and footer from html[data-mode="baby"] before first paint. In BABY the book for the route loads
      (registry.ts) and the page's scene mounts into a fresh div in the square stage. Controls (one bare row): home (cover
-     doors), prev, dots, next, Exit (Escape: back to the stored adult mode on the same route); arrow keys, touch swipe,
+     doors), prev, dots, next, Play, Exit (Escape: back to the stored adult mode on the same route); arrow keys, touch swipe,
      #pN hash. Next on a book's last page opens the next book's p1 (cover, then the chapters in site.ts order, then the
      cover again); Prev on p1 opens the previous book's last page. Book changes (those, home, a door click on the cover's
      door page) fly a camera through the cover's door page (travel()): out through the current chapter's door, in
-     through the target's (crossfades where the cover has no door). Reduced motion: instant switch. A quiet row below:
+     through the target's (crossfades where the cover has no door). Reduced motion: instant switch. Play (Space) turns
+     the pages by step(1) after each page's dwell (counted only while visible, idle, and mounted; reset on every mount or
+     stage tap) and stops on the last book's last page; Play there restarts at cover p1. A quiet row below:
      parent-note marker and grown-up section link; then the cover-only non-affiliation line and the credit line.
      Frame loop: rAF only while the tab is visible, the stage is on screen, and t < settle or woken (host.wake). t is the
      loop's own clock: it advances only while frames run (max 0.1 s per frame), so after a pause it resumes where it stopped.
@@ -73,6 +75,7 @@
     try { mountNew(at, from); } finally { if (old) drop(old); }
   }
   function mountNew(at?: number, from?: number): void {
+    pAcc = 0;
     const p = book?.pages[idx];
     onDoors = !!book && book.slug === "cover" && idx === book.pages.length - 1;
     if (!p || !stage) return;
@@ -119,7 +122,7 @@
   }
   $effect(() => {
     const mode = ui.mode, path = page.url.pathname, hash = page.url.hash, search = page.url.search;
-    if (mode !== "baby") { if (applied) { applied = ""; tok++; unmount(); book = null; surround(undefined); } return; }
+    if (mode !== "baby") { playing = false; if (applied) { applied = ""; tok++; unmount(); book = null; surround(undefined); } return; }
     if (path + hash === applied) return;
     applied = path + hash;
     void open(path, hash, search);
@@ -396,6 +399,37 @@
     scrollTo(0, 0);
   }
 
+  // ---------- autoplay ----------
+  // dwell (s) = clamp(settle, 0, P_CAP) + P_HOLD for a settling page, P_IDLE for an idle loop (settle = Infinity); >= P_MIN
+  const P_CAP = 12, P_HOLD = 2.5, P_IDLE = 8, P_MIN = 5;
+  let playing = $state(false), pAcc = 0; // pAcc: seconds the current page has been shown while playing (reset on mount)
+  // dev only: window.__bbDwell = s replaces the dwell (fast e2e runs); production: the formula
+  function dwell(): number {
+    const o = import.meta.env.DEV ? Number((window as unknown as { __bbDwell?: number }).__bbDwell) : NaN, s = scene?.settle ?? Infinity;
+    return o > 0 ? o : Math.max(P_MIN, Number.isFinite(s) ? Math.min(Math.max(s, 0), P_CAP) + P_HOLD : P_IDLE);
+  }
+  /** The last page of the last book in the order (autoplay stops here instead of wrapping to the cover). */
+  const atEnd = (): boolean => !!book && idx >= book.pages.length - 1 && (neighbor(1) ?? "cover") === "cover";
+  function play(): void {
+    if (playing) { playing = false; return; }
+    pAcc = 0;
+    playing = true;
+    if (atEnd() && book) { if (book.slug === "cover") go(0); else void travel("cover", false); }
+  }
+  $effect(() => {
+    if (!playing) return;
+    let t0 = performance.now();
+    const id = setInterval(() => {
+      const now = performance.now(), dt = Math.min(0.2, (now - t0) / 1000); // no wall time across a hidden or throttled gap
+      t0 = now;
+      if (busy || !scene || document.hidden || ui.mode !== "baby") return;
+      if ((pAcc += dt) < dwell()) return;
+      pAcc = 0;
+      if (atEnd()) playing = false; else step(1);
+    }, 100);
+    return () => clearInterval(id);
+  });
+
   // Info marker: the page note in the shared popup engine (Popups.svelte), headed by the grown-up section.
   const esc = (s: string): string => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   $effect(() => {
@@ -412,7 +446,7 @@
 
   // Touch swipe on the stage (capture phase: observed, never stopped; other pointer input belongs to the scene).
   let sw = { id: -1, x: 0, y: 0, t: 0 };
-  function swDown(e: PointerEvent): void { if (e.pointerType === "touch" && e.isPrimary) sw = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now() }; }
+  function swDown(e: PointerEvent): void { pAcc = 0; if (e.pointerType === "touch" && e.isPrimary) sw = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now() }; }
   function swUp(e: PointerEvent): void {
     if (e.pointerId !== sw.id) return;
     sw.id = -1;
@@ -426,6 +460,7 @@
     const key = (e: KeyboardEvent): void => {
       if (skip(e) || !book) return;
       if (e.key === "ArrowLeft" || e.key === "ArrowRight") { e.preventDefault(); step(e.key === "ArrowRight" ? 1 : -1); }
+      else if (e.key === " " && !(e.target instanceof Element && e.target.closest("button, [role='button']"))) { e.preventDefault(); play(); }
     };
     // Escape exits; capture phase, so an open note popup (closed by Popups on the same key) is seen and only closes
     const esc = (e: KeyboardEvent): void => {
@@ -454,6 +489,7 @@
         {#each { length: n } as _, i (i)}<button type="button" class="bb-dot" aria-label="Page {i + 1}" aria-current={i === idx ? "true" : undefined} onclick={() => go(i)}><span></span></button>{/each}
       </div>
       <button type="button" class="bb-btn" aria-label={nextLabel} title={nextLabel} disabled={!book} onclick={() => step(1)}><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+      <button type="button" class="bb-btn bb-play" aria-label={playing ? "Pause" : "Play"} title={playing ? "Pause" : "Play"} aria-pressed={playing} disabled={!book} onclick={play}><svg viewBox="0 0 16 16" aria-hidden="true">{#if playing}<path d="M4.5 3h2.6v10H4.5zM8.9 3h2.6v10H8.9z" fill="currentColor"/>{:else}<path d="M5 3l8 5-8 5z" fill="currentColor"/>{/if}</svg></button>
       <button type="button" class="bb-exit" aria-label="Exit baby mode" title="Exit baby mode (Esc)" onclick={exit}>Exit</button>
     </div>
     <div class="bb-meta">

@@ -283,13 +283,31 @@ function cumLen(p: Pt[]): number[] {
   return c;
 }
 
+/**
+ * Crystal Technology's emblem, simplified from the company's web header (Wayback 2000-04-17):
+ * an isometric cube seated in the V-notch of a round-bottomed shield. Top at y0, height h.
+ */
+function ctiEmblem(e: Emb, cx: number, y0: number, h: number): void {
+  const p = (u: number, v: number): Pt => [cx + u * h, y0 + v * h];
+  const side = (s: number): Pt[] => bez(p(0.295 * s, 0.68), p(0.295 * s, 0.9), p(0.13 * s, 0.99), p(0, 1), 8);
+  const shield: Pt[] = [p(-0.295, 0.42), p(0, 0.56), p(0.295, 0.42), ...side(1), ...side(-1).reverse().slice(1)];
+  e.shape(shield, W.teal, W.teal, 90, 4, { w: 5, couch: W.sage, cg: 14 });
+  const [t, ur, lr, b, ll, ul, c] = [p(0, 0.02), p(0.215, 0.14), p(0.215, 0.38), p(0, 0.5), p(-0.215, 0.38), p(-0.215, 0.14), p(0, 0.26)];
+  e.laid([t, ur, c, ul], W.sage, 0, { w: 4.5, couch: null });
+  e.laid([ul, c, b, ll], W.teal, 90, { w: 4.5, couch: null });
+  e.laid([c, ur, lr, b], W.teal, 90, { w: 4.5, couch: null });
+  e.outline([t, ur, lr, b, ll, ul], W.teal, 4, 9);
+  e.stem([ul, c, ur], W.buff, 3.5, 8);
+  e.stem([c, b], W.buff, 3.5, 8);
+}
+
 function page3(rng: Rng): Art {
   const ox = 2000, X = (x: number): number => ox + x;
   const e = new Emb(rng), P = new Parts(e);
   words(P, 3);
   ground(e, ox, ox + 1000, 77);
   P.cut(0.2, 0.5);
-  // shop: arcade with tiled roof, counter
+  // shop: arcade with tiled roof, counter (its signboard is stitched last, below)
   for (const cx of [52, 300]) e.shape(limb([[X(cx), 838], [X(cx), 512]], 18, 16), W.ochre, W.teal, 90, 4.5, { cg: 26 });
   e.stem(arcPts(X(176), 528, 116, 30, 180, 360, 15), W.teal, 5);
   roof(e, [[X(24), 512], [X(70), 428], [X(282), 428], [X(330), 512]], X(24), X(330), 428, 512, W.terra);
@@ -325,6 +343,15 @@ function page3(rng: Rng): Art {
   poles(e, [2730, 2880]);
   e.stem(CABLE.filter((q) => q[0] <= 3005), W.indigo, 8, 13);
   P.cut(1.3, 0.6);
+  // the seller's signboard on the roof ridge: emblem and name of Crystal Technology, Inc.
+  for (const sx of [120, 236]) e.shape(limb([[X(sx), 432], [X(sx), 420]], 10, 9), W.rust, W.teal, 90, 4, { couch: null });
+  const board: Pt[] = [[X(14), 330], [X(344), 330], [X(344), 418], [X(14), 418]];
+  e.laid(board, W.buff, 0, { w: 5.5, couch: W.olive, cg: 40 });
+  e.outline(board, W.teal, 5);
+  P.cut(0.45, 0.5);
+  ctiEmblem(e, X(60), 338, 72);
+  inscription(e, ["CRYSTAL", "TECHNOLOGY"], X(214), 344, 26, 35, W.teal, W.teal);
+  P.cut(0.7, 0.8);
 
   // live: light blinks along the cable
   const cab = CABLE.filter((q) => q[0] <= 3020);

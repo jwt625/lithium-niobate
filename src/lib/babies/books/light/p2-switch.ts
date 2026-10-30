@@ -1,7 +1,8 @@
 // Light p2 (Pockels effect in a Mach-Zehnder): a leaded channel splits into two arms and joins again into a round
 // lamp pane. Amber electrodes beside the upper arm, fed from a roundel with a painted spark. Voltage on: the upper
 // arm's crests slide by half a wave (exaggerated), so at the join crest meets dip and the lamp pane goes dark there.
-// The beam never bends. Tap: voltage on/off.
+// The beam never bends. One closed cycle: on at AUTO, hold dark HOLD, off again (bright). Tap: replay the cycle from
+// the current voltage. Reduced motion: voltage held on (tap toggles).
 import type { Scene, SceneHost } from "../../types";
 import { G, LIGHT, blob, circlePts, clamp01, easeIO, frameAndField, glowFill, makeWindow, pane, rectPts, type Pt } from "./kit";
 import { banner } from "./letters";
@@ -25,8 +26,10 @@ const AMP = 13;
 const VF = 1100; // light front speed (units/s)
 const VC = 110; // crest drift speed
 const T0 = 0.3;
-const AUTO = 2.0; // voltage switches on by itself
+const AUTO = 2.0; // the cycle starts by itself
 const RAMP = 0.7;
+const HOLD = 1.5; // dark at the join, long enough to read
+const CYCLE = 2 * RAMP + HOLD;
 
 const smooth = (x: number) => (x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x));
 
@@ -129,17 +132,21 @@ export function switchScene(host: SceneHost): Scene {
       }
     };
 
-    // interaction state: voltage target and when it last changed
-    let target = 1;
-    let tv = AUTO;
+    // interaction state: cycle start and the voltage there (ramp up from it, hold, ramp down to 0)
+    let c0 = AUTO;
     let from = 0;
+    let rv = 1; // reduced motion: voltage shown
     let tapEnd = 0;
-    const vAt = (t: number) => (host.reduced ? target : from + (target - from) * easeIO((t - tv) / RAMP));
+    const vAt = (t: number) => {
+      if (host.reduced) return rv;
+      const u = t - c0;
+      return u < RAMP + HOLD ? from + (1 - from) * easeIO(u / RAMP) : 1 - easeIO((u - RAMP - HOLD) / RAMP);
+    };
 
     return {
-      settle: AUTO + RAMP + 0.4,
+      settle: AUTO + CYCLE + 0.4,
       glow(g, t) {
-        const tc = Math.min(t, Math.max(AUTO + RAMP + 0.4, tapEnd));
+        const tc = Math.min(t, Math.max(AUTO + CYCLE + 0.4, tapEnd));
         const front = (t - T0) * VF; // arc length reached from the lamp
         const lamp = clamp01(t / T0);
         const v = vAt(t);
@@ -172,11 +179,14 @@ export function switchScene(host: SceneHost): Scene {
         blob(g, OX, Y0, 120, 0.6 * B * reach);
       },
       tap(_x, _y, t) {
+        if (host.reduced) {
+          rv = 1 - rv;
+          return 1;
+        }
         from = vAt(t);
-        target = target ? 0 : 1;
-        tv = t;
-        tapEnd = t + RAMP + 0.6;
-        return RAMP + 0.6;
+        c0 = t;
+        tapEnd = t + CYCLE + 0.4;
+        return CYCLE + 0.4;
       },
     };
   });

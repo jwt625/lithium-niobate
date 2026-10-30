@@ -1,5 +1,6 @@
-// p1: squeeze the crystal -> charge appears on the pressed faces; a centre-zero meter swings.
-// Tap: the press lifts, the charges go, then it squeezes again.
+// p1: squeeze the crystal -> charge appears on the pressed faces; a centre-zero meter swings. One closed cycle: hold
+// squeezed ~1.5 s, then the press lifts, the charges go and the needle rings back to zero. Tap: replay the cycle from
+// the current squeeze. Reduced motion: held squeezed.
 
 import type { Scene, SceneHost } from "../../types";
 import { PAL, arrow, blob, boil, ease, gouge, hash, makeScene, q10, rect, roughPoly, seg, type Ctx, type Pt } from "./kit";
@@ -13,11 +14,14 @@ const H0 = 250;
 const MX = 735; // meter centre
 const MY = 330;
 const MR = 120;
+const UR = 2.6; // release: the press lifts (squeezed from 1.05)
+const END = UR + 1.5; // cycle over: unsqueezed, needle at zero
 
 /** Squeeze amount 0..1 at u seconds after the (re)start; `from` = squeeze at the restart. */
 function squeeze(u: number, from: number): number {
   if (u < 0.35) return from * (1 - ease(u / 0.35));
-  return ease(seg(u, 0.55, 1.05));
+  if (u < UR) return ease(seg(u, 0.55, 1.05));
+  return 1 - ease(seg(u, UR, UR + 0.5));
 }
 
 function sign(g: Ctx, x: number, y: number, r: number, plus: boolean, seed: number): void {
@@ -29,27 +33,30 @@ export function p1Scene(host: SceneHost): Scene {
   return makeScene(host, P1_TEXT, 3101, (k) => {
     let t0 = k.reduced ? -1e6 : 0;
     let from = 0;
-    const at = (t: number) => squeeze(t - t0, from);
+    const at = (t: number) => (k.reduced ? 1 : squeeze(t - t0, from));
     const needle = (t: number): number => {
+      if (k.reduced) return 1;
       const u = t - t0;
+      if (u >= END) return 0;
       const sq = at(t);
       const v = Math.max(0, u - 0.8);
-      return sq * (1 + 0.28 * Math.sin(9 * v) * Math.exp(-3.4 * v));
+      const w = Math.max(0, u - UR - 0.25); // small swing past zero as the press lifts
+      return sq * (1 + 0.28 * Math.sin(9 * v) * Math.exp(-3.4 * v)) - 0.12 * Math.sin(9 * w) * Math.exp(-4 * w);
     };
     return {
-      settle: 2.6,
+      settle: END,
       key: (t) => {
         const u = t - t0;
-        return u > 2.7 ? "end" : `${q10(t)}`;
+        return u > END ? "end" : `${q10(t)}`;
       },
       down(_x, _y, t) {
         from = at(t);
         t0 = k.reduced ? -1e6 : t;
-        return 2.6;
+        return END;
       },
       draw(g, t) {
-        const b = boil(t - t0 > 2.7 ? 0 : t) * 1000;
-        const tq = t - t0 > 2.7 ? t : t0 + q10(t - t0);
+        const b = boil(t - t0 > END ? 0 : t) * 1000;
+        const tq = t - t0 > END ? t : t0 + q10(t - t0);
         const sq = at(tq);
         const H = H0 * (1 - 0.1 * sq);
         const W = W0 * (1 + 0.035 * sq);

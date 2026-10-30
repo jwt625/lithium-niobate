@@ -2,7 +2,7 @@
 // pictograms appear one at a time so a child can count along; tap feedback never scales a pictogram.
 import type { Scene, SceneHost } from "../../types";
 import { ARROW, CHIP, CRYSTAL, GLOBE, PHONE, POWDER, RACK, RACK_LEDS, ROCK, SATELLITE, TOWER, WAFER, WIFI, boule, filter } from "./glyphs";
-import { PAL, clamp01, easeOut, el, hop, makeStage, r1, seg, setPop, type Stage } from "./kit";
+import { PAL, clamp01, easeOut, el, hop, makeStage, r1, seg, setPop, type Attrs, type Stage } from "./kit";
 import { letter, measure } from "./letters";
 
 export const TEXT = [
@@ -271,8 +271,9 @@ function inYourPhone(host: SceneHost): Scene {
 }
 
 // ---------------------------------------------------------------------------------------------
-// p4: the internet (globe) -> a fibre with light pulses -> a red crystal chip on each drop -> racks.
-// Racks appear one by one; light runs to each and switches its lights on. Tap a rack: light runs again.
+// p4: the transmitter. A rack sends: a blue electrical wire carries pulses up into its red crystal chip, the
+// chip flashes, and light runs out along the ink fibre into the internet (globe). Tap a rack or chip: that
+// column sends again; tap the globe: all four send. Electrical = blue, light = gold; the wire changes at the chip.
 
 function internet(host: SceneHost): Scene {
   const st = makeStage(host);
@@ -288,18 +289,27 @@ function internet(host: SceneHost): Scene {
   const TRUNK = GY + GS / 2;
   const RS = 182;
   const RY = 384;
+  const CS = 96;
+  const CY = 216;
   const cols = [318, 500, 682, 864];
+  const line = (d: string, stroke: string, w: number, extra: Attrs = {}) =>
+    el("path", { d, fill: "none", stroke, "stroke-width": w, "stroke-linejoin": "miter", ...extra }, st.art);
+  // electrical: rack top -> chip (ends inside the chip body); optical: chip -> up the drop -> trunk -> globe
   const routes = cols.map((cx) => {
-    const d = `M${GX + GS - 6} ${TRUNK}H${cx}V${RY + 10}`;
-    const len = cx - (GX + GS - 6) + (RY + 10 - TRUNK);
-    const base = el("path", { d, fill: "none", stroke: PAL.ink, "stroke-width": 8, "stroke-linejoin": "miter" }, st.art);
-    const light = el("path", { d, fill: "none", stroke: PAL.gold, "stroke-width": 16, "stroke-linejoin": "miter", "stroke-dasharray": "22 26", opacity: 0 }, st.art);
-    return { base, light, len, cx };
+    const eD = `M${cx} ${RY + 10}V${CY + CS * 0.6}`;
+    const eLen = RY + 10 - (CY + CS * 0.6);
+    const oD = `M${cx} ${CY + CS * 0.4}V${TRUNK}H${GX + GS - 6}`;
+    const oLen = CY + CS * 0.4 - TRUNK + (cx - (GX + GS - 6));
+    line(eD, PAL.blue, 8);
+    line(oD, PAL.ink, 8);
+    const pulse = line(eD, PAL.blue, 16, { opacity: 0 });
+    const light = line(oD, PAL.gold, 16, { opacity: 0 });
+    return { pulse, light, eLen, oLen };
   });
   st.use(st.art, globe, GX, GY, GS);
-  const CS = 96;
-  const CY = 250;
   const chips = cols.map((cx) => ({ ...st.use(st.art, chip, cx - CS / 2, CY, CS), x: cx - CS / 2 }));
+  // conversion cue: a gold outline round the chip body flashes (the pictogram itself never scales)
+  const rings = chips.map((c) => el("rect", { x: r1(c.x + CS * 0.14 - 9), y: r1(CY + CS * 0.16 - 9), width: r1(CS * 0.72 + 18), height: r1(CS * 0.68 + 18), fill: "none", stroke: PAL.gold, "stroke-width": 7, opacity: 0 }, c.g));
   const racks = cols.map((cx) => {
     const u = st.use(st.art, rack, cx - RS / 2, RY, RS);
     const l = el("use", { href: `#${leds}`, x: cx - RS / 2, y: RY, width: RS, height: RS, opacity: 0 }, u.g);
@@ -309,35 +319,48 @@ function internet(host: SceneHost): Scene {
 
   const T0 = 0.15;
   const DT = 0.3;
-  const TL = T0 + DT * 4 + 0.15; // light starts
-  const RUN = 1.0;
-  const END = TL + RUN + 0.5;
+  const TS = T0 + DT * 4 + 0.15; // first rack starts sending
+  const STAG = 0.12;
+  // per column, relative to its send time: LEDs on at 0; electrical run; chip flash; optical run
+  const E0 = 0.1;
+  const E1 = 0.5;
+  const F1 = 0.85;
+  const O0 = 0.55;
+  const O1 = 1.45;
+  const END = TS + 3 * STAG + O1 + 0.5;
   const tapT = [-1, -1, -1, -1];
   let lastT = 0;
   const off = onTap(st, (x, y) => {
     let k = racks.findIndex((r) => inBox(x, y, r.x + RS * 0.15, RY, RS * 0.7, 16));
     if (k < 0) k = chips.findIndex((c) => inBox(x, y, c.x, CY, CS, 14));
-    if (k < 0 && y < TRUNK + 60 && x < GX + GS + 20) k = 0;
-    if (k < 0) return;
-    tapT[k] = lastT;
-    host.wake(RUN + 0.4);
+    if (k >= 0) {
+      tapT[k] = lastT;
+      host.wake(O1 + 0.4);
+    } else if (y < TRUNK + 60 && x < GX + GS + 20) {
+      for (let i = 0; i < 4; i++) tapT[i] = lastT + i * STAG;
+      host.wake(3 * STAG + O1 + 0.4);
+    }
   });
 
   const draw = (t: number, intro: number) => {
     for (let i = 0; i < 4; i++) {
       const r = routes[i];
       const tt = tapT[i];
-      const tapRun = tt >= 0 && t >= tt && t < tt + RUN + 0.2;
-      const s0 = tapRun ? tt : TL + i * 0.12;
-      const clock = tapRun ? t : intro;
-      const x = seg(clock, s0, s0 + RUN);
-      // the light front runs along the route; dashes flow behind it
-      const front = x * r.len;
-      r.light.setAttribute("opacity", x > 0 ? "1" : "0");
-      r.light.setAttribute("stroke-dasharray", x >= 1 ? "22 26" : `${dashes(front)} 0 ${r1(r.len + 100)}`);
+      const tapRun = tt >= 0 && t >= tt && t < tt + O1 + 0.2;
+      const s0 = tapRun ? tt : TS + i * STAG;
+      const c = (tapRun ? t : intro) - s0;
+      const xe = seg(c, E0, E1);
+      const xo = seg(c, O0, O1);
+      // each dash train is anchored to its front, so the dashes travel rack -> chip -> globe
+      r.pulse.setAttribute("opacity", xe > 0 ? "1" : "0");
+      r.pulse.setAttribute("stroke-dasharray", train(xe * r.eLen, r.eLen, 12, 14));
+      r.light.setAttribute("opacity", xo > 0 ? "1" : "0");
+      r.light.setAttribute("stroke-dasharray", train(xo * r.oLen, r.oLen, 22, 26));
+      const f = c >= E1 && c <= F1 ? Math.sin(((c - E1) / (F1 - E1)) * Math.PI) : 0;
+      rings[i].setAttribute("opacity", String(r1(f * 100) / 100));
       setPop(chips[i].g, intro, T0 + i * DT + 0.12);
-      setPop(racks[i].g, intro, T0 + i * DT, tt >= 0 ? hop(t, tt + RUN * 0.9, 20, 0.36) : 0);
-      racks[i].l.setAttribute("opacity", x >= 0.97 ? "1" : "0");
+      setPop(racks[i].g, intro, T0 + i * DT, tt >= 0 ? hop(t, tt, 20, 0.36) : 0);
+      racks[i].l.setAttribute("opacity", c >= (tapRun ? 0.08 : 0) ? "1" : "0");
     }
   };
 
@@ -358,17 +381,18 @@ function internet(host: SceneHost): Scene {
   };
 }
 
-/** Dash pattern string that draws 22-on / 26-off dashes up to `len` along a path. */
-function dashes(len: number): string {
-  const out: number[] = [];
+/** Dash pattern for a path of length `len` drawn up to `front`, with an on/off train whose head sits at the front. */
+function train(front: number, len: number, on: number, gap: number): string {
+  const back: number[] = [];
   let s = 0;
-  while (s + 48 <= len) {
-    out.push(22, 26);
-    s += 48;
+  for (let k = 0; s < front; k++) {
+    const w = Math.min(k % 2 ? gap : on, front - s);
+    back.push(w);
+    s += w;
   }
-  const rest = len - s;
-  if (rest > 0) out.push(Math.min(22, rest), Math.max(0, rest - 22));
-  if (!out.length) out.push(0, 0);
+  const out = back.reverse();
+  if (out.length % 2 === 0) out.unshift(0); // the array must start with a dash; the head (last) is a dash
+  out.push(len + 100);
   return out.map(r1).join(" ");
 }
 

@@ -1,7 +1,8 @@
 // Devices p4: a black phone with a round home button. In its window, a gray crystal chip with two black comb electrodes.
 // Three radio waves (zigzags of different rhythm) wait outside; the chosen one enters. Only the wave whose
 // rhythm matches the comb fingers makes strong sound ripples (red bars) that reach the second comb; then the
-// red disc lights: the phone hears it. Tap a wave to choose it.
+// red disc lights: the phone hears it. The choice cycles black (no) -> red (heard) -> gray (no), DWELL s each, as an
+// idle loop (pure in t); a tap on a wave stops the cycle and chooses that wave. Reduced motion: red chosen, lamp lit.
 import type { Scene, SceneHost } from "../../types";
 import { PAL, el, polyD, zigzag, prog, fly, r1, makeStage, MISREG, type Pt } from "./kit";
 import { letterLine } from "./letters";
@@ -22,6 +23,9 @@ const WAVES = [
 const MATCH = 1;
 const END = 3;
 const SPEED = 120; // ripple speed, logical units per second
+const T_FIRST = 0.9; // first auto selection
+const DWELL = 2.3; // seconds per wave in the auto cycle: no / heard / no within 8 s
+const CYCLE = [0, MATCH, 2]; // black (short), red (matched), gray (long)
 
 export function filterScene(host: SceneHost): Scene {
   const st = makeStage(host, 64);
@@ -65,8 +69,14 @@ export function filterScene(host: SceneHost): Scene {
 
   // ---- choice ----
   let lastT = 0;
+  let cycling = !host.reduced;
   let sel = MATCH;
-  let tSel = 0.9;
+  let tSel = T_FIRST;
+  const auto = (t: number) => {
+    const k = Math.max(0, Math.floor((t - T_FIRST) / DWELL));
+    sel = CYCLE[k % CYCLE.length];
+    tSel = T_FIRST + k * DWELL;
+  };
   const hits = WAVES.map((w, i) => {
     const r = el("rect", { x: 0, y: 0, width: 1, height: 1, fill: "transparent", "pointer-events": "all", style: "cursor:pointer" }, st.hit);
     // hit boxes follow the rotated wave rows (screen frame)
@@ -80,6 +90,10 @@ export function filterScene(host: SceneHost): Scene {
     r.setAttribute("width", String(PH.x - 10));
     r.setAttribute("height", "80");
     const fn = () => {
+      if (cycling) {
+        cycling = false; // a real tap ends the auto cycle for good
+        host.wake(2.6);
+      }
       if (sel === i) return;
       sel = i;
       tSel = lastT;
@@ -127,9 +141,13 @@ export function filterScene(host: SceneHost): Scene {
   };
 
   return {
-    settle: END,
+    // idle loop while auto-cycling; after a tap (or reduced motion) settles as before
+    get settle() {
+      return cycling ? Infinity : END;
+    },
     frame(t: number) {
       lastT = t;
+      if (cycling) auto(t);
       draw(t);
     },
     destroy() {
